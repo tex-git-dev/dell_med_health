@@ -1,0 +1,601 @@
+.m1s7p1 .s7b1 {
+    margin-bottom: 0px;
+    background: url('../img/s7img1.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+
+.m1s7p1 .s7b1 h2{
+    background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    color: #232a30;
+    font-family: "GothamHTF-Bold";
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    position: relative;
+    text-shadow: none;
+    width: 60%;
+    margin-bottom: 12%;
+}
+
+.m1s7p1 .s7b1 .container p{
+    background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    color: #232a30;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    text-shadow: none;
+    width: 28%;
+    font-family: "GothamHTF-Bold";
+}
+
+.m1s7p1 .bg-3  h3 {
+    font-family: "GothamHTF-Bold";
+}
+.m1s7p1 .bg-3  h5 {
+    font-family: "GothamHTF-Bold";
+}
+
+.m1s7p1 .bg-4 {
+    background-color:#3b4254;
+    color:#fff;
+    top: 5px;
+}
+.m1s7p1 .bg-4 h4 {
+    margin-top: 0px !important;    
+}
+.m1s7p1 .bg-4 img {
+    text-align: right;
+    float: right;
+}
+.orng {    color:#f68122;    }
+
+.m1s7p1 .m7b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s7img6.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;
+   /* min-height: 550px;*/
+    /*padding-top: 80px;*/
+    padding-bottom: 80px;
+}
+.m1s7p1 .m7b3 {   
+    height: 100%;
+  }
+
+.m1s7p1 .m7b2 h2{   
+    text-shadow:none;
+    color:#000;
+    font-family: "GothamHTF-Bold";    
+    color: #fff;   
+}
+
+
+.m1s7p1 .m7b3 .col-sm-9 .well p:nth-child(1){
+    color: #f68121;
+    font-family: "GothamHTF-Medium";  
+}
+.m1s7p1 .m7b3 .col-sm-9 .well p:nth-child(2){
+    font-family: "GothamHTF-Bold";
+    font-size: 16px !important;
+}
+.m1s7p1 .m7b3 .col-sm-9 .well p:nth-child(3){
+    font-family: "GothamHTF-Medium";    
+}
+.m1s7p1 .m7b3 .col-sm-9 .well p:nth-child(4){
+    font-family: "GothamHTF-BookItalic";    
+    font-size: 12px !important;
+    overflow-wrap: break-word;
+}
+
+.m1s7p1 .jumbotron .m7b3 p {
+    font-size: 14px !important;
+}
+.m1s7p1 .vertical-align {
+    align-items: center;
+    display: flex;
+}
+.m1s7p1 .m2s4b6 h2 {
+    color:#fff;
+    font-family: "GothamHTF-Bold";
+ }
+
+.m1s7p1  .m7b3 .col-sm-4 .well1{
+   background: #f5f5f5 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 15px;
+    min-height: 490px;
+}
+.m1s7p1  .m7b3 .col-sm-9 {  
+    height: 100%;
+    padding-left: 0;
+}
+.m1s7p1  .m7b3 .col-sm-9 .well{   
+    background:#fff;
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;
+       min-height: 490px;
+}
+.m1s7p1  .m7b3 .well1 .row{   
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;
+}
+
+/*
+.m1s7p1 .eq-h {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.m1s7p1 .eq-h > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+/*  */
+
+
+.m1s7p1 .panel {
+    border-radius:0px;
+    border: 0px;
+    color:#3c4252;
+    text-shadow:none;
+    min-height: 300px;
+    padding:20px 25px 10px;
+}
+
+.m1s7p1 .panel p {
+    font-family: "GothamHTF-Medium";
+ }
+
+
+
+.m1s7p1 .panel .pd2 {
+    margin-top: 40px;
+}
+.m1s7p1 .liteGray {
+    background: rgb(190, 191, 193) none repeat scroll 0 0;
+}
+.m1s7p1 .gray {
+    background: #f0f0f0 none repeat scroll 0 0;
+}
+.m1s7p1 .black {
+    background: #3b4254 none repeat scroll 0 0;
+    color: #fff;
+}
+.m1s7p1 .left .fa-angle-left, .right .fa-angle-right {
+    color: #000;
+}
+.m1s7p1 .carousel-control.right {
+    background-image: none;
+    line-height: 320px;
+    margin-right: 190px;
+}
+.m1s7p1 .carousel-control.left {
+    background-image: none;
+    line-height: 320px;
+    margin-left: 190px;
+}
+.m1s7p1 .carousel-indicators {
+    bottom: 51px ;
+}
+.m1s7p1 .carousel-indicators .active {
+    background-color: #ccc;
+}
+.m1s7p1 .carousel-indicators li {
+    background-color: #999;
+}
+.m1s7p1 #myCarousel .col-sm-4 p {
+    color: #7f90a5;
+    font-family: "GothamHTF-Bold";
+    margin-top: 12px;
+}
+.m1s7p1 #myCarousel .col-sm-4 div {
+    font-size: 12px;
+    font-family: "GothamHTF-Medium";
+    overflow: hidden; 
+}
+.m1s7p1 .container .carousel-inner {
+    min-height: 485px;
+    padding-bottom: 75px !important;
+}
+.m1s7p1 .modal-open {
+    /* ... */
+    overflow-y: scroll !important;
+}
+
+
+
+
+
+
+@media only screen and (min-width : 768px) {
+    
+.m1s7p1  .m7b3 .col-sm-4 .well1{
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 15px;
+    min-height: 750px;
+}
+
+.m1s7p1  .m7b3 .col-sm-9 .well {   
+    background:#fff;
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;
+       height: 100%;
+         min-height: 750px;
+}
+
+    
+}
+
+
+@media only screen and (min-width : 1024px){ 
+      .m1s7p1  .m7b3 .col-sm-4 .well1{
+   background: #f5f5f5 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 15px;
+    min-height: 560px;
+}
+
+.m1s7p1  .m7b3 .col-sm-9 .well{   
+    background:#fff;
+    height: 100%;
+    margin-bottom: 0px;
+    border-radius: 0;    
+    min-height: 560px;
+}
+
+}
+
+
+
+@media screen
+and (min-device-width : 766px)
+and (max-device-width : 1000px) {
+.m1s7p1 .s7b1 {
+    margin-bottom: 0px;
+    background: url('../img/s7img1.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s7p1 .s7b1 .container h2{
+     font-family: "GothamHTF-Bold";
+    font-size: 124%;
+    width: 70%;
+ }
+ .s7b2 .container p{
+left: 0px;
+top: 0px;
+ }
+.m1s7p1 .s7b1 .container p{
+     font-family: "GothamHTF-Bold";
+    font-size: 107%;
+    width: 42%;
+    }
+.m1s7p1 .s3hide {
+    display: none;
+}
+.m1s7p1 .bg-4 img {
+    text-align: right;
+    float: right;
+}
+.m1s7p1 .bg-4 h4 {
+    margin-top: 0px !important;    
+}
+.m1s7p1 .s7b2 .container h2{   
+    text-shadow:none;
+    color:#000;
+    font-family: "GothamHTF-Bold";    
+    color: #fff;   
+}
+.m1s7p1 .container .carousel-inner {
+    min-height: 360px;
+    padding-bottom: 75px !important;
+}
+
+}
+
+
+@media screen
+and (min-device-width : 501px)
+and (max-device-width : 765px) {    
+.m1s7p1 .s7b1 {
+    margin-bottom: 0px;
+    background: url('../img/s7img1.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s7p1 .s7b1 .container h2{
+     font-family: "GothamHTF-Bold";
+    font-size: 124%;
+    width: 70%;
+}
+.m1s7p1 .s7b1 .container p{
+   font-size: 107%;
+    width: 42%;
+    font-family: "GothamHTF-Bold";
+}
+.m1s7p1 .s3hide {
+    display: none;
+}
+
+.m1s7p1 .bg-4 img {
+    text-align: left;
+    float: left;
+}
+.m1s7p1 .bg-3 .pd1 {
+    padding-top: 22px;    
+}
+.m1s7p1 .bg-4 h5 {
+    padding-top: 15px !important;
+}
+.m1s7p1 .s7b2 .container h2{   
+    color: #fff;
+    font-family: "GothamHTF-Bold";
+    font-size: 30px;
+    text-shadow: none;
+    width: 100%;  
+}
+
+.m1s7p1 .panel p:nth-child(1) {
+    font-family: "GothamHTF-Medium";
+    font-size: 12px;
+     width: 100%;
+}
+.m1s7p1 .panel p:nth-child(2) {
+    font-family: "GothamHTF-Bold";
+    font-size: 14px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.m1s7p1 .panel .pd2 {
+    margin-top: 0px;
+}
+
+.m1s7p1 .container .carousel-inner {
+    min-height: 565px !important;
+    padding-bottom: 75px !important;
+}
+
+.m1s7p1  .m7b3 .col-sm-4 .well1{
+   background: #f5f5f5 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 15px;
+    min-height: auto;
+}
+
+.m1s7p1  .m7b3 .col-sm-9 .well {   
+    background:#fff;
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;       
+         min-height: auto;
+}
+
+ .m1s7p1 .dArowh {
+    display: none;  
+}
+
+}
+
+
+
+@media  screen
+and (min-device-width : 300px)
+and (max-device-width : 500px) {
+    .m1s7p1 .s7b1 {
+    margin-bottom: 0px;
+    background: url('../img/s7img1.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s7p1 .s7b1 .container h2{  
+    font-family: "GothamHTF-Bold";
+    font-size: 103%;
+    width: 100%;
+    }
+
+.m1s7p1 .s7b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 83%;
+    width: 65%;
+    }
+.m1s7p1 .s3hide {
+    display: none;
+}
+.m1s7p1 .bg-4 img {
+    text-align: left;
+    float: left;
+}
+.m1s7p1 .bg-3 .pd1 {
+    padding-top: 22px;    
+}
+.m1s7p1 .bg-4 h5 {
+    padding-top: 15px !important;
+}
+.m1s7p1 .s7b2 .container h2{   
+    color: #fff;
+    font-family: "GothamHTF-Bold";
+    font-size: 30px;
+    text-shadow: none;
+    width: 100%;  
+}
+.m1s7p1 .panel .pd2 {   
+    margin-top: 0px;
+}
+.m1s7p1 .container .carousel-inner {
+    min-height: 445px !important;
+    padding-bottom: 75px !important;
+}
+
+.m1s7p1  .m7b3 .col-sm-4 .well1{
+   background: #f5f5f5 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 15px;
+    min-height: auto;
+}
+
+.m1s7p1  .m7b3 .col-sm-9 .well {   
+    background:#fff;
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;       
+         min-height: auto;
+}
+
+ .m1s7p1 .dArowh {
+    display: none;  
+}
+
+}
+
+
+
+
+@media  screen
+and (min-device-width : 100px)
+and (max-device-width : 299px) {
+.m1s7p1 .s7b1 {
+    margin-bottom: 0px;
+    background: url('../img/s7img1.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s7p1 .s7b1 .container h2 {  
+    font-family: "GothamHTF-Bold";
+    font-size: 48%;
+    width: 86%;
+    }
+.m1s7p1 .s7b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 42%;
+    width: 60%;
+    }
+.m1s7p1 .s3hide {
+    display: none;
+}
+.m1s7p1 .bg-4 img {
+    text-align: left;
+    float: left;
+}
+.m1s7p1 .bg-3 .pd1 {
+    padding-top: 22px;    
+}
+.m1s7p1 .bg-4 h5 {
+    padding-top: 15px !important;
+}
+.m1s7p1 .s7b2 .container h2{   
+    color: #fff;
+    font-family: "GothamHTF-Bold";
+    font-size: 30px;
+    margin-top: 1px !important;
+    padding-bottom: 24px;
+    text-shadow: none;
+    width: 100%
+}
+.m1s7p1 .panel p:nth-child(1) {
+    font-family: "GothamHTF-Medium";
+    font-size: 10px;
+     width: 100%;
+}
+.m1s7p1 .panel .pd2 {
+    margin-top: 0px;
+}
+
+.m1s7p1 .container .carousel-inner {
+    min-height: 345px !important;
+    padding-bottom: 75px !important;
+}
+
+.m1s7p1  .m7b3 .col-sm-4 .well1{
+   background: #f5f5f5 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 15px;
+    min-height: auto;
+}
+
+.m1s7p1  .m7b3 .col-sm-9 .well {   
+    background:#fff;
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;       
+         min-height: auto;
+}
+
+
+ .m1s7p1 .dArowh {
+    display: none;  
+}
+
+}

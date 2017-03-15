@@ -1,0 +1,355 @@
+.m1s6p1 .s6b1 {
+    margin-bottom: 0px;
+    background: url('../img/s6img1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s6p1 .s6b1 h2{
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    color: #232a30;
+    font-family: "GothamHTF-Bold";
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    position: relative;
+    text-shadow: none;
+    width: 45%;
+    margin-bottom: 12%;
+}
+
+.m1s6p1 .s6b1 .container p{
+    background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    color: #232a30;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    text-shadow: none;
+    width: 28%;
+    font-family: "GothamHTF-Bold";
+}
+
+.m1s6p1 .bg-3  h3 {
+    font-family: "GothamHTF-Bold";
+}
+.m1s6p1 .bg-3  h5 {
+    font-family: "GothamHTF-Bold";
+}
+
+.m1s6p1 .bg-4 {
+    background-color:#3b4254;
+    color:#fff;
+    top: 5px;
+}
+.m1s6p1 .bg-4 h4 {
+    margin-top: 0px !important;    
+}
+.m1s6p1 .bg-4 img {
+    text-align: right;
+    float: right;
+}
+.orng {    color:#f68122;    }
+
+.m1s6p1 .m6b2{
+   /*  margin-bottom: 0px;
+    background-image:  url("../img/s6img2.png");
+    background-position: 0% 25%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    min-height: 350px;
+    position: relative; */  
+
+     margin-bottom: 0px;
+    background: url('../img/s6img2.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    /*background-color: #060;*/
+        color: white;
+    /*text-shadow: black 0.3em 0.3em 0.3em;*/
+    background-color: #fff;
+    min-height: 300px;
+
+}
+.m1s6p1 .m6b2 h4{
+    font-family: "GothamHTF-Medium"; 
+}
+
+.m1s6p1 .m6b2 .container {
+    color: #fff;
+    height: 200px;    
+    max-width: 100%;
+    min-height: 100%;
+    position: relative;    
+    top:37px;
+    
+}
+.m1s6p1 .container .m6col{
+background: #f68121 none repeat scroll 0 0;
+}
+.m1s6p1 .m6b3{
+     /*margin-bottom: 0px;
+    background-image:  url("../img/s6img3.png");
+    background-position: 0% 25%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 610px;
+    position: relative;   */
+
+
+margin-bottom: 0px;
+    background: url('../img/s6img3.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    /*width: 100%;*/
+    /*background-color: #060;
+        color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;*/
+    /*min-height: 300px;*/
+
+}
+.m1s6p1 .m6b3 h4{
+    font-family: "GothamHTF-Bold"; 
+    font-size: 22px;
+    margin-top: 50px;
+}
+.m1s6p1 .m6b3 h5{
+    font-family: "GothamHTF-Bold";     
+}
+
+.bordLeft {
+    border-left: 3px solid #ffab40;
+}
+.m1s6p1 .m6b3 .container {
+    background: #fff none repeat scroll 0 0;
+    height: auto;    
+    max-width: 100%;
+    min-height: 100%;
+    position: relative;    
+    /*top:20px;*/
+}
+.m1s6p1 .m6b3 p{    
+    font-size: 14px;
+}
+.m1s6p1 .m6b3 p:nth-child(1){    
+    font-family: "GothamHTF-Bold"; 
+}
+.m1s6p1 .m6b4 {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.m1s6p1 .m6b4{
+     margin-bottom: 0px;
+    background-position: 0% 25%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;     
+}
+.m1s6p1 .m6b4 .container { 
+    max-width: 100%;
+    min-height: 100%;
+    position: relative;  
+}
+.m1s6p1 .m6b4 .col-sm-8 p{
+    font-family: "GothamHTF-Book"; 
+    font-size: 22px;
+   /* margin-top: 35px;*/
+}
+.m1s6p1 .m6b4 .col-sm-8 h6{
+    font-family: "GothamHTF-Medium"; 
+    font-size: 12px;
+    color:#f4821f;
+}
+.m1s6p1 .container ol {
+    margin-left: -22px;    
+    font-family: "GothamHTF-Medium";        
+}
+
+
+.m1s6p1  .vertical-align {
+    align-items: center;
+    display: flex;
+}
+
+
+
+@media screen
+and (min-device-width : 766px)
+and (max-device-width : 1000px) {
+.m1s6p1 .s6b1 {
+    margin-bottom: 0px;
+    background: url('../img/s6img1.jpg') no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s6p1 .s6b1 .container h2{
+    font-family: "GothamHTF-Bold";
+    font-size: 124%;
+    width: 70%;
+ }
+ .s6b2 .container p{
+left: 0px;
+top: 0px;
+ }
+.m1s6p1 .s6b1 .container p{
+   font-family: "GothamHTF-Bold";
+    font-size: 107%;
+    width: 42%;
+    }
+.m1s6p1  .vertical-align {
+  display: inline;
+}
+
+
+}
+
+
+
+
+@media screen
+and (min-device-width : 501px)
+and (max-device-width : 765px) {    
+.m1s6p1 .s6b1 {
+    margin-bottom: 0px;
+    background: url('../img/s6img1.jpg') no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s6p1 .s6b1 .container h2{
+    font-family: "GothamHTF-Bold";
+    font-size: 124%;
+    width: 70%;
+}
+.m1s6p1 .s6b1 .container p{
+    font-size: 107%;
+    width: 42%;
+    font-family: "GothamHTF-Bold";
+}
+.bordLeft {
+    border-left: 0px none;
+}
+
+ .m1s6p1 .dArowh {
+    display: none;  
+}
+
+.m1s6p1  .vertical-align {
+  display: inline;
+}
+
+}
+
+
+
+@media  screen
+and (min-device-width : 300px)
+and (max-device-width : 500px) {
+    .m1s6p1 .s6b1 {
+    margin-bottom: 0px;
+    background: url('../img/s6img1.jpg') no-repeat left center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s6p1 .s6b1 .container h2{  
+    font-family: "GothamHTF-Bold";
+    font-size: 103%;
+     width: 90%;
+    }
+
+.m1s6p1 .s6b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 83%;
+    width: 65%;
+    }
+.bordLeft {
+    border-left: 0px none;
+}
+
+ .m1s6p1 .dArowh {
+    display: none;  
+}
+.m1s6p1  .vertical-align {
+  display: inline;
+}
+
+}
+
+
+
+
+@media  screen
+and (min-device-width : 100px)
+and (max-device-width : 299px) {
+.m1s6p1 .s6b1 {
+    margin-bottom: 0px;
+    background: url('../img/s6img1.jpg') no-repeat left center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s6p1 .s6b1 .container h2 {  
+    font-family: "GothamHTF-Bold";
+    font-size: 48%;
+    width: 86%;
+    }
+.m1s6p1 .s6b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 42%;
+    width: 60%;
+    }
+.bordLeft {
+    border-left: 0px none;
+}
+
+ .m1s6p1 .dArowh {
+    display: none;  
+}
+
+.m1s6p1  .vertical-align {
+  display: inline;
+}
+
+
+}
