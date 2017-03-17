@@ -22,8 +22,11 @@
       <script type="text/javascript" src="js/wow.js"></script>
       <script type="text/javascript" src="js/plotly-latest.min.js"></script>
       <script type="text/javascript" src="js/jquery.inview.js"></script>
-    <link href="http://vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
-    <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
+      <link href="http://vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
+      <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
+       <script src="js/audioplayer.js"></script>
+      <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script> -->
       <script src="js/script.js"></script>
        <?php
 
@@ -33,7 +36,7 @@ include("mail.php");
 include("db.php");
 $LoadPage = 'home';
 $firstTimeWel=false;
-
+//below is predefiend json for all user inputs. 
 $startData='{';
 $startData.='"m1":{"HR":"0","MIN":"0","complete":"0","status":"active","sections":{';
 $startData.='"s1":{"HR":"0","MIN":"0","complete":"0","response1":"","response2":"","response3":""},';
@@ -68,6 +71,7 @@ $startData.='"s8":{"HR":"0","MIN":"0","complete":"0","response1":"","response2":
 $startData.='"s9":{"HR":"0","MIN":"0","complete":"0","response1":"","response2":"","response3":""}';
 $startData.='}}';
 $startData.='}';
+//Below process is used for get full host path. Ex. echo pathUrl();
 function pathUrl($dir = __DIR__){
     $root = "";
     $dir = str_replace('\\', '/', realpath($dir));
@@ -82,10 +86,11 @@ function pathUrl($dir = __DIR__){
     $root .= '/';
     return $root;
 }
-
+//For all post request.
 if($_POST){
   if(isset($_POST['login']))  
   {
+    //If user comes to login then enter this condition.
     $username = $_POST['username'];
     $password = $_POST['password'];
     $c1 = "select * from users where Email='".$username."' and Pass='".$password."'";
@@ -103,6 +108,7 @@ if($_POST){
   }
   if(isset($_POST['registration']))  
   {
+    //If user want to registration then enter this condition.
     $Fname=$_POST['Fname'];  
     $Lname=$_POST['Lname']; 
     $Email=$_POST['Email']; 
@@ -117,9 +123,11 @@ if($_POST){
     $c1 = "select * from users where Email='".$Email."'";
     $Crun=mysqli_query($dbcon,$c1);
      if ($Crun->num_rows == 0) {
+
        $q1="INSERT INTO users (Fname,Lname,Email,Pass,Org,Age,Gender,City,State,Country,PPRole) VALUES ('$Fname','$Lname','$Email','$Pass','$Org','$Age','$Gender','$City','$State','$Country','PPRole');";  
      $Qrun1=mysqli_query($dbcon,$q1);
         if($Qrun1 == 1){
+        //If user registration data insert perfectly then it will create record row in records table. 
             $q2="INSERT INTO records (Fname,Lname,email,module_Number,module_data,status) VALUES ('$Fname','$Lname','$Email','m1','$startData','active');";
             $Qrun2=mysqli_query($dbcon,$q2);
              session_start();
@@ -130,13 +138,6 @@ if($_POST){
               $_SESSION['Lname']= $Lname;
         }
          $firstTimeWel=true;
-     /* ?>
-       <script>
-      $(document).ready(function(){
-       // app.Alert("You have registered successfully.");
-        });
-      </script>
-      <?php*/
      
     }else{
       ?>
@@ -153,6 +154,7 @@ if($_POST){
 }
  @session_start();
 if(@$_SESSION['username']){
+  //If session is active then find data in records table for this user. 
   $c0 = "select * from records where email='".$_SESSION['username']."' and status='active'";
   $Crun0=mysqli_query($dbcon,$c0);
   $row = $Crun0->fetch_object();
@@ -166,11 +168,12 @@ if(@$_SESSION['username']){
 <script type="text/javascript">
 
 $(document).ready(function() {
+  //After that data convert  string to JSON object .
   app.MData = JSON.parse(<?php echo ($data);?>);
   app.SelecteM = '<?php echo $module_Number;?>';
-  //console.log(app.MData)
-    app.init();
-    app.MDataPopulate();
+  app.init();
+  // below function is used for all module data populate for all three modules.
+  app.MDataPopulate();
     
     /*$(document).userTimeout({
       logouturl: 'Logout.php',
@@ -181,7 +184,7 @@ $(document).ready(function() {
 </script>
 <?php }else{?>
 <script type="text/javascript">
-
+//If session is inactive then call simple init function. 
 $(document).ready(function() {
         app.init();
 });
@@ -195,31 +198,35 @@ $(document).ready(function() {
     </div>
    <body>
 <?php 
-
+// below is header file include.
 include 'header.php';
+// if user is enter the section parts then call below condition
 if(@isset($_GET['id'])) {
   ?>
 <script type="text/javascript">
 $(document).ready(function() {
-  // app.init();
+  // this is used for modules button active and deactive stage in menu module section.
     var s = app.qs["id"][6];
     app.SelecteM = app.qs["id"][0]+app.qs["id"][1];
-    var c=parseInt(app.qs["id"][1])-1;
-     $(".allModule1 .btn").eq(c).addClass('act');
-     $(".allModule2 .btn").eq(c).addClass('act');
-     $(".allModule3 .btn").eq(c).addClass('act');
+    var c = parseInt(app.qs["id"][1])-1;
+     $(".allModule1 .btn").eq(c).addClass('act1');
+     $(".allModule2 .btn").eq(c).addClass('act1');
+     $(".allModule3 .btn").eq(c).addClass('act1');
+  // below function is used for all sections data populate for all three modules.
     app.SDataPopulate(s);
-  
 });
 </script>
   <?php
 try {
+  //if users enter section part then call below made path.
    include 'view/'.@$_GET['id'].'.php';
 } catch(Exception $e) {
+  //if path is not exist then user redirect to homepage.
    include 'view/'.$LoadPage.'.php';
 }
   
 }else{
+  //if session is inactive then user also redirect to homepage.
   include 'view/'.$LoadPage.'.php';
 }
 //include 'footer.php';
