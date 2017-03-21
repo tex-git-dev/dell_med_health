@@ -3,27 +3,31 @@
 ?>
  <script src="js/bootstrap-session-timeout.js"></script>
 <script type="text/javascript">
-
+//Below function used for forgot popup open.
 app.Forgot=function(){
-  
-   $('#forgot').modal({show: 'false'});
-    $('#login').modal('hide');
-  
+  $('#forgot').modal({show: 'false'});
+  $('#login').modal('hide');
 } 
+//Below function used for FAQ popup open.
 app.OpenFAQ=function(){
   $(".FAQ").toggle();
   var shows =$(".FAQ").css('display');
     var h = $(document).height()-80;
     $(".disF").css('display',shows).css({"height":h+'px'});
 }
+//Below function used for the module or section menus popup open.
 app.OpenMS=function(){
   var ss= "<?php  echo @$_SESSION['username'];?>";
    if(ss){
+    // if session is active then open module or section popup open.
       $(".op").toggle();
       var h = $(document).height()-80;
       var shows =$(".op").css('display');
       $(".disS").css('display',shows).css({"height":h+'px'});
+      var hh = $(".op").height();
+      $(".r2").css({'min-height':hh+'px'});
    }else{
+    // if session is inactive then open login popup open.
         $('#registration').modal('hide');
         $('#login').modal({show: 'false'});
         $('#login').on('shown.bs.modal', function () {
@@ -31,14 +35,15 @@ app.OpenMS=function(){
         });
     }
 }
+//Below function used for registration popup open.
   app.RegiPage=function(){
     $('#login').modal('hide');
-
+    
     $('#registration').modal({show: 'false'});
     $('#registration').on('shown.bs.modal', function () {
     $('body').addClass('modal-open');
     });
-   
+   $('#Fname').focus();
 }
 </script>
 <div class="headers">
@@ -59,7 +64,7 @@ app.OpenMS=function(){
                 <li>
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle">Sign in</a>
                 </li>
-                <li class='line'><span>|</span></li>
+                <li class='linea'><span>|</span></li>
                 <li>
                     <a href="javascript:app.RegiPage()" class="dropdown-toggle">Sign up</a>
                 </li>
@@ -69,7 +74,7 @@ app.OpenMS=function(){
                     <a href="javascript:void(0)" class="dropdown-toggle">
                     Welcome, <?php echo $_SESSION['Fname'];?></a>
                 </li>
-                  <li class='line'><span>|</span></li>
+                  <li class='linea'><span>|</span></li>
                 <li>
                     <a href="Logout.php" class="dropdown-toggle">Logout</a>
                 </li>
@@ -79,11 +84,12 @@ app.OpenMS=function(){
            
 
                 <li  class="active mod">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><strong></strong><span class="glyphicon glyphicon-menu-down"></span> MODULES </strong></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><strong><span class="glyphicon glyphicon-menu-down"></span> MODULES </strong></a>
                 </li>
                 <li class="faqBtn">
                     <a href="javascript:app.OpenFAQ()" class="dropdown-toggle"> <i style=" vertical-align: middle;" class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i> </a>
                 </li>
+
             </ul>
              <?php }else{?>
             <ul id="section" class="nav navbar-nav navbar-right">
@@ -95,12 +101,12 @@ app.OpenMS=function(){
 
 				 ?>
                 <li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 1 | Section 1 </span><span class="s_bottom">Introduction to Value Based Healthcare</span></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 1 | Section 1 </span><span class="s_bottom">There’s a Better Way</span></a>
                 </li>
 					
 					<?php }else if($m == "m1s2p1"){ ?>
 					<li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 1 | Section 2 </span><span class="s_bottom">Story from the Frontlines: The Human Cost..</span></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 1 | Section 2 </span><span class="s_bottom">Story from the Frontlines: The Human Cost...</span></a>
                 </li>
 					<?php }else if($m == "m1s3p1"){ ?>
 					<li  class="active section">
@@ -149,7 +155,7 @@ app.OpenMS=function(){
                 </li>
                  <?php }else if($m == "m2s5p1"){ ?>
                 <li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 5 </span><span class="s_bottom">Using Measures Frameworks to Improve Outcomes...</span></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 5 </span><span class="s_bottom">Using Measures Frameworks to Improve Outcomes</span></a>
                 </li>
                   <?php }else if($m == "m2s6p1"){ ?>
                 <li  class="active section">
@@ -212,7 +218,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss vertical-align bb bt btnS1 act">
                       <div class="col-sm-2"><strong>01.</strong></div>
-                        <div class="col-sm-7"><strong>Introduction to Value Based Healthcare</strong></div>
+                        <div class="col-sm-7"><strong>There’s a Better Way</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -306,15 +312,15 @@ app.OpenMS=function(){
                     <div class="col-sm-7">
                       <div class="row text-center">
                           <div class="col-sm-4">
-                              <button  type="button" class="btn btn-default">Module 1</button>
+                              <button  type="button" class="btn btn-default center-block">Module 1</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 2</button>
+                            <button  type="button" class="btn btn-default center-block">Module 2</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 3</button>
+                            <button  type="button" class="btn btn-default center-block">Module 3</button>
                           </div>
-                      </div>
+                      </div>                      
                     </div>
                      <div class="col-sm-3"></div>
                 </div>
@@ -377,7 +383,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss  vertical-align bb btnS5">
                         <div class="col-sm-2 "><strong>05.</strong></div>                
-                        <div class="col-sm-7"><strong>Using Measures Frameworks to Improve Outcomes that Matter to Patients</strong></div>
+                        <div class="col-sm-7"><strong>Using Measures Frameworks to Improve Outcomes</strong></div>
                          <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -421,13 +427,13 @@ app.OpenMS=function(){
                     <div class="col-sm-7">
                       <div class="row text-center">
                           <div class="col-sm-4">
-                              <button  type="button" class="btn btn-default">Module 1</button>
+                              <button  type="button" class="btn btn-default center-block">Module 1</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 2</button>
+                            <button  type="button" class="btn btn-default center-block">Module 2</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 3</button>
+                            <button  type="button" class="btn btn-default center-block">Module 3</button>
                           </div>
                       </div>
                     </div>
@@ -544,13 +550,13 @@ app.OpenMS=function(){
                     <div class="col-sm-7">
                       <div class="row text-center">
                           <div class="col-sm-4">
-                              <button  type="button" class="btn btn-default">Module 1</button>
+                              <button  type="button" class="btn btn-default center-block">Module 1</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 2</button>
+                            <button  type="button" class="btn btn-default center-block">Module 2</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 3</button>
+                            <button  type="button" class="btn btn-default center-block">Module 3</button>
                           </div>
                       </div>
                     </div>
@@ -779,8 +785,8 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Examine resources for defining and measuring patient outcomes;
-                            Apply a measures framework to evaluate the success of health care value programs from the perspective of patient outcomes.
+                             Examine resources for defining and measuring patient outcomes;<br><br>
+                            Apply a measures framework to evaluate the success of health care value programs from the perspective of patient outcomes.<br><br>
                             Appreciate and reflect on how patient outcomes define physicians’ success.
 
                           </div>
@@ -1218,7 +1224,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="col-sm-6">
                  <div class="form-group">
-                    <input type="text" name="Lname" id="Lname" class="form-control text-center c" placeholder="Last Name" required="" autofocus="">
+                    <input type="text" name="Lname" id="Lname" class="form-control text-center c" placeholder="Last Name" required="" >
                     </div>
                 </div>
              </div>
@@ -1226,7 +1232,7 @@ app.OpenMS=function(){
              <div class="row">
                 <div class="col-sm-12">
                  <div class="form-group">
-                    <input type="email" name="Email" id="Email" class="form-control text-center c" placeholder="Email ID" required="" autofocus="">
+                    <input type="email" name="Email" id="Email" class="form-control text-center c" placeholder="Email ID" required="" >
                     </div>
                 </div>
              </div>
@@ -1234,12 +1240,12 @@ app.OpenMS=function(){
               <div class="row">
                 <div class="col-sm-6">
                  <div class="form-group">
-                    <input type="password" name="Pass" id="Pass" class="form-control text-center c" placeholder="Password" required="" autofocus="">
+                    <input type="password" name="Pass" id="Pass" class="form-control text-center c" placeholder="Password" required="" >
                     </div>
                 </div>
                 <div class="col-sm-6">
                  <div class="form-group">
-                    <input type="password" name="Passc" id="Passc" class="form-control text-center c" placeholder="Confirm Password" required="" autofocus="">
+                    <input type="password" name="Passc" id="Passc" class="form-control text-center c" placeholder="Confirm Password" required="" >
                     </div>
                 </div>
              </div>
@@ -1247,7 +1253,7 @@ app.OpenMS=function(){
              <div class="row">
                 <div class="col-sm-12">
                  <div class="form-group">
-                    <input type="text" name="Org" id="Org" class="form-control text-center c" placeholder="Organization" required="" autofocus="">
+                    <input type="text" name="Org" id="Org" class="form-control text-center c" placeholder="Organization" required="" >
                     </div>
                 </div>
              </div>
@@ -1255,7 +1261,7 @@ app.OpenMS=function(){
               <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <input type="number" name="Age" id="Age" class="form-control text-center c" placeholder="Age in years" required="" autofocus="">
+                    <input type="number" name="Age" id="Age" class="form-control text-center c" placeholder="Age in years" required="" >
                      </div>
                 </div>
              </div>
@@ -1280,21 +1286,21 @@ app.OpenMS=function(){
             <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <input type="text" name="City" id="City" class="form-control text-center c" placeholder="City" required="" autofocus="">
+                    <input type="text" name="City" id="City" class="form-control text-center c" placeholder="City" required="">
                      </div>
                 </div>
              </div>
                <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <input type="text" name="State" id="State" class="form-control text-center c" placeholder="State" required="" autofocus="">
+                    <input type="text" name="State" id="State" class="form-control text-center c" placeholder="State" required="" >
                      </div>
                 </div>
              </div>
               <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <input type="text" name="Country" id="Country" class="form-control text-center c" placeholder="Country" required="" autofocus="">
+                    <input type="text" name="Country" id="Country" class="form-control text-center c" placeholder="Country" required="" >
                      </div>
                 </div>
              </div>
@@ -1593,7 +1599,7 @@ app.OpenMS=function(){
         <div class="row PRi ">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
-                  <input type="password" name="RpasswordC" id="RpasswordC" class="inp form-control text-center" placeholder="Confirmed Password" required="" autofocus="">
+                  <input type="password" name="RpasswordC" id="RpasswordC" class="inp form-control text-center" placeholder="Confirmed Password" required="" >
             </div>
             <div class="col-sm-3"></div>
         </div>
