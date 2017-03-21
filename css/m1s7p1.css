@@ -6,7 +6,8 @@
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
-    background-color: #060;    color: white;
+    background-color: #060; 
+       color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
     background-color: #fff;
     min-height: 500px;
@@ -35,6 +36,12 @@
     text-shadow: none;
     width: 28%;
     font-family: "GothamHTF-Bold";
+}
+
+.m1s7p1 .modal-header {
+
+    border-bottom: 0 none;
+    color: #fff !important;
 }
 
 .m1s7p1 .bg-3  h3 {
@@ -67,10 +74,9 @@
     background-size: cover;  
     height: auto;    
     width: auto;
-   /* min-height: 550px;*/
-    /*padding-top: 80px;*/
     padding-bottom: 80px;
 }
+
 .m1s7p1 .m7b3 {   
     height: 100%;
   }
@@ -189,16 +195,16 @@
 }
 .m1s7p1 .carousel-control.right {
     background-image: none;
-    line-height: 320px;
-    margin-right: 190px;
+    line-height: 380px;
+    margin-right: 0px;    
 }
 .m1s7p1 .carousel-control.left {
     background-image: none;
-    line-height: 320px;
-    margin-left: 190px;
+    line-height: 380px;
+    margin-left: 0px;    
 }
 .m1s7p1 .carousel-indicators {
-    bottom: 51px ;
+    bottom: -50px;
 }
 .m1s7p1 .carousel-indicators .active {
     background-color: #ccc;
@@ -331,6 +337,18 @@ top: 0px;
     padding-bottom: 75px !important;
 }
 
+.m1s7p1 .m7b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s7img6.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;
+    padding-bottom: 80px;
+}
+
 }
 
 
@@ -425,6 +443,18 @@ and (max-device-width : 765px) {
     display: none;  
 }
 
+.m1s7p1 .m7b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s7img6.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;
+    padding-bottom: 80px;
+}
+
 }
 
 
@@ -505,6 +535,18 @@ and (max-device-width : 500px) {
 
  .m1s7p1 .dArowh {
     display: none;  
+}
+
+.m1s7p1 .m7b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s7img6.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;
+    padding-bottom: 80px;
 }
 
 }
@@ -596,6 +638,18 @@ and (max-device-width : 299px) {
 
  .m1s7p1 .dArowh {
     display: none;  
+}
+
+.m1s7p1 .m7b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s7img6.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;
+    padding-bottom: 80px;
 }
 
 }

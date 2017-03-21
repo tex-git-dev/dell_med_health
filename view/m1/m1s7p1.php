@@ -66,7 +66,7 @@ include("view/cjs.php");
                     </div>
                     <div class="col-sm-5"></div>
                 </div></a>
-                <a target="_blank" style="color:#fff" href="https://drive.google.com/open?id=0B1wtKdTi8fzAVFNES0YxSUFBclE" >
+                <a target="_blank" style="color:#fff" href="http://jamanetwork.com/journals/jama/fullarticle/2552208" >
                 <div class="row">         
                   <br/>                           
                     <div class="col-sm-7">                      
@@ -76,7 +76,7 @@ include("view/cjs.php");
                     <div class="col-sm-5 text-right"><img src="img/s7img3.png" class="img-responsive"  width="154"></div>
                 </div>
                 </a>
-                <a target="_blank" style="color:#f68122" href="https://drive.google.com/open?id=0B1wtKdTi8fzAVFNES0YxSUFBclE" >
+                <a target="_blank" style="color:#f68122" href="http://jamanetwork.com/journals/jama/fullarticle/2552208" >
                 <div class="row">
                     <div class="col-sm-7">                       
                       <f><p class="orng">&gt; Read Article</p></f>
@@ -89,18 +89,121 @@ include("view/cjs.php");
          <f><p class="pd1">After teams defined the key metrics for perfect care, multidisciplinary value improvement teams that included clinicians, administrative leaders, and process engineers, used web-based visualization tools to view and monitor care costs and quality metrics. These data provided feedback to individual clinicians and were aggregated at the service-line level to identify areas with broad variations in cost and/or quality. </p></f>
          <f><p>In 2016, The University of Utah Health Care system published results in JAMA from three selected clinical projects that resulted from the VDO program. These clinical projects focused on total joint replacement, lab testing costs, and sepsis. For total joint replacement, the quality of care improved, with surgeons achieving a “perfect care” score for their patients 54% of the time at baseline compared to 80% at one year into implementation. The costs for total joint replacement also dropped 11% compared to baseline. Hospitalists decreased the costs of lab testing per day from a mean of $138 at baseline to $123 in the evaluation period, saving an estimated $250,000 each year for the hospital. The pilot sepsis project improved care quality by shortening the mean time to antibiotic administration following the first clinical signs of sepsis from 7.8 hours to 3.6 hours. </p></f> 
      </div>
-      
-
-
+     <br>
 
 <div id="s7img4_1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+    <div class="modal-content"  style="background:#3b4254; padding-bottom: 50px !important;">
      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <button type="button" class="close" data-dismiss="modal" style="color:#fff; opacity: 1 !important;">&times;</button>
       </div>
         <div class="modal-body">
-            <img src="img/s7img4_1.png"  class="img-responsive">
+ <div class="row">
+          <div class="col-sm-12">          
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2" ></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+                  <li data-target="#myCarousel" data-slide-to="5"></li>
+               </ol>
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                        <div class="row">
+                             <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-10" >
+                                         <img  src="img/s7img4_1.png" class="img-responsive center-block"/>                                    
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                 </div>
+                              </div>
+                        </div>
+                   </div>
+
+                  <div class="item">
+                      <div class="row">                            
+                             <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-10 img-wrapper">
+                                        <img  src="img/s7img4_2.png" class="img-responsive center-block"/>
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                 </div>
+                              </div>                             
+                        </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">                            
+                             <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-10 img-wrapper">
+                                        <img  src="img/s7img4_3.png" class="img-responsive center-block"/>
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                 </div>
+                              </div>                            
+                        </div>
+                  </div>                 
+                  <div class="item">
+                      <div class="row">                           
+                             <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-10 img-wrapper">
+                                        <img  src="img/s7img4_5.png" class="img-responsive center-block"/>
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                 </div>
+                              </div>                             
+                        </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">                           
+                             <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-10 img-wrapper">
+                                        <img  src="img/s7img4_6.png" class="img-responsive center-block"/>
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                 </div>
+                              </div>                             
+                        </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">                            
+                             <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-10 img-wrapper">
+                                        <img  src="img/s7img4_7.png" class="img-responsive center-block"/>
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                 </div>
+                              </div>                             
+                        </div>
+                  </div>
+
+
+               </div>
+               <!-- Left and right controls -->
+               <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+               <i  style="color:#fff;" class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+               </a>
+               <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" >
+              <i  style="color:#fff;" class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+               </a>
+            </div>
+        
+       </div> </div>
         </div>
     </div>
   </div>
@@ -129,18 +232,7 @@ include("view/cjs.php");
     </div>
   </div>
 </div>
-<!-- <div id="s7img4_4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-     <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-        <div class="modal-body">
-            <img src="img/s7img4_4.png"  class="img-responsive">
-        </div>
-    </div>
-  </div>
-</div> -->
+
 <div id="s7img4_5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -178,147 +270,22 @@ include("view/cjs.php");
   </div>
 </div>
 
- <div class="conmyCarousel container bg-5 text-center " >
-       <br>
-         <br>
-         <div class="row text-left">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-               <!-- Indicators -->
-               <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2" ></li>
-                  <li data-target="#myCarousel" data-slide-to="3"></li>
-                  <li data-target="#myCarousel" data-slide-to="4"></li>
-                  <li data-target="#myCarousel" data-slide-to="5"></li>
-               </ol>
-               <!-- Wrapper for slides -->
-               <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                        <div class="row">
-                            <div class="col-sm-2"></div>
-                             <div class="col-sm-8">
-                                <div class="row">
-                                    <div class="col-sm-2"></div>
-                                    <div class="col-sm-8" >
-                                         <img data-toggle="modal" data-target="#s7img4_1" src="img/s7img4_1.png" class="img-responsive center-block"/>                                    
-                                    </div>
-                                    <div class="col-sm-2"></div>
-                                 </div>
-                              </div>
-                             <div class="col-sm-2"></div>
-                        </div>
-                   </div>
-
-                  <div class="item">
-                      <div class="row">
-                            <div class="col-sm-2"></div>
-                             <div class="col-sm-8">
-                                <div class="row">
-                                    <div class="col-sm-2"></div>
-                                    <div class="col-sm-8 img-wrapper">
-                                        <img data-toggle="modal" data-target="#s7img4_2" src="img/s7img4_2.png" class="img-responsive center-block"/>
-                                    </div>
-                                    <div class="col-sm-2"></div>
-                                 </div>
-                              </div>
-                             <div class="col-sm-2"></div>
-                        </div>
-                  </div>
-                  <div class="item">
-                      <div class="row">
-                            <div class="col-sm-2"></div>
-                             <div class="col-sm-8">
-                                <div class="row">
-                                    <div class="col-sm-2"></div>
-                                    <div class="col-sm-8 img-wrapper">
-                                        <img data-toggle="modal" data-target="#s7img4_3" src="img/s7img4_3.png" class="img-responsive center-block"/>
-                                    </div>
-                                    <div class="col-sm-2"></div>
-                                 </div>
-                              </div>
-                             <div class="col-sm-2"></div>
-                        </div>
-                  </div>
-                 <!--  <div class="item">
-                      <div class="row">
-                            <div class="col-sm-2"></div>
-                             <div class="col-sm-8">
-                                <div class="row">
-                                    <div class="col-sm-2"></div>
-                                    <div class="col-sm-8 img-wrapper">
-                                        <img data-toggle="modal" data-target="#s7img4_4" src="img/s7img4_4.png" class="img-responsive center-block"/>
-                                    </div>
-                                    <div class="col-sm-2"></div>
-                                 </div>
-                              </div>
-                             <div class="col-sm-2"></div>
-                        </div>
-                  </div> -->
-                  <div class="item">
-                      <div class="row">
-                            <div class="col-sm-2"></div>
-                             <div class="col-sm-8">
-                                <div class="row">
-                                    <div class="col-sm-2"></div>
-                                    <div class="col-sm-8 img-wrapper">
-                                        <img data-toggle="modal" data-target="#s7img4_5" src="img/s7img4_5.png" class="img-responsive center-block"/>
-                                    </div>
-                                    <div class="col-sm-2"></div>
-                                 </div>
-                              </div>
-                             <div class="col-sm-2"></div>
-                        </div>
-                  </div>
-                  <div class="item">
-                      <div class="row">
-                            <div class="col-sm-2"></div>
-                             <div class="col-sm-8">
-                                <div class="row">
-                                    <div class="col-sm-2"></div>
-                                    <div class="col-sm-8 img-wrapper">
-                                        <img data-toggle="modal" data-target="#s7img4_6" src="img/s7img4_6.png" class="img-responsive center-block"/>
-                                    </div>
-                                    <div class="col-sm-2"></div>
-                                 </div>
-                              </div>
-                             <div class="col-sm-2"></div>
-                        </div>
-                  </div>
-                  <div class="item">
-                      <div class="row">
-                            <div class="col-sm-2"></div>
-                             <div class="col-sm-8">
-                                <div class="row">
-                                    <div class="col-sm-2"></div>
-                                    <div class="col-sm-8 img-wrapper">
-                                        <img data-toggle="modal" data-target="#s7img4_7" src="img/s7img4_7.png" class="img-responsive center-block"/>
-                                    </div>
-                                    <div class="col-sm-2"></div>
-                                 </div>
-                              </div>
-                             <div class="col-sm-2"></div>
-                        </div>
-                  </div>
-
-
-               </div>
-               <!-- Left and right controls -->
-               <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-               <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
-               </a>
-               <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
-               </a>
-            </div>
-         </div>
-      </div>
-
-
+  <div class="row">
+      <div class="col-sm-2"></div>
+        <div class="col-sm-8" >
+        <img data-toggle="modal" data-target="#s7img4_1" src="img/s7img4_1.png" class="img-responsive center-block" style="width:50%; cursor:pointer;"/>
+        </div>
+      <div class="col-sm-2"></div>
+  </div>
+<br>  
+  <div class="container text-center">
+      <f><p style="color:#2cb69d;">Select image for slideshow of University of Utah's VDO tool.</p></f>
+  </div>
+<br>
 
 
       <!-- Done below-->
-      <div class="jumbotron m7b2">                              
+      <div class="jumbotron m7b2">
           <f><h2 class="text-center">Learn More</h2></f>
           <br>
            <div class="container m7b3">
@@ -389,19 +356,23 @@ include("view/cjs.php");
 
 <footer class="container-fluid">         
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m1/m1s6p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 6</span>
-                <span class="sp1"><strong>Understanding Measures</strong></span></a>
+                <span class="sp1"><strong>Focusing on Outcomes</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m1/m1s8p1"><span class="ssp2">MODULE 1 | Section 8</span>
                 <span class="sp2"><strong>Using Data To Identify Opportunities For Improving Care For Patients</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
       </footer> 
 
 

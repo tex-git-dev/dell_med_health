@@ -1,7 +1,15 @@
+.m1s5p1 .item a {
+color: #f58320;
+text-decoration: none;
+cursor: pointer;
+line-height: 22px;    
+}
+
 .m1s5p1 .s5b3{
     padding-bottom: 0px;
     padding-top: 0px;
 }
+
 .m1s5p1 div#my_favorite_latin_words span.w10 {
   font-size: 450%;
   color: #0cf;
@@ -44,21 +52,14 @@
 }
 
 /*module1 section1 css*/
+
 .m1s5p1 .container .carouselC {
   height: 0px;
   visibility: hidden;
 }
-.m1s5p1 #mc1 .modal-header button {
-    color: #000 !important;
-}
-.m1s5p1 #mc1 .modal-content {
-    color: #8e9091 !important;
-}
-.m1s5p1 .item a {
-    color: #f58320;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 22px;
+.m1s5p1 .container .carouselC1 {
+  height: 0px;
+  visibility: hidden;
 }
 .m1s5p1 .container .carousel-inner {
    
@@ -72,33 +73,40 @@
     padding-left: 30px;
     padding-right: 30px;
 }
-.m1s5p1 .container #myCarousel2 .left{
+.m1s5p1 .container .carousel .left.carousel-control{
     margin-left: -28px;
     height: 10px;
+    top: 33%;
 }
-.m1s5p1 .container #myCarousel2 .left span{
+.m1s5p1 .container .carousel .left.carousel-control span{
  position: absolute;
-top: 1234%;
+   
 }
-.m1s5p1 .container #myCarousel2 .right{
+.m1s5p1 .container .carousel .right.carousel-control{
    margin-right: -14px;
     height: 10px;
+      top: 33%;
 }
-.m1s5p1 .container #myCarousel2 .right span{
+.m1s5p1 .container .carousel .right.carousel-control span{
     position: absolute;
-    top: 1234%;
+    
 }
-.m1s5p1 .container #myCarousel2 .carousel-inner  .item{
+.m1s5p1 .container .carousel .carousel-inner  .item{
     min-height: 200px;
 }
-.m1s5p1 .container #myCarousel2 .carousel-inner  .item .well{
+.m1s5p1 .container .carousel .carousel-inner  .item .well{
     background: #fff none repeat scroll 0 0;
     border-radius: 0;
     color: #8e9091;
 }
-.m1s5p1 .container #myCarousel2 .carousel-inner  .item .well .iHeight{
+.m1s5p1 .container .carousel .carousel-inner  .item .well .iHeight{
    max-height: 155px;
     overflow: hidden;
+    min-height: 155px !important;
+    -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .m1s5p1 .b1 {
@@ -172,7 +180,7 @@ top: 1234%;
     margin-left: -30%;   
     font-family: "GothamHTF-Medium";        
 }
-.m1s5p1 .container ol {
+.m1s5p1 .s1bgcol6 ol {
     margin-left: -22px;   
     font-family: "GothamHTF-Medium";        
 }
@@ -232,16 +240,16 @@ top: 1234%;
     top: 100px;
     z-index: 9999999;
 }
-.m1s5p1 .s1bgcol2{
+.m1s5p1 .s1bgcol2 {
     background: url('../img/s5img4.png')  no-repeat center center; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-    /* width: 100%; */
-    padding-top: 60px;
-     padding-bottom: 60px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
+
 
 .m1s5p1 .s1bgcol3{
     background-color:#EAEAEA;
@@ -339,10 +347,18 @@ margin-left: 0;
 }
 
 
-canvas {
+#myCanvas {
   /*background-color: blue; */
   width: 100%;
   height: auto;
+    border: 0px solid #000;
+    position: relative;
+    background-image: url('../img/s5img2.png');
+    background-size: 100% auto !important;
+    background-size: 80% auto !important;
+background-repeat: no-repeat;
+background-position:40%; 
+
 }
 
 .modal-title {
@@ -361,7 +377,12 @@ canvas {
 .modal-content {
     color: #fff !important;
 }
-
+#mc1 .modal-header button {
+    color: #000 !important;
+}
+#mc1 .modal-content {
+    color: #999 !important;
+}
 
 @media screen
 and (min-device-width : 766px)
@@ -400,6 +421,8 @@ padding-right: : 10px;
 .m1s5p1 .s1hide {
     display: none;
 }
+
+
 
 }
 

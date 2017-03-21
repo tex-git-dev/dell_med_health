@@ -1,3 +1,11 @@
+
+.m2s7p1 .item a {
+    color: #f58320;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 22px;    
+}
+
 .m2s7p1 .wCc{
     width: 100%;  
     color: #fff !important; 
@@ -71,21 +79,19 @@ background: #ee604c;
 }
 
 /*module1 section1 css*/
-.m2s7p1 .container .carouselC {
-  height: 0px;
-  visibility: hidden;
-}
-.m2s7p1 #mc1 .modal-header button {
-    color: #000 !important;
-}
-.m2s7p1 #mc1 .modal-content {
-    color: #8e9091 !important;
-}
-.m2s7p1 .item a {
+.m2s7p1 .container .carousel  .item a {
     color: #f58320;
     text-decoration: none;
     cursor: pointer;
     line-height: 22px;
+}
+.m2s7p1 .container .carouselC {
+  height: 0px;
+  visibility: hidden;
+}
+.m2s7p1 .container .carouselC1 {
+  height: 0px;
+  visibility: hidden;
 }
 .m2s7p1 .container .carousel-inner {
    
@@ -99,33 +105,40 @@ background: #ee604c;
     padding-left: 30px;
     padding-right: 30px;
 }
-.m2s7p1 .container #myCarousel2 .left{
+.m2s7p1 .container .carousel .left.carousel-control{
     margin-left: -28px;
     height: 10px;
+    top: 33%;
 }
-.m2s7p1 .container #myCarousel2 .left span{
+.m2s7p1 .container .carousel .left.carousel-control span{
  position: absolute;
-top: 1234%;
+   
 }
-.m2s7p1 .container #myCarousel2 .right{
+.m2s7p1 .container .carousel .right.carousel-control{
    margin-right: -14px;
     height: 10px;
+      top: 33%;
 }
-.m2s7p1 .container #myCarousel2 .right span{
+.m2s7p1 .container .carousel .right.carousel-control span{
     position: absolute;
-    top: 1234%;
+    
 }
-.m2s7p1 .container #myCarousel2 .carousel-inner  .item{
+.m2s7p1 .container .carousel .carousel-inner  .item{
     min-height: 200px;
 }
-.m2s7p1 .container #myCarousel2 .carousel-inner  .item .well{
+.m2s7p1 .container .carousel .carousel-inner  .item .well{
     background: #fff none repeat scroll 0 0;
     border-radius: 0;
     color: #8e9091;
 }
-.m2s7p1 .container #myCarousel2 .carousel-inner  .item .well .iHeight{
-   max-height: 155px;
+.m2s7p1 .container .carousel .carousel-inner  .item .well .iHeight{
+    max-height: 155px;
     overflow: hidden;
+    min-height: 155px !important;
+    -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 
@@ -398,13 +411,13 @@ and (max-device-width : 1000px) {
 padding-right: : 10px;
    
 }
-.m2s7p1 .jumbotron .container h2{
+.m2s7p1 .b1 .container h2{
    font-family: "GothamHTF-Bold";
     font-size: 124%;
     width: 70%;
  }
 
-.m2s7p1 .jumbotron .container p{
+.m2s7p1 .b1 .container p{
     font-family: "GothamHTF-Bold";
     font-size: 107%;
     width: 42%;
@@ -444,12 +457,12 @@ and (max-device-width : 765px) {
 padding-right: : 10px;
    
 }
-     .m2s7p1 .jumbotron .container h2{
+     .m2s7p1 .b1 .container h2{
          font-family: "GothamHTF-Bold";
     font-size: 124%;
     width: 70%;
     }
-    .m2s7p1 .jumbotron .container p{
+    .m2s7p1 .b1 .container p{
          font-size: 107%;
     width: 42%;
     font-family: "GothamHTF-Bold";
@@ -491,13 +504,13 @@ and (max-device-width : 500px) {
 padding-right: : 10px;
    
 }
-.m2s7p1 .jumbotron .container h2{  
+.m2s7p1 .b1 .container h2{  
    font-family: "GothamHTF-Bold";
     font-size: 103%;
      width: 90%;
     }
 
-.m2s7p1 .jumbotron .container p{
+.m2s7p1 .b1 .container p{
      font-family: "GothamHTF-Bold";
     font-size: 83%;
     width: 65%;
@@ -537,13 +550,13 @@ and (max-device-width : 299px) {
 padding-right: : 10px;
    
 }
- .m2s7p1 .jumbotron .container h2 {  
+ .m2s7p1 .b1 .container h2 {  
    font-family: "GothamHTF-Bold";
     font-size: 48%;
     width: 86%;
     }
 
-.m2s7p1 .jumbotron .container p {
+.m2s7p1 .b1 .container p {
     font-family: "GothamHTF-Bold";
     font-size: 42%;
     width: 60%;

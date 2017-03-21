@@ -113,7 +113,7 @@
 
 @media screen
 and (min-device-width : 766px)
-and (max-device-width : 1000px) {
+and (max-device-width : 1024px) {
 .m2s3p1 .b1 {
         margin-bottom: 0px;
     background: url('../img/m2s3img1.png') no-repeat center center; 
@@ -143,6 +143,23 @@ and (max-device-width : 1000px) {
     display: none;
 }
 
+.m2s3p1 .jumbotron .m2s3b7 .panel-footer {
+    border-top: none !important;
+    min-height: 265px;    
+    padding-top: 15px;
+}
+
+.m2s3p1 .m2s3b6 {
+     margin-bottom: 0px;
+    background: url('../img/m2s3p2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    min-height: 830px;
+    padding-top: 80px;
+}
 
 
 }
@@ -181,6 +198,22 @@ and (max-device-width : 765px) {
 
 .m2s3p1 .dArowh {
     display: none;  
+}
+
+.m2s3p1 .jumbotron .m2s3b7 .panel-footer {
+    border-top: none !important;    
+    border-bottom: 10px solid #fff !important;        
+}
+.m2s3p1 .m2s3b6 {
+     margin-bottom: 0px;
+    background: url('../img/m2s3p2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    min-height: 830px;
+    padding-top: 80px;
 }
 
 }
@@ -225,6 +258,21 @@ and (max-device-width : 500px) {
     display: none;  
 }
 
+.m2s3p1 .jumbotron .m2s3b7 .panel-footer {
+    border-top: none !important;    
+    border-bottom: 10px solid #fff !important;        
+}
+.m2s3p1 .m2s3b6 {
+     margin-bottom: 0px;
+    background: url('../img/m2s3p2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    min-height: 830px;
+    padding-top: 80px;
+}
 
 }
 
@@ -266,5 +314,23 @@ and (max-device-width : 299px) {
 .m2s3p1 .dArowh {
     display: none;  
 }
+
+.m2s3p1 .jumbotron .m2s3b7 .panel-footer {
+    border-top: none !important;    
+    border-bottom: 10px solid #fff !important;    
+}
+
+.m2s3p1 .m2s3b6 {
+     margin-bottom: 0px;
+    background: url('../img/m2s3p2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    min-height: 830px;
+    padding-top: 80px;
+}
+
 
 }

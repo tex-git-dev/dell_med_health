@@ -52,10 +52,10 @@ include("view/cjs.php");
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Module1Final.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/Module 1 Final.mp4" type="video/mp4"></source>
-                  <source src="media/Module 1 Final.webm" type="video/webm"></source>
-                  <source src="media/Module 1 Final.ogv" type="video/ogg"></source>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod2_Sec3.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="media/Mod2_Sec3.mp4" type="video/mp4"></source>
+                  <source src="media/Mod2_Sec3.webm" type="video/webm"></source>
+                  <source src="media/Mod2_Sec3.ogv" type="video/ogg"></source>
                    <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>
@@ -63,9 +63,9 @@ include("view/cjs.php");
          <div class="col-sm-2"></div>
       </div>
       <br>
-       <br>
+      <br>
     </div>
-  <div  class="container m2s3b3">
+  <div class="container m2s3b3">
         <f><p>True measurement of outcomes that are important to the patient requires a change in the focus of the questions we ask them. Maureen Bisognano from the Institute for Healthcare Improvement has popularized the shift in asking, “What matters to you?” instead of, “What’s the matter?”<sup>1</sup> </p></f>
         <div class="line4"></div>
     
@@ -151,30 +151,40 @@ include("view/cjs.php");
 <footer class="container-fluid">
          
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m2/m2s2p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 2</span>
                 <span class="sp1"><strong>Story From the Frontlines</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m2/m2s4p1"><span class="ssp2">MODULE 2 | Section 4</span>
                 <span class="sp2"><strong>Patient Outcomes</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
       </footer> 
       <script type="text/javascript">
          $(document).ready(function(){
-         $('.video-js').inview({
-            'onEnter': function($object) {
-                $('video').trigger('play');
-              },
-              'onLeave': function($object) {
-                $('video').trigger('pause');
-              }
-            });
-        });
-      </script>
-  
+  var flagvd = false;
+     $('.video-js').inview({
+        'onEnter': function($object) {
+          if(flagvd == false){
+            $('video').trigger('play');
+            flagvd=true;
+          }           
+
+          },
+          'onLeave': function($object) {
+            //$('video').trigger('pause');
+          }
+
+      });
+  });
+</script>

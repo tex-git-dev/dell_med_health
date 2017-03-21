@@ -1,15 +1,13 @@
 @media  screen
 and (min-device-width : 300px)
 and (max-device-width : 500px) {
-   .allModule .btn{
-   width: 100px;
-margin-bottom: 10px;
+
+.allModule1 .btn,.allModule2 .btn,.allModule3 .btn {
+    width: 100px;
+    margin-bottom: 10px;
 }
-.logoBG{
-    background: #000;
-      min-height: 60px;
-}
-  .line {
+
+.linea {
    display: none !important;
 }
 .m2s7p1 .wordClouds .row .wCcL {
@@ -18,20 +16,36 @@ margin-bottom: 10px;
 .m2s7p1 .wordClouds .row .wCcR {
     padding-left: 15px!important;
 }
-.section{
+.section {
     width: auto;
 }
+
+/*.container-fluid .spImg{    
+    position: relative;    
+    top: 70px;    
+    z-index: 9999;    
+}*/
+
+.NextBtn1 {
+    cursor: pointer;
+    /*top:-30px;*/
+}
+
 .container-fluid .ssp1{
-    font-size: 10px;
+    font-size: 7.5px;
+    top: 15px;
 }
 .container-fluid .ssp2{
-    font-size: 10px;
+    font-size: 7.5px;
+    top: 15px;
 }
 .container-fluid .sp2{
-    font-size: 12px;
+    font-size: 7.5px;
+    top: 34px;
 }
 .container-fluid .sp1{
-    font-size: 12px;
+    font-size: 7.5px;
+    top: 34px;
 }
 .headers .saerch {
      padding-left: 10px !important;
@@ -45,7 +59,7 @@ margin-bottom: 10px;
 .s_bottom {
     color: #f6821f;
     font-family: "GothamHTF-book";
-    left: 32px;
+    left: 38px;
     position: absolute;
     top: 40px;
     width: 442px;
@@ -147,7 +161,7 @@ display: none;
 }
 
 
- .footer-social { border-left:solid 0px #fff !important; }   
+.footer-social { border-left: 0px none !important; }
 
 .headers .FAQ {
  padding-left: 33px !important;
@@ -163,6 +177,8 @@ display: none;
   .dArowh {
     display: none;  
 }
+
+
 
 }
 

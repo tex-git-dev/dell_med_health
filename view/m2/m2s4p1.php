@@ -39,7 +39,7 @@ include("view/cjs.php");
          <f><h3 class="text-center">PROMs</h3></f>
          <br>
            <f><p>Now that we have explored the importance and impact of asking, “What matters to you?” let’s delve into strategies for measuring patient-reported outcomes that address the question of “How are you?” One way to ensure that we improve patient outcomes is to ask our patients about their priorities and states of being. An important subset of outcomes are patient-reported outcome measures, sometimes referred to as “PROMs” or “PRMs.” PROMs attempt to capture whether the services provided actually improved a patient’s health and sense of well-being from the perspective of the patient. For example, patients might be asked to assess their general health, ability to complete various activities (dress themselves, read, climb a flight of stairs, go to work, etc), mood, level of fatigue, and pain.</p></f>
-           <f><p class="small">Watch the video to learn more about the benefits of PROMs.</p></f>
+           <f><p>Watch the video to learn more about the benefits of PROMs.</p></f>
       </div>
       <br>      
 
@@ -49,21 +49,12 @@ include("view/cjs.php");
            <div class="col-sm-2"></div>
             <div class="col-sm-8">
                <div class="videocontent">
-               <video id="myVideo" class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/M2_4.png" data-setup='{"fluid": true}'>
-               <source src="media/M2_4.mp4" type="video/mp4"></source>
-                 <source src="media/M2_4.webm" type="video/webm"></source>
-                 <source src="media/M2_4.ogv" type="video/ogv"></source>
+               <video id="myVideo" class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod2_Sec4.jpg" data-setup='{"fluid": true}'>
+               <source src="media/Mod2_Sec4.mp4" type="video/mp4"></source>
+                 <source src="media/Mod2_Sec4.webm" type="video/webm"></source>
+                 <source src="media/Mod2_Sec4.ogv" type="video/ogv"></source>
                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
-
-        <!-- <div class="row text-center myDiv0">
-          <div class="col-sm-12">            
-              <f><h4 id="myDiv1"></h4></f>
-              <div id="myDiv2"></div>
-              <f><h5 id="myDiv3"></h5></f>            
-          </div>
-        </div> -->
-
                </div>
               </div> 
             <div class="col-sm-2"></div>          
@@ -81,7 +72,7 @@ include("view/cjs.php");
       <div class="container">
         <div class="row">
             <div class="col-sm-2"></div>
-              <div class="col-sm-8"><f><p>If you want to learn more about PROMs, the <a target="_blank" style="color:#073763;" href="https://eprovide.mapi-trust.org/">eProvide</a> and <a target="_blank" style="color:#073763;" href="http://www.healthmeasures.net/explore-measurement-systems/promis">HealthMeasures</a> websites provide great resources.</p></f></div>
+              <div class="col-sm-8"><f><p>If you want to learn more about PROMs, the <a target="_blank" style="color:#f4821f;" href="https://eprovide.mapi-trust.org/">eProvide</a> and <a target="_blank" style="color:#f4821f;" href="http://www.healthmeasures.net/explore-measurement-systems/promis">HealthMeasures</a> websites provide great resources.</p></f></div>
             <div class="col-sm-2"></div>
           </div>
       </div>
@@ -92,7 +83,7 @@ include("view/cjs.php");
     <f><h3 class="text-uppercase text-center">Resources for Measuring Patient Outcomes</h3></f>
     <br>
     <f><h5>The International Consortium of Health Outcomes Measurement (ICHOM)</h5></f>
-    <f><p class="small">A common concern is how to identify a reasonably small set of validated measures to use for improvement efforts and against which to benchmark. If you want to learn more about PROMs, These two websites provide great resources:</p></f>    
+    <f><p>A common concern is how to identify a reasonably small set of validated measures to use for improvement efforts and against which to benchmark. If you want to learn more about PROMs, These two websites provide great resources:</p></f>    
     <f><p>The International Consortium of Health Outcomes Measurement (ICHOM) is a not-for-profit  organization founded by The Institute for Strategy and Competitiveness at the Harvard Business School, the Boston Consulting Group, and the Karolinska Institute to accelerate use of patient outcome measurement in health care. ICHOM convenes an international panel of patients and physicians to develop standard patient outcome measurement sets from previously validated instruments across the spectrum of patient conditions.<sup>1</sup> This collaborative process allows for the identification of measure sets that can be used for improvement efforts and for benchmarking without getting lost in too many potential measures.</p></f>
     <f><p>ICHOM aims to create “Standard Sets” of outcome measurement for over 50% of the global disease burden by 2017. As of October 2016, they had completed 20 Standard Sets, which they calculate to account for approximately 47% of the global disease burden.<sup>2</sup></p></f>
     <f><p>For example, consider heart disease, from which Ms. Jones has recently been suffering. </p></f>
@@ -117,7 +108,7 @@ include("view/cjs.php");
 
 
     <div class="container m2s4b2">
-          <f><h4 class="text-uppercase text-center">Challenges</h4></f> 
+          <f><h3 class="text-uppercase text-center">Challenges</h3></f> 
           <f><p>PROMs and other types of patient experience data are not easy to obtain. The need to collect and track individual patient data can be burdensome and time consuming, requiring much longer periods of contact post-treatment. Including PROMs in clinical workflow, perhaps through integration into electronic health record (EHR) systems, will be key to making them pragmatic and promote widespread use. </p></f>
           <f><p>An additional challenge will be creating PROMs that are meaningful for all of the conditions that we as clinicians treat, and interpreting PROMs in the context of the multiple simultaneous conditions that so many of our patients have. The coming sections will discuss the steps being taken to meet this challenge. </p></f>
     </div>
@@ -143,8 +134,6 @@ include("view/cjs.php");
    </div> 
 <br>
 <br>
-
-
 
 
     <div class="jumbotron m2s4b6"> 
@@ -211,6 +200,25 @@ include("view/cjs.php");
                                      
     </div>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+  var flagvd = false;
+     $('.video-js').inview({
+        'onEnter': function($object) {
+          if(flagvd == false){
+            $('video').trigger('play');
+            flagvd=true;
+          }           
+
+          },
+          'onLeave': function($object) {
+            //$('video').trigger('pause');
+          }
+
+      });
+  });
+      </script>
+      
 
 <script> 
 /*
@@ -345,18 +353,24 @@ function vidiv(){
 <footer class="container-fluid">
          
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
-              <a href="?id=m2/m2s2p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+            <div class="col-sm-4 text-left NextBtn">
+              <a href="?id=m2/m2s3p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 3</span>
-                <span class="sp1"><strong>Patient Outcomes</strong></span></a>
+                <span class="sp1"><strong>Measuring Outcomes</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m2/m2s5p1"><span class="ssp2">MODULE 2 | Section 5</span>
-                <span class="sp2"><strong>Using Measures Frameworks to Improve Outcomes that Matter to Patients</strong></span>
+                <span class="sp2"><strong>Using Measures Frameworks to Improve Outcomes</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
+          
       </footer> 
   

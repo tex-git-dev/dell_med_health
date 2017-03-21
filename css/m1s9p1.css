@@ -140,9 +140,7 @@ background: #f4f4f4;
     -o-background-size: cover;
     background-size: cover;  
     height: auto;    
-    width: auto;    
-  /*  min-height: 550px;
-    padding-top: 80px;*/
+    width: auto;      
     padding-bottom: 80px;
     text-shadow:none;
     color: #000;   
@@ -159,17 +157,39 @@ background: #f4f4f4;
     
 }
 
+.m1s9p1 .dont-break-out {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
 
 .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(1){
     color: #f68121;
     font-family: "GothamHTF-Medium";  
+     overflow-wrap: break-word;
 }
 .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(2){
-    font-family: "GothamHTF-Bold";
-    font-size: 16px !important;
+    font-family: "GothamHTF-Medium" !important; 
+     overflow-wrap: break-word;
 }
+
 .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(3){
     font-family: "GothamHTF-Medium";    
+     overflow-wrap: break-word;
 }
 .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(4), .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(5), .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(6), .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(7){
     font-family: "GothamHTF-BookItalic";    
@@ -416,6 +436,20 @@ and (max-device-width : 1000px) {
     padding-bottom: 30px !important;    
 }
 
+.m1s9p1 .s9b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s9img10.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;      
+    padding-bottom: 80px;
+    text-shadow:none;
+    color: #000;   
+}
+
 }
 
 
@@ -489,6 +523,19 @@ and (max-device-width : 765px) {
 .m1s9p1 .s9c2 p {    
     padding-bottom: 30px !important;    
 }
+.m1s9p1 .s9b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s9img10.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;      
+    padding-bottom: 80px;
+    text-shadow:none;
+    color: #000;   
+}
 
 }
 
@@ -540,13 +587,14 @@ and (max-device-width : 500px) {
     min-height: auto;
 }
 
-.m1s9p1  .s9b3 .col-sm-9 .well{   
+.m1s9p1 .s9b3 .col-sm-9 .well {   
     background:#fff;
      height: 100%;
      margin-bottom: 0px;
       border-radius: 0;     
          min-height: auto;
 }
+
 .m1s9p1 .dArowh {
     display: none;  
 }
@@ -554,8 +602,22 @@ and (max-device-width : 500px) {
 .m1s9p1 .s9c2 h4 {    
     margin-top: 40px !important;    
 }
+
 .m1s9p1 .s9c2 p {    
     padding-bottom: 30px !important;    
+}
+.m1s9p1 .s9b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s9img10.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;      
+    padding-bottom: 80px;
+    text-shadow:none;
+    color: #000;   
 }
 
 }
@@ -634,6 +696,20 @@ and (max-device-width : 299px) {
 }
 .m1s9p1 .s9c2 p {    
     padding-bottom: 30px !important;    
+}
+
+.m1s9p1 .s9b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s9img10.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;      
+    padding-bottom: 80px;
+    text-shadow:none;
+    color: #000;   
 }
 
 }

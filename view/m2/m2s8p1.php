@@ -10,6 +10,10 @@ if(!$_SESSION['username']){
 include("view/cjs.php");
 ?>
 <link rel="stylesheet" href="css/m2s8p1.css">
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/audiop.css" />
+<link rel="stylesheet" href="css/audioplayer.css" />
+
 <div class="m2s8p1">
        <div class="jumbotron m2s8b1">
          <div class="container text-center bg-2">
@@ -76,7 +80,22 @@ include("view/cjs.php");
                <br>            
                 <div class="col-sm-1"></div>
                   <div class="col-sm-11">                    
-                        <f><div class="vertical-align paddb"><i onclick="funaud();" id="s9ad" class="fa fa-play-circle-o" style="cursor:pointer; color:#8f9092; font-size:36px; line-height: 20px;"></i>&nbsp; <span class="pText">PLAY NOW</span></div></f>
+                        <div class="vertical-align paddb">
+
+                        <div id="wrapper">
+                              <audio preload="auto" controls>
+                                <source src="media/Mod1_Podcast.mp3">
+                                <source src="media/Mod1_Podcast.ogg">
+                                <source src="media/Mod1_Podcast.wav">
+                              </audio>
+                             
+                             
+                              
+                            </div>
+                        </div>
+
+                        <!-- <i onclick="funaud();" id="s9ad" class="fa fa-play-circle-o" style="cursor:pointer; color:#8f9092; font-size:36px; line-height: 20px;"></i>&nbsp; <span class="pText">PLAY NOW</span> -->
+                       
                         <!-- s9ad fa-play-circle-o -->
                         <!-- fa fa-pause-circle-o -->
                   </div>
@@ -84,12 +103,14 @@ include("view/cjs.php");
                  </div>
               <div class="row  m2s8c3">             
                 <div class="col-sm-1"></div>
-                  <div class="col-sm-11"><f><h4>"I also think we have an obligation to society as a whole to be good stewards of health care dollars."</h4></f></div>  
+                  <div class="col-sm-10 text-center"><f><h4>"I also think we have an obligation to society as a whole to be good stewards of health care dollars."</h4></f></div> 
+                 <div class="col-sm-1"></div>  
               </div>
               <br>
               <div class="row m2s8c3">             
                 <div class="col-sm-1"></div>
-                  <div class="col-sm-11 "><f><p>Lauren Demosthenes MD</p></f></div>                  
+                  <div class="col-sm-10 text-center"><f><p>Lauren Demosthenes MD</p></f></div>                  
+                  <div class="col-sm-1"></div>
               </div>
           </div>
           <div class="col-sm-6"><img src="img/GettyImages-492688421.png" class="img-responsive center-block"></div>          
@@ -119,7 +140,7 @@ include("view/cjs.php");
           <div class="row white vertical-align"> 
           <div class="col-sm-2"></div>            
             <div class="col-sm-4">
-                  <f><p>Outcomes measurement should focus on what matters to patients. (and thus supports professionalism).</p></f>
+                  <f><p>Outcomes measurement should focus on what matters to patients (and thus supports professionalism).</p></f>
             </div>
             <div class="col-sm-4 ">
                <img  src="img/m2s1img5.jpg"  class="img-responsive">
@@ -277,32 +298,37 @@ include("view/cjs.php");
     </div>
 
   <br>
-  <audio id="s9dio" ontimeupdate="onUpdate(this)" style="display:none;">
+ <!--  <audio id="s9dio" ontimeupdate="onUpdate(this)" style="display:none;">
       <source src="media/Kalimba.mp3" type="audio/mpeg" />
       <source src="media/Kalimba.ogg" type="audio/ogg" />
-    </audio>
+    </audio> -->
+    
 </div>
 <footer class="container-fluid">
          
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
-              <a href="?id=m1/m1s9p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+            <div class="col-sm-4 text-left NextBtn">
+              <a href="?id=m2/m2s7p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 7</span>
                 <span class="sp1"><strong>Care Redesign Case: UNOS</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+           <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="<?php echo pathUrl();?>"><span class="ssp2">Home</span>
                 <span class="sp2"><strong>Dell Medical VBHC</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
 </footer> 
 
 
 <script type="text/javascript">
-var aud = document.getElementById('s9dio');
+/*var aud = document.getElementById('s9dio');
 
 
 $(document).ready(function() {
@@ -327,26 +353,31 @@ function funaud() {
          aud.currentTime = 0;
          $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');    
      }
- }
+ }*/
 
 
 
 
 $(document).ready(function(){
-     $('.m2s8t2').inview({
+  var flagvd = false;
+ $( 'audio' ).audioPlayer();
+     $('.paddb').inview({
         'onEnter': function($object) {
+          if(flagvd == false){
+          $('.audioplayer').addClass('audioplayer-playing');
             $('audio').trigger('play');
-            $("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
-            $(".pText").text('PAUSE NOW')
+            flagvd=true;
+          }
+            //$("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
+            // $(".pText").text('PAUSE NOW')
           },
           'onLeave': function($object) {
-            $('audio').trigger('pause');
-              $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
-              $(".pText").text('PLAY NOW')
+           // $('audio').trigger('pause');
+            
+             // $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
+             // $(".pText").text('PLAY NOW')  
           }
-
       });
+
   });
-
-
 </script>

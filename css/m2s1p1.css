@@ -66,8 +66,7 @@ background: #f4f4f4;
     height: 100%;    
     color: white;
     text-shadow:none;    
-    min-height: 470px;
-   
+    min-height: 470px;   
 }
 
 .m2s1p1 .m2s1b2 .container h2{   
@@ -139,14 +138,18 @@ and (max-device-width : 1000px) {
     width: 42%;
     }
 
-/*.m2s1p1 .panel {
-    border-radius:0px;
-    border: 0px;
-    color:#3c4252;
-    text-shadow:none;
-    min-height: 425px;
-    padding:20px 25px 10px;
-}*/
+.m2s1p1 .m2s1b2{
+    margin-bottom: 0px;
+    background: url('../img/m2s1img3.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    color: white;
+    text-shadow:none;    
+    min-height: 470px;   
+}
 
 }
 
@@ -183,15 +186,18 @@ and (max-device-width : 765px) {
     font-family: "GothamHTF-Bold";
 }
 
-/*.m2s1p1 .panel {
-    border-radius:0px;
-    border: 0px;
-    color:#3c4252;
-    text-shadow:none;
-    min-height: 250px;
-    padding:20px 25px 10px;
-}*/
-
+.m2s1p1 .m2s1b2{
+    margin-bottom: 0px;
+    background: url('../img/m2s1img3.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    color: white;
+    text-shadow:none;    
+    min-height: 470px;   
+}
 .m2s1p1 .dArowh {
     display: none;  
 }
@@ -230,14 +236,18 @@ and (max-device-width : 500px) {
     font-size: 83%;
     width: 65%;
     }
-/*.m2s1p1 .panel {
-    border-radius:0px;
-    border: 0px;
-    color:#3c4252;
-    text-shadow:none;
-    min-height: 250px;
-    padding:20px 25px 10px;
-}*/
+.m2s1p1 .m2s1b2{
+    margin-bottom: 0px;
+    background: url('../img/m2s1img3.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    color: white;
+    text-shadow:none;    
+    min-height: 470px;   
+}
 
 .m2s1p1 .dArowh {
     display: none;  
@@ -277,14 +287,18 @@ and (max-device-width : 299px) {
     font-size: 42%;
     width: 60%;
     }
-/*.m2s1p1 .panel {
-    border-radius:0px;
-    border: 0px;
-    color:#3c4252;
-    text-shadow:none;
-    min-height: 250px;
-    padding:20px 25px 10px;
-}*/
+.m2s1p1 .m2s1b2{
+    margin-bottom: 0px;
+    background: url('../img/m2s1img3.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    color: white;
+    text-shadow:none;    
+    min-height: 470px;   
+}
 
 .m2s1p1 .dArowh {
     display: none;  

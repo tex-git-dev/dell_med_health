@@ -18,16 +18,17 @@ include("view/cjs.php");
             <br>
             <div class="row">
                 <div class="col-sm-12"> 
-                    <p data--duration="1.5s">MODULE 1 | Section 8</p>
+                    <f><p data--duration="1.5s">MODULE 1 | Section 8</p></f>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12"> 
-                    <h2>Using Data to Identify Opportunities for Improving Care for Patients</h2></div>
+                    <f><h2>Using Data to Identify Opportunities for Improving Care for Patients</h2></f>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">  
-                    <!-- <a  class="wow fadeInDownBig" href="#b1" style="color:#fff;"><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a> -->
+                     <a  class="wow fadeInDownBig dArowh" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -35,16 +36,16 @@ include("view/cjs.php");
 
 
     <br>
-    <div  id="b2" class="container bg-3 text-center">
-        <h3 class="boldT ">Value Opportunities Tool (VOT)</h3>
+    <div  id="b2" class="Step1 container bg-3 text-center">
+        <f><h3 class="boldT text-uppercase">Value Opportunities Tool (VOT)</h3></f>
         <br>
         <div class="row text-left">
             <div class="col-sm-4 col-sm-offset-2">
-                <p   class="">You will now have an opportunity to interact with a mock up of the value driven outcomes (VDO) tool. This Value Opportunities Tool (VOT) is an interactive data representation scatterplot that illustrates the opportunity for value improvement among patients with a particular diagnosis. The activity below presents you with the coefficient of variance (CoV) in cost for patients with a particular diagnosis (y axis) and the mean cost among each particular diagnosis (x axis). The size of each   
-                </p>
+                <f><p   class="">You will now have an opportunity to interact with a mock up of the value driven outcomes (VDO) tool. This Value Opportunities Tool (VOT) is an interactive data representation scatterplot that illustrates the opportunity for value improvement among patients with a particular diagnosis. The activity below presents you with the coefficient of variance (CoV) in cost for patients with a particular diagnosis (y axis) and the mean cost among each particular diagnosis (x axis). The size of each   
+                </p></f>
             </div>
             <div class="col-sm-4 ">
-                <p class="">bubble represents the opportunity index of a particular diagnosis, which is the CoV x total cost for all patients with the diagnosis. If a diagnosis has a large bubble, representing high total cost and high variance in cost, then there might be an opportunity to look closer at the reasons for this variance. Conversely, if diagnosis has a low total cost and variance and thus a smaller bubble, chances are the opportunity for improvement is lower. </p> 
+                <f><p class="">bubble represents the opportunity index of a particular diagnosis, which is the CoV x total cost for all patients with the diagnosis. If a diagnosis has a large bubble, representing high total cost and high variance in cost, then there might be an opportunity to look closer at the reasons for this variance. Conversely, if diagnosis has a low total cost and variance and thus a smaller bubble, chances are the opportunity for improvement is lower. </p></f> 
 
             </div>
         </div>
@@ -61,9 +62,9 @@ include("view/cjs.php");
                         <div class="panel-footer">
                             <h2>Coefficient of variance <span style="text-transform: none;">(CoV)</span></h2>
                             <center><span class="separator"></span></center>
-                            <p>How variable are the costs?</p>
-                            <p>How dispersed is your data?</p> 
-                            <p>Mean is the average cost.</p>
+                            <f><p>How variable are the costs?</p></f>
+                            <f><p>How dispersed is your data?</p></f> 
+                            <f><p>Mean is the average cost.</p></f>
                         </div>
                     </div>
                 </div>
@@ -75,7 +76,7 @@ include("view/cjs.php");
                         <div class="panel-footer">
                             <h2>Opportunity index</h2>
                             <center><span class="separator"></span></center>
-                            <p>How large is the opportunity to impact costs?</p>
+                            <f><p>How large is the opportunity to impact costs?</p></f>
                         </div>
                     </div>
                 </div>
@@ -87,7 +88,7 @@ include("view/cjs.php");
                         <div class="panel-footer">
                             <h2>Mean cost</h2>
                             <center><span class="separator"></span></center>
-                            <p>What is the average cost?</p>
+                            <f><p>What is the average cost?</p></f>
                         </div>
                     </div>
                 </div>
@@ -101,16 +102,13 @@ include("view/cjs.php");
             </div>
         </div>-->
 
-    <div class="jumbotron m6b2 s81">      	
+    <div class="jumbotron m6b2 s81">        
         <div class="container"> 
             <div class="row m6col">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8 text-center">
-                    <div class="well">          	
-                        <h4>Below, you will have an opportunity to explore a simplified version of a tool similar to the VDO tool used at The University of Utah Health Care system to determine how focusing on data can provide important insights in areas where value may be improved.
-                            <br><br>
-                            If you would like to learn more about how to read the chart, click  <a data-toggle="modal" data-target=".bs-example-modal-lg">here</a>.
-                        </h4>
+                    <div class="well">              
+                        <f><h4>Below, you will have an opportunity to explore a simplified version of a tool similar to the VDO tool used at The University of Utah Health Care system to determine how focusing on data can provide important insights in areas where value may be improved.<br><br>If you would like to learn more about how to read the chart, click  <a data-toggle="modal" data-target=".bs-example-modal-lg">here</a>.</h4></f>
                     </div> 
                 </div> 
             </div>  
@@ -133,11 +131,9 @@ include("view/cjs.php");
                                     <img src="img/8-01.jpg" class="img-responsive" style="width:100%" alt="Image">
                                 </div>
                                 <div class="panel-footer">
-                                    <h2>Coefficient of variance <span style="text-transform: none;">(CoV)</span></h2>
+                                    <f><h2>Coefficient of variance <span style="text-transform: none;">(CoV)</span></h2></f>
                                     <center><span class="separator"></span></center>
-                                    <p>How variable are the costs?</p>
-                                    <p>How dispersed is your data?</p> 
-                                    <p>Mean is the average cost.</p>
+                                    <f><p>How variable are the costs?<br>How dispersed is your data?<br>Mean is the average cost.</p></f>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +145,7 @@ include("view/cjs.php");
                                 <div class="panel-footer">
                                     <h2>Opportunity index</h2>
                                     <center><span class="separator"></span></center>
-                                    <p>How large is the opportunity to impact costs?</p>
+                                    <f><p>How large is the opportunity to impact costs?</p></f>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +157,7 @@ include("view/cjs.php");
                                 <div class="panel-footer">
                                     <h2>Mean cost</h2>
                                     <center><span class="separator"></span></center>
-                                    <p>What is the average cost?</p>
+                                    <f><p>What is the average cost?</p></f>
                                 </div>
                             </div>
                         </div>
@@ -174,9 +170,9 @@ include("view/cjs.php");
     <div class="jumbotron scatterplot">
 
         <div class="container text-center scatter">
-            <h3 class="boldT text-uppercase">OPPORTUNITY INDEX SCATTERPLOT (DIAGNOSIS)</h3>
-<!--            <p>Hover or tap the Diagnosis Opportunity Index Scatterplot to examine the data to answer the questions below. </p>-->
-            <p>Explore the graph. Then answer the questions below.</p>
+            <f><h3 class="boldT text-uppercase">OPPORTUNITY INDEX SCATTERPLOT (DIAGNOSIS)</h3></f>
+<!--            <f><p>Hover or tap the Diagnosis Opportunity Index Scatterplot to examine the data to answer the questions below. </p></f>-->
+            <f><p>Explore the graph. Then answer the questions below.</p></f>
             <div class="container">    
                 <div class="row">
                     <div class="col-sm-12 ploatArea" >
@@ -187,9 +183,9 @@ include("view/cjs.php");
         </div>
         <div class="container text-center scatter fixedPos">
             <!--            <h3 class="boldT text-uppercase">OPPORTUNITY INDEX SCATTERPLOT (PHYSICIAN; UNSPECIFIED SEPTICEMIA)</h3>
-                        <p>Hover or tap the Physician Opportunity Index Scatterplot to examine the data to answer the questions below. </p>-->
-            <h3 class="boldT text-uppercase">OPPORTUNITY INDEX SCATTERPLOT (PHYSICIAN; UNSPECIFIED SEPTICEMIA)</h3>
-            <p>Explore the graph. Then answer the questions below. </p>
+                        <f><p>Hover or tap the Physician Opportunity Index Scatterplot to examine the data to answer the questions below. </p></f>-->
+            <f><h3 class="boldT text-uppercase">OPPORTUNITY INDEX SCATTERPLOT (PHYSICIAN; UNSPECIFIED SEPTICEMIA)</h3></f>
+            <f><p>Explore the graph. Then answer the questions below. </p></f>
             <div class="container">    
                 <div class="row">
                     <div class="col-sm-12 ploatArea" >
@@ -199,10 +195,10 @@ include("view/cjs.php");
             </div>
         </div>
         <div class="container text-center scatter fixedPos">
-            <h3 class="boldT text-uppercase">Patient Stories Bar Graph</h3>
-            <p>Detailing health care costs and reviewing data on cost variance at various levels is a method to identify areas to start tackling high costs. </p>
-            <p>Select each bar to read more about the patient's story. Where do you think there might be room for improvement?
-            </p>
+            <f><h3 class="boldT text-uppercase">Patient Stories Bar Graph</h3></f>
+            <f><p>Detailing health care costs and reviewing data on cost variance at various levels is a method to identify areas to start tackling high costs. </p></f>
+            <f><p>Select each bar to read more about the patient's story. Where do you think there might be room for improvement?
+            </p></f>
             <div class="container">    
                 <div class="row">
                     <div class="col-sm-12 ploatArea" >
@@ -220,11 +216,11 @@ include("view/cjs.php");
                         <img src="img/8-05.jpg" class="img-responsive" style="width:99%" alt="Image">
                     </div>
                     <div class="col-sm-9">
-                        <p class="header">Middle cost</p>
-                        <p class="slogan">Patient 25472 : Mervin</p>
+                        <f><p class="header">Middle cost</p></f>
+                        <f><p class="slogan">Patient 25472 : Mervin</p></f>
                         <div class="patient_desc">
-                            <p class="paddB10">Mervin is a 52-year-old man with a history of substance abuse who arrives at the emergency room after having a fever for a couple days, along with shortness of breath. He complains that his heart feels like it is racing and he has trouble breathing, feeling like he just can’t get enough oxygen into his lungs. His blood is drawn, and within a few hours he is admitted to the hospital with presumed sepsis resulting from community-acquired pneumonia. He is started on antibiotics but continues to have intermittent fevers, tachycardia, and shortness of breath, requiring oxygen after two days. Due to consistently low levels of potassium and magnesium, his blood work needs to be monitored at least twice daily, and nurses have trouble finding a vein each time. Because of this, he has a peripherally-inserted central venous catheter (“PICC” line) inserted, allowing him to not be ‘stuck’ anymore. After a few days of antibiotics, IV fluids, and supplemental oxygen, he starts to improve and is discharged after six nights in the hospital. </p>
-                            <p><b>Value Perspective:</b> Mervin’s course was a little complicated by factors that are likely largely outside of the control of his clinicians. His costs may be higher than expected for community acquired pneumonia, but many would argue this is warranted since he requires more frequent lab monitoring and had abnormal vitals beyond 48 hours. Common potential sources of variation in costs for a hospitalization like Marvin’s could be whether physicians decide to “broaden” his antibiotics (which could be much more expensive), the frequency of his lab draws, his level of care (ICU versus acute care) and any additional testing.</p>
+                            <f><p class="paddB10">Mervin is a 52-year-old man with a history of substance abuse who arrives at the emergency room after having a fever for a couple days, along with shortness of breath. He complains that his heart feels like it is racing and he has trouble breathing, feeling like he just can’t get enough oxygen into his lungs. His blood is drawn, and within a few hours he is admitted to the hospital with presumed sepsis resulting from community-acquired pneumonia. He is started on antibiotics but continues to have intermittent fevers, tachycardia, and shortness of breath, requiring oxygen after two days. Due to consistently low levels of potassium and magnesium, his blood work needs to be monitored at least twice daily, and nurses have trouble finding a vein each time. Because of this, he has a peripherally-inserted central venous catheter (“PICC” line) inserted, allowing him to not be ‘stuck’ anymore. After a few days of antibiotics, IV fluids, and supplemental oxygen, he starts to improve and is discharged after six nights in the hospital. </p></f>
+                            <f><p><span class="bolds8">Value Perspective:</span> Mervin’s course was a little complicated by factors that are likely largely outside of the control of his clinicians. His costs may be higher than expected for community acquired pneumonia, but many would argue this is warranted since he requires more frequent lab monitoring and had abnormal vitals beyond 48 hours. Common potential sources of variation in costs for a hospitalization like Marvin’s could be whether physicians decide to “broaden” his antibiotics (which could be much more expensive), the frequency of his lab draws, his level of care (ICU versus acute care) and any additional testing.</p></f>
                         </div>
                     </div>
                 </div>
@@ -237,12 +233,12 @@ include("view/cjs.php");
                         <img src="img/8-04.jpg" class="img-responsive" style="width:98%" alt="Image">
                     </div>
                     <div class="col-sm-9">
-                        <p class="header">Highest cost</p>
-                        <p class="slogan">Patient 61852 : Joshua</p>
+                        <f><p class="header">Highest cost</p></f>
+                        <f><p class="slogan">Patient 61852 : Joshua</p></f>
                         <div class="patient_desc">
-                            <p>Joshua, a 63-year-old man with chronic unmanaged diabetes, obesity, and high blood pressure, arrives at the hospital after discharging himself from a long-term care facility about a week ago. He has been living off-and-on with family members, on the street, and in care facilities for years, rarely taking his prescribed medications. He has also been complaining about tingling and burning pain in his left foot that lately has become numb and with ulcerated skin.  He was admitted to the hospital due to abnormal lab work, high fever, low blood pressure, and a severely infected foot. He underwent an MRI that showed he has osteomyelitis (a bone infection) of his right metatarsal. The vascular surgeon evaluated the patient and decided he needed an operation but could not schedule him until Tuesday (5 days after admission). </p>
-                            <p class="paddB10">Joshua remained on the hospital medicine service and continued on IV vancomycin and zosyn for 5 days. He then went to surgery and had a transmetatarsal amputation. He was continued on IV antibiotics for two more days after the surgery and then was discharged to a rehabilitation facility. </p>
-                            <p><b>Value Perspective:</b> Joshua is a complex patient with multiple comorbidities. However, his care was even more expensive than it needed to be, mostly related to the delay in obtaining his needed foot surgery. If this is a common finding, the hospital may want to target this opportunity area to improve efficiency with surgical scheduling and availability, potentially decreasing costs while improving quality of care and patient experience. </p>
+                            <f><p>Joshua, a 63-year-old man with chronic unmanaged diabetes, obesity, and high blood pressure, arrives at the hospital after discharging himself from a long-term care facility about a week ago. He has been living off-and-on with family members, on the street, and in care facilities for years, rarely taking his prescribed medications. He has also been complaining about tingling and burning pain in his left foot that lately has become numb and with ulcerated skin.  He was admitted to the hospital due to abnormal lab work, high fever, low blood pressure, and a severely infected foot. He underwent an MRI that showed he has osteomyelitis (a bone infection) of his right metatarsal. The vascular surgeon evaluated the patient and decided he needed an operation but could not schedule him until Tuesday (5 days after admission). </p></f>
+                            <f><p class="paddB10">Joshua remained on the hospital medicine service and continued on IV vancomycin and zosyn for 5 days. He then went to surgery and had a transmetatarsal amputation. He was continued on IV antibiotics for two more days after the surgery and then was discharged to a rehabilitation facility. </p></f>
+                            <f><p><span class="bolds8">Value Perspective:</span> Joshua is a complex patient with multiple comorbidities. However, his care was even more expensive than it needed to be, mostly related to the delay in obtaining his needed foot surgery. If this is a common finding, the hospital may want to target this opportunity area to improve efficiency with surgical scheduling and availability, potentially decreasing costs while improving quality of care and patient experience. </p></f>
                         </div>
                     </div>
                 </div>
@@ -255,11 +251,11 @@ include("view/cjs.php");
                         <img src="img/8-06.jpg" class="img-responsive" style="width:98%" alt="Image">
                     </div>
                     <div class="col-sm-9">
-                        <p class="header">Lowest cost</p>
-                        <p class="slogan">Patient 64013 : Jane</p>
+                        <f><p class="header">Lowest cost</p></f>
+                        <f><p class="slogan">Patient 64013 : Jane</p></f>
                         <div class="patient_desc">
-                            <p class="paddB10">Jane is a 27-year-old woman who has been feeling generally unwell for about 3 or 4 days with symptoms of a urinary tract infection. She visits an urgent care center near her house when she suddenly feels worse and her temperature spikes. At the urgent care clinic, she seems to have left “CVA tenderness” (tenderness at her back at the location of her underlying left kidney), and her blood is drawn. An abnormal CBC lab test, her spiking fever, and tachycardia (increased heart rate) results in her physician sending her to the emergency room immediately. There she is admitted and quickly receives IV antibiotics and some IV fluids. She feels better after about 24 hours and continues to improve. She is released two days later with oral antibiotics and she continues to rest at home.</p>
-                            <p><b>Value Perspective:</b> Jane’s case is straightforward. She is young, healthy and will likely recover quickly after finishing her oral antibiotics. The biggest source of potential variation in a hospitalization for a patient like Jane would be the length of stay. The physicians here presumably did a good job by discharging her from the hospital as soon as clinically safe and providing an outpatient management plan for her infection.</p>
+                            <f><p class="paddB10">Jane is a 27-year-old woman who has been feeling generally unwell for about 3 or 4 days with symptoms of a urinary tract infection. She visits an urgent care center near her house when she suddenly feels worse and her temperature spikes. At the urgent care clinic, she seems to have left “CVA tenderness” (tenderness at her back at the location of her underlying left kidney), and her blood is drawn. An abnormal CBC lab test, her spiking fever, and tachycardia (increased heart rate) results in her physician sending her to the emergency room immediately. There she is admitted and quickly receives IV antibiotics and some IV fluids. She feels better after about 24 hours and continues to improve. She is released two days later with oral antibiotics and she continues to rest at home.</p></f>
+                            <f><p><span class="bolds8">Value Perspective:</span> Jane’s case is straightforward. She is young, healthy and will likely recover quickly after finishing her oral antibiotics. The biggest source of potential variation in a hospitalization for a patient like Jane would be the length of stay. The physicians here presumably did a good job by discharging her from the hospital as soon as clinically safe and providing an outpatient management plan for her infection.</p></f>
                         </div>
                     </div>
                 </div>
@@ -291,7 +287,7 @@ include("view/cjs.php");
                             <div class="quesBox">
                                 <div class="row">
                                     <div class="col-sm-10 col-sm-offset-1" >
-                                        <p class="ques">Of the below listed diagnoses, which represents the diagnosis with the largest opportunity index?</p>
+                                        <f><p class="ques">Of the below listed diagnoses, which represents the diagnosis with the largest opportunity index?</p></f>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -325,14 +321,14 @@ include("view/cjs.php");
                             </div>
                             <!--                                <div class="row pageCount">
                                                                 <div class="col-sm-10 col-sm-offset-1" >
-                                                                    <p class="text-muted">Question 1 of 3</p>
+                                                                    <f><p class="text-muted">Question 1 of 3</p></f>
                                                                 </div>
                                                             </div>-->
                             <div class="container">
                                 <div class="row msg incorrectMsg ">
                                     <div class="col-sm-9 col-md-10" >
                                         <h3><i class="fa fa-times fa-2" aria-hidden="true"></i> Incorrect.</h3>
-                                        <p>How is opportunity index represented in the graph?</p>
+                                        <f><p>How is opportunity index represented in the graph?</p></f>
                                     </div>
                                     <div class="col-sm-3 col-md-2">
                                         <center><div class="msgBtn" onclick="$(this).parents('.white').removeClass('incorrect');">Try again</div></center>
@@ -341,7 +337,7 @@ include("view/cjs.php");
                                 <div class="row msg correctMsg ">
                                     <div class="col-sm-9 col-md-10" >
                                         <h3><i class="fa fa-check fa-2" aria-hidden="true"></i>Correct!</h3>
-                                        <p>This is the correct answer because the diagnosis (ICD9 code) with the largest bubble, and thus the largest opportunity cost, is Sepsis.</p>
+                                        <f><p>This is the correct answer because the diagnosis (ICD9 code) with the largest bubble, and thus the largest opportunity cost, is Sepsis.</p></f>
                                     </div>
                                     <div class="col-sm-3 col-md-2">
                                         <center><div class="msgBtn" style="margin-top: 28px;" href="#myCarousel" data-slide="next">Next Question</div></center>
@@ -354,7 +350,7 @@ include("view/cjs.php");
                 <div class="item">
                     <!--                    <div class="container text-center">
                                             <h3 class="boldT text-uppercase">Opportunity index scatterplot</h3>
-                                            <p>Hover or tap the Diagnosis Opportunity Index Scatterplot to examine the data to answer the questions below. </p>
+                                            <f><p>Hover or tap the Diagnosis Opportunity Index Scatterplot to examine the data to answer the questions below. </p></f>
                                             <div class="container">    
                                                 <div class="row">
                                                     <div class="col-sm-12" >
@@ -369,7 +365,7 @@ include("view/cjs.php");
                             <div class="quesBox">
                                 <div class="row">
                                     <div class="col-sm-10 col-sm-offset-1" >
-                                        <p class="ques">Which diagnosis has the lowest mean, or average, cost?</p>
+                                        <f><p class="ques">Which diagnosis has the lowest mean, or average, cost?</p></f>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -403,14 +399,14 @@ include("view/cjs.php");
                             </div>
                             <!--                                <div class="row pageCount">
                                                                 <div class="col-sm-10 col-sm-offset-1" >
-                                                                    <p class="text-muted">Question 2 of 3</p>
+                                                                    <f><p class="text-muted">Question 2 of 3</p></f>
                                                                 </div>
                                                             </div>-->
                             <div class="container">
                                 <div class="row msg incorrectMsg ">
                                     <div class="col-sm-9 col-md-10" >
                                         <h3><i class="fa fa-times fa-2" aria-hidden="true"></i> Incorrect.</h3>
-                                        <p>Where is mean cost found on the graph?</p>
+                                        <f><p>Where is mean cost found on the graph?</p></f>
                                     </div>
                                     <div class="col-sm-3 col-md-2">
                                         <center><div class="msgBtn" onclick="$(this).parents('.white').removeClass('incorrect');">Try again</div></center>
@@ -419,7 +415,7 @@ include("view/cjs.php");
                                 <div class="row msg correctMsg ">
                                     <div class="col-sm-9 col-md-10" >
                                         <h3><i class="fa fa-check fa-2" aria-hidden="true"></i>Correct!</h3>
-                                        <p>This is the correct answer because this diagnosis (ICD9 code) has the lowest mean cost, represented as the smallest value on the x-axis.</p>
+                                        <f><p>This is the correct answer because this diagnosis (ICD9 code) has the lowest mean cost, represented as the smallest value on the x-axis.</p></f>
                                     </div>
                                     <div class="col-sm-3 col-md-2">
                                         <center><div class="msgBtn" style="margin-top: 28px;" href="#myCarousel" data-slide="next">Next Question</div></center>
@@ -432,7 +428,7 @@ include("view/cjs.php");
                 <div class="item">
                     <!--                      <div class="container text-center">
                                             <h3 class="boldT text-uppercase">Opportunity index scatterplot</h3>
-                                            <p>Hover or tap the Diagnosis Opportunity Index Scatterplot to examine the data to answer the questions below. </p>
+                                            <f><p>Hover or tap the Diagnosis Opportunity Index Scatterplot to examine the data to answer the questions below. </p></f>
                                             <div class="container">    
                                                 <div class="row">
                                                     <div class="col-sm-12" >
@@ -447,7 +443,7 @@ include("view/cjs.php");
 
                             <div class="row">
                                 <div class="col-sm-10 col-sm-offset-1" >
-                                    <p class="ques paddB15">Now, select the diagnosis bubble for unspecified septicemia. This will take you to a different scatterplot, the <b>Physician Opportunity Index Scatterplot for Unspecified Septicemia</b>, where the bubbles represent physicians that treated patients with unspecified septicemia. </p>
+                                    <f><p class="ques paddB15">Now, select the diagnosis bubble for unspecified septicemia. This will take you to a different scatterplot, the <b>Physician Opportunity Index Scatterplot for Unspecified Septicemia</b>, where the bubbles represent physicians that treated patients with unspecified septicemia. </p></f>
                                 </div>
                             </div>
                         </div>
@@ -458,7 +454,7 @@ include("view/cjs.php");
                 <div class="item">
                     <!--                    <div class="container text-center">
                                             <h3 class="boldT text-uppercase">Physician Opportunity Index Scatterplot for Unspecified Septicemia</h3>
-                                            <p>Hover or tap the Physician Opportunity Index Scatterplot to examine the data to answer the questions below. </p>
+                                            <f><p>Hover or tap the Physician Opportunity Index Scatterplot to examine the data to answer the questions below. </p></f>
                                             <div class="container">    
                                                 <div class="row">
                                                     <div class="col-sm-12" >
@@ -473,7 +469,7 @@ include("view/cjs.php");
                             <div class="quesBox">
                                 <div class="row">
                                     <div class="col-sm-10 col-sm-offset-1" >
-                                        <p class="ques">Each bubble represents physicians that treated patients with unspecified septicemia. How many physicians have treated patients with unspecified septicemia, according to the graph?</p>
+                                        <f><p class="ques">Each bubble represents physicians that treated patients with unspecified septicemia. How many physicians have treated patients with unspecified septicemia, according to the graph?</p></f>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -507,14 +503,14 @@ include("view/cjs.php");
                             </div>
                             <!--                                <div class="row pageCount">
                                                                 <div class="col-sm-10 col-sm-offset-1" >
-                                                                    <p class="text-muted">Question 3 of 3</p>
+                                                                    <f><p class="text-muted">Question 3 of 3</p></f>
                                                                 </div>
                                                             </div>-->
                             <div class="container">
                                 <div class="row msg incorrectMsg ">
                                     <div class="col-sm-9 col-md-10" >
                                         <h3><i class="fa fa-times fa-2" aria-hidden="true"></i> Incorrect.</h3>
-                                        <p>How are physicians represented on the graph?</p>
+                                        <f><p>How are physicians represented on the graph?</p></f>
                                     </div>
                                     <div class="col-sm-3 col-md-2">
                                         <center><div class="msgBtn" onclick="$(this).parents('.white').removeClass('incorrect');">Try again</div></center>
@@ -523,7 +519,7 @@ include("view/cjs.php");
                                 <div class="row msg correctMsg ">
                                     <div class="col-sm-9 col-md-10" >
                                         <h3><i class="fa fa-check fa-2" aria-hidden="true"></i>Correct!</h3>
-                                        <p>This is the correct answer because there are a total of nine bubbles on the chart, each representing one physician. </p>
+                                        <f><p>This is the correct answer because there are a total of nine bubbles on the chart, each representing one physician. </p></f>
                                     </div>
                                     <div class="col-sm-3 col-md-2">
                                         <center><div class="msgBtn" style="margin-top: 28px;" href="#myCarousel" data-slide="next">Next Question</div></center>
@@ -537,7 +533,7 @@ include("view/cjs.php");
                 <div class="item">
                     <!--                    <div class="container text-center">
                                             <h3 class="boldT text-uppercase">Physician Opportunity Index Scatterplot for Unspecified Septicemia</h3>
-                                            <p>Hover or tap the Physician Opportunity Index Scatterplot to examine the data to answer the questions below. </p>
+                                            <f><p>Hover or tap the Physician Opportunity Index Scatterplot to examine the data to answer the questions below. </p></f>
                                             <div class="container">    
                                                 <div class="row">
                                                     <div class="col-sm-12" >
@@ -551,7 +547,7 @@ include("view/cjs.php");
                         <div class="container">    
                             <div class="row">
                                 <div class="col-sm-10 col-sm-offset-1" >
-                                    <p class="ques paddB15">Why is the opportunity index for one physician so much larger? Select the bubble for the physician with the largest opportunity index. This will take you to the <b>Patient Stories Bar Graph</b>, showing individual patients this physician treated. Select each patient story to learn more about that particular patient case study and shed light on why physician 3320's opportunity index was high.  </p>
+                                    <f><p class="ques paddB15">Why is the opportunity index for one physician so much larger? Select the bubble for the physician with the largest opportunity index. This will take you to the <b>Patient Stories Bar Graph</b>, showing individual patients this physician treated. Select each patient story to learn more about that particular patient case study and shed light on why physician 3320's opportunity index was high.  </p></f>
                                 </div>
                             </div>
                         </div>
@@ -563,13 +559,14 @@ include("view/cjs.php");
                         <div class="container">    
                             <div class="row">
                                 <div class="col-sm-12" >
-                                    <p>Remember that these data represent real patients and real patient experiences and must be contextualized appropriately. </p>
+                                    <f><p>Remember that these data represent real patients and real patient experiences and must be contextualized appropriately. </p></f>
                                     <div class="curser text-left" onclick="$('#dSource').slideToggle();"> <b>REFERENCES <i style="color:#000; font-size:18px;" class="fa fa-angle-down" aria-hidden="true"></i></b></div>
-                                    <p id="dSource" class="text-left"><b>Data source: </b>Texas Hospital Inpatient Discharge Public Use Data File, [Quarters 1-4 2014 and quarters 1-2 2015]. Texas Department of State. Health Services, Center for Health Statistics, Austin, Texas. Note that the data from this source have been further masked to prevent identification of individual patients or physicians.
-                                    </p>
-<!--                                    <p class="fontS13" >Click on each bar to read more about the patients and their experience at the hospital for septicemia. Detailing health care costs and reviewing data on cost variance at various levels is a method to identify areas to start tackling high costs. Remember that these data represent real patients and real patient experiences and must be contextualized appropriately. 
+
+                                    <f><p id="dSource" class="text-left" style="text-indent: -12px; margin-left:12px;">1. <span class="bolds8">Data source:</span> Texas Hospital Inpatient Discharge Public Use Data File, [Quarters 1-4 2014 and quarters 1-2 2015]. Texas Department of State. Health Services, Center for Health Statistics, Austin, Texas. Note that the data from this source have been further masked to prevent identification of individual patients or physicians.
+                                    </p></f>
+<!--                                    <f><p class="fontS13" >Click on each bar to read more about the patients and their experience at the hospital for septicemia. Detailing health care costs and reviewing data on cost variance at various levels is a method to identify areas to start tackling high costs. Remember that these data represent real patients and real patient experiences and must be contextualized appropriately. 
                                         For example, this physician may have a higher mean cost and variance in cost for treating septicemia when compared to her peers because she happened to treat more patients like Joshua. Complexity and severity adjustments can be made to reduce this variation, but it is essential to understand the population of patients and data when making cost comparisons.
-                                    </p>-->
+                                    </p></f>-->
                                 </div>
                             </div>
                         </div>
@@ -1125,17 +1122,22 @@ include("view/cjs.php");
     <footer class="container-fluid">
 
         <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
                 <a href="?id=m1/m1s7p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
                     <span class="ssp1">MODULE 1 | Section 7</span>
-                    <span class="sp1"><strong>How Big of a Problem is Healthcare Waste?</strong></span></a>
+                    <span class="sp1"><strong>Value-Driven Outcomes at University of Utah Health Care</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m1/m1s9p1"><span class="ssp2">MODULE 1 | Section 9</span>
-                    <span class="sp2"><strong>Using Data To Identify Opportunities For Improving Care For Patients</strong></span>
+                    <span class="sp2"><strong>Conclusion: Value-Based Health Care</strong></span>
                     <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
         </div>
+
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
     </footer> 

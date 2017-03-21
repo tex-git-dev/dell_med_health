@@ -10,6 +10,10 @@ if(!$_SESSION['username']){
 include("view/cjs.php");
 ?>
 <link rel="stylesheet" href="css/m1s9p1.css">
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/audiop.css" />
+<link rel="stylesheet" href="css/audioplayer.css" />
+
 <div class="m1s9p1">
        <div class="jumbotron s9b1">
          <div class="container text-center bg-2">
@@ -73,11 +77,22 @@ include("view/cjs.php");
                <br>            
                 <div class="col-sm-1"></div>
                   <div class="col-sm-11">                    
-                        <f><div class="vertical-align paddb"><i onclick="funaud();" id="s9ad" class="fa fa-play-circle-o" style="cursor:pointer; color:#8f9092; font-size:36px; line-height: 20px;"></i>&nbsp; <span class="pText">PLAY NOW</span></div></f>
+                    <div class="vertical-align paddb">
+
+                    
+                    <div id="wrapper">
+                              <audio preload="auto" controls>
+                                <source src="media/Mod1_Podcast.mp3">
+                                <source src="media/Mod1_Podcast.ogg">
+                                <source src="media/Mod1_Podcast.wav">
+                              </audio>
+                            </div>
+
+                        <!-- <i onclick="funaud();" id="s9ad" class="fa fa-play-circle-o" style="cursor:pointer; color:#8f9092; font-size:36px; line-height: 20px;"></i>&nbsp; <span class="pText">PLAY NOW</span></div> -->
                         <!-- s9ad fa-play-circle-o -->
                         <!-- fa fa-pause-circle-o -->
                   </div>
-                  
+                  </div>
                  </div>
               <div class="row s9c2">             
                 <div class="col-sm-1"></div>
@@ -211,6 +226,7 @@ include("view/cjs.php");
        <br>
           <div class="container s9b3">
               <div class="row eq-h">
+
                 <div class="col-sm-4">
                   <div class='well1'>
                        <div class='row vertical-align'>
@@ -219,20 +235,24 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <f><p class="text-uppercase">book</p></f>
-                                 <f><p><a target="_blank" style="color:#000;" href="https://www.amazon.com/Understanding-Value-health%20care-Christopher-Moriates/dp/0071816984">Understanding Value-Based Health Care</a></p></f>
+                                <p class="text-uppercase"><f>book</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="https://www.amazon.com/Understanding-Value-health%20care-Christopher-Moriates/dp/0071816984">Understanding Value-Based Health Care</a></f></p>
                                  <p><f>This book is a great primer to value in a health care context and details the core issues involved in maximizing the efficacy and outcomes of medical care when cost is a factor in the decision-making process.</f></p>
+
                                  <p><f>Moriates C, Arora V, Shah N.</f></p>
                                  <p><f>Columbus, OH: McGraw-Hill Education; 2015.</f></p>
+
                                  <p><f>If your medical library subscribes to AccessMedicine, you can access the book for free here:</f></p>
-                                 <p><f><a target="_blank" style="color:#000;" href="http://accessmedicine.mhmedical.com/book.aspx?bookid=1371">http://accessmedicine.mhmedical.com/book.aspx?bookid=1371</a></f></p>
+                                 <p><f><a class="dont-break-out" target="_blank" style="color:#000;" href="http://accessmedicine.mhmedical.com/book.aspx?bookid=1371">http://accessmedicine.mhmedical.com/book.aspx?bookid=1371</a></f></p>
                             </div>
                           </div>
                        </div>
                   </div>
-
-
                 </div>
+
+    
+
+
                 <div class="col-sm-4">
                    <div class='well1'>
                        <div class='row vertical-align'>
@@ -251,6 +271,7 @@ include("view/cjs.php");
                        </div>
                   </div>
                 </div>
+
                 <div class="col-sm-4">
                     <div class='well1'>
                         <div class='row vertical-align'>
@@ -275,10 +296,10 @@ include("view/cjs.php");
           </div>  
      </div>
 
-<audio id="s9dio" ontimeupdate="onUpdate(this)" style="display:none;">
+<!-- <audio id="s9dio" ontimeupdate="onUpdate(this)" style="display:none;">
       <source src="media/Mod1_Podcast.mp3" type="audio/mpeg" />
       <source src="media/Mod1_Podcast.ogg" type="audio/ogg" />
-    </audio>
+    </audio> -->
 
      </div>
 
@@ -286,8 +307,9 @@ include("view/cjs.php");
                         <!-- fa fa-pause-circle-o -->
 
 
+
 <script type="text/javascript">
-var aud = document.getElementById('s9dio');
+/*var aud = document.getElementById('s9dio');
 
 
 $(document).ready(function() {
@@ -314,44 +336,58 @@ function funaud() {
          $(".pText").text('PLAY NOW')  
      }
  }
-
-
+*/
 
 
 
 $(document).ready(function(){
-     $('.s9t2').inview({
+  var flagvd = false;
+ $( 'audio' ).audioPlayer();
+     $('.paddb').inview({
         'onEnter': function($object) {
+          if(flagvd == false){
+          $('.audioplayer').addClass('audioplayer-playing');
             $('audio').trigger('play');
-            $("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
-             $(".pText").text('PAUSE NOW')
+            flagvd=true;
+          }
+            //$("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
+            // $(".pText").text('PAUSE NOW')
           },
           'onLeave': function($object) {
-            $('audio').trigger('pause');
-              $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
-              $(".pText").text('PLAY NOW')  
+           // $('audio').trigger('pause');
+            
+             // $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
+             // $(".pText").text('PLAY NOW')  
           }
 
       });
   });
+
+    (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
 </script>
 
 
 <footer class="container-fluid">
          
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m1/m1s8p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 8</span>
                 <span class="sp1"><strong>Using Data To Identify Opportunities For Improving Care For Patients</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="<?php echo pathUrl();?>"><span class="ssp2">Home</span>
                 <span class="sp2"><strong>Dell Medical VBHC</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
+          
       </footer> 
    

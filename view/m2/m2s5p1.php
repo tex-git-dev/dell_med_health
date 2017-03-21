@@ -22,7 +22,7 @@ include("view/cjs.php");
            </div>
           <div class="row">
             <div class="col-sm-12"> 
-              <f><h2>Using Measures Frameworks to Improve Patient-Centered Outcomes</h2></f>
+              <f><h2>Using Measures Frameworks to Improve Outcomes</h2></f>
             </div>
             </div>
           <div class="row">
@@ -61,11 +61,11 @@ include("view/cjs.php");
 <br><br>
     <div class="container">
 
-        <div class="row m2s5bg eq-h vertical-align">        
+        <div class="row m2s5bg eq-h ">        
          <div class="col-sm-4">
-            <img  src="img/m2s5icon1.png"  class="img-responsive">
+            <img  src="img/m2s5icon1.png"  class="center-block img-responsive">
             <hr class="lin1">
-            <f><h3>Process Measures</h3></f>
+            <f><h3 class="text-center">Process Measures</h3></f>
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -76,11 +76,11 @@ include("view/cjs.php");
         </div>
 
 
-        <div class="row m2s5bg eq-h vertical-align">
+        <div class="row m2s5bg eq-h ">
          <div class="col-sm-4">
-            <img  src="img/m2s5icon2.png"  class="img-responsive">
+            <img  src="img/m2s5icon2.png"  class="center-block img-responsive">
             <hr class="lin1">
-            <f><h3>Structure Measures</h3></f>
+            <f><h3 class="text-center">Structure Measures</h3></f>
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -90,11 +90,11 @@ include("view/cjs.php");
          </div>
         </div>
 
-        <div class="row m2s5bg eq-h vertical-align">
+        <div class="row m2s5bg eq-h ">
          <div class="col-sm-4">
-            <img  src="img/m2s5icon3.png"  class="img-responsive">
+            <img  src="img/m2s5icon3.png"  class="center-block img-responsive">
             <hr class="lin1">
-            <f><h3>Balancing Measures</h3></f>
+            <f><h3 class="text-center">Balancing Measures</h3></f>
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -104,16 +104,16 @@ include("view/cjs.php");
          </div>
         </div>
 
-        <div class="row m2s5bg eq-h vertical-align">
+        <div class="row m2s5bg eq-h ">
          <div class="col-sm-4">
-            <img  src="img/m2s5icon4.png"  class="img-responsive">
+            <img  src="img/m2s5icon4.png"  class="center-block img-responsive">
             <hr class="lin1">
-            <f><h3>Outcome Measures</h3></f>
+            <f><h3 class="text-center">Outcome Measures</h3></f>
          </div>
          <div class="col-sm-8">
            <div class="well">
-           <f><p class="bb">What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
-           <f><p>For example, whether or not a patient is given an influenza vaccine during a hospitalization could be considered a process measure</p></f>
+           <f><p class="bb">The effects of care on the health status of patients and populations.</p></f>
+           <f><p>For example, if fewer people die after receiving influenza vaccines, then this mortality benefit would be an outcome measure.</p></f>
             </div>
          </div>
         </div>
@@ -151,8 +151,8 @@ include("view/cjs.php");
                <f><p>For this reason, processes and outcomes are part of a continuum that connects the inputs and outputs of health care delivery and thus are best used in combination. </p></f>
                <f><p>The outcomes that matter most to a segment of patients with shared needs or conditions are usually a small subset of that list. Attention to a parsimonious set of meaningful outcomes is the most powerful accelerator of learning and improvement.  </p></f>
                <hr>        
-        <f><h5 class="text-left" style="color:#f4821f;">Learn More</h5></f>
-        <f><p><em>How Measurement Fails Doctors and Teachers (NYT)</em></p></f>
+        <f><h5 class="text-left" style="color:#f4821f;">Additional Resource</h5></f>
+        <f><p><a target="_blank" style="color:#000;" href="https://www.nytimes.com/2016/01/17/opinion/sunday/how-measurement-fails-doctors-and-teachers.html"><em>How Measurement Fails Doctors and Teachers (NYT)</em></a></p></f>
         <br>
 
         <!-- <ul id="demo" class="collapse">
@@ -165,7 +165,8 @@ include("view/cjs.php");
             </div>
 
             <div class="col-sm-4 ">
-                 <img src="img/m2s5img05.jpg"  class="img-responsive"  style=" width: 100%;"> 
+                 <a target="_blank" style="color:#000;" href="https://www.nytimes.com/2016/01/17/opinion/sunday/how-measurement-fails-doctors-and-teachers.html"><img src="img/m2s5img05.jpg"  class="img-responsive"  style=" width: 100%;"></a>
+                 <center class="small">Viktor Hachmang</center>
             </div>
 
           </div>  
@@ -190,390 +191,31 @@ include("view/cjs.php");
 
 
 <div class="container-full s5scatterplot m2s5b4">    
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div id="myCarousel_1" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1" ></li>
-            <li data-target="#myCarousel" data-slide-to="2" ></li>
-            <li data-target="#myCarousel" data-slide-to="3" ></li>
-            <li data-target="#myCarousel" data-slide-to="4" ></li>
-            <li data-target="#myCarousel" data-slide-to="5" ></li>
-            <li data-target="#myCarousel" data-slide-to="6" ></li>
-            <li data-target="#myCarousel" data-slide-to="7" ></li>
-            <li data-target="#myCarousel" data-slide-to="8" ></li>
-            <li data-target="#myCarousel" data-slide-to="9" ></li>
-            <li data-target="#myCarousel" data-slide-to="10" ></li>
-            <li data-target="#myCarousel" data-slide-to="11" ></li>
-            <li data-target="#myCarousel" data-slide-to="12" ></li>
-            <li data-target="#myCarousel" data-slide-to="13" ></li>
-            <li data-target="#myCarousel" data-slide-to="14" ></li>
-            <li data-target="#myCarousel" data-slide-to="15" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel_1" data-slide-to="1" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="2" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="3" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="4" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="5" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="6" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="7" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="8" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="9" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="10" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="11" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="12" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="13" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="14" ></li>
+            <li data-target="#myCarousel_1" data-slide-to="15" ></li>
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
 
         <!-- Question no 1 -->
-            <div class="item active">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                                <f><p class="ques">Number of after-hours clinic availability for flu shots</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
-                                      <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('STRUCTURAL', 'PROCESS', 'OUTCOME');
-                                            $numRandoms = 3;
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false);
-                                            //print_r($random);
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "STRUCTURAL" ? 1 : 0;
-                                                echo '<div class="col-sm-4">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>
-                                        <!-- <div class="col-sm-4">
-                                            <div class="ans" onclick="checkAnswer(this, false);">5%</div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="ans" onclick="checkAnswer(this, false);">15%</div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="ans" onclick="checkAnswer(this, true);">30%</div>
-                                        </div> -->
-                                    </div>
-                                </div>                               
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                             <div class="row pageCount">
-                                <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 1 of 16</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
-                                </div>
-                            </div>
-                            </div>
-                             <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-          <!-- Question no 2 -->
-             <div class="item">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                                <f><p class="ques">The ratio of nurses to patients on a hospital ward</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
-                                      <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('STRUCTURAL', 'PROCESS', 'OUTCOME');
-                                            $numRandoms = 3;
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false);
-                                            //print_r($random);
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "STRUCTURAL" ? 1 : 0;
-                                                echo '<div class="col-sm-4">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>                                        
-                                    </div>
-                                </div>                               
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                             <div class="row pageCount">
-                                <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 2 of 16</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
-                                </div>
-                            </div>
-                            </div>
-                             <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-          <!-- Question no 3 -->
-            <div class="item">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                                <f><p class="ques">Availability of midwives for obstetrical care</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
-                                      <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('STRUCTURAL', 'PROCESS', 'OUTCOME');
-                                            $numRandoms = 3;
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false);
-                                            //print_r($random);
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "STRUCTURAL" ? 1 : 0;
-                                                echo '<div class="col-sm-4">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>                                        
-                                    </div>
-                                </div>                               
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                             <div class="row pageCount">
-                                <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 3 of 16</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
-                                </div>
-                            </div>
-                            </div>
-                             <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Question no 4 -->
-            <div class="item">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                                <f><p class="ques">Availability of x-ray facilities within a 10-mile radius</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
-                                      <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('STRUCTURAL', 'PROCESS', 'OUTCOME');
-                                            $numRandoms = 3;
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false);
-                                            //print_r($random);
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "STRUCTURAL" ? 1 : 0;
-                                                echo '<div class="col-sm-4">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>                                        
-                                    </div>
-                                </div>                               
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                             <div class="row pageCount">
-                                <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 4 of 16</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
-                                </div>
-                            </div>
-                            </div>
-                             <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Question no 5 -->
-            <div class="item">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                                <f><p class="ques">The number of influenza immunizations given at a hospital</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
-                                      <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('PROCESS', 'STRUCTURAL', 'OUTCOME');
-                                            $numRandoms = 3;
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false);
-                                            //print_r($random);
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "PROCESS" ? 1 : 0;
-                                                echo '<div class="col-sm-4">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>                                        
-                                    </div>
-                                </div>                               
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                             <div class="row pageCount">
-                                <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 5 of 16</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
-                                </div>
-                            </div>
-                            </div>
-                             <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Question no 6 -->
-            <div class="item">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                                <f><p class="ques">The average response time to patient emails</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
-                                      <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('PROCESS', 'STRUCTURAL', 'OUTCOME');
-                                            $numRandoms = 3;
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false);
-                                            //print_r($random);
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "PROCESS" ? 1 : 0;
-                                                echo '<div class="col-sm-4">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>                                        
-                                    </div>
-                                </div>                               
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                             <div class="row pageCount">
-                                <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 6 of 16</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
-                                </div>
-                            </div>
-                            </div>
-                             <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Question no 7 -->
-            <div class="item">
+            <div class="item active" id="0">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -608,19 +250,21 @@ include("view/cjs.php");
                             </div>
                              <div class="row pageCount">
                                 <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 7 of 16</p></f>
+                                    <f><p class="text-muted">Question 1 of 16</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <f><p><strong>Process measures:</strong><br> What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>                                    
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                    <f><p><strong>Process measures:</strong><br> What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
                                 </div>
                             </div>
                             </div>
@@ -630,14 +274,135 @@ include("view/cjs.php");
                 </div>
             </div>
 
-            <!-- Question no 8 -->
-            <div class="item">
+          <!-- Question no 2 -->
+             <div class="item" id="1">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                               <f><p class="ques">Percent of mothers counseled on taking a folic acid supplement during pregnancy</p></f>
+                                <f><p class="ques">Availability of x-ray facilities within a 10-mile radius</p></f>
+                                <div class="row">
+                                <div class="col-sm-12" >
+                                    <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('STRUCTURAL', 'PROCESS', 'OUTCOME');
+                                            $numRandoms = 3;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "STRUCTURAL" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                             <div class="row pageCount">
+                                <div class="col-sm-12 " >
+                                    <f><p class="text-muted">Question 2 of 16</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <f><p><strong>Structure measures:</strong><br> The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Correct!</h3></f>
+                                    <f><p><strong>Structure measures:</strong><br> The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                             <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+          <!-- Question no 3 -->
+            <div class="item" id="2">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">Pain scores at 30, 60, and 90-days post spinal surgery</p></f>
+                                <div class="row">
+                                <div class="col-sm-12" >
+                                    <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('OUTCOME', 'PROCESS', 'STRUCTURAL');
+                                            $numRandoms = 3;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "OUTCOME" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                             <div class="row pageCount">
+                                <div class="col-sm-12 " >
+                                    <f><p class="text-muted">Question 3 of 16</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Correct!</h3></f>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                             <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question no 4 -->
+            <div class="item" id="3">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The number of influenza immunizations given at a hospital</p></f>
                                 <div class="row">
                                 <div class="col-sm-12" >
                                     <div class="row eq-h">
@@ -666,19 +431,81 @@ include("view/cjs.php");
                             </div>
                              <div class="row pageCount">
                                 <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 8 of 16</p></f>
+                                    <f><p class="text-muted">Question 4 of 16</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <f><p><strong>Process measures:</strong><br> What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                    <f><p><strong>Process measures:</strong><br> What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                             <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question no 5 -->
+            <div class="item" id="4">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The average response time to patient emails</p></f>
+                                <div class="row">
+                                <div class="col-sm-12" >
+                                    <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('PROCESS', 'STRUCTURAL', 'OUTCOME');
+                                            $numRandoms = 3;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "PROCESS" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                             <div class="row pageCount">
+                                <div class="col-sm-12 " >
+                                    <f><p class="text-muted">Question 5 of 16</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <f><p><strong>Process measures:</strong><br> What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Correct!</h3></f>
+                                    <f><p><strong>Process measures:</strong><br> What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
                                 </div>
                             </div>
                             </div>
@@ -689,14 +516,14 @@ include("view/cjs.php");
             </div>
 
 
-             <!-- Question no 9 -->
-            <div class="item">
+            <!-- Question no 6 -->
+            <div class="item" id="5">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                               <f><p class="ques">Complication rate for hip replacement surgery</p></f>
+                                <f><p class="ques">Complication rate for hip replacement surgery</p></f>
                                 <div class="row">
                                 <div class="col-sm-12" >
                                     <div class="row eq-h">
@@ -725,19 +552,21 @@ include("view/cjs.php");
                             </div>
                              <div class="row pageCount">
                                 <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 9 of 16</p></f>
+                                    <f><p class="text-muted">Question 6 of 16</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
                                 </div>
                             </div>
                             </div>
@@ -747,9 +576,68 @@ include("view/cjs.php");
                 </div>
             </div>
 
+            <!-- Question no 7 -->
+            <div class="item"  id="6">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">Number of after-hours clinic availability for flu shots</p></f>
+                                <div class="row">
+                                <div class="col-sm-12" >
+                                    <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('STRUCTURAL', 'PROCESS', 'OUTCOME');
+                                            $numRandoms = 3;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "STRUCTURAL" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                             <div class="row pageCount">
+                                <div class="col-sm-12 " >
+                                    <f><p class="text-muted">Question 7 of 16</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <f><p><strong>Structure measures:</strong><br> The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Correct!</h3></f>
+                                    <f><p><strong>Structure measures:</strong><br> The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                             <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Question no 10 -->
-            <div class="item">
+            <!-- Question no 8 -->
+            <div class="item" id="7">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -784,19 +672,21 @@ include("view/cjs.php");
                             </div>
                              <div class="row pageCount">
                                 <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 10 of 16</p></f>
+                                    <f><p class="text-muted">Question 8 of 16</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
                                 </div>
                             </div>
                             </div>
@@ -806,8 +696,70 @@ include("view/cjs.php");
                 </div>
             </div>
 
-             <!-- Question no 11 -->
-            <div class="item">
+
+             <!-- Question no 9 -->
+            <div class="item" id="8">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                               <f><p class="ques">Availability of midwives for obstetrical care</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('STRUCTURAL', 'OUTCOME', 'PROCESS');
+                                            $numRandoms = 3;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "STRUCTURAL" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                             <div class="row pageCount">
+                                <div class="col-sm-12 " >
+                                    <f><p class="text-muted">Question 9 of 16</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <f><p><strong>Structure measures:</strong><br> The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Correct!</h3></f>
+                                    <f><p><strong>Structure measures:</strong><br> The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                             <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Question no 10 -->
+            <div class="item" id="9">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -842,19 +794,21 @@ include("view/cjs.php");
                             </div>
                              <div class="row pageCount">
                                 <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 11 of 16</p></f>
+                                    <f><p class="text-muted">Question 10 of 16</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
                                 </div>
                             </div>
                             </div>
@@ -864,9 +818,8 @@ include("view/cjs.php");
                 </div>
             </div>
 
-
-             <!-- Question no 12 -->
-            <div class="item">
+             <!-- Question no 11 -->
+            <div class="item" id="10">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -901,19 +854,21 @@ include("view/cjs.php");
                             </div>
                              <div class="row pageCount">
                                 <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 12 of 16</p></f>
+                                    <f><p class="text-muted">Question 11 of 16</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
                                 </div>
                             </div>
                             </div>
@@ -923,8 +878,9 @@ include("view/cjs.php");
                 </div>
             </div>
 
-            <!-- Question no 13 -->
-            <div class="item">
+
+             <!-- Question no 12 -->
+            <div class="item" id="11">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -959,19 +915,81 @@ include("view/cjs.php");
                             </div>
                              <div class="row pageCount">
                                 <div class="col-sm-12 " >
+                                    <f><p class="text-muted">Question 12 of 16</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Correct!</h3></f>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                             <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question no 13 -->
+            <div class="item" id="12">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                               <f><p class="ques">Percent of mothers counseled on taking a folic acid supplement during pregnancy</p></f>
+                                <div class="row">
+                                <div class="col-sm-12" >
+                                    <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('PROCESS', 'STRUCTURAL', 'OUTCOME');
+                                            $numRandoms = 3;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "PROCESS" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                             <div class="row pageCount">
+                                <div class="col-sm-12 " >
                                     <f><p class="text-muted">Question 13 of 16</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <f><p><strong>Process measures:</strong><br> What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                    <f><p><strong>Process measures:</strong><br> What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
                                 </div>
                             </div>
                             </div>
@@ -983,13 +1001,13 @@ include("view/cjs.php");
 
 
              <!-- Question no 14 -->
-            <div class="item">
+            <div class="item" id="13">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                               <f><p class="ques">Ability to walk up stairs at home </p></f>
+                               <f><p class="ques">Ability to walk up stairs at home</p></f>
                                 <div class="row">
                                 <div class="col-sm-12" >
                                     <div class="row eq-h">
@@ -1024,13 +1042,15 @@ include("view/cjs.php");
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
                                 </div>
                             </div>
                             </div>
@@ -1042,66 +1062,7 @@ include("view/cjs.php");
 
 
              <!-- Question no 15 -->
-            <div class="item">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                               <f><p class="ques">Pain scores at 30, 60, and 90-days post spinal surgery</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
-                                      <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('OUTCOME', 'STRUCTURAL', 'PROCESS');
-                                            $numRandoms = 3;
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false);
-                                            //print_r($random);
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "OUTCOME" ? 1 : 0;
-                                                echo '<div class="col-sm-4">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>                                        
-                                    </div>
-                                </div>                               
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                             <div class="row pageCount">
-                                <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 15 of 16</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
-                                </div>
-                            </div>
-                            </div>
-                             <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-             <!-- Question no 16 -->
-            <div class="item">
+            <div class="item" id="14">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -1136,19 +1097,82 @@ include("view/cjs.php");
                             </div>
                              <div class="row pageCount">
                                 <div class="col-sm-12 " >
+                                    <f><p class="text-muted">Question 15 of 16</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Correct!</h3></f>
+                                    <f><p><strong>Outcome measures:</strong><br> The effects of care on the health status of patients and populations. These can be reported by the clinical team or by patients.</p></f>
+                                    <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                             <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Question no 16 -->
+            <div class="item" id="15">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                               <f><p class="ques">The ratio of nurses to patients on a hospital ward</p></f>
+                                <div class="row">
+                                <div class="col-sm-12" >
+                                    <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('STRUCTURAL', 'OUTCOME', 'PROCESS');
+                                            $numRandoms = 3;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "STRUCTURAL" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                             <div class="row pageCount">
+                                <div class="col-sm-12 " >
                                     <f><p class="text-muted">Question 16 of 16</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <f><p><strong>Structure measures:</strong><br> The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <!-- <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <i class="fa fa-arrow-right" aria-hidden="true"></i></div></center> -->
+                                    <f><p><strong>Structure measures:</strong><br> The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
+                                    <!-- <center><div class="msgBtn" href="#myCarousel_1" data-slide="next">Next Question <i class="fa fa-arrow-right" aria-hidden="true"></i></div></center> -->
                                 </div>
                             </div>
                             </div>
@@ -1160,10 +1184,10 @@ include("view/cjs.php");
 
 
 
-                  <a class="left carousel-control m2s6b7" href="#myCarousel" role="button" data-slide="prev">
+                  <a class="left carousel-control m2s6b7" href="#myCarousel_1" role="button" data-slide="prev" style="display: none;">
                     <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
                   </a>
-                  <a class="right carousel-control m2s6b7" href="#myCarousel" role="button" data-slide="next">
+                  <a class="right carousel-control m2s6b7" href="#myCarousel_1" role="button" data-slide="next">
                     <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
                   </a>
 
@@ -1178,22 +1202,26 @@ include("view/cjs.php");
 <br>
 
 </div>
-<footer class="container-fluid">
-         
+<footer class="container-fluid">         
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m2/m2s4p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 4</span>
                 <span class="sp1"><strong>Patient Outcomes</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a  href="?id=m2/m2s6p1"><span class="ssp2">MODULE 2 | Section 6</span>
                 <span class="sp2"><strong>Comparing Outcomes of Different Treatment Strategies</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
 </footer> 
 
 
@@ -1225,20 +1253,34 @@ include("view/cjs.php");
 
 <script>
 
+var n = 0;
 
-/*function checkAnswer(obj, f) {
-        $(".ans").removeClass("selectedAns");
-        $(".white").removeClass("correct incorrect");
-        if (f === true) {
-            $(obj).addClass('selectedAns').parents('.white').addClass('correct');
-        } else {
-            $(obj).addClass('selectedAns').parents('.white').addClass('incorrect');
-        }
-    }*/
+   $('.carousel').on('slid.bs.carousel', function (e) {
+       $('.item .ans').removeClass('Dis');
+       var id = parseInt(e.relatedTarget.id);
+          if(id == 0){
+              $('.left').hide();
+          }else if(id == 15){
+            $('.left').show();
+            $('.right').hide();
+          }  else {
+            $('.left').show();
+            $('.right').show();
+          }        
+      });
 
+function TryA(){
+      $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
+      $('.item .ans').removeClass('Dis')
+
+    }
+
+ 
     function checkAnswer(obj, f) {
             //console.log($(obj).parents(".row-eq-height"));
-            $(obj).parents(".eq-h").find(".ans").removeClass("selectedAns");
+            $('.item .ans').addClass('Dis');
+            $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
+            $(obj).parents(".eq-h").find(".ans")
             $(obj).parents(".white").removeClass("correct incorrect");
             if (f === 1) {
                 $(obj).addClass('selectedAns').parents('.white').addClass('correct');
@@ -1252,5 +1294,46 @@ include("view/cjs.php");
             }
         }
 
+$(document).ready(function(){
+     $('.video-js').inview({
+        'onEnter': function($object) {
+            $('video').trigger('play');
+          },
+          'onLeave': function($object) {
+            $('video').trigger('pause');
+          }
+      });
+
+     //shufMCQ();
+
+  });
+
+
+//var arrayS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+/*function shuffle(o){ 
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}*/
+
+// shuffle(arrayS);
+// function shufMCQ(){
+//     $('#s_'+arrayS[0]).show();
+//     $('#s_'+arrayS[1]).hide();
+//     $('#s_'+arrayS[2]).hide();
+//     $('#s_'+arrayS[3]).hide();
+//     $('#s_'+arrayS[4]).hide();
+//     $('#s_'+arrayS[5]).hide();
+//     $('#s_'+arrayS[6]).hide();
+//     $('#s_'+arrayS[7]).hide();
+//     $('#s_'+arrayS[8]).hide();
+//     $('#s_'+arrayS[9]).hide();
+//     $('#s_'+arrayS[10]).hide();
+//     $('#s_'+arrayS[11]).hide();
+//     $('#s_'+arrayS[12]).hide();
+//     $('#s_'+arrayS[13]).hide();
+//     $('#s_'+arrayS[14]).hide();
+//     $('#s_'+arrayS[15]).hide();
+// }
 
 </script>

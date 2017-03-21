@@ -1,3 +1,9 @@
+.m2s2p1 .item a {
+color: #f58320;
+text-decoration: none;
+cursor: pointer;
+line-height: 22px;    
+}
 
 .m2s2p1 div#my_favorite_latin_words span.w10 {
   font-size: 450%;
@@ -40,7 +46,17 @@
   color: #aab5f0;
 }
 /*module1 section1 css*/
+.m2s2p1 .container .carousel  .item a {
+    color: #f58320;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 22px;
+}
 .m2s2p1 .container .carouselC {
+  height: 0px;
+  visibility: hidden;
+}
+.m2s2p1 .container .carouselC1 {
   height: 0px;
   visibility: hidden;
 }
@@ -56,33 +72,40 @@
     padding-left: 30px;
     padding-right: 30px;
 }
-.m2s2p1 .container #myCarousel2 .left{
+.m2s2p1 .container .carousel .left.carousel-control{
     margin-left: -28px;
     height: 10px;
+    top: 33%;
 }
-.m2s2p1 .container #myCarousel2 .left span{
+.m2s2p1 .container .carousel .left.carousel-control span{
  position: absolute;
-    top: 1234%;
+   
 }
-.m2s2p1 .container #myCarousel2 .right{
+.m2s2p1 .container .carousel .right.carousel-control{
    margin-right: -14px;
     height: 10px;
+      top: 33%;
 }
-.m2s2p1 .container #myCarousel2 .right span{
+.m2s2p1 .container .carousel .right.carousel-control span{
     position: absolute;
-    top: 1234%;
+    
 }
-.m2s2p1 .container #myCarousel2 .carousel-inner  .item{
+.m2s2p1 .container .carousel .carousel-inner  .item{
     min-height: 200px;
 }
-.m2s2p1 .container #myCarousel2 .carousel-inner  .item .well{
+.m2s2p1 .container .carousel .carousel-inner  .item .well{
     background: #fff none repeat scroll 0 0;
     border-radius: 0;
     color: #8e9091;
 }
-.m2s2p1 .container #myCarousel2 .carousel-inner  .item .well .iHeight{
+.m2s2p1 .container .carousel .carousel-inner  .item .well .iHeight{
    max-height: 155px;
     overflow: hidden;
+    min-height: 155px !important;
+    -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 

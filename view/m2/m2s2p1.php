@@ -8,26 +8,12 @@
    }
 include("db.php");
 include("view/cjs.php");
-$yq = "select * from records where email='".$_SESSION['username']."'";
-$retvalY=mysqli_query($dbcon,$yq);
-$AllWordResY='';
-while($row = mysqli_fetch_row($retvalY)) {
-    $s2data = json_decode($row[7],true); 
-    $AllWordResY .=$s2data['m2']['sections']['s2']['response1'];
-}
-
-$c4 = "select * from records";
-$retval=mysqli_query($dbcon,$c4);
-$AllWordRes1='';
-while($row = mysqli_fetch_row($retval)) {
-    $s2data = json_decode($row[7],true); 
-    $AllWordRes1 .=$s2data['m2']['sections']['s2']['response1'];
-}
-
 $c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
 while($row = mysqli_fetch_row($retval1)) {
     $s2data = json_decode($row[7],true);
+    $dataT1 = $s2data['m2']['sections']['s2']['response1'];
+    $dataN1 = $row[2]." ". $row[3];
     $dataT = $s2data['m2']['sections']['s2']['response2'];
     $dataN = $row[2]." ". $row[3];
     if ($dataT) {
@@ -36,8 +22,15 @@ while($row = mysqli_fetch_row($retval1)) {
     app.cArrayT.push("<?php echo $dataT;?>");
     app.cArrayN.push("<?php echo $dataN;?>");
 </script>
+<?php } 
+if ($dataT1) {
+?>
+<script type="text/javascript">
+    app.cArrayT1.push("<?php echo $dataT1;?>");
+    app.cArrayN1.push("<?php echo $dataN1;?>");
+</script>
  
-<?php }} ?>
+<?php }}?>
 <script type="text/javascript">
 $(document).ready(function() {
       var section = 's'+app.qs["id"][6];
@@ -45,81 +38,63 @@ $(document).ready(function() {
       if (loc0.response1) {
         app.response1();
       }
+    
       if (loc0.response2) {
         app.response2();
       }
+
       $('#myCarousel2').bind('slid.bs.carousel', function (e) {
         app.showRM();
       });
 });
 window.onresize = function(){app.showRM();};
-  
-   app.response1 = function(){
-      var val = $("#response1Text").val();
-      var section = 's'+app.qs["id"][6];
-      var loc = '';
-       if (val){
-          loc = val.concat('<?php echo addslashes($AllWordRes1);?>');
-        }else{
-          loc = val.concat('<?php echo addslashes($AllWordRes1);?>');
-          val = '<?php echo addslashes($AllWordResY);?>';
-        }
-     var regex = /\s+/gi;
-      if (val == "") {
-          alert("Please write the response.");
-       }else{
-          app.MData[app.SelecteM].sections[section]['response1'] = val;
-          var data = JSON.stringify(app.MData);
-          var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
-          app.DataSave(loc_1);
-        //  var allDataY = app.sortWord(val);
-          var allData1 = app.sortWord(loc);
-          $(".f1").html(val);
-        //  $(".f2").html(allDataY.top2);
-          //console.log(JSON.stringify(allDataY))
-          $(".wordClouds").css({"visibility":"visible","height":"auto"});
-      
-          app.WCList1 = JSON.parse(JSON.stringify(allData1.list));
-          app.WordC(allData1.list,'my_favorite_latin_words');
-          $(".act1").hide();
-          $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
-        
-        }
-   }
-app.doneResizing= function(e){
-  $('.jqcloud').html('');
-   var lo1 = JSON.parse(JSON.stringify(app.WCList1));
- app.WordC(lo1,'my_favorite_latin_words');
- $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
-}
-app.pup= function(v){
-  var loc =  $(".iHeight").eq(v-1).text();
-   var name =  $(".iHeight").eq(v-1).next().next().next().text();
-    $('.m2s2p1 #mc1 .modal-content .modal-body').html(loc);
-    $('#mc1').modal({show: 'false'});
-    $('.m2s2p1 #mc1 .modal-content #name').html(name);
+  app.addOpt=function(id,len){
+  var sizeC = Math.ceil(len/3); 
+  if (sizeC>1) {
+    var circleList='<li data-target="#'+id+'" data-slide-to="0" class="active"></li>';
+    for (var i = 1; i <sizeC; i++) {
+      circleList+='<li data-target="#'+id+'" data-slide-to="'+i+'"></li>';
+    }
+    $('#'+id+' .carousel-indicators').append(circleList);
+  }else{
+     $('#'+id+' .left').hide();
+    $('#'+id+' .right').hide();
+  }
 }
 
-app.response2 = function(){
-      var loc = $("#response2Text").val();
-      var section = 's'+app.qs["id"][6];
+   app.response1 = function(){
+      var loc = $("#response1Text").val();
+        var section = 's'+app.qs["id"][6];
       if (loc) {
-          app.MData[app.SelecteM].sections[section]['response2'] = loc;
-          var data = JSON.stringify(app.MData);
-          var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
-          app.DataSave(loc_1);
+        app.MData[app.SelecteM].sections[section]['response1'] = loc;
+        var data = JSON.stringify(app.MData);
+        var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
+        app.DataSave(loc_1);
+        app.cArrayT1.unshift(loc);
+        app.cArrayN1.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
       }else{
-        loc =app.MData[app.SelecteM].sections[section]['response2'];
+        loc =app.MData[app.SelecteM].sections[section]['response1'];
+        app.cArrayT1.unshift(loc);
+        app.cArrayN1.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
       }
+
       if (loc == "") {
-       alert("Please write the response.")
+        alert("Please write the response.")
        }else{
-        $(".act2").hide();
-        $(".carouselC").css({"visibility":"visible","height":"auto"});
+         app.addOpt('myCarousel1',app.cArrayT1.length);
+        $(".act1").hide();
+        $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";
          var t =0;
-        for (var i = 1; i < 10; i++) {
-          var f = "";
+          var sizeC = Math.ceil(app.cArrayT1.length/3); 
+
+          if(sizeC > 6)
+          {
+            sizeC=6;
+          }
+          
+        for (var i = 1; i < sizeC+1; i++) {
+            var f = "";
             if(i == 1){
               f = "active";
             }else{
@@ -127,46 +102,112 @@ app.response2 = function(){
             }
            items += '<div class="item '+f+'"><div class="row">';
              for (var j = 1; j < 4; j++) {
-                t++;
-                  var T0 = app.cArrayT[t-2];
-                  var N0 = app.cArrayN[t-2];
-                if(t == 1){
-
-                    items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
-                    items += loc;
-                    items += '</span></div><a href="javascript:app.pup('+t+');">Read more<br></a><br><span>';
-                    items += '<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i> ';
-                    items += '<span class="text-uppercase" style="color:#000;"> <?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?></span>';
-                    items += '</span>';
-                    items += '</div></div>';
-                }else{
-                  
-                    if(T0 != undefined ){
+                  var T0 = app.cArrayT1[t];
+                  var N0 = app.cArrayN1[t];
+                  console.log(T0)
+                  t++;
+                    if(T0 != undefined){
                       items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
                       items += T0;
-                      items += '</span></div><a href="javascript:app.pup('+t+');">Read more<br></a><br><span>';
+                      items += '</span></div><a href="javascript:app.pup1('+t+');">Read more<br></a><br><span>';
                       items += '<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i> ';
                       items += '<span class="text-uppercase" style="color:#000;"> '+N0+'</span>';
                       items += '</span>';
                       items += '</div></div>';
                     }
-              }
-
              }
            items += '</div></div>';
         } 
-        $("#additem").append(items);
+        $(".carouselC1 .additem").append(items);
         app.showRM();
-        $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
+      }
+   }
+app.doneResizing= function(e){
+  $('.jqcloud').html('');
+   var lo1 = JSON.parse(JSON.stringify(app.WCList1));
+ app.WordC(lo1,'my_favorite_latin_words');
+ $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
+}
+app.pup1= function(v){
+  var loc =  $(".carouselC1 .iHeight").eq(v-1).text();
+   var name =  $(".carouselC1 .iHeight").eq(v-1).next().next().next().text();
+    $('.m2s2p1 #mc1 .modal-content .modal-body').html(loc);
+    $('#mc1').modal({show: 'false'});
+    $('.m2s2p1 #mc1 .modal-content #name').html(name);
+}
+app.pup2= function(v){
+  var loc =  $(".carouselC .iHeight").eq(v-1).text();
+   var name =  $(".carouselC .iHeight").eq(v-1).next().next().next().text();
+    $('.m2s2p1 #mc1 .modal-content .modal-body').html(loc);
+    $('#mc1').modal({show: 'false'});
+    $('.m2s2p1 #mc1 .modal-content #name').html(name);
+}
+
+app.response2 = function(){
+     var loc = $("#response2Text").val();
+      var section = 's'+app.qs["id"][6];
+      if (loc) {
+          app.MData[app.SelecteM].sections[section]['response2'] = loc;
+          var data = JSON.stringify(app.MData);
+          var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
+          app.DataSave(loc_1);
+          app.cArrayT.unshift(loc);
+          app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }else{
+        loc =app.MData[app.SelecteM].sections[section]['response2'];
+        app.cArrayT.unshift(loc);
+        app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }
+      if (loc == "") {
+        alert("Please write the response.")
+       }else{
+         app.addOpt('myCarousel2',app.cArrayT.length);
+        $(".act2").hide();
+        $(".carouselC").css({"visibility":"visible","height":"auto"});
+         var items="";
+         var t =0;
+          var sizeC = Math.ceil(app.cArrayT.length/3); 
+        for (var i = 1; i < sizeC+1; i++) {
+            var f = "";
+            if(i == 1){
+              f = "active";
+            }else{
+              f = "";
+            }
+           items += '<div class="item '+f+'"><div class="row">';
+             for (var j = 1; j < 4; j++) {
+                  var T0 = app.cArrayT[t];
+                  var N0 = app.cArrayN[t];
+                  t++;
+                    if(T0 != undefined){
+                      console.log(t)
+                      items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
+                      items += T0;
+                      items += '</span></div><a href="javascript:app.pup2('+t+');">Read more<br></a><br><span>';
+                      items += '<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i> ';
+                      items += '<span class="text-uppercase" style="color:#000;"> '+N0+'</span>';
+                      items += '</span>';
+                      items += '</div></div>';
+                    }
+             }
+           items += '</div></div>';
+        } 
+        $(".carouselC .additem").append(items);
+        app.showRM();
       }
    }
    $(document).ready(function(){
+  var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
+          if(flagvd == false){
             $('video').trigger('play');
+            flagvd=true;
+          }           
+
           },
           'onLeave': function($object) {
-            $('video').trigger('pause');
+            //$('video').trigger('pause');
           }
 
       });
@@ -205,15 +246,15 @@ app.response2 = function(){
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Module1Final.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/M2_2.mp4" type="video/mp4"></source>
-                  <source src="media/M2_2.webm" type="video/webm"></source>
-                  <source src="media/M2_2.ogv" type="video/ogv"></source>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod2_Sec2.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="media/Mod2_Sec2.mp4" type="video/mp4"></source>
+                  <source src="media/Mod2_Sec2.webm" type="video/webm"></source>
+                  <source src="media/Mod2_Sec2.ogv" type="video/ogv"></source>
                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>
          </div>
-         <div class="col-sm-2"></div>
+        <div class="col-sm-2"></div>
       </div>
    </div>
 
@@ -224,11 +265,27 @@ app.response2 = function(){
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
-               <div class="wordClouds">
-                  <br>
-                  <f><p>Your response: <strong><span class="f1"></span></span></strong></p></f>
-                  <div id="my_favorite_latin_words" style="width: 100%; background: #33a0cb; color: #fff; height: 350px; border: 1px solid #ccc;"></div>
+               <div class="carouselC1">
+                  <br>                 
+                  <f><p>After watching this video, what do you think matters to Ms. Jones when it comes to health care?</p></f> 
+                  <f><p>Scroll through user responses.</p></f>
+                  <div class="well">
+                  <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                     </ol>
+                     <div class="additem carousel-inner" role="listbox">
+                     </div>
+                      <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                        <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                      </a>
+                  </div>
+                  </div>
                </div>
+               
                <div class="act1" >
                   <div class="row">
                      <div class="col-sm-12">
@@ -251,7 +308,7 @@ app.response2 = function(){
                      <div class="col-sm-12" >
                         <div  class="navbar-form navbar-center" style="">
                            <div class="input-group" style="width:100%;">
-                              <input id="response1Text" type="Search" placeholder="Please enter a brief response (less than 20 words) here." class="limit-input form-control" />
+                              <input id="response1Text" type="Search" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
                               <div class="input-group-btn text-right" style="width:3%;">
                                  <button  onclick="app.response1();" class="btn btn-info">
                                  <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
@@ -267,29 +324,22 @@ app.response2 = function(){
          <div class="col-sm-2"></div>
       </div>
       <br>
-      <br>
-      <div class="row">
+       <div class="row">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
-               <div class="carouselC">
+                <div class="carouselC">
                   <br>
-                  <f><p>Scroll through answers provided by the class.</p></f>
+                  <f><p>Now think about yourself, a friend, or a family member who has had a serious medical condition or chronic disease that significantly affected their life, such as cancer, diabetes, or congestive heart failure. What do you think mattered most to them?</p></f>
+                  <f><p>Scroll through user responses.</p></f>
                   <div class="well">
                   <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
-                     <!-- Indicators -->
+                  
                      <ol class="carousel-indicators">
-                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                        <li data-target="#myCarousel2" data-slide-to="3"></li>
-                        <li data-target="#myCarousel2" data-slide-to="4"></li>
-                        <li data-target="#myCarousel2" data-slide-to="5"></li>
                      </ol>
-                     <div id="additem" class="carousel-inner" role="listbox">
-                      
+                     <div  class="additem carousel-inner" role="listbox">
                      </div>
-                     <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                      <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
                         <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
                       </a>
                       <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
@@ -298,6 +348,7 @@ app.response2 = function(){
                   </div>
                   </div>
                </div>
+
                <div class="act2">
                   <div class="row">
                      <div class="col-sm-12">
@@ -318,7 +369,7 @@ app.response2 = function(){
                   <div class="col-sm-12" >
                      <div  class="navbar-form navbar-center" style="">
                         <div class="input-group" style="width:100%;">
-                           <input type="Search" id="response2Text" placeholder="Your response to the question..." class="form-control" />
+                           <input type="Search" id="response2Text" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
                            <div class="input-group-btn text-right" style="width:3%;">
                               <button class="btn btn-info" onclick="app.response2();">
                               <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
@@ -365,17 +416,23 @@ app.response2 = function(){
 <footer class="container-fluid">
          
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m2/m2s1p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 1</span>
                 <span class="sp1"><strong>Measuring What Matters</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m2/m2s3p1"><span class="ssp2">MODULE 2 | Section 3</span>
-                <span class="sp2"><strong>Measuring What Matters</strong></span>
+                <span class="sp2"><strong>Measuring Outcomes</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
+          
       </footer>      

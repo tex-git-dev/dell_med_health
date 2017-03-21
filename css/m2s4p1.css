@@ -199,7 +199,7 @@
 
 .m2s4p1 .m2s4b1{
         color: #fff;
-        background-color: #f58221;
+        background-color: #535b72;
 }
 .m2s4p1 .m2s4b1 h3{
     font-family: "GothamHTF-Bold"; 
@@ -294,7 +294,17 @@ and (max-device-width : 1000px) {
     border-top: none !important;
     min-height: 285px;        
 }
-
+.m2s4p1 .m2s4b6 {
+    margin-bottom: 0px;
+    background: url('../img/m2s4img3.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;
+    padding-bottom: 80px;
+}
 
 
 }
@@ -354,6 +364,18 @@ and (max-device-width : 765px) {
 
 .m2s4p1 .dArowh {
     display: none;  
+}
+
+.m2s4p1 .m2s4b6 {
+    margin-bottom: 0px;
+    background: url('../img/m2s4img3.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;
+    padding-bottom: 80px;
 }
 
 }
@@ -419,6 +441,18 @@ and (max-device-width : 500px) {
     display: none;  
 }
 
+.m2s4p1 .m2s4b6 {
+    margin-bottom: 0px;
+    background: url('../img/m2s4img3.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;
+    padding-bottom: 80px;
+}
+
 }
 
 
@@ -478,6 +512,18 @@ and (max-device-width : 299px) {
 
 .m2s4p1 .dArowh {
     display: none;  
+}
+
+.m2s4p1 .m2s4b6 {
+    margin-bottom: 0px;
+    background: url('../img/m2s4img3.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;
+    padding-bottom: 80px;
 }
 
 
