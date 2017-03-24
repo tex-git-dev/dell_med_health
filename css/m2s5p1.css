@@ -46,6 +46,11 @@ cursor: pointer;
 .m2s5p1 .m2s5bg img {
     padding-top: 5px;
 }
+.m2s5p1 .m2s5bg #botmSpace{
+    padding-bottom: 20px;
+    
+}
+
 .m2s5p1 .m2s5bg {
     background: #f0f0f0;
 }
@@ -355,9 +360,26 @@ cursor: pointer;
   display: flex;
   flex-wrap: wrap;
 }
-.m2s5p1  .eq-h > [class*='col-'] {
-/*  display: flex;
-  flex-direction: column;*/
+
+.m2s5p1 .m2s5bg .well {
+    padding-top: 115px;
+}
+.m2s5p1 .m2s5bg .well .bba{
+    padding-top: 30px;
+    font-family: "GothamHTF-Bold" !important;
+}
+
+.m2s5p1 .m2s5bba .vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.m2s5p1 .m2s5bba .vertical-align > [class^="col-"],
+.m2s5p1 .m2s5bba .vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
 }
 
 /*end scatterplot*/
@@ -371,6 +393,21 @@ and (max-device-width : 1000px) {
 .m2s5p1 .eq-h {
         display: grid;
     }
+
+.m2s5p1 .m2s5bg {
+    background: #f0f0f0;
+}
+
+.m2s5p1 .m2s5bg .well {
+    padding-top: 0px;
+}
+.m2s5p1 .m2s5bg .well .bba{
+    padding-top: 0px;
+    font-family: "GothamHTF-Bold" !important;
+}
+.m2s5p1 .m2s5bg img {
+    padding-bottom: 20px;
+}
 
     .m2s5p1 .eq-h .col-sm-4  {
         width: 100% !important;
@@ -455,6 +492,18 @@ and (max-device-width : 765px) {
 
 }
 
+.m2s5p1 .m2s5bg img {
+    padding-bottom: 20px;
+}
+
+.m2s5p1 .m2s5bg .well {
+    padding-top: 0px;
+}
+.m2s5p1 .m2s5bg .well .bba{
+    padding-top: 0px;
+    font-family: "GothamHTF-Bold" !important;
+}
+
 .m2s5p1 .m2s6b7 {
     display: none !important;
 }
@@ -516,6 +565,18 @@ and (max-device-width : 500px) {
         display: grid;
     }
 
+.m2s5p1 .m2s5bg .well {
+    padding-top: 0px;
+}
+.m2s5p1 .m2s5bg .well .bba{
+    padding-top: 0px;
+    font-family: "GothamHTF-Bold" !important;
+}
+
+.m2s5p1 .m2s5bg img {
+    padding-bottom: 20px;
+}
+
     .m2s5p1 .eq-h .col-sm-4  {
         width: 100% !important;
         padding-bottom: 10px;
@@ -576,9 +637,22 @@ and (max-device-width : 299px) {
     display: none !important;
 }
 
+.m2s5p1 .m2s5bg .well {
+    padding-top: 0px;
+}
+.m2s5p1 .m2s5bg .well .bba{
+    padding-top: 0px;
+    font-family: "GothamHTF-Bold" !important;
+}
+
 .m2s5p1 .eq-h {
         display: grid;
     }
+
+    .m2s5p1 .m2s5bg img {
+    padding-bottom: 20px;
+}
+
 
     .m2s5p1 .eq-h .col-sm-4  {
         width: 100% !important;

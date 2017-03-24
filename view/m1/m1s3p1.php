@@ -315,7 +315,9 @@ left: 77%;
         <ol id="demo" class="collapse">
             <f><li class="text-left"><p>Porter ME and Teisberg EO. <em>Redefining Health Care: Creating Value-Based Competition on Results</em>. Boston, MA: Harvard Business Press; 2006.</p></li></f>
             <f><li class="text-left"><p>High value care. American College of Physicians website. <a style="color:#f4821f;" target="_blank" href="https://www.acponline.org/clinical-information/high-value-care?utm_medium=referral&utm_source=r360">https://www.acponline.org/clinical-information/high-value-care?utm_medium=referral&utm_source=r360</a>. Accessed November 30, 2016.</p></li></f>
-            <f><li class="text-left"><p>Committee on the Learning Health Care System in America; Institute of Medicine. Achieving and rewarding high-value care. In: Smith M, Saunders R, Stuckhardt L, et al., eds. <em>Best Care at Lower Cost: The Path to Continuously Learning Health Care in America</em>. Washington,DC: National Academies Press (US); 2013. <a  style="color:#f4821f;" target="_blank" href="https://www.ncbi.nlm.nih.gov/books/NBK207237/?utm_medium=referral&utm_source=r360">https://www.ncbi.nlm.nih.gov/books/NBK207237/?utm_medium=referral&utm_source=r360</a>. Accessed November 30, 2016</p></li></f>
+
+            <f><li class="text-left"><p>Committee on the Learning Health Care System in America; Institute of Medicine. Achieving and rewarding high-value care. In: Smith M, Saunders R, Stuckhardt L, et al., eds. <em>Best Care at Lower Cost: The Path to Continuously Learning Health Care in America</em>. Washington,DC: National Academies Press (US); 2013. <a class="dont-break-out" style="color:#f4821f; overflow-wrap: break-word;word-wrap: break-word;" target="_blank" href="https://www.ncbi.nlm.nih.gov/books/NBK207237/?utm_medium=referral&utm_source=r360">https://www.ncbi.nlm.nih.gov/books/NBK207237/?utm_medium=referral&utm_source=r360</a>. Accessed November 30, 2016    </p></li></f>
+
             <f><li class="text-left"><p>Moriates C, Arora V, Shah N. <em>Understanding Value-Based Healthcare</em>. Columbus, OH: McGraw-Hill Education; 2015.</p></li></f>
             <f><li class="text-left"><p>Institute for Healthcare Improvement. “<a target="_blank" style="color:#f4821f;" href="http://app.ihi.org/tv/#video=476a0a6f-a9fa-490d-b335-b09dffa94b14">Picker Award Presentation to Donald Berwick, MD, MPP</a>.” 23rd Annual National Forum on Quality Improvement in Health Care, December 2011.</p></li></f>
         </ol>
@@ -363,7 +365,7 @@ function myFunction()
       pauseVid();
       listQuestion(0);
   }
-  if(CT>= 45 && CT < 46 && IsShow == false)
+  if(CT>= 46 && CT < 47 && IsShow == false)
   { 
       score=1;
       IsShow=true;

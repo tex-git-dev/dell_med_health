@@ -84,13 +84,10 @@ include("view/cjs.php");
 
                         <div id="wrapper">
                               <audio preload="auto" controls>
-                                <source src="media/Mod1_Podcast.mp3">
-                                <source src="media/Mod1_Podcast.ogg">
-                                <source src="media/Mod1_Podcast.wav">
+                                <source src="media/Sec8_Podcast.mp3">
+                                <source src="media/Sec8_Podcast.ogg">
+                                <source src="media/Sec8_Podcast.wav">
                               </audio>
-                             
-                             
-                              
                             </div>
                         </div>
 

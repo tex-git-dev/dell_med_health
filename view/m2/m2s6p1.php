@@ -47,10 +47,10 @@ include("view/cjs.php");
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod2_Sec4.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/Mod2_Sec4.mp4" type="video/mp4"></source>
-                  <source src="media/Mod2_Sec4.webm" type="video/webm"></source>
-                  <source src="media/Mod2_Sec4.ogv" type="video/ogg"></source>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod2_Sec6.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="media/Mod2_Sec6.mp4" type="video/mp4"></source>
+                  <source src="media/Mod2_Sec6.webm" type="video/webm"></source>
+                  <source src="media/Mod2_Sec6.ogv" type="video/ogg"></source>
                    <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>
@@ -256,11 +256,11 @@ include("view/cjs.php");
       <div id="demo" class="collapse">
         <ol>
           <f><li><p>Kaplan, RS, Blackston, RP, Haas, DA, et al. Measuring and communicating health care value with charts. <em>Harvard Bus Rev</em>. 2015. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts">https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts</a>. Accessed December 4, 2016.</p></li></f>
-          <f><li><p>Boden WE, O’Rourke RA, Teo KK, et al. Optimal medical therapy with or without PCI for stable coronary Disease. <em>New Engl J Med</em>. 2007;365(15):1503-1516. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1056/NEJMoa070829">10.1056/NEJMoa070829</a>.</p></li></f>
-          <f><li><p>Weintraub WS, Spertus JA, Kolm PK, et al. Effect of PCI on quality of life in patients with stable coronary disease. <em>New Engl J Med</em>. 2008;359(7):677-687. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1056/NEJMoa072771">10.1056/NEJMoa072771</a>.</p></li></f>
-          <f><li><p>Sedlis, SP, Jurkovitz, CT, Hartigan, PM, et al. Health status and quality of life in patients with stable coronary artery disease and chronic kidney disease treated with optimal medical therapy or percutaneous coronary intervention (Post Hoc Findings from the COURAGE Trial). <em>Am J Cardiol</em>. 2013;112(11):1703-1708. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1016/j.amjcard.2013.07.034">10.1016/j.amjcard.2013.07.034</a>.</p></li></f>
-          <f><li><p>Weintraub, WS, Boden, WE, Zhang, Z, et al. Cost-effectiveness of percutaneous coronary intervention in optimally treated stable coronary patients. <em>Circ Cardiovasc Qual Outcomes</em>. 2008;1(1):12-20. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1161/CIRCOUTCOMES.108.798462">10.1161/CIRCOUTCOMES.108.798462</a>.</p></li></f>
-          <f><li><p>Acharjee S, Teo KK, Jacobs, AK, et al. Optimal medical therapy with or without percutaneous coronary intervention in women with stable coronary disease: A pre-specified subset analysis of the Clinical Outcomes Utilizing Revascularization and Aggressive druG Evaluation (COURAGE) trial. <em>Am Heart J</em>. 2016;173:108-17. March 2016. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1016/j.ahj.2015.07.020">10.1016/j.ahj.2015.07.020</a>.</p></li></f>
+          <f><li><p>Boden WE, O’Rourke RA, Teo KK, et al. Optimal medical therapy with or without PCI for stable coronary Disease. <em>New Engl J Med</em>. 2007;365(15):1503-1516. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1056/NEJMoa070829">10.1056/NEJMoa070829</a>.</p></li></f>
+          <f><li><p>Weintraub WS, Spertus JA, Kolm PK, et al. Effect of PCI on quality of life in patients with stable coronary disease. <em>New Engl J Med</em>. 2008;359(7):677-687. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1056/NEJMoa072771">10.1056/NEJMoa072771</a>.</p></li></f>
+          <f><li><p>Sedlis, SP, Jurkovitz, CT, Hartigan, PM, et al. Health status and quality of life in patients with stable coronary artery disease and chronic kidney disease treated with optimal medical therapy or percutaneous coronary intervention (Post Hoc Findings from the COURAGE Trial). <em>Am J Cardiol</em>. 2013;112(11):1703-1708. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1016/j.amjcard.2013.07.034">10.1016/j.amjcard.2013.07.034</a>.</p></li></f>
+          <f><li><p>Weintraub, WS, Boden, WE, Zhang, Z, et al. Cost-effectiveness of percutaneous coronary intervention in optimally treated stable coronary patients. <em>Circ Cardiovasc Qual Outcomes</em>. 2008;1(1):12-20. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1161/CIRCOUTCOMES.108.798462">10.1161/CIRCOUTCOMES.108.798462</a>.</p></li></f>
+          <f><li><p>Acharjee S, Teo KK, Jacobs, AK, et al. Optimal medical therapy with or without percutaneous coronary intervention in women with stable coronary disease: A pre-specified subset analysis of the Clinical Outcomes Utilizing Revascularization and Aggressive druG Evaluation (COURAGE) trial. <em>Am Heart J</em>. 2016;173:108-17. March 2016. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1016/j.ahj.2015.07.020">10.1016/j.ahj.2015.07.020</a>.</p></li></f>
         </ol>
       </div>        
    </div>

@@ -41,7 +41,7 @@ include("view/cjs.php");
         <div class="col-sm-8">  
         <f><p>Decreasing waste is a powerful way to simultaneously improve outcomes and decrease costs. It is critical for us to understand outcomes and how to improve them for patients.</p></f>
     <f><p>Outcomes are the results of care on the health of patients, families and populations. Beyond survival, outcomes include improved functional capabilities, reduction of pain and suffering, and ability to engage in one’s normal life.</p></f>
-      <ul style="font-size:16px;">
+      <ul>
           <f><li><p>For example, if fewer people die after receiving influenza vaccines, then this mortality benefit would be an outcome measure.</p></li></f>
       <f><li><p>While mortality is an obvious outcome measure, it is not always the appropriate or even most important. Mortality is not a meaningful outcome measure for the success of a dental cleaning or wart removal, where mortality would be a travesty.  And for patients in some situations, how well they live is more important than how long they survive.</p></li></f>
       <f><li><p>Another outcome measure is the number of days until a patient can walk after a hip replacement surgery.</p></li></f>
@@ -50,7 +50,6 @@ include("view/cjs.php");
         <div class="col-sm-2"></div>  
         </div>
      </div>
-      <br>
       <br>
 
 <br><br><br>

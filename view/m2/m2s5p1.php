@@ -59,28 +59,29 @@ include("view/cjs.php");
           </div>
        </div>         
 <br><br>
-    <div class="container">
 
-        <div class="row m2s5bg eq-h ">        
+    <div class="container m2s5bba">
+
+        <div class="row m2s5bg eq-h">        
          <div class="col-sm-4">
-            <img  src="img/m2s5icon1.png"  class="center-block img-responsive">
+          <f><h3 class="text-center">Outcome Measures</h3></f>
             <hr class="lin1">
-            <f><h3 class="text-center">Process Measures</h3></f>
+           <img  src="img/m2s5icon1.png"  class="center-block img-responsive">
          </div>
          <div class="col-sm-8">
            <div class="well">
-           <f><p class="bb">What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
-           <f><p>For example, whether or not a patient is given an influenza vaccine during a hospitalization could be considered a process measure</p></f>
-            </div>
+            <f><p class="bba">What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+            <f><p>For example, whether or not a patient is given an influenza vaccine during a hospitalization could be considered a process measure.</p></f>
+          </div>
          </div>
         </div>
 
 
         <div class="row m2s5bg eq-h ">
-         <div class="col-sm-4">
-            <img  src="img/m2s5icon2.png"  class="center-block img-responsive">
+         <div class="col-sm-4">            
             <hr class="lin1">
-            <f><h3 class="text-center">Structure Measures</h3></f>
+            <f><h3 class="text-center">Process Measures</h3></f>
+            <img  src="img/m2s5icon2.png"  class="center-block img-responsive">
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -91,10 +92,10 @@ include("view/cjs.php");
         </div>
 
         <div class="row m2s5bg eq-h ">
-         <div class="col-sm-4">
-            <img  src="img/m2s5icon3.png"  class="center-block img-responsive">
+         <div class="col-sm-4">           
             <hr class="lin1">
-            <f><h3 class="text-center">Balancing Measures</h3></f>
+            <f><h3 class="text-center">Structure Measures</h3></f>
+             <img  src="img/m2s5icon3.png"  class="center-block img-responsive">
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -104,11 +105,11 @@ include("view/cjs.php");
          </div>
         </div>
 
-        <div class="row m2s5bg eq-h ">
-         <div class="col-sm-4">
-            <img  src="img/m2s5icon4.png"  class="center-block img-responsive">
+        <div class="row m2s5bg eq-h">
+         <div class="col-sm-4">           
             <hr class="lin1">
-            <f><h3 class="text-center">Outcome Measures</h3></f>
+            <f><h3 class="text-center">Balancing Measures</h3></f>
+             <img  id="botmSpace" src="img/m2s5icon4.png"  class="center-block img-responsive">             
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -116,7 +117,8 @@ include("view/cjs.php");
            <f><p>For example, if fewer people die after receiving influenza vaccines, then this mortality benefit would be an outcome measure.</p></f>
             </div>
          </div>
-        </div>
+         
+        </div>        
     </div> 
           
 

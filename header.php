@@ -1142,7 +1142,7 @@ app.OpenMS=function(){
         <div class="modal-header">
         <div class="row">
             <div class="col-sm-6"></div>
-            <div class="col-sm-6 text-right"><span style="color:#e2873b;">New to Dell Medical? </span><button class="btn btn-default right-block" onclick="app.RegiPage();" type="button">Sign Up</button></div>
+            <div class="col-sm-6 text-right"><span style="color:#e2873b;">New to Dell Medical? </span><button class="btn btn-default right-block" onclick="app.RegiPage();" type="button">Sign up</button></div>
         </div>
         
          <!--  <button type="button" class="close" data-dismiss="modal" style="color:#fff">&times;</button> -->
@@ -1175,7 +1175,7 @@ app.OpenMS=function(){
             <div class="col-sm-5"></div>
             <div class="col-sm-2"> 
              <input type="hidden" name="login" id="login" value='login'>
-             <button class="btn btn-default center-block" type="submit" >Sign In</button>
+             <button class="btn btn-default center-block" type="submit" >Sign in</button>
             </div>
             <div class="col-sm-5"></div>
         </div>
@@ -1202,7 +1202,7 @@ app.OpenMS=function(){
         <div class="modal-header">
          <div class="row">
             <div class="col-sm-6"></div>
-            <div class="col-sm-6 text-right"><span style="color:#e2873b;">Already have an account? </span> <button class="btn btn-default right-block" onclick="app.OpenMS();" type="button" >Sign In</button></div>
+            <div class="col-sm-6 text-right"><span style="color:#e2873b;">Already have an account? </span> <button class="btn btn-default right-block" onclick="app.OpenMS();" type="button" >Sign in</button></div>
         </div>
           <!-- <button type="button" class="close" data-dismiss="modal" style="color:#fff">&times;</button> -->
            
@@ -1339,7 +1339,7 @@ app.OpenMS=function(){
              <div class="row">
              <div class="col-sm-12 text-center text-sm-center">  
               <div class="form-group">
-                <button class="btn btn-default" type="submit" name="registration">Sign Up</button>
+                <button class="btn btn-default" type="submit" name="registration">Sign up</button>
                 </div>
              </div>
              <!--  <div class="col-sm-6  text-right text-sm-center"> 
@@ -1527,7 +1527,7 @@ app.OpenMS=function(){
         <div class="modal-header">
         <div class="row">
             <div class="col-sm-6"></div>
-            <!-- <div class="col-sm-6 text-right"><span style="color:#e2873b;">New to Dell Medical? </span><button class="btn btn-default right-block" onclick="app.RegiPage();" type="button">Sign In</button></div> -->
+            <!-- <div class="col-sm-6 text-right"><span style="color:#e2873b;">New to Dell Medical? </span><button class="btn btn-default right-block" onclick="app.RegiPage();" type="button">Sign in</button></div> -->
         </div>
         
           <button type="button" class="close" data-dismiss="modal" style="color:#fff">&times;</button> 
@@ -1741,7 +1741,7 @@ rules: {
   }
 },
 messages: {
-email: "Please enter a valid email address"
+email: "Please enter a valid email address."
 },
  
 submitHandler: function(form){
@@ -1760,7 +1760,7 @@ submitHandler: function(form){
           $('#forgot .btn').removeAttr('disabled');
           $("#forgot .actS").show();
           $("#forgot .loadS").hide();
-          $("#forgot .NExists").html('<h4 style="color:#ff0000;">E-mail ID does not exists.</h4>');
+          $("#forgot .NExists").html('<h4 style="color:#ff0000;">E-mail ID does not exist.</h4>');
           }
         }, "json");
 

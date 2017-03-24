@@ -219,6 +219,26 @@
 }
 
 
+.m1s3p1 .dont-break-out {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
+
+
 @media screen
 and (min-device-width : 766px)
 and (max-device-width : 1000px) {
@@ -431,6 +451,8 @@ and (max-device-width : 765px) {
     display: none;  
 }
 
+
+
 }
 
 
@@ -547,6 +569,8 @@ and (max-device-width : 500px) {
     top: 37% !important;
 font-size: 18px !important;
   }
+
+
 
 }
 
@@ -665,7 +689,8 @@ and (max-device-width : 299px) {
 
 #skid2{
     top: 37% !important;
-font-size: 18px !important;
+    font-size: 18px !important;
   }
+
 
 }

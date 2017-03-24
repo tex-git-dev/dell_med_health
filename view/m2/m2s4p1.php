@@ -41,10 +41,29 @@ include("view/cjs.php");
            <f><p>Now that we have explored the importance and impact of asking, “What matters to you?” let’s delve into strategies for measuring patient-reported outcomes that address the question of “How are you?” One way to ensure that we improve patient outcomes is to ask our patients about their priorities and states of being. An important subset of outcomes are patient-reported outcome measures, sometimes referred to as “PROMs” or “PRMs.” PROMs attempt to capture whether the services provided actually improved a patient’s health and sense of well-being from the perspective of the patient. For example, patients might be asked to assess their general health, ability to complete various activities (dress themselves, read, climb a flight of stairs, go to work, etc), mood, level of fatigue, and pain.</p></f>
            <f><p>Watch the video to learn more about the benefits of PROMs.</p></f>
       </div>
-      <br>      
+      <br>     
+
+<div class="container-full">          
+      <div  class="container text-center m2s4bgcol">
+      <div class="row text-left">
+         <div class="col-sm-2"></div>
+         <div class="col-sm-8">
+            <div class="videocontent">
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod2_Sec4.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="media/Mod2_Sec4.mp4" type="video/mp4"></source>
+                  <source src="media/Mod2_Sec4.webm" type="video/webm"></source>
+                  <source src="media/Mod2_Sec4.ogv" type="video/ogg"></source>
+                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
+               </video>
+            </div>
+         </div>
+         <div class="col-sm-2"></div>
+      </div>
+    </div>
+</div>
 
 
-<div id="b1" class="container text-center">
+<!-- <div id="b1" class="container text-center">
          <div class="row text-left">
            <div class="col-sm-2"></div>
             <div class="col-sm-8">
@@ -60,7 +79,7 @@ include("view/cjs.php");
             <div class="col-sm-2"></div>          
          </div>
       </div>    
-
+ -->
     <br><br>
 
 
@@ -127,8 +146,8 @@ include("view/cjs.php");
         <f><p class="text-uppercase">Animation</p></f>
         <ol>
           <f><li><p>Teisberg E, Wallace S. <em>Capability, Comfort and Calm: Designing Health Care Services for Excellence and Empathy</em> [presentation]. Cleveland, OH: Patient Experience, Empathy Innovation Summit, May 16, 2016.</p></li></f>
-          <f><li><p>Lavallee DC, Chenok KE, Love RM... Incorporating patient-reported outcomes into health care to engage patients and enhance care. <em>Health Aff</em>. 2016. 35:575-582. <a target="_blank" style="color:#000;" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+27044954">doi:10.1377/hlthaff.2015.1362</a>.</p></li></f>
-          <f><li><p>Lazar K. Timing knee and hip replacements. <em>Boston Globe</em>. June 30, 2014. <a target="_blank" style="color:#f4821f;" href="https://www.bostonglobe.com/lifestyle/health-wellness/2014/06/29/knee-and-hip-surgery-registries-yield-clues-for-more-successful-treatments/Fd48ealbP1QZHckhLMhY9L/story.html">https://www.bostonglobe.com/lifestyle/health-wellness/2014/06/29/knee-and-hip-surgery-registries-yield-clues-for-more-successful-treatments/Fd48ealbP1QZHckhLMhY9L/story.html</a>. Accessed December 11, 2016.</p></li></f>
+          <f><li><p>Lavallee DC, Chenok KE, Love RM... Incorporating patient-reported outcomes into health care to engage patients and enhance care. <em>Health Aff</em>. 2016. 35:575-582. <a target="_blank" style="color:#f4821f;" href="http://www.ncbi.nlm.nih.gov/pubmed/?term=PMID%3A+27044954">doi:10.1377/hlthaff.2015.1362</a>.</p></li></f>
+          <f><li><p>Lazar K. Timing knee and hip replacements. <em>Boston Globe</em>. June 30, 2014. <a target="_blank" style="color:#f4821f;overflow-wrap: break-word;word-wrap: break-word;" href="https://www.bostonglobe.com/lifestyle/health-wellness/2014/06/29/knee-and-hip-surgery-registries-yield-clues-for-more-successful-treatments/Fd48ealbP1QZHckhLMhY9L/story.html">https://www.bostonglobe.com/lifestyle/health-wellness/2014/06/29/knee-and-hip-surgery-registries-yield-clues-for-more-successful-treatments/Fd48ealbP1QZHckhLMhY9L/story.html</a>. Accessed December 11, 2016.</p></li></f>
         </ol>
       </div>        
    </div> 

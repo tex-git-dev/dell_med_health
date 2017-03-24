@@ -4,6 +4,7 @@
 <script>
    window.location.href="<?php echo pathUrl();?>";
 </script>
+
 <?php
    }
 include("db.php");
@@ -37,11 +38,9 @@ if ($dataT1) {
 $(document).ready(function() {
       var section = 's'+app.qs["id"][6];
       var loc0 = app.MData[app.SelecteM].sections[section];
-     // console.log(loc0)
       if (loc0.response1) {
         app.response1();
       }
-
 
       if (loc0.response2) {
         app.response2();
@@ -244,7 +243,7 @@ app.response2 = function(){
          </div>
          <div class="row">
             <div class="col-sm-12">
-                <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
+                <a  class="wow InDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
             </div>
          </div>
       </div>
@@ -263,7 +262,44 @@ app.response2 = function(){
     <div class="row">  
     <div class="col-sm-2"> </div>
       <div class="col-sm-8 cHW">
-        <canvas id="myCanvas" ></canvas>
+	  <div class="col-md-12 col-sm-12 col-xs-12" style="height:100%;position:absolute;">
+	   <div class="row" style="height:16%;">
+	   <div class="col-md-7 col-sm-7 col-xs-7"></div> 
+	  <div class="col-md-3 col-sm-3 col-xs-3" style="height:100%;cursor:pointer;z-index: 2;" id="canvas1">
+	  </div>
+	  </div>
+	  	   <div class="row" style="height:16%;">
+	   <div class="col-md-7 col-sm-7 col-xs-7"></div> 
+	  <div class="col-md-3 col-sm-3 col-xs-3" style="height:100%;cursor:pointer;z-index: 2;" id="canvas2">
+	  </div>
+	  </div>
+	  
+	  <div class="row" style="height:16%;">
+	   <div class="col-md-7 col-sm-7 col-xs-7"></div> 
+	  <div class="col-md-3 col-sm-3 col-xs-3" style="height:100%;cursor:pointer;z-index: 2;" id="canvas3">
+	  </div>
+	  </div>
+	  
+	  <div class="row" style="height:16%;">
+	   <div class="col-md-7 col-sm-7 col-xs-7"></div> 
+	  <div class="col-md-3 col-sm-3 col-xs-3" style="height:100%;cursor:pointer;z-index: 2;" id="canvas4">
+	  </div>
+	  </div>
+	  
+	  	 <div class="row" style="height:16%;">
+	   <div class="col-md-7 col-sm-7 col-xs-7"></div> 
+	  <div class="col-md-3 col-sm-3 col-xs-3" style="height:100%;cursor:pointer;z-index: 2;" id="canvas5">
+	  </div>
+	  </div>
+	  
+	  <div class="row" style="height:16%;">
+	   <div class="col-md-7 col-sm-7 col-xs-7"></div> 
+	  <div class="col-md-3 col-sm-3 col-xs-3" style="height:100%;cursor:pointer;z-index: 2;" id="canvas6">
+	  </div>
+	  </div>
+	  </div>
+     <canvas id="myCanvas" >
+	 </canvas> 
       </div>
       <div class="col-sm-2"></div>
     </div>
@@ -377,148 +413,29 @@ app.response2 = function(){
     </div>
   </div>
 
-<script type="text/javascript" src='http://fabricjs.com/lib/fabric.js'></script>
-
 <script>
-function dd(){
-
-var h = $('.cHW').height();
-var w  = $('.cHW').width();
 
 
-var canvas  =  new fabric.Canvas('myCanvas', { selection: false });
-
-canvas.setWidth(w);
-canvas.setHeight(h);
-canvas.calcOffset();
-
-var x = w/6
-var r1 = new fabric.Rect({ width: w/4.28, height: h/9, left: w/1.55, top: h/28, stroke: 'rgba(0,0,0,0)',
-      strokeWidth: 2,fill: 'rgba(0,0,0,0)', hoverCursor: 'pointer',hasControls: false})
-var r2 = new fabric.Rect({ width: w/4.28, height: h/8, left: w/1.55, top: h/6, stroke: 'rgba(0,0,0,0)',
-      strokeWidth: 2,fill: 'rgba(0,0,0,0)', hoverCursor: 'pointer',hasControls: false})
-var r3 = new fabric.Rect({ width: w/4.05, height: h/7, left: w/1.60, top: h/3, stroke: 'rgba(0,0,0,0)',
-      strokeWidth: 2,fill: 'rgba(0,0,0,0)', hoverCursor: 'pointer',hasControls: false})
-var r4 = new fabric.Rect({width: w/4.88, height: h/7, left: w/1.52, top: h/2, stroke: 'rgba(0,0,0,0)',
-      strokeWidth: 2,fill: 'rgba(0,0,0,0)', hoverCursor: 'pointer',hasControls: false})
-var r5 = new fabric.Rect({width: w/4.88, height: h/9, left: w/1.52, top: h/1.48, stroke: 'rgba(0,0,0,0)',
-      strokeWidth: 2,fill: 'rgba(0,0,0,0)', hoverCursor: 'pointer',hasControls: false})
-var r6 = new fabric.Rect({width: w/4.88, height: h/7, left: w/1.52, top: h/1.23, stroke: 'rgba(0,0,0,0)',
-      strokeWidth: 2,fill: 'rgba(0,0,0,0)', hoverCursor: 'pointer',hasControls: false})
-
-r1.lockMovementX = true;
-r1.lockMovementY = true; 
-r1.lockUniScaling = true; 
-r1.lockRotation = true; 
-r2.lockMovementX = true;
-r2.lockMovementY = true; 
-r2.lockUniScaling = true; 
-r2.lockRotation = true; 
-r3.lockMovementX = true;
-r3.lockMovementY = true; 
-r3.lockUniScaling = true; 
-r3.lockRotation = true; 
-r4.lockMovementX = true;
-r4.lockMovementY = true; 
-r4.lockUniScaling = true; 
-r4.lockRotation = true;
-r5.lockMovementX = true;
-r5.lockMovementY = true; 
-r5.lockUniScaling = true; 
-r5.lockRotation = true;  
-r6.lockMovementX = true;
-r6.lockMovementY = true; 
-r6.lockUniScaling = true; 
-r6.lockRotation = true; 
-
-canvas.add(r1, r2, r3,r4,r5,r6);
-canvas.item(0).hasControls = canvas.item(0).hasBorders = false;
-canvas.item(1).hasControls = canvas.item(1).hasBorders = false;
-canvas.item(2).hasControls = canvas.item(2).hasBorders = false;
-canvas.item(3).hasControls = canvas.item(3).hasBorders = false;
-canvas.item(4).hasControls = canvas.item(4).hasBorders = false;
-canvas.item(5).hasControls = canvas.item(5).hasBorders = false;
-r1.on('mousedown', function(e) {
+$("#canvas1").click(function(){
  $('#myMd1').modal();
 });
 
-r2.on('mousedown', function(e) {
+$("#canvas2").click(function(){
  $('#myMd2').modal();
 });
-r3.on('mousedown', function(e) {
+$("#canvas3").click(function(){
  $('#myMd3').modal();
 });
-r4.on('mousedown', function(e) {
+$("#canvas4").click(function(){
  $('#myMd4').modal();
 });
-r5.on('mousedown', function(e) {
+$("#canvas5").click(function(){
  $('#myMd5').modal();
 });
-r6.on('mousedown', function(e) {
+$("#canvas6").click(function(){
  $('#myMd6').modal();
 });
-}
-window.onload = function(){
-dd()
-}
-$(window).resize(function (){
-dd();
-})
-/*
-var canvas = document.getElementById('myCanvas');
-var ctx  = canvas.getContext('2d');
-var imageObj = new Image();
 
-imageObj.onload = function() {
-  ctx.drawImage(imageObj, 69, 50);
-};    
-imageObj.src = 'img/s5img2.png';
-
-
-drawRectangle(ctx, 800, 20, 290, 100, "2", "");
-drawRectangle(ctx, 800, 130, 290, 100, "2", "red");
-drawRectangle(ctx, 800, 250, 290, 100, "2", "red");
-drawRectangle(ctx, 800, 375, 290, 80, "2", "red");
-drawRectangle(ctx, 800, 480, 290, 80, "2", "red");
-drawRectangle(ctx, 800, 570, 290, 80, "2", "red");
-
-canvas.addEventListener("mousedown", doMouseDown, false);
-//canvas.addEventListener("touchstart", doMouseDown, false);
-function   doMouseDown(event)
-{
-  var CW=$("#myCanvas").width();
-  var CH=$("#myCanvas").height();
-  var xx = event.pageX - this.offsetLeft - $("#myCanvas").offset().left;
-  var yy = event.pageY - this.offsetTop - $("#myCanvas").offset().top;
-  var clickedX = (xx*100/CW).toFixed(0);
-  var clickedY = (yy*100/CH).toFixed(0);
-  console.log(clickedX+" - "+clickedY)
-  
-    if (clickedX < 94 && clickedX > 68 && clickedY > 3 && clickedY < 17) {
-      //alert ('Rectangle number 1');
-      $('#myMd1').modal();
-    }
-    else if (clickedX < 94 && clickedX > 68 && clickedY > 17 && clickedY < 32) {
-      //alert ('Rectangle number 2');
-       $('#myMd2').modal();
-    }
-    else if (clickedX < 94 && clickedX > 68 && clickedY > 36 && clickedY < 50) {
-      //alert ('Rectangle number 3');
-      $('#myMd3').modal();
-    }
-     else if (clickedX < 94 && clickedX > 68 && clickedY > 54 && clickedY < 66) {
-      //alert ('Rectangle number 4');
-      $('#myMd4').modal();
-    }
-    else if (clickedX < 94 && clickedX > 68 && clickedY > 69 && clickedY < 80) {
-      //alert ('Rectangle number 5');
-      $('#myMd5').modal();
-    }
-    else if (clickedX < 94 && clickedX > 68 && clickedY > 81 && clickedY < 93) {
-      //alert ('Rectangle number 6');
-      $('#myMd6').modal();
-    } 
-}*/
 
 </script>
 
@@ -564,11 +481,7 @@ function   doMouseDown(event)
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
-               <!--div class="wordClouds">
-                  <br>
-                  <f><p>Your response: <strong><span class="f1"></span></span></strong></p></f>
-                  <div id="my_favorite_latin_words" style="width: 100%; background: #33a0cb; color: #fff; height: 350px; border: 1px solid #ccc;"></div>
-               </div-->
+      
                <div class="carouselC1">
                   <br>
                    <f><p>Give an example of inefficient or wasteful practices you've personally experienced within the health care system.</p></f>                           

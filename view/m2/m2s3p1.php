@@ -44,36 +44,55 @@ include("view/cjs.php");
       <br>
       <br>
 
+<div class="jumbotron m2s3ba">
+    <div class="container">
+        <f><h3 class="text-center text-uppercase">Additional Resources</h3></f>
+        <br>
+          <div class="row">
+            <div class="col-sm-2"></div>
+           <div class="col-sm-8"><f><p>You can watch a 4-minute video of Maureen Bisognano describing the story of her brother and the impact of focusing on "<a style="color:#3b4053" target="_blank" href="https://www.youtube.com/watch?v=sEIBJsHrU4c">What Matters to You?</a>"</p></f></div>
+            <div class="col-sm-2"></div>
+          </div>          
+    </div>
+</div>
 
-<div class="jumbotron m2s3b2">    
-      <f><h3 class="text-uppercase text-center">What Matters to You?</h3></f>
-      <div  class="container text-center m2s3bgcol">
-      <div class="row text-left">
-         <div class="col-sm-2"></div>
-         <div class="col-sm-8">
-            <div class="videocontent">
+
+<br>
+<br>
+
+ <!-- <div class="videocontent">
                <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod2_Sec3.jpg" preload="auto" data-setup='{"fluid": true}'>
                   <source src="media/Mod2_Sec3.mp4" type="video/mp4"></source>
                   <source src="media/Mod2_Sec3.webm" type="video/webm"></source>
                   <source src="media/Mod2_Sec3.ogv" type="video/ogg"></source>
                    <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
-            </div>
-         </div>
-         <div class="col-sm-2"></div>
-      </div>
-      <br>
-      <br>
-    </div>
-  <div class="container m2s3b3">
-        <f><p>True measurement of outcomes that are important to the patient requires a change in the focus of the questions we ask them. Maureen Bisognano from the Institute for Healthcare Improvement has popularized the shift in asking, “What matters to you?” instead of, “What’s the matter?”<sup>1</sup> </p></f>
-        <div class="line4"></div>
-    
+            </div> -->
 
+<!-- <div class="jumbotron m2s3b2">    
+      <f><h3 class="text-uppercase text-center">What Matters to You?</h3></f>
+      <br>
+      <div  class="container m2s3bgcol">
+      <div class="row eq-h">         
+         <div class="col-sm-8">
+          <a target="_blank" href="https://www.youtube.com/watch?v=sEIBJsHrU4c"><img src="img/Mod2_Sec3.jpg" class="img-responsive block-center"></a>
+         </div>
+         <div class="col-sm-4 text-center" style="background: #f1f1f1;">
+            <f><h3 class="text-uppercase">Learn More</h3></f>            
+            <div class="line2017"></div>
+            <f><p style="font-size:14px;">You can watch a 4-minute video of Maureen Bisognano describing the story of her brother and the impact of focusing on “what matters to you”</p></f>
+            <div class="line2017"></div>
+         </div>
+         </div>
+    </div>
+    <br><br> 
+  <div class="container m2s3b3">
+    <f><p>True measurement of outcomes that are important to the patient requires a change in the focus of the questions we ask them. Maureen Bisognano from the Institute for Healthcare Improvement has popularized the shift in asking, “What matters to you?” instead of, “What’s the matter?”<sup>1</sup> </p></f>
+    <div class="line4"></div>
   </div>
-</div>
-<br>
-<br><br>
+</div>-->
+
+
   <div class="container m2s3b4 text-center">
       <f><p>You can join Maureen Bisognano and thousands from around the world by adding your response to Twitter using the hashtag</p></f>
       <f><p><a target="_blank" style="color:#f4821f;" href="https://twitter.com/search?q=%23whatmatterstoyou">#whatmatterstoyou</a></p></f>
@@ -171,7 +190,7 @@ include("view/cjs.php");
 
       </footer> 
       <script type="text/javascript">
-         $(document).ready(function(){
+        /* $(document).ready(function(){
   var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
@@ -186,5 +205,5 @@ include("view/cjs.php");
           }
 
       });
-  });
+  });*/
 </script>

@@ -29,10 +29,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.m1s4p1 .eq-h > [class*='col-'] {
- /* display: flex;
-  flex-direction: column;*/
-}
+
 
  
 
