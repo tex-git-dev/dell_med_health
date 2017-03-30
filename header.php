@@ -162,23 +162,24 @@ app.OpenMS=function(){
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 6 </span><span class="s_bottom">Comparing Outcomes of Different Treatment Strategies</span></a>
                 </li>
                 <?php }else if($m == "m2s7p1"){ ?>
-                <li  class="active section">
+                <li class="active section">
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 7 </span><span class="s_bottom">Care Redesign Case: UNOS</span></a>
                 </li>
                 <?php }else if($m == "m2s8p1"){ ?>
-                <li  class="active section">
+                <li class="active section">
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 8 </span><span class="s_bottom">Conclusion: Measuring What Matters </span></a>
                 </li>
+                
                  <?php }else if($m == "m3s1p1"){ ?>
-                <li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 1 </span><span class="s_bottom">Conclusion: Value-Based Health Care</span></a>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 1 </span><span class="s_bottom">Understanding Costs In Health Care</span></a>
                 </li>
                 <?php }else if($m == "m3s2p1"){ ?>
-                <li  class="active section">
+                <li class="active section">
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 2 </span><span class="s_bottom">Conclusion: Value-Based Health Care</span></a>
                 </li>
                 <?php }else if($m == "m3s3p1"){ ?>
-                <li  class="active section">
+                <li class="active section">
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 3 </span><span class="s_bottom">Conclusion: Value-Based Health Care</span></a>
                 </li>
                 
@@ -454,7 +455,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss vertical-align bb bt btnS1 act">
                       <div class="col-sm-2 "><strong>01.</strong></div>
-                        <div class="col-sm-7"><strong>Introduction to Value Based Healthcare</strong></div>
+                        <div class="col-sm-7"><strong>Understanding Costs In Health Care</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -1755,7 +1756,7 @@ submitHandler: function(form){
           if(data == 1){
             $('#forgot .btn').hide();
 
-           $("#forgot .NExists").html('<h3 class="form-signin-heading text-center" style="color:#e2873b;">Password has been sent to your E-mail ID.</h3>');
+           $("#forgot .NExists").html('<h3 class="form-signin-heading text-center" style="color:#e2873b;">A password reset link has been sent to your email.</h3>');
           }else{
           $('#forgot .btn').removeAttr('disabled');
           $("#forgot .actS").show();

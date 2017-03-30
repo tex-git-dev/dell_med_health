@@ -72,10 +72,10 @@ include("view/cjs.php");
          <div class="col-sm-2"></div> 
             <div class="col-sm-8">
                <div class="videocontent">
-                <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod1_Sec4.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/Mod1_Sec4.mp4" type="video/mp4"></source>
-                  <source src="media/Mod1_Sec4.webm" type="video/webm"></source>
-                  <source src="media/Mod1_Sec4.ogv" type="video/ogg"></source>
+                <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod1_Sec4.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.ogv" type="video/ogg"></source>
                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
                </div>  
@@ -304,7 +304,7 @@ include("view/cjs.php");
   <hr>
 
    <div class="container text-left">               
-        <f><h5 data-toggle="collapse" data-target="#demo" class="text-uppercase" style="cursor:pointer;">Animation References <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
+        <f><h5 data-toggle="collapse" data-target="#demo" class="text-uppercase" style="cursor:pointer;">References <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
         <br>
         <ol id="demo" class="collapse">
           <f><li><p>Kliff S. We spend $750 billion on unnecessary health care. Two charts explain why. <i>The Washington Post</i>. September 7, 2012. <a class="dont-break-out" target="_blank" style="color:#f4821f;" href="https://www.washingtonpost.com/news/wonk/wp/2012/09/07/we-spend-750-billion-on-unnecessary-health-care-two-charts-explain-why/?utm_term=.e5adb91a0346">https://www.washingtonpost.com/news/wonk/wp/2012/09/07/we-spend-750-billion-on-unnecessary-health-care-two-charts-explain-why/?utm_term=.e5adb91a0346</a>. Accessed November 30, 2016.</p></li></f>

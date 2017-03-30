@@ -84,9 +84,9 @@ include("view/cjs.php");
 
                         <div id="wrapper">
                               <audio preload="auto" controls>
-                                <source src="media/Sec8_Podcast.mp3">
-                                <source src="media/Sec8_Podcast.ogg">
-                                <source src="media/Sec8_Podcast.wav">
+                                <source src="https://s3.amazonaws.com/dell-med/Sec8_Podcast.mp3">
+                                <source src="https://s3.amazonaws.com/dell-med/Sec8_Podcast.ogg">
+                                <source src="https://s3.amazonaws.com/dell-med/Sec8_Podcast.wav">
                               </audio>
                             </div>
                         </div>

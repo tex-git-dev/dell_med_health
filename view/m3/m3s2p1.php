@@ -162,9 +162,9 @@ function cc(arr){
          <div class="col-sm-8">
             <div class="videocontent">
                <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Module1Final.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/Module 1 Final.mp4" type="video/mp4"></source>
-                  <source src="media/Module 1 Final.webm" type="video/webm"></source>
-                  <source src="media/Module 1 Final.ogv" type="video/ogg"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Module 1 Final.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Module 1 Final.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Module 1 Final.ogv" type="video/ogg"></source>
                </video>
             </div>
          </div>

@@ -1,6 +1,7 @@
 <?php
    if(!$_SESSION['username']){
     ?>
+
 <script>
    window.location.href="<?php echo pathUrl();?>";
 </script>
@@ -265,7 +266,7 @@ app.response2 = function(){
 	  <div class="col-md-12 col-sm-12 col-xs-12" style="height:100%;position:absolute;">
 	   <div class="row" style="height:16%;">
 	   <div class="col-md-7 col-sm-7 col-xs-7"></div> 
-	  <div class="col-md-3 col-sm-3 col-xs-3" style="height:100%;cursor:pointer;z-index: 2;" id="canvas1">
+	  <div class="col-md-3 col-sm-3 col-xs-3" style="height:100%;cursor:pointer;z-index:2;" id="canvas1">
 	  </div>
 	  </div>
 	  	   <div class="row" style="height:16%;">
@@ -305,6 +306,16 @@ app.response2 = function(){
     </div>
 
   </div>
+  
+    <div class="container">  
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8" style='center;padding-bottom:20px;'>
+	  <f><span>There are multiple contributors to health care waste. Select each of the categories of waste (as defined by the Institute of Medicine) to find out more about them.</span></f>
+	  </div>
+      <div class="col-sm-2"></div>
+    </div>
+   </div> 
 </div>
 	  
    <!-- Modal -->
@@ -415,11 +426,9 @@ app.response2 = function(){
 
 <script>
 
-
 $("#canvas1").click(function(){
  $('#myMd1').modal();
 });
-
 $("#canvas2").click(function(){
  $('#myMd2').modal();
 });
@@ -436,15 +445,10 @@ $("#canvas6").click(function(){
  $('#myMd6').modal();
 });
 
-
 </script>
 
-  <div class="container">  
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8"><f><p>There are multiple contributors to health care waste. Select each of the categories of waste (as defined by the Institute of Medicine) to find out more about them.</p></f></div>
-      <div class="col-sm-2"></div>
-    </div>
+  <div class="container" style='text-align:center;'>  
+	  <f><h3 style="text-transform: uppercase;font-family: 'GothamHTF-Bold';">Antibiotic Prescribing Rates by Different Specialty Groups</h3></f>
    </div> 
 
 
@@ -455,24 +459,25 @@ $("#canvas6").click(function(){
 			<div class="col-sm-4 bg-4">
 				<f><h5>ADDITIONAL RESOURCES</h5></f>
 				<hr>
-				<div class="row">
+				 <div class="row">
 					<div class="col-sm-12">
 						<f><h4>Too Much Medical Care</h4></f>
 					</div>
-				</div>	
+				</div>	 
 				<div class="row">
-					<div class="col-sm-12"><f><p>We will explore various contributors to health care waste throughout these modules, but first let’s focus on “unnecessary services.” According to a survey of physicians published in JAMA, <strong>nearly half of primary care physicians in the U.S. believe patients in their own practices receive too much medical care</strong>.<sup>2</sup></p></f></div> 
+					<div class="col-sm-12"><f><p>We will explore various contributors to health care waste throughout these modules, but first let’s focus on “unnecessary services.” According to a survey of physicians published in JAMA, <strong>nearly half of primary care physicians in the U.S. believe patients in their own practices receive too much medical care</strong>.<sup>2</sup></p></f></div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12"><f><p>One common source of overuse is antibiotic prescriptions. Unnecessary antibiotics place patients at risk for dangerous infections, such as Clostridium difficile (C. diff). Nevertheless, nearly three quarters of patients with acute bronchitis– a condition that does not routinely warrant antibiotics–are prescribed them anyway.</p></f></div>
+          <div class="col-sm-12"><f><p>One common source of overuse is antibiotic prescriptions. Unnecessary antibiotics place patients at risk for dangerous infections, such as Clostridium difficile (C. diff). Nevertheless, nearly three quarters of patients with acute bronchitis– a condition that does not routinely warrant antibiotics–are prescribed them anyway (see plot at right).</p></f></div>         
 				</div>	
 				<div class="row">
-					<div class="col-sm-12"><f><p class="orng text-uppercase">&gt; <a target="_blank" style="color:#f68122" href="http://jamanetwork.com/journals/jama/fullarticle/1872806">Link to PDF</a></p></f></div>
+					<div class="col-sm-12"><f><p>To learn more about the data in the chart, click <a target="_blank" style="color:#f68122" href="http://jamanetwork.com/journals/jama/fullarticle/1872806">here</a>.</p></f></div>
 				</div>
 			</div>
 			<div class="col-sm-8"><img src="img/s5img3.png" class="img-responsive"></div>
 		</div>
 	</div>
+
 	  <br><br>
 	  
 <div class="container-full s1bgcol2">   
@@ -569,7 +574,7 @@ $("#canvas6").click(function(){
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
-                           <f><h2>OTHERS LIKE YOU...</h2></f>
+                           <f><h2 class="text-uppercase">Reflecting Further</h2></f>
                            <div class="line4"></div>
                            <f><p>How do you think such problems could be fixed?</p></f>
                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>

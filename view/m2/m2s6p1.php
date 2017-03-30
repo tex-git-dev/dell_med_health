@@ -47,10 +47,10 @@ include("view/cjs.php");
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod2_Sec6.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/Mod2_Sec6.mp4" type="video/mp4"></source>
-                  <source src="media/Mod2_Sec6.webm" type="video/webm"></source>
-                  <source src="media/Mod2_Sec6.ogv" type="video/ogg"></source>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod2_Sec6.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec6.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec6.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec6.ogv" type="video/ogg"></source>
                    <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>
@@ -244,7 +244,7 @@ include("view/cjs.php");
       <br>
       <div class="row">
           <div class="col-sm-1"></div>
-          <div class="col-sm-10"><f><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--  Radar charts allow multiple health care stakeholders, most notably physicians and their patients, to compare possible strategies across multiple relevant dimensions including cost and outcomes. --> Explore the method and impact of using radar charts further and consider their practical application and implications for patient care. Kaplan, RS, Blackston, RP, Haas, DA, et al. Measuring and communicating health care value with charts. Harvard Bus Rev. 2015. <a target="blanck" style="color:#f4821f;" href="https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts">https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts</a>. Accessed December 4, 2016.</p></f></div>
+          <div class="col-sm-10"><f><p><!--  Radar charts allow multiple health care stakeholders, most notably physicians and their patients, to compare possible strategies across multiple relevant dimensions including cost and outcomes. --> Explore the method and impact of using radar charts further and consider their practical application and implications for patient care. Kaplan, RS, Blackston, RP, Haas, DA, et al. Measuring and communicating health care value with charts. Harvard Bus Rev. 2015. <a target="blanck" style="color:#f4821f;" href="https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts">https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts</a>. Accessed December 4, 2016.</p></f></div>
           <div class="col-sm-1"></div>
       </div>
 </div>

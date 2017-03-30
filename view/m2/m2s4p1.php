@@ -49,10 +49,10 @@ include("view/cjs.php");
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod2_Sec4.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/Mod2_Sec4.mp4" type="video/mp4"></source>
-                  <source src="media/Mod2_Sec4.webm" type="video/webm"></source>
-                  <source src="media/Mod2_Sec4.ogv" type="video/ogg"></source>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod2_Sec4.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec4.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec4.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec4.ogv" type="video/ogg"></source>
                    <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>

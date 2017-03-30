@@ -44,8 +44,12 @@
     color: #fff !important;
 }
 
-.m1s7p1 .bg-3  h3 {
+.m1s7p1 .bg-3  h3{
     font-family: "GothamHTF-Bold";
+}
+.m1s7p1 .bg-3  h4 {
+    font-family: "GothamHTF-Bold";
+    margin-top: 20px;
 }
 .m1s7p1 .bg-3  h5 {
     font-family: "GothamHTF-Bold";

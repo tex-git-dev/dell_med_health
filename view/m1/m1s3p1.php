@@ -114,27 +114,33 @@ include("view/cjs.php");
                 <hr>
                 <f><h4 class="text-center">WE CAN IMPROVE VALUE BY:</h4></f>
                 <div class="row">
+                  
                   <div class="col-sm-3 text-center">
-                    <div class="panel-footer text-center">
-                       <f><div class="numberCircle s3n1 center-block" data-toggle="modal" data-target="#myModal1"><span>1</span></div></f>
+                    <div class="panel-footer text-center" data-toggle="modal" data-target="#myModal1" style="cursor:pointer;">
+				        	<img class="imagBot" src="img/Mod1Sec3_1.png" style="width: 50%;"/>
+                      <!-- <f><div class="numberCircle s3n1 center-block" data-toggle="modal" data-target="#myModal1"><span>1</span></div></f> -->
                         <f><p>Improving outcomes for patients without raising costs</p></f>
                     </div>
                   </div>
+
                   <div class="col-sm-3 text-center">
-                    <div class="panel-footer">
-                        <f><div class="numberCircle s3n2  center-block"  data-toggle="modal" data-target="#myModal2"><span>2</span></div></f>
+                    <div class="panel-footer" data-toggle="modal" data-target="#myModal2" style="cursor:pointer;">
+					<img  class="imagBot" src="img/Mod1Sec3_2.png" style="width: 50%;"/>
+                       <!-- <f><div class="numberCircle s3n2  center-block"  data-toggle="modal" data-target="#myModal2"><span>2</span></div></f> -->
                         <f><p>Maintaining good outcomes while decreasing costs</p></f>
                     </div>                         
                   </div>
                   <div class="col-sm-3 text-center">   
-                    <div class="panel-footer">                  
-                      <f><div class="numberCircle s3n3  center-block"  data-toggle="modal" data-target="#myModal3"><span>3</span></div></f>
-                      <f><p>Improving outcomes dramatically for a smaller increase in costs; or</p></f> 
+                    <div class="panel-footer" data-toggle="modal" data-target="#myModal3" style="cursor:pointer;">   
+                     <img  class="imagBot" src="img/Mod1Sec3_3.png" style="width: 50%;"/>					
+                     <!-- <f><div class="numberCircle s3n3  center-block"  data-toggle="modal" data-target="#myModal3"><span>3</span></div></f>  -->
+                      <f><p>Improving outcomes dramatically for a smaller increase in costs</p></f> 
                     </div>                       
                   </div>
                    <div class="col-sm-3 text-center">
-                      <div class="panel-footer">                    
-                        <f><div class="numberCircle s3n4  center-block"  data-toggle="modal" data-target="#myModal4"><span>4</span></div></f>
+                      <div class="panel-footer" data-toggle="modal" data-target="#myModal4" style="cursor:pointer;">   
+                      <img class="imagBot" src="img/Mod1Sec3_4.png" style="width: 50%;" />					  
+                       <!-- <f><div class="numberCircle s3n4  center-block"  data-toggle="modal" data-target="#myModal4"><span>4</span></div></f>  -->
                         <f><p>Improving outcomes for patients AND decreasing costs simultaneously</p></f>                      
                       </div>  
                   </div>
@@ -145,8 +151,8 @@ include("view/cjs.php");
                   </div>
                 </div>
                 <hr>
-              <div class="bg-4"> 
-                <f><p>This requires us to be dedicated to measurement and to achieving outcomes that matter to our patients. And yes, it means we also must consider and address costs.</p></f>
+              <div class="bg-4">
+              <f><p>This requires us to be dedicated to measurement and to achieving outcomes that matter to our patients. And yes, it means we also must consider and address costs.</p></f> 
                 <f><p>Each of these goals is complicated, and there are many intricacies involved in considering these measures for health care. We will delve into this topic in much more detail in the following modules.</p></f>
                 <br>
                 <br>
@@ -168,21 +174,23 @@ include("view/cjs.php");
            <div class="col-sm-2"></div>
             <div class="col-sm-8">
               <style type="text/css">
+			  
               .video-point{
                 width: 20px;
                 height: :40px;
-                background-color: rgb(0,0,0,0);
+                background-color: transprant;
                 z-index: 2;
                 position: absolute;
                  border-radius: 60px;
          cursor:pointer;
               }
               #skp1{
-                  top: 36%;
+                  top: 37%;
 text-align: center;
 position: relative;
 color: white;
-font-weight: bold;
+/*left: 35px;*/
+font-size: 13px;
               }
               #skid2{
                 top: 44%;
@@ -247,16 +255,12 @@ left: 77%;
 			  margin-top:-8px;
 			  }
 			  }
-        
-
-        
-        
               </style>
 
                <div class="videocontent">
-                       <div class="col-md-12 col-sm-12 col-xs-12" id="skdiv" style="background-color:transprant;height:100%;position:absolute;margin-top:0px;margin-left:0px;z-index:1;display:none;">
+          <div class="col-md-12 col-sm-12 col-xs-12" id="skdiv" style="background-color:transprant;height:100%;position:absolute;margin-top:0px;margin-left:0px;z-index:1;display:none;">
+                <p id="skp1">WHICH DATA POINT DO YOU THINK REPRESENTS<br> THE UNITED STATES?</p>
 
-                <p onclick="checkPlay2()" id="skp1">WHICH DATA POINT DO YOU THINK REPRESENTS THE UNITED STATES?</p>
                 <p onclick="checkPlay2()" id="skid2"></p>
                  <p onclick="checkPlay2()" id="skp3" class="video-point">&nbsp;</p>
                  <p onclick="checkPlay2()" id="skp4" class="video-point">&nbsp;</p>
@@ -266,12 +270,12 @@ left: 77%;
                  <p onclick="checkPlay2()" id="skp8" class="video-point">&nbsp;</p>
                  <p onclick="checkPlay2()" id="skp9" class="video-point">&nbsp;</p>
                  <p class="video-point" id="skp10" onclick="checkPlay()">&nbsp;</p>
-              </div>
+           </div>
          
-               <video id="myVideo" class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod1_Sec3.jpg" data-setup='{"fluid": true}'>
-               <source src="media/Mod1_Sec3.mp4" type="video/mp4"></source>
-                 <source src="media/Mod1_Sec3.webm" type="video/webm"></source>
-                 <source src="media/Mod1_Sec3.ogv" type="video/ogv"></source>
+               <video id="myVideo" class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264"  poster="https://s3.amazonaws.com/dell-med/Mod1_Sec3.jpg" controls data-setup='{"fluid": true}'>
+                <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.mp4" type="video/mp4"></source>
+                 <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.webm" type="video/webm"></source>
+                 <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.ogv" type="video/ogv"></source>  
                  <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
                
@@ -305,7 +309,7 @@ left: 77%;
         <br>
         <br><br>
        <div class="container bg-3 text-center">
-        <f><p class="text-left">In that statement six years ago, Dr. Berwick makes the strongest argument for the goal of improving value for patients. Improving value requires us to attend to <em>both</em> outcomes and costs. Efforts based on the primary goal of improving efficiency have not achieved enough. Health care costs are still too high in 2017, and it is ever-clearer that value for patients, that is, outcomes achieved for the money spent, needs to define the true north of clinicians’ efforts.</p></f>
+        <f><p class="text-left">In the 2011 statement, Dr. Berwick makes the strongest argument for the goal of improving value for patients. Improving value requires us to attend to <em>both</em> outcomes and costs. Efforts based on the primary goal of improving efficiency have not achieved enough. Health care costs are still too high in 2017, and it is ever-clearer that value for patients, that is, outcomes achieved for the money spent, needs to define the true north of clinicians’ efforts.</p></f>
         <f><p class="text-left">Better outcomes reduce costs. Whenever we prevent or slow disease progression, get the right diagnosis (the first time), improve outcomes in ways that reduce the need for repeated care, reduce disability, improve effectiveness of treatments, reduce invasiveness of treatments, or reduce wasteful and redundant treatments, we are reducing the costs associated with health care. Health care waste is anything that does not add value for the patient. This includes tests, medications, and procedures that are not making people healthier.</p></f>
         <f><p class="text-left">Remember our obligation to “First, Do No Harm”!</p></f>
         <br>
@@ -365,7 +369,7 @@ function myFunction()
       pauseVid();
       listQuestion(0);
   }
-  if(CT>= 46 && CT < 47 && IsShow == false)
+  if(CT== 46 && IsShow == false)
   { 
       score=1;
       IsShow=true;

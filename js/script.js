@@ -253,6 +253,7 @@ var app = {
 
 var regex = /\s+/gi;
 $(document).ready(function(){
+document.getElementsByTagName("body")[0].oncontextmenu = function(e){ e.preventDefault();}
       $('input').bind("cut copy paste",function(e) {
           e.preventDefault();
       });
@@ -311,7 +312,6 @@ app.topScroll=function(id){
         }, 1000);
 }
 
-
 app.qs = (function(a) {
     if (a == "") return {};
     var b = {};
@@ -325,4 +325,25 @@ app.qs = (function(a) {
     }
     return b;
 })(window.location.search.substr(1).split('&'));
+
+$(document).keydown(function(e){
+    if(e.keyCode==123){
+    return false;
+   }
+       e = e || window.event;//Get event
+    if (e.ctrlKey) {
+        var c = e.which || e.keyCode;//Get key code
+        switch (c) {
+            case 83://Block Ctrl+S
+            case 87://Block Ctrl+W --Not work in Chrome
+                e.preventDefault();     
+                e.stopPropagation();
+            break;
+        }
+    }
+});
+
+
+
+
 

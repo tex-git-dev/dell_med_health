@@ -107,10 +107,11 @@
     margin-top: 0 !important;
 }
 .m1s3p1 .b2 .panel-footer {
-    border-top: none !important;
-    min-height: 170px;    
-    padding-top: 15px;
+  border-top: none !important;
+min-height: 165px;
+padding-top: 24px;
 }
+
 .m1s3p1 .b2 .panel-footer  p{
     font-size: 12px !important;         
     font-family: "GothamHTF-Medium" !important;
@@ -165,7 +166,7 @@
 }
 
 .m1s3p1 #b1 #myDiv1  {
-   
+   font-size:12px;
     color: #fff;
     font-family: "GothamHTF-Medium";
     position: relative;
@@ -218,6 +219,9 @@
     color:#000;
 }
 
+.m1s3p1 .imagBot {
+    margin-bottom: 10%;     
+}
 
 .m1s3p1 .dont-break-out {
 
@@ -315,8 +319,8 @@ and (max-device-width : 1000px) {
 
 .m1s3p1 .b2 .panel-footer {
     border-top: none !important;
-    min-height: 210px;    
-    padding-top: 15px;
+    min-height: 175px;    
+    padding-top: 17px;
 }
 
 
@@ -346,6 +350,15 @@ and (max-device-width : 1000px) {
     height: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+#skp1 {
+   top: 35% !important;
+   font-size: 9px !important;
+}
+
+.m1s3p1 .imagBot {
+    margin-bottom: 8%;     
 }
 
 }
@@ -428,7 +441,7 @@ and (max-device-width : 765px) {
     border-bottom: 20px solid #fff;
     border-top: medium none !important;
     min-height: 130px;
-    padding-top: 15px;
+    padding-top: 20px !important;
 }
 
 .m1s3p1 .panel-footer p {
@@ -451,7 +464,14 @@ and (max-device-width : 765px) {
     display: none;  
 }
 
+#skp1 {
+   top: 35% !important;
+   font-size: 9px !important;
+}
 
+.m1s3p1 .imagBot {
+    margin-bottom: 8%;     
+}
 
 }
 
@@ -538,8 +558,11 @@ and (max-device-width : 500px) {
     border-bottom: 20px solid #fff;
     border-top: medium none !important;
     min-height: 130px;
-    padding-top: 15px;
+    padding-top: 20px !important;
 }
+
+
+
 
 .m1s3p1 .panel-footer p {
     font-size: 12px !important;     
@@ -561,14 +584,21 @@ and (max-device-width : 500px) {
 }
 
 #skp1 {
-   top: 32% !important;
-   font-size: 12px !important;
+   top: 35.5% !important;
+   font-size: 6px !important;
 }
 
 #skid2{
     top: 37% !important;
-font-size: 18px !important;
+font-size: 15px !important;
   }
+
+  .m1s3p1 .imagBot {
+    margin-bottom: 4% !important;     
+}
+.m1s3p1 #b1 #myDiv1  {
+   font-size:6px;
+}
 
 
 
@@ -661,7 +691,7 @@ and (max-device-width : 299px) {
     border-bottom: 20px solid #fff;
     border-top: medium none !important;
     min-height: 130px;
-    padding-top: 15px;
+    padding-top: 20px !important;
 }
 .m1s3p1 .panel-footer p {
     font-size: 12px !important;     
@@ -683,14 +713,22 @@ and (max-device-width : 299px) {
 }
 
 #skp1 {
-   top: 32% !important;
-   font-size: 12px !important;
+   top: 35.5% !important;
+   font-size: 6px !important;
 }
 
 #skid2{
     top: 37% !important;
-    font-size: 18px !important;
+    font-size: 15px !important;
   }
+
+  .m1s3p1 .imagBot {
+    margin-bottom: 4% !important;     
+}
+
+.m1s3p1 #b1 #myDiv1  {
+   font-size:6px;
+}
 
 
 }

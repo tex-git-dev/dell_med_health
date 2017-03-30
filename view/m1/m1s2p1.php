@@ -236,10 +236,10 @@ app.addOpt=function(id,len){
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Mod1_Sec2.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/Mod1_Sec2.mp4" type="video/mp4"></source>
-                  <source src="media/Mod1_Sec2.webm" type="video/webm"></source>
-                  <source src="media/Mod1_Sec2.ogv" type="video/ogg"></source>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod1_Sec2.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec2.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec2.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec2.ogv" type="video/ogv"></source>
                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>
@@ -467,7 +467,7 @@ app.addOpt=function(id,len){
          <div class="col-sm-8 text-left">
             <div class="well">
                <div class="well">
-                  <f><p>“Our north star – where we are headed – is trying to deliver Value to our patients, as defined by optimizing the health of our patients in a way that reduces cost. No matter where we sit in the health care system, we can all agree that is why we, the health care system, exists.”</p></f>
+                  <f><p>“Our north star – where we are headed – is trying to deliver value to our patients, as defined by optimizing the health of our patients in a way that reduces cost. No matter where we sit in the health care system, we can all agree that is why we, the health care system, exists.”</p></f>
                    <br>
                   <f><h6>Kevin Bozic MD MBA,</h6></f>
                   <f><h6>Chair of Surgery and Perioperative Care,</h6></f>

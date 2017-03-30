@@ -122,7 +122,7 @@ include("view/cjs.php");
                <div class="col-sm-8">
                   <f><p>Value-based health care requires appropriate teams, organized around providing the best care for specific patients, with a commitment to measuring and improving outcomes.</p></f>
                   <f><p>When a team is created around a set of patients with shared needs – such as similar circumstances and/or conditions – they share a core set of critical concerns. For example, in future modules we will discuss how care teams and practices can be formed around a condition, such as musculoskeletal pain. The clinical team can understand this set of patients and conditions and better anticipate and respond to issues, which then enhances the ability to personalize care.</p></f>
-                  <f><p>A key concept of value-based health care delivery is “positive-sum competition” based on creating value for patients.</p></f>
+                  <f><p>A key concept of value-based health care delivery is “positive-sum competition” or “win-win” based on creating value for patients.</p></f>
                   <f><p>Here we have just touched the surface of identifying these concepts. Throughout our modules, we will dig into each of these components and provide clear examples of early successes in moving to value-based health care delivery.</p></f>
                   <f><p><em>(REFERENCE = Porter and Teisberg. Redefining Health Care…)</em></p></f>
                 </div>
