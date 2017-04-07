@@ -1,6 +1,7 @@
 <?php
-if(!$_SESSION['username']){
-  ?>
+      if(!$_SESSION['username']){
+
+   ?>
   <script>
   window.location.href="<?php echo pathUrl();?>";
   </script>
@@ -9,24 +10,24 @@ if(!$_SESSION['username']){
 }
 include("view/cjs.php");
 ?>
-<link rel="stylesheet" href="css/m2s3p1.css">
-<div class="m2s3p1">
+<link rel="stylesheet" href="css/m3s3p1.css">
+<div class="m3s3p1">
        <div class="jumbotron b1">
          <div class="container text-center bg-2">
             <br>
          <br>         
          <div class="row">
             <div class="col-sm-12"> 
-             <f><p data--duration="1.5s">MODULE 2 | Section 3</p></f>
+             <f><p data--duration="1.5s">MODULE 3 | <span style="color:#f68121">Section 3</span></p></f>
             </div>
          </div>
           <div class="row">
             <div class="col-sm-12"> 
-              <f><h2>Measuring Outcomes</h2></f></div>
+              <f><h2>Speaking the Same Language&mdash;Health Care Cost Terms</h2></f></div>
             </div>
           <div class="row">
             <div class="col-sm-12">  
-                <!-- <a  class="wow fadeInDownBig" href="#b1" style="color:#fff;"><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a> -->
+               <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
             </div>
          </div>
          </div>
@@ -34,136 +35,1171 @@ include("view/cjs.php");
       <br>
     <br>
 
-      <div class="container m2s3b2 ">
-           <f><h3 class="text-uppercase text-center">Measuring Outcomes that Matter to Patients</h3></f>
-         <br>
-         <f><p>The purpose of measuring outcomes is to enable and accelerate learning and improvement in health care delivery. If you find yourself asking, “Matters to whom?” the obvious answer is: what matters to patients. The reason for health care is to help patients and families.</p></f>
-         <f><p>Facts are friendly. While physicians may worry about what outcome measurement may reveal, the opportunity to learn and improve is enabled tremendously by measuring results. When you can identify successes and failures, as well as where outcomes succeed or fail by dimension, you gain critical insight about how to improve. Putting in place measurement, feedback, and learning processes enables one patient’s outcomes to inform treatment of the next patient with similar circumstances.  Physicians who don’t track outcomes for their patients lack the feedback and tools to enable rapid learning and ongoing improvement. This points to a fundamental tenant of value-based health care: to get ever-better results for your patients and to do so efficiently.</p></f>
-         <f><p>To learn how better (or worse) outcomes are being achieved, you need to analyze the processes that lead to those outcomes. Process improvement methodology is widely used in most sectors of the economy, but less often in health care. When it is used in health care, it is often applied within departmental or procedural silos, rather than across the full cycle of the patient’s care journey. This fractured view of health care slows improvement and innovation; to really understand how desired outcomes may be achieved, processes must be viewed holistically.</p></f>
-      </div>
-      <br>
-      <br>
-
-
-<div class="jumbotron m2s3b2">    
-      <f><h3 class="text-uppercase text-center">What Matters to You?</h3></f>
-      <div  class="container text-center m2s3bgcol">
-      <div class="row text-left">
-         <div class="col-sm-1"></div>
-         <div class="col-sm-10">
-            <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Module1Final.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="https://s3.amazonaws.com/dell-med/Module 1 Final.mp4" type="video/mp4"></source>
-                  <source src="https://s3.amazonaws.com/dell-med/Module 1 Final.webm" type="video/webm"></source>
-                  <source src="https://s3.amazonaws.com/dell-med/Module 1 Final.ogv" type="video/ogg"></source>
-               </video>
-            </div>
+      <div class="Step1 container m3s3b2">
+        <div class="row">
+            <!-- <div class="col-sm-2"></div> -->
+              <div class="col-sm-12">
+                <f><h3 class="text-uppercase text-center">Unraveling the Veil: Introduction to Health Care Cost Terms</h3></f>
+                <br>
+                 <f><p>Remember when Ms. Jones asked her doctor what the stress test from her cardiologist was likely to cost, and he could only shrug and say he wasn’t sure? This may have seemed like a brush off, and certainly left Ms. Jones feeling frustrated and unsatisfied, but in reality it can be very difficult for a provider to know or even estimate the costs of service. The costs of delivering health care in America are often obscured behind layers of jargon and complex accounting methods, and are often different based on each individual patient.</p></f>
+                 <f><p>Notable health economist Uwe Reinhardt famously referred to pricing in US hospitals as “chaos behind a veil of secrecy.”1 While pushes toward transparency exist, there is still wild and unexplained variation in pricing between institutions, cities in the same state, and between states, and there is no universal willingness to share pricing data.2</p></f>
+                 <f><p>Beyond this variation, the relationship between “cost” and “price” in health care is often not clear, and the definitions of each vary based on perspective. The addition of various payors (insurance companies) and differing coverage depending on the patient further complicates the equation. The portion that patients will be required to pay and the answer to the question, “How much is this going to cost me, doc?” is thus very difficult for physicians to answer or even predict.</p></f>
+                 <f><p>Recent media coverage and the development of websites and tools providing information directly to patients about potential health care charges have led to a national movement towards price transparency. And while physicians may not be expected to know the ins and outs of all potential costs to patients, they still have an ethical obligation to help patients navigate these substantial barriers and financial “side-effects” of their care.</p></f>
+               </div>
+            <!-- <div class="col-sm-2"></div> -->
          </div>
-         <div class="col-sm-1"></div>
-      </div>
-      <br>
-       <br>
+      </div>      
+<br> <br>
+
+
+<div class="jumbotron m3s3b3">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-sm-2"></div> -->
+              <div class="col-sm-12">
+                 <f><h3 class="text-uppercase text-center">Review of Health Care Waste</h3></f>
+                 <br>
+                 <f><p>In Module 1, we explored the sheer volume and impact of medical spending and health care waste in the USAmerica. Let’s review that now. Then, we will look more closely at how the costs that comprise this spending are determined.</p></f>
+              </div>
+            <!-- <div class="col-sm-2"></div> -->
+         </div>
     </div>
-  <div  class="container m2s3b3">
-        <f><p>True measurement of outcomes that are important to the patient requires a change in the focus of the questions we ask them. Maureen Bisognano from the Institute for Healthcare Improvement has popularized the shift in asking, “What matters to you?” instead of, “What’s the matter?”<sup>1</sup> <i><a target="_blank" style="color:#f4821f;" href="http://www.ihi.org/Topics/WhatMatters/Pages/default.aspx">http://www.ihi.org/Topics/WhatMatters/Pages/default.aspx</a></i></p></f>
-        <div class="line4"></div>
-        <f><h4 class="text-center">Hear More</h4></f>
-        <br>
-        <f><p>You can watch a 4-minute video of Maureen Bisognano describing the story of her brother and the impact of focusing on “what matters to you”</p></f>
+</div> 
 
-  </div>
+
+
+
+<!-- Mcq start -->
+
+<div class="container-full m3s3mcq m3s3b4">    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" ></li>            
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" id="0">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">What percentage of the gross domestic product (GDP) does health care represent? </p></f>
+
+                                <div class="row">
+                                <div class="col-sm-12" >
+                                    <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('20%', '10%', '1%');
+
+                                            $numRandoms = 3;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "20%" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                             <div class="row pageCount">
+                                <div class="col-sm-12 " >
+                                    <f><p class="text-muted">Question 1 of 2</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                             <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" id="1">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">What percentage of health care spending is waste (i.e., does not improve health)? </p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('30%', '10%', '50%');
+
+                                            $numRandoms = 3;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "30%" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 2 of 2</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <f><p><!-- This is the correct answer because this diagnosis (ICD9 code) has the lowest mean cost, represented as the smallest value on the x-axis. --></p></f>
+                                  <!--   <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <i class="fa fa-arrow-right" aria-hidden="true"></i></div></center> -->
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                  <a class="left left_a carousel-control m3s3b7" href="#myCarousel" role="button" data-slide="prev" style="display:none;">
+                    <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                  </a>
+                  <a class="right right_a carousel-control m3s3b7" href="#myCarousel" role="button" data-slide="next">
+                    <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                  </a>
+            </div>
+    </div>
 </div>
-<br>
+
+<!-- Mcq end -->
 <br><br>
-  <div class="container m2s3b4 text-center">
-      <f><p>You can join Maureen Bisognano and thousands from around the world by adding your response to Twitter using the hashtag</p></f>
-      <f><p><a target="_blank" style="color:#f4821f;" href="https://twitter.com/search?q=%23whatmatterstoyou">#whatmatterstoyou</a></p></f>
-  </div>
-<br>
-<br>
+
+<div class="container m3s3b5">
+        <div class="row">
+            <div class="col-sm-1"></div>
+              <div class="col-sm-10">
+                 <f><h3 class="text-uppercase text-center">Learning The Lingo</h3></f>
+                 <br>
+                 <f><p>The first step in understanding health care costs is to distinguish between the terms used to discuss health care fees—“cost,” “charge,” “price,” and “reimbursement.”</p></f>
+              </div>
+            <div class="col-sm-1"></div>
+         </div>
+         <br><br>
+         <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h4 class="text-center" style="color:#ee5f4e">COST</h4>
+                <f><p class="text-center">the dollar amount that it costs for a provider to deliver a health care service. This could include direct costs, like provider time in diagnosing a disease, or indirect costs, like the use of an OR during surgery.</p></f>
+            </div>
+            <div class="col-sm-2"></div>
+         </div>        
+        <div class="row">
+            <div class="col-sm-1"></div>
+              <div class="col-sm-10"><hr></div>
+            <div class="col-sm-1"></div> 
+         </div> 
+         <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h4 class="text-center" style="color:#01aef0">CHARGE</h4>
+                <f><p class="text-center">the dollar amount a health care provider asks for a service. (This is often much higher than cost and reimbursement.)</p></f>
+            </div>
+            <div class="col-sm-2"></div>
+         </div>        
+        <div class="row">
+            <div class="col-sm-1"></div>
+              <div class="col-sm-10"><hr></div>
+            <div class="col-sm-1"></div> 
+         </div>
+         <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h4 class="text-center" style="color:#27b096">PRICE</h4>
+                <f><p class="text-center">the dollar amount a patient pays out of pocket for a service.</p></f>
+            </div>
+            <div class="col-sm-2"></div>
+         </div>        
+        <div class="row">
+            <div class="col-sm-1"></div>
+              <div class="col-sm-10"><hr></div>
+            <div class="col-sm-1"></div> 
+         </div>
+         <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h4 class="text-center" style="color:#566f8e">REIMBURSEMENT</h4>
+                <f><p class="text-center">the dollar amount a third -party payer (i.e., insurance) negotiates as payment to the provider for direct and indirect costs.</p></f>
+            </div>
+            <div class="col-sm-2"></div>
+         </div>        
+         <br><br>
+         <div class="row">
+            <div class="col-sm-1"></div>
+              <div class="col-sm-10">
+                 <f><p>Though using four different terms to discuss financials may seem like overkill, the complexity of health care transactions makes this nuance necessary. This is because the American health care system relies on several different participating parties: the patient and her physician, the provider organization (such as a clinic or hospital), the third-party payer (insurer), and sometimes the patient’s employer (often referred to as the “purchaser”) if insurance is provided as a benefit of employment. Understanding this terminology and the perspective of the party to whom each applies (i.e., payer, patient, provider, or purchaser) will help those in the health care system provide information to their patients that can ease frustration and lower financial stress as much as possible.</p></f>
+              </div>
+            <div class="col-sm-1"></div>
+         </div>
+    </div>
+
+<br><br><br>
+<div class="jumbotron m3s3b6">
+    <div class="container m3s3b8">
+        <div class="row">
+            <div class="col-sm-1"></div>
+              <div class="col-sm-10">
+                 <f><h3 class="text-uppercase text-center">Additional Resources</h3></f>                 
+                 <hr>                 
+              </div>
+            <div class="col-sm-1"></div>
+         </div>
+         <div class="row">
+            <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                 <f><p class="text-center">In Module 1, we explored the sheer volume and impact of medical spending and health care waste in the USAmerica.</p></f>
+              </div>
+            <div class="col-sm-3"></div>
+         </div>
+         <br>
+           <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><f><div class="driveS2">Dive Deeper</div></f></div>
+            <div class="col-sm-4"></div>
+           </div>
+    </div>
+</div> 
+<br><br>
+
+<div class="container m3s3b9">
+      <div class="row">
+          <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+               <f><h3 class="text-uppercase text-center">Let’s Check Our Understanding</h3></f>
+               <br>
+               <f><p class="text-center">Practice applying the above terms to the following descriptions.</p></f>
+                <br>               
+              <hr> 
+            </div>
+          <div class="col-sm-1"></div>
+       </div>
+</div> 
 <br>
 
-<div class="jumbotron m2s3b5 text-center">
-      <f><p>“If my grand-daughter is admitted to your hospital, I expect three things from you:<br>1. Do not harm her<br>2. Heal her<br>3. Be nice to her”</p></f>
-      <f><p style="font-size:14px;">- A grandfather and physician</p></f>
+
+<!-- Mcq start -->
+
+<div class="container-full m3s3mcq m3s3b4">    
+    <div id="myCarousel_a" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators"> 
+            <li data-target="#myCarousel_a" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel_a" data-slide-to="1" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="2" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="3" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="4" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="5" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="6" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="7" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="8" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="9" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="10" ></li>            
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active" id="2">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The amount a hospital pays directly for a unit of packed red blood cells (for a transfusion)</p></f>
+                                <div class="row">
+                                <div class="col-sm-12" >
+                                    <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('COST', 'CHARGE', 'PRICE', 'REIMBURSEMENT');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "COST" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                             <div class="row pageCount">
+                                <div class="col-sm-12 " >
+                                    <f><p class="text-muted">Question 1 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                             <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" id="3">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The amount an insurance company pays to a hospital for a patient’s hospitalization</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('REIMBURSEMENT', 'CHARGE', 'PRICE', 'COST');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "REIMBURSEMENT" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 2 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+               <div class="item" id="4">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The amount a laboratory pays for pipettes to process patient specimens</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('COST', 'CHARGE', 'PRICE', 'REIMBURSEMENT');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "COST" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 3 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+               <div class="item" id="5">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The amount shown on a bill an uninsured patient receives for a visit to an outpatient clinic</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('CHARGE', 'COST', 'PRICE', 'REIMBURSEMENT');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "CHARGE" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 4 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+
+               <div class="item" id="6">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The portion a patient pays for a procedure at a local clinic</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('PRICE', 'CHARGE', 'COST', 'REIMBURSEMENT');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "PRICE" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 5 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+               <div class="item" id="7">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The amount an insurance company pays to a hospital group for a diagnosis of Severe Sepsis (DRG 870)</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('REIMBURSEMENT', 'CHARGE', 'PRICE', 'COST');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "REIMBURSEMENT" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 6 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+
+               <div class="item" id="8">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The amount a clinic asks for a flu vaccination at a local pharmacy</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('CHARGE', 'COST', 'PRICE', 'REIMBURSEMENT');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "CHARGE" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 7 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+               <div class="item" id="9">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The amount a patient pays for their copay for a routine visit with their doctor</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('PRICE', 'CHARGE', 'COST', 'REIMBURSEMENT');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "PRICE" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 8 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+               <div class="item" id="10">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The amount an infectious disease physician asks for after consulting on a complex case</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('CHARGE', 'COST', 'PRICE', 'REIMBURSEMENT');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "CHARGE" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 9 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                 <div class="item" id="11">
+                <div class="container-full text-center white">
+                    <div class="container">    
+                        <div class="row">
+                        <div class="col-sm-2" ></div>
+                            <div class="col-sm-8" >
+                                <f><p class="ques">The portion of a medical bill paid to a provider by a patient’s insurance</p></f>
+                                <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row eq-h">
+                                       <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('REIMBURSEMENT', 'CHARGE', 'PRICE', 'COST');
+
+                                            $numRandoms = 4;
+
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false, false);
+                                            //print_r($random);
+
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "REIMBURSEMENT" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>                              
+                            </div> 
+                            <div class="row">
+                                  <div class="col-sm-12 sign">
+                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
+                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                              <div class="row pageCount">
+                                <div class="col-sm-12" >
+                                    <f><p class="text-muted">Question 10 of 10</p></f>
+                                </div>
+                            </div>
+                            <div class="row msg incorrectMsg text-center">
+                                <div class="col-sm-12" >
+                                    <f><h3>Incorrect.</h3></f>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                </div>
+                            </div>
+                            <div class="row msg correctMsg text-center">
+                                <div class="col-sm-12 " >
+                                    <f><h3>Correct!</h3></f>
+                                    <!-- <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question</div></center> -->
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-2" ></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                  <a class="left left_b carousel-control m3s3b7" href="#myCarousel_a" role="button" data-slide="prev" style="display:none;">
+                    <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                  </a>
+                  <a class="right right_b carousel-control m3s3b7" href="#myCarousel_a" role="button" data-slide="next">
+                    <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                  </a>
+            </div>
+    </div>
 </div>
+<!-- Mcq end -->
+<br>
 
 
-
-      <div class="jumbotron m2s3b6">                   
-          <div class="container m2s3b7">                    
-                <f><h3 class="text-center text-uppercase">Capability, Comfort, and Calm</h3></f>
-                  <hr>
-                <f><p>One framework for considering patient outcomes, proposed by Elizabeth Teisberg and Scott Wallace from Dell Medical School, is “Capability, Comfort, and Calm.”<sup>2-5</sup></p></f>
-                <f><p>Teisberg and Wallace popularized the idea that the key question about satisfaction with health care is “how are you?” rather than “how were we” or “would you recommend your physician?” They have written that, “while there are hundreds of possible performance measures for physicians, the critical questions […] are about the patients, not just about the doctor’s performance. Patient results determine quality of life and are therefore the most important measure of physician performance.”<sup>2</sup></p></f>
-                  <hr>
-                <div class="row">
-                  <div class="col-sm-4 text-center">
-                    <div class="panel-footer text-center">                        
-                        <f><h4 style="color:#f38321">CAPABILITY</h4></f>
-                        <hr>
-                        <f><p>Refers to functional outcomes such as survival, extent of recovery, and ability to perform activities necessary or desired in day-to-day life. Capability matters both during care and as a result of care.</p></f>
-                    </div>
-                  </div>
-                  <div class="col-sm-4 text-center">
-                    <div class="panel-footer">                        
-                        <f><h4 style="color:#25ad95">COMFORT</h4></f>
-                        <hr>
-                        <f><p>Lessening the burden of disease or injury. This includes reducing physical and emotional pain and suffering. Comfort also matters both during and after care.</p></f>
-                    </div>                         
-                  </div>
-                  <div class="col-sm-4 text-center">   
-                    <div class="panel-footer"> 
-                      <f><h4 style="color:#01aef2">CALM</h4></f>
-                      <hr>
-                      <f><p>Lessening the burden of treatment. This includes measures related to the amount of time or days lost to treatment or to managing care and payment, the ability to work, and the amount of chaos introduced or avoided.</p></f> 
-                    </div>
+<!-- <a target="_blank" style="color:#000;" href=""></a> -->
+<div class="jumbotron m3s3b10"> 
+       <f><h2 class="text-center">Learn More</h2></f>
+       <br>
+          <div class="container m3s3b11">
+            
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                                <div class='well'>
+                                <p class="text-uppercase"><f>article</f></p>
+                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
+                                 <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
+                                 <p><f>Accessed March<br>24, 2017.</f></p>
+                            </div>
+                          </div>
+                       </div>
                   </div>
                 </div>
-                <hr>
-                <f><p>Capability, comfort and calm are categories, within which measures can be specified. These measures can be collected directly from patients as easily as patient satisfaction data are collected. The difference is that we get insight about how well our patients are doing with health, rather than how they reacted to parking, wait times, or hospitality. These patient-reported outcome measures are discussed in the next section.</p></f>               
             </div>
-     </div>
-     
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                                <div class='well'>
+                                <p class="text-uppercase"><f>article</f></p>
+                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
+                                 <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
+                                 <p><f>Accessed March<br>24, 2017.</f></p>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                                <div class='well'>
+                                <p class="text-uppercase"><f>article</f></p>
+                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
+                                 <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
+                                 <p><f>Accessed March<br>24, 2017.</f></p>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                                <div class='well'>
+                                <p class="text-uppercase"><f>article</f></p>
+                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
+                                 <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
+                                 <p><f>Accessed March<br>24, 2017.</f></p>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                                <div class='well'>
+                                <p class="text-uppercase"><f>article</f></p>
+                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
+                                 <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
+                                 <p><f>Accessed March<br>24, 2017.</f></p>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>        
 
 
-    
 
 
-        <!-- <br>
-        <br><br>
-       <div class="container bg-3 text-center">       
-        <hr>        
-        <f><h5 data-toggle="collapse" data-target="#demo" class="text-left">REFERENCES <a class="s3hide" style="color:#000; font-size:18px; cursor:pointer;"><i class="fa fa-angle-down" aria-hidden="true"></i></a></h5></f>
-        <br>
-        <ol id="demo" class="collapse">
-            <li class="text-left"><f><p>Porter ME and Teisberg EO. <em>Redefining Health Care: Creating Value-Based Competition on Results</em>. Boston, MA: Harvard Business Press; 2006.</p></f></li>
-            <li class="text-left"><f><p>High value care. American College of Physicians website. <a style="color:#f4821f;" target="_blank" href="https://www.acponline.org/clinical-information/high-value-care?utm_medium=referral&utm_source=r360">https://www.acponline.org/clinical-information/high-value-care?utm_medium=referral&utm_source=r360</a>.  Accessed November 30, 2016.</p></f></li>
-            <li class="text-left"><f><p>Committee on the Learning Health Care System in America; Institute of Medicine. Achieving and rewarding high-value care. In: Smith M, Saunders R, Stuckhardt L, et al., eds. <em>Best Care at Lower Cost: The Path to Continuously Learning Health Care in America</em>. Washington,DC: National Academies Press (US); 2013. <a  style="color:#f4821f;" target="_blank" href="https://www.ncbi.nlm.nih.gov/books/NBK207237/?utm_medium=referral&utm_source=r360">https://www.ncbi.nlm.nih.gov/books/NBK207237/?utm_medium=referral&utm_source=r360</a>. Accessed November 30, 2016</p></f></li>
-            <li class="text-left"><f><p>Moriates C, Arora V, Shah N. <em>Understanding Value-Based Healthcare</em>. Columbus, OH: McGraw-Hill Education; 2015.</p></f></li>
-            <li class="text-left"><f><p>Institute for Healthcare Improvement. “<a target="_blank" style="color:#f4821f;" href="http://app.ihi.org/tv/#video=476a0a6f-a9fa-490d-b335-b09dffa94b14">Picker Award Presentation to Donald Berwick, MD, MPP</a>.” 23rd Annual National Forum on Quality Improvement in Health Care, December 2011.</p></f></li>
-        </ol>
-   </div>  -->
+      <div class="container m3s3b12">
+        <div class="row">    
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <hr>
+            <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
+            <br>        
+          <div id="demo" class="collapse">
+            <ol>
+              <f><li><p>Reinhardt UE. The pricing of U.S. hospital services: chaos behind a veil of secrecy. Health Affairs. 2006;25(1):57-69. doi: <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1377/hlthaff.25.1.57">10.1377/hlthaff.25.1.57</a></p></li></f>
+              <f><li><p>Health Care Cost Institute. Some states pay twice the price for health care, finds new report. April 27, 2016. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.healthcostinstitute.org/states-pay-twice-price-health-care-finds-new-report/">http://www.healthcostinstitute.org/states-pay-twice-price-health-care-finds-new-report/</a> Accessed January 3, 2017. </p></li></f>
+              <f><li><p>Dobson A, DaVanzo J, Doherty J, Tanamor M . A study of hospital charge setting practices. The Lewin Group. December 2005; No. 05-4. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://67.59.137.244/documents/Dec05_Charge_setting.pdf">http://67.59.137.244/documents/Dec05_Charge_setting.pdf</a> Accessed March 24, 2017.</p></li></f>
+              <f><li><p>National Nurses United Press Release.  New data – some hospitals set charges at 10 times their costs. National Nurses United website. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.nationalnursesunited.org/press/entry/new-data-some-hospitals-set-charges-at-10-times-their-costs/">http://www.nationalnursesunited.org/press/entry/new-data-some-hospitals-set-charges-at-10-times-their-costs/</a>  Published January 6, 2014. Accessed March 24, 2017.</p></li></f>
+              <f><li><p>Umbdenstock R. Hospital billing too complex: Another view. USA Today. May 15 2013. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.usatoday.com/story/opinion/2013/05/15/billing-american-hospital-association-editorials-debates/2163741/">http://www.usatoday.com/story/opinion/2013/05/15/billing-american-hospital-association-editorials-debates/2163741/</a> Accessed March 24, 2017.</p></li></f>          
+            </ol>
+          </div>  
+          </div>
+        <div class="col-sm-1"></div>        
+   </div>
 
-     
+
 </div>
 
-
-<footer class="container-fluid">
-         
+<footer class="container-fluid">         
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
-              <a href="?id=m1/m1s2p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
-              <span class="ssp1">MODULE 1 | Section 2</span>
-                <span class="sp1"><strong>Story From the Frontlines</strong></span></a>
+            <div class="col-sm-4 text-left NextBtn">
+              <a href="?id=m2/m2s5p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <span class="ssp1">MODULE 2 | Section 5</span>
+                <span class="sp1"><strong>Using Measures Frameworks to Improve Outcomes</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
-                <a href="?id=m1/m1s4p1"><span class="ssp2">MODULE 1 | Section 4</span>
-                <span class="sp2"><strong>How Big of a Problem is Healthcare Waste?</strong></span>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
+                <a href="?id=m2/m2s7p1"><span class="ssp2">MODULE 2 | Section 7</span>
+                <span class="sp2"><strong>Care Redesign Case: UNOS</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
-      </footer> 
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+          
+</footer> 
   
+
+<?php
+
+    function randomArray($array, $numRandoms) {
+        $final = array();
+
+        $count = count($array);
+
+        if ($count >= $numRandoms) {
+
+            while (count($final) < $numRandoms) {
+
+                $random = $array[rand(0, $count - 1)];
+
+                if (!in_array($random, $final)) {
+
+                    array_push($final, $random);
+                }
+            }
+        }
+
+        return ($final);
+    }
+    ?>
+
+<script>
+
+$('.carousel').on('slid.bs.carousel', function (e) {
+       $('.item .ans').removeClass('Dis');
+       var id = parseInt(e.relatedTarget.id);
+          if(id == 0){
+              $('.left_a').hide();
+              $('.right_a').show();
+          }else if(id == 1){
+            $('.left_a').show();
+            $('.right_a').hide();
+          }
+
+
+          if(id == 2){
+              $('.left_b').hide();              
+          }else if(id == 11){
+            $('.left_b').show();
+            $('.right_b').hide();
+          } else {
+            $('.left_b').show();
+            $('.right_b').show();
+          }
+
+
+          
+
+
+
+
+      });
+
+function TryA(){
+      $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
+      $('.item .ans').removeClass('Dis');
+    }
+
+
+    function checkAnswer(obj, f) {
+            //console.log($(obj).parents(".row-eq-height"));
+            $('.item .ans').addClass('Dis');
+            $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
+            $(obj).parents(".eq-h").find(".ans")
+            $(obj).parents(".white").removeClass("correct incorrect");
+            if (f === 1) {
+                $(obj).addClass('selectedAns').parents('.white').addClass('correct');
+            } else if (f === 0) {
+                $(obj).addClass('selectedAns').parents('.white').addClass('incorrect');
+            } else {
+                $(obj).addClass('selectedAns').parents('.white').addClass('correct bothCorrect');
+                //alert(f);
+                $(".5401, .2497").addClass("hide");
+                $("." + f).removeClass("hide");
+            }
+        }
+        
+
+</script>

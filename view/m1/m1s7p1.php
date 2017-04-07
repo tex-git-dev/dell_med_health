@@ -294,8 +294,9 @@ include("view/cjs.php");
           <f><h2 class="text-center">Learn More</h2></f>
           <br>
            <div class="container m7b3">
-              <div class="row eq-h">
-                <div class="col-sm-4">
+
+              <div class="row">
+                <div class="col-sm-12">
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3" >
@@ -303,18 +304,19 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <f><p class="text-uppercase">Article</p></f>
-                                 <f><p><a target="_blank" style="color:#000;" href="https://academic.oup.com/jamia/article-lookup/doi/10.1136/amiajnl-2013-002511">Value Driven Outcomes (VDO): A Pragmatic, Modular, and Extensible Software Framework for Understanding and Improving Health Care Costs and Outcomes</a></p></f>
+                                <p class="text-uppercase"><f>Article</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="https://academic.oup.com/jamia/article-lookup/doi/10.1136/amiajnl-2013-002511">Value Driven Outcomes (VDO): A Pragmatic, Modular, and Extensible Software Framework for Understanding and Improving Health Care Costs and Outcomes</a></f></p>
                                  <p><f>If you are interested in the methods behind the University of Utah VDO Tool, this manuscript details the analytical and IT infrastructure of the tool.</f></p>
                                  <p><f>Kawamoto K, Martin CJ, Williams K, Tu M-C, et al.<br>Journal of the American Medical Informatics Association<br>2015;22(1),223-235.</f></p> 
                             </div>
                           </div>
                        </div>
                   </div>
-
-
                 </div>
-                <div class="col-sm-4">
+              </div>  
+
+              <div class="row">
+                <div class="col-sm-12">
                    <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
@@ -322,17 +324,19 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <f><p class="text-uppercase ">video</p></f>
-                                 <f><p style="color:#000;"><a target="_blank" style="color:#000;" href="http://www.nbcnews.com/nightly-news/video/see-how-this-hospital-charges-less-and-helps-patients-recover-575453251814">See How This Hospital Charges Less and Helps Patients Recover</a></p></f>
+                                <p class="text-uppercase "><f>video</f></p>
+                                 <p style="color:#000;"><f><a target="_blank" style="color:#000;" href="http://www.nbcnews.com/nightly-news/video/see-how-this-hospital-charges-less-and-helps-patients-recover-575453251814">See How This Hospital Charges Less and Helps Patients Recover</a></f></p>
                                  <p><f>This video features the University of Utah Medical Center and their efforts to reduce costs and improve outcomes that matter to patients.</f></p>
                                  <p><f>NBC Nightly News with Lester Holt.<br>November 27, 2016.</f></p>
-                                 
                             </div>
                           </div>
                        </div>
                   </div>
                 </div>
-                <div class="col-sm-4">
+              </div>
+              
+              <div class="row">  
+                <div class="col-sm-12">
                     <div class='well1'>
                         <div class='row vertical-align'>
                           <div class="col-sm-3">
@@ -340,8 +344,8 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
-                                <f><p class="text-uppercase">Article</p></f>
-                                 <f><p><a target="_blank" style="color:#000;" href="http://healthsciences.utah.edu/innovation/algorithms/2013/two/">How Can We Control Our Costs?</a></p></f>
+                                <p class="text-uppercase"><f>Article</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://healthsciences.utah.edu/innovation/algorithms/2013/two/">How Can We Control Our Costs?</a></f></p>
                                  <p><f>This article details the story behind the development of the VDO tool at the University of Utah and includes more information on the people who made it happen.</f></p>
                                  <p><f>Algorithms for Innovation.<br>University of Utah Health Sciences. 2016.</f></p>                                  
                             </div>

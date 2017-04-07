@@ -6,96 +6,95 @@
 </script>
 <?php
    }
-   include("view/cjs.php");
-   ?>
-     <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+include("db.php");
+include("view/cjs.php");
+$c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
+$retval1=mysqli_query($dbcon,$c5);
+while($row = mysqli_fetch_row($retval1)) {
+    $s2data = json_decode($row[7],true);
+    $dataT1 = $s2data['m2']['sections']['s2']['response1'];
+    $dataN1 = $row[2]." ". $row[3];
+    $dataT = $s2data['m2']['sections']['s2']['response2'];
+    $dataN = $row[2]." ". $row[3];
+    if ($dataT) {
+?>
 <script type="text/javascript">
+    app.cArrayT.push("<?php echo $dataT;?>");
+    app.cArrayN.push("<?php echo $dataN;?>");
+</script>
+<?php } 
+if ($dataT1) {
+?>
+<script type="text/javascript">
+    app.cArrayT1.push("<?php echo $dataT1;?>");
+    app.cArrayN1.push("<?php echo $dataN1;?>");
+</script>
+ 
+<?php }}?>
+<script type="text/javascript">
+$(document).ready(function() {
+      var section = 's'+app.qs["id"][6];
+      var loc0 = app.MData[app.SelecteM].sections[section];
+      if (loc0.response1) {
+        app.response1();
+      }
+    
+      if (loc0.response2) {
+        app.response2();
+      }
+
+      $('#myCarousel2').bind('slid.bs.carousel', function (e) {
+        app.showRM();
+      });
+});
+window.onresize = function(){app.showRM();};
+  app.addOpt=function(id,len){
+  var sizeC = Math.ceil(len/3); 
+  if (sizeC>1) {
+    var circleList='<li data-target="#'+id+'" data-slide-to="0" class="active"></li>';
+    for (var i = 1; i <sizeC; i++) {
+      circleList+='<li data-target="#'+id+'" data-slide-to="'+i+'"></li>';
+    }
+    $('#'+id+' .carousel-indicators').append(circleList);
+  }else{
+     $('#'+id+' .left').hide();
+    $('#'+id+' .right').hide();
+  }
+}
 
    app.response1 = function(){
-       var loc = $("#response1Text").val();
+      var loc = $("#response1Text").val();
+        var section = 's'+app.qs["id"][6];
+      if (loc) {
+        app.MData[app.SelecteM].sections[section]['response1'] = loc;
+        var data = JSON.stringify(app.MData);
+        var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
+        app.DataSave(loc_1);
+        app.cArrayT1.unshift(loc);
+        app.cArrayN1.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }else{
+        loc =app.MData[app.SelecteM].sections[section]['response1'];
+        app.cArrayT1.unshift(loc);
+        app.cArrayN1.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }
+
       if (loc == "") {
-       alert("Please write the response.")
+        alert("Please write the response.")
        }else{
-        var regex1 = /\./gi;
-        var regex2 = /\,/gi;
-        var regex3 = /\"/gi;
-    var regex4 = /\“/gi;
-    var regex5 = /\”/gi;
-    var regex6 = /\—|–/gi;
-        loc = loc.replace(regex1, '');
-         loc = loc.replace(regex2, '');
-         loc = loc.replace(regex3, '');
-     loc = loc.replace(regex4, '');
-     loc = loc.replace(regex5, '');
-     loc = loc.replace(regex6, ' ');
-
-        var WordList = ['ABOARD','BEHIND','DURING','ABOUT','BELOW','EXCEPT','ABOVE','BENEATH','FOR','ACROSS','BESIDE','FROM','AFTER','BESIDES','IN','AGAINST','BETWEEN','INSIDE','ALONG','BEYOND','INTO','AMONG','BUT','LIKE','AROUND','BY','NEAR','AT','CONCERNING','OF','BEFORE','DOWN','OFF','ON','THROUGHOUT','UNTIL','OUT','TILL','UP','OVER','TO','UPON','PAST','TOWARD','WITH','SINCE','UNDER','WITHIN','THROUGH','UNDERNEATH','WITHOUT','ACCORDING TO','IN ADDITION TO','ON ACCOUNT OF','AS OF','IN FRONT','OF','OUT OF','ASIDE FROM','IN PLACE OF','OWING TO','BECAUSE OF','IN SPITE OF','PRIOR TO','BY MEANS OF','INSTEAD OF','PRIOR TO','AM','ARE','IS','WAS','WERE','BE','BEING','BEEN','HAVE','HAS','HAD','SHALL','WILL','DO','DOES','DID','MAY','MUST','MIGHT','CAN','COULD','WOULD','SHOULD','ALL','ANOTHER','ANY','ANYBODY','ANYONE','ANYTHING','BOTH','EACH','EITHER','EVERYBODY','EVERYONE','EVERYTHING','FEW','HE','HER','HERS','HERSELF','HIM','HIMSELF','HIS','I','IT','ITS','ITSELF','MANY','ME MINE','MORE','MOST','MUCH','MY','MYSELF','NEITHER','NO ONE','NOBODY','NONE','NOTHING','ONE','OTHER','OTHERS','OUR','OURS','OURSELVES','SEVERAL','SHE','SOME','SOMEBODY','SOMEONE','SOMETHING','THAT','THEIR','THEIRS','THEM','THEMSELVES','THESE','THEY','THIS','THOSE','US','W','WE','WHAT','WHATEVER','WHICH','WHICHEVER','WHO','WHOEVER','WHOM','WHOMEVER','WHOSE','YOU','YOUR','YOURS','YOURSELF','YOURSELVES','AT','A','A','ABLE','ABOUT','ABOVE','ABST','ACCORDANCE','ACCORDING','ACCORDINGLY','ACROSS','ACT','ACTUALLY','ADDED','ADJ','ADOPTED','AFFECTED','AFFECTING','AFFECTS','AFTER','AFTERWARDS','AGAIN','AGAINST','AH','AL','ALL','ALMOST','ALONE','ALONG','ALREADY','ALSO','ALTHOUGH','ALWAYS','AM','AMONG','AMONGST','AN','AND','ANNOUNCE','ANOTHER','ANY','ANYBODY','ANYHOW','ANYMORE','ANYONE','ANYTHING','ANYWAY','ANYWAYS','ANYWHERE','APPARENTLY','APPROXIMATELY','ARE','AREN','ARENT','ARISE','AROUND','AS','ASIDE','ASK','ASKING','AT','AUTH','AVAILABLE','AWAY','AWFULLY','B','BACK','BE','BECAME','BECAUSE','BECOME','BECOMES','BECOMING','BEEN','BEFORE','BEFOREHAND','BEGIN','BEGINNING','BEGINNINGS','BEGINS','BEHIND','BEING','BELIEVE','BELOW','BESIDE','BESIDES','BETWEEN','BEYOND','BIOL','BOTH','BRIEF','BRIEFLY','BUT','BUT','BY','C','CA','CAME','CAN','CANNOT','CAUSE','CAUSES','CERTAIN','CERTAINLY','CO','COM','COME','COMES','CONTAIN','CONTAINING','CONTAINS','COULD','COULDNT','D','DATE','DID','DIDN','DIFFERENT','DO','DOES','DOESN','DOING','DONE','DON','DOWN','DOWNWARDS','DUE','DURING','E','EACH','ED','EDU','EFFECT','EG','EIGHT','EIGHTY','EITHER','ELSE','ELSEWHERE','END','ENDING','ENOUGH','ESPECIALLY','ET','ETC','EVEN','EVER','EVERY','EVERYBODY','EVERYONE','EVERYTHING','EVERYWHERE','EX','EXCEPT','F','FAR','FEW','FF','FIFTH','FIRST','FIVE','FIX','FOLLOWED','FOLLOWING','FOLLOWS','FOR','FORMER','FORMERLY','FORTH','FOUND','FOUR','FROM','FURTHER','FURTHERMORE','G','GAVE','GET','GETS','GETTING','GIVE','GIVEN','GIVES','GIVING','GO','GOES','GONE','GOT','GOTTEN','H','HAD','HAPPENS','HARDLY','HAS','HASN','HAVE','HAVEN','HAVING','HE','HED','HENCE','HER','HERE','HEREAFTER','HEREBY','HEREIN','HERES','HEREUPON','HERS','HERSELF','HES','HI','HID','HIM','HIMSELF','HIS','HITHER','HOME','HOW','HOWBEIT','HOWEVER','HUNDRED','I','ID','IE','IF','IM','IMMEDIATE','IMMEDIATELY','IMPORTANCE','IMPORTANT','IN','IN','INC','INDEED','INDEX','INFORMATION','INSTEAD','INTO','INVENTION','INWARD','IS','ISN','IT','IT','ITD','ITS','ITSELF','J','JUST','K','KEEP','KEEPS','KEPT','KEYS','KG','KM','KNOW','KNOWN','KNOWS','L','LARGELY','LAST','LATELY','LATER','LATTER','LATTERLY','LEAST','LESS','LEST','LET','LETS','LIKE','LIKED','LIKELY','LINE','LITTLE','LOOK','LOOKING','LOOKS','LTD','M','MADE','MAINLY','MAKE','MAKES','MANY','MAY','MAYBE','ME','MEAN','MEANS','MEANTIME','MEANWHILE','MERELY','MG','MIGHT','MILLION','MISS','ML','MORE','MOREOVER','MOST','MOSTLY','MR','MRS','MUCH','MUG','MUST','MY','MYSELF','N','NA','NAME','NAMELY','NAY','ND','NEAR','NEARLY','NECESSARILY','NECESSARY','NEED','NEEDS','NEITHER','NEVER','NEVERTHELESS','NEW','NEXT','NINE','NINETY','NO','NOBODY','NON','NONE','NONETHELESS','NOONE','NOR','NORMALLY','NOS','NOT','NOTED','NOTHING','NOW','NOWHERE','O','OBTAIN','OBTAINED','OBVIOUSLY','OF','OFF','OFTEN','OH','OK','OKAY','OLD','OMITTED','ON','ONCE','ONE','ONES','ONLY','ONTO','OR','ORD','OTHER','OTHERS','OTHERWISE','OUGHT','OUR','OUR','OURS','OURSELVES','OUT','OUTSIDE','OVER','OVERALL','OWING','OWN','P','PAGE','PAGES','PART','PARTICULAR','PARTICULARLY','PAST','PER','PERHAPS','PLACED','PLEASE','PLUS','POORLY','POSSIBLE','POSSIBLY','POTENTIALLY','PP','PREDOMINANTLY','PRESENT','PREVIOUSLY','PRIMARILY','PROBABLY','PROMPTLY','PROUD','PROVIDES','PUT','Q','QUE','QUICKLY','QUITE','QV','R','RAN','RATHER','RD','RE','READILY','REALLY','RECENT','RECENTLY','REF','REFS','REGARDING','REGARDLESS','REGARDS','RELATED','RELATIVELY','RESEARCH','RESPECTIVELY','RESULTED','RESULTING','RESULTS','RIGHT','RUN','S','SAID','SAME','SAW','SAY','SAYING','SAYS','SEC','SECTION','SEE','SEEING','SEEM','SEEMED','SEEMING','SEEMS','SEEN','SELF','SELVES','SENT','SEVEN','SEVERAL','SHALL','SHE','SHED','SHES','SHOULD','SHOULDN','SHOW','SHOWED','SHOWN','SHOWNS','SHOWS','SIGNIFICANT','SIGNIFICANTLY','SIMILAR','SIMILARLY','SINCE','SIX','SLIGHTLY','SO','SO','SOME','SOMEBODY','SOMEHOW','SOMEONE','SOMETHAN','SOMETHING','SOMETIME','SOMETIMES','SOMEWHAT','SOMEWHERE','SOON','SORRY','SPECIFICALLY','SPECIFIED','SPECIFY','SPECIFYING','STATE','STATES','STILL','STOP','STRONGLY','SUB','SUBSTANTIALLY','SUCCESSFULLY','SUCH','SUFFICIENTLY','SUGGEST','SUP','SURE','T','TAKE','TAKEN','TAKING','TELL','TENDS','TH','THAN','THANK','THANKS','THANX','THAT','THATS','THE','THEIR','THEIR','THEIRS','THEM','THEMSELVES','THEN','THENCE','THERE','THERE','THEREAFTER','THEREBY','THERED','THEREFORE','THEREIN','THEREOF','THERERE','THERES','THERETO','THEREUPON','THESE','THEY','THESE','THEY','THEYD','THEYRE','THINK','THIS','THIS','THOSE','THOSE','THOU','THOUGH','THOUGHH','THOUSAND','THROUG','THROUGH','THROUGHOUT','THRU','THUS','TIL','TIP','TO','TOGETHER','TOO','TOOK','TOWARD','TOWARDS','TRIED','TRIES','TRULY','TRY','TRYING','TS','TWICE','TWO','U','UN','UNDER','UNFORTUNATELY','UNLESS','UNLIKE','UNLIKELY','UNTIL','UNTO','UP','UPON','UPS','US','USE','USED','USEFUL','USEFULLY','USEFULNESS','USES','USING','USUALLY','V','VALUE','VARIOUS','VE','VERY','VIA','VIZ','VOL','VOLS','VS','W','WANT','WANTS','WAS','WASN','WAY','WE','WED','WELCOM','WENT','WERE','WEREN','WHAT','WHATEVER','WHATS','WHEN','WHENCE','WHENEVER','WHERE','WHEREAFTER','WHEREAS','WHEREBY','WHEREIN','WHERES','WHEREUPON','WHEREVER','WHETHER','WHICH','WHILE','WHIM','WHITHER','WHO','WHOD','WHOEVER','WHOLE','WHOM','WHOMEVER','WHOS','WHOSE','WHY','WIDELY','WILL','WILLING','WISH','WITH','WITHIN','WITHOUT','WORDS','WORLD','WOULD','WOULDN','WWW','X','Y','YES','YET','YOU','YOUD','YOUR','YOUR','YOURE','YOURS','YOURSELF','YOURSELVES','Z','ZERO','','AS','–',"'",'"',';',',','(',')'];
-
-          var list= [];
-          var loc1 = loc.split(' ');
-          var word1 =[];
-         for (var i = 0; i < loc1.length; ++i) {
-            var loc3 = loc1[i];
-            var loc4 = WordList.indexOf(loc3.toUpperCase());
-            if(loc4 == -1){
-              
-              word1.push(loc3);
-              //
-            }
-         }
-        var CCWord = $.extend({}, cc(word1));
-        var temp = [];
-        $.each(CCWord, function(key, value) {
-            temp.push({v:value, k: key});
-        });
-        temp.sort(function(a,b){
-           if(a.v > b.v){ return -1}
-            if(a.v < b.v){ return 1}
-              return 0;
-        });
-        var temp1 =[];
-        var temp2 =[];
-        $.each(temp,function(k,v){ 
-            temp1.push(v['k']);
-            temp2.push(v['v']);
-        });
-         $.each(temp1,function(k,v){ 
-     if(k==51)     
-      return false;
-            var calss = shuffleArray(["vertical",""])[0];
-           list.push({'text': v, 'weight': temp2[k], 'html': {"class": calss}});
-        });
-          $(".f1").html(temp1[0]);
-          $(".f2").html(temp1[1]);
-
-         
-        
-         $(".wordClouds").css({"visibility":"visible","height":"auto"});
-         app.WordC(list);
-         $(".act1").hide();
-          $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
-
-        }
-   }
-
-function cc(arr){
-  var obj = { };
-    for (var i = 0, j = arr.length; i < j; i++) {
-       obj[arr[i]] = (obj[arr[i]] || 0) + 1;
-    }
-    return obj;
-}
-    app.response2 = function(){
-      var loc = $("#response2Text").val();
-      if (loc == "") {
-       alert("Please write the response.")
-       }else{
-        $(".act2").hide();
-        $(".carouselC").css({"visibility":"visible","height":"auto"});
+         app.addOpt('myCarousel1',app.cArrayT1.length);
+        $(".act1").hide();
+        $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";
-        for (var i = 1; i < 10; i++) {
-          var f = "";
+         var t =0;
+          var sizeC = Math.ceil(app.cArrayT1.length/3); 
+
+          if(sizeC > 6)
+          {
+            sizeC=6;
+          }
+          
+        for (var i = 1; i < sizeC+1; i++) {
+            var f = "";
             if(i == 1){
               f = "active";
             }else{
@@ -103,43 +102,135 @@ function cc(arr){
             }
            items += '<div class="item '+f+'"><div class="row">';
              for (var j = 1; j < 4; j++) {
-              items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight">';
-              items += loc;
-              items += '</div><br><span>';
-              items += '<img src="img/module_1_section_2_9.png" width="60" /> ';
-              items += '<span class="text-uppercase" style="color:#000;"> <?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?></span>';
-              items += '</span>';
-              items += '</div></div>';
+                  var T0 = app.cArrayT1[t];
+                  var N0 = app.cArrayN1[t];
+                  console.log(T0)
+                  t++;
+                    if(T0 != undefined){
+                      items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
+                      items += T0;
+                      items += '</span></div><a href="javascript:app.pup1('+t+');">Read more<br></a><br><span>';
+                      items += '<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i> ';
+                      items += '<span class="text-uppercase" style="color:#000;"> '+N0+'</span>';
+                      items += '</span>';
+                      items += '</div></div>';
+                    }
              }
            items += '</div></div>';
-         
         } 
-        $("#additem").append(items);
-        $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
+        $(".carouselC1 .additem").append(items);
+        app.showRM();
       }
    }
-   function shuffleArray(array) {
-     for (var i = array.length - 1; i > 0; i--) {
-         var j = Math.floor(Math.random() * (i + 1));
-         var temp = array[i];
-         array[i] = array[j];
-         array[j] = temp;
-     }
-     return array;
+app.doneResizing= function(e){
+  $('.jqcloud').html('');
+   var lo1 = JSON.parse(JSON.stringify(app.WCList1));
+ app.WordC(lo1,'my_favorite_latin_words');
+ $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
+}
+app.pup1= function(v){
+  var loc =  $(".carouselC1 .iHeight").eq(v-1).text();
+   var name =  $(".carouselC1 .iHeight").eq(v-1).next().next().next().text();
+    $('.m3s2p1 #mc1 .modal-content .modal-body').html(loc);
+    $('#mc1').modal({show: 'false'});
+    $('.m3s2p1 #mc1 .modal-content #name').html(name);
+}
+app.pup2= function(v){
+  var loc =  $(".carouselC .iHeight").eq(v-1).text();
+   var name =  $(".carouselC .iHeight").eq(v-1).next().next().next().text();
+    $('.m3s2p1 #mc1 .modal-content .modal-body').html(loc);
+    $('#mc1').modal({show: 'false'});
+    $('.m3s2p1 #mc1 .modal-content #name').html(name);
+}
+
+/*
+app.response2 = function(){
+     var loc = $("#response2Text").val();
+      var section = 's'+app.qs["id"][6];
+      if (loc) {
+          app.MData[app.SelecteM].sections[section]['response2'] = loc;
+          var data = JSON.stringify(app.MData);
+          var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
+          app.DataSave(loc_1);
+          app.cArrayT.unshift(loc);
+          app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }else{
+        loc =app.MData[app.SelecteM].sections[section]['response2'];
+        app.cArrayT.unshift(loc);
+        app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }
+      if (loc == "") {
+        alert("Please write the response.")
+       }else{
+         app.addOpt('myCarousel2',app.cArrayT.length);
+        $(".act2").hide();
+        $(".carouselC").css({"visibility":"visible","height":"auto"});
+         var items="";
+         var t =0;
+          var sizeC = Math.ceil(app.cArrayT.length/3); 
+        for (var i = 1; i < sizeC+1; i++) {
+            var f = "";
+            if(i == 1){
+              f = "active";
+            }else{
+              f = "";
+            }
+           items += '<div class="item '+f+'"><div class="row">';
+             for (var j = 1; j < 4; j++) {
+                  var T0 = app.cArrayT[t];
+                  var N0 = app.cArrayN[t];
+                  t++;
+                    if(T0 != undefined){
+                      console.log(t)
+                      items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
+                      items += T0;
+                      items += '</span></div><a href="javascript:app.pup2('+t+');">Read more<br></a><br><span>';
+                      items += '<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i> ';
+                      items += '<span class="text-uppercase" style="color:#000;"> '+N0+'</span>';
+                      items += '</span>';
+                      items += '</div></div>';
+                    }
+             }
+           items += '</div></div>';
+        } 
+        $(".carouselC .additem").append(items);
+        app.showRM();
+      }
    }
+*/
+
+
+
+   $(document).ready(function(){
+  var flagvd = false;
+     $('.video-js').inview({
+        'onEnter': function($object) {
+          if(flagvd == false){
+            $('video').trigger('play');
+            flagvd=true;
+          }           
+
+          },
+          'onLeave': function($object) {
+            //$('video').trigger('pause');
+          }
+
+      });
+  });
 </script>
+
 <link rel="stylesheet" type="text/css" href="jqcloud/jqcloud.css" />
 <script type="text/javascript" src="jqcloud/jqcloud-1.0.4.js"></script>
 
-<link rel="stylesheet" href="css/m2s2p1.css">
-<div class="m2s2p1">
+<link rel="stylesheet" href="css/m3s2p1.css">
+<div class="m3s2p1">
    <div class="jumbotron b1">
       <div class="container text-center">
          <br>
          <br>         
          <div class="row">
             <div class="col-sm-12">
-               <f><p data--duration="1.5s">MODULE 2 | <span style="color:#f68121">Section 2</span></p></f>
+               <f><p data--duration="1.5s">MODULE 3 | <span style="color:#f68121">Section 2</span></p></f>
             </div>
          </div>
          <div class="row">
@@ -149,26 +240,32 @@ function cc(arr){
          </div>
          <div class="row">
             <div class="col-sm-12">
-               <!-- <a  class="wow fadeInDownBig" href="#b1" style="color:#fff;"><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a> -->
+                <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
             </div>
          </div>
       </div>
    </div>
-   <br><br>   
+<br><br>
+<div class="container m3s2s1">
+    <h3 class="text-uppercase text-center">...And Then the Bill Comes</h3>
+</div>
+   <br>
 
-  <div id="b1" class="container text-center s1bgcol">
+
+  <div id="b1" class="Step1 container text-center s1bgcol">
       <div class="row text-left">
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Module1Final.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="https://s3.amazonaws.com/dell-med/Module 1 Final.mp4" type="video/mp4"></source>
-                  <source src="https://s3.amazonaws.com/dell-med/Module 1 Final.webm" type="video/webm"></source>
-                  <source src="https://s3.amazonaws.com/dell-med/Module 1 Final.ogv" type="video/ogg"></source>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod2_Sec2.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.ogv" type="video/ogv"></source>
+                  <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>
          </div>
-         <div class="col-sm-2"></div>
+        <div class="col-sm-2"></div>
       </div>
    </div>
 
@@ -179,33 +276,49 @@ function cc(arr){
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
-               <div class="wordClouds">
-                  <br>
-                  <f><p>Your response: <strong><span class="f1"></span>, <span class="f2"></span></strong></p></f>
-                  <div id="my_favorite_latin_words" style="width: 100%; background: #33a0cb; color: #fff; height: 350px; border: 1px solid #ccc;"></div>
+               <div class="carouselC1">
+                  <br>                 
+                  <f><p>Do you have a story about how you or someone you know has been affected by confusing or unreasonable medical costs? Please briefly share your experience in 100 words or less, remembering to protect the privacy of information pertaining to others.</p></f> 
+                  <f><p>Scroll through user responses.</p></f>
+                  <div class="well">
+                  <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                     </ol>
+                     <div class="additem carousel-inner" role="listbox">
+                     </div>
+                      <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                        <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                      </a>
+                  </div>
+                  </div>
                </div>
+               
                <div class="act1" >
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
-                           <f><h2>YOUR PERSPECTIVE</h2></f>
+                           <f><h2>Your Perspective</h2></f>
                            <div class="line4"></div>
-                           <f><p>After watching this video, what do you think matters to Ms. Jones when it comes to health care?</p></f>
+                           <f><p>Do you have a story about how you or someone you know has been affected by confusing or unreasonable medical costs? Please briefly share your experience in 100 words or less, remembering to protect the privacy of information pertaining to others.</p></f>
+                            <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
                            <div class="line4"></div>
                            
                         </div>
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-sm-12">
-                       <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
+                     <div class="col-sm-12">                      
                      </div>
                      </div>
                   <div class="row">
                      <div class="col-sm-12" >
                         <div  class="navbar-form navbar-center" style="">
                            <div class="input-group" style="width:100%;">
-                              <input id="response1Text" type="Search" placeholder="Your response to the question..." class="form-control" />
+                              <input id="response1Text" type="Search" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
                               <div class="input-group-btn text-right" style="width:3%;">
                                  <button  onclick="app.response1();" class="btn btn-info">
                                  <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
@@ -221,28 +334,28 @@ function cc(arr){
          <div class="col-sm-2"></div>
       </div>
       <br>
-      <br>
-      <div class="row">
+
+       <!-- <div class="row">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
-               <div class="carouselC">
+                <div class="carouselC">
                   <br>
-                  <f><p>Scroll through answers provided by the class.</p></f>
+                  <f><p>Now think about yourself, a friend, or a family member who has had a serious medical condition or chronic disease that significantly affected their life, such as cancer, diabetes, or congestive heart failure. What do you think mattered most to them?</p></f>
+                  <f><p>Scroll through user responses.</p></f>
                   <div class="well">
                   <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
-                     <!-- Indicators -->
+                  
                      <ol class="carousel-indicators">
-                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                        <li data-target="#myCarousel2" data-slide-to="3"></li>
-                        <li data-target="#myCarousel2" data-slide-to="4"></li>
-                        <li data-target="#myCarousel2" data-slide-to="5"></li>
                      </ol>
-                     <div id="additem" class="carousel-inner" role="listbox">
-                      
+                     <div  class="additem carousel-inner" role="listbox">
                      </div>
+                      <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                        <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                      </a>
                   </div>
                   </div>
                </div>
@@ -250,24 +363,23 @@ function cc(arr){
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
-                           <f><h2>OTHERS LIKE YOU...</h2></f>
+                           <f><h2 class="text-uppercase">Reflecting Further</h2></f>
                            <div class="line4"></div>
                            <f><p>Now think about yourself, a friend, or a family member who has had a serious medical condition or chronic disease that significantly affected their life, such as cancer, diabetes, or congestive heart failure. What do you think mattered most to them?</p></f>
-                           <div class="line4"></div>
-                           
+                            <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
+                           <div class="line4"></div>                           
                         </div>
                      </div>
                   </div>
                 <div class="row">
-                     <div class="col-sm-12">
-                       <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
+                     <div class="col-sm-12">                      
                      </div>
                      </div>
                <div class="row">
                   <div class="col-sm-12" >
                      <div  class="navbar-form navbar-center" style="">
                         <div class="input-group" style="width:100%;">
-                           <input type="Search" id="response2Text" placeholder="Your response to the question..." class="form-control" />
+                           <input type="Search" id="response2Text" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
                            <div class="input-group-btn text-right" style="width:3%;">
                               <button class="btn btn-info" onclick="app.response2();">
                               <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
@@ -282,11 +394,136 @@ function cc(arr){
          </div>
          </div>
          <div class="col-sm-2"></div>
-      </div>
+      </div> -->
+
+
    </div>
    
-   
-  
+   <div id="mc1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <f><p></p></f>
+      </div>
+      <div class="modal-footer">
+      <div class="row">
+         <div class="col-sm-8 text-left">
+          <i class="fa fa-user-circle fa-3x" style="color: #8e9091;" aria-hidden="true"></i>
+          <span id="name" class="text-uppercase" style="color:#000;"></span>
+         </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br>
+
+<div class="jumbotron m3s2s2">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-1"></div>
+           <div class="col-sm-10"><f><h4 class="text-center">Read the following excerpt from Understanding Value-Based Health Care for an example of another true patient story.</h4></f><hr></div>
+          <div class="col-sm-1"></div>
+        </div>  
+
+        <div class="row">
+          <div class="col-sm-1"></div>
+           <div class="col-sm-10">
+              <f><p>“In Dr. Linda Burke-Galloway’s own words, ‘it is a unique and humbling experience when a physician becomes the patient.’ Her ophthalmologist (eye doctor) recommended a surgical procedure that would be necessary to preserve her vision. As a public health physician with 23 years of experience, Dr. Burke-Galloway thought she knew what to expect when she went to the hospital. And she did. It’s what happened after the hospital and routine recovery that floored her.</p></f>
+              <f><p>One day after work, she opened an envelope containing a medical bill for $13,298.02. After blinking to make sure her vision was indeed working, she went through the individual line items and noticed equally astounding prices. $78 for a $4 antibiotic called gentamycin. $863.20 for a $192 pair of disposable forceps. And on it went.</p></f>
+              <f><p>Assuming a mistake occurred, she first verified the discrepant prices and compared them to those listed by medical supply companies. She then contacted the hospital only to find that no one knew how to address her concerns: not the auditing department and not the CEO’s office. Ultimately, she received a jolting final response to her appeal: ‘When you sign consent for a procedure, you’re allowing us to charge anything we want to.’ How could this be right<sup>1</sup>?’”</p></f>
+           </div>   
+           <div class="col-sm-1"></div>
+          </div> 
+     </div>
+</div>
+
+<div class="jumbotron m3s2s3">
+      <div class="container m3s2s4">
+        <div class="row">
+          <div class="col-sm-1"></div>
+           <div class="col-sm-10">            
+              <f><h3 class="text-center text-uppercase">DIVE DEEPER:<br>Basics of health care</h3></f>
+         <hr>
+            <f><p>It is important to understand the basics of health care financing in the US, including private and government insurance. If you are not familiar with the general structure of Medicare, Medicaid, VA/Tricare, and individual and employment-based insurance, then you should review this brief mini-module (“Basics of Health Care Financing in the US”) now and then return to this module—or you can choose to check it out after completing this module.</p></f>
+          </div>  
+          <div class="col-sm-1"></div>
+        </div>     
+        <br>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><f><div class="driveS2">Dive Deeper</div></f></div>
+            <div class="col-sm-4"></div>
+        </div>
+      </div>
+</div>
+  <br>
+  <br>
+ 
+
+<div class="container m3s2s5">
+      <div class="row">
+          <div class="col-sm-1"></div>
+           <div class="col-sm-10">
+            <f><p>Medical bills are a leading cause of personal bankruptcy in the United States,<sup>2</sup> and increasingly medical insurance does not necessarily protect patients from the high costs of medical care. More Americans than ever before are now enrolled in high-deductible insurance plans, meaning they have to pay thousands of dollars out-of-pocket prior to their insurance company covering any of the costs of their care. At the same time, many routine health services are arbitrarily expensive, so seemingly simple decisions that physicians make about testing, like ordering name-brand antibiotics, could directly lead to significant costs for patients.</p></f>            
+            <f><p>This has been described as the “financial harms” of medical care. In the oncology world, financial harm is increasingly being recognized and measured as “financial toxicity” of chemotherapeutics.<sup>3</sup></p></f>
+            <f><p>Part of our goal here is to define and discuss these harms so that you are prepared to address them in your role as a medical professional. In this module, we are building the framework for understanding basics of health care costs. The background provided in this module will provide you with the necessary foundation that we will expound in future modules.</p></f>
+           </div>
+          <div class="col-sm-1"></div>
+       </div>    
+</div>
+<br>
+<br>
+
+<div class="jumbotron m3s2s6">
+      <div class="container m3s2s7">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <f><h3 class="text-center text-uppercase">Additional Resources</h3></f>
+              <hr>
+              <f><p>Here is an article describing the experience that some patients have had with high-priced medications.</p></f>
+              <hr>
+              <f><h4 class="text-center text-uppercase">$18 For A Baby Aspirin? Hospitals Hike Costs For Everyday Drugs For Some Patients</h4></f>
+              <f><p class="text-center">By Susan Jaffe<br>April 30, 2012. Kaiser Health News.</p></f>
+              <br>
+              <f><p>“Excessive drug prices have also surprised seniors in other parts of the country:</p></f>
+              <f><p>–In Missouri, several Medicare observation patients were billed $18 for one baby aspirin, said Ruth Dockins, a senior advocate at the Southeast Missouri Area Agency on Aging.</p></f>
+              <f><p>–Pearl Beras, 85, of Boca Raton, Fla., said in an interview that her hospital charged $71 for one blood pressure pill for which her neighborhood pharmacy charges 16 cents.</p></f>
+              <f><p>–In California, a hospital billed several Medicare observation patients $111 for one pill that reduces nausea; for the same price, they could have bought 95 of the pills at a local pharmacy, said Tamara McKee, program manager for the Health Insurance Counseling and Advocacy Program at the Alliance on Aging in Monterey County, Calif., who handled at least 20 complaints last year from Medicare beneficiaries about excessive hospital drug bills.”<sup>4</sup></p></f> 
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+         <br>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><f><div class="driveS3">Read Article</div></f></div>
+            <div class="col-sm-4"></div>
+        </div>
+      </div> 
+</div>
+<br><br>
+
+<div class="container m3s2s8">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <hr>
+              <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
+              <br>
+              <ol id="demo" class="collapse"> 
+                <f><li class="text-left"><p>Moriates C, Arora V, Shah N. The challenges of understanding healthcare pricing. In: Shanahan J, Saggese C, eds. <em><a style="color:#f4821f;" target="_blank" href="https://www.amazon.com/Understanding-Value-Healthcare-Christopher-Moriates/dp/0071816984">Understanding Value-Based Healthcare</a></em>. Columbus, OH: McGraw-Hill Education; 2015:49-72.</p></li></f>
+                <f><li class="text-left"><p>Moriates C, Arora V, Shah N. The challenges of understanding healthcare pricing. In: Shanahan J, Saggese C, eds. Understanding Value-Based Healthcare. Columbus, OH: McGraw-Hill Education; 2015:49-72. <em>Am J Med. 2009;22(8): 741-746. doi:<a style="color:#f4821f;" target="_blank" href="http://dx.doi.org/10.1016/j.amjmed.2009.04.012">10.1016/j.amjmed.2009.04.012</a></em></p></li></f>
+                <f><li class="text-left"><p>Financial toxicity and cancer treatment (PDQ)&ndash;health professional version. National Cancer Institute website. <a style="color:#f4821f;" target="_blank" href="https://www.cancer.gov/about-cancer/managing-care/financial-toxicity-hp-pdq">https://www.cancer.gov/about-cancer/managing-care/financial-toxicity-hp-pdq</a>. Update: December 14, 2016. Accessed March 23, 2017.</p><p>Jaffe S. $18 dollars for a baby aspirin? Hospitals hike costs for everyday drugs for some patients. Kaiser Health News and USA Today. April 30, 2012. <a style="color:#f4821f;" target="_blank" href="http://khn.org/news/observational-care/">http://khn.org/news/observational-care/</a>. Accessed December 7, 2016.</p></li></f>
+              </ol>
+        </div>        
+        <div class="col-sm-10"></div>
+    </div>
+  </div> 
    
 </div>
 
@@ -294,17 +531,23 @@ function cc(arr){
 <footer class="container-fluid">
          
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
-              <a href="?id=m1/m1s1p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
-              <span class="ssp1">MODULE 1 | Section 1</span>
-                <span class="sp1"><strong>There's a Better Way</strong></span></a>
+            <div class="col-sm-4 text-left NextBtn">
+              <a href="?id=m2/m2s1p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <span class="ssp1">MODULE 2 | Section 1</span>
+                <span class="sp1"><strong>Measuring What Matters</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
-                <a href="?id=m1/m1s3p1"><span class="ssp2">MODULE 1 | Section 3</span>
-                <span class="sp2"><strong>Providing Value for Patients</strong></span>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
+                <a href="?id=m2/m2s3p1"><span class="ssp2">MODULE 2 | Section 3</span>
+                <span class="sp2"><strong>Measuring Outcomes</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
+          
       </footer>      

@@ -176,13 +176,30 @@ app.OpenMS=function(){
                 </li>
                 <?php }else if($m == "m3s2p1"){ ?>
                 <li class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 2 </span><span class="s_bottom">Conclusion: Value-Based Health Care</span></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 2 </span><span class="s_bottom">Story From the Frontlines</span></a>
                 </li>
                 <?php }else if($m == "m3s3p1"){ ?>
                 <li class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 3 </span><span class="s_bottom">Conclusion: Value-Based Health Care</span></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 3 </span><span class="s_bottom">Speaking the Same Language&mdash;Health Care Cost Terms</span></a>
                 </li>
-                
+                <?php }else if($m == "m3s4p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 4 </span><span class="s_bottom">The Cost of Care: Different Approaches</span></a>
+                </li>
+                <?php }else if($m == "m3s5p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 5 </span><span class="s_bottom">Toward More Transparency</span></a>
+                </li>
+                <?php }else if($m == "m3s6p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 6 </span><span class="s_bottom">Care Redesign Case: MD Anderson (TDABC)</span></a>
+                </li>
+                <?php }else if($m == "m3s7p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 7 </span><span class="s_bottom">Conclusion: Understanding Costs of Care</span></a>
+                </li>
+
+
            
           <?php } ?>
 
@@ -466,7 +483,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss vertical-align bb btnS2">
                       <div class="col-sm-2 "><strong>02.</strong></div>
-                        <div class="col-sm-7"><strong>Story from the Frontlines: The Human Cost of Inefficiency and Waste in Healthcare</strong></div>
+                        <div class="col-sm-7"><strong>Story From the Frontlines</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -478,7 +495,7 @@ app.OpenMS=function(){
 
                 <div class="row btnss  vertical-align bb btnS3">
                         <div class="col-sm-2 "><strong>03.</strong></div>
-                        <div class="col-sm-7"><strong>Providing Value for Patients</strong></div>
+                        <div class="col-sm-7"><strong>Speaking the Same Language&mdash;Health Care Cost Terms</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -488,7 +505,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss  vertical-align bb btnS4">
                         <div class="col-sm-2 "><strong>04.</strong></div>                
-                        <div class="col-sm-7"><strong>How Big of a Problem is Health Care Waste?</strong></div>
+                        <div class="col-sm-7"><strong>The Cost of Care: Different Approaches</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -498,7 +515,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss  vertical-align bb btnS5">
                         <div class="col-sm-2 "><strong>05.</strong></div>                
-                        <div class="col-sm-7"><strong>Unnecessary Care</strong></div>
+                        <div class="col-sm-7"><strong>Toward More Transparency</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -518,15 +535,15 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss  vertical-align bb btnS7">
                         <div class="col-sm-2 "><strong>07.</strong></div>                
-                        <div class="col-sm-7"><strong>Care Redesign Case: Value-Driven Outcomes at University of Utah Health Care</strong></div>
+                        <div class="col-sm-7"><strong>Conclusion: Understanding Costs of Care</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
                               </div>
-                      </div>
-                       
+                      </div>                                             
                 </div>
-                <div class="row btnss  vertical-align bb btnS8">
+
+<!--                 <div class="row btnss  vertical-align bb btnS8">
                         <div class="col-sm-2 "><strong>08.</strong></div>                
                         <div class="col-sm-7"><strong>Using Data to Identify Opportunities for Improving Care for Patients</strong></div>
                         <div class="col-sm-3">
@@ -545,6 +562,8 @@ app.OpenMS=function(){
                               </div>
                       </div>
                 </div>
+                
+ -->
                 <br>
                  <div class="row allModule3">
                     <div class="col-sm-2 "></div>                
@@ -711,7 +730,7 @@ app.OpenMS=function(){
                      <div class="row">
                        
                           <div class="col-sm-12 text-center"> <div class="well">
-                             Explore data to gain understanding and appreciation of the perspectives of patients, individual clinicians, and health systems as it pertains to value-based health care.  
+                             Explore data to gain understanding and appreciate the perspective of patients, individual clinicians, and health systems as it pertains to value-based health care.  
                           </div>
                         </div>
                     </div>

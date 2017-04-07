@@ -75,81 +75,81 @@ include("view/cjs.php");
    
 
 
-     <div class="container m3s1ms2 sameHeight9">
+     <div class="container m3s1ms2">
              <f><h3 class="text-uppercase text-center">Module Outcomes</h3></f>
           <br><br>
 
           <div class="well">
             <div class="row white vertical-align"> 
-            <div class="col-sm-2"></div>           
-            <div class="col-sm-4" >                           
-                <img  src="img/m3s1img3.png"  class="img-responsive">                
-            </div>
-            <div class="col-sm-4 imgGallry">
+            <!-- <div class="col-sm-2"></div>  -->
+            <div class="col-sm-6 imgGallry">
                  <f><p>Appreciate and reflect on outcomes that are meaningful to the patient.</p></f>              
-            </div>
-            <div class="col-sm-2"></div> 
+            </div>          
+            <div class="col-sm-6">                           
+                <img src="img/m3s1img3.png"  class="img-responsive">                
+            </div>            
+            <!-- <div class="col-sm-2"></div>  -->
           </div>
           </div>
 
       <div class="well">
           <div class="row white vertical-align"> 
-          <div class="col-sm-2"></div>            
-            <div class="col-sm-4">
-                <img  src="img/m3s1img4.png"  class="img-responsive">
-            </div>
-            <div class="col-sm-4  imgGallry">
+          <!-- <div class="col-sm-2"></div> -->
+            <div class="col-sm-6  imgGallry">
                <f><p>Define terms used in discussing health care costs. </p></f>              
             </div>
-            <div class="col-sm-2"></div> 
+            <div class="col-sm-6">
+                <img  src="img/m3s1img4.png"  class="img-responsive">
+            </div>
+            <!-- <div class="col-sm-2"></div>  -->
           </div>
       </div>
       <div class="well">
           <div class="row white vertical-align">   
-          <div class="col-sm-2"></div>          
-            <div class="col-sm-4">              
-              <img  src="img/m3s1img5.png"  class="img-responsive">
-            </div>
-             <div class="col-sm-4 imgGallry">
+          <!-- <div class="col-sm-2"></div> --> 
+             <div class="col-sm-6 imgGallry">
                 <f><p>Describe basic principles of health care delivery, organization, and financing.</p></f>
             </div>
-            <div class="col-sm-2"></div> 
+            <div class="col-sm-6">              
+              <img  src="img/m3s1img5.png"  class="img-responsive">
+            </div>
+            <!-- <div class="col-sm-2"></div>  -->
           </div>
       </div>
       <div class="well">
           <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">            
-                <img src="img/m3s1img6.png"  class="img-responsive">
-            </div>
-            <div class="col-sm-4 imgGallry">
+          <!-- <div class="col-sm-2"></div> -->
+            <div class="col-sm-6 imgGallry">
                 <f><p>Evaluate various financial methods used in health care.</p></f>
             </div>
-            <div class="col-sm-2"></div> 
+             <div class="col-sm-6">            
+                <img src="img/m3s1img6.png"  class="img-responsive">
+            </div>
+            <!-- <div class="col-sm-2"></div>  -->
           </div>
       </div>
       <div class="well">
           <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">                            
-              <img  src="img/m3s1img7.png"  class="img-responsive">
-            </div>
-            <div class="col-sm-4 imgGallry">               
+          <!-- <div class="col-sm-2"></div>  -->
+            <div class="col-sm-6 imgGallry">               
                <f><p>Describe new methods for health care cost accounting and value-based payments.</p></f>
             </div>
-            <div class="col-sm-2"></div> 
+             <div class="col-sm-6">                            
+              <img  src="img/m3s1img7.png"  class="img-responsive">
+            </div>
+            <!-- <div class="col-sm-2"></div>  -->
           </div>
       </div>
       <div class="well">
           <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">             
-              <img  src="img/m3s1img8.png"  class="img-responsive">
-            </div>
-            <div class="col-sm-4 imgGallry">
+          <!-- <div class="col-sm-2"></div>  -->
+            <div class="col-sm-6 imgGallry">
               <f><p>Study methods to measure and evaluate the success of health care value programs.</p></f>               
             </div>
-            <div class="col-sm-2"></div> 
+            <div class="col-sm-6">             
+              <img  src="img/m3s1img8.png"  class="img-responsive">
+            </div>
+            <!-- <div class="col-sm-2"></div>  -->
           </div>          
       </div>
      </div>     
@@ -157,17 +157,16 @@ include("view/cjs.php");
 
   <div class="container m3s1ms3">
     <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
+        
+        <div class="col-sm-12">
             <hr>
               <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
               <br>
               <ol id="demo" class="collapse"> 
                 <f><li class="text-left"><p>Cooke M. Cost consciousness in patient care &ndash; what is medical education’s responsibility? <em>N Engl J Med</em>. 2010;362:1253-1255. doi:<a style="color:#f4821f;" target="_blank" href="http://dx.doi.org/10.1056/NEJMp0911502"><em>10.1056/NEJMp0911502</em></a></p></li></f>
               </ol>
-
         </div>        
-        <div class="col-sm-2"></div>
+        
     </div>
   </div>
 

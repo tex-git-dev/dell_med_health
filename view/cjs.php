@@ -154,7 +154,7 @@ $(document).ready(function() {
        }
 
      }else if (SelecteM == 'm3') {
-      mComplete = (mComplete*100/900).toFixed(0);
+      mComplete = (mComplete*100/700).toFixed(0);
        if(mComplete == 100 ){
         app.MData[SelecteM]['status'] = 'complete';
        }

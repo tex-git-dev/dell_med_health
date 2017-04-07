@@ -290,7 +290,7 @@ app.response2 = function(){
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
-                           <f><h2>YOUR PERSPECTIVE</h2></f>
+                           <f><h2>Your Perspective</h2></f>
                            <div class="line4"></div>
                            <f><p>After watching this video, what do you think matters to Ms. Jones when it comes to health care?</p></f>
                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
@@ -353,7 +353,7 @@ app.response2 = function(){
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
-                           <f><h2 class="text-uppercase">Reflecting Further</h2></f>
+                           <f><h2>Reflecting Further</h2></f>
                            <div class="line4"></div>
                            <f><p>Now think about yourself, a friend, or a family member who has had a serious medical condition or chronic disease that significantly affected their life, such as cancer, diabetes, or congestive heart failure. What do you think mattered most to them?</p></f>
                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>

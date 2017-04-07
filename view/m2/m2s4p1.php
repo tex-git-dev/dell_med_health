@@ -159,8 +159,9 @@ include("view/cjs.php");
        <f><h2 class="text-center">Learn More</h2></f>
        <br>
           <div class="container m2s4b7">
-              <div class="row eq-h">
-                <div class="col-sm-4">
+
+              <div class="row">
+                <div class="col-sm-12">
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3" >
@@ -168,18 +169,19 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <f><p class="text-uppercase">article</p></f>
-                                 <f><p><a target="_blank" style="color:#000;" href="http://link.springer.com/article/10.1007%2Fs11999-013-3143-z">Integrating Patient-Reported Outcomes into Orthopedic Clinical Practice: Proof of Concept from FORCE-TJR</a></p></f>
+                                <p class="text-uppercase"><f>article</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://link.springer.com/article/10.1007%2Fs11999-013-3143-z">Integrating Patient-Reported Outcomes into Orthopedic Clinical Practice: Proof of Concept from FORCE-TJR</a></f></p>
                                  <p><f>Read more about the work being done to develop and research PROMs for patients undergoing total joint replacement (TJR). The federally funded FORCE-TJR Project, led by Dr. David Ayers from the University of Massachusetts, is prospectively tracking PRMs for 30,000 patients who have undergone joint replacement surgery over the course of several years.</f></p>
                                  <p><f>Ayers, DC, Zheng, H, Franklin, PD<br>Clinical Orthopaedics and Related Research.<br>2013;471:3419-3425.</f></p> 
                             </div>
                           </div>
                        </div>
                   </div>
-
-
                 </div>
-                <div class="col-sm-4">
+              </div>
+                
+              <div class="row">  
+                <div class="col-sm-12">
                    <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
@@ -187,8 +189,8 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <f><p class="text-uppercase ">article</p></f>
-                                 <f><p><a target="_blank" style="color:#000;" href="http://www.nejm.org/doi/10.1056/NEJMp1611252">Patient-Reported Outcomes—Harnessing Patients’ Voices to Improve Clinical Care</a></p></f>
+                                <p class="text-uppercase"><f>article</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://www.nejm.org/doi/10.1056/NEJMp1611252">Patient-Reported Outcomes—Harnessing Patients’ Voices to Improve Clinical Care</a></f></p>
                                  <p><f>Dr. Ethan Basch describes the barriers and benefits of PROMs that can be electronically reported by patients and directly fed into Electronic Health Records (EHRs) for better management of patient vitals and issues like pain management and post-surgical recovery.</f></p>
                                  <p><f>Basch, E<br>New England Journal of Medicine<br>2017;376;2:105-108</f></p>
                             </div>
@@ -196,7 +198,10 @@ include("view/cjs.php");
                        </div>
                   </div>
                 </div>
-                <div class="col-sm-4">
+              </div>
+              
+              <div class="row">  
+                <div class="col-sm-12">
                     <div class='well1'>
                         <div class='row vertical-align'>
                           <div class="col-sm-3">
@@ -204,8 +209,8 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
-                                <f><p class="text-uppercase ">website</p></f>
-                                 <f><p><a target="_blank" style="color:#000;" href="http://www.ichom.org/files/ICHOM_Erasmus_MC_Case_Study.pdf">Implementing ICHOM’s Standard Sets of Outcomes: Cleft Lip and Palate at Erasmus University Medical Centre in the Netherlands</a></p></f>
+                                <p class="text-uppercase"><f>website</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://www.ichom.org/files/ICHOM_Erasmus_MC_Case_Study.pdf">Implementing ICHOM’s Standard Sets of Outcomes: Cleft Lip and Palate at Erasmus University Medical Centre in the Netherlands</a></f></p>
                                  <p><f>Read about implementation of ICHOM’s Standard Sets of Outcomes through a case study conducted on cleft lip and palate in the Netherlands. They compile their study, data, and key lessons learned in their research.</f></p>
                                  <p><f>Arora J, Haj M.<br>London, UK International Consortium for Health Outcomes Measurement (ICHOM)<br>December 2016.</f></p> 
                             </div>
@@ -213,10 +218,10 @@ include("view/cjs.php");
                           </div>
                        </div>
                   </div>
-                </div>
+                </div>                
               </div>      
-          </div> 
-                                     
+
+          </div>                     
     </div>
 
 <script type="text/javascript">

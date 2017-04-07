@@ -113,107 +113,101 @@ include("view/cjs.php");
 
 
 
-     <div class="container s9ms2 text-center sameHeight9">
-             <f><h3 class="text-uppercase">Module 1 Section Summaries</h3></f>
+     <div class="container s9ms2">
+             <f><h3 class="text-uppercase text-center">Module 1 Section Summaries</h3></f>
           <br><br>
-          <div class="well">
-            <div class="row white vertical-align"> 
-            <div class="col-sm-2"></div>           
-            <div class="col-sm-4">
-               
-                  <f><p>Health care in the U.S. is currently fraught with fragmentation, inefficiency, unexplained variation, and waste that adversely affect patients.</p></f>
-              
+
+            <div class="well">
+                <div class="row vertical-align"> 
+                    <!-- <div class="col-sm-2"></div>            -->
+                    <div class="col-sm-6 imgGallry">
+                        <f><p>Health care in the U.S. is currently fraught with fragmentation, inefficiency, unexplained variation, and waste that adversely affect patients.</p></f>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <img  src="img/m1s1img1.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div>  -->
+                </div>
             </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img1.jpg"  class="img-responsive">
+
+            <div class="well">
+                <div class="row  vertical-align"> 
+                    <!-- <div class="col-sm-2"></div>             -->
+                    <div class="col-sm-6 imgGallry">
+                        <f><p>Value-based Health care means maximizing outcomes for patients while balancing costs. We must provide value to patients by focusing on patient outcomes.</p></f>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <img  src="img/m1s1img2.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div>  -->
+                </div>
             </div>
-            <div class="col-sm-2"></div> 
-          </div>
-</div>
-<div class="well">
-          <div class="row white vertical-align"> 
-          <div class="col-sm-2"></div>            
-            <div class="col-sm-4">
-               
-                  <f><p>Value-based Health care means maximizing outcomes for patients while balancing costs. We must provide value to patients by focusing on patient outcomes.</p></f>
-              
+
+            <div class="well">
+                <div class="row  vertical-align">   
+                    <!-- <div class="col-sm-2"></div>           -->
+                    <div class="col-sm-6 imgGallry">
+                        <f><p>Up to one-third of health care delivered today is considered “waste,” as it does not improve health for patients. To improve, we must first understand shortfalls, recognize waste, and learn new methods of care delivery. </p></f>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <img  src="img/m1s1img3.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div>  -->
+                </div>
             </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img2.jpg"  class="img-responsive">
+
+            <div class="well">
+                  <div class="row  vertical-align">  
+                      <!-- <div class="col-sm-2"></div>            -->
+                      <div class="col-sm-6 imgGallry">
+                        <f><p>There are multiple contributors to health care waste. The biggest contributor, overuse of health care, causes harm for individual patients and populations.</p></f>
+                      </div>
+                      <div class="col-sm-6">
+                        <img  src="img/m1s1img4.jpg"  class="img-responsive">
+                      </div>
+                      <!-- <div class="col-sm-2"></div>  -->
+                  </div>
             </div>
-            <div class="col-sm-2"></div> 
-          </div>
-</div>
-<div class="well">
-          <div class="row white vertical-align">   
-          <div class="col-sm-2"></div>          
-            <div class="col-sm-4">
-              
-                  <f><p>Up to one-third of health care delivered today is considered “waste,” as it does not improve health for patients. To improve, we must first understand shortfalls, recognize waste, and learn new methods of care delivery. </p></f>
-              
+
+            <div class="well">
+                <div class="row  vertical-align">  
+                    <!-- <div class="col-sm-2"></div>            -->
+                    <div class="col-sm-6 imgGallry">
+                        <f><p>To improve health care value, we must focus primarily on outcomes that matter to patients. Key components of value-based health care delivery are teams organized around a patient panel, condition, or circumstance, who are committed to measuring and improving outcomes.</p></f>
+                    </div>
+                    <div class="col-sm-6">
+                        <img  src="img/m1s1img5.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div>  -->
+                </div>
             </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img3.jpg"  class="img-responsive">
+
+            <div class="well">
+                <div class="row  vertical-align">  
+                    <!-- <div class="col-sm-2"></div>            -->
+                    <div class="col-sm-6 imgGallry">
+                        <f><p>The University of Utah Health Care system provides an inspiring example of a health system committed to measuring and improving value for patients.</p></f>
+                    </div>
+                    <div class="col-sm-6">
+                        <img  src="img/m1s1img6.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div>  -->
+                </div>
             </div>
-            <div class="col-sm-2"></div> 
-          </div>
-</div>
-<div class="well">
-          <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">
-            
-                  <f><p>There are multiple contributors to health care waste. The biggest contributor, overuse of health care, causes harm for individual patients and populations.</p></f>
-              
+
+            <div class="well">
+                <div class="row  vertical-align">  
+                    <!-- <div class="col-sm-2"></div>            -->
+                    <div class="col-sm-6 imgGallry">
+                        <f><p>Understanding data that shows cost, variance, and outcomes from various perspectives can help identify areas for improvement.</p></f>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <img  src="img/m1s1img7.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div>  -->
+                </div>
             </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img4.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
-          </div>
-</div>
-<div class="well">
-          <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">
-              
-                  <f><p>To improve health care value, we must focus primarily on outcomes that matter to patients. Key components of value-based health care delivery are teams organized around a patient panel, condition, or circumstance, who are committed to measuring and improving outcomes.</p></f>
-               
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img5.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
-          </div>
-</div>
-<div class="well">
-          <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">
-              
-                  <f><p>The University of Utah Health Care system provides an inspiring example of a health system committed to measuring and improving value for patients.</p></f>
-              
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img6.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
-          </div>
-</div>
-<div class="well">
-          <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">
-              
-                  <f><p>Understanding data that shows cost, variance, and outcomes from various perspectives can help identify areas for improvement.</p></f>
-              
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img7.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
-          </div>
-          </div>
+
      </div>
 
 <br><br>
@@ -225,9 +219,9 @@ include("view/cjs.php");
           <f><h2 class="text-center">Learn More</h2></f>
        <br>
           <div class="container s9b3">
-              <div class="row eq-h">
 
-                <div class="col-sm-4">
+              <div class="row">
+                <div class="col-sm-12">
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3" >
@@ -239,21 +233,17 @@ include("view/cjs.php");
                                  <p><f><a target="_blank" style="color:#000;" href="https://www.amazon.com/Understanding-Value-health%20care-Christopher-Moriates/dp/0071816984">Understanding Value-Based Health Care</a></f></p>
                                  <p><f>This book is a great primer to value in a health care context and details the core issues involved in maximizing the efficacy and outcomes of medical care when cost is a factor in the decision-making process.</f></p>
 
-                                 <p><f>Moriates C, Arora V, Shah N.</f></p>
-                                 <p><f>Columbus, OH: McGraw-Hill Education; 2015.</f></p>
-
-                                 <p><f>If your medical library subscribes to AccessMedicine, you can access the book for free here:</f></p>
-                                 <p><f><a class="dont-break-out" target="_blank" style="color:#000;" href="http://accessmedicine.mhmedical.com/book.aspx?bookid=1371">http://accessmedicine.mhmedical.com/book.aspx?bookid=1371</a></f></p>
+                                 <p><f>Moriates C, Arora V, Shah N.<br>Columbus, OH: McGraw-Hill Education; 2015.<br>If your medical library subscribes to AccessMedicine, you can access the book for free here:<br><a class="dont-break-out" target="_blank" style="color:#000;" href="http://accessmedicine.mhmedical.com/book.aspx?bookid=1371">http://accessmedicine.mhmedical.com/book.aspx?bookid=1371</a></f></p>
                             </div>
                           </div>
                        </div>
                   </div>
                 </div>
-
+               </div> 
     
 
-
-                <div class="col-sm-4">
+               <div class="row">
+                <div class="col-sm-12">
                    <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
@@ -261,18 +251,19 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <f><p class="text-uppercase ">book</p></f>
-                                 <f><p><a target="_blank" style="color:#000;" href="https://www.amazon.com/gp/product/1591397782">Redefining Health Care: Creating Value-based Competition on Results</a></p></f>
+                                <p class="text-uppercase "><f>book</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="https://www.amazon.com/gp/product/1591397782">Redefining Health Care: Creating Value-based Competition on Results</a></f></p>
                                  <p><f>This book describes competition in the  health care delivery system and how it must be changed to deliver lasting benefits for all players in the health care system.</f></p>
-                                 <p><f>Porter ME, Teisberg EO.</f></p>
-                                 <p><f>Cambridge, MA: Harvard Business Review Press; 2006.</f></p>
+                                 <p><f>Porter ME, Teisberg EO.<br>Cambridge, MA: Harvard Business Review Press; 2006.</f></p>
                             </div>
                           </div>
                        </div>
                   </div>
                 </div>
+              </div>  
 
-                <div class="col-sm-4">
+              <div class="row">
+                <div class="col-sm-12">
                     <div class='well1'>
                         <div class='row vertical-align'>
                           <div class="col-sm-3">
@@ -280,11 +271,10 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
-                                <f><p class="text-uppercase ">video</p></f>
-                                 <f><p><a target="_blank" style="color:#000;" href="https://www.ted.com/talks/atul_gawande_how_do_we_heal_medicine?language=en">How do we Heal Medicine?</a></p></f>
+                                <p class="text-uppercase "><f>video</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="https://www.ted.com/talks/atul_gawande_how_do_we_heal_medicine?language=en">How do we Heal Medicine?</a></f></p>
                                  <p><f>This twenty minute video by New York Times bestselling author and surgeon Atul Gawande describes how our medical system is broken and discusses costs in the context of changes needed for improved patient care and outcomes.</f></p>
-                                 <p><f>Atul Gawande.</f></p> 
-                                 <p><f>TED Talk. Filmed March 12 2012.</f></p>
+                                 <p><f>Atul Gawande.<br>TED Talk. Filmed March 12 2012.</f></p>
                             </div>
                                
                           </div>

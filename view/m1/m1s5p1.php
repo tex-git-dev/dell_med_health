@@ -511,7 +511,7 @@ $("#canvas6").click(function(){
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
-                           <f><h2>YOUR PERSPECTIVE</h2></f>
+                           <f><h2>Your Perspective</h2></f>
                            <div class="line4"></div>
                            <f><p>Give an example of inefficient or wasteful practices you've personally experienced within the health care system.</p></f>                           
                            <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
@@ -574,7 +574,7 @@ $("#canvas6").click(function(){
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
-                           <f><h2 class="text-uppercase">Reflecting Further</h2></f>
+                           <f><h2>Reflecting Further</h2></f>
                            <div class="line4"></div>
                            <f><p>How do you think such problems could be fixed?</p></f>
                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>

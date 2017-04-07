@@ -279,7 +279,7 @@ app.addOpt=function(id,len){
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
-                           <f><h2 class="boldT">YOUR PERSPECTIVE</h2></f>
+                           <f><h2 class="boldT">Your Perspective</h2></f>
                            <div class="line4"></div>
                            <f><p>As you watched the video, what problems did you see in the health care Ms. Jones received?</p></f>
                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>

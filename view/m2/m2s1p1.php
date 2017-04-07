@@ -71,96 +71,105 @@ include("view/cjs.php");
 <br><br>
 
 
-     <div class="container m2s1ms2 text-center sameHeight9">
-             <f><h3 class="text-uppercase" >Module Outcomes</h3></f>
-          <br><br>
+     <div class="container m2s1ms2">
+             <f><h3 class="text-uppercase  text-center">Module Outcomes</h3></f>
+          <br>
+
+            <div class="well">
+                <div class="row  vertical-align"> 
+                    <!-- <div class="col-sm-2"></div> -->           
+                    <div class="col-sm-6 imgGallry">               
+                      <f><p>Appreciate and reflect on outcomes that are meaningful to the patient.</p></f>              
+                    </div>
+                    <div class="col-sm-6">
+                      <img  src="img/m2s1img4.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div> --> 
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="row white vertical-align"> 
+                    <!-- <div class="col-sm-2"></div> -->            
+                    <div class="col-sm-6 imgGallry">
+                       <f><p >Define the measurement of ‘patient outcomes’ as they relate to value-based health care.</p></f>              
+                    </div>
+                    <div class="col-sm-6">
+                        <img  src="img/m2s1img5.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div> --> 
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="row white vertical-align">   
+                    <!-- <div class="col-sm-2"></div> -->          
+                    <div class="col-sm-6 imgGallry">              
+                       <f><p >Examine resources for choosing and measuring validated patient outcomes.</p></f>              
+                    </div>
+                    <div class="col-sm-6">
+                        <img  src="img/m2s1img6.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div>  -->
+                </div>
+            </div>
+
           <div class="well">
-            <div class="row white vertical-align"> 
-            <div class="col-sm-2"></div>           
-            <div class="col-sm-4">               
-                  <f><p >Appreciate and reflect on outcomes that are meaningful to the patient.</p></f>              
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m2s1img4.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
+              <div class="row white vertical-align">  
+                  <!-- <div class="col-sm-2"></div>            -->
+                  <div class="col-sm-6 imgGallry">            
+                      <f><p >Apply a measures framework to evaluate the success of health care value programs from the  perspective of patient outcomes.</p></f>              
+                  </div>
+                  <div class="col-sm-6 ">
+                      <img  src="img/m2s1img7.jpg"  class="img-responsive">
+                  </div>
+                  <!-- <div class="col-sm-2"></div> --> 
+              </div>
           </div>
- </div>
-      <div class="well">
-          <div class="row white vertical-align"> 
-          <div class="col-sm-2"></div>            
-            <div class="col-sm-4">
-                  <f><p >Define the measurement of ‘patient outcomes’ as they relate to value-based health care.</p></f>              
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m2s1img5.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
+
+          <div class="well">
+              <div class="row white vertical-align">  
+                  <!-- <div class="col-sm-2"></div> -->           
+                  <div class="col-sm-6 imgGallry">              
+                      <f><p >Describe different types of measures and when they would be used.</p></f>               
+                  </div>
+                  <div class="col-sm-6 ">
+                      <img  src="img/m1s1img5.jpg"  class="img-responsive">
+                  </div>
+                  <!-- <div class="col-sm-2"></div> --> 
+              </div>
           </div>
-</div>
-      <div class="well">
-          <div class="row white vertical-align">   
-          <div class="col-sm-2"></div>          
-            <div class="col-sm-4">              
-              <f><p >Examine resources for choosing and measuring validated patient outcomes.</p></f>              
+
+        <div class="well">
+            <div class="row white vertical-align">  
+                <!-- <div class="col-sm-2"></div> -->           
+                <div class="col-sm-6 imgGallry">             
+                    <f><p >Identify the reasons for collecting ‘patient-reported outcomes.’</p></f>
+                </div>
+                <div class="col-sm-6 ">
+                    <img  src="img/m2s1img9.jpg"  class="img-responsive">
+                </div>
+                <!-- <div class="col-sm-2"></div>  -->
             </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m2s1img6.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
+        </div>
+
+          <div class="well">
+              <div class="row white vertical-align">  
+                  <!-- <div class="col-sm-2"></div> -->           
+                  <div class="col-sm-6 imgGallry">              
+                     <f><p>Appreciate and reflect on how patient outcomes define physicians’ success.</p></f>
+                  </div>
+                  <div class="col-sm-6">
+                     <img  src="img/m2s1img10.jpg"  class="img-responsive">
+                  </div>
+                  <!-- <div class="col-sm-2"></div> --> 
+              </div>
+              </div>
           </div>
-</div>
-      <div class="well">
-          <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">            
-                  <f><p >Apply a measures framework to evaluate the success of health care value programs from the  perspective of patient outcomes.</p></f>              
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m2s1img7.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
-          </div>
-</div>
-      <div class="well">
-          <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">              
-              <f><p >Describe different types of measures and when they would be used.</p></f>               
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img5.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
-          </div>
-</div>
-      <div class="well">
-          <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">             
-              <f><p >Identify the reasons for collecting ‘patient-reported outcomes.’</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m2s1img9.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
-          </div>
-</div>
-      <div class="well">
-          <div class="row white vertical-align">  
-          <div class="col-sm-2"></div>           
-            <div class="col-sm-4">              
-              <f><p >Appreciate and reflect on how patient outcomes define physicians’ success.</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m2s1img10.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div> 
-          </div>
-          </div>
-     </div>
+
   <br>
 </div>
+
 
 <footer class="container-fluid">
          

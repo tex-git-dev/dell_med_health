@@ -292,24 +292,18 @@ left: 77%;
             </div>
           </div>
         </div> 
-
-               </div>  
-
-         
-
+      </div>  
 
             </div> 
             <div class="col-sm-2"></div>          
          </div>
       </div>
-
-    
-
-
         <br>
-        <br><br>
+        <br>
+        <br>
+
        <div class="container bg-3 text-center">
-        <f><p class="text-left">In the 2011 statement, Dr. Berwick makes the strongest argument for the goal of improving value for patients. Improving value requires us to attend to <em>both</em> outcomes and costs. Efforts based on the primary goal of improving efficiency have not achieved enough. Health care costs are still too high in 2017, and it is ever-clearer that value for patients, that is, outcomes achieved for the money spent, needs to define the true north of clinicians’ efforts.</p></f>
+        <f><p class="text-left">In that statement (2011), Dr. Berwick makes the strongest argument for the goal of improving value for patients. Improving value requires us to attend to <em>both</em> outcomes and costs. Efforts based on the primary goal of improving efficiency have not achieved enough. Health care costs are still too high in 2017, and it is ever-clearer that value for patients, that is, outcomes achieved for the money spent, needs to define the true north of clinicians’ efforts.</p></f>
         <f><p class="text-left">Better outcomes reduce costs. Whenever we prevent or slow disease progression, get the right diagnosis (the first time), improve outcomes in ways that reduce the need for repeated care, reduce disability, improve effectiveness of treatments, reduce invasiveness of treatments, or reduce wasteful and redundant treatments, we are reducing the costs associated with health care. Health care waste is anything that does not add value for the patient. This includes tests, medications, and procedures that are not making people healthier.</p></f>
         <f><p class="text-left">Remember our obligation to “First, Do No Harm”!</p></f>
         <br>

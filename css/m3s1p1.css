@@ -59,12 +59,12 @@
     padding: 15px !important;
 }
 
-.m3s1p1 .m3s1ms2 .well .col-sm-4 {
+.m3s1p1 .m3s1ms2 .well .col-sm-6 {
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
 
-.m3s1p1 .m3s1ms2 .well .col-sm-4 p {
+.m3s1p1 .m3s1ms2 .well .col-sm-6 p {
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
@@ -79,7 +79,7 @@
 .m3s1p1 .vertical-align > [class*=" col-"] {
   display: flex;
   align-items: center;     /* Align the flex-items vertically */
-  justify-content: center; /* Optional, to align inner flex-items
+  justify-content: left; /* Optional, to align inner flex-items
                               horizontally within the column  */
 }
 
@@ -128,7 +128,7 @@ and (max-device-width : 1000px) {
     margin-bottom: 0px !important;
     padding: 5px !important;
 }
-.m3s1p1 .m3s1ms2 .well .col-sm-4 p {
+.m3s1p1 .m3s1ms2 .well .col-sm-6 p {
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
@@ -185,13 +185,10 @@ and (max-device-width : 765px) {
     padding: 5px !important;
 }
 
-.m3s1p1 .m3s1ms2 .well .col-sm-4 p {
-    padding-top: 8px !important;
-}
-
-.m3s1p1 .m3s1ms2 .well .col-sm-4 p {
+.m3s1p1 .m3s1ms2 .well .col-sm-6 p {
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 8px !important;
 }
 
 
@@ -251,11 +248,11 @@ and (max-device-width : 500px) {
     padding: 2px !important;
 }
 
-.m3s1p1 .m3s1ms2 .well .col-sm-4 p {
+.m3s1p1 .m3s1ms2 .well .col-sm-6 p {
     padding-top: 8px !important;
 }
 
-.m3s1p1 .m3s1ms2 .well .col-sm-4 p {
+.m3s1p1 .m3s1ms2 .well .col-sm-6 p {
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
@@ -312,13 +309,13 @@ and (max-device-width : 299px) {
 
 .m3s1p1 .m3s1ms2 .well {
    margin-bottom: -15px !important;
-    padding: 5px !important;
+    padding: 2px !important;
 }
 
-.m3s1p1 .m3s1ms2 .well .col-sm-4 p {
+.m3s1p1 .m3s1ms2 .well .col-sm-6 p {
     padding-top: 8px !important;
 }
-.m3s1p1 .m3s1ms2 .well .col-sm-4 p {
+.m3s1p1 .m3s1ms2 .well .col-sm-6 p {
     padding-left: 15px !important;
     padding-right: 15px !important;
 }

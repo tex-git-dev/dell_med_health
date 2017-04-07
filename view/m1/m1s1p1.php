@@ -52,113 +52,121 @@ include("view/cjs.php");
 
       
       <br><br>
-      <div class="container ms2 text-center sameHeight">
-             <f><h3 class="boldT">MODULE OUTCOMES</h3></f>
+      <div class="container ms2">
+             <f><h3 class="boldT text-center">MODULE OUTCOMES</h3></f>             
           <br><br>
-          <div class="well">
-         <div class="row white vertical-align"> 
-         <div class="col-sm-2"></div>   
-         
-            <div class="col-sm-4" >
-                  <f><p>Reflect on the causes of waste and inefficiencies in health care.</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img1.jpg"  class="img-responsive">
-            </div>            
-            <div class="col-sm-2"></div>
-         </div>
-      </div>
-      <div class="well">
-         <div class="row white vertical-align">  
-         <div class="col-sm-2"></div>          
-            <div class="col-sm-4">
-                  <f><p>Define 'value' for patients.</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img2.jpg"  class="img-responsive">
-            </div>
-            <div class="col-sm-2"></div>
-         </div>
-</div>
-<div class="well">
-         <div class="row white vertical-align ">  
-         <div class="col-sm-2"></div>          
-            <div class="col-sm-4">
-                  <f><p>Define 'health care waste'.</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img3.jpg"  class="   img-responsive">
-            </div>
-            <div class="col-sm-2"></div>
-         </div>
-         </div>
-<div class="well">
-         <div class="row white vertical-align">    
-         <div class="col-sm-2"></div>        
-            <div class="col-sm-4">
-                  <f><p>Identify the major contributing components of healthcare waste.</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img4.jpg"  class="   img-responsive">
-            </div>
-            <div class="col-sm-2"></div>
-         </div>
-         </div>
-<div class="well">
-         <div class="row white vertical-align"> 
-         <div class="col-sm-2"></div>           
-            <div class="col-sm-4">
-                  <f><p>Connect how the pursuit of high-value care for patients supports the professionalism of clinicians.</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img5.jpg"  class="   img-responsive">
-            </div>
-            <div class="col-sm-2"></div>
-         </div>
-         </div>
-<div class="well">
-         <div class="row white vertical-align">  
-         <div class="col-sm-2"></div>          
-            <div class="col-sm-4">
-                  <f><p>Introduce the concept of health care outcomes.</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img7.jpg"  class="   img-responsive">
-            </div>
-            <div class="col-sm-2"></div>
-         </div>
-         </div>
-<div class="well">
-         <div class="row white vertical-align">   
-         <div class="col-sm-2"></div>         
-            <div class="col-sm-4">
-                  <f><p>Examine a case that presents strategies and tools for increasing value in health care.</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img6.jpg"  class="   img-responsive">
-            </div>
-            <div class="col-sm-2"></div>
-         </div>
-         </div>
-<div class="well">
-         <div class="row white vertical-align">
-         <div class="col-sm-2"></div>
-            <div class="col-sm-4">
-                  <f><p>Explore data to gain understanding and appreciation of the perspectives of patients, individual clinicians, and health systems as it pertains to value-based health care.</p></f>
-            </div>
-            <div class="col-sm-4 ">
-               <img  src="img/m1s1img8.jpg"  class="   img-responsive">
-            </div>
-            <div class="col-sm-2"></div>
-         </div>
-         </div>
 
-         
+              <div class="well">
+                  <div class="row  vertical-align"> 
+                      <!-- <div class="col-sm-2"></div> -->
+                      <div class="col-sm-6 imgGallry">
+                          <f><p>Reflect on the causes of waste and inefficiencies in health care.</p></f>
+                      </div>
+                      <div class="col-sm-6 ">
+                          <img src="img/m1s1img1.jpg" class="img-responsive">
+                      </div>
+                      <!-- <div class="col-sm-2"></div> -->
+                  </div>
+              </div>
+
+              <div class="well">
+                    <div class="row  vertical-align">  
+                        <!-- <div class="col-sm-2"></div>           -->
+                        <div class="col-sm-6 imgGallry">
+                            <f><p>Define 'value' for patients.</p></f>
+                        </div>
+                        <div class="col-sm-6">
+                            <img  src="img/m1s1img2.jpg"  class="img-responsive">
+                        </div>
+                        <!-- <div class="col-sm-2"></div> -->
+                    </div>
+              </div>
+
+
+              <div class="well">
+                    <div class="row  vertical-align ">  
+                        <!-- <div class="col-sm-2"></div> -->
+                        <div class="col-sm-6 imgGallry">
+                            <f><p>Define 'health care waste'.</p></f>
+                        </div>
+                        <div class="col-sm-6">
+                            <img  src="img/m1s1img3.jpg"  class="   img-responsive">
+                        </div>
+                        <!-- <div class="col-sm-2"></div> -->
+                    </div>
+              </div>
+
+            <div class="well">
+                <div class="row  vertical-align">    
+                      <!-- <div class="col-sm-2"></div>         -->
+                      <div class="col-sm-6 imgGallry">
+                          <f><p>Identify the major contributing components of healthcare waste.</p></f>
+                      </div>
+                      <div class="col-sm-6">
+                          <img  src="img/m1s1img4.jpg"  class="   img-responsive">
+                      </div>
+                      <!-- <div class="col-sm-2"></div> -->
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="row  vertical-align"> 
+                    <!-- <div class="col-sm-2"></div>            -->
+                    <div class="col-sm-6 imgGallry">
+                        <f><p>Connect how the pursuit of high-value care for patients supports the professionalism of clinicians.</p></f>
+                    </div>
+                    <div class="col-sm-6">
+                        <img  src="img/m1s1img5.jpg"  class="   img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div> -->
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="row  vertical-align">  
+                    <!-- <div class="col-sm-2"></div> -->          
+                    <div class="col-sm-6 imgGallry">
+                      <f><p>Introduce the concept of health care outcomes.</p></f>
+                    </div>
+                    <div class="col-sm-6">
+                      <img  src="img/m1s1img7.jpg"  class="   img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div> -->
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="row  vertical-align">   
+                    <!-- <div class="col-sm-2"></div>          -->
+                    <div class="col-sm-6 imgGallry">
+                       <f><p>Examine a case that presents strategies and tools for increasing value in health care.</p></f>
+                    </div>
+                    <div class="col-sm-6">
+                        <img  src="img/m1s1img6.jpg"  class="   img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div> -->
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="row  vertical-align">
+                    <!-- <div class="col-sm-2"></div> -->
+                    <div class="col-sm-6 imgGallry">
+                      <f><p>Explore data to gain understanding and appreciate the perspective of patients, individual clinicians, and health systems as it pertains to value-based health care.</p></f>
+                    </div>
+                    <div class="col-sm-6">
+                      <img  src="img/m1s1img8.jpg"  class="img-responsive">
+                    </div>
+                    <!-- <div class="col-sm-2"></div> -->
+                </div>
+            </div>
+
       </div>
       </div>
+
+
 
     <footer class="container-fluid">
-
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
               <a href="<?php echo pathUrl();?>"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
