@@ -288,8 +288,7 @@ app.addOpt=function(id,len){
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-sm-12">
-                          
+                     <div class="col-sm-12">                          
                         
                      </div>
                   </div>
@@ -297,7 +296,7 @@ app.addOpt=function(id,len){
                      <div class="col-sm-12" >
                         <div  class="navbar-form navbar-center" style="">
                            <div class="input-group" style="width:100%;">
-                              <input id="response1Text" type="Search" placeholder="Please enter a brief response (less than 30 words) here." class=" limit-input form-control" />
+                              <input id="response1Text" type="Search" placeholder="Please enter a brief response here." class=" form-control" />
                               <div class="input-group-btn text-right" style="width:3%;">
                                  <button  onclick="app.response1();" class="btn btn-info">
                                  <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT

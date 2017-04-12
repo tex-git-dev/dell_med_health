@@ -916,6 +916,7 @@ var n = 0;
        var id = parseInt(e.relatedTarget.id);
           if(id == 0){
               $('.left').hide();
+              $('.right').show();
           }else if(id == 9){
             $('.left').show();
             $('.right').hide();
@@ -935,6 +936,7 @@ function TryA(){
     function checkAnswer(obj, f) {
             //console.log($(obj).parents(".row-eq-height"));
             $('.item .ans').addClass('Dis');
+            
             $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
             $(obj).parents(".eq-h").find(".ans")
             $(obj).parents(".white").removeClass("correct incorrect");

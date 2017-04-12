@@ -12,6 +12,11 @@ overflow-x: hidden;
     pointer-events: none;
 }
 
+.DisB {
+    pointer-events: none;
+}
+
+
 .allModule1 .btn,.allModule2 .btn,.allModule3 .btn{
     border: 2px solid #2cb69d !important;
     display: block !important;

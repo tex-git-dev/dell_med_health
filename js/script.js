@@ -12,6 +12,7 @@ var app = {
   WCList1:null,
   WCList2:null,
   SearchKey:null,
+  ClickOnModule:null,
 	init:function(){
 		this.preLoader();
 		this.Anim();
@@ -62,7 +63,25 @@ var app = {
     $(".btnS"+j).addClass('act');
     $(".MSection .mn").html(j);
     $(".MSection .clickS").hide();
-    $(".MSection .clickS"+j).show().removeClass('hide');
+	if(app.ClickOnModule == 'module1') {
+	 $("._outm3").css("display","none");
+     $("._outm2").css("display","none");
+    $("._outm1").css("display","block");
+    $("._outm1 .clickS"+j).show();
+	}
+	if(app.ClickOnModule== 'module2') {
+	 $("._outm3").css("display","none");
+     $("._outm1").css("display","none");
+	 $("._outm2").css("display","block");
+	$("._outm2 .clickS"+j).show();
+	}
+	if(app.ClickOnModule == 'module3') {
+		console.log(app.ClickOnModule);
+	 $("._outm1").css("display","none");
+    $("._outm2").css("display","none");
+    $("._outm3,#outcome3").css("display","block");
+	$("._outm3 .clickS"+j).show();
+	}
     var i=0;
     $.each(loc1,function(v,k){
       i++;
@@ -78,12 +97,12 @@ var app = {
         }
      
     })
-    if (app.SelecteM == 'm1') {
+    if(app.SelecteM == 'm1') {
       var timeFixed =[[00,02],[00,10],[00,10],[00,10],[00,12],[00,07],[00,15],[00,15],[00,05]];
     
     $(".MSection .HR").html(timeFixed[j-1][0]);
     $(".MSection .MIN").html(timeFixed[j-1][1]);
-        if (j==9){
+        if (j==9 || j==1){
            $(".outc").hide();
         }else{
           $(".outc").show();
@@ -100,11 +119,20 @@ var app = {
         }else{
           $(".outc").show();
         }
-    }else if (app.SelecteM == 'm3') {
+    }
+    else if (app.SelecteM == 'm3') {
       var timeFixed = [[00,03],[00,10],[00,10],[00,10],[00,12],[00,07],[00,15],[00,15],[00,05]];
     
     $(".MSection .HR").html(timeFixed[j-1][0]);
     $(".MSection .MIN").html(timeFixed[j-1][1]);
+	     if (j==1) {
+           $(".outc").hide();
+        }else if (j==7) {
+           $(".outc").hide();
+        }else{
+          $(".outc").show();
+        }
+
       } 
   },
 
@@ -342,6 +370,10 @@ $(document).keydown(function(e){
         }
     }
 });
+
+
+
+
 
 
 

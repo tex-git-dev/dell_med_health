@@ -240,7 +240,6 @@ line-height: 22px;
    width: 250px;
 }
 
-
 .m3s4p1 .s1bgcol{
     /*background-color: #fff;*/
      width: 100%; 
@@ -248,8 +247,7 @@ line-height: 22px;
      padding-bottom: 0px;
 }
 .m3s4p1 .s1bgcol .response1{
-    background-color: #f0f0f0;
-   
+    background-color: #f0f0f0;   
 }
 
 .m3s4p1 .s1bgcol .response1 .navbar-form{
@@ -267,9 +265,9 @@ margin-left: 0;
     box-shadow: none;
     font-size: 18px;
     height: 55px;
-    width: 150px;
-   
+    width: 150px;   
 }
+
 .m3s4p1 .s1bgcol .response1 .form-control{
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
@@ -278,9 +276,6 @@ margin-left: 0;
     color: #000;
     height: 55px;   
 }
-
-
-
 
 
 .m3s4p1 .m1s1imgT{
@@ -319,8 +314,6 @@ margin-left: 0;
     box-shadow:none;
     vertical-align: :center;
 }
-
-
 
 
 /* scatterplot */
@@ -494,13 +487,14 @@ and (max-device-width : 1000px) {
 padding-right: : 10px;
    
 }
-.m3s4p1 .jumbotron .container h2{
+
+.m3s4p1 .b1  h2 {
    font-family: "GothamHTF-Bold";
     font-size: 124%;
     width: 70%;
  }
 
-.m3s4p1 .jumbotron .container p{
+.m3s4p1 .b1 .container p{
     font-family: "GothamHTF-Bold";
     font-size: 107%;
     width: 42%;
@@ -512,6 +506,11 @@ padding-right: : 10px;
 
 .m3s4p1 .m3s4b7 .eq-h {
   display: grid;
+}
+
+.m3s4p1 .m3s4b7 .eq-h .col-sm-4{
+        width: 100% !important;
+        padding-bottom: 10px;
 }
 
 .m3s4p1 .m3s4b7 .m3s4b8 {
@@ -544,12 +543,12 @@ and (max-device-width : 765px) {
 padding-right: : 10px;
    
 }
-     .m3s4p1 .jumbotron .container h2{
+     .m3s4p1 .b1  h2{
          font-family: "GothamHTF-Bold";
     font-size: 124%;
     width: 70%;
     }
-    .m3s4p1 .jumbotron .container p{
+    .m3s4p1 .b1 .container p{
          font-size: 107%;
     width: 42%;
     font-family: "GothamHTF-Bold";
@@ -564,6 +563,11 @@ padding-right: : 10px;
 .m3s4p1 .m3s4b7 .eq-h {
   display: grid;
 }
+.m3s4p1 .m3s4b7 .eq-h .col-sm-4 {
+    width: 100% !important;
+    padding-bottom: 10px;
+}
+
 .m3s4p1 .m3s4b7 .m3s4b8 {
     display: none !important;
 }
@@ -595,13 +599,13 @@ and (max-device-width : 500px) {
 padding-right: : 10px;
    
 }
-.m3s4p1 .jumbotron .container h2{  
+.m3s4p1 .b1  h2{  
    font-family: "GothamHTF-Bold";
     font-size: 103%;
      width: 90%;
     }
 
-.m3s4p1 .jumbotron .container p{
+.m3s4p1 .b1 .container p{
      font-family: "GothamHTF-Bold";
     font-size: 83%;
     width: 65%;
@@ -617,6 +621,10 @@ padding-right: : 10px;
 
 .m3s4p1 .m3s4b7 .eq-h {
   display: grid;
+}
+.m3s4p1 .m3s4b7 .eq-h .col-sm-4 {
+    width: 100% !important;
+    padding-bottom: 10px;
 }
 
 .m3s4p1 .m3s4b7 .m3s4b8 {
@@ -647,13 +655,13 @@ and (max-device-width : 299px) {
 padding-right: : 10px;
    
 }
- .m3s4p1 .jumbotron .container h2 {  
+ .m3s4p1 .b1  h2 {  
    font-family: "GothamHTF-Bold";
     font-size: 48%;
     width: 86%;
     }
 
-.m3s4p1 .jumbotron .container p {
+.m3s4p1 .b1 .container p {
     font-family: "GothamHTF-Bold";
     font-size: 42%;
     width: 60%;
@@ -670,6 +678,12 @@ padding-right: : 10px;
 .m3s4p1 .m3s4b7 .eq-h {
   display: grid;
 }
+
+.m3s4p1 .m3s4b7 .eq-h .col-sm-4 {
+    width: 100% !important;
+    padding-bottom: 10px;
+}
+
 
 .m3s4p1 .m3s4b7 .m3s4b8 {
     display: none !important;

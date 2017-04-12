@@ -22,7 +22,7 @@ include("view/cjs.php");
          <br>         
          <div class="row">
             <div class="col-sm-12">
-               <f><p data--duration="1.5s">MODULE 3 | Section 5</p></f>
+               <f><p data--duration="1.5s">MODULE 3 | <span style="color:#f68121">Section 5</a></p></f>
             </div>
          </div>
          <div class="row">
@@ -41,75 +41,88 @@ include("view/cjs.php");
 
   <div class="Step1 container m2s5b1">
      <div class="row">        
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
       <f><h3 class="text-uppercase text-center boldT">value-based health care vs. volume-based health care </h3></f>
       <br> 
       <f><p>To combat the harmful effects of opaque pricing and payment mechanisms, health care providers are increasingly looking for more accurate ways of accounting costs and refocusing payment models around value over volume. These efforts are related, as more transparent costs allow for a clearer alignment of costs to outcomes that matter to patients and a better picture of “value” in the context of providing care.</p></f>
       <f><p>Recall key aspects of volume vs. value-based health care as discussed in Module 1:</p></f>
       </div>
-      <div class="col-sm-2"></div>
+      <div class="col-sm-1"></div>
      
     </div>
   </div>
 <br>
-<br>
+
 
      <div class="container m3s5b2">
       <div class="well">
-      <div class="row"> 
-         <div class="col-sm-1"></div>       
-         <div class="col-sm-5 bgGRAY">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-5 bgYELLOW ">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-1"></div>
+      <div class="row vertical-align">
+         <div class="col-sm-6 bgGRAY text-center"><h4>The Current System: Volume-Based Health Care</h4></div>
+         <div class="col-sm-6 bgYELLOW text-center"><h4>The Goal: Value-Based Health Care</h4></div>
       </div>
       </div>
       <div class="well">
-      <div class="row"> 
-         <div class="col-sm-1"></div>       
-         <div class="col-sm-5 bgGRAY ">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-5 bgYELLOW">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-1"></div>
+      <div class="row vertical-align">          
+         <div class="col-sm-6 bgGRAY">Individual care interactions organized around the clinician’s medical expertise (e.g. an orthopedic surgeon)</div>
+         <div class="col-sm-6 bgYELLOW">Team-based care interactions organized around patient medical needs and conditions (e.g. “musculoskeletal pain”)</div>         
+      </div>
+      </div>
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="well">
+          <div class="row vertical-align">
+            <div class="col-sm-6 bgGRAY">Fragmented care that is organized at the level of individual units or facilities</div>
+            <div class="col-sm-6 bgYELLOW">Integrated care across units and facilities, such as in an integrated practice unit (IPU)</div>
+          </div>
+        </div>        
+      </div>  
+    </div>  
+
+
+
+    
+      <!-- <div class="well">
+      <div class="row eq-h">
+         <div class="col-sm-6">
+            <div class="row vertical-align">
+              <div class="col-sm-12 bgGRAY">Fragmented care that is organized at the level of individual units or facilities</div>
+            </div>
+          </div>
+         <div class="col-sm-6">
+            <div class="row vertical-align">
+              <div class="col-sm-12 bgYELLOW"> 
+                Integrated care across units and facilities, such as in an integrated practice unit (IPU)
+              </div>
+            </div>
+          </div>
+      </div>
+      </div> -->
+
+      <div class="well">
+      <div class="row vertical-align"> 
+         <div class="col-sm-6 bgGRAY">Measurement largely based on process measures and “billable activities” </div>
+         <div class="col-sm-6 bgYELLOW">Measurement focused on patient health outcomes</div>
       </div>
       </div>
       <div class="well">
-      <div class="row"> 
-         <div class="col-sm-1"></div>       
-         <div class="col-sm-5 bgGRAY">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-5 bgYELLOW">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-1"></div>
+      <div class="row vertical-align eq-h"> 
+         <div class="col-sm-6 bgGRAY">Costs are poorly captured and often are estimated by using poor proxies such as charges and reimbursements</div>
+         <div class="col-sm-6 bgYELLOW">The actual costs of providing patient care are measured and captured</div>
       </div>
       </div>
       <div class="well">
-      <div class="row"> 
-         <div class="col-sm-1"></div>       
-         <div class="col-sm-5 bgGRAY">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-5 bgYELLOW">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-1"></div>
+      <div class="row vertical-align"> 
+         <div class="col-sm-6 bgGRAY">Providers – physicians and health systems – are reimbursed based on individual services provided</div>
+         <div class="col-sm-6 bgYELLOW">Providers are reimbursed based on value of care provided across a full care cycle for medical conditions</div>
       </div>
       </div>
       <div class="well">
-      <div class="row"> 
-         <div class="col-sm-1"></div>       
-         <div class="col-sm-5 bgGRAY">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-5 bgYELLOW">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-1"></div>
-      </div>
-      </div>
-      <div class="well">
-      <div class="row"> 
-         <div class="col-sm-1"></div>       
-         <div class="col-sm-5 bgGRAY">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-5 bgYELLOW">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-1"></div>
-      </div>
-      </div>
-      <div class="well">
-      <div class="row"> 
-         <div class="col-sm-1"></div>       
-         <div class="col-sm-5 bgGRAY">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-5 bgYELLOW">New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare.</div>
-         <div class="col-sm-1"></div>
+      <div class="row vertical-align"> 
+         <div class="col-sm-6 bgGRAY">Health information technology maximized for capturing billing processes and reporting necessary metrics</div>
+         <div class="col-sm-6 bgYELLOW">Health information technology is leveraged to help restructure care delivery and accurately measure results</div>
       </div>
       </div>
      </div>
@@ -118,9 +131,9 @@ include("view/cjs.php");
 
       <div class="container m3s5b2">
       <div class="row">    
-        <div class="col-sm-3"></div>    
-        <div class="col-sm-6"><f><p>This section will detail two new methods that are gaining ground in the movement toward value-based health care, one for better aligning payment mechanisms to value, and another for more accurately calculating costs. </p></f> </div>
-        <div class="col-sm-3"></div>  
+        <div class="col-sm-1"></div>    
+        <div class="col-sm-10"><f><p>This section will detail two new methods that are gaining ground in the movement toward value-based health care, one for better aligning payment mechanisms to value, and another for more accurately calculating costs. </p></f> </div>
+        <div class="col-sm-1"></div>  
       </div> 
      </div> 
    <br>
@@ -130,16 +143,15 @@ include("view/cjs.php");
 <div class="container-full m3s5b3">
     <div class="container">
       <div class="row"> 
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8"><f><h3 class="text-uppercase text-center boldT">Time-Driven Activity-Based Costing (TDABC) </h3></f>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10"><f><h3 class="text-uppercase text-center boldT">Time-Driven Activity-Based Costing (TDABC) </h3></f>
         <br>
-       <f><p>New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare. For example, Michael Porter and Robert Kaplan from Harvard Business School have advocated for the use of time-driven activity-based costing (TDABC).<sup>1</sup></p></f>
+        <f><p>New methods for determining more accurate measurements of actual costs are now increasingly being applied in healthcare. For example, Michael Porter and Robert Kaplan from Harvard Business School have advocated for the use of <em>time-driven activity-based costing</em> (TDABC).<sup>1</sup></p></f>
       </div>
-      <div class="col-sm-2"></div>
+      <div class="col-sm-1"></div>
       </div>
       <br>
       </div>
-
       <div class="container bgT">
       <div class="row">        
         <div class="col-sm-12"><img src="img/m3s5img4.png" class="center-block img-responsive" height="auto" width="70%"></div>
@@ -149,12 +161,12 @@ include("view/cjs.php");
       <br>
       <div class="container">
       <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
           <!-- <hr style="border-color:#dddddd"> -->
           <f><p>With TDABC, the costs of space, non-consumable equipment, and administrative overhead are all assigned minute-to-minute cost rates that are relevant to specific processes of care. The care that is delivered over an entire episode of care is broken down into discrete activities or process steps, such as check-in, vitals and intake, physician evaluation, nursing care, and so on. A cost is assigned to each step by tracking who is doing the activity, what resources they use, which space they are in, and how long it takes them. Each item (personnel, resources, and space) is assigned a per-minute cost rate by bundling together all costs (fixed and variable) and then dividing by the total amount available for patient care.</p></f>
         </div>
-        <div class="col-sm-2"></div>
+        <div class="col-sm-1"></div>
         </div>
       </div>
       <br>
@@ -168,12 +180,12 @@ include("view/cjs.php");
       <br>
       <div class="container">
       <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
           <!-- <hr style="border-color:#dddddd"> -->
           <f><p>TDABC requires providers to estimate only two parameters at each process step: the cost of each of the resources used in the process and the quantity of time the patient spends with each resource. </p></f>
         </div>
-        <div class="col-sm-2"></div>
+        <div class="col-sm-1"></div>
         </div>
       </div>
 
@@ -181,19 +193,19 @@ include("view/cjs.php");
 
 <div class="container">
      <div class="row">        
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
       <f><h3 class="text-uppercase text-center boldT">Value-Based Bundled Payments</h3></f>
       <br> 
-      <f><p>One alternative payment mechanism that has been proposed is value-based bundled payments.2 Value-based bundled payments cover all required care for a medical condition and are not based on singular procedures or visits. These bundled payments reimburse providers for all that may be required to treat a medical condition, including procedures, medications, tests, supplies, facility costs and services for a specified period of time. </p></f>
+      <f><p>One alternative payment mechanism that has been proposed is <span class="boldT">value-based bundled payments.</span><sup>2</sup> Value-based bundled payments cover all required care for a medical condition and are not based on singular procedures or visits. These bundled payments reimburse providers for all that may be required to treat a medical condition, including procedures, medications, tests, supplies, facility costs and services for a specified period of time. </p></f>
       </div>
-      <div class="col-sm-2"></div> 
+      <div class="col-sm-1"></div> 
     </div>
  </div>
+      <br>
+      <br>
 
-      <br>
-      <br>
- <div class="container-full m3s5b5">
+ <div class="jumbotron">
     <div class="container">
       <div class="row">
         <div class="col-sm-12"><img src="img/m3s5img6.png" class="center-block img-responsive"  height="auto" width="70%"></div>
@@ -202,33 +214,40 @@ include("view/cjs.php");
      </div> 
 </div>
 <br>
+
 <div class="container">
      <div class="row">        
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
       <f><p>Payment is provided for care of a medical condition like prostate cancer, childbirth, or diabetes for a specified period of time, known as the cycle of care. This includes the initial visit for the condition, followed by treatment, recovery and rehabilitation. For chronic conditions, this cycle may continue throughout the course of a patient's life. For a condition like childbirth, a typical time span can be specified.</p></f>
 
        <f><p>Implementing value-based bundled payments requires providers to achieve a set of outcome measures that matter to patients to ensure optimal quality of care. Charges for care are based on more accurate and detailed costs of delivering care and not based on FFS charges. Emergency episodes or care unrelated to the original medical condition that occurs during the cycle of care would be excluded and paid for separately using different bundled payments.</p></f>
 
         <f><p>These alternative payment models focus on more accurate costs assignment and paying for care in a way that awards true recovery and improved health. We will discuss a model implementation of this payment model, via Integrated Practice Units (IPUs), in a future module. </p></f>
       </div>
-      <div class="col-sm-2"></div> 
+      <div class="col-sm-1"></div> 
     </div>
  </div>
 
 <br>
    <div class="container m3s5b8">
-        <hr>
+    <div class="row">
+      <div class="col-sm-1"></div> 
+      <div class="col-sm-10">
+      <hr>
         <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;" >REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
         <br>        
       <div id="demo" class="collapse">
         <ol>
-          <f><li><p>Kaplan RS and Anderson SR. Time-Driven Activity Based Costing. Harvard Business Review. November 2004. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="https://hbr.org/2004/11/time-driven-activity-based-costing">https://hbr.org/2004/11/time-driven-activity-based-costing </a>.</p></li></f>
-          <f><li><p>Kaplan RS and Porter M. How to pay for health care. Harvard Business Review, 2016.<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1002/lt.20262">https://hbr.org/2016/07/how-to-pay-for-health-care </a>.</p></li></f>
-          
-        </ol>
+          <f><li><p>Kaplan RS and Anderson SR. Time-Driven Activity Based Costing. Harvard Business Review. November 2004.<br><a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="https://hbr.org/2004/11/time-driven-activity-based-costing">https://hbr.org/2004/11/time-driven-activity-based-costing</a></p></li></f>
+          <f><li><p>Kaplan RS and Porter M. How to pay for health care. Harvard Business Review, 2016.<br><a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1002/lt.20262">https://hbr.org/2016/07/how-to-pay-for-health-care</a></p></li></f>
+        </ol>        
+      </div>  
       </div>
-   </div> 
+      
+      <div class="col-sm-1"></div> 
+    </div>   
+   </div>
 
    
 
@@ -261,14 +280,14 @@ include("view/cjs.php");
 <footer class="container-fluid">
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s6p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="?id=m3/m3s4p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 3 | Section 4</span>
                 <span class="sp1"><strong>The Cost of Care: Different Approaches</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m2/m2s8p1"><span class="ssp2">MODULE 3 | Section 6</span>
-                <span class="sp2"><strong>Care Redesign Case: MD Anderson (TDABC)</strong></span>
+                <a href="?id=m3/m3s6p1"><span class="ssp2">MODULE 3 | Section 6</span>
+                <span class="sp2"><strong>Focusing on Outcomes</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>

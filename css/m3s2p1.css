@@ -5,6 +5,8 @@ cursor: pointer;
 line-height: 22px;    
 }
 
+
+
 .m3s2p1 div#my_favorite_latin_words span.w10 {
   font-size: 450%;
   color: #0cf;
@@ -153,6 +155,7 @@ line-height: 22px;
 }
 
 
+
 .m3s2p1 .m3s2s2 {
     background: #3b4254;
     color: #fff;
@@ -196,6 +199,11 @@ line-height: 22px;
     text-align: center;
     font-size: 16px;    
      font-family: "GothamHTF-Medium";   
+}
+
+.m3s2p1 .m3s2s5 {
+    margin-top: 47px;
+    margin-bottom: 40px;
 }
 
 .m3s2p1 .m3s2s6 {

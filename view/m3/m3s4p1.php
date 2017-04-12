@@ -241,7 +241,7 @@ app.response2 = function(){
       </div>
    </div>
    <br><br>
-
+   
           <div class="container m3s4b1">
               <f><h3 class="text-center text-uppercase">Reimbursement Mechanisms and Terms</h3></f>
                 <br>
@@ -342,26 +342,26 @@ app.response2 = function(){
             <div class="row">              
                   <div class="col-sm-12">
                     <f><h4 class="text-center">Fee-for-Service <span style="color:#26af95;">versus</span> Global Payments</h4></f>
-                    <br>
-                    <f><p class="bText">What is Lorem Ipsum</p></f>
+                    <br>                    
                   </div>              
              </div>                
              <div class="row">
                   <div class="col-sm-6">                      
-                      <f><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></f>
+                      <f><p class="bText">Current Fee-for-Service Payment System</p></f>
+                      <f><p>Care is fragmented instead of coordinated. each provider is payed separately for work completed in isolation of other providers. No one is responsible for coordinating care. This results in little accountability to overall quality and cost.</p></f>
                   </div>
                   <div class="col-sm-6">                    
                       <img src="img/m3s4img2.png" class="img-responsive" width="50%">
                   </div>
               </div>
-              <br>
+              <br><br>
               <div class="row">
                   <div class="col-sm-6">
                       <img src="img/m3s4img3.png" class="img-responsive" width="60%">
                   </div>
                   <div class="col-sm-6">
-                    <f><p class="bText">What is Lorem Ipsum</p></f>                
-                      <f><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></f>                      
+                    <f><p class="bText">Patient-Centered Global Payment System</p></f>                
+                      <f><p>Global payments made to a group of different types of providers for all types of care. This rewards providers for providing appropriate care instead of more care to meet the patients needs.</p></f>                      
                   </div>
               </div>
           </div>
@@ -848,7 +848,7 @@ app.response2 = function(){
                      <div class="col-sm-12" >
                         <div  class="navbar-form navbar-center" style="">
                            <div class="input-group" style="width:100%;">
-                              <input id="response1Text" type="Search" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
+                              <input id="response1Text" type="Search" placeholder="Please enter a brief response here." class="form-control" />
                               <div class="input-group-btn text-right" style="width:3%;">
                                  <button  onclick="app.response1();" class="btn btn-info">
                                  <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
@@ -909,7 +909,7 @@ app.response2 = function(){
                   <div class="col-sm-12" >
                      <div  class="navbar-form navbar-center" style="">
                         <div class="input-group" style="width:100%;">
-                           <input type="Search" id="response2Text" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
+                           <input type="Search" id="response2Text" placeholder="Please enter a brief response here." class=" form-control" />
                            <div class="input-group-btn text-right" style="width:3%;">
                               <button class="btn btn-info" onclick="app.response2();">
                               <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
@@ -985,6 +985,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
           
           if(id == 0){
               $('.left').hide();              
+              $('.right').show();
           }else if(id == 5){
             $('.left').show();
             $('.right').hide();
@@ -1029,14 +1030,14 @@ function TryA(){
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s1p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
-              <span class="ssp1">MODULE 2 | Section 1</span>
-                <span class="sp1"><strong>Measuring What Matters</strong></span></a>
+              <a href="?id=m3/m3s3p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <span class="ssp1">MODULE 3 | Section 3</span>
+                <span class="sp1"><strong>Speaking the Same Language: Health Care Cost Terms</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m2/m2s3p1"><span class="ssp2">MODULE 2 | Section 3</span>
-                <span class="sp2"><strong>Measuring Outcomes</strong></span>
+                <a href="?id=m3/m3s5p1"><span class="ssp2">MODULE 3 | Section 5</span>
+                <span class="sp2"><strong>Toward More Transparency</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>

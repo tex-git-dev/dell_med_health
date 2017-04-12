@@ -23,7 +23,7 @@ include("view/cjs.php");
          </div>
           <div class="row">
             <div class="col-sm-12"> 
-              <f><h2>Speaking the Same Language&mdash;Health Care Cost Terms</h2></f></div>
+              <f><h2>Speaking the Same Language: Health Care Cost Terms</h2></f></div>
             </div>
           <div class="row">
             <div class="col-sm-12">  
@@ -42,9 +42,9 @@ include("view/cjs.php");
                 <f><h3 class="text-uppercase text-center">Unraveling the Veil: Introduction to Health Care Cost Terms</h3></f>
                 <br>
                  <f><p>Remember when Ms. Jones asked her doctor what the stress test from her cardiologist was likely to cost, and he could only shrug and say he wasn’t sure? This may have seemed like a brush off, and certainly left Ms. Jones feeling frustrated and unsatisfied, but in reality it can be very difficult for a provider to know or even estimate the costs of service. The costs of delivering health care in America are often obscured behind layers of jargon and complex accounting methods, and are often different based on each individual patient.</p></f>
-                 <f><p>Notable health economist Uwe Reinhardt famously referred to pricing in US hospitals as “chaos behind a veil of secrecy.”1 While pushes toward transparency exist, there is still wild and unexplained variation in pricing between institutions, cities in the same state, and between states, and there is no universal willingness to share pricing data.2</p></f>
-                 <f><p>Beyond this variation, the relationship between “cost” and “price” in health care is often not clear, and the definitions of each vary based on perspective. The addition of various payors (insurance companies) and differing coverage depending on the patient further complicates the equation. The portion that patients will be required to pay and the answer to the question, “How much is this going to cost me, doc?” is thus very difficult for physicians to answer or even predict.</p></f>
-                 <f><p>Recent media coverage and the development of websites and tools providing information directly to patients about potential health care charges have led to a national movement towards price transparency. And while physicians may not be expected to know the ins and outs of all potential costs to patients, they still have an ethical obligation to help patients navigate these substantial barriers and financial “side-effects” of their care.</p></f>
+                 <f><p>Notable health economist Uwe Reinhardt famously referred to pricing in US hospitals as “chaos behind a veil of secrecy.”<sup>1</sup> While pushes toward transparency exist, there is still wild and unexplained variation in pricing between institutions, cities in the same state, and between states, and there is no universal willingness to share pricing data.<sup>2</sup></p></f>                                  
+                 <f><p>Beyond this variation, the relationship between “cost” and “price” in health care is often not clear, and the definitions of each vary based on perspective. The addition of various payers (insurance companies) and differing coverage depending on the patient further complicates the equation. The portion that patients will be required to pay and the answer to the question, “How much is this going to cost me, doc?” is thus very difficult for physicians to answer or even predict.</p></f>
+                 <f><p>Recent media coverage and the development of websites and tools providing information directly to patients about potential health care charges have led to a national movement towards price transparency. And while physicians may not be expected to know the ins and outs of all potential costs to patients, they still have an ethical obligation to help patients navigate the substantial barriers and financial “side-effects” of their care.</p></f>
                </div>
             <!-- <div class="col-sm-2"></div> -->
          </div>
@@ -59,7 +59,7 @@ include("view/cjs.php");
               <div class="col-sm-12">
                  <f><h3 class="text-uppercase text-center">Review of Health Care Waste</h3></f>
                  <br>
-                 <f><p>In Module 1, we explored the sheer volume and impact of medical spending and health care waste in the USAmerica. Let’s review that now. Then, we will look more closely at how the costs that comprise this spending are determined.</p></f>
+                 <f><p>In Module 1, we explored the sheer volume and impact of medical spending and health care waste in the US. Let’s review that now. Then, we will look more closely at how the costs that comprise this spending are determined.</p></f>
               </div>
             <!-- <div class="col-sm-2"></div> -->
          </div>
@@ -104,7 +104,7 @@ include("view/cjs.php");
                                             foreach ($random as $key => $value) {
                                                 $ans = $value == "20%" ? 1 : 0;
                                                 echo '<div class="col-sm-4">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                    <div class="ans" onclick="checkAnswerA(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
                                             }
                                         ?>
@@ -125,7 +125,7 @@ include("view/cjs.php");
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                    <center><div class="msgBtn" onclick="TryAB();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
@@ -164,7 +164,7 @@ include("view/cjs.php");
                                             foreach ($random as $key => $value) {
                                                 $ans = $value == "30%" ? 1 : 0;
                                                 echo '<div class="col-sm-4">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                    <div class="ans" onclick="checkAnswerA(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
                                             }
                                         ?>
@@ -185,7 +185,7 @@ include("view/cjs.php");
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
+                                    <center><div class="msgBtn" onclick="TryAB();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
@@ -268,7 +268,7 @@ include("view/cjs.php");
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
                 <h4 class="text-center" style="color:#566f8e">REIMBURSEMENT</h4>
-                <f><p class="text-center">the dollar amount a third -party payer (i.e., insurance) negotiates as payment to the provider for direct and indirect costs.</p></f>
+                <f><p class="text-center">the dollar amount a third-party payer (i.e., insurance) negotiates as payment to the provider for direct and indirect costs.</p></f>
             </div>
             <div class="col-sm-2"></div>
          </div>        
@@ -296,18 +296,18 @@ include("view/cjs.php");
          <div class="row">
             <div class="col-sm-3"></div>
               <div class="col-sm-6">
-                 <f><p class="text-center">In Module 1, we explored the sheer volume and impact of medical spending and health care waste in the USAmerica.</p></f>
+                 <f><p class="text-center">Arora V, Moriates C, Shah N. The challenge of understanding health care costs and charges. AMA Journal of Ethics. 2015; 17(11): 1046-1052.</p></f>
               </div>
             <div class="col-sm-3"></div>
          </div>
          <br>
            <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><f><div class="driveS2">Dive Deeper</div></f></div>
+            <div class="col-sm-4"><f><a target="_blank" style="color:#000;" href="http://journalofethics.ama-assn.org/2015/11/stas1-1511.html"><div class="driveS2">Read Artical</div></a></f></div>
             <div class="col-sm-4"></div>
            </div>
     </div>
-</div> 
+</div>
 <br><br>
 
 <div class="container m3s3b9">
@@ -341,8 +341,7 @@ include("view/cjs.php");
             <li data-target="#myCarousel_a" data-slide-to="6" ></li>            
             <li data-target="#myCarousel_a" data-slide-to="7" ></li>            
             <li data-target="#myCarousel_a" data-slide-to="8" ></li>            
-            <li data-target="#myCarousel_a" data-slide-to="9" ></li>            
-            <li data-target="#myCarousel_a" data-slide-to="10" ></li>            
+            <li data-target="#myCarousel_a" data-slide-to="9" ></li>                        
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -983,15 +982,17 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>article</f></p>
-                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
-                                 <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
-                                 <p><f>Accessed March<br>24, 2017.</f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/">Moriates C. Meet the villain of hospital costs: The chargemaster.</a></f></p>
+                                 <p><f>Society of Hospital Medicine. July 30, 2015.</f></p>
+                                 <p><f>Accessed March 24,<br>2017.</f></p>
                             </div>
                           </div>
                        </div>
                   </div>
                 </div>
             </div>
+
+
 
             <div class="row">
                 <div class="col-sm-12">
@@ -1003,9 +1004,9 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>article</f></p>
-                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
-                                 <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
-                                 <p><f>Accessed March<br>24, 2017.</f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="">Brill S. Bitter pill: Why medical bills are killing us.</a></f></p>                                
+                                 <p><f>Accessed March 24, 2014</f></p>
+                                 <p><f>TIME. April 4,<br>2013.</f></p>                                 
                             </div>
                           </div>
                        </div>
@@ -1022,9 +1023,9 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>article</f></p>
-                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
-                                 <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
-                                 <p><f>Accessed March<br>24, 2017.</f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1377/hlthaff.2016.0093">Bai G, Anderson GF. US hospitals are still using chargemaster markups to maximize revenues.</a></f></p>
+                                 <p><f></f></p>
+                                 <p><f>Health Aff.<br> 2016: 35(9): 1658-1664. doi: 10.1377/hlthaff.2016.0093</f></p>
                             </div>
                           </div>
                        </div>
@@ -1032,6 +1033,29 @@ include("view/cjs.php");
                 </div>
             </div>
             <div class="row">
+                <div class="col-sm-12">
+
+                    <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                                <div class='well'>
+                                <p class="text-uppercase"><f>article</f></p>
+                                <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="https://www.hcup-us.ahrq.gov/db/state/costtocharge.jsp">Explore what data are available for ratio of costs to charges from the Healthcare Cost and Utilization Project (HCUP),  sponsored by the Agency for Healthcare Research and Quality (AHRQ).</a></f></p>
+                                <p><f>Cost-to-charge ratio files. Healthcare Cost and Utilization Project (HCUP) website. Published November 2016.</f></p>
+                                <p><f>Accessed March 24,<br> 2017.</f></p>
+                            </div>
+                          </div>
+                       </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- <div class="row">
                 <div class="col-sm-12">
                   <div class='well1'>
                        <div class='row vertical-align'>
@@ -1041,7 +1065,7 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>article</f></p>
-                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="">Moriates C. Meet the villain of hospital costs: The chargemaster.</a></f></p>
                                  <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
                                  <p><f>Accessed March<br>24, 2017.</f></p>
                             </div>
@@ -1049,26 +1073,9 @@ include("view/cjs.php");
                        </div>
                   </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                  <div class='well1'>
-                       <div class='row vertical-align'>
-                          <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
-                          </div>
-                          <div class="col-sm-9">
-                                <div class='well'>
-                                <p class="text-uppercase"><f>article</f></p>
-                                 <p><f>Moriates C. Meet the villain of hospital costs: The chargemaster.</f></p>
-                                 <p><f>http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</f></p>
-                                 <p><f>Accessed March<br>24, 2017.</f></p>
-                            </div>
-                          </div>
-                       </div>
-                  </div>
-                </div>
-            </div>
+            </div> -->
+
+  
 
         </div>
     </div>        
@@ -1085,35 +1092,46 @@ include("view/cjs.php");
             <br>        
           <div id="demo" class="collapse">
             <ol>
-              <f><li><p>Reinhardt UE. The pricing of U.S. hospital services: chaos behind a veil of secrecy. Health Affairs. 2006;25(1):57-69. doi: <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1377/hlthaff.25.1.57">10.1377/hlthaff.25.1.57</a></p></li></f>
-              <f><li><p>Health Care Cost Institute. Some states pay twice the price for health care, finds new report. April 27, 2016. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.healthcostinstitute.org/states-pay-twice-price-health-care-finds-new-report/">http://www.healthcostinstitute.org/states-pay-twice-price-health-care-finds-new-report/</a> Accessed January 3, 2017. </p></li></f>
-              <f><li><p>Dobson A, DaVanzo J, Doherty J, Tanamor M . A study of hospital charge setting practices. The Lewin Group. December 2005; No. 05-4. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://67.59.137.244/documents/Dec05_Charge_setting.pdf">http://67.59.137.244/documents/Dec05_Charge_setting.pdf</a> Accessed March 24, 2017.</p></li></f>
-              <f><li><p>National Nurses United Press Release.  New data – some hospitals set charges at 10 times their costs. National Nurses United website. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.nationalnursesunited.org/press/entry/new-data-some-hospitals-set-charges-at-10-times-their-costs/">http://www.nationalnursesunited.org/press/entry/new-data-some-hospitals-set-charges-at-10-times-their-costs/</a>  Published January 6, 2014. Accessed March 24, 2017.</p></li></f>
-              <f><li><p>Umbdenstock R. Hospital billing too complex: Another view. USA Today. May 15 2013. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.usatoday.com/story/opinion/2013/05/15/billing-american-hospital-association-editorials-debates/2163741/">http://www.usatoday.com/story/opinion/2013/05/15/billing-american-hospital-association-editorials-debates/2163741/</a> Accessed March 24, 2017.</p></li></f>          
+              <!-- <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href=""> -->
+              <f><li><p>Reinhardt UE. The pricing of U.S. hospital services: chaos behind a veil of secrecy. Health Affairs. 2006;25(1):57-69. doi: <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1377/hlthaff.25.1.57">10.1377/hlthaff.25.1.57</a></p></li></f>              
+              <f><li><p>Health Care Cost Institute. Some states pay twice the price for health care, finds new report. Published April 27, 2016. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.healthcostinstitute.org/states-pay-twice-price-health-care-finds-new-report/">http://www.healthcostinstitute.org/states-pay-twice-price-health-care-finds-new-report/</a> Accessed January 3, 2017.</p></li></f>
+              <f><li><p>Dobson A, DaVanzo J, Doherty J, Tanamor M. A study of hospital charge setting practices. The Lewin Group. December 2005; No. 05-4. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://67.59.137.244/documents/Dec05_Charge_setting.pdf">http://67.59.137.244/documents/Dec05_Charge_setting.pdf</a> Accessed March 24, 2017.</p></li></f>
+              <f><li><p>National Nurses United Press Release.  New data – some hospitals set charges at 10 times their costs. National Nurses United website. Published January 6, 2014. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.nationalnursesunited.org/press/entry/new-data-some-hospitals-set-charges-at-10-times-their-costs/">http://www.nationalnursesunited.org/press/entry/new-data-some-hospitals-set-charges-at-10-times-their-costs/</a>  Accessed March 24, 2017.</p></li></f>
+              <f><li><p>Umbdenstock R. Hospital billing too complex: Another view. USA Today. May 15 2013. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.usatoday.com/story/opinion/2013/05/15/billing-american-hospital-association-editorials-debates/2163741/">http://www.usatoday.com/story/opinion/2013/05/15/billing-american-hospital-association-editorials-debates/2163741/</a> Accessed March 24, 2017.</p></li></f>
             </ol>
           </div>  
           </div>
         <div class="col-sm-1"></div>        
    </div>
-
-
 </div>
+
+<footer class="container-fluid" style="background:#f4f4f4;">
+      <div class="row">
+          <div class="col-sm-3 text-left NextBtn">
+              <a href="?id=m3/m3s2p2"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <span class="ssp1">MODULE 3 | Section 2 | Dive Deeper</span>
+                <span class="sp1"><strong>Basics of Health Care Financing in the US</strong></span></a>
+            </div>
+          <div class="col-sm-6"></div>
+      </div>
+</footer>
+
+
 
 <footer class="container-fluid">         
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s5p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
-              <span class="ssp1">MODULE 2 | Section 5</span>
-                <span class="sp1"><strong>Using Measures Frameworks to Improve Outcomes</strong></span></a>
+              <a href="?id=m3/m3s2p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <span class="ssp1">MODULE 3 | Section 2</span>
+                <span class="sp1"><strong>Story From the Frontlines</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m2/m2s7p1"><span class="ssp2">MODULE 2 | Section 7</span>
-                <span class="sp2"><strong>Care Redesign Case: UNOS</strong></span>
+                <a href="?id=m3/m3s4p1"><span class="ssp2">MODULE 3 | Section 4</span>
+                <span class="sp2"><strong>The Cost of Care: Different Approaches</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
-
           <div class="row">            
             <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
           </div>
@@ -1149,6 +1167,7 @@ include("view/cjs.php");
 
 $('.carousel').on('slid.bs.carousel', function (e) {
        $('.item .ans').removeClass('Dis');
+       $('.item .ans').removeClass('DisB');
        var id = parseInt(e.relatedTarget.id);
           if(id == 0){
               $('.left_a').hide();
@@ -1160,7 +1179,8 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 
 
           if(id == 2){
-              $('.left_b').hide();              
+              $('.left_b').hide();  
+              $('.right_b').show();            
           }else if(id == 11){
             $('.left_b').show();
             $('.right_b').hide();
@@ -1169,37 +1189,55 @@ $('.carousel').on('slid.bs.carousel', function (e) {
             $('.right_b').show();
           }
 
-
-          
-
-
-
-
       });
 
+
 function TryA(){
-      $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
-      $('.item .ans').removeClass('Dis');
+      $('#myCarousel_a .item.active div').removeClass("incorrect").removeClass("selectedAns");
+      $('#myCarousel_a .item .ans').removeClass('Dis');      
     }
 
 
     function checkAnswer(obj, f) {
             //console.log($(obj).parents(".row-eq-height"));
-            $('.item .ans').addClass('Dis');
-            $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
+            $('#myCarousel_a .item .ans').addClass('Dis');
+            $('#myCarousel_a .item.active div').removeClass("incorrect").removeClass("selectedAns");
             $(obj).parents(".eq-h").find(".ans")
             $(obj).parents(".white").removeClass("correct incorrect");
             if (f === 1) {
-                $(obj).addClass('selectedAns').parents('.white').addClass('correct');
+                $(obj).addClass('selectedAns').parents('#myCarousel_a .white').addClass('correct');
             } else if (f === 0) {
-                $(obj).addClass('selectedAns').parents('.white').addClass('incorrect');
+                $(obj).addClass('selectedAns').parents('#myCarousel_a .white').addClass('incorrect');
             } else {
-                $(obj).addClass('selectedAns').parents('.white').addClass('correct bothCorrect');
+                $(obj).addClass('selectedAns').parents('#myCarousel_a .white').addClass('correct bothCorrect');
                 //alert(f);
                 $(".5401, .2497").addClass("hide");
                 $("." + f).removeClass("hide");
             }
         }
+
+    
+    function TryAB() {
+      $('#myCarousel .item.active div').removeClass("incorrect").removeClass("selectedAns");
+      $('#myCarousel .item .ans').removeClass('DisB');
+    }        
         
+        function checkAnswerA(obj, f) {
+            //console.log($(obj).parents(".row-eq-height"));
+            $('#myCarousel .item .ans').addClass('DisB');
+            $('#myCarousel .item.active div').removeClass("incorrect").removeClass("selectedAns");
+            $(obj).parents(".eq-h").find(".ans")
+            $(obj).parents("#myCarousel .white").removeClass("correct incorrect");
+            if (f === 1) {
+                $(obj).addClass('selectedAns').parents('#myCarousel .white').addClass('correct');
+            } else if (f === 0) {
+                $(obj).addClass('selectedAns').parents('#myCarousel .white').addClass('incorrect');
+            } else {
+                $(obj).addClass('selectedAns').parents('#myCarousel .white').addClass('correct bothCorrect');
+                //alert(f);
+                $(".5401, .2497").addClass("hide");
+                $("." + f).removeClass("hide");
+            }
+        }
 
 </script>

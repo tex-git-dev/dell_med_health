@@ -331,12 +331,14 @@ app.response2 = function(){
 
 <div class="container m2s7b6">
       <f><h5 class="text-uppercase">Moving Forward</h5></f>
+      <f><p>There are three key take-away points from this Care Redesign Case regarding approaches to introducing more value into a system.</p></f>
       <f><p class="tBold">1. To understand a problem, you need to first measure the right things.</p></f>
       <f><p>Until wait list mortality became the focus of measurement and researchers found it was a more significant problem than worrying about post-transplant outcomes, the right questions were not asked and the outcomes that mattered to patients were not the focus.</p></f>
       <f><p class="tBold">2. Establishing and measuring patient outcomes is critical.</p></f>
       <f><p>Using the patient specific, objective MELD measures rather than physician-driven or program-defined measures made the process of allocation more objective and more motivational than wait time, which was part of the old system.</p></f>
       <f><p class="tBold">3. Transparency in reporting the effects of a change is important in engendering trust.</p></f>
-      <f><p>These principles apply to virtually any situation where we are trying to change the system to improve value. Changing the way things are done in medicine can be difficult, but transparently reporting results from a change in practice and showing improvement goes a long way to increase the willingness to try a new approach.</p></f>
+      <f><p>These principles apply to virtually any situation where we are trying to change the system to improve value.</p></f>
+      <f><p>Changing the way things are done in medicine can be difficult, but transparently reporting results from a change in practice and showing improvement goes a long way to increase the willingness to try a new approach.</p></f>
 </div>
 <br><br>
 
@@ -403,7 +405,7 @@ app.response2 = function(){
                            <div class="input-group" style="width:100%;">
                                                           
                               
-                              <input id="response1Text" type="Search" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
+                              <input id="response1Text" type="Search" placeholder="Please enter a brief response here." class="form-control" />
                               <div class="input-group-btn text-right" style="width:3%;">
                                  <button  onclick="app.response1(this);" class="btn btn-info">
                                  <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
@@ -465,7 +467,7 @@ app.response2 = function(){
                   <div class="col-sm-12" >
                      <div  class="navbar-form navbar-center" style="">
                         <div class="input-group" style="width:100%;">
-                           <input type="Search" id="response2Text" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
+                           <input type="Search" id="response2Text" placeholder="Please enter a brief response here." class="form-control" />
                            <div class="input-group-btn text-right" style="width:3%;">
                               <button class="btn btn-info" onclick="app.response2();">
                               <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT

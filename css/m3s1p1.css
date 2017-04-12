@@ -34,8 +34,14 @@
     width: 28%;
     font-family: "GothamHTF-Bold";
 }
-.m3s1p1 .m3s1ms1  h3, .m3s1p1 .m3s1ms1  h4 {
+.m3s1p1 .m3s1ms1  h3 {
     font-family: "GothamHTF-Bold";
+}
+
+.m3s1p1 .m3s1ms1  h4 {
+    font-family: "GothamHTF-Bold";
+    margin-bottom: 30px !important;
+    margin-top: 20px !important;
 }
 
 

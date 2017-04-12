@@ -373,6 +373,7 @@ var p =1
        var id = parseInt(e.relatedTarget.id);
           if(id == 0){
               $('.left').hide();
+              $('.right').show();
           }else if(id == 2){
             $('.left').show();
             $('.right').hide();

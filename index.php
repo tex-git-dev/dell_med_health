@@ -205,6 +205,19 @@ if(@isset($_GET['id'])) {
   ?>
 <script type="text/javascript">
 $(document).ready(function() {
+var mnumber = app.qs["id"][1];
+if(mnumber==1)
+{
+app.ClickOnModule="module1";
+}
+if(mnumber==2)
+{
+app.ClickOnModule="module2";
+}
+if(mnumber==3)
+{
+app.ClickOnModule="module3";
+}
   // this is used for modules button active and deactive stage in menu module section.
     var s = app.qs["id"][6];
     app.SelecteM = app.qs["id"][0]+app.qs["id"][1];

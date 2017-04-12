@@ -43,11 +43,11 @@ include("view/cjs.php");
 
           <div class="row text-left">
             <div class="col-sm-12">
-               <f><p>Costs have traditionally not been taught within medical education. “The reasons for this silence are historical, philosophical, structural, and cultural.”1 In our current political climate, the discussion of how health care should be managed and paid for has been an impassioned one. The cost of medical care has been a subject of bitter debate and frustration for clinicians and patients alike for some time. </p></f>
+               <f><p>Costs have traditionally not been taught within medical education. “The reasons for this silence are historical, philosophical, structural, and cultural.”<sup>1</sup> In our current political climate, the discussion of how health care should be managed and paid for has been an impassioned one. The cost of medical care has been a subject of bitter debate and frustration for clinicians and patients alike for some time. </p></f>
            </div>
          </div>
-         <f><h4>"The reasons for this silence are historical, philosophical, structural, and cultural."</h4></f>            
-         <br>
+
+         <f><h4>“The reasons for this silence are historical, philosophical, structural, and cultural.”<sup>1</sup></h4></f>            
          
           <div class="row text-left">
             <div class="col-sm-12">
@@ -156,8 +156,7 @@ include("view/cjs.php");
   <br><br>
 
   <div class="container m3s1ms3">
-    <div class="row">
-        
+    <div class="row">        
         <div class="col-sm-12">
             <hr>
               <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
@@ -183,7 +182,7 @@ include("view/cjs.php");
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m2/m2s2p1"><span class="ssp2">MODULE 2 | Section 2</span>
+                <a href="?id=m3/m3s2p1"><span class="ssp2">MODULE 3 | Section 2</span>
                 <span class="sp2"><strong>Story From the Frontlines</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>

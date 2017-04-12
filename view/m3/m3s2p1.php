@@ -258,9 +258,9 @@ app.response2 = function(){
          <div class="col-sm-8">
             <div class="videocontent">
                <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod2_Sec2.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.mp4" type="video/mp4"></source>
-                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.webm" type="video/webm"></source>
-                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.ogv" type="video/ogv"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec2.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec2.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec2.ogv" type="video/ogv"></source>
                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>
@@ -318,7 +318,7 @@ app.response2 = function(){
                      <div class="col-sm-12" >
                         <div  class="navbar-form navbar-center" style="">
                            <div class="input-group" style="width:100%;">
-                              <input id="response1Text" type="Search" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
+                              <input id="response1Text" type="Search" placeholder="Please enter a brief response here." class="form-control" />
                               <div class="input-group-btn text-right" style="width:3%;">
                                  <button  onclick="app.response1();" class="btn btn-info">
                                  <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
@@ -451,18 +451,16 @@ app.response2 = function(){
          <hr>
             <f><p>It is important to understand the basics of health care financing in the US, including private and government insurance. If you are not familiar with the general structure of Medicare, Medicaid, VA/Tricare, and individual and employment-based insurance, then you should review this brief mini-module (“Basics of Health Care Financing in the US”) now and then return to this module—or you can choose to check it out after completing this module.</p></f>
           </div>  
-          <div class="col-sm-1"></div>
+             <div class="col-sm-1"></div>
         </div>     
         <br>
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><f><div class="driveS2">Dive Deeper</div></f></div>
+            <div class="col-sm-4"><f><a href="?id=m3/m3s2p2" style="color:#fff;"><div class="driveS2">Dive Deeper</div></a></f></div>
             <div class="col-sm-4"></div>
         </div>
       </div>
 </div>
-  <br>
-  <br>
  
 
 <div class="container m3s2s5">
@@ -476,8 +474,7 @@ app.response2 = function(){
           <div class="col-sm-1"></div>
        </div>    
 </div>
-<br>
-<br>
+
 
 <div class="jumbotron m3s2s6">
       <div class="container m3s2s7">
@@ -501,7 +498,7 @@ app.response2 = function(){
          <br>
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><f><div class="driveS3">Read Article</div></f></div>
+            <div class="col-sm-4"><f><a style="color:#000;" target="_blank" href="http://khn.org/news/observational-care/"><div class="driveS3">Read Article</div></a></f></div>
             <div class="col-sm-4"></div>
         </div>
       </div> 
@@ -517,7 +514,7 @@ app.response2 = function(){
               <br>
               <ol id="demo" class="collapse"> 
                 <f><li class="text-left"><p>Moriates C, Arora V, Shah N. The challenges of understanding healthcare pricing. In: Shanahan J, Saggese C, eds. <em><a style="color:#f4821f;" target="_blank" href="https://www.amazon.com/Understanding-Value-Healthcare-Christopher-Moriates/dp/0071816984">Understanding Value-Based Healthcare</a></em>. Columbus, OH: McGraw-Hill Education; 2015:49-72.</p></li></f>
-                <f><li class="text-left"><p>Moriates C, Arora V, Shah N. The challenges of understanding healthcare pricing. In: Shanahan J, Saggese C, eds. Understanding Value-Based Healthcare. Columbus, OH: McGraw-Hill Education; 2015:49-72. <em>Am J Med. 2009;22(8): 741-746. doi:<a style="color:#f4821f;" target="_blank" href="http://dx.doi.org/10.1016/j.amjmed.2009.04.012">10.1016/j.amjmed.2009.04.012</a></em></p></li></f>
+                <f><li class="text-left"><p>Himmelstein DU, Thorne D, Warren E, Woolhandler S. Medical bankruptcy in the United States, 2007: Results of a national study. <em>Am J Med. 2009;22(8): 741-746. doi:<a style="color:#f4821f;" target="_blank" href="http://dx.doi.org/10.1016/j.amjmed.2009.04.012">10.1016/j.amjmed.2009.04.012</a></em></p></li></f>
                 <f><li class="text-left"><p>Financial toxicity and cancer treatment (PDQ)&ndash;health professional version. National Cancer Institute website. <a style="color:#f4821f;" target="_blank" href="https://www.cancer.gov/about-cancer/managing-care/financial-toxicity-hp-pdq">https://www.cancer.gov/about-cancer/managing-care/financial-toxicity-hp-pdq</a>. Update: December 14, 2016. Accessed March 23, 2017.</p><p>Jaffe S. $18 dollars for a baby aspirin? Hospitals hike costs for everyday drugs for some patients. Kaiser Health News and USA Today. April 30, 2012. <a style="color:#f4821f;" target="_blank" href="http://khn.org/news/observational-care/">http://khn.org/news/observational-care/</a>. Accessed December 7, 2016.</p></li></f>
               </ol>
         </div>        
@@ -527,27 +524,34 @@ app.response2 = function(){
    
 </div>
 
+<footer class="container-fluid" style="background:#f4f4f4;">
+      <div class="row">
+        <div class="col-sm-6"></div>
+          <div class="col-sm-6  text-right NextBtn1">
+                <a href="?id=m3/m3s2p2"><span class="ssp2">MODULE 3 | Section 2 | Dive Deeper</span>
+                <span class="sp2"><strong>Basics of Health Care Financing in the US</strong></span>
+                <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
+            </div>
+      </div>
+</footer>
 
-<footer class="container-fluid">
-         
+    <footer class="container-fluid">         
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s1p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
-              <span class="ssp1">MODULE 2 | Section 1</span>
-                <span class="sp1"><strong>Measuring What Matters</strong></span></a>
+              <a href="?id=m3/m3s3p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <span class="ssp1">MODULE 3 | Section 1</span>
+                <span class="sp1"><strong>Understanding Costs In Health Care</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m2/m2s3p1"><span class="ssp2">MODULE 2 | Section 3</span>
-                <span class="sp2"><strong>Measuring Outcomes</strong></span>
+                <a href="?id=m3/m3s3p1"><span class="ssp2">MODULE 3 | Section 3</span>
+                <span class="sp2"><strong>Speaking the Same Language: Health Care Cost Terms</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
-
 
           <div class="row">            
             <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
           </div>
 
-          
       </footer>      
