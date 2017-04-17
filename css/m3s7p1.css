@@ -127,7 +127,7 @@
 }
 
 .m3s7p1 .m3s7c1 .paddb {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
 }
 
 .m3s7p1 .m3s7c1 {
@@ -150,13 +150,26 @@
     color: #fff;
 }
 .m3s7p1 .m3s7c2 .m3s7c3 h4 {    
-    margin-top: 65px !important;
+    margin-top: 30px !important;
     font-size: 25px;
 }
 .m3s7p1 .bl {    
     font-family: "GothamHTF-Medium";
 } 
 /*end c2*/
+
+
+
+
+.m3s7p1 .m3s7b50 h5 {
+    font-family: "GothamHTF-Medium"; 
+}
+.m3s7p1 .m3s7b50 ol {
+    margin-left: -22px;        
+    font-family: "GothamHTF-Medium"; 
+    list-style-type: number;
+}
+
 
 /* start learn more */
 
@@ -206,18 +219,12 @@
 .m3s7p1 .jumbotron .m3s7b7 p {
     font-size: 14px !important;
 }
-.m3s7p1 .m3s7b7 .vertical-align {
+.m3s7p1 .m3s7b7 .vertical-alignA {
     align-items: center;
     display: flex;
 }
 
-.m3s7p1 .m3s7b7 .vertical-align > [class^="col-"],
-.m3s7p1 .m3s7b7 .vertical-align > [class*=" col-"] {
-  display: flex;
-  align-items: center;     /* Align the flex-items vertically */
-  justify-content: center; /* Optional, to align inner flex-items
-                              horizontally within the column  */
-}
+
 
 .m3s7p1 .m3s7b6 h2 {
     color:#fff;

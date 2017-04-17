@@ -29,7 +29,7 @@ var app = {
   MDataPopulate:function(){
     // this function used for data populate for home page menu.
     var loc1 = app.MData[app.SelecteM];
-    var loc01 = {'m1':[1,26],'m2':[1,28],'m3':[1,55]}
+    var loc01 = {'m1':[0,45],'m2':[0,45],'m3':[1,55]}
     $(".menus .HR").html(loc01[app.SelecteM][0]);
     $(".menus .MIN").html(loc01[app.SelecteM][1]);
     $(".menus .lG2 .progress-bar").css({"width":loc1['complete']+"%"});
@@ -98,7 +98,7 @@ var app = {
      
     })
     if(app.SelecteM == 'm1') {
-      var timeFixed =[[00,02],[00,10],[00,10],[00,10],[00,12],[00,07],[00,15],[00,15],[00,05]];
+      var timeFixed =[[00,01],[00,05],[00,05],[00,05],[00,05],[00,05],[00,05],[00,10],[00,04]];
     
     $(".MSection .HR").html(timeFixed[j-1][0]);
     $(".MSection .MIN").html(timeFixed[j-1][1]);
@@ -108,7 +108,7 @@ var app = {
           $(".outc").show();
         }
     }else if (app.SelecteM == 'm2') {
-      var timeFixed =[[00,04],[00,10],[00,10],[00,10],[00,12],[00,07],[00,15],[00,15],[00,05]];
+      var timeFixed =[[00,01],[00,05],[00,05],[00,05],[00,08],[00,05],[00,12],[00,04]];
     
     $(".MSection .HR").html(timeFixed[j-1][0]);
     $(".MSection .MIN").html(timeFixed[j-1][1]);

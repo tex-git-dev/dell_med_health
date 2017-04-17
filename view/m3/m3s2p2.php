@@ -250,7 +250,7 @@ include("view/cjs.php");
     </div>
 </div>
 <!-- Mcq end -->
-<br>
+
 
 <div class="container-full m3s8b9">
       <div class="row" style="background:#eaeaea;">
@@ -259,7 +259,7 @@ include("view/cjs.php");
           </div>  
           <div class="col-sm-7">
               <f><p>A week after being discharged, Ms. Church visits with her primary care provider for a follow-up visit. She explains to her doctor that she continues to experience shortness of breath. Her PCP decides to order a chest x-ray to ensure Ms. Church’s lungs are clearing as expected. </p></f>
-              <f><p>Ms. Church’s x-ray shows improvement and her doctor advises her to continue to rest and take it easy. Later, Ms. Church receives a bill for her PCP visit for $400, which includes charges for the visit and the x-ray at $200. What amount will she pay for this follow-up visit?</p></f>
+              <!-- <f><p>Ms. Church’s x-ray shows improvement and her doctor advises her to continue to rest and take it easy. Later, Ms. Church receives a bill for her PCP visit for $400, which includes charges for the visit and the x-ray at $200. What amount will she pay for this follow-up visit?</p></f> -->
           </div>
           <div class="col-sm-1"></div>
       </div>
@@ -329,8 +329,8 @@ include("view/cjs.php");
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
-                                    <f><h3>Correct!</h3></f>
-                                    <f><p>ANSWER EXPLANATION HERE</p></f>
+                                    <f><h3>Correct!</h3></f>                                    
+                                    <!-- <f><p>ANSWER EXPLANATION HERE</p></f> -->
                                     <!-- <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question</div></center> -->
                                 </div>
                             </div>
@@ -504,9 +504,9 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>website</f></p>
-                                 <p><f><a target="_blank" style="color:#000;" href="http://www.commonwealthfund.org/publications/blog/2016/dec/five-facts-about-medicaid">Five Facts about Medicaid</a></f></p>
-                                 <p><f>Gunja MZ, Collins SR. Five facts about Medicaid. The Commonwealth Fund website. Published December 2, 2016.</f></p>
-                                 <p><f>Accessed March <br>27, 2017.</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://www.commonwealthfund.org/publications/blog/2016/dec/five-facts-about-medicaid">Five Facts about Medicaid.</a></f></p>
+                                 <p><f>Explore data-driven facts about Medicaid to get a better understanding about how it works and who it covers.</f></p>
+                                 <p><f>Gunja MZ, Collins SR. Five facts about Medicaid. The Commonwealth Fund website. Published December 2, 2016.<br>Accessed March 27,<br>2017.</f></p>
                             </div>
                           </div>
                        </div>
@@ -519,14 +519,14 @@ include("view/cjs.php");
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <p class="text-uppercase"><f>website</f></p>
-                                 <p><f><a target="_blank" style="color:#000;" href="http://kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/">Uninsured Population</a></f></p>
-                                 <p><f>Learn more about the uninsured population in the United States and how it has been affected by the Affordable Care Act with this resource from the Kaiser Family Foundation.<br><br>Key facts about the uninsured population. Kaiser Family Foundation website. Published September 29, 2016.</f></p>
-                                 <p><f>Accessed March<br>27, 2017.</f></p>
+                                <p class="text-uppercase"><f>article</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/">Key Facts about the Uninsured Population.</a></f></p>
+                                 <p><f>Learn more about the uninsured population in the United States and how it has been affected by the Affordable Care Act with this resource from the Kaiser Family Foundation:</f></p>
+                                 <p><f>Kaiser Family Foundation website. Published September 29, 2016.<br>Accessed March 27,<br>2017.</f></p>
                             </div>
                           </div>
                        </div>

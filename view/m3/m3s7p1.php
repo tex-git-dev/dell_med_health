@@ -210,16 +210,16 @@ include("view/cjs.php");
               <div class="row">
                 <div class="col-sm-12">
                   <div class='well1'>
-                       <div class='row vertical-align'>
+                       <div class='row vertical-alignA'>
                           <div class="col-sm-3" >
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <p class="text-uppercase"><f>WEBSITE</f></p>
-                                 <p><f><a target="_blank" style="color:#000;" href="http://www.ihi.org/Topics/WhatMatters/Pages/default.aspx">Arora V, Moriates C, Shah N. The challenge of understanding health care costs and charges. </a></f></p>
-                                 <p><f></f></p>
-                                 <p><f>AMA Journal of Ethics. 2015; 17(11): 1046-1052.</f></p>  
+                                <p class="text-uppercase"><f>book </f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://accessmedicine.mhmedical.com/content.aspx?bookid=1371&sectionid=77693902">Understanding Value-Based Health Care Chapter 2: Paying for Healthcare in the United States.</a></f></p>
+                                 <p><f>This chapter of Understanding Value-Based Healthcare covers how healthcare is paid for in the United States, including a discussion of health insurance terms and descriptions of different payers.</f></p>
+                                 <p><f>Moriates C, Arora V, Shah N. McGraw-Hill Education; 2015. <br>Accessed March 27,<br>2017.</f></p>  
                             </div>
                           </div>
                        </div>
@@ -227,20 +227,19 @@ include("view/cjs.php");
                 </div>
               </div>
 
-
                <div class="row">
                 <div class="col-sm-12">
                    <div class='well1'>
-                       <div class='row vertical-align'>
+                       <div class='row vertical-alignA'>
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <p class="text-uppercase "><f>WEBSITE</f></p>
-                                 <p><f><a target="_blank" style="color:#000;" href="http://www.ichom.org/">ICHOM - International Consortium for Health Outcomes Measurement</a></f></p>
-                                 <p><f>Visit the ICHOM website to learn more about the organization and view the standard sets of outcomes that matter to patients they have created for various diseases.</f></p>
-                                 <p><f>ICHOM website.<br>Accessed December 9, 2016.</f></p>
+                                <p class="text-uppercase "><f>book</f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://accessmedicine.mhmedical.com/content.aspx?bookid=1371&sectionid=77694001Accessed">Understanding Value-Based Health Care Chapter 3: The Challenges of Understanding Healthcare Pricing.</a></f></p>
+                                 <p><f>This chapter of Understanding Value-Based Healthcare discusses the complexities of healthcare pricing and the challenges in interpreting price data in healthcare.</f></p>
+                                 <p><f>Moriates C, Arora V, Shah N. McGraw-Hill Education; 2015.<br>March 27,<br>2017.</f></p>
                             </div>
                           </div>
                        </div>
@@ -251,16 +250,16 @@ include("view/cjs.php");
               <div class="row"> 
                 <div class="col-sm-12">
                     <div class='well1'>
-                        <div class='row vertical-align'>
+                        <div class='row vertical-alignA'>
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
-                                <p class="text-uppercase"><f>WEBSITE</f></p>
-                                 <p><f><a target="_blank" style="color:#000;" href="http://dx.doi.org/10.1377/hlthaff.25.1.57">Reinhardt UE. The pricing of US hospital services: Chaos behind a veil of secrecy.</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</f></p>
-                                 <p><f></f></p>
-                                 <p><f>Health Aff Jan 2006; 25(1): 57-69.</f></p> 
+                                <p class="text-uppercase"><f>article </f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://dx.doi.org/10.1377/hlthaff.25.1.57">The Pricing of US Hospital Services: Chaos Behind a Veil of Secrecy.</a></f></p>
+                                 <p><f>This paper describes how U.S. hospitals price their services to the various third-party payers and patients, and the future of the system where the  concept of “consumer-directed health care” is increasingly popular. </f></p>
+                                 <p><f>Reinhardt UE. Health Aff Jan 2006; 25(1): 57-69.</f></p> 
                             </div>                               
                           </div>
                        </div>
@@ -271,27 +270,86 @@ include("view/cjs.php");
               <div class="row"> 
                 <div class="col-sm-12">
                     <div class='well1'>                        
-                        <div class='row vertical-align'>
-                          
+                        <div class='row vertical-alignA'>                          
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
                           </div>
-
                           <div class="col-sm-9">
                             <div class='well'>
-                                <p class="text-uppercase"><f>WEBSITE</f></p>
-                                <p><f><a target="_blank" style="color:#000;" href="https://hbr.org/2011/09/how-to-solve-the-cost-crisis-in-health-care">Kaplan RS, Porter ME. The big idea: How to solve the cost crisis in health care. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></f></p>
-                                <p><f></f></p>
-                                <p><f>Harvard Business Review. September 2011.<br>Accessed March 27, 2017.</f></p> 
+                                <p class="text-uppercase"><f>article </f></p>
+                                <p><f><a target="_blank" style="color:#000;" href="https://hbr.org/2011/09/how-to-solve-the-cost-crisis-in-health-care">The Big Idea: How to Solve the Cost Crisis in Health Care.</a></f></p>
+                                <p><f>This article describes value and costing in health care, including a discussion of TDABC and process mapping.</f></p>
+                                <p><f>Kaplan RS, Porter ME. Harvard Business Review. September 2011.<br>Accessed March 27,<br> 2017.</f></p> 
                             </div>                               
                           </div>
-
                        </div>
                   </div>                  
                 </div>
-              </div>    
+              </div>
 
-          </div>                     
+
+              <div class="row"> 
+                <div class="col-sm-12">
+                    <div class='well1'>                        
+                        <div class='row vertical-alignA'>                          
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                            <div class='well'>
+                                <p class="text-uppercase"><f>article </f></p>
+                                <p><f><a target="_blank" style="color:#000;" href="https://hbr.org/2004/11/time-driven-activity-based-costing">Time-Driven Activity-Based Costing.</a></f></p>
+                                <p><f>This article describes the concept of TDABC in detail, including a comparison of older ABC models with revised ABC models.</f></p>
+                                <p><f>Kaplan RS, Anderson ME. Harvard Business Review. November 2004.<br>Accessed March 27,<br>2017.</f></p> 
+                            </div>                               
+                          </div>
+                       </div>
+                  </div>                  
+                </div>
+              </div>  
+
+              <div class="row"> 
+                <div class="col-sm-12">
+                    <div class='well1'>                        
+                        <div class='row vertical-alignA'>                          
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                            <div class='well'>
+                                <p class="text-uppercase"><f>article </f></p>
+                                <p><f><a target="_blank" style="color:#000;" href="http://dx.doi.org/10.1001/jama.2013.7516">First, Do No (Financial) Harm.</a></f></p>
+                                <p><f>This article discusses ways clinicians can screen patients for potential financial harm and urges for a universal approach where every patient is asked about their ability to pay for their health care.</f></p>
+                                <p><f>Moriates C, Shah NT, Arora VM. JAMA. 2013;310(6): 577-578.</f></p> 
+                            </div>                               
+                          </div>
+                       </div>
+                  </div>                  
+                </div>
+              </div>  
+
+              <div class="row"> 
+                <div class="col-sm-12">
+                    <div class='well1'>                        
+                        <div class='row vertical-alignA'>                          
+                          <div class="col-sm-3">
+                              <img src="img/s7img9.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                            <div class='well'>
+                                <p class="text-uppercase"><f>WEBSITE</f></p>
+                                <p><f><a target="_blank" style="color:#000;" href="http://jamanetwork.com/journals/jama/article-abstract/1709839">First, do no (financial) harm.</a></f></p>
+                                <p><f>Moriates C, Shah NT, Arora VM</f></p>
+                                <p><f>JAMA. 2013;310(6)<br>577-578</f></p> 
+                            </div>                               
+                          </div>
+                       </div>
+                  </div>                  
+                </div>
+              </div> 
+
+
+      </div>                     
     </div>
 
   <br>
@@ -299,6 +357,29 @@ include("view/cjs.php");
       <source src="media/Kalimba.mp3" type="audio/mpeg" />
       <source src="media/Kalimba.ogg" type="audio/ogg" />
     </audio> -->
+
+
+
+ <div class="container m3s7b50">
+        <div class="row">    
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <hr>
+            <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
+            <br>        
+          <div id="demo" class="collapse">
+            <ol>
+              <!-- <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href=""> -->
+              <f><li><p>Moriates C, Arora V, Shah N. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="https://www.amazon.com/Understanding-Value-Healthcare-Christopher-Moriates/dp/0071816984">Understanding Value-Based Healthcare</a>. Columbus, OH: McGraw-Hill Education; 2015.</p></li></f>                            
+            </ol>
+          </div>  
+          </div>
+        <div class="col-sm-1"></div>        
+   </div>
+
+</div>
+
+
     
 </div>
 <footer class="container-fluid">

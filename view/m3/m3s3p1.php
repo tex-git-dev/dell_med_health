@@ -11,6 +11,7 @@
 include("view/cjs.php");
 ?>
 <link rel="stylesheet" href="css/m3s3p1.css">
+
 <div class="m3s3p1">
        <div class="jumbotron b1">
          <div class="container text-center bg-2">
@@ -34,6 +35,7 @@ include("view/cjs.php");
       </div>
       <br>
     <br>
+    
 
       <div class="Step1 container m3s3b2">
         <div class="row">
@@ -131,6 +133,7 @@ include("view/cjs.php");
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
+                                    <f><p>Approximately $3 trillion is spent annually in the US on health care, equaling nearly 20% of the GDP.</p></f>
                                     <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
                                 </div>
                             </div>
@@ -190,8 +193,8 @@ include("view/cjs.php");
                             </div>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12 " >
-                                    <f><h3>Correct!</h3></f>
-                                    <f><p><!-- This is the correct answer because this diagnosis (ICD9 code) has the lowest mean cost, represented as the smallest value on the x-axis. --></p></f>
+                                    <f><h3>Correct!</h3></f>                                    
+                                    <f><p>Approximately 30%, or $750 billion, of health care spending in the US is considered waste and does not improve health.</p></f>
                                   <!--   <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <i class="fa fa-arrow-right" aria-hidden="true"></i></div></center> -->
                                 </div>
                             </div>
@@ -282,9 +285,33 @@ include("view/cjs.php");
          </div>
     </div>
 
+
 <br><br><br>
 <div class="jumbotron m3s3b6">
-    <div class="container m3s3b8">
+  <div class="container m3s3b11">
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                                <div class='well'>
+                                <p class="text-uppercase"><f>article</f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://journalofethics.ama-assn.org/2015/11/stas1-1511.html">The Challenge of Understanding Health Care Costs and Charges.</a></f></p>
+                                 <p><f>This article explores the difference between the terms cost, charge, and, reimbursement and describes what physicians can do to impact price transparency.</f></p>
+                                 <p><f>Arora V, Moriates C, Shah N. AMA Journal of Ethics. 2015; 17(11): 1046-1052.</f></p>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+  </div>
+
+   <!--  <div class="container m3s3b8">
         <div class="row">
             <div class="col-sm-1"></div>
               <div class="col-sm-10">
@@ -306,9 +333,11 @@ include("view/cjs.php");
             <div class="col-sm-4"><f><a target="_blank" style="color:#000;" href="http://journalofethics.ama-assn.org/2015/11/stas1-1511.html"><div class="driveS2">Read Artical</div></a></f></div>
             <div class="col-sm-4"></div>
            </div>
-    </div>
+    </div> -->
 </div>
 <br><br>
+
+
 
 <div class="container m3s3b9">
       <div class="row">
@@ -977,14 +1006,14 @@ include("view/cjs.php");
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="img/s7img9.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <p class="text-uppercase"><f>article</f></p>
-                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/">Moriates C. Meet the villain of hospital costs: The chargemaster.</a></f></p>
-                                 <p><f>Society of Hospital Medicine. July 30, 2015.</f></p>
-                                 <p><f>Accessed March 24,<br>2017.</f></p>
+                                <p class="text-uppercase"><f>webpage</f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/">The Chargemaster.</a></f></p>
+                                 <p><f>Read more about the infamous Chargemaster in this article from the author of <em>Understanding Value-Based Health Care</em>.</f></p>
+                                 <p><f>Moriates C. Society of Hospital Medicine. July 30, 2015.<br>Accessed March 24,<br>2017.</f></p>
                             </div>
                           </div>
                        </div>
@@ -1004,9 +1033,9 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>article</f></p>
-                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="">Brill S. Bitter pill: Why medical bills are killing us.</a></f></p>                                
-                                 <p><f>Accessed March 24, 2014</f></p>
-                                 <p><f>TIME. April 4,<br>2013.</f></p>                                 
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://www.uta.edu/faculty/story/2311/Misc/2013,2,26,MedicalCostsDemandAndGreed.pdf.">Why Medical Bills are Killing Us.</a></f></p>                                
+                                 <p><f>Explore the story of real patients and their experiences with the complexity and absurdity of health care costs.</f></p>
+                                 <p><f>Brill S. Bitter pill: TIME. April 4, 2013.<br>Accessed March 24,<br> 2014.</f></p>
                             </div>
                           </div>
                        </div>
@@ -1023,34 +1052,34 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>article</f></p>
-                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1377/hlthaff.2016.0093">Bai G, Anderson GF. US hospitals are still using chargemaster markups to maximize revenues.</a></f></p>
-                                 <p><f></f></p>
-                                 <p><f>Health Aff.<br> 2016: 35(9): 1658-1664. doi: 10.1377/hlthaff.2016.0093</f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1377/hlthaff.2016.0093">US Hospitals are Still using Chargemaster Markups to Maximize Revenues.</a></f></p>
+                                 <p><f>Using Medicare data from 2013, this article discusses the chargemaster and an analysis of cost-to-charge ratios that indicates the prices on chargemasters are used to enhance hospital revenue. </f></p>
+                                 <p><f>Bai G, Anderson GF. Health Aff. 2016: 35(9): 1658-1664.</f></p>
                             </div>
                           </div>
                        </div>
                   </div>
                 </div>
             </div>
+
+
             <div class="row">
                 <div class="col-sm-12">
-
                     <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="img/s7img9.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <p class="text-uppercase"><f>article</f></p>
-                                <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="https://www.hcup-us.ahrq.gov/db/state/costtocharge.jsp">Explore what data are available for ratio of costs to charges from the Healthcare Cost and Utilization Project (HCUP),  sponsored by the Agency for Healthcare Research and Quality (AHRQ).</a></f></p>
-                                <p><f>Cost-to-charge ratio files. Healthcare Cost and Utilization Project (HCUP) website. Published November 2016.</f></p>
-                                <p><f>Accessed March 24,<br> 2017.</f></p>
+                                <p class="text-uppercase"><f>webpage</f></p>
+                                <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="https://www.hcup-us.ahrq.gov/db/state/costtocharge.jsp">Cost-to-Charge Ratio Files.</a></f></p>
+                                <p><f>Explore what data are available for ratio of costs to charges from the Healthcare Cost and Utilization Project (HCUP),  sponsored by the Agency for Healthcare Research and Quality (AHRQ).</f></p>
+                                <p><f>Healthcare Cost and Utilization Project (HCUP) website. Published November 2016.<br>Accessed March 24,<br> 2017.</f></p>
                             </div>
                           </div>
                        </div>
                     </div>
-
                 </div>
             </div>
 
@@ -1103,6 +1132,7 @@ include("view/cjs.php");
           </div>
         <div class="col-sm-1"></div>        
    </div>
+
 </div>
 
 <footer class="container-fluid" style="background:#f4f4f4;">

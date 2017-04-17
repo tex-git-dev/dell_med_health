@@ -247,8 +247,8 @@ app.response2 = function(){
                 <br>
                 <div class="row">                    
                     <div class="col-sm-12">
-                      <f><p>We have discussed the distinction between costs, prices, charges, and reimbursements. As we’ve seen, the difference between a hospital’s operating costs and its charges can be quite substantial. There are a number of practices that hospitals employ to arrive at final charges from their costs. These practices primarily revolve around different methods for reimbursing health care providers for services rendered, but also depend on sound methods of accounting costs. It’s important to become familiar with these practices, how they affect patients, and how they may be changing.</p></f>
-                      <f><p>Below you will find a table identifying and describing the most common reimbursement mechanisms in use today.</p></f>
+                      <f><p>We have discussed the distinction between costs, prices, charges, and reimbursements. As we’ve seen, the difference between a hospital’s operating costs and its charges can be quite substantial. Hospitals employ a number of practices to arrive at final charges from their costs. These practices primarily revolve around different methods for reimbursing health care providers for services rendered, but also depend on sound methods of accounting costs. It’s important to become familiar with these practices, how they affect patients, and how they may change. </p></f>
+                      <f><p>Below you will find a table identifying and describing the most common reimbursement mechanisms in use today. </p></f>
                     </div>                   
                  </div>
              </div>          
@@ -261,10 +261,10 @@ app.response2 = function(){
                   <f><h4 class="">Common Reimbursement Mechanisms</h4></f>
                     <br>
                   <f><h4 class="text-uppercase" style="color:#ee5d4a;">Capitation</h4></f>
-                  <f><p>The payment of a fee to a healthcare provider providing services to a number of people, such that the amount paid is determined by the number of total patients. A specific fee is paid “per head” for the provision of a defined package of service for a specified time period.</p></f>
+                  <f><p>The payment of a fee to a health care provider providing services to a number of people, such that the amount paid is determined by the number of total patients. A specific fee is paid “per head” for the provision of a defined package of service for a specified time period.</p></f>
                     <hr style="border-color: #cacaca currentcolor currentcolor;">
                   <f><h4 class="text-uppercase" style="color:#00aeef;">Fee-for-Service (FFS)</h4></f>
-                  <f><p>A payment system where healthcare services are unbundled and paid for separately. A specific price is set for each service.</p></f>
+                  <f><p>A payment system where health care services are unbundled and paid for separately. A specific price is set for each service.</p></f>
                     <hr style="border-color: #cacaca currentcolor currentcolor;">
                   <f><h4 class="text-uppercase" style="color:#28ad98;">Global Payment</h4></f>
                   <f><p>A fixed payment is made for all services for a specified period of time (usually one year). The Veterans Health Administration, Department of Defense, and Kaiser Permanente hospitals are paid via global budgets, where every service performed on every patient during a year is aggregated into a single payment.</p></f>
@@ -299,7 +299,7 @@ app.response2 = function(){
                 <div class="row">
                     
                     <div class="col-sm-12">
-                      <f><p>Currently, the most common reimbursement method used in the US is fee-for-service (FFS). Fee-for-service (FFS) describes a payment structure in which each healthcare service is billed and paid for separately. The physician or hospital is paid for each office visit, hospitalization, intravenous medication, x-ray, EKG, or other services delivered. The price of all of these services is located in the hospital’s chargemaster.  The chargemaster is a master list of all potential charges that can show up on a patient’s bill. Watch the video for more on how chargemasters are used to determine provider reimbursements and the pitfalls of this process.</p></f>
+                      <f><p>Currently, the most common reimbursement method used in the US is fee-for-service (FFS). Fee-for-service (FFS) describes a payment structure in which each health care service is billed and paid for separately. The physician or hospital is paid for each office visit, hospitalization, intravenous medication, x-ray, EKG, or other services delivered. The price of all of these services is located in the hospital’s chargemaster.  The chargemaster is a master list of all potential charges that can show up on a patient’s bill. Watch the video for more on how chargemasters are used to determine provider reimbursements and the pitfalls of this process.</p></f>
                     </div>
                     
                  </div>
@@ -329,8 +329,8 @@ app.response2 = function(){
                 <br>
                 <div class="row">                    
                     <div class="col-sm-12">
-                      <f><p>Unlike with fee-for-service payment, in which each service rendered is itemized and charged individually, bundled payment involves paying hospitals or providers a single sum for all services rendered during a specific episode. One extreme of bundled payments is “global payments,” which generally provide a single lump sum annually to a hospital system or provider for all services.</p></f>
-                      <f><p>Under traditional FFS, individual physicians and healthcare systems are financially rewarded for providing more care.</p></f>
+                      <f><p>Unlike with FFS payment, in which each service rendered is itemized and charged individually, bundled payment involves paying hospitals or providers a single sum for all services rendered during a specific episode. One extreme of bundled payments is “global payments,” which generally provide a single lump sum annually to a hospital system or provider for all services.</p></f>
+                      <f><p>Under traditional FFS payment, individual physicians and health care systems are financially rewarded for providing more care.</p></f>
                       <f><p>The goal of global or bundled payments is to combine payments across different providers and settings. Doing this well requires coordinating care, and this method therefore encourages providers to focus on the outcomes that matter to patients, rather than simply providing more services.</p></f>
                     </div>                    
                  </div>
@@ -371,7 +371,7 @@ app.response2 = function(){
     <div class="container">
        <div class="row">                    
           <div class="col-sm-12">
-          <f><p>The movement from FFS toward global payments can be seen as a spectrum of options between volume and value. There are benefits and drawbacks to each of these payment mechanisms, and it is likely that there ultimately needs to be some mix of different mechanisms to get the balance right.</p></f>
+          <f><p>The movement from FFS toward global payments can be seen as a spectrum of options between volume and value. There are benefits and drawbacks to each of these payment mechanisms, and it is likely that there ultimately needs to be some mix of different mechanisms in place to find the right balance.</p></f>
         </div>
       </div> 
     </div> 
@@ -945,12 +945,32 @@ app.response2 = function(){
       </div>
       </div>
     </div>
-
   </div>
 </div>
-  
-   
+
+
+<br>
+   <div class="container m4s4b20">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <hr>
+            <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
+            <br>        
+          <div id="demo" class="collapse">
+            <ol>
+              <!-- <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href=""> -->
+              <f><li><p>Moriates C, Arora V, Shah N. <em><a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="https://www.amazon.com/Understanding-Value-Healthcare-Christopher-Moriates/dp/0071816984">Understanding Value-Based Healthcare</a></em>. Columbus, OH: McGraw-Hill Education; 2015.</p></li></f>              
+              <f><li><p>Dobson A, DaVanzo J, Doherty J, Tanamor M. A study of hospital charge setting practices. Falls Church, VA: Lewin Group, 2005.</p><p>Moriates C. Meet the villain of hospital costs: The chargemaster. <em>Society of Hospital Medicine</em>. July 30, 2015. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/">http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</a> Accessed March 24, 2017.</p></li></f>              
+            </ol>
+          </div>  
+          </div>
+        <div class="col-sm-1"></div>        
+   </div>
+  </div>
+
 </div>
+
 
 
 <?php

@@ -1,17 +1,239 @@
-<?php
-      if(!$_SESSION['username']){
-
-   ?>
-  <script>
-  window.location.href="<?php echo pathUrl();?>";
-  </script>
 
 <?php
-}
+   if(!$_SESSION['username']){
+    ?>
+<script>
+   window.location.href="<?php echo pathUrl();?>";
+</script>
+
+<?php
+   }
+include("db.php");
 include("view/cjs.php");
+$c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
+$retval1=mysqli_query($dbcon,$c5);
+while($row = mysqli_fetch_row($retval1)) {
+    $s2data = json_decode($row[7],true);
+    $dataT1 = $s2data['m2']['sections']['s2']['response1'];
+    $dataN1 = $row[2]." ". $row[3];
+    $dataT = $s2data['m2']['sections']['s2']['response2'];
+    $dataN = $row[2]." ". $row[3];
+    if ($dataT) {
 ?>
+<script type="text/javascript">
+    app.cArrayT.push("<?php echo $dataT;?>");
+    app.cArrayN.push("<?php echo $dataN;?>");
+</script>
+<?php } 
+if ($dataT1) {
+?>
+<script type="text/javascript">
+    app.cArrayT1.push("<?php echo $dataT1;?>");
+    app.cArrayN1.push("<?php echo $dataN1;?>");
+</script>
+ 
+<?php }}?>
+<script type="text/javascript">
+$(document).ready(function() {
+      var section = 's'+app.qs["id"][6];
+      var loc0 = app.MData[app.SelecteM].sections[section];
+      if (loc0.response1) {
+        app.response1();
+      }
+    
+      if (loc0.response2) {
+        app.response2();
+      }
+
+      $('#myCarousel2').bind('slid.bs.carousel', function (e) {
+        app.showRM();
+      });
+});
+window.onresize = function(){app.showRM();};
+  app.addOpt=function(id,len){
+  var sizeC = Math.ceil(len/3); 
+  if (sizeC>1) {
+    var circleList='<li data-target="#'+id+'" data-slide-to="0" class="active"></li>';
+    for (var i = 1; i <sizeC; i++) {
+      circleList+='<li data-target="#'+id+'" data-slide-to="'+i+'"></li>';
+    }
+    $('#'+id+' .carousel-indicators').append(circleList);
+  }else{
+     $('#'+id+' .left').hide();
+    $('#'+id+' .right').hide();
+  }
+}
+
+   app.response1 = function(){
+      var loc = $("#response1Text").val();
+        var section = 's'+app.qs["id"][6];
+      if (loc) {
+        app.MData[app.SelecteM].sections[section]['response1'] = loc;
+        var data = JSON.stringify(app.MData);
+        var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
+        app.DataSave(loc_1);
+        app.cArrayT1.unshift(loc);
+        app.cArrayN1.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }else{
+        loc =app.MData[app.SelecteM].sections[section]['response1'];
+        app.cArrayT1.unshift(loc);
+        app.cArrayN1.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }
+
+      if (loc == "") {
+        alert("Please write the response.")
+       }else{
+         app.addOpt('myCarousel1',app.cArrayT1.length);
+        $(".act1").hide();
+        $(".carouselC1").css({"visibility":"visible","height":"auto"});
+         var items="";
+         var t =0;
+          var sizeC = Math.ceil(app.cArrayT1.length/3); 
+
+          if(sizeC > 6)
+          {
+            sizeC=6;
+          }
+          
+        for (var i = 1; i < sizeC+1; i++) {
+            var f = "";
+            if(i == 1){
+              f = "active";
+            }else{
+              f = "";
+            }
+           items += '<div class="item '+f+'"><div class="row">';
+             for (var j = 1; j < 4; j++) {
+                  var T0 = app.cArrayT1[t];
+                  var N0 = app.cArrayN1[t];
+                  console.log(T0)
+                  t++;
+                    if(T0 != undefined){
+                      items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
+                      items += T0;
+                      items += '</span></div><a href="javascript:app.pup1('+t+');">Read more<br></a><br><span>';
+                      items += '<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i> ';
+                      items += '<span class="text-uppercase" style="color:#000;"> '+N0+'</span>';
+                      items += '</span>';
+                      items += '</div></div>';
+                    }
+             }
+           items += '</div></div>';
+        } 
+        $(".carouselC1 .additem").append(items);
+        app.showRM();
+      }
+   }
+app.doneResizing= function(e){
+  $('.jqcloud').html('');
+   var lo1 = JSON.parse(JSON.stringify(app.WCList1));
+ app.WordC(lo1,'my_favorite_latin_words');
+ $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
+}
+app.pup1= function(v){
+  var loc =  $(".carouselC1 .iHeight").eq(v-1).text();
+   var name =  $(".carouselC1 .iHeight").eq(v-1).next().next().next().text();
+    $('.m3s2p1 #mc1 .modal-content .modal-body').html(loc);
+    $('#mc1').modal({show: 'false'});
+    $('.m3s2p1 #mc1 .modal-content #name').html(name);
+}
+app.pup2= function(v){
+  var loc =  $(".carouselC .iHeight").eq(v-1).text();
+   var name =  $(".carouselC .iHeight").eq(v-1).next().next().next().text();
+    $('.m3s2p1 #mc1 .modal-content .modal-body').html(loc);
+    $('#mc1').modal({show: 'false'});
+    $('.m3s2p1 #mc1 .modal-content #name').html(name);
+}
+
+/*
+app.response2 = function(){
+     var loc = $("#response2Text").val();
+      var section = 's'+app.qs["id"][6];
+      if (loc) {
+          app.MData[app.SelecteM].sections[section]['response2'] = loc;
+          var data = JSON.stringify(app.MData);
+          var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
+          app.DataSave(loc_1);
+          app.cArrayT.unshift(loc);
+          app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }else{
+        loc =app.MData[app.SelecteM].sections[section]['response2'];
+        app.cArrayT.unshift(loc);
+        app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+      }
+      if (loc == "") {
+        alert("Please write the response.")
+       }else{
+         app.addOpt('myCarousel2',app.cArrayT.length);
+        $(".act2").hide();
+        $(".carouselC").css({"visibility":"visible","height":"auto"});
+         var items="";
+         var t =0;
+          var sizeC = Math.ceil(app.cArrayT.length/3); 
+        for (var i = 1; i < sizeC+1; i++) {
+            var f = "";
+            if(i == 1){
+              f = "active";
+            }else{
+              f = "";
+            }
+           items += '<div class="item '+f+'"><div class="row">';
+             for (var j = 1; j < 4; j++) {
+                  var T0 = app.cArrayT[t];
+                  var N0 = app.cArrayN[t];
+                  t++;
+                    if(T0 != undefined){
+                      console.log(t)
+                      items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
+                      items += T0;
+                      items += '</span></div><a href="javascript:app.pup2('+t+');">Read more<br></a><br><span>';
+                      items += '<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i> ';
+                      items += '<span class="text-uppercase" style="color:#000;"> '+N0+'</span>';
+                      items += '</span>';
+                      items += '</div></div>';
+                    }
+             }
+           items += '</div></div>';
+        } 
+        $(".carouselC .additem").append(items);
+        app.showRM();
+      }
+   }
+*/
+
+
+
+   $(document).ready(function(){
+  var flagvd = false;
+     $('.video-js').inview({
+        'onEnter': function($object) {
+          if(flagvd == false){
+            $('video').trigger('play');
+            flagvd=true;
+          }           
+
+          },
+          'onLeave': function($object) {
+            //$('video').trigger('pause');
+          }
+
+      });
+  });
+</script>
+
+
 
 <style>
+@media (max-width: 451px)
+{
+#seecost
+{
+width:80px!important;
+}
+
+
+}
+
 #insurance
 {
 display:none;
@@ -27,7 +249,7 @@ color:white;
 }
 .m3s6p1 .rbc
 {
-background-color:#BF5700;
+background-color:#F58220;
 color:white;
 }
 .m3s6p1 .marginpading{
@@ -38,25 +260,27 @@ margin:5px;
 {
 padding:10px 7px;
 }
-.m3s6p1 .mympd1 p i{
+.m3s6p1 #eyeholder p i{
 font-size:20px;
-padding:3.6px;
 text-align:center;
-color:#BF5700;
+color:#F58220;
 cursor:pointer;
+padding:9px 0;
 }
+
 .m3s6p1 .m3s6b9 span {
   display:none;
 }
 
 .modal-body, .modal-header {
-  background-color:#BF5700!important;
+  background-color:#F58220!important;
   color:white;
 }
 
 </style>
 
 <link rel="stylesheet" href="css/m3s6p1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="m3s6p1">
        <div class="jumbotron b1">
          <div class="container text-center bg-2">
@@ -199,7 +423,7 @@ cursor:pointer;
   <div class="container m3s6b10">
           <div class="row">
             <div class="col-sm-12">
-              <f><h3 class="text-center text-uppercase">activity: calculating costs</h3></f>
+              <f><h3 class="text-center text-uppercase" style="margin-top:-10px;">activity: calculating costs</h3></f>
               <!-- <br>
               <f><p class="text-uppercase"><em>At the urgent care clinic, Ms. Chen is evaluated by a physician, given a breathing treatment, and undergoes an electrocardiogram (EKG). Following the breathing treatment, she continues to have significant wheezing and shortness of breath, so the urgent care clinic physician coordinates for an ambulance to take her to an emergency room across town. Ms. Chen has had to visit the ER for her asthma before, but it has been a number of years since the last episode that was this bad.</em></p></f> -->
             </div>
@@ -231,7 +455,7 @@ obtain a chest CT (computed tomography) scan</a> “just to be sure nothing was
 missed.” The CT scan does not reveal any significant abnormalities. <a href="" class="span13show">Following
 more breathing treatments</a> and an <a href="" class="span14show">intravenous administration of solumedrol (a
 steroid)</a>, she improves. She ultimately is <a href="" class="span15show">discharged home with self-care
-instructions</a>, including directions for using her home inhalers and a <a href="#" class="span16show">prescription</a> for
+instructions</a>, including directions for using her home inhalers and a <a>prescription</a> for
 oral steroids.
 </p>
 </div>
@@ -241,7 +465,7 @@ oral steroids.
 <div class="bbc marginpading mympd1">
 <!--Evaluation md start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Evaluation (MD)
 </div>
 <div class="col-md-4">
@@ -251,7 +475,7 @@ Evaluation (MD)
 <!--Evaluation md end-->
 <!--Breathing Tx (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Breathing Tx (Nurse)
 </div>
 <div class="col-md-4">
@@ -261,7 +485,7 @@ Breathing Tx (Nurse)
 <!--Breathing Tx (Nurse) end-->
 <!--EKG (Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 EKG (Technician)
 </div>
 <div class="col-md-4">
@@ -271,7 +495,7 @@ EKG (Technician)
 <!--BEKG (Technician) end-->
 <!--UCC Coordinates (MD).$ start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 UCC Coordinates (MD)
 </div>
 <div class="col-md-4">
@@ -281,7 +505,7 @@ UCC Coordinates (MD)
 <!--UCC Coordinates (MD).$ end-->
 <!--Ambulance drives to ER start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Ambulance drives to ER
 </div>
 <div class="col-md-4">
@@ -291,7 +515,7 @@ Ambulance drives to ER
 <!--Ambulance drives to ER end-->
 <!--Assigned room (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Assigned room (Nurse)
 </div>
 <div class="col-md-4">
@@ -301,7 +525,7 @@ Assigned room (Nurse)
 <!--Assigned room (Nurse) end-->
 <!--Evaluation (ER MD) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Evaluation (ER MD)
 </div>
 <div class="col-md-4">
@@ -311,7 +535,7 @@ Evaluation (ER MD)
 <!--Evaluation (ER MD) end-->
 <!--Breathing Tx (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Breathing Tx (Nurse)
 </div>
 <div class="col-md-4">
@@ -321,7 +545,7 @@ Breathing Tx (Nurse)
 <!--Breathing Tx (Nurse) end-->
 <!--X-ray (Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 X-ray (Technician)
 </div>
 <div class="col-md-4">
@@ -331,7 +555,7 @@ X-ray (Technician)
 <!--X-ray (Technician) end-->
 <!--Blood for labs (Nurse and Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Blood for labs (Nurse and Technician)
 </div>
 <div class="col-md-4">
@@ -341,7 +565,7 @@ Blood for labs (Nurse and Technician)
 <!--Blood for labs (Nurse and Technician) end-->
 <!--EKG (Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 EKG (Technician)
 </div>
 <div class="col-md-4">
@@ -351,7 +575,7 @@ EKG (Technician)
 <!--EKG (Technician) end-->
 <!--Chest CT (Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Chest CT (Technician)
 </div>
 <div class="col-md-4">
@@ -361,7 +585,7 @@ Chest CT (Technician)
 <!--Chest CT (Technician) end-->
 <!--Breathing Tx (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Breathing Tx (Nurse)
 </div>
 <div class="col-md-4">
@@ -371,7 +595,7 @@ Breathing Tx (Nurse)
 <!--Breathing Tx (Nurse) end-->
 <!--IV steroid (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 IV steroid (Nurse)
 </div>
 <div class="col-md-4">
@@ -381,7 +605,7 @@ IV steroid (Nurse)
 <!--IV steroid (Nurse) end-->
 <!--Discharge and education (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Discharge and education(Nurse)
 </div>
 <div class="col-md-4">
@@ -391,14 +615,15 @@ Discharge and education(Nurse)
 <!--Discharge and education (Nurse) end-->
 </div>
 <p class="bbc" style="padding:25px 5px;margin:5px;">All charges from chargemaster<br/>
-Total  <span class="total1" style="float:right;">$9900</span>
+<span class="text-uppercase" style="display:block;margin-top:20px;">Total</span>  <span class="total1" style="margin-top: -20px;
+ margin-left: 65%;">$9900</span>
 </p>
 <p class="bbc showainc" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px;">Show Insurance Rates (A)</p>
 <p class="bbc showbinc" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px;">Show Insurance Rates (B)</p>
 </div>
 
 <div class="col-md-3 col-sm-12 col-xs-12" id="insurance">
-<div style="position:absolute;top:795px;left: -7px;font-size:20px;cursor:pointer;" id="clcarrow">
+<div style="position:absolute;top:92%;left: -7px;font-size:20px;cursor:pointer;" id="clcarrow">
 	&lt;
 </div>
 <p class="bbc spantmp" style="padding:15px 0;text-align:center;margin:5px;">Commercial Insurance __ (30% Negotiated Rate)</p>
@@ -407,7 +632,7 @@ Total  <span class="total1" style="float:right;">$9900</span>
 <div class="bbc marginpading mympd1">
 <!--Evaluation md start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Evaluation (MD)
 </div>
 <div class="col-md-4">
@@ -419,7 +644,7 @@ Evaluation (MD)
 
 <!--Breathing Tx (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Breathing Tx (Nurse)
 </div>
 <div class="col-md-4">
@@ -432,7 +657,7 @@ Breathing Tx (Nurse)
 
 <!--EKG (Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 EKG (Technician)
 </div>
 <div class="col-md-4">
@@ -444,7 +669,7 @@ EKG (Technician)
 
 <!--UCC Coordinates (MD).$ start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 UCC Coordinates (MD)
 </div>
 <div class="col-md-4">
@@ -456,7 +681,7 @@ UCC Coordinates (MD)
 
 <!--Ambulance drives to ER start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Ambulance drives to ER
 </div>
 <div class="col-md-4">
@@ -468,7 +693,7 @@ Ambulance drives to ER
 
 <!--Assigned room (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Assigned room (Nurse)
 </div>
 <div class="col-md-4">
@@ -480,7 +705,7 @@ Assigned room (Nurse)
 
 <!--Evaluation (ER MD) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Evaluation (ER MD)
 </div>
 <div class="col-md-4">
@@ -492,7 +717,7 @@ Evaluation (ER MD)
 
 <!--Breathing Tx (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Breathing Tx (Nurse)
 </div>
 <div class="col-md-4">
@@ -505,7 +730,7 @@ Breathing Tx (Nurse)
 
 <!--X-ray (Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 X-ray (Technician)
 </div>
 <div class="col-md-4">
@@ -518,7 +743,7 @@ X-ray (Technician)
 
 <!--Blood for labs (Nurse and Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Blood for labs (Nurse and Technician)
 </div>
 <div class="col-md-4">
@@ -531,7 +756,7 @@ Blood for labs (Nurse and Technician)
 
 <!--EKG (Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 EKG (Technician)
 </div>
 <div class="col-md-4">
@@ -545,7 +770,7 @@ EKG (Technician)
 
 <!--Chest CT (Technician) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Chest CT (Technician)
 </div>
 <div class="col-md-4">
@@ -558,7 +783,7 @@ Chest CT (Technician)
 
 <!--Breathing Tx (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Breathing Tx (Nurse)
 </div>
 <div class="col-md-4">
@@ -571,7 +796,7 @@ Breathing Tx (Nurse)
 
 <!--IV steroid (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 IV steroid (Nurse)
 </div>
 <div class="col-md-4">
@@ -585,7 +810,7 @@ IV steroid (Nurse)
 <!--Discharge and education
 (Nurse) start-->
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Discharge and education(Nurse)
 </div>
 <div class="col-md-4">
@@ -599,28 +824,33 @@ Discharge and education(Nurse)
 </div>
 
 <p class="bbc" style="padding:25px 5px;margin:5px;">All charges from chargemaster<br/>
-Total  <span class="totala" style="float:right;">$3000</span>
-       <span class="totalb" style="float:right;">$5000</span>
+<span class="text-uppercase" style="display:block;margin-top:20px;">Total</span>  <span class="totala" style="margin-top: -20px;
+ margin-left: 65%;">$3000</span>
+<span class="totalb" style="margin-top: -20px;
+ margin-left: 65%;">$5000</span>
 </p>
 </div>
 
 <div class="col-md-3 col-sm-9 col-xs-9">
-<p class="rbc" style="padding:25px 0;text-align:center;margin:5px;">TDABC</p>
+<p class="rbc" style="padding:14px 0;text-align:center;margin:5px;">TDABC<br/>
+Estimated actual cost to the hospital
+</p>
 <div class="rbc marginpading mympd1">
 <!--Evaluation md start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight1">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Evaluation (MD)
 </div>
 <div class="col-md-4">
 <span class="span1">$45.40</span>
+
 </div>
 </div>
 <!--Evaluation md end-->
 
 <!--Breathing Tx (Nurse) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight2">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Breathing Tx (Nurse)
 </div>
 <div class="col-md-4">
@@ -631,8 +861,8 @@ Breathing Tx (Nurse)
 
 
 <!--EKG (Technician) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight3">
+<div class="col-md-7 col-sm-7 col-xs-7">
 EKG (Technician)
 </div>
 <div class="col-md-4">
@@ -642,8 +872,8 @@ EKG (Technician)
 <!--BEKG (Technician) end-->
 
 <!--UCC Coordinates (MD).$ start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight4">
+<div class="col-md-7 col-sm-7 col-xs-7">
 UCC Coordinates (MD)
 </div>
 <div class="col-md-4">
@@ -653,8 +883,8 @@ UCC Coordinates (MD)
 <!--UCC Coordinates (MD).$ end-->
 
 <!--Ambulance drives to ER start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight5">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Ambulance drives to ER
 </div>
 <div class="col-md-4">
@@ -664,8 +894,8 @@ Ambulance drives to ER
 <!--Ambulance drives to ER end-->
 
 <!--Assigned room (Nurse) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight6">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Assigned room (Nurse)
 </div>
 <div class="col-md-4">
@@ -675,8 +905,8 @@ Assigned room (Nurse)
 <!--Assigned room (Nurse) end-->
 
 <!--Evaluation (ER MD) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight7">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Evaluation (ER MD)
 </div>
 <div class="col-md-4">
@@ -686,8 +916,8 @@ Evaluation (ER MD)
 <!--Evaluation (ER MD) end-->
 
 <!--Breathing Tx (Nurse) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight8">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Breathing Tx (Nurse)
 </div>
 <div class="col-md-4">
@@ -698,8 +928,8 @@ Breathing Tx (Nurse)
 
 
 <!--X-ray (Technician) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight9">
+<div class="col-md-7 col-sm-7 col-xs-7">
 X-ray (Technician)
 </div>
 <div class="col-md-4">
@@ -710,8 +940,8 @@ X-ray (Technician)
 
 
 <!--Blood for labs (Nurse and Technician) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight10">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Blood for labs (Nurse and Technician)
 </div>
 <div class="col-md-4">
@@ -722,8 +952,8 @@ Blood for labs (Nurse and Technician)
 
 
 <!--EKG (Technician) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight11">
+<div class="col-md-7 col-sm-7 col-xs-7">
 EKG (Technician)
 </div>
 <div class="col-md-4">
@@ -735,8 +965,8 @@ EKG (Technician)
 
 
 <!--Chest CT (Technician) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight12">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Chest CT (Technician)
 </div>
 <div class="col-md-4">
@@ -747,8 +977,8 @@ Chest CT (Technician)
 
 
 <!--Breathing Tx (Nurse) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight13">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Breathing Tx (Nurse)
 </div>
 <div class="col-md-4">
@@ -759,8 +989,8 @@ Breathing Tx (Nurse)
 
 
 <!--IV steroid (Nurse) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight14">
+<div class="col-md-7 col-sm-7 col-xs-7">
 IV steroid (Nurse)
 </div>
 <div class="col-md-4">
@@ -772,8 +1002,8 @@ IV steroid (Nurse)
 
 <!--Discharge and education
 (Nurse) start-->
-<div class="row">
-<div class="col-md-8">
+<div class="row" id="countheight15">
+<div class="col-md-7 col-sm-7 col-xs-7">
 Discharge and education(Nurse)
 </div>
 <div class="col-md-4">
@@ -785,32 +1015,32 @@ Discharge and education(Nurse)
 
 </div>
 
-<p class="rbc" style="padding:25px 5px;margin:5px;margin:5px;">All charges from chargemaster<br/>
-Total  <span class="total3" style="float:right;">$9900</span>
+<p class="rbc" style="padding:25px 5px;margin:5px;margin:5px;">All charges from chargemaster
+<span class="text-uppercase" style="display:block;margin-top:20px;">Total</span>  <span class="total3" style="margin-top: -20px;
+ margin-left: 65%;">$930</span>
 </p>
 <p class="rbc calc" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px;">Calculate</p>
 
 </div>
 
 <div class="col-md-1 col-sm-2 col-xs-2">
-<p class="bbc" style="padding:14px 0;text-align:center;width:100px;margin:5px;">See cost breakdown</p>
-<div class="marginpading mympd1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal1"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal2"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal4"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal5"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal6"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal7"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal8"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal9"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal10"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal12"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal13"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal14"></i></p>
-<p><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal15"></i></p>
+<p class="rbc" style="padding:14px 0;text-align:center;width:100px;margin:5px;" id="seecost">See cost break-down</p>
+<div class="marginpading mympd1" id="eyeholder">
+<p id="eye1"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal1"></i></p>
+<p id="eye2"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal2"></i></p>
+<p id="eye3"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i></p>
+<p id="eye4"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal4"></i></p>
+<p id="eye5"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal5"></i></p>
+<p id="eye6"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal6"></i></p>
+<p id="eye7"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal7"></i></p>
+<p id="eye8"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal8"></i></p>
+<p id="eye9"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal9"></i></p>
+<p id="eye10"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal10"></i></p>
+<p id="eye11"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i></p>
+<p id="eye12"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal12"></i></p>
+<p id="eye13"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal13"></i></p>
+<p id="eye14"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal14"></i></p>
+<p id="eye15"><i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal15"></i></p>
 </div>
 </div>
 
@@ -3253,10 +3483,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1" ></li>            
             <li data-target="#myCarousel" data-slide-to="2" ></li>            
-            <li data-target="#myCarousel" data-slide-to="3" ></li>            
-            <li data-target="#myCarousel" data-slide-to="4" ></li>            
-            <li data-target="#myCarousel" data-slide-to="5" ></li>            
-            <li data-target="#myCarousel" data-slide-to="6" ></li>                                 
+            <li data-target="#myCarousel" data-slide-to="3" ></li>                                 
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -3267,14 +3494,19 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">The amount a hospital pays directly for a unit of packed red blood cells (for a transfusion)</p></f>
+                                <f><p class="ques" style="padding-bottom: 0px;">This year Grace is covered by Insurance plan A. This includes:</p></f>
+                                <ul class="text-left">
+                                  <li>Co-pay: $150 for Emergency Department; $35 for urgent care visits</li>
+                                  <li>Deductible: $1000</li>
+                                  <li>Co-insurance: 10% (after deductible)</li>
+                                </ul> 
+                                <f><p class="ques text-center">How much would Grace have to pay for this asthma exacerbation episode if she has not spent anything in health care costs toward her deductible yet this year?</p></f>
                                 <div class="row">
                                 <div class="col-sm-12" >
                                     <div class="row eq-h">
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('COST', 'CHARGE', 'PRICE', 'REIMBURSEMENT');
-
+                                            $array = array('$1200+ $185 co-pay = $1385', '$1200', '$185 co-pay', '$300 + $185 co-pay = $485');
                                             $numRandoms = 4;
 
                                             $random = randomArray($array, $numRandoms);
@@ -3282,7 +3514,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                                             //print_r($random);
 
                                             foreach ($random as $key => $value) {
-                                                $ans = $value == "COST" ? 1 : 0;
+                                                $ans = $value == "$1200+ $185 co-pay = $1385" ? 1 : 0;
                                                 echo '<div class="col-sm-3">
                                                     <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
@@ -3299,7 +3531,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                             </div>
                              <div class="row pageCount">
                                 <div class="col-sm-12 " >
-                                    <f><p class="text-muted">Question 1 of 7</p></f>
+                                    <f><p class="text-muted">Question 1 of 4</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
@@ -3327,13 +3559,19 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">The amount an insurance company pays to a hospital for a patient’s hospitalization</p></f>
+                                <f><p class="ques" style="padding-bottom: 0px;">In the year following this episode, Grace’s employer changes their insurance package to include coverage from Insurer B only. This plan includes:</p></f>
+                                  <ul  class="text-left">
+                                      <li>Co-pays: $150 for Emergency Department; $35 for urgent care visits </li>
+                                      <li>Deductible= $5000</li>
+                                      <li>Co-insurance: 20% (after deductible) </li>                                      
+                                  </ul>
+                                <f><p class="ques">How much would Grace have to pay for this asthma exacerbation episode if she has not spent anything in health care costs toward her deductible yet this year?</p></f>                                  
                                 <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row eq-h">
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('REIMBURSEMENT', 'CHARGE', 'PRICE', 'COST');
+                                            $array = array(' $5000 + $185 co-pay = $5185', '$5000', '$185 co-pay', '$1000 + $185 co-pay = $1185');
 
                                             $numRandoms = 4;
 
@@ -3342,7 +3580,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                                             //print_r($random);
 
                                             foreach ($random as $key => $value) {
-                                                $ans = $value == "REIMBURSEMENT" ? 1 : 0;
+                                                $ans = $value == "$5000 + $185 co-pay = $5185" ? 1 : 0;
                                                 echo '<div class="col-sm-3">
                                                     <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
@@ -3359,7 +3597,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                             </div>
                               <div class="row pageCount">
                                 <div class="col-sm-12" >
-                                    <f><p class="text-muted">Question 2 of 7</p></f>
+                                    <f><p class="text-muted">Question 2 of 4</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
@@ -3387,13 +3625,13 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">The amount a laboratory pays for pipettes to process patient specimens</p></f>
+                                <f><p class="ques">What if Grace were uninsured&mdash;what price would she have to pay for this episode?</p></f>
                                 <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row eq-h">
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('COST', 'CHARGE', 'PRICE', 'REIMBURSEMENT');
+                                            $array = array('$9900', '$930', '$0', '$3000');
 
                                             $numRandoms = 4;
 
@@ -3402,7 +3640,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                                             //print_r($random);
 
                                             foreach ($random as $key => $value) {
-                                                $ans = $value == "COST" ? 1 : 0;
+                                                $ans = $value == "$9900" ? 1 : 0;
                                                 echo '<div class="col-sm-3">
                                                     <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
@@ -3419,7 +3657,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                             </div>
                               <div class="row pageCount">
                                 <div class="col-sm-12" >
-                                    <f><p class="text-muted">Question 3 of 7</p></f>
+                                    <f><p class="text-muted">Question 3 of 4</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
@@ -3448,23 +3686,30 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">The amount shown on a bill an uninsured patient receives for a visit to an outpatient clinic</p></f>
+                                <f><p class="ques" style="padding-bottom: 0px;">Consider in the future Grace visits an emergency department at a different hospital where her insurance has negotiated a hospital-based bundled payment for asthma care. In this scenario, the insurance pays a set bundled payment of $1500 for all care related to the acute episode.</p></f>
+                                <f><p class="ques" style="padding-bottom: 5px;">Grace’s current insurance plan includes:</p></f>
+                                  <ul class="text-left">
+                                      <li>Co-pay: $150 for Emergency Department</li>
+                                      <li>Deductible: $1000</li>
+                                      <li>Co-insurance: 10% (after deductible)</li>
+                                  </ul>
+                                 <f><p class="ques">How much would Grace have to pay for this asthma exacerbation episode if she has not spent anything in health care costs toward her deductible yet this year?</p></f>   
                                 <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row eq-h">
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('CHARGE', 'COST', 'PRICE', 'REIMBURSEMENT');
+                                            $array = array('$1200', '$1500', '$0');
 
-                                            $numRandoms = 4;
+                                            $numRandoms = 3;
 
                                             $random = randomArray($array, $numRandoms);
                                             $ans = array(true, false, false, false);
                                             //print_r($random);
 
                                             foreach ($random as $key => $value) {
-                                                $ans = $value == "CHARGE" ? 1 : 0;
-                                                echo '<div class="col-sm-3">
+                                                $ans = $value == "$1200" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
                                                     <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
                                             }
@@ -3480,7 +3725,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
                             </div>
                               <div class="row pageCount">
                                 <div class="col-sm-12" >
-                                    <f><p class="text-muted">Question 4 of 7</p></f>
+                                    <f><p class="text-muted">Question 4 of 4</p></f>
                                 </div>
                             </div>
                             <div class="row msg incorrectMsg text-center">
@@ -3503,189 +3748,6 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
               </div>
 
 
-
-               <div class="item" id="4">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                                <f><p class="ques">The portion a patient pays for a procedure at a local clinic</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
-                                       <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('PRICE', 'CHARGE', 'COST', 'REIMBURSEMENT');
-
-                                            $numRandoms = 4;
-
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false, false);
-                                            //print_r($random);
-
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "PRICE" ? 1 : 0;
-                                                echo '<div class="col-sm-3">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>
-                                    </div>
-                                </div>                              
-                            </div> 
-                            <div class="row">
-                                  <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                              <div class="row pageCount">
-                                <div class="col-sm-12" >
-                                    <f><p class="text-muted">Question 5 of 7</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12 " >
-                                    <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-
-               <div class="item" id="5">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                                <f><p class="ques">The amount an insurance company pays to a hospital group for a diagnosis of Severe Sepsis (DRG 870)</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
-                                       <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('REIMBURSEMENT', 'CHARGE', 'PRICE', 'COST');
-
-                                            $numRandoms = 4;
-
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false, false);
-                                            //print_r($random);
-
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "REIMBURSEMENT" ? 1 : 0;
-                                                echo '<div class="col-sm-3">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>
-                                    </div>
-                                </div>                              
-                            </div> 
-                            <div class="row">
-                                  <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                              <div class="row pageCount">
-                                <div class="col-sm-12" >
-                                    <f><p class="text-muted">Question 6 of 7</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12 " >
-                                    <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-
-
-               <div class="item" id="6">
-                <div class="container-full text-center white">
-                    <div class="container">    
-                        <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
-                                <f><p class="ques">The amount a clinic asks for a flu vaccination at a local pharmacy</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
-                                       <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('CHARGE', 'COST', 'PRICE', 'REIMBURSEMENT');
-
-                                            $numRandoms = 4;
-
-                                            $random = randomArray($array, $numRandoms);
-                                            $ans = array(true, false, false, false);
-                                            //print_r($random);
-
-                                            foreach ($random as $key => $value) {
-                                                $ans = $value == "CHARGE" ? 1 : 0;
-                                                echo '<div class="col-sm-3">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
-                                            }
-                                        ?>
-                                    </div>
-                                </div>                              
-                            </div> 
-                            <div class="row">
-                                  <div class="col-sm-12 sign">
-                                    <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
-                                    <i class="fa fa-check fa-5x hide" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                              <div class="row pageCount">
-                                <div class="col-sm-12" >
-                                    <f><p class="text-muted">Question 7 of 7</p></f>
-                                </div>
-                            </div>
-                            <div class="row msg incorrectMsg text-center">
-                                <div class="col-sm-12" >
-                                    <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
-                                </div>
-                            </div>
-                            <div class="row msg correctMsg text-center">
-                                <div class="col-sm-12 " >
-                                    <f><h3>Correct!</h3></f>
-                                    <!-- <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question</div></center> -->
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-sm-2" ></div>
-                        </div>
-                    </div>
-                </div>
-              </div>
 
 
                   <a class="left  carousel-control m3s6b7" href="#myCarousel" role="button" data-slide="prev" style="display:none;">
@@ -3703,11 +3765,141 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
 
 
 
+  
 
-  <div class="container m3s6b12">
-        <div class="row">    
-          <div class="col-sm-1"></div>
-          <div class="col-sm-10">
+
+<div class="container text-center s1bgcol">
+      <div class="row">
+         <div class="col-sm-2"></div>
+         <div class="col-sm-8 ">
+            <div class="response1">
+               <div class="carouselC1">
+                  <br>                 
+                  <f><p>Do you have a story about how you or someone you know has been affected by confusing or unreasonable medical costs? Please briefly share your experience in 100 words or less, remembering to protect the privacy of information pertaining to others.</p></f> 
+                  <f><p>Scroll through user responses.</p></f>
+                  <div class="well">
+                  <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                     </ol>
+                     <div class="additem carousel-inner" role="listbox">
+                     </div>
+                      <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                        <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                      </a>
+                  </div>
+                  </div>
+               </div>
+               
+               <div class="act1" >
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="well">
+                           <f><h2>Your Perspective</h2></f>
+                           <div class="line4"></div>
+                           <f><p>Do you have a story about how you or someone you know has been affected by confusing or unreasonable medical costs? Please briefly share your experience in 100 words or less, remembering to protect the privacy of information pertaining to others.</p></f>
+                            <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
+                           <div class="line4"></div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-12">                      
+                     </div>
+                     </div>
+                  <div class="row">
+                     <div class="col-sm-12" >
+                        <div  class="navbar-form navbar-center" style="">
+                           <div class="input-group" style="width:100%;">
+                              <input id="response1Text" type="Search" placeholder="Please enter a brief response here." class="form-control" />
+                              <div class="input-group-btn text-right" style="width:3%;">
+                                 <button  onclick="app.response1();" class="btn btn-info">
+                                 <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-2"></div>
+      </div>
+      <br>
+
+       <!-- <div class="row">
+         <div class="col-sm-2"></div>
+         <div class="col-sm-8 ">
+            <div class="response1">
+                <div class="carouselC">
+                  <br>
+                  <f><p>Now think about yourself, a friend, or a family member who has had a serious medical condition or chronic disease that significantly affected their life, such as cancer, diabetes, or congestive heart failure. What do you think mattered most to them?</p></f>
+                  <f><p>Scroll through user responses.</p></f>
+                  <div class="well">
+                  <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+                  
+                     <ol class="carousel-indicators">
+                     </ol>
+                     <div  class="additem carousel-inner" role="listbox">
+                     </div>
+                      <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                        <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                      </a>
+                  </div>
+                  </div>
+               </div>
+               <div class="act2">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="well">
+                           <f><h2 class="text-uppercase">Reflecting Further</h2></f>
+                           <div class="line4"></div>
+                           <f><p>Now think about yourself, a friend, or a family member who has had a serious medical condition or chronic disease that significantly affected their life, such as cancer, diabetes, or congestive heart failure. What do you think mattered most to them?</p></f>
+                            <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
+                           <div class="line4"></div>                           
+                        </div>
+                     </div>
+                  </div>
+                <div class="row">
+                     <div class="col-sm-12">                      
+                     </div>
+                     </div>
+               <div class="row">
+                  <div class="col-sm-12" >
+                     <div  class="navbar-form navbar-center" style="">
+                        <div class="input-group" style="width:100%;">
+                           <input type="Search" id="response2Text" placeholder="Please enter a brief response (less than 30 words) here." class="limit-input form-control" />
+                           <div class="input-group-btn text-right" style="width:3%;">
+                              <button class="btn btn-info" onclick="app.response2();">
+                              <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+         </div>
+         <div class="col-sm-2"></div>
+      </div> -->
+
+
+   </div>
+
+
+   <div class="container m3s6b12">
+        <div class="row">              
+          <div class="col-sm-12">
             <hr>
             <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
             <br>        
@@ -3718,8 +3910,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
               <f><li><p>Dobson A, DaVanzo J, Doherty J, Tanamor M . A study of hospital charge setting practices. The Lewin Group. December 2005; No. 05-4. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://67.59.137.244/documents/Dec05_Charge_setting.pdf">http://67.59.137.244/documents/Dec05_Charge_setting.pdf</a> Accessed March 24, 2017.</p></li></f>              
             </ol>
           </div>  
-          </div>
-        <div class="col-sm-1"></div>        
+          </div>        
    </div>
   </div>
 
@@ -3779,7 +3970,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
           if(id == 0){
               $('.left').hide();              
               $('.right').show();
-          }else if(id == 6){
+          }else if(id == 3){
             $('.left').show();
             $('.right').hide();
           } else {
@@ -3815,7 +4006,6 @@ function TryA(){
         
 
 </script>
-
 <script>
 var chk=0;
 var ctr=0;
@@ -3825,76 +4015,92 @@ return false;
 });
 
 $(".span2show").click(function(){
+
 $(".span2").css("display","block");
 return false;
 });
 
 $(".span3show").click(function(){
+
 $(".span3").css("display","block");
 return false;
 });
 
 $(".span4show").click(function(){
+
 $(".span4").css("display","block");
 return false;
 });
 
 $(".span5show").click(function(){
+
 $(".span5").css("display","block");
 return false;
 });
 
 $(".span6show").click(function(){
+
 $(".span6").css("display","block");
 return false;
 });
 
 $(".span7show").click(function(){
+
 $(".span7").css("display","block");
 return false;
 });
 
 $(".span8show").click(function(){
+
 $(".span8").css("display","block");
 return false;
 });
 
 $(".span9show").click(function(){
+
 $(".span9").css("display","block");
 return false;
 });
 
 $(".span10show").click(function(){
+
 $(".span10").css("display","block");
 return false;
 });
 
 $(".span11show").click(function(){
+
 $(".span11").css("display","block");
 return false;
 });
 
 $(".span12show").click(function(){
+
 $(".span12").css("display","block");
 return false;
 });
 
 $(".span13show").click(function(){
+
 $(".span13").css("display","block");
 return false;
 });
 
 $(".span14show").click(function(){
+
 $(".span14").css("display","block");
 return false;
 });
 
 $(".span15show").click(function(){
+
 $(".span15").css("display","block");
 return false;
 });
 
 $(".showainc").click(function(){
+$(".showainc").css({"background-color":"white","color":"black"});
+$(".showbinc").css({"background-color":"#3B4254","color":"white"});
 $("#buttoncalc").removeClass("col-md-7");
 $("#buttoncalc").addClass("col-md-5");
 $("#mytextop").removeClass("col-md-5");
@@ -3909,6 +4115,8 @@ $(".totalb").css("display","none");
 chk = 1;
 });
 $(".showbinc").click(function(){
+$(".showbinc").css({"background-color":"white","color":"black"});
+$(".showainc").css({"background-color":"#3B4254","color":"white"});
 $("#buttoncalc").removeClass("col-md-7");
 $("#buttoncalc").addClass("col-md-5");
 $("#mytextop").removeClass("col-md-5");
@@ -3980,6 +4188,7 @@ $(this).removeClass("fa-eye-slash");
 $(this).addClass("fa-eye");
 });
 $(".showallspan").click(function(){
+
 ctr=15;
 $(".m3s6p1 .span1,.m3s6p1 .span2,.m3s6p1 .span3,.m3s6p1 .span4,.m3s6p1 .span5,.m3s6p1 .span6,.m3s6p1 .span7,.m3s6p1 .span7,.m3s6p1 .span8,.m3s6p1 .span9,.m3s6p1 .span10,.m3s6p1 .span11,.m3s6p1 .span12,.m3s6p1 .span13,.m3s6p1 .span14,.m3s6p1 .span15").css("display","block");
 });

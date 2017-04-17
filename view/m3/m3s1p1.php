@@ -83,7 +83,7 @@ include("view/cjs.php");
             <div class="row white vertical-align"> 
             <!-- <div class="col-sm-2"></div>  -->
             <div class="col-sm-6 imgGallry">
-                 <f><p>Appreciate and reflect on outcomes that are meaningful to the patient.</p></f>              
+                 <f><p>Reflect on the impact of cost on patient care and the overall value of provided health care.</p></f>              
             </div>          
             <div class="col-sm-6">                           
                 <img src="img/m3s1img3.png"  class="img-responsive">                

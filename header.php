@@ -873,7 +873,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                            Study methods to measure and evaluate the success of health care value programs
+                            Study methods to measure and evaluate the success of health care value programs.
                           </div>
                         </div>
                     </div>

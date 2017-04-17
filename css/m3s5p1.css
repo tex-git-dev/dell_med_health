@@ -44,36 +44,77 @@
     color:#fff;  
 } 
 .m3s5b3 .bgT{
-      padding-top: 30px;
-      padding-bottom: 30px;
-      background-color: #FFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FFF;
+}
+
+.m3s5p1  .m3s5b2 .bgGRAY {
+    background-color: #eaeaea;
+    padding: 15px;
+}
+
+.m3s5p1  .m3s5b2 .bgYELLOW {
+    background-color: #e4c72b;
+    padding: 15px;    
+}
+
+/*  Box  */
+
+.m3s5p1 .m3s5b2 .vertical-align {
+    align-items: center;
+    display: flex;
 }
 
 
-.m3s5b2 .bgGRAY{
- background-color: #eaeaea;
- padding: 15px;
-
+.m3s5p1 .m3s5b2 .col-sm-12 .well1{
+   background: #eaeaea;
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    /*padding-left: 15px;    */
 }
 
-.m3s5b2 .bgYELLOW{
-background-color: #e4c72b;
-padding: 15px;
-    
-}
-.m3s5b2 .well{
-    padding: 5px !important;
-    margin-bottom: 2px !important;
+.m3s5p1 .m3s5b2 .col-sm-6 {  
+    height: 100%;
+    padding-left: 0px;
 }
 
-/*.triangle-right {
-    border-color: transparent black;
-    border-style: solid;
-    border-width: 20px 0px 20px 20px;
-    height: 0px;
-    width: 0px;
+.m3s5p1 .m3s5b2 .col-sm-6 .well{   
+     background:#e4c72b;
+     height: 100%;
+     margin-bottom: 0px;
+     border-radius: 0;
+      padding: 15px !important;
 }
-*/
+
+.m3s5p1 .m3s5b2 .well1 .row{   
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;
+}
+
+.m3s5p1 .m3s5b2 .col-sm-6 h4 {
+    text-align: center;
+    font-family: "GothamHTF-Bold";
+}
+
+.m3s5p1 .m3s5b2 .col-sm-6 p {
+    margin-bottom: 0px !important;
+    font-family: "GothamHTF-Medium";
+}
+
+.m3s5p1 .m3s5b2 .padding-well {
+    padding-left: 30px !important;
+}
+
+/*  Box  */
+
+
+
+
 .m3s5p1 .m3s5b1 h3, .m3s5p1 .m3s5b1 h5 {
     font-family: "GothamHTF-Bold";    
 }
@@ -163,15 +204,8 @@ padding: 15px;
     background-color:#EAEAEA;
     width: 100%;
     padding: 0;
-}.m3s5p1 .s1bgcol3 .well p{
- color: #22292F;
-   font-size: 22px;
 }
-.m3s5p1 .s1bgcol3 .well .small{
- color: #F68223;
-   font-size: 15px;
-   width: 250px;
-}
+
 
 
 .m3s5p1 .s1bgcol{
@@ -241,82 +275,7 @@ padding: 15px;
     top: 28px !important;
 }
 
-.m3s5p1 .ms5 .row{
-    margin:30px;
-    padding-left:0px;
-    padding-right:0px;
-}
 
-.m3s5p1 .well{
-    background:none;
-    border: 0px solid #e3e3e3;
-    box-shadow:none;
-    vertical-align: :center;
-}
-
-
-.m3s5p1 .vertical-align {
-    align-items: center;
-    display: flex;
-}
-.m3s5p1  .vertical-align > [class^="col-"],
-.m3s5p1  .vertical-align > [class*=" col-"] {
-  display: flex;
-  align-items: center;     /* Align the flex-items vertically */
-  justify-content: left; /* Optional, to align inner flex-items
-                              horizontally within the column  */
-}
-
-.m3s5p1 .eq-h {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  flex-wrap: wrap;
-}
-.m3s5p1 .eq-h > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
-}
-
-.m3s5p1 .m3s5b2 .col-sm-6 .well{
-   background: #f5f5f5;
-    border-radius: 0;
-    height: 100%; 
-    height: 200px;           
-   
-}
-.m3s5p1 .m3s5b2 .col-sm-6 {  
-    height: 100%;    
-}
-
-.m3s5p1 .m3s5b2 .well .row{   
-     height: 100%;
-     margin-bottom: 0px;
-      border-radius: 0;
-}
-
-
-
-/* map css */
-
-.m3s5p1 .mdem {
-    font-family: "GothamHTF-Medium"; 
-}
-.m3s5p1 .cc1{    color: #c5c5c7;}
-.m3s5p1 .cc2{    color: #e05745;}
-.m3s5p1 .cc3{    color: #1e92bb;}
-.m3s5p1 .cc4{    color: #d8bc2a;}
-.m3s5p1 .cc5{    color: #c8a6b7;}
-.m3s5p1 .cc5a{    color: #1da58d;}
-.m3s5p1 .cc6{    color: #91aeb4;}
-.m3s5p1 .m3s5b5{
-    background-color: #eeeeee;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
- }
- 
 
 
 @media screen
@@ -338,11 +297,7 @@ and (max-device-width : 1000px) {
     min-height: 500px;    
 }
 
-.m3s5p1 .s1bgcol .response1 .navbar-form{ 
-    padding-left: : 10px;
-padding-right: : 10px;
-   
-}
+
 .m3s5p1 .b1 .container h2{
    font-family: "GothamHTF-Bold";
     font-size: 124%;
@@ -358,6 +313,9 @@ padding-right: : 10px;
 .m3s5p1 .s1hide {
     display: none;
 }
+
+
+
 
 }
 
@@ -383,25 +341,35 @@ and (max-device-width : 765px) {
 }
 
 
-    .m3s5p1 .s1bgcol .response1 .navbar-form{
- 
-    padding-left: : 10px;
-padding-right: : 10px;
-   
-}
-     .m3s5p1 .b1 .container h2{
-         font-family: "GothamHTF-Bold";
+.m3s5p1 .b1 .container h2{
+    font-family: "GothamHTF-Bold";
     font-size: 124%;
     width: 70%;
     }
-    .m3s5p1 .b1 .container p{
-         font-size: 107%;
+
+.m3s5p1 .b1 .container p{
+    font-size: 107%;
     width: 42%;
     font-family: "GothamHTF-Bold";
     }
-    .m3s5p1 .s1hide {
-        display: none;
-    }
+
+.m3s5p1 .s1hide {
+    display: none;
+}
+
+.m3s5p1 .m3s5b2 .vertical-align {
+    display: inline;
+}
+
+.m3s5p1 .m3s5b2 .padding-well {
+    padding-bottom: 20px !important;    
+}
+
+.m3s5p1 .m3s5b2 .col-sm-6 .well {
+     margin-bottom: -20px;
+    margin-right: -15px;
+    padding: 20px 20px 20px 30px !important;
+}
 
  .m3s5p1 .dArowh {
     display: none;  
@@ -429,13 +397,7 @@ and (max-device-width : 500px) {
 }
 
 
-  /*module1 section1 css*/
-.m3s5p1 .s1bgcol .response1 .navbar-form{
- 
-    padding-left: : 10px;
-padding-right: : 10px;
-   
-}
+
 .m3s5p1 .b1 .container h2{  
    font-family: "GothamHTF-Bold";
     font-size: 103%;
@@ -452,9 +414,25 @@ padding-right: : 10px;
     display: none;
 }
 
+.m3s5p1 .m3s5b2 .vertical-align {
+    display: inline;
+}
+
+.m3s5p1 .m3s5b2 .padding-well {
+    padding-bottom: 20px !important;    
+}
+
+.m3s5p1 .m3s5b2 .col-sm-6 .well {
+     margin-bottom: -20px;
+    margin-right: -15px;
+    padding: 20px 20px 20px 30px !important;
+}
+
  .m3s5p1 .dArowh {
     display: none;  
 }
+
+
 
 }
 
@@ -477,11 +455,6 @@ and (max-device-width : 299px) {
 }
 
 
-.m3s5p1 .s1bgcol .response1 .navbar-form{ 
-    padding-left: : 10px;
-padding-right: : 10px;
-   
-}
  .m3s5p1 .b1 .container h2 {  
    font-family: "GothamHTF-Bold";
     font-size: 48%;
@@ -496,6 +469,20 @@ padding-right: : 10px;
 
 .m3s5p1 .s1hide {
     display: none;
+}
+
+.m3s5p1 .m3s5b2 .vertical-align {
+    display: inline;
+}
+
+.m3s5p1 .m3s5b2 .padding-well {
+    padding-bottom: 20px !important;    
+}
+
+.m3s5p1 .m3s5b2 .col-sm-6 .well {
+     margin-bottom: -20px;
+    margin-right: -15px;
+    padding: 20px 20px 20px 30px !important;
 }
 
  .m3s5p1 .dArowh {

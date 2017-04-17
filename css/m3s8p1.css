@@ -1,4 +1,3 @@
-
 .m3s8p1 .b1 {
     margin-bottom: 0px;
     background: url('../img/m3s8img1.png') no-repeat center center fixed; 
@@ -38,6 +37,10 @@
 
 .m3s8p1 .m3s8b2 h3, .m3s8p1 .m3s8b5 h3, .m3s8p1 .m3s8b8 h3, .m3s8p1 .m3s8b11 h3, .m3s8p1 .m3s8b14 h3 {
   font-family: "GothamHTF-Bold";    
+}
+
+.m3s8p1 .m3s8b14 h3 {
+    margin-top: 8px;
 }
 
 .m3s8p1  .m3s8b3 h3 {        
@@ -601,8 +604,3 @@ and (max-device-width : 299px) {
 
 
 }
-
-
-
-
-

@@ -5,8 +5,6 @@ cursor: pointer;
 line-height: 22px;    
 }
 
-
-
 .m3s2p1 div#my_favorite_latin_words span.w10 {
   font-size: 450%;
   color: #0cf;
@@ -100,7 +98,7 @@ line-height: 22px;
     border-radius: 0;
     color: #8e9091;
 }
-.m3s2p1 .container .carousel .carousel-inner  .item .well .iHeight{
+.m3s4p1 .container .carousel .carousel-inner  .item .well .iHeight{
    max-height: 155px;
     overflow: hidden;
     min-height: 155px !important;
@@ -402,7 +400,7 @@ and (max-device-width : 1000px) {
  /*module1 section1 css*/
 .m3s2p1 .s1bgcol .response1 .navbar-form{ 
     padding-left:  10px;
-    padding-right:  10px;
+    padding-right:  0px;
    
 }
 .m3s2p1 .b1  h2 {
