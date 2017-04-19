@@ -63,13 +63,14 @@ cursor: pointer;
     font-size: 24px;
 }
 
-
-
-.lin1 {
-    border-bottom: 2px solid #dcdddf;    
-   /* width: 40%;*/
-    /*margin-left: 40px !important;*/
+.m2s5p1 .lin0 {
+    border-bottom: 2px solid #dcdddf;       
 }
+
+.m2s5p1 .lin1 {
+    border-bottom: 2px solid #dcdddf;       
+}
+
 
 /*end icon*/
 
@@ -498,6 +499,7 @@ and (max-device-width : 765px) {
 
 .m2s5p1 .m2s5bg .well {
     padding-top: 0px;
+    padding-bottom: 0px !important;
 }
 .m2s5p1 .m2s5bg .well .bba{
     padding-top: 0px;
@@ -550,6 +552,11 @@ and (max-device-width : 765px) {
     min-height: 450px;   
 }
 
+.m2s5p1 .m2s5d3  p { 
+    padding-left: 20px !important;
+    padding-right: 20px;
+ }
+
 }
 
 
@@ -567,6 +574,7 @@ and (max-device-width : 500px) {
 
 .m2s5p1 .m2s5bg .well {
     padding-top: 0px;
+    padding-bottom: 0px !important;
 }
 .m2s5p1 .m2s5bg .well .bba{
     padding-top: 0px;
@@ -627,6 +635,12 @@ and (max-device-width : 500px) {
     min-height: 450px;   
 }
 
+
+.m2s5p1 .m2s5d3  p { 
+    padding-left: 20px !important;
+    padding-right: 20px;
+ }
+
 }
 
 @media  screen
@@ -639,6 +653,7 @@ and (max-device-width : 299px) {
 
 .m2s5p1 .m2s5bg .well {
     padding-top: 0px;
+    padding-bottom: 0px !important;
 }
 .m2s5p1 .m2s5bg .well .bba{
     padding-top: 0px;
@@ -701,5 +716,10 @@ and (max-device-width : 299px) {
     text-shadow:none;    
     min-height: 450px;   
 }
+
+.m2s5p1 .m2s5d3  p { 
+    padding-left: 20px !important;
+    padding-right: 20px;
+ }
 
 }

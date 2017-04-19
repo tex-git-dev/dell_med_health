@@ -64,8 +64,9 @@ line-height: 22px;
    
     padding-bottom: 0px !important;
 }
-.m3s6p1 .carousel-indicators {
-    bottom: -20px;
+.m3s6p1 .ccl {
+    bottom: -20px !important;
+
 }
 .m3s6p1 .container .carousel-inner {
     min-height: 200px;
@@ -237,7 +238,10 @@ margin-left: 0;
 }
 
 
+.m3s6p1 .m3s6b9 .carousel-indicators {
+    bottom: 20px;
 
+}
 
 
 /* scatterplot */

@@ -481,6 +481,7 @@ and (max-device-width : 765px) {
 .m1s9p1 .s9ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 
 }
@@ -556,6 +557,7 @@ and (max-device-width : 500px) {
 .m1s9p1 .s9ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 
 }
@@ -625,12 +627,13 @@ and (max-device-width : 299px) {
 }
 
 .m1s9p1 .s9ms2 .well {
- margin-bottom: -15px !important;
+    margin-bottom: -15px !important;
     padding: 2px !important;
 }
-.m1s9p1 .s9ms2 .well .col-sm-6 p{
+.m1s9p1 .s9ms2 .well .col-sm-6 p {
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 
 }

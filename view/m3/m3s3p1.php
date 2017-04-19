@@ -1033,7 +1033,7 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>article</f></p>
-                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://www.uta.edu/faculty/story/2311/Misc/2013,2,26,MedicalCostsDemandAndGreed.pdf.">Why Medical Bills are Killing Us.</a></f></p>                                
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://www.uta.edu/faculty/story/2311/Misc/2013,2,26,MedicalCostsDemandAndGreed.pdf">Why Medical Bills are Killing Us.</a></f></p>                                
                                  <p><f>Explore the story of real patients and their experiences with the complexity and absurdity of health care costs.</f></p>
                                  <p><f>Brill S. Bitter pill: TIME. April 4, 2013.<br>Accessed March 24,<br> 2014.</f></p>
                             </div>
@@ -1135,7 +1135,7 @@ include("view/cjs.php");
 
 </div>
 
-<footer class="container-fluid" style="background:#f4f4f4;">
+<!-- <footer class="container-fluid" style="background:#f4f4f4;">
       <div class="row">
           <div class="col-sm-3 text-left NextBtn">
               <a href="?id=m3/m3s2p2"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
@@ -1144,7 +1144,7 @@ include("view/cjs.php");
             </div>
           <div class="col-sm-6"></div>
       </div>
-</footer>
+</footer> -->
 
 
 

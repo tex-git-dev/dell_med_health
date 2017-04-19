@@ -104,7 +104,7 @@ include("view/cjs.php");
               <br>
               <div class="row m3s7c3">             
                 <div class="col-sm-1"></div>
-                  <div class="col-sm-10 text-center bl"><f><p>Morgan Congdon. “All this for a migraine?” Costs of Care website. 2012. <a target="_blank" style="overflow-wrap: break-word; color:#fff;" href="http://www.costsofcare.org">www.costsofcare.org</a></p></f></div>
+                  <div class="col-sm-10 text-center bl"><f><p><em>Morgan Congdon</em>. “All this for a migraine?” Costs of Care website. 2012. <a target="_blank" style="overflow-wrap: break-word; color:#fff;" href="http://www.costsofcare.org">www.costsofcare.org</a> Accessed March 27, 2017.</p></f></div>
                   <div class="col-sm-1"></div>                  
               </div>              
           </div>
@@ -237,7 +237,7 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase "><f>book</f></p>
-                                 <p><f><a target="_blank" style="color:#000;" href="http://accessmedicine.mhmedical.com/content.aspx?bookid=1371&sectionid=77694001Accessed">Understanding Value-Based Health Care Chapter 3: The Challenges of Understanding Healthcare Pricing.</a></f></p>
+                                 <p><f><a target="_blank" style="color:#000;" href="http://accessmedicine.mhmedical.com/content.aspx?bookid=1371&sectionid=77694001">Understanding Value-Based Health Care Chapter 3: The Challenges of Understanding Healthcare Pricing.</a></f></p>
                                  <p><f>This chapter of Understanding Value-Based Healthcare discusses the complexities of healthcare pricing and the challenges in interpreting price data in healthcare.</f></p>
                                  <p><f>Moriates C, Arora V, Shah N. McGraw-Hill Education; 2015.<br>March 27,<br>2017.</f></p>
                             </div>
@@ -328,7 +328,7 @@ include("view/cjs.php");
                 </div>
               </div>  
 
-              <div class="row"> 
+             <!--  <div class="row"> 
                 <div class="col-sm-12">
                     <div class='well1'>                        
                         <div class='row vertical-alignA'>                          
@@ -346,7 +346,7 @@ include("view/cjs.php");
                        </div>
                   </div>                  
                 </div>
-              </div> 
+              </div>  -->
 
 
       </div>                     

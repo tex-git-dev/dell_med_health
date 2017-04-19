@@ -425,7 +425,7 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">Physicians tend to only accept patients that are healthier to minimize time spent and services rendered and to maximize the amount they receive per patient.</p></f>
+                                <f><p class="ques">Physicians tend to only accept patients that are healthier to minimize time spent and services rendered and to maximize the amount they receive per patient. (con)</p></f>
 
                                 <div class="row">
                                 <div class="col-sm-12" >
@@ -486,7 +486,7 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">Appropriate and timely care for patients improves along with provider communication because all provider groups receive one payment and are encouraged to work together. </p></f>
+                                <f><p class="ques">Appropriate and timely patient care improves along with provider communication because all provider groups receive one payment and are encouraged to work together. (pro)</p></f>
                                 <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row eq-h">
@@ -547,7 +547,7 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">A provider group notices smaller payments after a provider known for poor documentation of procedures and diagnoses works for the clinic.</p></f>
+                                <f><p class="ques">A provider group notices smaller payments after a provider known for poor documentation of procedures and diagnoses works for the clinic. (con)</p></f>
                                 <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row eq-h">
@@ -608,7 +608,7 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">With an unchanging amount of payments, this mechanism makes costs more predictable for insurance companies and represents a more steady monthly cash flow for providers.</p></f>
+                                <f><p class="ques">With an unchanging amount of payments, this mechanism makes costs more predictable for insurance companies and represents a more steady monthly cash flow for providers. (pro)</p></f>
                                 <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row eq-h">
@@ -669,7 +669,7 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">Providers tend to order more CTs even when they may not meet guideline-based clinical indications due to larger reimbursement payments.</p></f>
+                                <f><p class="ques">Providers tend to order more CT scans even when they may not meet guideline-based clinical indications due to larger reimbursement payments. (con)</p></f>
                                 <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row eq-h">
@@ -731,7 +731,7 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">A provider network is encouraged to maximize the adherence to best practices and the amount of care providers can give from their once yearly payment. </p></f>
+                                <f><p class="ques">A provider network is encouraged to maximize the adherence to best practices and the amount of care providers can give from their once-yearly payment. (pro)</p></f>
                                 <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row eq-h">
@@ -807,7 +807,7 @@ app.response2 = function(){
             <div class="response1">
                <div class="carouselC1">
                   <br>                 
-                  <f><p>Based on the pros and cons listed above, identify the payment method or a combination of methods that you think best provides value for the patient. Why do you think so? </p></f> 
+                  <f><p>Based on the pros and cons listed above, identify the payment method (or combination of methods) that you think best provides value for the patient. Why do you think so?</p></f>                   
                   <f><p>Scroll through user responses.</p></f>
                   <div class="well">
                   <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -832,7 +832,7 @@ app.response2 = function(){
                         <div class="well">
                            <f><h2>Your Perspective</h2></f>
                            <div class="line4"></div>
-                           <f><p>Based on the pros and cons listed above, identify the payment method or a combination of methods that you think best provides value for the patient. Why do you think so? </p></f>
+                           <f><p>Based on the pros and cons listed above, identify the payment method (or combination of methods) that you think best provides value for the patient. Why do you think so?</p></f>
                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
                            <div class="line4"></div>
                            
@@ -870,7 +870,7 @@ app.response2 = function(){
             <div class="response1">
                 <div class="carouselC">
                   <br>
-                  <f><p>Read the responses of your peers. How were they the same or different? Did any answer or proposed combination change your opinion? </p></f>
+                  <f><p>Read the responses from your peers. How were they the same or different? Did any answer or proposed combination change your opinion?</p></f>
                   <f><p>Scroll through user responses.</p></f>
                   <div class="well">
                   <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -895,7 +895,7 @@ app.response2 = function(){
                         <div class="well">
                            <f><h2>Reflecting Further</h2></f>
                            <div class="line4"></div>
-                           <f><p>Read the responses of your peers. How were they the same or different? Did any answer or proposed combination change your opinion? </p></f>
+                           <f><p>Read the responses from your peers. How were they the same or different? Did any answer or proposed combination change your opinion?</p></f>
                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
                            <div class="line4"></div>                           
                         </div>
@@ -961,7 +961,8 @@ app.response2 = function(){
             <ol>
               <!-- <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href=""> -->
               <f><li><p>Moriates C, Arora V, Shah N. <em><a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="https://www.amazon.com/Understanding-Value-Healthcare-Christopher-Moriates/dp/0071816984">Understanding Value-Based Healthcare</a></em>. Columbus, OH: McGraw-Hill Education; 2015.</p></li></f>              
-              <f><li><p>Dobson A, DaVanzo J, Doherty J, Tanamor M. A study of hospital charge setting practices. Falls Church, VA: Lewin Group, 2005.</p><p>Moriates C. Meet the villain of hospital costs: The chargemaster. <em>Society of Hospital Medicine</em>. July 30, 2015. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/">http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</a> Accessed March 24, 2017.</p></li></f>              
+              <f><li><p>Dobson A, DaVanzo J, Doherty J, Tanamor M. A study of hospital charge setting practices. Falls Church, VA: Lewin Group, 2005.</p></li></f>
+              <f><li><p>Moriates C. Meet the villain of hospital costs: The chargemaster. <em>Society of Hospital Medicine</em>. July 30, 2015. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/">http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/</a> Accessed March 24, 2017.</p></li></f>              
             </ol>
           </div>  
           </div>

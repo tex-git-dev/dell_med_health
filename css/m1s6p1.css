@@ -65,12 +65,10 @@
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
-    width: 100%;
-    /*background-color: #060;*/
-        color: white;
-    /*text-shadow: black 0.3em 0.3em 0.3em;*/
-    background-color: #fff;
-    min-height: 310px;
+    width: 100%;    
+    color: white;    
+    padding-top: 80px !important;        
+    padding-bottom: 80px !important;        
 }
 
 .m1s6p1 .m6b2 h4 {
@@ -80,13 +78,11 @@
 
 .m1s6p1 .m6b2 .container {
     color: #fff;
-    height: 200px;    
     max-width: 100%;
     min-height: 100%;
-    position: relative;    
-    top:37px;
-    
 }
+
+
 .m1s6p1 .container .m6col{
 background: #f68121 none repeat scroll 0 0;
 }
@@ -228,11 +224,11 @@ top: 0px;
     background-size: cover;
     height: 100%;
     width: 100%;   
-       color: white;   
-    background-color: #fff;
-    min-height: 330px;
-
+    color: white;   
+    padding-top: 70px !important;        
+    padding-bottom: 70px !important;      
 }
+
 
 
 }
@@ -288,10 +284,11 @@ and (max-device-width : 765px) {
     background-size: cover;
     height: 100%;
     width: 100%;   
-       color: white;   
-    background-color: #fff;
-    min-height: 280px;
+     color: white;   
+    padding-top: 60px !important;        
+    padding-bottom: 60px !important;      
 }
+
 
 }
 
@@ -344,11 +341,11 @@ and (max-device-width : 500px) {
     background-size: cover;
     height: 100%;
     width: 100%;   
-       color: white;   
-    background-color: #fff;
-    min-height: 280px;
-
+    color: white;   
+    padding-top: 60px !important;        
+    padding-bottom: 60px !important;      
 }
+
 
 }
 

@@ -65,7 +65,7 @@ include("view/cjs.php");
         <div class="row m2s5bg eq-h">        
          <div class="col-sm-4">
           <f><h3 class="text-center">Outcome Measures</h3></f>
-            <hr class="lin1">
+            <hr class="lin0">
            <img  src="img/m2s5icon1.png"  class="center-block img-responsive">
          </div>
          <div class="col-sm-8">

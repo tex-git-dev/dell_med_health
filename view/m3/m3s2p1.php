@@ -456,7 +456,7 @@ app.response2 = function(){
         <br>
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><f><a href="?id=m3/m3s2p2" style="color:#fff;"><div class="driveS2">Dive Deeper</div></a></f></div>
+            <div class="col-sm-4"><f><a target="_blank" href="?id=m3/m3s2p2" style="color:#fff;"><div class="driveS2">Dive Deeper</div></a></f></div>
             <div class="col-sm-4"></div>
         </div>
       </div>
@@ -486,7 +486,7 @@ app.response2 = function(){
               <f><p>Here is an article describing the experience that some patients have had with high-priced medications.</p></f>
               <hr>
               <f><h4 class="text-center text-uppercase">$18 For A Baby Aspirin? Hospitals Hike Costs For Everyday Drugs For Some Patients</h4></f>
-              <f><p class="text-center">By Susan Jaffe<br>April 30, 2012. Kaiser Health News.</p></f>
+              <f><p class="text-center">By <a style="color:#000;" class="boldT" target="_blank" href="http://khn.org/news/author/susan-jaffe/">Susan Jaffe</a><br>April 30, 2012. Kaiser Health News.</p></f>
               <br>
               <f><p>“Excessive drug prices have also surprised seniors in other parts of the country:</p></f>
               <f><p>–In Missouri, several Medicare observation patients were billed $18 for one baby aspirin, said Ruth Dockins, a senior advocate at the Southeast Missouri Area Agency on Aging.</p></f>
@@ -515,7 +515,8 @@ app.response2 = function(){
               <ol id="demo" class="collapse"> 
                 <f><li class="text-left"><p>Moriates C, Arora V, Shah N. <em><a style="color:#f4821f;" target="_blank" href="https://www.amazon.com/Understanding-Value-Healthcare-Christopher-Moriates/dp/0071816984">Understanding Value-Based Healthcare</a></em>. Columbus, OH: McGraw-Hill Education; 2015.</p></li></f>
                 <f><li class="text-left"><p>Himmelstein DU, Thorne D, Warren E, Woolhandler S. Medical bankruptcy in the United States, 2007: Results of a national study. <em>Am J Med. 2009;22(8): 741-746. doi:<a style="color:#f4821f;" target="_blank" href="http://dx.doi.org/10.1016/j.amjmed.2009.04.012">10.1016/j.amjmed.2009.04.012</a></em></p></li></f>
-                <f><li class="text-left"><p>Financial toxicity and cancer treatment (PDQ)&ndash;health professional version. National Cancer Institute website. <a style="color:#f4821f;" target="_blank" href="https://www.cancer.gov/about-cancer/managing-care/financial-toxicity-hp-pdq">https://www.cancer.gov/about-cancer/managing-care/financial-toxicity-hp-pdq</a>. Update: December 14, 2016. Accessed March 23, 2017.</p><p>Jaffe S. $18 dollars for a baby aspirin? Hospitals hike costs for everyday drugs for some patients. Kaiser Health News and USA Today. April 30, 2012. <a style="color:#f4821f;" target="_blank" href="http://khn.org/news/observational-care/">http://khn.org/news/observational-care/</a>. Accessed December 7, 2016.</p></li></f>
+                <f><li class="text-left"><p>Financial toxicity and cancer treatment (PDQ)&ndash;health professional version. National Cancer Institute website. <a style="color:#f4821f;" target="_blank" href="https://www.cancer.gov/about-cancer/managing-care/financial-toxicity-hp-pdq">https://www.cancer.gov/about-cancer/managing-care/financial-toxicity-hp-pdq</a>. Update: December 14, 2016. Accessed March 23, 2017.</p></f></li>
+                <f><li class="text-left"><p><p>Jaffe S. $18 dollars for a baby aspirin? Hospitals hike costs for everyday drugs for some patients. Kaiser Health News and USA Today. April 30, 2012. <a style="color:#f4821f;" target="_blank" href="http://khn.org/news/observational-care/">http://khn.org/news/observational-care/</a>. Accessed December 7, 2016.</p></li></f>
               </ol>
         </div>        
         <div class="col-sm-10"></div>
@@ -524,7 +525,7 @@ app.response2 = function(){
    
 </div>
 
-<footer class="container-fluid" style="background:#f4f4f4;">
+<!-- <footer class="container-fluid" style="background:#f4f4f4;">
       <div class="row">
         <div class="col-sm-6"></div>
           <div class="col-sm-6  text-right NextBtn1">
@@ -533,7 +534,7 @@ app.response2 = function(){
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
       </div>
-</footer>
+</footer> -->
 
     <footer class="container-fluid">         
           <div class="row">

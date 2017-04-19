@@ -349,6 +349,7 @@ and (max-device-width : 1000px) {
 .m2s8p1 .m2s8ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+
 }
 
 
@@ -419,6 +420,7 @@ and (max-device-width : 765px) {
 .m2s8p1 .m2s8ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 
 }
@@ -489,6 +491,7 @@ and (max-device-width : 500px) {
 .m2s8p1 .m2s8ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 
 }
@@ -558,6 +561,7 @@ and (max-device-width : 299px) {
 .m2s8p1 .m2s8ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 
 }

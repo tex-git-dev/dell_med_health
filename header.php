@@ -2,7 +2,13 @@
 @session_start();
 ?>
  <script src="js/bootstrap-session-timeout.js"></script>
+ <style>
+#passResetF label{
+ color:red;
+ }
+ </style>
 <script type="text/javascript">
+
 //Below function used for forgot popup open.
 app.Forgot=function(){
   $('#forgot').modal({show: 'false'});
@@ -1210,13 +1216,13 @@ app.OpenMS=function(){
             <div class="col-sm-6"></div>
             <div class="col-sm-6 text-right"><span style="color:#e2873b;">Already have an account? </span> <button class="btn btn-default right-block" onclick="app.OpenMS();" type="button" >Sign in</button></div>
         </div>
-          <!-- <button type="button" class="close" data-dismiss="modal" style="color:#fff">&times;</button> -->
+     
            
         </div>
 
         <div class="modal-body">
  <h3 class="form-signin-heading text-center" style="color:#e2873b;">SIGN UP TO ACCESS THE DELL MEDICAL VBHC MODULES</h3>
-        <form class="form-signin input-sm" id="registrationFregistrationF" action="" method="post">
+        <form class="form-signin input-sm" id="registrationF" action="" method="post">
       
          <br>
         <div class="row">
@@ -1313,7 +1319,6 @@ app.OpenMS=function(){
              <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <!-- <input type="text" name="PPRole" id="PPRole" class="form-control text-center c" placeholder="Country" required="" autofocus=""> -->
                     <label for="sel1">Primary Professional Role:</label>
                       <select class="form-control text-center c" id="PPRole" name="PPRole">
                         <option value="">[select from list below]</option>
@@ -1628,7 +1633,7 @@ app.OpenMS=function(){
             <div class="col-sm-5"></div>
             <div class="col-sm-2"> 
              <button onclick="$('#passReset').modal('hide'); $('#login').modal();" class="btn btn-default center-block" type="button" >
-              <span >Log In</span>
+              <span >Sign in</span>
              </button>
             </div>
             <div class="col-sm-5"></div>
@@ -1805,15 +1810,12 @@ submitHandler: function(form){
             $(".NExists h4").text('Incorrect username or password.');
           }
         }, "json");
-
 }
- 
 });
 
 
 
-    $("#registrationF").validate({
-//specify the validation rules
+ $("#registrationF").validate({
 rules: {
     Fname: "required",
     Lname: "required",
@@ -1836,11 +1838,10 @@ Passc: {
 },
 Gender: {
     required: true,
-}
-,
+},
 PPRole: {
     required: true,
-}
+},
 },
 
 PPRole: {
@@ -1864,6 +1865,7 @@ submitHandler: function(form){
 form.submit();
 }
 });
+
 $(".module1button").click(function(){
 app.ClickOnModule="module1";
 });

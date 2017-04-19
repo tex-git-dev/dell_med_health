@@ -53,7 +53,9 @@ include("view/cjs.php");
       <br>
 
 <br><br><br>
-      <div class="jumbotron m6b2">        
+
+      <div class="jumbotron m6b2">  
+
             <div class="container"> 
                <div class="row m6col">
                <div class="col-sm-2"></div>
@@ -65,7 +67,9 @@ include("view/cjs.php");
                </div>  
             <div class="col-sm-2"></div>           
              </div>
+
      </div>
+
      <br>
      <div class="container bg-3 "> 
         <br>
@@ -154,8 +158,7 @@ include("view/cjs.php");
         <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
         <br>
         <ol id="demo" class="collapse">
-            <f><li class="text-left"><p>Dell Medical School. Improving women’s health in central Texas. November 14m 2016. Accessed January 16, 2018. Retrieved from <a style="color:#f4821f;" target="_blank" href="http://blog.dellmedschool.utexas.edu/2016/11/14/improving-womens-health-central-texas/">http://blog.dellmedschool.utexas.edu/2016/11/14/improving-womens-health-central-texas/<a></p></li></f>
-
+            <f><li class="text-left"><p>Dell Medical School. Improving women’s health in central Texas. November 14m 2016. Accessed January 16, 2018. Retrieved from <a style="color:#f4821f; overflow-wrap: break-word;" target="_blank" href="http://blog.dellmedschool.utexas.edu/2016/11/14/improving-womens-health-central-texas/">http://blog.dellmedschool.utexas.edu/2016/11/14/improving-womens-health-central-texas/<a></p></li></f>
         </ol>
         </div>
 </div>
