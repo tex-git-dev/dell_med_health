@@ -319,7 +319,7 @@ app.response2 = function(){
       <div class="row">
         <div class="col-sm-12">
           <!-- <hr style="border-color:#dddddd"> -->
-          <f><p>Adapted from Kim et al, 2016. <span class="boldT">Graft failure among adult liver transplant recipients: deceased donor.<sup>6</sup></span> Notice that graft failure, or failure of the new liver to function properly, did not change after the implementation of the MELD allocation system in 2002. Time periods represent time post transplant..</p></f>
+          <f><p>Adapted from Kim et al, 2016. <span class="boldT">Graft failure among adult liver transplant recipients: deceased donor.<sup>6</sup></span> Notice that graft failure, or failure of the new liver to function properly, did not change after the implementation of the MELD allocation system in 2002. Time periods represent time post transplant.</p></f>
           <!-- <br><br>
           <f><p class="mdem"><span class="cc3">&bull; Wait List Criteria</span><br><span class="cc2">&bull; MELD Score Criteria</span></p></f> -->
         </div>

@@ -41,11 +41,11 @@ include("view/cjs.php");
         <br>
         <div class="row text-left">
             <div class="col-sm-4 col-sm-offset-2">
-                <f><p   class="">You will now have an opportunity to interact with a mock up of the value driven outcomes (VDO) tool. This Value Opportunities Tool (VOT) is an interactive data representation scatterplot that illustrates the opportunity for value improvement among patients with a particular diagnosis. The activity below presents you with the coefficient of variance (CoV) in cost for patients with a particular diagnosis (y axis) and the mean cost among each particular diagnosis (x axis). The size of each   
+                <f><p   class="">You will now have an opportunity to interact with a mock up of the value driven outcomes (VDO) tool. This Value Opportunities Tool (VOT) is an interactive data representation scatterplot that illustrates the opportunity for value improvement among patients with a particular diagnosis. The activity below presents you with the coefficient of variance (CoV) in cost for patients with a particular diagnosis (y axis) and the mean cost among each particular diagnosis (x axis).    
                 </p></f>
             </div>
             <div class="col-sm-4 ">
-                <f><p class="">bubble represents the opportunity index of a particular diagnosis, which is the CoV x total cost for all patients with the diagnosis. If a diagnosis has a large bubble, representing high total cost and high variance in cost, then there might be an opportunity to look closer at the reasons for this variance. Conversely, if diagnosis has a low total cost and variance and thus a smaller bubble, chances are the opportunity for improvement is lower. </p></f> 
+                <f><p class="">The size of each bubble represents the opportunity index of a particular diagnosis, which is the CoV x total cost for all patients with the diagnosis. If a diagnosis has a large bubble, representing high total cost and high variance in cost, then there might be an opportunity to look closer at the reasons for this variance. Conversely, if diagnosis has a low total cost and variance and thus a smaller bubble, chances are the opportunity for improvement is lower. </p></f> 
 
             </div>
         </div>

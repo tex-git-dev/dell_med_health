@@ -489,3 +489,21 @@ padding-right: : 10px;
 }
  
 }
+
+
+
+@media  screen
+and (min-device-width : 100px)
+and (max-device-width : 440px) {
+
+.m2s2p1 .s1bgcol .response1 .form-control{ 
+ font-size:9px !important;
+
+}
+
+.m2s2p1 .s1bgcol .response1 .btn-info {
+  font-size: 10px;
+  width: 81px;
+    }
+
+}

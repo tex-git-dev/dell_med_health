@@ -86,7 +86,7 @@ include("view/cjs.php");
                  <f><p>Reflect on the impact of cost on patient care and the overall value of provided health care.</p></f>              
             </div>          
             <div class="col-sm-6">                           
-                <img src="img/m3s1img3.png"  class="img-responsive">                
+                <img src="img/m3s1img3.jpg"  class="img-responsive">                
             </div>            
             <!-- <div class="col-sm-2"></div>  -->
           </div>

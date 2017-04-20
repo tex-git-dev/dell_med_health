@@ -10,7 +10,8 @@
 }
 include("view/cjs.php");
 ?>
-<link rel="stylesheet" href="css/m3s8p1.css">
+<link rel="stylesheet" href="css/m3s2p2.css">
+
 <div class="m3s8p1">
        <div class="jumbotron b1">
          <div class="container text-center bg-2">

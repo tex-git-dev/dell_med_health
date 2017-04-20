@@ -113,7 +113,7 @@ include("view/cjs.php");
                 <f><h3 class="text-center text-uppercase">Capability, Comfort, and Calm</h3></f>
                   <hr>
                 <f><p>One framework for considering patient outcomes, proposed by Elizabeth Teisberg and Scott Wallace from Dell Medical School, is “Capability, Comfort, and Calm.”<sup>2-5</sup></p></f>
-                <f><p>Teisberg and Wallace popularized the idea that the key question about satisfaction with health care is “How are you?” rather than “How were we” or “Would you recommend your physician?” They have written that, “While there are hundreds of possible performance measures for physicians, the critical questions […] are about the patients, not just about the doctor’s performance. Patient results determine quality of life and are therefore the most important measure of physician performance.”<sup>2</sup></p></f>
+                <f><p>Teisberg and Wallace popularized the idea that the key question about satisfaction with health care is “How are you?” rather than “How were we?” or “Would you recommend your physician?” They have written that, “While there are hundreds of possible performance measures for physicians, the critical questions […] are about the patients, not just about the doctor’s performance. Patient results determine quality of life and are therefore the most important measure of physician performance.”<sup>2</sup></p></f>
                   <hr>
                 <div class="row">
                   <div class="col-sm-4 text-center">
@@ -153,7 +153,7 @@ include("view/cjs.php");
         <a target="_blank" style="color:#f4821f;" href=""></a>
       <div id="demo" class="collapse">
         <ol>
-          <f><li><p>Institute for healthcare improvement. “ <a target="_blank" style="color:#f4821f;" href="https://youtu.be/Ju5TmLjdY4Q">Changing the Conversation from, 'What's the Matter?' to 'What Matters to You?'</a>” Maureen Bisognano keynote presentation at the 13th Annual International Summit on Improving Patient Care in the Office Practice and the Community, March 2012.</p></li></f>
+          <f><li><p>Institute for healthcare improvement. “<a target="_blank" style="color:#f4821f;" href="https://youtu.be/Ju5TmLjdY4Q">Changing the Conversation from, 'What's the Matter?' to 'What Matters to You?'</a>” Maureen Bisognano keynote presentation at the 13th Annual International Summit on Improving Patient Care in the Office Practice and the Community, March 2012.</p></li></f>
           <f><li><p>Teisberg E, Wallace S. <em>Capability, Comfort and Calm: Designing Health Care Services for Excellence and Empathy</em> [presentation]. Cleveland, OH: Patient Experience, Empathy Innovation Summit, May 16, 2016.</p></li></f>
           <f><li><p>Wallace S, Teisberg EO, “Measuring What Matters:  Connecting Excellence, Professionalism and Empathy.” <em>Brain Injury Professional</em> , September 2015.</p></li></f>
           <f><li><p>Teisberg E, Wallace S. “Value for Patients.” <em>Brain Injury</em> Professional, September 2015.</p></li></f>

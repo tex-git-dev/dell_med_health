@@ -127,7 +127,7 @@ var app = {
     $(".MSection .MIN").html(timeFixed[j-1][1]);
 	     if (j==1) {
            $(".outc").hide();
-        }else if (j==7) {
+        }else if (j==8) {
            $(".outc").hide();
         }else{
           $(".outc").show();

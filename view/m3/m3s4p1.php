@@ -950,6 +950,36 @@ app.response2 = function(){
 
 
 <br>
+<br>
+<div class="jumbotron m4s4b21"> 
+       <f><h2 class="text-center">Learn More</h2></f>
+       <br>
+          <div class="container m4s4b22">
+            
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-3">
+                              <img src="img/s7img7.png" class="img-responsive center-block">
+                          </div>
+                          <div class="col-sm-9">
+                                <div class='well'>
+                                <p class="text-uppercase"><f>Article</f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://content.healthaffairs.org/content/36/4/689.abstract?rss=1">Mystery of the Chargemaster: Examining the Role of Hospital List Prices in what Patients Actually Pay.</a></f></p>
+                                 <p><f>Read this data-driven article to learn more about how hospital chargemasters affect patients and prices for hospital care.</f></p>
+                                 <p><f>Batty M, Ippolito B. Health Aff. April 2017.<br>Accessed April 19, <br>2017.</f></p>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+</div>            
+</div>
+<br><br>
+
    <div class="container m4s4b20">
         <div class="row">
           <div class="col-sm-1"></div>

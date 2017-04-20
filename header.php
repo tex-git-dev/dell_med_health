@@ -209,7 +209,11 @@ app.OpenMS=function(){
                 </li>
                 <?php }else if($m == "m3s7p1"){ ?>
                 <li class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 7 </span><span class="s_bottom">Conclusion: Understanding Costs of Care</span></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 7 </span><span class="s_bottom">Applying TDABC to Compare Cost Calculations</span></a>
+                </li>
+                <?php }else if($m == "m3s8p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 8 </span><span class="s_bottom">Conclusion: Understanding Costs of Care</span></a>
                 </li>
 
 
@@ -549,8 +553,19 @@ app.OpenMS=function(){
                       </div>
                        
                 </div>
+                
                 <div class="row btnss  vertical-align bb btnS7">
                         <div class="col-sm-2 "><strong>07.</strong></div>                
+                        <div class="col-sm-7"><strong>Applying TDABC to Compare Cost Calculations</strong></div>
+                        <div class="col-sm-3">
+                            <div class="alert1" role="alert">
+                               Continue
+                              </div>
+                      </div>                                             
+                </div>
+
+                <div class="row btnss  vertical-align bb btnS8">
+                        <div class="col-sm-2 "><strong>08.</strong></div>                
                         <div class="col-sm-7"><strong>Conclusion: Understanding Costs of Care</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -888,7 +903,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             
+                             Applying TDABC to Compare Cost Calculations
                           </div>
                         </div>
                     </div>

@@ -36,7 +36,7 @@ include("view/cjs.php");
     <br>
 
       <div class="Step1 container m2s6b2 ">
-          <f><h3 class="text-uppercase text-center">resources for measuring patient outcomes</h3></f>
+          <f><h3 class="text-uppercase text-center">Making Decisions Using Data From Different Outcomes</h3></f>
           <br>
           <f><p>Radar charts allow multiple health care stakeholders, most notably physicians and their patients, to compare possible strategies across multiple relevant dimensions including cost and outcomes. Watch the video to learn more.</p></f>
       </div>      
