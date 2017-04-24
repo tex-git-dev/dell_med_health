@@ -177,6 +177,10 @@ padding-top: 24px;
     position: relative;     
 }
 
+.m1s3p1 #b1 .btSize  {
+    font-size: 15px;
+}
+
 .m1s3p1 #b1 #myDiv3 {
     font-family: "GothamHTF-Medium";
     position: relative;
@@ -473,6 +477,18 @@ and (max-device-width : 765px) {
     margin-bottom: 8%;     
 }
 
+.m1s3p1 #b1 .btSize {
+    font-size: 11px;
+}
+.m1s3p1 #b1 .btn {
+    margin: 2px;
+}
+#myDiv3 {
+    margin-top: 2px !important;
+}
+
+
+
 }
 
 
@@ -600,6 +616,16 @@ font-size: 15px !important;
    font-size:6px;
 }
 
+.m1s3p1 #b1 .btSize {
+    font-size: 11px;
+}
+.m1s3p1 #b1 .btn {
+    margin: 2px;
+}
+#myDiv3 {
+    margin-top: 2px !important;
+}
+
 
 
 }
@@ -721,13 +747,21 @@ and (max-device-width : 299px) {
     top: 37% !important;
     font-size: 15px !important;
   }
-
   .m1s3p1 .imagBot {
     margin-bottom: 4% !important;     
 }
-
 .m1s3p1 #b1 #myDiv1  {
    font-size:6px;
+}
+
+.m1s3p1 #b1 .btSize {
+    font-size: 11px;
+}
+.m1s3p1 #b1 .btn {
+    margin: 2px;
+}
+#myDiv3 {
+    margin-top: 2px !important;
 }
 
 

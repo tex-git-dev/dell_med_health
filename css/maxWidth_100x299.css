@@ -141,8 +141,8 @@ margin-bottom: 10px;
         padding: 5px;
     }
 #myCarousel .carousel-control{
-    display: none;
-    visibility: hidden;
+/*    display: none;
+    visibility: hidden;*/
 }
 .boldT {
     font-family: "GothamHTF-Bold";

@@ -34,8 +34,8 @@ include("view/cjs.php");
       </div>
       <br>  
 
-      <div class="Step1 container bg-3 text-center">         
-         <f><h3 class=" text-uppercase"  >MEASURES FRAMEWORK</h3></f>         
+      <div class="Step1 container bg-3 text-center">
+         <f><h3 class=" text-uppercase">MEASURES FRAMEWORK</h3></f>
          <br>
          <div class="row text-left">
             <div class="col-sm-12">
@@ -60,8 +60,7 @@ include("view/cjs.php");
        </div>         
 <br><br>
 
-    <div class="container m2s5bba">
-
+    <div class="container m2s5bba">      
         <div class="row m2s5bg eq-h">        
          <div class="col-sm-4">
           <f><h3 class="text-center">Outcome Measures</h3></f>
@@ -75,7 +74,6 @@ include("view/cjs.php");
           </div>
          </div>
         </div>
-
 
         <div class="row m2s5bg eq-h ">
          <div class="col-sm-4">            
@@ -693,22 +691,7 @@ include("view/cjs.php");
             </div>
 
 
-             <!-- Question no 9 -->
             
-
-
-            <!-- Question no 10 -->
-            
-
-             <!-- Question no 11 -->
-            
-
-
-
-             <!-- Question no 12 -->
-            
-
-            <!-- Question no 13 -->
             <div class="item" id="8">
                 <div class="container-full text-center white">
                     <div class="container">    
@@ -769,16 +752,7 @@ include("view/cjs.php");
             </div>
 
 
-             <!-- Question no 14 -->
-            
-
-
-
-             <!-- Question no 15 -->
-            
-
-
-             <!-- Question no 16 -->
+             
             <div class="item" id="9">
                 <div class="container-full text-center white">
                     <div class="container">    
@@ -837,7 +811,6 @@ include("view/cjs.php");
                     </div>
                 </div>
             </div>
-
 
 
                   <a class="left carousel-control m2s6b7" href="#myCarousel_1" role="button" data-slide="prev" style="display: none;">

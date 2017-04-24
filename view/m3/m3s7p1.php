@@ -145,63 +145,6 @@ app.pup2= function(v){
     $('.m3s2p1 #mc1 .modal-content #name').html(name);
 }
 
-/*
-app.response2 = function(){
-     var loc = $("#response2Text").val();
-      var section = 's'+app.qs["id"][6];
-      if (loc) {
-          app.MData[app.SelecteM].sections[section]['response2'] = loc;
-          var data = JSON.stringify(app.MData);
-          var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
-          app.DataSave(loc_1);
-          app.cArrayT.unshift(loc);
-          app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
-      }else{
-        loc =app.MData[app.SelecteM].sections[section]['response2'];
-        app.cArrayT.unshift(loc);
-        app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
-      }
-      if (loc == "") {
-        alert("Please write the response.")
-       }else{
-         app.addOpt('myCarousel2',app.cArrayT.length);
-        $(".act2").hide();
-        $(".carouselC").css({"visibility":"visible","height":"auto"});
-         var items="";
-         var t =0;
-          var sizeC = Math.ceil(app.cArrayT.length/3); 
-        for (var i = 1; i < sizeC+1; i++) {
-            var f = "";
-            if(i == 1){
-              f = "active";
-            }else{
-              f = "";
-            }
-           items += '<div class="item '+f+'"><div class="row">';
-             for (var j = 1; j < 4; j++) {
-                  var T0 = app.cArrayT[t];
-                  var N0 = app.cArrayN[t];
-                  t++;
-                    if(T0 != undefined){
-                      console.log(t)
-                      items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
-                      items += T0;
-                      items += '</span></div><a href="javascript:app.pup2('+t+');">Read more<br></a><br><span>';
-                      items += '<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i> ';
-                      items += '<span class="text-uppercase" style="color:#000;"> '+N0+'</span>';
-                      items += '</span>';
-                      items += '</div></div>';
-                    }
-             }
-           items += '</div></div>';
-        } 
-        $(".carouselC .additem").append(items);
-        app.showRM();
-      }
-   }
-*/
-
-
 
    $(document).ready(function(){
   var flagvd = false;
@@ -224,18 +167,45 @@ app.response2 = function(){
 
 
 <style>
+#clcthird
+{
+padding:0 50px;
+}
+.customeye
+{
+display:none;
+}
+#calcfirst b
+{
+font-weight:400;
+}
+.modal-title
+{
+font-weight:bolder;
+}
+#clcthird,#clcforth
+{
+z-index:2;
+}
+#incsurenceab td ,#incsurenceab th{
+border:5px solid #0097B0;;
+}
+ .bordershow {
+    border:1px solid #F58220;
+}
+ .bordershow1{
+    border:1px solid #3B4254;
+}
+.bordernone
+{
+ border:1px solid #FFFFFF;
+ border-color:!important;
+}
 .modal-header button
 {
 color:white!important;
 }
-@media (max-width: 451px)
-{
-#seecost
-{
-width:80px!important;
-}
 
-}
 .vb1,.vb2,.vb3,.vb4,.vb5,.vb6,.vb7,.vb8,.vb9,.vb10,.vb11,.vb12,.vb13,.vb14,.vb15
 {
 visibility:hidden;
@@ -259,20 +229,16 @@ background-color:#F58220;
 color:white;
 }
 .m3s7p1 .marginpading{
-padding:20px 0px;
+padding:10px 0px;
 margin:5px;
 }
 .m3s7p1 .mympd1 .row
 {
-padding:10px 7px;
+padding:0px 7px;
 }
 .fa-eye-slash,.fa-eye{
-font-size:30px;
-color:white;
+color:#F58220;
 cursor:pointer;
-z-index:99999;
-margin-left:30px;
-pointer-events: none;
 }
 
 .m3s7p1 .myportion span {
@@ -287,6 +253,36 @@ pointer-events: none;
 {
 text-align:center;
 }
+ @media only screen and (max-device-width:480px){
+.customeye
+{
+display:block!important;
+}
+.customeye1
+{
+display:none!important;
+}
+#incsurenceab
+{
+margin-left:-50px;
+ font-size: 10px;
+}
+#clcthird1
+{
+}
+#clcthird
+{
+padding:0px !important;
+}
+
+}
+ @media only screen and (max-device-width:480px){
+.bordernone
+{
+ border:1px solid whitesmoke;
+}
+}
+
 
 </style>
 
@@ -322,8 +318,8 @@ text-align:center;
               <div class="col-sm-12">
                 <f><h3 class="text-uppercase text-center">ACTIVITY: CALCULATING COSTS</h3></f>
                 <br>
-                 <f><p>You will recall from Section 4 that utilizing fee-for-service as a basis for costing and reimbursement is not an accurate of care. These will be tallied in a calculator based on the hospital’s chargemaster fees. You can also compa portrayal of the true costs of care. You will now have the opportunity to compare cost calculation methods for the services provided to a patient during the course of treatment using chargemaster and TDABC calculations.</p></f>
-                 <f><p>Read the vignette about Ms. Chen’s visit to an urgent care clinic for an asthma exacerbation episode. Select all of the terms that represent componentsre hospital reimbursement based on two different insurance rates. Then, compare these costs to TDABC-costing calculations meant to more accurately reflect the true costs of the services rendered.</p></f>
+                 <f><p>You will recall from Section 4 that utilizing fee-for-service as a basis for costing and reimbursement is not an accurate portrayal of the true costs of care. You will now have the opportunity to compare cost calculation methods for the services provided to a patient during the course of treatment using chargemaster and TDABC calculations. </p></f>
+                 <f><p>Read the vignette about Ms. Chen’s visit to an urgent care clinic for an asthma exacerbation episode. Select all of the terms that represent components of care. These will be tallied in a calculator based on the hospital’s chargemaster fees. You can also compare hospital reimbursement based on two different insurance rates. Then, compare these costs to TDABC-costing calculations meant to more accurately reflect the true costs of the services rendered.</p></f>
                </div>
             <!-- <div class="col-sm-2"></div> -->
          </div>
@@ -334,7 +330,7 @@ text-align:center;
 
 <div class="jumbotron m3s7b9"> 
 
-<div class="jumbotron col-md-12">   
+<div class="jumbotron col-md-12" style="padding-top:0px;padding-bottom:0px;">   
 
 <div class="col-md-12 myportion" style="z-index: 1;">
   <!-- <hr style="border-color: #cacaca currentcolor currentcolor;"> -->
@@ -365,183 +361,191 @@ oral steroids.
 </div>
 
 <div class="col-md-4 col-sm-12 col-xs-12" id="calcfirst">
-<p class="bbc" style="padding:36px 0;text-align:center;margin:5px;">Chargemaster</p>
+<p class="bbc" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Chargemaster</p>
 <div class="bbc marginpading mympd1">
 <!--Evaluation md start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb1">Evaluation (MD)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span1 sspn1">350</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span1 spn1">350</span></b>
 </div>
 </div>
 <!--Evaluation md end-->
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb2">Breathing Tx (Nurse)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span2 sspn2">340.00</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span2 spn2">340.00</span></b>
 </div>
 </div>
 <!--<p class="vb8">Breathing Tx (Technician) </p> end-->
 <!--<p class="vb11">EKG (Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb3">EKG (Technician)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span3 sspn3">550.00</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span3 spn3">550.00</span></b>
 </div>
 </div>
 <!--B<p class="vb11">EKG (Technician)</p> end-->
 <!--<p class="vb3">UCC Coordinates (MD)</p>.$ start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb4">UCC Coordinates (MD)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span4 sspn4">376.00</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span4 spn4">376.00</span></b>
 </div>
 </div>
 <!--<p class="vb3">UCC Coordinates (MD)</p>.$ end-->
 <!--<p class="vb5">Ambulance drives to ER</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb5">Ambulance drives to ER</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span5 sspn5">995</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span5 spn5">995</span></b>
 </div>
 </div>
 <!--<p class="vb5">Ambulance drives to ER</p> end-->
 <!--<p class="vb6">Assigned room (Nurse)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb6">Assigned room (Nurse)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span6 sspn6">799</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span6 spn6">799</span></b>
 </div>
 </div>
 <!--<p class="vb6">Assigned room (Nurse)</p> end-->
 <!--<p class="vb7">Evaluation (ER MD) </p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb7">Evaluation (ER MD) </p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span7 sspn7">536.24</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span7 spn7">536.24</span></b>
 </div>
 </div>
 <!--<p class="vb7">Evaluation (ER MD) </p> end-->
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb8">Breathing Tx (Technician) </p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span8 sspn8">340.00</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span8 spn8">340.00</span></b>
 </div>
 </div>
 <!--<p class="vb8">Breathing Tx (Technician) </p> end-->
 <!--<p class="vb8">X-ray (Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb9">X-ray (Technician)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span9 sspn9">435</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span9 spn9">435</span></b>
 </div>
 </div>
 <!--<p class="vb8">X-ray (Technician)</p> end-->
 <!--<p class="vb10">Blood for labs (Nurse and Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb10">Blood for labs (Nurse and Technician)</b>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span10 sspn10">410.00</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span10 spn10">410.00</span></b>
 </div>
 </div>
 <!--<p class="vb10">Blood for labs (Nurse and Technician)</p> end-->
 <!--<p class="vb11">EKG (Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb11">EKG (Technician)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span11 sspn11">550</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span11 spn11">550</span></b>
 </div>
 </div>
 <!--<p class="vb11">EKG (Technician)</p> end-->
 <!--<p class="vb12">Chest CT (Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb12">Chest CT (Technician)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span12 sspn12">3070</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span12 spn12">3070</span></b>
 </div>
 </div>
 <!--<p class="vb12">Chest CT (Technician)</p> end-->
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb13">Breathing Tx (Technician)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span13 sspn13">340</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span13 spn13">340</span></b>
 </div>
 </div>
 <!--<p class="vb8">Breathing Tx (Technician) </p> end-->
 <!--<p class="vb14">IV steroid (Nurse)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb14">IV steroid (Nurse)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span14 sspn14">427</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span14 spn14">427</span></b>
 </div>
 </div>
 <!--<p class="vb14">IV steroid (Nurse)</p> end-->
 <!--Discharge and education (Nurse) start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p class="vb15">Discharge and education(Nurse)</p>
 </div>
-<div class="col-md-4">
-<b style="display:flex;">$<span class="span15 sspn15">0</span></b>
+<div class="col-md-3">
+<b style="display:flex;">$<span class="span15 spn15" >358</span></b>
 </div>
 </div>
 <!--Discharge and education (Nurse) end-->
 </div>
-<p class="bbc" style="padding:25px 5px;margin:5px;">All charges from chargemaster<br/>
+<p class="bbc" style="padding:25px 5px;margin:18px 5px 18px 5px;">All charges from chargemaster<br/>
 <span style="display:flex;margin-top:20px;">
-<span class="text-uppercase" style="display:block;">Total</span> <span class="total1" style="margin-left:53%;">$9900</span>
+<span class="text-uppercase" style="display:block;">Total</span> <span class="total1" style="margin-left:68%;">$9900</span>
 </span>
 </p>
-<p class="bbc showainc" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px;display:none;">Show Insurance Rates (A)</p>
-<p class="bbc showbinc" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px;display:none;">Show Insurance Rates (B)</p>
-<p class="bbc text-uppercase calc1" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px;">Calculate</p>
-</div>
+<p class="bbc showainc" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px 5px 18px 5px;display:none;">Show Insurance Rates (A)</p>
+<p class="bbc showbinc" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px 5px 18px 5px;display:none;">Show Insurance Rates (B)</p>
 
+<div class="col-sm-12 text-center">
+ <p class="btn text-uppercase calc1" style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; margin-bottom:10px;background-color:white;">
+Calculate
+ </p>
+ <br/> <br/>
+  <p class="showallspan btn" style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; margin-bottom: 40px;background-color:white;min-width:220px;">
+ Quick add all costs
+ </p>
+ </div>
+</div>
 <div class="col-md-4 col-sm-12 col-xs-12" id="insurance">
 <div style="position:absolute;top:92%;left: -7px;font-size:20px;cursor:pointer;" id="clcarrow">
 	&lt;
 </div>
-<p class="bbc spantmp" style="padding:36px 0;text-align:center;margin:5px;">Commercial Insurance __ (30% Negotiated Rate)</p>
-<p class="bbc spana" style="padding:36px 0;text-align:center;margin:5px;">Commercial Insurance A (30% Negotiated Rate)</p>
-<p class="bbc spanb" style="padding:36px 0;text-align:center;margin:5px;">Commercial Insurance B (30% Negotiated Rate)</p>
+<p class="bbc spantmp ComminsAB" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance __ (30% Negotiated Rate)</p>
+<p class="bbc spana ComminsAB" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance A (30% Negotiated Rate)</p>
+<p class="bbc spanb ComminsAB" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance B (30% Negotiated Rate)</p>
 <div class="bbc marginpading mympd1">
 <!--Evaluation md start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>Evaluation (MD)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$105</span>
 <span class="spanb">$175</span>
 </div>
@@ -550,10 +554,10 @@ oral steroids.
 
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>Breathing Tx (Nurse)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$102</span>
 <span class="spanb">$170</span>
 </div>
@@ -563,10 +567,10 @@ oral steroids.
 
 <!--<p class="vb11">EKG (Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>EKG (Technician)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$165</span>
 <span class="spanb">$275</span>
 </div>
@@ -575,10 +579,10 @@ oral steroids.
 
 <!--<p class="vb3">UCC Coordinates (MD)</p>.$ start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>UCC Coordinates (MD)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$112.8</span>
 <span class="spanb">$188</span>
 </div>
@@ -587,10 +591,10 @@ oral steroids.
 
 <!--<p class="vb5">Ambulance drives to ER</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>Ambulance drives to ER</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$298.5</span>
 <span class="spanb">$497.5</span>
 </div>
@@ -599,10 +603,10 @@ oral steroids.
 
 <!--<p class="vb6">Assigned room (Nurse)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p >Assigned room (Nurse)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$239.7</span>
 <span class="spanb">$399.5</span>
 </div>
@@ -611,10 +615,10 @@ oral steroids.
 
 <!--<p class="vb7">Evaluation (ER MD) </p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>Evaluation (ER MD) </p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$168.97</span>
 <span class="spanb">$281.62</span>
 </div>
@@ -623,10 +627,10 @@ oral steroids.
 
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>Breathing Tx (Technician) </p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$102</span>
 <span class="spanb">$170</span>
 </div>
@@ -636,10 +640,10 @@ oral steroids.
 
 <!--<p class="vb8">X-ray (Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>X-ray (Technician)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$130.5</span>
 <span class="spanb">$217.5</span>
 </div>
@@ -649,10 +653,10 @@ oral steroids.
 
 <!--<p class="vb10">Blood for labs (Nurse and Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>Blood for labs (Nurse and Technician)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$123</span>
 <span class="spanb">$205</span>
 </div>
@@ -662,10 +666,10 @@ oral steroids.
 
 <!--<p class="vb11">EKG (Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>EKG (Technician)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$165</span>
 <span class="spanb">$275</span>
 </div>
@@ -676,10 +680,10 @@ oral steroids.
 
 <!--<p class="vb12">Chest CT (Technician)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>Chest CT (Technician)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$921</span>
 <span class="spanb">$1535</span>
 </div>
@@ -689,10 +693,10 @@ oral steroids.
 
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>Breathing Tx (Technician) </p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$102</span>
 <span class="spanb">$170</span>
 </div>
@@ -702,10 +706,10 @@ oral steroids.
 
 <!--<p class="vb14">IV steroid (Nurse)</p> start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>IV steroid (Nurse)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$128.1</span>
 <span class="spanb">$213.5</span>
 </div>
@@ -716,10 +720,10 @@ oral steroids.
 <!--Discharge and education
 (Nurse) start-->
 <div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7">
+<div class="col-md-8 col-sm-8 col-xs-8">
 <p>Discharge and education(Nurse)</p>
 </div>
-<div class="col-md-4">
+<div class="col-md-3">
 <span class="spana">$107.4</span>
 <span class="spanb">$179</span>
 </div>
@@ -729,280 +733,421 @@ oral steroids.
 
 </div>
 
-<p class="bbc" style="padding:25px 5px;margin:5px;">All charges from chargemaster<br/>
+<p class="bbc" style="padding:25px 5px;margin:18px 5px 18px 5px;">All charges from chargemaster<br/>
 <span style="margin-top:20px;display:flex;">
-<span class="text-uppercase" style="display:block;">Total</span>  <span class="spana" style="margin-left: 65%;">$3000</span>
-<span class="spanb" style="margin-left: 65%;">$5000</span>
+<span class="text-uppercase" style="display:block;">Total</span>  <span class="spana" style="margin-left: 68%;">$3000</span>
+<span class="spanb" style="margin-left: 68%;">$5000</span>
  </span>
 </p>
 </div>
 
-<div class="col-md-4 col-sm-12 col-xs-12" id="calcthird">
-
-<div class="row">
-<div class="col-md-7 col-sm-7 col-xs-7 rbc" style="padding: 25px 0;
-    text-align: center;
-    margin-left:4.5%;
-    margin-top: 5px;
-    width: 65%;">
-TDABC<br/>
-(Estimated actual cost to the hospital)
 </div>
-
-<div class="col-md-1 col-sm-1 col-xs-1 rbc" style="padding: 15px 0;
-    text-align: center;
-    margin-left: 9%;
-    margin-top: 5px;
-	width:17%;
-	min-height:90px!important;
-	">
-	See Cost Break Down
-</div>
-</div>
-<div class="rbc marginpading mympd1">
-<!--Evaluation md start-->
-<div class="row" id="countheight1">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb1">Evaluation (MD)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span1 spn1">45.40</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal1" id="eye1"></i>
-</div>
-</div>
-<!--Evaluation md end-->
-
-<!--<p class="vb8">Breathing Tx (Technician) </p> start-->
-<div class="row" id="countheight2">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb2">Breathing Tx (Nurse)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span2 spn2">28.04</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal2" id="eye2"></i>
-</div>
-</div>
-<!--<p class="vb8">Breathing Tx (Technician) </p> end-->
-
-
-<!--<p class="vb11">EKG (Technician)</p> start-->
-<div class="row" id="countheight3">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb3">EKG (Technician)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span3 spn3">65.75</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3" id="eye3"></i>
-</div>
-</div>
-<!--B<p class="vb11">EKG (Technician)</p> end-->
-
-<!--<p class="vb3">UCC Coordinates (MD)</p>.$ start-->
-<div class="row" id="countheight4">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb4">UCC Coordinates (MD)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span4 spn4">24.80</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal4" id="eye4"></i>
-</div>
-</div>
-<!--<p class="vb3">UCC Coordinates (MD)</p>.$ end-->
-
-<!--<p class="vb5">Ambulance drives to ER</p> start-->
-<div class="row" id="countheight5">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb5">Ambulance drives to ER</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span5 spn5">34.69</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal5" id="eye5"></i>
-</div>
-</div>
-<!--<p class="vb5">Ambulance drives to ER</p> end-->
-
-<!--<p class="vb6">Assigned room (Nurse)</p> start-->
-<div class="row" id="countheight6">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb6">Assigned room (Nurse)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span6 spn6">13.68</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal6" id="eye6"></i>
-</div>
-</div>
-<!--<p class="vb6">Assigned room (Nurse)</p> end-->
-
-<!--<p class="vb7">Evaluation (ER MD) </p> start-->
-<div class="row" id="countheight7">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb7">Evaluation (ER MD) </p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span7 spn7">65.87</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal7" id="eye7"></i>
-</div>
-</div>
-<!--<p class="vb7">Evaluation (ER MD) </p> end-->
-
-<!--<p class="vb8">Breathing Tx (Technician) </p> start-->
-<div class="row" id="countheight8">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb8">Breathing Tx (Technician) </p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span8 spn8">29.47</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal8" id="eye8"></i>
-</div>
-</div>
-<!--<p class="vb8">Breathing Tx (Technician) </p> end-->
-
-
-<!--<p class="vb8">X-ray (Technician)</p> start-->
-<div class="row" id="countheight9">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb9">X-ray (Technician)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span9 spn9">17.84</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal9" id="eye9"></i>
-</div>
-</div>
-<!--<p class="vb8">X-ray (Technician)</p> end-->
-
-
-<!--<p class="vb10">Blood for labs (Nurse and Technician)</p> start-->
-<div class="row" id="countheight10">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb10">Blood for labs (Nurse and Technician)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span10 spn10">136.27</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal10" id="eye10"></i>
-</div>
-</div>
-<!--<p class="vb10">Blood for labs (Nurse and Technician)</p> end-->
-
-
-<!--<p class="vb11">EKG (Technician)</p> start-->
-<div class="row" id="countheight11">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb11">EKG (Technician)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span11 spn11">65.75</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3" id="eye11"></i>
-</div>
-</div>
-<!--<p class="vb11">EKG (Technician)</p> end-->
 
 
 
-<!--<p class="vb12">Chest CT (Technician)</p> start-->
-<div class="row" id="countheight12">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb12">Chest CT (Technician)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span12 spn12">301.12</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal12" id="eye12"></i>
-</div>
-</div>
-<!--<p class="vb12">Chest CT (Technician)</p> end-->
-
-
-<!--<p class="vb8">Breathing Tx (Technician) </p> start-->
-<div class="row" id="countheight13">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb13">Breathing Tx (Technician) </p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span13 spn13">27.82</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal13" id="eye13"></i>
-</div>
-</div>
-<!--<p class="vb8">Breathing Tx (Technician) </p> end-->
-
-
-<!--<p class="vb14">IV steroid (Nurse)</p> start-->
-<div class="row" id="countheight14">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb14">IV steroid (Nurse)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span14 spn14">53.41</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal14" id="eye14"></i>
-</div>
-</div>
-<!--<p class="vb14">IV steroid (Nurse)</p> end-->
-
-
-<!--Discharge and education
-(Nurse) start-->
-<div class="row" id="countheight15">
-<div class="col-md-6 col-sm-6 col-xs-6">
-<p class="vb15">Discharge and education(Nurse)</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-3">
-<b style="display:flex;">$<span class="span15 spn15">21.45</span></b>
-</div>
-<div class="col-md-1 col-sm-1 col-xs-1">
-<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal15" id="eye15"></i>
-</div>
-</div>
-<!--Discharge and education
-(Nurse) end-->
-
-</div>
-
-<p class="rbc" style="padding:25px 5px;margin:5px;">All charges from chargemaster
-<span style="display:flex;margin-top:20px;">
-<span class="text-uppercase" style="display:block;">Total</span> <span class="total3" style="margin-left:53%;">$930</span>
-</span>
- </p>
-<p class="rbc calc2 text-uppercase" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px;">Compare to Chargemaster</p>
 </div>
 </div>
 
- <div class="col-md-12" style="margin-top:20px;">
- <div class="col-md-7" id="buttoncalc"></div>
- <button class="showallspan btn btn-default" style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; margin-bottom: 40px;">
- Quick add all costs
+
+<div class="col-md-12" style="background-color:whitesmoke;padding:30px;text-align:center; margin-bottom: 50px">
+<p>
+Now take a look at using TDABC to calculate the likely <b>actual cost</b> to the hospital for providing these services.
+Select the eye icons under ‘See Cost Breakdown’ to see how costs have been calculated.
+</p>
+</div class="Clearfix"></div>
+ <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3" id="clcthird">   
+                                                                        
+ <table class="table" id="clcthird1">
+
+      <tr>
+        <td class="text-center rbc bordernone" colspan="3" style="padding:25px 0px;">TDABC<br/>
+		(Estimated actual cost to the hospital)
+		</td>
+		<td class="bordernone">
+		</td>
+        <td class="rbc text-center bordernone customeye1" style="padding:35px 0px;">See Cost Breakdown</td>
+		<td class="customeye"></td>
+     </tr>
+
+	
+	<tr>
+	<td class="bordernone" colspan="5"></td>
+	</tr>
+      <tr>
+        <td class="rbc bordershow" colspan="2">Evaluation (MD)</td>
+        <td class="rbc bordershow">$45.40</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal1"></i>
+		</td>
+      </tr>
+	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal1" ></i>
+	  </td>
+	  </tr>
+      <tr>
+        <td class="rbc bordershow" colspan="2">Breathing Tx (Nurse)</td>
+        <td class="rbc bordershow">$28.04</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal2"></i>
+		</td>
+      </tr> 
+	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal2" ></i>
+	  </td>
+	  </tr>
+      <tr>
+        <td class="rbc bordershow" colspan="2">EKG (Technician)</td>
+        <td class="rbc bordershow">$65.75</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i>
+		</td>
+      </tr> 
+	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i>
+	  </td>
+	  </tr>	  
+
+      <tr>
+        <td class="rbc bordershow" colspan="2">UCC Coordinates (MD) </td>
+        <td class="rbc bordershow">$24.80</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal4"></i>
+		</td>
+      </tr> 
+	  	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal4"></i>
+	  </td>
+	  </tr>
+
+      <tr>
+        <td class="rbc bordershow" colspan="2">Ambulance drives to ER</td>
+        <td class="rbc bordershow">$34.69</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal5"></i>
+		</td>
+      </tr> 
+	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal5"></i>
+	  </td>
+	  </tr>
+
+      <tr>
+        <td class="rbc bordershow" colspan="2">Assigned room (Nurse)</td>
+        <td class="rbc bordershow">$13.68</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal6" ></i>
+		</td>
+      </tr>
+	  	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal6"></i>
+	  </td>
+	  </tr>
+
+      <tr>
+        <td class="rbc bordershow" colspan="2">Evaluation (ER MD)</td>
+        <td class="rbc bordershow">$65.87</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal7"></i>
+		</td>
+      </tr> 
+	  	  	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal7"></i>
+	  </td>
+	  </tr>
+
+      <tr>
+        <td class="rbc bordershow" colspan="2">Breathing Tx (Nurse)</td>
+        <td class="rbc bordershow">$29.47</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal8" ></i>
+		</td>
+      </tr> 
+	   <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal8"></i>
+	  </td>
+	  </tr>
+
+      <tr>
+        <td class="rbc bordershow" colspan="2">X-ray (Technician)</td>
+        <td class="rbc bordershow">$17.84</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal9"></i>
+		</td>
+      </tr> 
+	  	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal9"></i>
+	  </td>
+	  </tr>
+
+
+      <tr>
+        <td class="rbc bordershow" colspan="2">Blood for labs (Nurse and Technician)</td>
+        <td class="rbc bordershow">$136.27</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal10"></i>
+		</td>
+      </tr> 
+	 <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal10"></i>
+	  </td>
+	  </tr>
+  
+       <tr>
+        <td class="rbc bordershow" colspan="2">EKG (Technician)</td>
+        <td class="rbc bordershow">$65.75</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i>
+		</td>
+      </tr>
+	  	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i>
+	  </td>
+	  </tr>	  
+
+      <tr>
+        <td class="rbc bordershow" colspan="2">Chest CT (Technician)</td>
+        <td class="rbc bordershow">$301.12</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal12"></i>
+		</td>
+      </tr>  
+	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal12"></i>
+	  </td>
+	  </tr>
+      
+	  <tr>
+        <td class="rbc bordershow" colspan="2">Breathing Tx (Nurse)</td>
+        <td class="rbc bordershow">$27.82</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal13"></i>
+		</td>
+      </tr>
+	    <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal13"></i>
+	  </td>
+	  </tr>
+
+	  <tr>
+        <td class="rbc bordershow" colspan="2">IV steroid (Nurse)</td>
+        <td class="rbc bordershow">$53.41</td>
+		<td class="bordernone"></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal14"></i>
+		</td>
+      </tr> 
+	  	  	  <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal14"></i>
+	  </td>
+	  </tr>
+
+	  <tr>
+        <td class="rbc bordershow" colspan="2">Discharge and education(Nurse)</td>
+        <td class="rbc bordershow">$21.45</td>
+		<td></td>
+		<td class="bordernone text-center customeye1">
+		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal15"></i>
+		</td>
+      </tr>
+	   <tr class="customeye">
+	  <td>
+	  <i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal15"></i>
+	  </td>
+	  </tr>
+	 <tr>
+	<td class="bordernone"></td>
+	</tr>
+      <tr>
+        <td class="rbc bordershow" colspan="3" style="padding:20px 10px;">All charges from chargemaster</td>
+		<td class="bordernone"></td>
+      </tr>
+	  <tr>
+        <td class="rbc bordershow" colspan="2" style="padding:0px 5px 20px 5px;">TOTAL</td>
+		 <td class="rbc bordershow" style="padding:0px 5px 20px 5px;">$930</td>
+		<td class="bordernone"></td>
+      </tr>
+	    <tr>
+	   <td colspan="3" class="bordernone">
+	   </td>
+       </tr>
+       <tr>
+	   <td colspan="3" class="text-center" id="comparetocm">
+	    <button class="btn" style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; margin-bottom: 40px;background-color:white;">
+	   Compare to Chargemaster
  </button>
+	   </td>
+       </tr>	   
+
+  </table>
+  </div>
+<div class="col-md-4 col-sm-12 col-xs-12" id="clcforth" style="display:none;margin-left:10px;">     
+<div style="position:absolute;top:92%;left: -7px;font-size:20px;cursor:pointer;" id="clcarrow2">
+	&lt;
+</div>                                                                            
+ <table class="table">
+
+      <tr>
+        <th class="text-center bbc" colspan="3" style="padding:35px 0px;">
+		Chargemaster
+	    </th>
+     </tr>
+	<tr>
+	<td colspan="5" class="bordernone"></td>
+	</tr>
+      <tr>
+        <td class="bbc bordershow1" colspan="2">Evaluation (MD)</td>
+        <td class="bbc bordershow1">$350</td>
+      </tr>
+      <tr>
+        <td class="bbc bordershow1" colspan="2">Breathing Tx (Nurse)</td>
+        <td class="bbc bordershow1">$340.00</td>
+      </tr> 
+      <tr>
+        <td class="bbc bordershow1" colspan="2">EKG (Technician)</td>
+       <td class="bbc bordershow1">$550.00</td>
+      </tr>  
+
+      <tr>
+        <td class="bbc bordershow1" colspan="2">UCC Coordinates (MD) </td>
+        <td class="bbc bordershow1">$376.00</td>
+      </tr> 
+
+      <tr>
+        <td class="bbc bordershow1" colspan="2">Ambulance drives to ER</td>
+        <td class="bbc bordershow1">$995</td>
+      </tr> 
+
+      <tr>
+        <td class="bbc bordershow1" colspan="2">Assigned room (Nurse)</td>
+        <td class="bbc bordershow1">$799</td>
+      </tr>
+
+      <tr>
+        <td class="bbc bordershow1" colspan="2">Evaluation (ER MD)</td>
+        <td class="bbc bordershow1">$536.24</td>
+      </tr> 
+
+      <tr>
+        <td class="bbc bordershow1" colspan="2">Breathing Tx (Nurse)</td>
+        <td class="bbc bordershow1">$340.00</td>
+      </tr> 
+
+      <tr>
+        <td class="bbc bordershow1" colspan="2">X-ray (Technician)</td>
+        <td class="bbc bordershow1">$435</td>
+      </tr> 
+
+
+      <tr>
+        <td class="bbc bordershow1" colspan="2">Blood for labs (Nurse and Technician)</td>
+        <td class="bbc bordershow1">$410.00</td>
+      </tr> 
+  
+       <tr>
+        <td class="bbc bordershow1" colspan="2">EKG (Technician)</td>
+        <td class="bbc bordershow1">$550</td>
+      </tr> 
+
+      <tr>
+        <td class="bbc bordershow1" colspan="2">Chest CT (Technician)</td>
+        <td class="bbc bordershow1">$3070</td>
+      </tr>  
+      
+	  <tr>
+        <td class="bbc bordershow1" colspan="2">Breathing Tx (Nurse)</td>
+        <td class="bbc bordershow1">$340</td>
+      </tr>
+
+	  <tr>
+        <td class="bbc bordershow1" colspan="2">IV steroid (Nurse)</td>
+        <td class="bbc bordershow1">$427</td>
+      </tr> 
+
+	  <tr>
+        <td class="bbc bordershow1" colspan="2">Discharge and education(Nurse)</td>
+        <td class="bbc bordershow1">$358</td>
+      </tr>
+	 <tr>
+	<td class="bordernone" colspan="3"></td>
+	</tr>
+      <tr>
+        <td class="bbc bordershow1" colspan="3" style="padding:20px 10px;">All charges from chargemaster</td>
+		<td class="bordernone"></td>
+      </tr>
+	  <tr>
+        <td class="bbc bordershow1" colspan="2" style="padding:0px 5px 20px 5px;">TOTAL</td>
+		 <td class="bbc bordershow1" style="padding:0px 5px 20px 5px;">$9876.24</td>
+		<td class="bordernone"></td>
+      </tr>  
+
+  </table>
+  </div>
+
+
+  <div class="col-md-12" style="background-color:whitesmoke;padding:30px;">
+ <p>
+  In our current system, insurance companies attempt to negotiate the hospital’s charges lower. In response, hospital
+administrators raise chargemaster prices to keep profit margins high. As a result, chargemaster prices are hugely inflated,
+seemingly arbitrary numbers that have very little to do with the true costs of care. In a system that bases hospital
+reimbursement and patient costing mechanisms on TDABC-derived calculations or similar, it is likely insurance companies
+would negotiate for percentages above the costing total, as hospitals and providers need a margin in order to run.
+However, these negotiations would be derived from a realistic and non-arbitrary starting point.
+  </p>
+  <p>
+  The below table shows the difference between these costing mechanisms for Ms. Chen’s asthma exacerbation episode.
+  </p>
+  
+ <div class="col-md-12" style="margin-top:30px;"> 
+  <div class="col-md-6  col-md-offset-3" id="incsurenceab1"> 
+
+<table class="table table-bordered" id="incsurenceab">
+      <tr>
+        <th style="padding:30px;" class="text-center" colspan="4">Insurance Company A</th>
+        <th style="padding:30px;" class="text-center" colspan="4">Insurance Company B</th>
+      </tr>
+      <tr>
+        <td colspan="3">Chargemaster - 30%</td>
+        <td>$2970</td>
+		 <td colspan="3">Chargemaster - 50%</td>
+        <td>$4950</td>
+      </tr>
+      <tr>
+        <td colspan="3">TDABC + 30%</td>
+        <td>$1211</td>
+		 <td colspan="3">TDABC + 50%</td>
+        <td>$1397</td>
+      </tr>
+  </table>
  </div>
-
-</div>
-</div>
-
-</div>
+ </div>
+ </div>
 
 
 <div class="Step1 container m3s7b2">
@@ -1010,7 +1155,7 @@ TDABC<br/>
               <div class="col-sm-12">
                 <f><h3 class="text-uppercase text-center">Let's check our understanding</h3></f>
                                <br>
-                 <f><p>Below are questions that will check your understanding of reimbursement mechanisms. If you need a refresher on the terms relating to these mechanisms, refer to Section 4, The Costs of Care: Different Approaches. These questions will help you apply and synthesize the information presented here and over the course of this module. </p></f>
+                 <f><p>Below are questions that will check your understanding of reimbursement mechanisms. If you need a refresher on the terms relating to these mechanisms, refer to<a href="?id=m3/m3s4p1" style=" text-decoration: none;font-weight:bold;color:black;" target="_blank"> Section 4, The Costs of Care: Different Approaches.</a> These questions will help you apply and synthesize the information presented here and over the course of this module. </p></f>
                </div>
          </div>
 </div> 
@@ -1281,7 +1426,7 @@ TDABC<br/>
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12 " >
                                     <f><h3>Correct!</h3></f>
-                                    <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> --></div></center>
+                                    <!---<center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> </div></center>-->
                                 </div>
                             </div>
                             </div>
@@ -1315,7 +1460,9 @@ TDABC<br/>
             <div class="response1">
                <div class="carouselC1">
                   <br>                 
-                  <f><p>Do you have a story about how you or someone you know has been affected by confusing or unreasonable medical costs? Please briefly share your experience in 100 words or less, remembering to protect the privacy of information pertaining to others.</p></f> 
+                  <f><p>
+				  There is a ten-fold difference between the likely TDABC amount and the chargemaster for Ms. Chen's asthma exacerbation episode. Reflect on the reasons for this difference as well as the proposed charging models. Does TDABC solve the problem? Where does it not?
+				  </p></f> 
                   <f><p>Scroll through user responses.</p></f>
                   <div class="well">
                   <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -1334,13 +1481,13 @@ TDABC<br/>
                   </div>
                </div>
                
-               <div class="act1" style="margin-top:50px;">
+               <div class="act1">
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
                            <f><h2>Your Perspective</h2></f>
                            <div class="line4"></div>
-                           <f><p>Do you have a story about how you or someone you know has been affected by confusing or unreasonable medical costs? Please briefly share your experience in 100 words or less, remembering to protect the privacy of information pertaining to others.</p></f>
+                           <f><p>There is a ten-fold difference between the likely TDABC amount and the chargemaster for Ms. Chen's asthma exacerbation episode. Reflect on the reasons for this difference as well as the proposed charging models. Does TDABC solve the problem? Where does it not?</p></f>
                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
                            <div class="line4"></div>
                            
@@ -1373,24 +1520,7 @@ TDABC<br/>
       <br>
    </div>
 
-   
-<!--    <div class="container m3s7b12">
-        <div class="row">              
-          <div class="col-sm-12">
-            <hr>
-            <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
-            <br>        
-          <div id="demo" class="collapse">
-            <ol>
-              <f><li><p>Reinhardt UE. The pricing of U.S. hospital services: chaos behind a veil of secrecy. Health Affairs. 2006;25(1):57-69. doi: <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1377/hlthaff.25.1.57">10.1377/hlthaff.25.1.57</a></p></li></f>
-              <f><li><p>Health Care Cost Institute. Some states pay twice the price for health care, finds new report. April 27, 2016. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://www.healthcostinstitute.org/states-pay-twice-price-health-care-finds-new-report/">http://www.healthcostinstitute.org/states-pay-twice-price-health-care-finds-new-report/</a> Accessed January 3, 2017. </p></li></f>
-              <f><li><p>Dobson A, DaVanzo J, Doherty J, Tanamor M . A study of hospital charge setting practices. The Lewin Group. December 2005; No. 05-4. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://67.59.137.244/documents/Dec05_Charge_setting.pdf">http://67.59.137.244/documents/Dec05_Charge_setting.pdf</a> Accessed March 24, 2017.</p></li></f>              
-            </ol>
-          </div>  
-          </div>        
-   </div>
-  </div>
- -->  
+    
 
 </div>
 
@@ -1427,9 +1557,9 @@ TDABC<br/>
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource /
-    Available capacity of resource 
+    Expanses Attribute to resource / Available capacity of resource 
       </div>
+	  
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
@@ -1472,14 +1602,13 @@ TDABC<br/>
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-            $17,333 (Monthly cost of resource)/
-       112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $17,333 (Monthly cost of resource) / 112 hours (Monthly available hours)
          = $155/hour
   </div>
   
   
-       <div class="col-md-12" style="margin-top:20px;">
+    <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
    Purchase Price
@@ -1508,8 +1637,8 @@ TDABC<br/>
    <div class="col-md-2">
   $500,000
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $1000+
@@ -1525,14 +1654,12 @@ TDABC<br/>
    </div>
       </div>
   
-  <div class="col-md-12" style="margin-top:20px;">
-            $4667 (Monthly cost of resource)/
-        730 hours (Monthly available hours)
-         = $6.40 /hour
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $4667 (Monthly cost of resource) / 730 hours (Monthly available hours)
+         = $6.40/hour
   </div> 
   <br/><br/>
-        
-Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40  
+        Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40  
      </div>
       </div>
     </div>
@@ -1550,8 +1677,7 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource/
-    <span>Available capacity of resource
+    Expanses Attribute to resource / Available capacity of resource
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
@@ -1600,9 +1726,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-          $7,280(Monthly cost of resource)/
-112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+          $7,280(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $65/hour
   </div>
   
@@ -1636,8 +1761,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    <div class="col-md-2">
     $500,000
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $1000+ 
@@ -1654,9 +1779,9 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
       </div>
 
     
-      <div class="col-md-12" style="margin-top:20px;">
-            $4667 (Monthly cost of resource)/730 hours (Monthly available hours)
-         = $6.40 /hour
+      <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $4667 (Monthly cost of resource) / 730 hours (Monthly available hours)
+         = $6.40/hour
        </div> 
   
   <div class="col-md-12" style="margin-top:20px;">
@@ -1685,8 +1810,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    <div class="col-md-2">
     $200
    </div>
-   <div class="col-md-2">
-   1 yr+
+   <div class="col-md-2" style="display:flex;">
+   1yr+
   </div>  
   <div class="col-md-2">
       $40=
@@ -1699,9 +1824,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    </div>
       </div>
     
-  <div class="col-md-12" style="margin-top:20px;">
-            $20 (Monthly cost of resource)/
-       730 hours (Monthly available hours)
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $20 (Monthly cost of resource) / 730 hours (Monthly available hours)
         = $0.03/hour
   </div> 
   <p><br/>Albuterol: 5mg/ml: $4.47</p>
@@ -1709,6 +1833,7 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
      </div>
       </div>
     </div>
+  </div>
   </div>
 <!-- Modal 2 end -->
 
@@ -1723,8 +1848,7 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource/
-    Available capacity of resource 
+    Expanses Attribute to resource / Available capacity of resource 
      </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
@@ -1766,9 +1890,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-             $4,958(Monthly cost of resource)/
-        112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+             $4,958(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $44/hour
   </div>
   
@@ -1802,8 +1925,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    <div class="col-md-2">
     $500,000
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $1000+ 
@@ -1819,10 +1942,9 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    </div>
       </div>
     
-   <div class="col-md-12" style="margin-top:20px;">
-            $4667 (Monthly cost of resource)/
-       730 hours (Monthly available hours)
-         = $6.40 /hour
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $4667 (Monthly cost of resource) / 730 hours (Monthly available hours)
+         = $6.40/hour
   </div> 
 
   <div class="col-md-12" style="margin-top:20px;">
@@ -1851,8 +1973,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    <div class="col-md-2">
     $50,000
    </div>
-   <div class="col-md-1">
-   10 yr+ 
+   <div class="col-md-1" style="display:flex;">
+   10yr+ 
   </div>  
   <div class="col-md-2">
       $200=
@@ -1865,13 +1987,12 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    </div>
       </div>
     
-  <div class="col-md-12" style="margin-top:20px;">
-            $433 (Monthly cost of resource)/
-        730 hours (Monthly available hours)
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $433 (Monthly cost of resource) / 730 hours (Monthly available hours)
         = $0.60/hour
   </div> 
-  <p><br/>>Electrodes (10): $5.30 each</p>
-<p> Total ($44 * 0.25) + ($6.40 * .25) + ($0.60 * .25) + ($5.30 *10) = $65.75 </p>
+  <p><br/>Electrodes (10): $5.30 each</p>
+<p> Total ($44 * 0.25) + ($6.40 * .25) + ($0.60 * .25) + ($5.30 * 10) = $65.75 </p>
      </div>
       </div>
     </div>
@@ -1890,8 +2011,7 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource/
- Available capacity of resource  
+    Expanses Attribute to resource / Available capacity of resource  
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
@@ -1933,9 +2053,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-             $28309(Monthly cost of resource)/
-        112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+             $28309(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $155/hour
   </div>
 <p> Total ($155 * 0.16) = $25 </p>
@@ -1958,8 +2077,7 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource
-   Available capacity of resource
+    Expanses Attribute to resource / Available capacity of resource
   </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
@@ -2001,9 +2119,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-             $2,542(Monthly cost of resource)/
-       112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+             $2,542(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $22.70/hour
 
   </div>
@@ -2049,9 +2166,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-             $3,167(Monthly cost of resource)/
-                 112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+             $3,167(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $28.27/hour
   </div>
   
@@ -2083,8 +2199,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    <div class="col-md-2">
    $125,000
    </div>
-   <div class="col-md-1">
-   4 yr+ 
+   <div class="col-md-1" style="display:flex;">
+   4yr+ 
   </div>  
   <div class="col-md-2">
       $24,000=
@@ -2097,9 +2213,8 @@ Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40
    </div>
     </div>
     
-   <div class="col-md-12" style="margin-top:20px;">
-            $4,604 (Monthly cost of resource)/
-                730 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $4,604 (Monthly cost of resource) / 730 hours (Monthly available hours)
          = $6.30/hour
   </div> 
 
@@ -2125,9 +2240,7 @@ $34.69 </p>
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-
-    Expanses Attribute to resource
-   Available capacity of resource
+    Expanses Attribute to resource / Available capacity of resource
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
@@ -2172,9 +2285,8 @@ $34.69 </p>
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-             $7,280(Monthly cost of resource)/
-            112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+             $7,280(Monthly cost of resource) / 112 hours (Monthly available hours)
         = $44/hour
   </div>
   
@@ -2209,8 +2321,8 @@ $34.69 </p>
    <div class="col-md-2">
   $850,000
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $2000+ 
@@ -2227,8 +2339,7 @@ $34.69 </p>
       </div>
   
   <div class="col-md-12" style="margin-top:20px;">
-            $7,833 (Monthly cost of resource)/
-        730 hours (Monthly available hours)
+            $7,833 (Monthly cost of resource) / 730 hours (Monthly available hours)
 
          = $10.73/hour
   </div> 
@@ -2251,8 +2362,7 @@ Total ($44 * 0.25) + ($10.73 * .25) = $13.68
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource/
-      Available capacity of resource
+    Expanses Attribute to resource / Available capacity of resource
       </div>
      <div class="col-md-12">
     <div class="col-md-3"></div>
@@ -2296,9 +2406,8 @@ Total ($44 * 0.25) + ($10.73 * .25) = $13.68
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-        $28309 (Monthly cost of resource)/
-      112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+        $28309 (Monthly cost of resource) / 112 hours (Monthly available hours)
          = $252.76/hour
   </div>
   
@@ -2332,8 +2441,8 @@ Total ($44 * 0.25) + ($10.73 * .25) = $13.68
    <div class="col-md-2">
   $850,000 
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $2000+ 
@@ -2350,11 +2459,9 @@ Total ($44 * 0.25) + ($10.73 * .25) = $13.68
       </div>
   
   <div class="col-md-12" style="margin-top:20px;">
-        $7,833 (Monthly cost of resource)/
-     730 hours (Monthly available hours)
+        $7,833 (Monthly cost of resource) / 730 hours (Monthly available hours)
          = $10.73/hour
-  </div> 
-        
+  </div>        
 Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87 
      </div>
       </div>
@@ -2373,8 +2480,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource
-   Available capacity of resource
+    Expanses Attribute to resource / Available capacity of resource
     </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
@@ -2423,8 +2529,8 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-            $7,280(Monthly cost of resource)/112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $7,280(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $65/hour
   </div>
   
@@ -2458,8 +2564,8 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
    <div class="col-md-2">
   $850,000 
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $2000+ 
@@ -2475,9 +2581,8 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
    </div>
       </div>
   
-  <div class="col-md-12" style="margin-top:20px;">
-            $7,833 (Monthly cost of resource)/
-          730 hours (Monthly available hours)
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $7,833 (Monthly cost of resource) / 730 hours (Monthly available hours)
          = $10.73/hour
   </div>   
 
@@ -2508,8 +2613,8 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
    <div class="col-md-2">
     $200
    </div>
-   <div class="col-md-2">
-   1 yr+  
+   <div class="col-md-2" style="display:flex;">
+   1yr+  
   </div>  
   <div class="col-md-2">
       $40= 
@@ -2522,9 +2627,8 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
    </div>
       </div>
     
-  <div class="col-md-12" style="margin-top:20px;">
-            $20 (Monthly cost of resource)/
-        730 hours (Monthly available hours)
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $20 (Monthly cost of resource) / 730 hours (Monthly available hours)
         = $0.03/hour
   </div> 
   <p>Albuterol: 5mg/ml: $4.47</p>
@@ -2546,8 +2650,7 @@ Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource/
-Available capacity of resource 
+Expanses Attribute to resource / Available capacity of resource 
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
@@ -2589,9 +2692,8 @@ Available capacity of resource
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-          $4,958(Monthly cost of resource)/
-       112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+          $4,958(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $44/hour
      </div>
 
@@ -2627,8 +2729,8 @@ Available capacity of resource
    <div class="col-md-2">
    $1,00,000
    </div>
-   <div class="col-md-1">
-  20 yr+ 
+   <div class="col-md-1" style="display:flex;">
+  20yr+ 
   </div>  
   <div class="col-md-2">
      $7,000+
@@ -2644,9 +2746,8 @@ Available capacity of resource
    </div>
     </div>
     
-   <div class="col-md-12" style="margin-top:20px;">
-       $6,000 (Monthly cost of resource)/
-     730 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+       $6,000 (Monthly cost of resource) / 730 hours (Monthly available hours)
          = $8.22/hour
   </div> 
 
@@ -2678,7 +2779,7 @@ Available capacity of resource
    $130,000
    </div>
    <div class="col-md-1">
-  10 yr+
+  10yr+
   </div>  
   <div class="col-md-2">
      $3,000=
@@ -2691,14 +2792,11 @@ Available capacity of resource
    </div>
     </div>
     
-   <div class="col-md-12" style="margin-top:20px;">
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
 
-            $1,333(Monthly cost of resource)/
-       730 hours (Monthly available hours)
+            $1,333(Monthly cost of resource) / 730 hours (Monthly available hours)
          = $1.83/hour
   </div> 
-
-    
 
 <p>Total ($44 * 0.33) + ($8.22 * .33) + ($1.83 * .33) = $17.84 </p>
      </div>
@@ -2718,8 +2816,7 @@ Available capacity of resource
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource
-    Available capacity of resource
+    Expanses Attribute to resource / Available capacity of resource
     </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
@@ -2767,9 +2864,8 @@ Available capacity of resource
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-          $7,280(Monthly cost of resource)/
-        112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+          $7,280(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $65/hour
      </div>
 
@@ -2819,9 +2915,8 @@ Available capacity of resource
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-             $4,725(Monthly cost of resource)/
-        112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+             $4,725(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $42/hour
   </div>
 
@@ -2866,9 +2961,8 @@ Available capacity of resource
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-             $22,250(Monthly cost of resource)/
-        112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+             $22,250(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $199/hour
 
   </div>
@@ -2902,8 +2996,8 @@ Available capacity of resource
    <div class="col-md-2">
   $850,000
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $2000+ 
@@ -2919,9 +3013,8 @@ Available capacity of resource
    </div>
   </div>
   
-  <div class="col-md-12" style="margin-top:20px;">
-            $7,833 (Monthly cost of resource)/
-       730 hours (Monthly available hours)
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $7,833 (Monthly cost of resource) / 730 hours (Monthly available hours)
          = $10.73/hour
   </div> 
 
@@ -2956,7 +3049,7 @@ Available capacity of resource
    $1,000,000
    </div>
    <div class="col-md-2">
-  10 yr+
+  10yr+
   </div>  
   <div class="col-md-2">
      $3,000+
@@ -2972,9 +3065,8 @@ Available capacity of resource
    </div>
     </div>
     
-   <div class="col-md-12" style="margin-top:20px;">
-            $9,833(Monthly cost of resource)/
-     730 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $9,833(Monthly cost of resource) / 730 hours (Monthly available hours)
          = $13.48/hour
      </div>
 <p>Vials: $0.35 each</p>
@@ -2999,8 +3091,7 @@ Available capacity of resource
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource/
-    Available capacity of resource
+    Expanses Attribute to resource / Available capacity of resource
     </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
@@ -3048,9 +3139,8 @@ Available capacity of resource
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-             $4,958(Monthly cost of resource)/
-      112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+             $4,958(Monthly cost of resource) / 112 hours (Monthly available hours)
         = $43/hour
   </div>
   
@@ -3095,9 +3185,8 @@ Available capacity of resource
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-           $30,583(Monthly cost of resource)/
-        112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+           $30,583(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $273/hour
   </div>
   
@@ -3134,8 +3223,8 @@ Available capacity of resource
    <div class="col-md-2">
     $900,000
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $2000+ 
@@ -3151,9 +3240,8 @@ Available capacity of resource
    </div>
       </div>
     
-   <div class="col-md-12" style="margin-top:20px;">
-            $8500 (Monthly cost of resource)/
-        730 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $8500 (Monthly cost of resource) / 730 hours (Monthly available hours)
          = $11.64/hour
   </div> 
 
@@ -3183,8 +3271,8 @@ Available capacity of resource
    <div class="col-md-2">
     $100,000
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $4000= 
@@ -3197,9 +3285,8 @@ Available capacity of resource
    </div>
       </div>
     
-  <div class="col-md-12" style="margin-top:20px;">
-            $1,167 (Monthly cost of resource)/
-       730 hours (Monthly available hours)
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $1,167 (Monthly cost of resource) / 730 hours (Monthly available hours)
         = $1.60/hour
   </div> 
 <p> Total ($43 * 0.5) + ($273 * 1) + ($11.64 * 0.5) + ($1.60 * .5) = $301.12 </p>
@@ -3269,9 +3356,8 @@ Available capacity of resource
    </div>
     </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-            $6,725(Monthly cost of resource)/
-        112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $6,725(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $60/hour
   </div>
   
@@ -3305,8 +3391,8 @@ Available capacity of resource
    <div class="col-md-2">
   $850,000 
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $2000 
@@ -3322,9 +3408,8 @@ Available capacity of resource
    </div>
       </div>
   
-  <div class="col-md-12" style="margin-top:20px;">
-          $7,833 (Monthly cost of resource)/
-       730 hours (Monthly available hours)
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+          $7,833 (Monthly cost of resource) / 730 hours (Monthly available hours)
          = $10.73/hour
   </div>   
 
@@ -3355,8 +3440,8 @@ Available capacity of resource
    <div class="col-md-2">
     $200
    </div>
-   <div class="col-md-2">
-   1 yr+  
+   <div class="col-md-2" style="display:flex;">
+   1yr+  
   </div>  
   <div class="col-md-2">
       $40= 
@@ -3369,9 +3454,8 @@ Available capacity of resource
    </div>
       </div>
     
-  <div class="col-md-12" style="margin-top:20px;">
-          $20 (Monthly cost of resource)/
-       730 hours (Monthly available hours)
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+          $20 (Monthly cost of resource) / 730 hours (Monthly available hours)
         = $0.03/hour
   </div> 
   <p>Albuterol: 5mg/ml: $4.47</p>
@@ -3393,8 +3477,7 @@ Available capacity of resource
         <div class="modal-body">
     <div class="col-md-12">
     Capacity cost rate for resource =
-    Expanses Attribute to resource/
-Available capacity of resource
+    Expanses Attribute to resource / Available capacity of resource
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
@@ -3443,9 +3526,8 @@ Available capacity of resource
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-            $7,280(Monthly cost of resource)/
-      112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+            $7,280(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $65/hour
   </div>
   
@@ -3479,8 +3561,8 @@ Available capacity of resource
    <div class="col-md-2">
   $850,000 
    </div>
-   <div class="col-md-1">
-   10 yr+  
+   <div class="col-md-1" style="display:flex;">
+   10yr+  
   </div>  
   <div class="col-md-2">
       $2000+ 
@@ -3496,13 +3578,12 @@ Available capacity of resource
    </div>
       </div>
   
-  <div class="col-md-12" style="margin-top:20px;">
-         $7,833 (Monthly cost of resource)/
-      730 hours (Monthly available hours)
+  <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+         $7,833 (Monthly cost of resource) / 730 hours (Monthly available hours)
          = $10.73/hour
   </div>   
 
-  <p>Soldumedrol: 1 dose @ 125mg = $17.95/p>
+  <p>Soldumedrol: 1 dose @ 125mg = $17.95</p>
   <p>IV Administration Set: $5.47</p>
   <p>IV Bag and needle: $5.00</p>
 <p> Total ($65 * 0.33) + ($10.73 * .33) + $17.95 + $5.47 + $5.00 = $53.41 </p>
@@ -3525,10 +3606,7 @@ Available capacity of resource
     <div class="col-md-12">
 
     Capacity cost rate for resource =
-
-
-    Expanses Attribute to resource/
-   Available capacity of resource
+    Expanses Attribute to resource / Available capacity of resource
 
       </div>
      <div class="col-md-12" style="margin-top:20px;">
@@ -3578,9 +3656,8 @@ Available capacity of resource
    </div>
       </div>
 
-   <div class="col-md-12" style="margin-top:20px;">
-       $7,280(Monthly cost of resource)/
-     112 hours (Monthly available hours)
+   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
+       $7,280(Monthly cost of resource) / 112 hours (Monthly available hours)
          = $65/hour
   </div>
   
@@ -3738,105 +3815,104 @@ function TryA(){
 var chk=0;
 var ctr=0;
 $(".span1show").click(function(){
-$("#eye1").css("pointer-events","visible");
 $(".span1").css("display","block");
 $(".vb1").css("visibility","visible");
 return false;
 });
 
 $(".span2show").click(function(){
-$("#eye2").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb2").css("visibility","visible");
 $(".span2").css("display","block");
 return false;
 });
 
 $(".span3show").click(function(){
-$("#eye3").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb3").css("visibility","visible");
 $(".span3").css("display","block");
 return false;
 });
 
 $(".span4show").click(function(){
-$("#eye4").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb4").css("visibility","visible");
 $(".span4").css("display","block");
 return false;
 });
 
 $(".span5show").click(function(){
-$("#eye5").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb5").css("visibility","visible");
 $(".span5").css("display","block");
 return false;
 });
 
 $(".span6show").click(function(){
-$("#eye6").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb6").css("visibility","visible");
 $(".span6").css("display","block");
 return false;
 });
 
 $(".span7show").click(function(){
-$("#eye7").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb7").css("visibility","visible");
 $(".span7").css("display","block");
 return false;
 });
 
 $(".span8show").click(function(){
-$("#eye8").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb8").css("visibility","visible");
 $(".span8").css("display","block");
 return false;
 });
 
 $(".span9show").click(function(){
-$("#eye9").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb9").css("visibility","visible");
 $(".span9").css("display","block");
 return false;
 });
 
 $(".span10show").click(function(){
-$("#eye10").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb10").css("visibility","visible");
 $(".span10").css("display","block");
 return false;
 });
 
 $(".span11show").click(function(){
-$("#eye11").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb11").css("visibility","visible");
 $(".span11").css("display","block");
 return false;
 });
 
 $(".span12show").click(function(){
-$("#eye12").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb12").css("visibility","visible");
 $(".span12").css("display","block");
 return false;
 });
 
 $(".span13show").click(function(){
-$("#eye13").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb13").css("visibility","visible");
 $(".span13").css("display","block");
 return false;
 });
 
 $(".span14show").click(function(){
-$("#eye14").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb14").css("visibility","visible");
 $(".span14").css("display","block");
 return false;
 });
 
 $(".span15show").click(function(){
-$("#eye15").css("pointer-events","visible");
+$(".calc1").css({"cursor":"pointer"});
 $(".vb15").css("visibility","visible");
 $(".span15").css("display","block");
 return false;
@@ -3845,10 +3921,6 @@ return false;
 $(".showainc").click(function(){
 $(".showainc").css({"background-color":"white","color":"black"});
 $(".showbinc").css({"background-color":"#3B4254","color":"white"});
-$("#buttoncalc").removeClass("col-md-7");
-$("#buttoncalc").addClass("col-md-5");
-$("#mytextop").removeClass("col-md-4");
-$("#mytextop").addClass("col-md-12");
 $("#insurance").css("display","block");
 $(".spana").css("display","block");
 $(".spanb").css("display","none");
@@ -3860,10 +3932,6 @@ chk = 1;
 $(".showbinc").click(function(){
 $(".showbinc").css({"background-color":"white","color":"black"});
 $(".showainc").css({"background-color":"#3B4254","color":"white"});
-$("#buttoncalc").removeClass("col-md-7");
-$("#buttoncalc").addClass("col-md-5");
-$("#mytextop").removeClass("col-md-4");
-$("#mytextop").addClass("col-md-12");
 $("#insurance").css("display","block");
 $(".spanb").css("display","block");
 $(".spana").css("display","none");
@@ -3876,10 +3944,7 @@ chk = 2;
 $("#clcarrow").click(function(){
 $(".showainc").css({"background-color":"#3B4254","color":"white"});
 $(".showbinc").css({"background-color":"#3B4254","color":"white"});
-$("#buttoncalc").addClass("col-md-7");
-$("#buttoncalc").removeClass("col-md-5");
-$("#mytextop").addClass("col-md-4");
-$("#mytextop").removeClass("col-md-12");
+
 $("#insurance").css("display","none");
 $(".spanb").css("display","none");
 $(".spana").css("display","none");
@@ -3904,50 +3969,77 @@ var chkdisp12 = $(".m3s7p1 .spn12").css("display");
 var chkdisp13 = $(".m3s7p1 .spn13").css("display");
 var chkdisp14 = $(".m3s7p1 .spn14").css("display");
 var chkdisp15 = $(".m3s7p1 .spn15").css("display");
-if(chkdisp1=="block" && chkdisp2=="block" && chkdisp3=="block" && chkdisp4=="block" && chkdisp5=="block" && chkdisp6=="block" && chkdisp7=="block" && chkdisp8=="block" && chkdisp9=="block" && chkdisp10=="block" && chkdisp11=="block" && chkdisp12=="block" && chkdisp13=="block" && chkdisp14=="block" && chkdisp15=="block")
+var total = 0;
+if(chkdisp1=="block")
 {
-ctr = 15;
+total = total +  Number($(".m3s7p1 .spn1").text());
+}
+if(chkdisp2=="block")
+{
+total = total +  Number($(".m3s7p1 .spn2").text());
+}
+if(chkdisp3=="block")
+{
+total = total +  Number($(".m3s7p1 .spn3").text());
+}
+if(chkdisp4=="block")
+{
+total = total +  Number($(".m3s7p1 .spn4").text());
+}
+if(chkdisp5=="block")
+{
+total = total +  Number($(".m3s7p1 .spn5").text());
+}
+if(chkdisp6=="block")
+{
+total = total +  Number($(".m3s7p1 .spn6").text());
+}
+if(chkdisp7=="block")
+{
+total = total +  Number($(".m3s7p1 .spn7").text());
+}
+if(chkdisp8=="block")
+{
+total = total +  Number($(".m3s7p1 .spn8").text());
 }
 
-if(ctr==15)
+if(chkdisp9=="block")
 {
-$(".calc1").css({"background-color":"white","color":"black","cursor":"default"});
+total = total +  Number($(".m3s7p1 .spn9").text());
+}
+if(chkdisp10=="block")
+{
+total = total +  Number($(".m3s7p1 .spn10").text());
+}
+if(chkdisp11=="block")
+{
+total = total +  Number($(".m3s7p1 .spn11").text());
+}
+if(chkdisp12=="block")
+{
+total = total +  Number($(".m3s7p1 .spn12").text());
+}
+if(chkdisp13=="block")
+{
+total = total +  Number($(".m3s7p1 .spn13").text());
+}
+if(chkdisp14=="block")
+{
+total = total +  Number($(".m3s7p1 .spn14").text());
+}
+if(chkdisp15=="block")
+{
+total = total +  Number($(".m3s7p1 .spn15").text());
+}
+
+
+$(".calc1").css({"cursor":"default"});
 $(".showainc").css("display","block");
 $(".showbinc").css("display","block");
 $(".total1").css("display","block");
-}
+$(".total1").html("$"+total);
+
 });
-
-
-$(".calc2").click(function(){
-var chkdisp1 = $(".m3s7p1 .sspn1").css("display");
-var chkdisp2 = $(".m3s7p1 .sspn2").css("display");
-var chkdisp3 = $(".m3s7p1 .sspn3").css("display");
-var chkdisp4 = $(".m3s7p1 .sspn4").css("display");
-var chkdisp5 = $(".m3s7p1 .sspn5").css("display");
-var chkdisp6 = $(".m3s7p1 .sspn6").css("display");
-var chkdisp7 = $(".m3s7p1 .sspn7").css("display");
-var chkdisp8 = $(".m3s7p1 .sspn8").css("display");
-var chkdisp9 = $(".m3s7p1 .sspn9").css("display");
-var chkdisp10 = $(".m3s7p1 .sspn10").css("display");
-var chkdisp11 = $(".m3s7p1 .sspn11").css("display");
-var chkdisp12 = $(".m3s7p1 .sspn12").css("display");
-var chkdisp13 = $(".m3s7p1 .sspn13").css("display");
-var chkdisp14 = $(".m3s7p1 .sspn14").css("display");
-var chkdisp15 = $(".m3s7p1 .sspn15").css("display");
-if(chkdisp1=="block" && chkdisp2=="block" && chkdisp3=="block" && chkdisp4=="block" && chkdisp5=="block" && chkdisp6=="block" && chkdisp7=="block" && chkdisp8=="block" && chkdisp9=="block" && chkdisp10=="block" && chkdisp11=="block" && chkdisp12=="block" && chkdisp13=="block" && chkdisp14=="block" && chkdisp15=="block")
-{
-ctr = 15;
-}
-
-if(ctr==15)
-{
-$(".calc2").css({"background-color":"white","color":"black","cursor":"default"});
-$(".total3").css("display","block");
-}
-});
-
-
 
 
 $(".fa-eye-slash").click(function(e){
@@ -3956,39 +4048,43 @@ $(this).addClass("fa-eye");
 });
 
 $(".showallspan").click(function(e){
+$(".calc1").css({"cursor":"pointer"});
 var txt = $(this).text();
 if(txt.match('Quick add all costs'))
 {
-$(".fa-eye,.fa-eye-slash").css("pointer-events","visible");
 $(this).text("Clear  all costs");
 $(".m3s7p1 .span1,.m3s7p1 .span2,.m3s7p1 .span3,.m3s7p1 .span4,.m3s7p1 .span5,.m3s7p1 .span6,.m3s7p1 .span7,.m3s7p1 .span8,.m3s7p1 .span9,.m3s7p1 .span10,.m3s7p1 .span11,.m3s7p1 .span12,.m3s7p1 .span13,.m3s7p1 .span14,.m3s7p1 .span15").css("display","block");
 $(".m3s7p1 .vb1,.m3s7p1 .vb2,.m3s7p1 .vb3,.m3s7p1 .vb4,.m3s7p1 .vb5,.m3s7p1 .vb6,.m3s7p1 .vb7,.m3s7p1 .vb8,.m3s7p1 .vb9,.m3s7p1 .vb10,.m3s7p1 .vb11,.m3s7p1 .vb12,.m3s7p1 .vb13,.m3s7p1 .vb14,.m3s7p1 .vb15").css("visibility","visible");
-ctr=15;
 }
 else
 {
-$(".fa-eye,.fa-eye-slash").css("pointer-events","none");
 $(".total3").css("display","none");
 $(".total1").css("display","none");
-$("#buttoncalc").addClass("col-md-7");
-$("#buttoncalc").removeClass("col-md-5");
-$("#mytextop").addClass("col-md-4");
-$("#mytextop").removeClass("col-md-12");
 $("#insurance").css("display","none");
 $(".spanb").css("display","none");
 $(".spana").css("display","none");
 $(".spantmp").css("display","none");
 $(".showainc").css({"background-color":"#3B4254","color":"white","display":"none"});
 $(".showbinc").css({"background-color":"#3B4254","color":"white","display":"none"});
-$(".calc1").css({"background-color":"#3B4254","color":"white","cursor":"pointer"});
-$(".calc2").css({"background-color":"#3B4254","color":"white","cursor":"pointer"});
-
 $(".m3s7p1 .span1,.m3s7p1 .span2,.m3s7p1 .span3,.m3s7p1 .span4,.m3s7p1 .span5,.m3s7p1 .span6,.m3s7p1 .span7,.m3s7p1 .span8,.m3s7p1 .span9,.m3s7p1 .span10,.m3s7p1 .span11,.m3s7p1 .span12,.m3s7p1 .span13,.m3s7p1 .span14,.m3s7p1 .span15").css("display","none");
 $(".m3s7p1 .vb1,.m3s7p1 .vb2,.m3s7p1 .vb3,.m3s7p1 .vb4,.m3s7p1 .vb5,.m3s7p1 .vb6,.m3s7p1 .vb7,.m3s7p1 .vb8,.m3s7p1 .vb9,.m3s7p1 .vb10,.m3s7p1 .vb11,.m3s7p1 .vb12,.m3s7p1 .vb13,.m3s7p1 .vb14,.m3s7p1 .vb15").css("visibility","hidden");
 $(this).text("Quick add all costs");
-ctr=0;
-
 }
 });
+$("#comparetocm").click(function(){
+$("#clcthird").addClass("col-md-offset-1");
+$("#clcthird").removeClass("col-md-offset-3");
+
+$("#clcforth").css("display","block");
+$("#comparetocm").css("visibility","hidden");
+});
+
+$("#clcarrow2").click(function(){
+$("#clcthird").removeClass("col-md-offset-1");
+$("#clcthird").addClass("col-md-offset-3");
+$("#clcforth").css("display","none");
+$("#comparetocm").css("visibility","visible");
+});
+
 
 </script>

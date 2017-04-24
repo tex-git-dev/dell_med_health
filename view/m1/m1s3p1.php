@@ -380,7 +380,7 @@ var listQuestion = function(J){
         var loc1 = shuffleArray(choices[J]);
         for (var k=0; k<loc1.length; k++){
             choicesOutput+=
-              '<div class="col-sm-4"><button style="font-size:15px; font-family: GothamHTF-Medium; color:#000;" type="button" class="btn btn-success btn-sm">'+choices[J][k]+'</button></div>';
+              '<div class="col-sm-4"><button style="font-family: GothamHTF-Medium; color:#000;" type="button" class="btn btn-success btn-sm btSize">'+choices[J][k]+'</button></div>';
         }
         choicesOutput+='</div>';
     if(score==0)

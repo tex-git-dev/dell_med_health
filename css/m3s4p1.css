@@ -334,7 +334,7 @@ margin-left: 0;
 
 .m3s4p1 .m3s4mcq .ques{
     color: #3C4252;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 600;
     padding-bottom: 30px;
 }
@@ -586,7 +586,7 @@ padding-right: : 10px;
 }
 
 .m3s4p1 .m3s4b7 .m3s4b8 {
-    display: none !important;
+    display: block !important;
 }
 .m3s4p1 .m4s4b21 {
     margin-bottom: 0px;
@@ -649,10 +649,12 @@ padding-right: : 10px;
 .m3s4p1 .m3s4b7 .eq-h .col-sm-4 {
     width: 100% !important;
     padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .m3s4p1 .m3s4b7 .m3s4b8 {
-    display: none !important;
+    display: block !important;
 }
 
 .m3s4p1 .m4s4b21 {
@@ -719,10 +721,12 @@ padding-right: : 10px;
 .m3s4p1 .m3s4b7 .eq-h .col-sm-4 {
     width: 100% !important;
     padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .m3s4p1 .m3s4b7 .m3s4b8 {
-    display: none !important;
+    display: block !important;
 }
 .m3s4p1 .m4s4b21 {
     margin-bottom: 0px;
@@ -786,11 +790,13 @@ padding-right: : 10px;
 .m3s4p1 .m3s4b7 .eq-h .col-sm-4 {
     width: 100% !important;
     padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 
 .m3s4p1 .m3s4b7 .m3s4b8 {
-    display: none !important;
+    display: block !important;
 }
 
 .m3s4p1 .m4s4b21 {

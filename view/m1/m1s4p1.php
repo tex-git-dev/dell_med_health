@@ -95,18 +95,18 @@ include("view/cjs.php");
             <li data-target="#myCarousel" data-slide-to="2" ></li>    
         </ol>
         <!-- Wrapper for slides -->
+
         <div class="carousel-inner" role="listbox">
             <div class="item active" id="0">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
+                        <div class="col-sm-2"></div>
+                            <div class="col-sm-8">
                                 <f><p class="ques">Approximately what percentage of total health care dollars spent are wasted every year?</p></f>
-
                                 <div class="row">
-                                <div class="col-sm-12" >
-                                <div class="row eq-h ">
+                                <div class="col-sm-12">
+                                <div class="row eq-h">
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('30%', '15%', '5%');
@@ -287,10 +287,10 @@ include("view/cjs.php");
             </div>
 
 
-              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="display:none;">
+              <a class="left carousel-control  s1p1b20" href="#myCarousel" role="button" data-slide="prev" style="display:none;">
                         <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
                       </a>
-                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                      <a class="right carousel-control  s1p1b20" href="#myCarousel" role="button" data-slide="next">
                         <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
                       </a>
 

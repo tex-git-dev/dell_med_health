@@ -147,10 +147,11 @@ display: none;
 .modal-backdrop.in {
     display: none;
 }
-#myCarousel .carousel-control{
-    display: none;
-    visibility: hidden;
+#myCarousel .carousel-control {
+    display: block !important;
+    visibility: visible !important;
 }
+
 #myCarousel .col-sm-4 div {
     overflow: scroll;
     /*height:100%;*/

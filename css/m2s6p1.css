@@ -1,5 +1,4 @@
 
-
 .m2s6p1 .b1 {
     margin-bottom: 0px;
     background: url('../img/m2s6img1.png') no-repeat center center fixed; 
@@ -52,7 +51,7 @@
            color: #fff;
         background-color: #535b72;
 }
-.m2s6p1  .m2s6b3 p {    
+.m2s6p1 .m2s6b3 p {    
     font-size: 14px;
 }
 
@@ -85,7 +84,7 @@
 
 .m2s6p1 .s6scatterplot .ques{
     color: #3C4252;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 600;
     padding-bottom: 30px;
 }
@@ -272,6 +271,8 @@ and (max-device-width : 765px) {
     .m2s6p1 .m2s6b4 .eq-h .col-sm-4, .m2s6p1 .m2s6b4 .eq-h .col-sm-3  {
         width: 100% !important;
         padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
 
 }
 
@@ -310,6 +311,11 @@ and (max-device-width : 765px) {
  .m2s6p1 .dArowh {
     display: none;  
 }
+
+.m2s6p1 .m2s6b3 p {    
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    }
   
 }
 
@@ -321,17 +327,18 @@ and (max-device-width : 765px) {
 and (min-device-width : 300px)
 and (max-device-width : 500px) {
 
-    .m2s6p1 .m2s6b4 .eq-h {
+.m2s6p1 .m2s6b4 .eq-h {
         display: grid;
     }
 
-    .m2s6p1 .m2s6b4 .eq-h .col-sm-4, .m2s6p1 .m2s6b4 .eq-h .col-sm-3  {
+.m2s6p1 .m2s6b4 .eq-h .col-sm-4, .m2s6p1 .m2s6b4 .eq-h .col-sm-3  {
         width: 100% !important;
         padding-bottom: 10px;
-
+        padding-right: 25px;
+        padding-left: 25px;
 }
 
-    .m2s6p1 .b1 {
+.m2s6p1 .b1 {
     margin-bottom: 0px;
     background: url('../img/m2s6img1.png') no-repeat left center; 
     -webkit-background-size: cover;
@@ -369,7 +376,10 @@ and (max-device-width : 500px) {
 }
   
 
-
+.m2s6p1 .m2s6b3 p {    
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    }
 
 }
 
@@ -426,18 +436,13 @@ and (max-device-width : 299px) {
  .m2s6p1 .dArowh {
     display: none;  
 }
-  
+  .m2s6p1 .m2s6b3 p {    
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    }
 
 }
 
 
 
-@media only screen and (max-width : 767px) {
-    ..m2s6p1 .m2s6b4 .m2s6b7 {
-        margin-right: -10px;
-    }
-    .m2s6p1 .m2s6b4 .m2s6b7 {
-        margin-left: -10px;
-    }
-}
 
