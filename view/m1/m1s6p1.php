@@ -41,7 +41,7 @@ include("view/cjs.php");
         <div class="col-sm-8">  
         <f><p>Decreasing waste is a powerful way to simultaneously improve outcomes and decrease costs. It is critical for us to understand outcomes and how to improve them for patients.</p></f>
     <f><p>Outcomes are the results of care on the health of patients, families and populations. Beyond survival, outcomes include improved functional capabilities, reduction of pain and suffering, and ability to engage in one’s normal life.</p></f>
-      <ul style="font-size:16px;">
+      <ul>
           <f><li><p>For example, if fewer people die after receiving influenza vaccines, then this mortality benefit would be an outcome measure.</p></li></f>
       <f><li><p>While mortality is an obvious outcome measure, it is not always the appropriate or even most important. Mortality is not a meaningful outcome measure for the success of a dental cleaning or wart removal, where mortality would be a travesty.  And for patients in some situations, how well they live is more important than how long they survive.</p></li></f>
       <f><li><p>Another outcome measure is the number of days until a patient can walk after a hip replacement surgery.</p></li></f>
@@ -51,10 +51,11 @@ include("view/cjs.php");
         </div>
      </div>
       <br>
-      <br>
 
 <br><br><br>
-      <div class="jumbotron m6b2">        
+
+      <div class="jumbotron m6b2">  
+
             <div class="container"> 
                <div class="row m6col">
                <div class="col-sm-2"></div>
@@ -66,7 +67,9 @@ include("view/cjs.php");
                </div>  
             <div class="col-sm-2"></div>           
              </div>
+
      </div>
+
      <br>
      <div class="container bg-3 "> 
         <br>
@@ -86,26 +89,33 @@ include("view/cjs.php");
               <div class="row">
                <div class="col-sm-2"></div> 
                <div class="col-sm-8 text-center">           
-                <f><h4 class="text-uppercase">Value-Based Care Delivery as Opposed to Volume-Based Care Delivery</h4></f>
+                <f><h4 class="text-uppercase">Value-Based Health Care Delivery vs. Volume-Based Health Care</h4></f>
                  </div> 
                 <div class="col-sm-2"></div>
                </div>
                <br>
                 <div class="row">
                   <div class="col-sm-2"></div>
-               <div class="col-sm-4" >
-                  <f><h5 class="text-center">Volume-Based Care</h5></f>
+               <div class="col-sm-4 bordRight">
+                  <f><h5>The Current System: Volume-Based Health Care</h5></f>
                   <ul>
-                     <f><li>Individual care interactions</li></f>
-                     <f><li>Current status of care delivery in the US</li></f>
-                  </ul>
-                  
+                     <f><li>Individual care interactions organized around the clinician’s medical expertise (e.g. an orthopedic surgeon)</li></f>
+                     <f><li>Fragmented care that is organized at the level of individual units or facilities</li></f>
+                     <f><li>Measurement largely based on process measures and “billable activities”</li></f>
+                     <f><li>Costs are poorly captured and often are estimated by using poor proxies such as charges and reimbursements</li></f>
+                     <f><li>Providers – physicians and health systems – are reimbursed based on individual services provided</li></f>
+                     <f><li>Health information technology maximized for capturing billing processes and reporting necessary metrics</li></f>                     
+                  </ul>                  
                </div>
-               <div class="col-sm-4 bordLeft">
-                   <f><h5 class="text-center">Value-Based Care</h5></f>
+               <div class="col-sm-4 ">
+                   <f><h5>The Goal: Value-Based Health Care</h5></f>
                   <ul>
-                     <f><li>Team-based care interactions</li></f>
-                     <f><li>Where care delivery needs to be to decrease waste and ensure the best outcomes for our patients</li></f>
+                     <f><li>Team-based care interactions organized around patient medical needs and conditions (e.g. “musculoskeletal pain”)</li></f>
+                     <f><li>Integrated care across units and facilities, such as in an integrated practice unit (IPU) </li></f>
+                     <f><li>Measurement focused on patient health outcomes</li></f>
+                     <f><li>The actual costs of providing patient care are measured and captured</li></f>
+                     <f><li>Providers are reimbursed based on value of care provided across a full care cycle for medical conditions</li></f>
+                     <f><li>Health information technology is leveraged to help restructure care delivery and accurately measure results</li></f>
                   </ul>
                </div> 
                <div class="col-sm-2"></div>   
@@ -114,13 +124,14 @@ include("view/cjs.php");
           <div class="row">
                <div class="col-sm-2"></div> 
                <div class="col-sm-8">
-                  <f><p>Here we will briefly introduce the general concept that value-based health care requires appropriate teams, organized around providing the best care for specific patients, with a commitment to measuring and improving outcomes.</p></f>
+                  <f><p>Value-based health care requires appropriate teams, organized around providing the best care for specific patients, with a commitment to measuring and improving outcomes.</p></f>
                   <f><p>When a team is created around a set of patients with shared needs – such as similar circumstances and/or conditions – they share a core set of critical concerns. For example, in future modules we will discuss how care teams and practices can be formed around a condition, such as musculoskeletal pain. The clinical team can understand this set of patients and conditions and better anticipate and respond to issues, which then enhances the ability to personalize care.</p></f>
+                  <f><p>A key concept of value-based health care delivery is “positive-sum competition” or “win-win” based on creating value for patients.</p></f>
+                  <f><p>Here we have just touched the surface of identifying these concepts. Throughout our modules, we will dig into each of these components and provide clear examples of early successes in moving to value-based health care delivery.</p></f>
+                  <f><p><em>(REFERENCE = Porter and Teisberg. Redefining Health Care…)</em></p></f>
                 </div>
            <div class="col-sm-2"></div> 
                </div>
-               
-
                 <br>
                 <br>
              </div>     
@@ -128,7 +139,7 @@ include("view/cjs.php");
     <div class="jumbotron m6b4">
                   
                <div class="row vertical-align">
-               <div class="col-sm-4"><img width="100%" class="img-responsive" src="img/s6img4.png"/></div>  
+               <div class="col-sm-4"><img class="img-responsive center-block" src="img/s6img4.png"/></div>  
                  <div class="col-sm-8"><div class="well"><div class="well"><f><p>“At Dell Med we are working on reorganizing the delivery system around patient needs while integrating other providers and resources, both human and technological, to create a single-center location for diagnosis and treatment. When possible we will locate care close to the patient’s home or workplace, or provide convenience for the patient to access these services through virtual methods that are being developed.”</p></f>
                   <br>
                   <f><h6>Amy Young MD</h6></f>
@@ -147,8 +158,7 @@ include("view/cjs.php");
         <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
         <br>
         <ol id="demo" class="collapse">
-            <f><li class="text-left"><p>Dell Medical School. Improving women’s health in central Texas. November 14m 2016. Accessed January 16, 2018. Retrieved from <a style="color:#f4821f;" target="_blank" href="http://blog.dellmedschool.utexas.edu/2016/11/14/improving-womens-health-central-texas/">http://blog.dellmedschool.utexas.edu/2016/11/14/improving-womens-health-central-texas/<a></p></li></f>
-
+            <f><li class="text-left"><p>Dell Medical School. Improving women’s health in central Texas. November 14m 2016. Accessed January 16, 2018. Retrieved from <a style="color:#f4821f; overflow-wrap: break-word;" target="_blank" href="http://blog.dellmedschool.utexas.edu/2016/11/14/improving-womens-health-central-texas/">http://blog.dellmedschool.utexas.edu/2016/11/14/improving-womens-health-central-texas/<a></p></li></f>
         </ol>
         </div>
 </div>
@@ -158,17 +168,22 @@ include("view/cjs.php");
 <footer class="container-fluid">
          
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m1/m1s5p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 5</span>
-                <span class="sp1"><strong>Unnecessary Waste</strong></span></a>
+                <span class="sp1"><strong>Unnecessary Care</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m1/m1s7p1"><span class="ssp2">MODULE 1 | Section 7</span>
-                <span class="sp2"><strong>How Big of a Problem is Healthcare Waste?</strong></span>
+                <span class="sp2"><strong>Value-Driven Outcomes at University of Utah Health Care</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
+
       </footer> 

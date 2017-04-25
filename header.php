@@ -2,28 +2,38 @@
 @session_start();
 ?>
  <script src="js/bootstrap-session-timeout.js"></script>
+ <style>
+#passResetF label{
+ color:red;
+ }
+ </style>
 <script type="text/javascript">
 
+//Below function used for forgot popup open.
 app.Forgot=function(){
-  
-   $('#forgot').modal({show: 'false'});
-    $('#login').modal('hide');
-  
+  $('#forgot').modal({show: 'false'});
+  $('#login').modal('hide');
 } 
+//Below function used for FAQ popup open.
 app.OpenFAQ=function(){
   $(".FAQ").toggle();
   var shows =$(".FAQ").css('display');
     var h = $(document).height()-80;
     $(".disF").css('display',shows).css({"height":h+'px'});
 }
+//Below function used for the module or section menus popup open.
 app.OpenMS=function(){
   var ss= "<?php  echo @$_SESSION['username'];?>";
    if(ss){
+    // if session is active then open module or section popup open.
       $(".op").toggle();
       var h = $(document).height()-80;
       var shows =$(".op").css('display');
       $(".disS").css('display',shows).css({"height":h+'px'});
+      var hh = $(".op").height();
+      $(".r2").css({'min-height':hh+'px'});
    }else{
+    // if session is inactive then open login popup open.
         $('#registration').modal('hide');
         $('#login').modal({show: 'false'});
         $('#login').on('shown.bs.modal', function () {
@@ -31,16 +41,18 @@ app.OpenMS=function(){
         });
     }
 }
+//Below function used for registration popup open.
   app.RegiPage=function(){
     $('#login').modal('hide');
-
+    
     $('#registration').modal({show: 'false'});
     $('#registration').on('shown.bs.modal', function () {
     $('body').addClass('modal-open');
     });
-   
+   $('#Fname').focus();
 }
 </script>
+
 <div class="headers">
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -59,7 +71,7 @@ app.OpenMS=function(){
                 <li>
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle">Sign in</a>
                 </li>
-                <li class='line'><span>|</span></li>
+                <li class='linea'><span>|</span></li>
                 <li>
                     <a href="javascript:app.RegiPage()" class="dropdown-toggle">Sign up</a>
                 </li>
@@ -69,7 +81,7 @@ app.OpenMS=function(){
                     <a href="javascript:void(0)" class="dropdown-toggle">
                     Welcome, <?php echo $_SESSION['Fname'];?></a>
                 </li>
-                  <li class='line'><span>|</span></li>
+                  <li class='linea'><span>|</span></li>
                 <li>
                     <a href="Logout.php" class="dropdown-toggle">Logout</a>
                 </li>
@@ -79,11 +91,12 @@ app.OpenMS=function(){
            
 
                 <li  class="active mod">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><strong></strong><span class="glyphicon glyphicon-menu-down"></span> MODULES </strong></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><strong><span class="glyphicon glyphicon-menu-down"></span> MODULES </strong></a>
                 </li>
                 <li class="faqBtn">
                     <a href="javascript:app.OpenFAQ()" class="dropdown-toggle"> <i style=" vertical-align: middle;" class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i> </a>
                 </li>
+
             </ul>
              <?php }else{?>
             <ul id="section" class="nav navbar-nav navbar-right">
@@ -95,12 +108,12 @@ app.OpenMS=function(){
 
 				 ?>
                 <li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 1 | Section 1 </span><span class="s_bottom">Introduction to Value Based Healthcare</span></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 1 | Section 1 </span><span class="s_bottom">There’s a Better Way</span></a>
                 </li>
 					
 					<?php }else if($m == "m1s2p1"){ ?>
 					<li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 1 | Section 2 </span><span class="s_bottom">Story from the Frontlines: The Human Cost..</span></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 1 | Section 2 </span><span class="s_bottom">Story from the Frontlines: The Human Cost...</span></a>
                 </li>
 					<?php }else if($m == "m1s3p1"){ ?>
 					<li  class="active section">
@@ -149,33 +162,64 @@ app.OpenMS=function(){
                 </li>
                  <?php }else if($m == "m2s5p1"){ ?>
                 <li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 5 </span><span class="s_bottom">Using Measures Frameworks to Improve Outcomes...</span></a>
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 5 </span><span class="s_bottom">Using Measures Frameworks to Improve Outcomes</span></a>
                 </li>
                   <?php }else if($m == "m2s6p1"){ ?>
                 <li  class="active section">
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 6 </span><span class="s_bottom">Comparing Outcomes of Different Treatment Strategies</span></a>
                 </li>
                 <?php }else if($m == "m2s7p1"){ ?>
-                <li  class="active section">
+                <li class="active section">
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 7 </span><span class="s_bottom">Care Redesign Case: UNOS</span></a>
                 </li>
                 <?php }else if($m == "m2s8p1"){ ?>
-                <li  class="active section">
+                <li class="active section">
                     <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 2 | Section 8 </span><span class="s_bottom">Conclusion: Measuring What Matters </span></a>
                 </li>
+                
                  <?php }else if($m == "m3s1p1"){ ?>
-                <li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 1 </span><span class="s_bottom">Conclusion: Value-Based Health Care</span></a>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 1 </span><span class="s_bottom">Understanding Costs In Health Care</span></a>
                 </li>
                 <?php }else if($m == "m3s2p1"){ ?>
-                <li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 2 </span><span class="s_bottom">Conclusion: Value-Based Health Care</span></a>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 2 </span><span class="s_bottom">Story From the Frontlines</span></a>
                 </li>
-                <?php }else if($m == "m3s3p1"){ ?>
-                <li  class="active section">
-                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 3 </span><span class="s_bottom">Conclusion: Value-Based Health Care</span></a>
+
+                <?php }else if($m == "m3s2p2"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Dive Deeper </span><span class="s_bottom">Basics of Health Care Financing in the US</span></a>
                 </li>
                 
+                <?php }else if($m == "m3s3p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 3 </span><span class="s_bottom">Speaking the Same Language: Health Care Cost...</span></a>
+                </li>
+                <?php }else if($m == "m3s4p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 4 </span><span class="s_bottom">The Cost of Care: Different Approaches</span></a>
+                </li>
+                <?php }else if($m == "m3s5p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 5 </span><span class="s_bottom">Toward More Transparency</span></a>
+                </li>
+                <?php }else if($m == "m3s6p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 6 </span><span class="s_bottom">Care Redesign Case: MD Anderson (TDABC)</span></a>
+                </li>
+                <?php }else if($m == "m3s7p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 7 </span><span class="s_bottom">Applying TDABC to Compare Cost Calculations</span></a>
+                </li>
+                <?php }else if($m == "m3s8p1"){ ?>
+                <li class="active section">
+                    <a href="javascript:app.OpenMS()" class="dropdown-toggle"><span class="s_top"><span class="glyphicon glyphicon-menu-down"></span> MODULE 3 | Section 8 </span><span class="s_bottom">Conclusion: Understanding Costs of Care</span></a>
+                </li>
+
+
+                
+
+
            
           <?php } ?>
 
@@ -212,7 +256,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss vertical-align bb bt btnS1 act">
                       <div class="col-sm-2"><strong>01.</strong></div>
-                        <div class="col-sm-7"><strong>Introduction to Value Based Healthcare</strong></div>
+                        <div class="col-sm-7"><strong>There’s a Better Way</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -306,15 +350,15 @@ app.OpenMS=function(){
                     <div class="col-sm-7">
                       <div class="row text-center">
                           <div class="col-sm-4">
-                              <button  type="button" class="btn btn-default">Module 1</button>
+                              <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 2</button>
+                            <button  type="button" class="btn btn-default center-block module2button">Module 2</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 3</button>
+                            <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
-                      </div>
+                      </div>                      
                     </div>
                      <div class="col-sm-3"></div>
                 </div>
@@ -377,7 +421,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss  vertical-align bb btnS5">
                         <div class="col-sm-2 "><strong>05.</strong></div>                
-                        <div class="col-sm-7"><strong>Using Measures Frameworks to Improve Outcomes that Matter to Patients</strong></div>
+                        <div class="col-sm-7"><strong>Using Measures Frameworks to Improve Outcomes</strong></div>
                          <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -421,15 +465,15 @@ app.OpenMS=function(){
                     <div class="col-sm-7">
                       <div class="row text-center">
                           <div class="col-sm-4">
-                              <button  type="button" class="btn btn-default">Module 1</button>
+                              <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 2</button>
+                            <button  type="button" class="btn btn-default center-block module2button">Module 2</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 3</button>
+                            <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
-                      </div>
+                      </div> 
                     </div>
                      <div class="col-sm-3"></div>
                 </div>
@@ -448,7 +492,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss vertical-align bb bt btnS1 act">
                       <div class="col-sm-2 "><strong>01.</strong></div>
-                        <div class="col-sm-7"><strong>Introduction to Value Based Healthcare</strong></div>
+                        <div class="col-sm-7"><strong>Understanding Costs In Health Care</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -459,7 +503,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss vertical-align bb btnS2">
                       <div class="col-sm-2 "><strong>02.</strong></div>
-                        <div class="col-sm-7"><strong>Story from the Frontlines: The Human Cost of Inefficiency and Waste in Healthcare</strong></div>
+                        <div class="col-sm-7"><strong>Story From the Frontlines</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -471,7 +515,7 @@ app.OpenMS=function(){
 
                 <div class="row btnss  vertical-align bb btnS3">
                         <div class="col-sm-2 "><strong>03.</strong></div>
-                        <div class="col-sm-7"><strong>Providing Value for Patients</strong></div>
+                        <div class="col-sm-7"><strong>Speaking the Same Language: Health Care Cost Terms</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -481,7 +525,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss  vertical-align bb btnS4">
                         <div class="col-sm-2 "><strong>04.</strong></div>                
-                        <div class="col-sm-7"><strong>How Big of a Problem is Health Care Waste?</strong></div>
+                        <div class="col-sm-7"><strong>The Cost of Care: Different Approaches</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -491,7 +535,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss  vertical-align bb btnS5">
                         <div class="col-sm-2 "><strong>05.</strong></div>                
-                        <div class="col-sm-7"><strong>Unnecessary Care</strong></div>
+                        <div class="col-sm-7"><strong>Toward More Transparency</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -501,7 +545,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="row btnss  vertical-align bb btnS6">
                         <div class="col-sm-2 "><strong>06.</strong></div>                
-                        <div class="col-sm-7"><strong>Focusing on Outcomes</strong></div>
+                        <div class="col-sm-7"><strong>Care Redesign Case: MD Anderson (TDABC)</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
@@ -509,50 +553,46 @@ app.OpenMS=function(){
                       </div>
                        
                 </div>
+                
                 <div class="row btnss  vertical-align bb btnS7">
                         <div class="col-sm-2 "><strong>07.</strong></div>                
-                        <div class="col-sm-7"><strong>Care Redesign Case: Value-Driven Outcomes at University of Utah Health Care</strong></div>
+                        <div class="col-sm-7"><strong>Applying TDABC to Compare Cost Calculations</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
                               </div>
-                      </div>
-                       
+                      </div>                                             
                 </div>
+
                 <div class="row btnss  vertical-align bb btnS8">
                         <div class="col-sm-2 "><strong>08.</strong></div>                
-                        <div class="col-sm-7"><strong>Using Data to Identify Opportunities for Improving Care for Patients</strong></div>
+                        <div class="col-sm-7"><strong>Conclusion: Understanding Costs of Care</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
                               </div>
-                      </div>
-                      
+                      </div>                                             
                 </div>
-                <div class="row btnss  vertical-align bb btnS9">
-                        <div class="col-sm-2 "><strong>09.</strong></div>                
-                        <div class="col-sm-7"><strong>Conclusion: Value-Based Health Care</strong></div>
-                        <div class="col-sm-3">
-                            <div class="alert1" role="alert">
-                               Continue
-                              </div>
-                      </div>
-                </div>
+
+              
+
+
                 <br>
+
                  <div class="row allModule3">
                     <div class="col-sm-2 "></div>                
                     <div class="col-sm-7">
                       <div class="row text-center">
                           <div class="col-sm-4">
-                              <button  type="button" class="btn btn-default">Module 1</button>
+                              <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 2</button>
+                            <button  type="button" class="btn btn-default center-block module2button">Module 2</button>
                           </div>
                           <div class="col-sm-4">
-                            <button  type="button" class="btn btn-default">Module 3</button>
+                            <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
-                      </div>
+                      </div> 
                     </div>
                      <div class="col-sm-3"></div>
                 </div>
@@ -636,12 +676,11 @@ app.OpenMS=function(){
                  
                     </div>
                    
-                      <div class='_outm1' style='display: <?php if($mnn =='m1'){ echo 'block';}else{echo 'none';}?>'>
+          <div class='_outm1' style='display:none;'>
 					<div class="row clickS1 clickS" >
                      <div class="row">
                         <div class="well">
-                          <div class="col-sm-12 text-center">
-                             Reflect on the causes of waste and inefficiencies in health care.   
+                          <div class="col-sm-12 text-center">                             
                           </div>
                         </div>
                     </div>
@@ -650,7 +689,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                            Define ‘value’ for patients
+                            Reflect on the causes of waste and inefficiencies in health care.
                           </div>
                         </div>
                     </div>
@@ -659,7 +698,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Define ‘health care waste’   
+                             Define ‘value’ for patients.
                           </div>
                         </div>
                     </div>
@@ -668,7 +707,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Identify the major contributing components of healthcare waste
+                             Define ‘health care waste.’
                           </div>
                         </div>
                     </div>
@@ -677,7 +716,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Connect how the pursuit of high-value care for patients supports the professionalism of clinicians.   
+                             Identify the major contributing components of health care waste; Reflect on the causes of waste and inefficiencies of health care.
                           </div>
                         </div>
                     </div>
@@ -686,7 +725,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                            Introduce the concept of health care outcomes  
+                            Introduce the concept of health care outcomes.
                           </div>
                         </div>
                     </div>
@@ -695,7 +734,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Examine a case that presents strategies and tools for increasing value in health care.  
+                            Examine a case that presents strategies and tools for increasing value in health care.
                           </div>
                         </div>
                     </div>
@@ -704,7 +743,7 @@ app.OpenMS=function(){
                      <div class="row">
                        
                           <div class="col-sm-12 text-center"> <div class="well">
-                             Explore data to gain understanding and appreciation of the perspectives of patients, individual clinicians, and health systems as it pertains to value-based health care.  
+                            Explore data to gain understanding and appreciate the perspective of patients, individual clinicians, and health systems as it pertains to value-based health care.  
                           </div>
                         </div>
                     </div>
@@ -712,14 +751,13 @@ app.OpenMS=function(){
 					  <div class="row clickS9 clickS" >
                      <div class="row">
                         <div class="well">
-                          <div class="col-sm-12 text-center">
-                           
+                          <div class="col-sm-12 text-center">                           
                           </div>
                         </div>
                     </div>
 					 </div>
            </div>
-					  <div class='_outm2' style='display: <?php if($mnn =='m2'){ echo 'block';}else{echo 'none';}?>'>
+		  <div class='_outm2' style='display:none;'>
               
                       <div class="row clickS1 clickS" >
                      <div class="row">
@@ -729,7 +767,7 @@ app.OpenMS=function(){
                           </div>
                         </div>
                     </div>
-           </div>
+                   </div>
            <div class="row clickS2 clickS" >
                      <div class="row">
                         <div class="well">
@@ -743,7 +781,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Define the measurement of ‘patient outcomes’ as they relate to value-based health care.
+                            Define the measurement of ‘patient outcomes’ as they relate to value-based health care.
                           </div>
                         </div>
                     </div>
@@ -761,7 +799,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Describe different types of measures and when they would be used; Identify the reasons for collecting    ‘patient-reported outcomes.’
+                             Describe different types of measures and when they would be used; Identify the reasons for collecting ‘patient-reported outcomes.’
                           </div>
                         </div>
                     </div>
@@ -779,10 +817,9 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Examine resources for defining and measuring patient outcomes;
-                            Apply a measures framework to evaluate the success of health care value programs from the perspective of patient outcomes.
-                            Appreciate and reflect on how patient outcomes define physicians’ success.
-
+                             Examine resources for defining and measuring patient outcomes;<br><br>
+                             Apply a measures framework to evaluate the success of health care value programs from the perspective of patient outcomes.<br><br>
+                            Appreciate and reflect on how patient outcomes define physicians’ success.                            
                           </div>
                         </div>
                     </div>
@@ -805,13 +842,14 @@ app.OpenMS=function(){
                         </div>
                     </div>
            </div>
-</div>
-                     <div class='_outm3' style='display: <?php if($mnn =='m3'){ echo 'block';}else{echo 'none';}?>'>
-                        <div class="row clickS1 clickS" >
+    </div>
+
+          <div class='_outm3' style='display:none;'>
+            <div class="row clickS1 clickS" >
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Reflect on the causes of waste and inefficiencies in health care.   
+                                                       
                           </div>
                         </div>
                     </div>
@@ -820,7 +858,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                            Define ‘value’ for patients
+                            Reflect on the impact of cost on patient care and the overall value of provided health care.
                           </div>
                         </div>
                     </div>
@@ -829,7 +867,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Define ‘health care waste’   
+                             Define terms used in discussing health care costs.
                           </div>
                         </div>
                     </div>
@@ -838,7 +876,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Identify the major contributing components of healthcare waste
+                             Reflect on the impact of cost on patient care and the overall value of provided health care; Evaluate various charging and payment methods used in health care.
                           </div>
                         </div>
                     </div>
@@ -847,7 +885,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Connect how the pursuit of high-value care for patients supports the professionalism of clinicians.   
+                             Describe new methods for health care cost accounting and value-based payments.
                           </div>
                         </div>
                     </div>
@@ -856,7 +894,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                            Introduce the concept of health care outcomes  
+                            Study methods to measure and evaluate the success of health care value programs.
                           </div>
                         </div>
                     </div>
@@ -865,7 +903,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Examine a case that presents strategies and tools for increasing value in health care.  
+                             Applying TDABC to Compare Cost Calculations
                           </div>
                         </div>
                     </div>
@@ -874,7 +912,7 @@ app.OpenMS=function(){
                      <div class="row">
                        
                           <div class="col-sm-12 text-center"> <div class="well">
-                             Explore data to gain understanding and appreciation of the perspectives of patients, individual clinicians, and health systems as it pertains to value-based health care.  
+                             8
                           </div>
                         </div>
                     </div>
@@ -888,15 +926,8 @@ app.OpenMS=function(){
                         </div>
                     </div>
            </div>
-                    </div>
-					 
-
-                </div>
-                
-              
-               
-                
-
+           </div>
+        </div>
            
         </div>
     </div>
@@ -1052,33 +1083,35 @@ app.OpenMS=function(){
                 <div class="row clickM2 clickM hide" >
                     <div class="col-sm-6">
                     <ul>
-                      <li>Define ‘patient-centered outcomes’ as they relate to value-based health care.</li>
                       <li>Appreciate and reflect on outcomes that are meaningful to the patient.</li>
-                      <li>Examine resources for defining and measuring patient-centered outcomes.</li>
-                     
+                      <li>Define the measurement of ‘patient outcomes’ as they relate to value-based health care.</li>
+                      <li>Define the measurement of ‘patient outcomes’ as they relate to value-based health care.; Examine resources for defining and measuring patient outcomes.</li>
+                      <li>Describe different types of measures and when they would be used; Identify the reasons for collecting ‘patient-reported outcomes.’</li>
                     </ul>
                     </div>
                     <div class="col-sm-6">
                          <ul>
-                            <li>Apply a measures framework to evaluate the success of health care value programs from the perspective of patient-centered outcomes.</li>
+                            <li>Apply a measures framework to evaluate the success of health care value programs from the perspective of patient outcomes.</li>
+                            <li>Examine resources for defining and measuring patient outcomes; Apply a measures framework to evaluate the success of health care value programs from the perspective of patient outcomes. Appreciate and reflect on how patient outcomes define physicians’ success.</li>
                           </ul> 
                     </div>
                 </div>
+
+                
                 <div class="row clickM3 clickM hide" >
                     <div class="col-sm-6">
                     <ul>
-                      <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
-                      <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
-                      <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
-                    
-                      
+                      <li>Reflect on the impact of cost on patient care and the overall value of provided health care.</li>
+                      <li>Describe basic principles of health care delivery, organization, and financing.</li>
+                      <li>Define terms used in discussing health care costs.</li>                                          
                     </ul>
                     </div>
                     <div class="col-sm-6">
                        
                          <ul>
-                           <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
-                      <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
+                           <li>Reflect on the impact of cost on patient care and the overall value of provided health care; Evaluate various charging and payment methods used in health care.</li>
+                            <li>Describe new methods for health care cost accounting and value-based payments.</li>
+                            <li>Study methods to measure and evaluate the success of health care value programs.</li>
                      
                           </ul> 
                     </div>
@@ -1136,7 +1169,7 @@ app.OpenMS=function(){
         <div class="modal-header">
         <div class="row">
             <div class="col-sm-6"></div>
-            <div class="col-sm-6 text-right"><span style="color:#e2873b;">New to Dell Medical? </span><button class="btn btn-default right-block" onclick="app.RegiPage();" type="button">Sign Up</button></div>
+            <div class="col-sm-6 text-right"><span style="color:#e2873b;">New to Dell Medical? </span><button class="btn btn-default right-block" onclick="app.RegiPage();" type="button">Sign up</button></div>
         </div>
         
          <!--  <button type="button" class="close" data-dismiss="modal" style="color:#fff">&times;</button> -->
@@ -1169,7 +1202,7 @@ app.OpenMS=function(){
             <div class="col-sm-5"></div>
             <div class="col-sm-2"> 
              <input type="hidden" name="login" id="login" value='login'>
-             <button class="btn btn-default center-block" type="submit" >Sign In</button>
+             <button class="btn btn-default center-block" type="submit" >Sign in</button>
             </div>
             <div class="col-sm-5"></div>
         </div>
@@ -1196,9 +1229,9 @@ app.OpenMS=function(){
         <div class="modal-header">
          <div class="row">
             <div class="col-sm-6"></div>
-            <div class="col-sm-6 text-right"><span style="color:#e2873b;">Already have an account? </span> <button class="btn btn-default right-block" onclick="app.OpenMS();" type="button" >Sign In</button></div>
+            <div class="col-sm-6 text-right"><span style="color:#e2873b;">Already have an account? </span> <button class="btn btn-default right-block" onclick="app.OpenMS();" type="button" >Sign in</button></div>
         </div>
-          <!-- <button type="button" class="close" data-dismiss="modal" style="color:#fff">&times;</button> -->
+     
            
         </div>
 
@@ -1218,7 +1251,7 @@ app.OpenMS=function(){
                 </div>
                 <div class="col-sm-6">
                  <div class="form-group">
-                    <input type="text" name="Lname" id="Lname" class="form-control text-center c" placeholder="Last Name" required="" autofocus="">
+                    <input type="text" name="Lname" id="Lname" class="form-control text-center c" placeholder="Last Name" required="" >
                     </div>
                 </div>
              </div>
@@ -1226,7 +1259,7 @@ app.OpenMS=function(){
              <div class="row">
                 <div class="col-sm-12">
                  <div class="form-group">
-                    <input type="email" name="Email" id="Email" class="form-control text-center c" placeholder="Email ID" required="" autofocus="">
+                    <input type="email" name="Email" id="Email" class="form-control text-center c" placeholder="Email ID" required="" >
                     </div>
                 </div>
              </div>
@@ -1234,12 +1267,12 @@ app.OpenMS=function(){
               <div class="row">
                 <div class="col-sm-6">
                  <div class="form-group">
-                    <input type="password" name="Pass" id="Pass" class="form-control text-center c" placeholder="Password" required="" autofocus="">
+                    <input type="password" name="Pass" id="Pass" class="form-control text-center c" placeholder="Password" required="" >
                     </div>
                 </div>
                 <div class="col-sm-6">
                  <div class="form-group">
-                    <input type="password" name="Passc" id="Passc" class="form-control text-center c" placeholder="Confirm Password" required="" autofocus="">
+                    <input type="password" name="Passc" id="Passc" class="form-control text-center c" placeholder="Confirm Password" required="" >
                     </div>
                 </div>
              </div>
@@ -1247,7 +1280,7 @@ app.OpenMS=function(){
              <div class="row">
                 <div class="col-sm-12">
                  <div class="form-group">
-                    <input type="text" name="Org" id="Org" class="form-control text-center c" placeholder="Organization" required="" autofocus="">
+                    <input type="text" name="Org" id="Org" class="form-control text-center c" placeholder="Organization" required="" >
                     </div>
                 </div>
              </div>
@@ -1255,7 +1288,7 @@ app.OpenMS=function(){
               <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <input type="number" name="Age" id="Age" class="form-control text-center c" placeholder="Age in years" required="" autofocus="">
+                    <input type="number" name="Age" id="Age" class="form-control text-center c" placeholder="Age in years" required="" >
                      </div>
                 </div>
              </div>
@@ -1280,28 +1313,27 @@ app.OpenMS=function(){
             <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <input type="text" name="City" id="City" class="form-control text-center c" placeholder="City" required="" autofocus="">
+                    <input type="text" name="City" id="City" class="form-control text-center c" placeholder="City" required="">
                      </div>
                 </div>
              </div>
                <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <input type="text" name="State" id="State" class="form-control text-center c" placeholder="State" required="" autofocus="">
+                    <input type="text" name="State" id="State" class="form-control text-center c" placeholder="State" required="" >
                      </div>
                 </div>
              </div>
               <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <input type="text" name="Country" id="Country" class="form-control text-center c" placeholder="Country" required="" autofocus="">
+                    <input type="text" name="Country" id="Country" class="form-control text-center c" placeholder="Country" required="" >
                      </div>
                 </div>
              </div>
              <div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
-                    <!-- <input type="text" name="PPRole" id="PPRole" class="form-control text-center c" placeholder="Country" required="" autofocus=""> -->
                     <label for="sel1">Primary Professional Role:</label>
                       <select class="form-control text-center c" id="PPRole" name="PPRole">
                         <option value="">[select from list below]</option>
@@ -1333,7 +1365,7 @@ app.OpenMS=function(){
              <div class="row">
              <div class="col-sm-12 text-center text-sm-center">  
               <div class="form-group">
-                <button class="btn btn-default" type="submit" name="registration">Sign Up</button>
+                <button class="btn btn-default" type="submit" name="registration">Sign up</button>
                 </div>
              </div>
              <!--  <div class="col-sm-6  text-right text-sm-center"> 
@@ -1521,7 +1553,7 @@ app.OpenMS=function(){
         <div class="modal-header">
         <div class="row">
             <div class="col-sm-6"></div>
-            <!-- <div class="col-sm-6 text-right"><span style="color:#e2873b;">New to Dell Medical? </span><button class="btn btn-default right-block" onclick="app.RegiPage();" type="button">Sign In</button></div> -->
+            <!-- <div class="col-sm-6 text-right"><span style="color:#e2873b;">New to Dell Medical? </span><button class="btn btn-default right-block" onclick="app.RegiPage();" type="button">Sign in</button></div> -->
         </div>
         
           <button type="button" class="close" data-dismiss="modal" style="color:#fff">&times;</button> 
@@ -1593,7 +1625,7 @@ app.OpenMS=function(){
         <div class="row PRi ">
             <div class="col-sm-3"></div>
             <div class="col-sm-6">
-                  <input type="password" name="RpasswordC" id="RpasswordC" class="inp form-control text-center" placeholder="Confirmed Password" required="" autofocus="">
+                  <input type="password" name="RpasswordC" id="RpasswordC" class="inp form-control text-center" placeholder="Confirmed Password" required="" >
             </div>
             <div class="col-sm-3"></div>
         </div>
@@ -1616,7 +1648,7 @@ app.OpenMS=function(){
             <div class="col-sm-5"></div>
             <div class="col-sm-2"> 
              <button onclick="$('#passReset').modal('hide'); $('#login').modal();" class="btn btn-default center-block" type="button" >
-              <span >Log In</span>
+              <span >Sign in</span>
              </button>
             </div>
             <div class="col-sm-5"></div>
@@ -1735,7 +1767,7 @@ rules: {
   }
 },
 messages: {
-email: "Please enter a valid email address"
+email: "Please enter a valid email address."
 },
  
 submitHandler: function(form){
@@ -1749,12 +1781,12 @@ submitHandler: function(form){
           if(data == 1){
             $('#forgot .btn').hide();
 
-           $("#forgot .NExists").html('<h3 class="form-signin-heading text-center" style="color:#e2873b;">Password has been sent to your E-mail ID.</h3>');
+           $("#forgot .NExists").html('<h3 class="form-signin-heading text-center" style="color:#e2873b;">A password reset link has been sent to your email.</h3>');
           }else{
           $('#forgot .btn').removeAttr('disabled');
           $("#forgot .actS").show();
           $("#forgot .loadS").hide();
-          $("#forgot .NExists").html('<h4 style="color:#ff0000;">E-mail ID does not exists.</h4>');
+          $("#forgot .NExists").html('<h4 style="color:#ff0000;">E-mail ID does not exist.</h4>');
           }
         }, "json");
 
@@ -1793,15 +1825,12 @@ submitHandler: function(form){
             $(".NExists h4").text('Incorrect username or password.');
           }
         }, "json");
-
 }
- 
 });
 
 
 
-    $("#registrationF").validate({
-//specify the validation rules
+ $("#registrationF").validate({
 rules: {
     Fname: "required",
     Lname: "required",
@@ -1824,11 +1853,10 @@ Passc: {
 },
 Gender: {
     required: true,
-}
-,
+},
 PPRole: {
     required: true,
-}
+},
 },
 
 PPRole: {
@@ -1851,8 +1879,29 @@ email: "Please enter a valid email address"
 submitHandler: function(form){
 form.submit();
 }
- 
 });
+
+$(".module1button").click(function(){
+app.ClickOnModule="module1";
+});
+$(".module2button").click(function(){
+app.ClickOnModule="module2";
+});
+$(".module3button").click(function(){
+app.ClickOnModule="module3";
+});
+
+$(".btnM1").click(function(){
+app.ClickOnModule="module1";
+});
+$(".btnM2").click(function(){
+app.ClickOnModule="module2";
+});
+$(".btnM3").click(function(){
+app.ClickOnModule="module3";
+});
+
+ 
 </script>
 <div class="dis disS"></div>
 <div class="dis disM"></div>

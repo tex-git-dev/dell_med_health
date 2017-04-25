@@ -36,7 +36,7 @@ include("view/cjs.php");
     <br>
 
       <div class="Step1 container m2s6b2 ">
-          <f><h3 class="text-uppercase text-center">resources for measuring patient outcomes</h3></f>
+          <f><h3 class="text-uppercase text-center">Making Decisions Using Data From Different Outcomes</h3></f>
           <br>
           <f><p>Radar charts allow multiple health care stakeholders, most notably physicians and their patients, to compare possible strategies across multiple relevant dimensions including cost and outcomes. Watch the video to learn more.</p></f>
       </div>      
@@ -47,10 +47,10 @@ include("view/cjs.php");
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Module1Final.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/Module 1 Final.mp4" type="video/mp4"></source>
-                  <source src="media/Module 1 Final.webm" type="video/webm"></source>
-                  <source src="media/Module 1 Final.ogv" type="video/ogg"></source>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod2_Sec6.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec6.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec6.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec6.ogv" type="video/ogg"></source>
                    <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>
@@ -59,16 +59,9 @@ include("view/cjs.php");
       </div>
     </div>
 </div>
-<br><br>
-<div class="jumbotron m2s6b3 ">
-      <f><h3 class="text-uppercase text-center">Additional Resources</h3></f>
-      <br>
-      <div class="row">
-          <div class="col-sm-1"></div>
-          <div class="col-sm-10"><f><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--  Radar charts allow multiple health care stakeholders, most notably physicians and their patients, to compare possible strategies across multiple relevant dimensions including cost and outcomes. --> Explore the method and impact of using radar charts further and consider their practical application and implications for patient care. Kaplan, RS, Blackston, RP, Haas, DA, et al. Measuring and communicating health care value with charts. Harvard Bus Rev. 2015. <a target="blanck" style="color:#f48221;" href="https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts">https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts</a>. Accessed December 4, 2016.</p></f></div>
-          <div class="col-sm-1"></div>
-      </div>
-</div>
+<br>
+
+
 
 
 <!-- Mcq start -->
@@ -82,13 +75,14 @@ include("view/cjs.php");
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
+            <div class="item active" id="0">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">Radar charts</p></f>
+                                <f><p class="ques">How does the size of a ring in a radar chart correspond to the performance of a treatment in achieving patient outcomes?<!-- <br><img src="img/m2s6q1.png" class="img-responsive center-block"> --></p></f>
+
 
                                 <div class="row">
                                 <div class="col-sm-12" >
@@ -96,7 +90,7 @@ include("view/cjs.php");
 
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('5%', '15%', '30%');
+                                            $array = array('Smaller rings indicate higher performance.', 'Larger rings indicate higher performance.', 'Ring size does not correlate to performance.');
 
                                             $numRandoms = 3;
 
@@ -105,25 +99,12 @@ include("view/cjs.php");
                                             //print_r($random);
 
                                             foreach ($random as $key => $value) {
-                                                $ans = $value == "30%" ? 1 : 0;
+                                                $ans = $value == "Larger rings indicate higher performance." ? 1 : 0;
                                                 echo '<div class="col-sm-4">
                                                     <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
                                             }
                                         ?>
-
-
-                                        <!-- <div class="col-sm-4">
-                                            <div class="ans" onclick="checkAnswer(this, false);">5%</div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="ans" onclick="checkAnswer(this, false);">15%</div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="ans" onclick="checkAnswer(this, true);">30%</div>
-                                        </div> -->
-
-
                                     </div>
                                 </div>
                                
@@ -142,7 +123,7 @@ include("view/cjs.php");
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
@@ -162,50 +143,34 @@ include("view/cjs.php");
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="1">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
                         <div class="col-sm-1" ></div>
                             <div class="col-sm-10" >
-                                <f><p class="ques">Health care costs directly affect...</p></f>
-
+                                <f><p class="ques">Select the thumbnail to expand. According to this radar chart, if Ms. Jones stated that minimizing cost was her biggest priority, would you more likely recommend a PCI+OMT or OMT-only treatment plan?<br><img src="img/m2s6q1.png" class="img-responsive center-block" style="width:15%; cursor:pointer;" data-toggle="modal" data-target="#myModal"></p></f>
                                 <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row eq-h">
 
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('individuals', 'employers', 'national budgets', 'all of the above');
+                                            $array = array('PCI+OMT', 'OMT only', 'Neither treatment significantly reduces cost.');
 
-                                            $numRandoms = 4;
+                                            $numRandoms = 3;
 
                                             $random = randomArray($array, $numRandoms);
                                             $ans = array(false, false, false, true);
                                             //print_r($random);
 
                                             foreach ($random as $key => $value) {
-                                                $ans = $value == "all of the above" ? 1 : 0;
-                                                echo '<div class="col-sm-3">
+                                                $ans = $value == "OMT only" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
                                                     <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
                                             }
                                         ?>
-
-
-                                       <!--  <div class="col-sm-3">
-                                            <div class="ans"  onclick="checkAnswer(this, false);">individuals</div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="ans" onclick="checkAnswer(this, false);">employers</div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="ans" onclick="checkAnswer(this, false);">national budgets</div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="ans" onclick="checkAnswer(this, true);">all of the above</div>
-                                        </div> -->
-
                                     </div>
                                 </div>
                               
@@ -224,7 +189,7 @@ include("view/cjs.php");
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
@@ -242,7 +207,7 @@ include("view/cjs.php");
                 </div>
               </div>
 
-                  <a class="left carousel-control m2s6b7" href="#myCarousel" role="button" data-slide="prev">
+                  <a class="left carousel-control m2s6b7" href="#myCarousel" role="button" data-slide="prev" style="display:none;">
                     <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
                   </a>
                   <a class="right carousel-control m2s6b7" href="#myCarousel" role="button" data-slide="next">
@@ -254,9 +219,36 @@ include("view/cjs.php");
 </div>
 
 
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">          
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Select the thumbnail to expand. According to this radar chart, if Ms. Jones stated that minimizing cost was her<br> biggest priority, would you more likely recommend a PCI+OMT or OMT-only treatment plan?</h4>
+        </div>
+        <div class="modal-body">
+          <img src="img/m2s6q1.png" class="img-responsive center-block">
+        </div>       
+      </div>
+      
+    </div>
+  </div>
+
 <!-- Mcq end -->
 
-<br><br>
+<br>
+
+<div class="jumbotron m2s6b3">
+      <f><h3 class="text-uppercase text-center">Additional Resources</h3></f>
+      <br>
+      <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10"><f><p><!--  Radar charts allow multiple health care stakeholders, most notably physicians and their patients, to compare possible strategies across multiple relevant dimensions including cost and outcomes. --> Explore the method and impact of using radar charts further and consider their practical application and implications for patient care. Kaplan, RS, Blackston, RP, Haas, DA, et al. Measuring and communicating health care value with charts. Harvard Bus Rev. 2015. <a target="blanck" style="color:#f4821f;" href="https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts">https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts</a>. Accessed December 4, 2016.</p></f></div>
+          <div class="col-sm-1"></div>
+      </div>
+</div>
+<br>
       <div class="container m2s6b5">
         <hr>
         <f><h5 data-toggle="collapse" data-target="#demo" class="text-left" style="cursor:pointer;">REFERENCES <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
@@ -264,11 +256,11 @@ include("view/cjs.php");
       <div id="demo" class="collapse">
         <ol>
           <f><li><p>Kaplan, RS, Blackston, RP, Haas, DA, et al. Measuring and communicating health care value with charts. <em>Harvard Bus Rev</em>. 2015. <a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts">https://hbr.org/2015/10/measuring-and-communicating-health-care-value-with-charts</a>. Accessed December 4, 2016.</p></li></f>
-          <f><li><p>Boden WE, O’Rourke RA, Teo KK, et al. Optimal medical therapy with or without PCI for stable coronary Disease. <em>New Engl J Med</em>. 2007;365(15):1503-1516. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1056/NEJMoa070829">10.1056/NEJMoa070829</a>.</p></li></f>
-          <f><li><p>Weintraub WS, Spertus JA, Kolm PK, et al. Effect of PCI on quality of life in patients with stable coronary disease. <em>New Engl J Med</em>. 2008;359(7):677-687. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1056/NEJMoa072771">10.1056/NEJMoa072771</a>.</p></li></f>
-          <f><li><p>Sedlis, SP, Jurkovitz, CT, Hartigan, PM, et al. Health status and quality of life in patients with stable coronary artery disease and chronic kidney disease treated with optimal medical therapy or percutaneous coronary intervention (Post Hoc Findings from the COURAGE Trial). <em>Am J Cardiol</em>. 2013;112(11):1703-1708. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1016/j.amjcard.2013.07.034">10.1016/j.amjcard.2013.07.034</a>.</p></li></f>
-          <f><li><p>Weintraub, WS, Boden, WE, Zhang, Z, et al. Cost-effectiveness of percutaneous coronary intervention in optimally treated stable coronary patients. <em>Circ Cardiovasc Qual Outcomes</em>. 2008;1(1):12-20. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1161/CIRCOUTCOMES.108.798462">10.1161/CIRCOUTCOMES.108.798462</a>.</p></li></f>
-          <f><li><p>Acharjee S, Teo KK, Jacobs, AK, et al. Optimal medical therapy with or without percutaneous coronary intervention in women with stable coronary disease: A pre-specified subset analysis of the Clinical Outcomes Utilizing Revascularization and Aggressive druG Evaluation (COURAGE) trial. <em>Am Heart J</em>. 2016;173:108-17. March 2016. doi:<a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1016/j.ahj.2015.07.020">10.1016/j.ahj.2015.07.020</a>.</p></li></f>
+          <f><li><p>Boden WE, O’Rourke RA, Teo KK, et al. Optimal medical therapy with or without PCI for stable coronary Disease. <em>New Engl J Med</em>. 2007;365(15):1503-1516. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1056/NEJMoa070829">10.1056/NEJMoa070829</a>.</p></li></f>
+          <f><li><p>Weintraub WS, Spertus JA, Kolm PK, et al. Effect of PCI on quality of life in patients with stable coronary disease. <em>New Engl J Med</em>. 2008;359(7):677-687. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1056/NEJMoa072771">10.1056/NEJMoa072771</a>.</p></li></f>
+          <f><li><p>Sedlis, SP, Jurkovitz, CT, Hartigan, PM, et al. Health status and quality of life in patients with stable coronary artery disease and chronic kidney disease treated with optimal medical therapy or percutaneous coronary intervention (Post Hoc Findings from the COURAGE Trial). <em>Am J Cardiol</em>. 2013;112(11):1703-1708. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1016/j.amjcard.2013.07.034">10.1016/j.amjcard.2013.07.034</a>.</p></li></f>
+          <f><li><p>Weintraub, WS, Boden, WE, Zhang, Z, et al. Cost-effectiveness of percutaneous coronary intervention in optimally treated stable coronary patients. <em>Circ Cardiovasc Qual Outcomes</em>. 2008;1(1):12-20. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1161/CIRCOUTCOMES.108.798462">10.1161/CIRCOUTCOMES.108.798462</a>.</p></li></f>
+          <f><li><p>Acharjee S, Teo KK, Jacobs, AK, et al. Optimal medical therapy with or without percutaneous coronary intervention in women with stable coronary disease: A pre-specified subset analysis of the Clinical Outcomes Utilizing Revascularization and Aggressive druG Evaluation (COURAGE) trial. <em>Am Heart J</em>. 2016;173:108-17. March 2016. doi:<a target="_blank" style="overflow-wrap: break-word; color:#f4821f;" href="http://dx.doi.org/10.1016/j.ahj.2015.07.020">10.1016/j.ahj.2015.07.020</a>.</p></li></f>
         </ol>
       </div>        
    </div>
@@ -278,19 +270,23 @@ include("view/cjs.php");
 
 <footer class="container-fluid">         
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m2/m2s5p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 5</span>
-                <span class="sp1"><strong>Using Measures Frameworks to Improve Outcomes that Matter to Patients</strong></span></a>
+                <span class="sp1"><strong>Using Measures Frameworks to Improve Outcomes</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m2/m2s7p1"><span class="ssp2">MODULE 2 | Section 7</span>
                 <span class="sp2"><strong>Care Redesign Case: UNOS</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+          
 </footer> 
   
 
@@ -319,30 +315,31 @@ include("view/cjs.php");
     ?>
 
 <script>
-  /*function checkAnswer(obj, f) {
-        $(".ans").removeClass("selectedAns");
-        $(".white").removeClass("correct incorrect");
-        if (f === true) {
-            $(obj).addClass('selectedAns').parents('.white').addClass('correct');
-        } else {
-            $(obj).addClass('selectedAns').parents('.white').addClass('incorrect');
-        }
-    }*/
 
-   $(document).ready(function(){
-     $('.video-js').inview({
-        'onEnter': function($object) {
-            $('video').trigger('play');
-          },
-          'onLeave': function($object) {
-            $('video').trigger('pause');
-          }
-
+$('.carousel').on('slid.bs.carousel', function (e) {
+       $('.item .ans').removeClass('Dis');
+       var id = parseInt(e.relatedTarget.id);
+          if(id == 0){
+              $('.left').hide();
+              $('.right').show();
+          }else if(id == 1){
+            $('.left').show();
+            $('.right').hide();
+          } 
       });
-  });
-     function checkAnswer(obj, f) {
+
+function TryA(){
+      $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
+      $('.item .ans').removeClass('Dis')
+
+    }
+
+
+    function checkAnswer(obj, f) {
             //console.log($(obj).parents(".row-eq-height"));
-            $(obj).parents(".eq-h").find(".ans").removeClass("selectedAns");
+            $('.item .ans').addClass('Dis');
+            $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
+            $(obj).parents(".eq-h").find(".ans")
             $(obj).parents(".white").removeClass("correct incorrect");
             if (f === 1) {
                 $(obj).addClass('selectedAns').parents('.white').addClass('correct');
@@ -355,4 +352,23 @@ include("view/cjs.php");
                 $("." + f).removeClass("hide");
             }
         }
+        
+
+$(document).ready(function(){
+  var flagvd = false;
+     $('.video-js').inview({
+        'onEnter': function($object) {
+          if(flagvd == false){
+            $('video').trigger('play');
+            flagvd=true;
+          }           
+
+          },
+          'onLeave': function($object) {
+            //$('video').trigger('pause');
+          }
+
+      });
+  });
+
 </script>

@@ -26,13 +26,20 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display:         inline;
+  display: flex;
   flex-wrap: wrap;
 }
-.m1s4p1 .eq-h > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
+
+
+ 
+
+.m1s4p1 .vertical-align {
+/*  display: flex;
+  flex-direction: row;*/
 }
+
+
+
 .m1s4p1 .s4b1 h2{
     background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
     color: #232a30;
@@ -73,10 +80,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;  
-    height: 100%;
-    /*background-color: #060;    color: white;
-    text-shadow: black 0.3em 0.3em 0.3em;
-    background-color: #fff;*/
+    height: 100%;    
     min-height: 420px;
     padding-top: 85px;
     padding-bottom: 85px;
@@ -133,32 +137,22 @@
 
 .s4scatterplot .ques{
     color: #3C4252;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 600;
     padding-bottom: 30px;
 }
 .s4scatterplot .ans{
-    padding: 15px;
+    padding: 10px;
     background: #535B72;
     color: #FFFFFF !important;
-    font-size: 15px !important;
-    margin: 8px 0;
+    font-size: 14px !important;
+    margin: 0;
     cursor: pointer;
     border:2px solid #535B72;
     height: 100%;
 }
 
-.s4scatterplot .ansa{
-	background: #535b72 none repeat scroll 0 0;
-	border: 2px solid #535b72;
-	color: #ffffff !important;
-	cursor: pointer;
-	font-size: 15px !important;
-	height: 100%;
-	margin: 8px 0;
-	min-height: 77px;
-	padding: 26px 15px 15px;
-}
+
 
 .s4scatterplot .calcHeight{
     display: table;
@@ -173,17 +167,17 @@
     font-style: italic;
 }
 .s4scatterplot .incorrect{
-    background: #F06858;
+    background: #F06858 !important;
 }
 .s4scatterplot .correct{
-    background: #2CB69D;
+    background: #2CB69D !important;
 }
 .s4scatterplot .incorrect .ques,.s4scatterplot .correct .ques{
-    color: #fff;
+    color: #fff !important;
 }
 .s4scatterplot .selectedAns{
     background: transparent;
-    border:2px solid #fff;
+    border:2px solid #fff !important;
 }
 .msg{
     display: none;
@@ -202,6 +196,7 @@
     padding: 10px 0;
     text-transform: uppercase;
     font-size: 20px;
+    cursor: pointer;
 }
 .s4scatterplot .incorrect .pageCount,.s4scatterplot .correct .pageCount{
     display: none;
@@ -255,9 +250,39 @@
 
 
 
+.m1s4p1 .dont-break-out {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
+
+
 @media screen
 and (min-device-width : 766px)
 and (max-device-width : 1000px) {
+.m1s4p1 .eq-h {
+        display: grid;
+    }
+.m1s4p1 .eq-h .col-sm-4, .m1s4p1 .eq-h .col-sm-3  {
+        width: 100% !important;
+        padding-bottom: 10px;
+
+}
+
 .m1s4p1 .s4b1 {
     margin-bottom: 0px;
     background: url('../img/s4img1.png') no-repeat center center; 
@@ -290,17 +315,7 @@ and (max-device-width : 1000px) {
     display: none;
 }
 
-.s4scatterplot .ansa{
-    padding: 15px !important;
-    background: #535B72;
-    color: #FFFFFF !important;
-    font-size: 15px !important;
-    margin: 8px 0 !important;
-    cursor: pointer !important;
-    border:2px solid #535B72 !important;
-    height: 100% !important;
-	min-height: auto;
-}
+
 
 .s4scatterplot .white{
     background: white;
@@ -309,12 +324,35 @@ and (max-device-width : 1000px) {
     min-height: 500px;    
 }
 
+.m1s4p1 .m4b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s4img2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    min-height: 420px;
+    padding-top: 85px;
+    padding-bottom: 85px;
 }
 
 
+
+
+}
+
 @media screen
 and (min-device-width : 501px)
-and (max-device-width : 765px) {   
+and (max-device-width : 765px) {  
+.m1s4p1 .eq-h {
+        display: grid;
+    }
+.m1s4p1 .eq-h .col-sm-4, .m1s4p1 .eq-h .col-sm-3  {
+        width: 100% !important;
+        padding-bottom: 10px;
+
+} 
 .m1s4p1 .s4b1 {
     margin-bottom: 0px;
     background: url('../img/s4img1.png') no-repeat center center; 
@@ -345,20 +383,25 @@ and (max-device-width : 765px) {
     display: none;
 }
 
-.s4scatterplot .ansa{
-    padding: 15px !important;
-    background: #535B72;
-    color: #FFFFFF !important;
-    font-size: 15px !important;
-    margin: 8px 0 !important;
-    cursor: pointer !important;
-    border:2px solid #535B72 !important;
-    height: 100% !important;
-	min-height: auto;
-}
 
 .m1s4p1 .dArowh {
     display: none;  
+}
+.m1s4p1 .vertical-align {
+  display: inline-flex;
+}
+
+.m1s4p1 .m4b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s4img2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    min-height: 420px;
+    padding-top: 85px;
+    padding-bottom: 85px;
 }
 
 }
@@ -368,6 +411,15 @@ and (max-device-width : 765px) {
 @media  screen
 and (min-device-width : 300px)
 and (max-device-width : 500px) {
+
+    .m1s4p1 .eq-h {
+        display: grid;
+    }
+.m1s4p1 .eq-h .col-sm-4, .m1s4p1 .eq-h .col-sm-3  {
+        width: 100% !important;
+        padding-bottom: 10px;
+
+}
     .m1s4p1 .s4b1 {
     margin-bottom: 0px;
     background: url('../img/s4img1.png') no-repeat center center; 
@@ -398,20 +450,27 @@ display: contents;
 .m1s4p1 .s3hide {
     display: none;
 }
-.s4scatterplot .ansa{
-    padding: 15px !important;
-    background: #535B72;
-    color: #FFFFFF !important;
-    font-size: 15px !important;
-    margin: 8px 0 !important;
-    cursor: pointer !important;
-    border:2px solid #535B72 !important;
-    height: 100% !important;
-	min-height: auto;
-}
+
 
 .m1s4p1 .dArowh {
     display: none;  
+}
+
+.m1s4p1 .vertical-align {
+  display: inline-flex;
+}
+
+.m1s4p1 .m4b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s4img2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    min-height: 420px;
+    padding-top: 85px;
+    padding-bottom: 85px;
 }
 
 }
@@ -422,6 +481,14 @@ display: contents;
 @media  screen
 and (min-device-width : 100px)
 and (max-device-width : 299px) {
+    .m1s4p1 .eq-h {
+        display: grid;
+    }
+.m1s4p1 .eq-h .col-sm-4, .m1s4p1 .eq-h .col-sm-3  {
+        width: 100% !important;
+        padding-bottom: 10px;
+
+}
     .m1s4p1 .s4b1 {
     margin-bottom: 0px;
     background: url('../img/s4img1.png') no-repeat center center; 
@@ -451,21 +518,27 @@ and (max-device-width : 299px) {
 .m1s4p1 .s3hide {
     display: none;
 }
-.s4scatterplot .ansa{
-    padding: 15px !important;
-    background: #535B72;
-    color: #FFFFFF !important;
-    font-size: 15px !important;
-    margin: 8px 0 !important;
-    cursor: pointer !important;
-    border:2px solid #535B72 !important;
-    height: 100% !important;
-	min-height: auto;
-}
+
 
 .m1s4p1 .dArowh {
     display: none;  
 }
 
+.m1s4p1 .vertical-align {
+  display: inline-flex;
+}
+
+.m1s4p1 .m4b2 {     
+    margin-bottom: 0px;
+    background: url('../img/s4img2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;    
+    min-height: 420px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
 
 }

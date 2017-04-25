@@ -1,6 +1,5 @@
-.m2s8p1 .m2s8ms2 .well{
-background: #f4f4f4;
-}
+
+
 .m2s8p1 .m2s8b1 {
     margin-bottom: 0px;
     background: url('../img/m2s8img1.png') no-repeat center center fixed; 
@@ -92,25 +91,41 @@ background: #f4f4f4;
     font-family: "GothamHTF-Bold";
 }
 .m2s8p1 .m2s8ms2 .row{
-    margin:30px;
+  /*  margin:30px;*/
     padding-left:0px;
     padding-right:0px;
 }
 
+.m2s8p1 .m2s8ms2 .imgGallry {
+  background: #f5f5f5;      
+}
 
+.m2s8p1 .m2s8ms2 .well .col-sm-6{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.m2s8p1 .m2s8ms2 .well .col-sm-6 p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.m2s8p1 .m2s8ms2 .well {
+    margin-bottom: 0px !important;
+    padding: 15px !important;
+}
 
 .m2s8p1 .m2s1b2 .inner{margin:0px !important;}
 
-.m2s8p1 .vertical-align {
+.m2s8p1 .m2s8ms2 .vertical-align {
   display: flex;
   flex-direction: row;
 }
 
-.m2s8p1 .vertical-align > [class^="col-"],
-.m2s8p1 .vertical-align > [class*=" col-"] {
+.m2s8p1 .m2s8ms2 .vertical-align > [class^="col-"],
+.m2s8p1 .m2s8ms2 .vertical-align > [class*=" col-"] {
   display: flex;
   align-items: center;     /* Align the flex-items vertically */
-  justify-content: center; /* Optional, to align inner flex-items
+  justify-content: left; /* Optional, to align inner flex-items
                               horizontally within the column  */
 }
 
@@ -185,7 +200,7 @@ background: #f4f4f4;
 }
 .m2s8p1 .m2s8b7 .col-sm-9 .well p:nth-child(2){
     font-family: "GothamHTF-Bold";
-    font-size: 16px !important;
+    font-size: 18px !important;
     -webkit-hyphens: auto;
    -moz-hyphens: auto;
         hyphens: auto;
@@ -196,6 +211,7 @@ background: #f4f4f4;
    -moz-hyphens: auto;
         hyphens: auto;
 }
+
 .m2s8p1 .m2s8b7 .col-sm-9 .well p:nth-child(4), .m2s8p1 .m2s8b7 .col-sm-9 .well p:nth-child(5), .m2s8p1 .m2s8b7 .col-sm-9 .well p:nth-child(6){
     font-family: "GothamHTF-BookItalic";    
     font-size: 12px !important;
@@ -210,20 +226,29 @@ background: #f4f4f4;
     align-items: center;
     display: flex;
 }
+
+.m2s8p1 .m2s8b7 .vertical-align > [class^="col-"],
+.m2s8p1 .m2s8b7 .vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+
 .m2s8p1 .m2s8b6 h2 {
     color:#fff;
     font-family: "GothamHTF-Bold";
  }
 
-.m2s8p1  .m2s8b7 .col-sm-3 .well1{
-   background: #f5f5f5 none repeat scroll 0 0;
+.m2s8p1  .m2s8b7 .col-sm-12 .well1{
+   background: #f5f5f5;
     border-radius: 0;
     height: 100%;
     margin-bottom: 15px;
     padding-bottom: 0;
     padding-top: 0;
     padding-left: 15px;
-     min-height: 510px;
+    
 }
 .m2s8p1  .m2s8b7 .col-sm-9 {  
     height: 100%;
@@ -234,7 +259,7 @@ background: #f4f4f4;
      height: 100%;
      margin-bottom: 0px;
       border-radius: 0;
-        min-height: 510px;       
+        
 }
 .m2s8p1  .m2s8b7 .well1 .row{   
      height: 100%;
@@ -258,54 +283,6 @@ background: #f4f4f4;
 /* end learn more */
 
 
-
-@media only screen and (min-width : 768px) {
-
-.m2s8p1  .m2s8b7 .col-sm-3 .well1 {
-   background: #f5f5f5 none repeat scroll 0 0;
-    border-radius: 0;
-    height: 100%;
-    margin-bottom: 15px;
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-left: 15px;
-    min-height: 940px;
-}
-
-.m2s8p1  .m2s8b7 .col-sm-9 .well {   
-    background:#fff;
-     height: 100%;
-     margin-bottom: 0px;
-     border-radius: 0;     
-     min-height: 940px;
-}
-
-    
-}
-
-
-@media only screen and (min-width : 1024px){ 
-
-.m2s8p1  .m2s8b7 .col-sm-3 .well1 {
-   background: #f5f5f5 none repeat scroll 0 0;
-    border-radius: 0;
-    height: 100%;
-    margin-bottom: 15px;
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-left: 15px;
-    min-height: 680px;
-}
-
-.m2s8p1  .m2s8b7 .col-sm-9 .well {   
-    background:#fff;
-     height: 100%;
-     margin-bottom: 0px;
-     border-radius: 0;     
-     min-height: 680px;
-}
-
-}
 
 
 
@@ -341,10 +318,7 @@ and (max-device-width : 1000px) {
     width: 42%;
     }
 
- .m2s8p1 .jumbotron .m2s8b7 .panel-footer {
-    border-top: none !important;
-    min-height: 285px;        
-}
+
 
 .m2s8p1 .m2s8t2 .row .col-sm-6 {
     width: 100% !important;
@@ -354,6 +328,28 @@ and (max-device-width : 1000px) {
 }
 .m2s8p1 .m2s8t2 .m2s8c3 p {    
     padding-bottom: 30px !important;    
+}
+
+.m2s8p1 .m2s8b6 {
+    margin-bottom: 0px;
+    background: url('../img/m2s8img002.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;
+    width: auto;  
+}
+
+
+.m2s8p1 .m2s8ms2 .well {
+   margin-bottom: 0px !important;
+    padding: 5px !important;
+}
+.m2s8p1 .m2s8ms2 .well .col-sm-6 p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+
 }
 
 
@@ -394,24 +390,6 @@ and (max-device-width : 765px) {
     font-family: "GothamHTF-Bold";
 }
 
-.m2s8p1  .m2s8b7 .col-sm-3 .well1 {
-   background: #f5f5f5 none repeat scroll 0 0;
-    border-radius: 0;
-    height: 100%;
-    margin-bottom: 15px;
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-left: 15px;
-    min-height: auto;
-}
-
-.m2s8p1  .m2s8b7 .col-sm-9 .well {   
-    background:#fff;
-     height: 100%;
-     margin-bottom: 0px;
-     border-radius: 0;     
-     min-height: auto;
-}
 
  .m2s8p1 .dArowh {
     display: none;  
@@ -422,6 +400,27 @@ and (max-device-width : 765px) {
 }
 .m2s8p1 .m2s8t2 .m2s8c3 p {    
     padding-bottom: 30px !important;    
+}
+
+.m2s8p1 .m2s8b6 {
+    margin-bottom: 0px;
+    background: url('../img/m2s8img002.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;
+    width: auto;  
+}
+
+.m2s8p1 .m2s8ms2 .well {
+   margin-bottom: -15px !important;
+    padding: 5px !important;
+}
+.m2s8p1 .m2s8ms2 .well .col-sm-6 p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 
 }
@@ -461,24 +460,9 @@ and (max-device-width : 500px) {
     width: 65%;
     }
 
-.m2s8p1  .m2s8b7 .col-sm-3 .well1 {
-   background: #f5f5f5 none repeat scroll 0 0;
-    border-radius: 0;
-    height: 100%;
-    margin-bottom: 15px;
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-left: 15px;
-    min-height: auto;
-}
 
-.m2s8p1  .m2s8b7 .col-sm-9 .well {   
-    background:#fff;
-     height: 100%;
-     margin-bottom: 0px;
-     border-radius: 0;     
-     min-height: auto;
-}
+
+
  .m2s8p1 .dArowh {
     display: none;  
 }
@@ -487,6 +471,27 @@ and (max-device-width : 500px) {
 }
 .m2s8p1 .m2s8t2 .m2s8c3 p {    
     padding-bottom: 30px !important;    
+}
+
+.m2s8p1 .m2s8b6 {
+    margin-bottom: 0px;
+    background: url('../img/m2s8img002.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;
+    width: auto;  
+}
+
+.m2s8p1 .m2s8ms2 .well {
+   margin-bottom: -15px !important;
+    padding: 2px !important;
+}
+.m2s8p1 .m2s8ms2 .well .col-sm-6 p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 
 }
@@ -523,24 +528,9 @@ and (max-device-width : 299px) {
     width: 60%;
     }
 
-    .m2s8p1  .m2s8b7 .col-sm-3 .well1 {
-   background: #f5f5f5 none repeat scroll 0 0;
-    border-radius: 0;
-    height: 100%;
-    margin-bottom: 15px;
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-left: 15px;
-    min-height: auto;
-}
+ 
 
-.m2s8p1  .m2s8b7 .col-sm-9 .well {   
-    background:#fff;
-     height: 100%;
-     margin-bottom: 0px;
-     border-radius: 0;     
-     min-height: auto;
-}
+
 
  .m2s8p1 .dArowh {
     display: none;  
@@ -551,6 +541,27 @@ and (max-device-width : 299px) {
 }
 .m2s8p1 .m2s8t2 .m2s8c3 p {    
     padding-bottom: 30px !important;    
+}
+
+.m2s8p1 .m2s8b6 {
+    margin-bottom: 0px;
+    background: url('../img/m2s8img002.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;
+    width: auto;  
+}
+
+.m2s8p1 .m2s8ms2 .well {
+   margin-bottom: -15px !important;
+    padding: 2px !important;
+}
+.m2s8p1 .m2s8ms2 .well .col-sm-6 p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 
 }

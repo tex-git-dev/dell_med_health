@@ -1,6 +1,10 @@
 a{
     cursor: pointer;
 }
+
+.bolds8 {
+    font-family: "GothamHTF-Bold";
+}
 .line {
     font-size: 14px;
     display: block !important;
@@ -42,7 +46,6 @@ a{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     background-color: #060;    color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
     background-color: #fff;
@@ -61,6 +64,7 @@ a{
     position: relative;
     text-shadow: none;
     width: 60%;
+    margin-bottom: 12%;
 }
 
 .s8b1 .container p{
@@ -333,13 +337,14 @@ a{
     /*    min-height: 375px;*/
     position: relative;
     padding: 0;
-    //background-position: 0 100%;
+   /* background-position: 0 100%;
     background-position-x: 0;
-    background-position-y: 100%;
+    background-position-y: 100%;*/
 }
 
 .m6b2 h4{
     font-family: "GothamHTF-Medium"; 
+    padding-top: 14px;
 }
 
 .m6b2 .container {
@@ -442,6 +447,39 @@ and (max-device-width : 1024px) {
     .prevBtn,.nextBtn{
         display: none;
     }
+
+    .s8b1 {
+    margin-bottom: 0px;
+    background: url('../img/s8img1.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+    background-position: 100% 0;
+}
+.m6b2{
+    margin-bottom: 0px;
+    background: url('../img/s6img2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #fff;
+    /*    min-height: 375px;*/
+    position: relative;
+    padding: 0;
+   /* background-position: 0 100%;
+    background-position-x: 0;
+    background-position-y: 100%;*/
+}
+
 }
 
 @media only screen and (max-width : 1059px) {
@@ -515,6 +553,21 @@ and (max-device-width : 1024px) {
 
 
 @media (min-width: 601px) and (max-width: 1000px) {
+
+    .s8b1 {
+    margin-bottom: 0px;
+    background: url('../img/s8img1.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+    background-position: 100% 0;
+}
+
     .b2-8 h5,.b2-8 .container p {
         padding: 10px 20px;
         margin-bottom: 20px;
@@ -524,10 +577,44 @@ and (max-device-width : 1024px) {
         font-size: 30px;
         margin: 0 0 40px 0;
     }
+
+    .s8b1 {
+    margin-bottom: 0px;
+    background: url('../img/s8img1.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+    background-position: 100% 0;
+}
+
+.m6b2{
+    margin-bottom: 0px;
+    background: url('../img/s6img2.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #fff;
+    /*    min-height: 375px;*/
+    position: relative;
+    padding: 0;
+   /* background-position: 0 100%;
+    background-position-x: 0;
+    background-position-y: 100%;*/
+}
+
 }
 @media (max-width: 600px) {
-    .line{
-        font-size: 12px;
+    .line {
+        font-size: 12px;        
     }
     .b2-8 h5,.b2-8 .container p {
         padding: 5px 10px;
@@ -578,7 +665,22 @@ and (max-device-width : 1024px) {
 
 @media screen
 and (min-device-width : 501px)
-and (max-device-width : 765px) {    
+and (max-device-width : 765px) { 
+
+ .s8b1 {
+    margin-bottom: 0px;
+    background: url('../img/s8img1.png') no-repeat right center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+    background-position: 100% 0;
+}
+
     .s8b1 .container h2{
         font-family: "GothamHTF-Bold";
         font-size: 124%;
@@ -595,6 +697,11 @@ and (max-device-width : 765px) {
     .m1s8p1 .carousel-control.left{
         display: none;
     }
+
+.m1s8p1 .dArowh {
+    display: none;  
+}
+
 }
 
 
@@ -602,6 +709,21 @@ and (max-device-width : 765px) {
 @media  screen
 and (min-device-width : 300px)
 and (max-device-width : 500px) {
+    .s8b1 {
+    margin-bottom: 0px;
+    background: url('../img/s8img1.png') no-repeat right center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+    background-position: 100% 0;
+}
+
+
     .s8b1 .container h2{  
         font-family: "GothamHTF-Bold";
         font-size: 103%;
@@ -618,12 +740,31 @@ and (max-device-width : 500px) {
     .m1s8p1 .carousel-control.left{
         display: none;
     }
+.m1s8p1 .dArowh {
+    display: none;  
+}
+
 }
 
 
 @media  screen
 and (min-device-width : 100px)
 and (max-device-width : 299px) {
+
+.s8b1 {
+    margin-bottom: 0px;
+    background: url('../img/s8img1.png') no-repeat right center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+    background-position: 100% 0;
+}
+
 
     .s8b1 .container h2 {  
         font-family: "GothamHTF-Bold";
@@ -640,7 +781,10 @@ and (max-device-width : 299px) {
     }
     .m1s8p1 .carousel-control.left{
         display: none;
-    }   
+    } 
+.m1s8p1 .dArowh {
+    display: none;  
+}  
 
 }
 

@@ -72,10 +72,10 @@ include("view/cjs.php");
          <div class="col-sm-2"></div> 
             <div class="col-sm-8">
                <div class="videocontent">
-                <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/M1_41.png" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/M1_41.mp4" type="video/mp4"></source>
-                  <source src="media/M1_41.webm" type="video/webm"></source>
-                  <source src="media/M1_41.ogv" type="video/ogg"></source>
+                <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod1_Sec4.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.ogv" type="video/ogg"></source>
                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
                </div>  
@@ -95,28 +95,34 @@ include("view/cjs.php");
             <li data-target="#myCarousel" data-slide-to="2" ></li>    
         </ol>
         <!-- Wrapper for slides -->
+
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
+            <div class="item active" id="0">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
-                        <div class="col-sm-2" ></div>
-                            <div class="col-sm-8" >
+                        <div class="col-sm-2"></div>
+                            <div class="col-sm-8">
                                 <f><p class="ques">Approximately what percentage of total health care dollars spent are wasted every year?</p></f>
-
                                 <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
-                                        <div class="col-sm-4">
-                                            <f><div class="ans" onclick="checkAnswer(this, false);">5%</div></f>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <f><div class="ans" onclick="checkAnswer(this, false);">15%</div></f>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <f><div class="ans" onclick="checkAnswer(this, true);">30%</div></f>
-                                        </div>
+                                <div class="col-sm-12">
+                                <div class="row eq-h">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('30%', '15%', '5%');
+                                            $numRandoms = 3;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "30%" ? 1 : 0;
+                                                echo '<div class="col-sm-4">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
                                     </div>
+                                 
                                 </div>
                                
                             </div>
@@ -134,7 +140,7 @@ include("view/cjs.php");
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
@@ -154,7 +160,7 @@ include("view/cjs.php");
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="1">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -164,23 +170,25 @@ include("view/cjs.php");
 
                                 <div class="row">
                                 <div class="col-sm-12">
-                                    <div class="row eq-h">
-                                        <div class="col-sm-3">
-                                            <f><div class="ans"  onclick="checkAnswer(this, false);">individuals</div></f>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <f><div class="ans" onclick="checkAnswer(this, false);">employers</div></f>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <f><div class="ans" onclick="checkAnswer(this, false);">national budgets</div></f>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <f><div class="ans" onclick="checkAnswer(this, true);">all of the above</div></f>
-                                        </div>
+                                <div class="row eq-h ">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('all of the above', 'employers', 'individuals', 'national budgets');
+                                            $numRandoms = 4;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "all of the above" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
                                     </div>
-                                </div>
-                              
+                                </div>                              
                             </div> 
+
                             <div class="row">
                                   <div class="col-sm-12 sign">
                                     <i class="fa fa-times fa-5x hide" aria-hidden="true"></i>
@@ -195,7 +203,7 @@ include("view/cjs.php");
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
@@ -216,7 +224,7 @@ include("view/cjs.php");
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item" id="2">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -225,22 +233,25 @@ include("view/cjs.php");
                                 <f><p class="ques">The next section will discuss causes of health care waste. Based on your experience and what you have learned thus far, what do you think is the largest contributor to health care waste?</p></f>
                                 <div class="row ">
                                 <div class="col-sm-12" >
-                                    <div class="row eq-h">
-                                        <div class="col-sm-3">
-                                            <f><div class="ans" onclick="checkAnswer(this, false);">fraud</div></f>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <f><div class="ans" onclick="checkAnswer(this, true);">unnecessary services</div></f>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <f><div class="ans" onclick="checkAnswer(this, false);">exorbitant prices</div></f>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <f><div class="ans" onclick="checkAnswer(this, false);">executive and physician salaries</div></f>
-                                        </div>
+                                    <div class="row eq-h ">
+                                      <?php
+                                            //$arr = array(1, 2, 3, 4, 5);
+                                            $array = array('unnecessary services', 'fraud', 'exorbitant prices', 'executive and physician salaries');
+                                            $numRandoms = 4;
+                                            $random = randomArray($array, $numRandoms);
+                                            $ans = array(true, false, false);
+                                            //print_r($random);
+                                            foreach ($random as $key => $value) {
+                                                $ans = $value == "unnecessary services" ? 1 : 0;
+                                                echo '<div class="col-sm-3">
+                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
+                                                  </div>';
+                                            }
+                                        ?>                                        
                                     </div>
-                                </div>
                             </div>
+                            </div>
+
                             <div class="row">
                                 <div class="col-sm-12 sign" >
                                      
@@ -257,7 +268,7 @@ include("view/cjs.php");
                             <div class="row msg incorrectMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Incorrect.</h3></f>
-                                    <center><div class="msgBtn">Try again</div></center>
+                                    <center><div class="msgBtn" onclick="TryA();">Try again</div></center>
                                 </div>
                             </div>
                             <div class="row msg correctMsg text-center">
@@ -267,11 +278,6 @@ include("view/cjs.php");
                                     <!-- <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question  <i class="fa fa-arrow-right" aria-hidden="true"></i> </div></center> -->
                                 </div>
                             </div>
-
-
-
-
-
                             </div>
                             <div class="col-sm-1" ></div>
                            
@@ -281,10 +287,10 @@ include("view/cjs.php");
             </div>
 
 
-              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <a class="left carousel-control  s1p1b20" href="#myCarousel" role="button" data-slide="prev" style="display:none;">
                         <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
                       </a>
-                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                      <a class="right carousel-control  s1p1b20" href="#myCarousel" role="button" data-slide="next">
                         <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
                       </a>
 
@@ -298,12 +304,12 @@ include("view/cjs.php");
   <hr>
 
    <div class="container text-left">               
-        <f><h5 data-toggle="collapse" data-target="#demo" class="text-uppercase">Animation References <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
+        <f><h5 data-toggle="collapse" data-target="#demo" class="text-uppercase" style="cursor:pointer;">References <i style="color:#000; font-size:18px; cursor:pointer;" class="fa fa-angle-down" aria-hidden="true"></i></h5></f>
         <br>
         <ol id="demo" class="collapse">
-            <f><li><p>Kliff S. We spend $750 billion on unnecessary health care. Two charts explain why. <i>The Washington Post</i>. September 7, 2012. <a target="_blank" style="color:#f4821f;" href="https://www.washingtonpost.com/news/wonk/wp/2012/09/07/we-spend-750-billion-on-unnecessary-health-care-two-charts-explain-why/?utm_term=.e5adb91a0346">https://www.washingtonpost.com/news/wonk/wp/2012/09/07/we-spend-750-billion-on-unnecessary-health-care-two-charts-explain-why/?utm_term=.e5adb91a0346</a>. Accessed November 30, 2016.</p></li></f>
-	    <f><li><p>Institute of Medicine. Committee on the Learning Health Care System in America. <i>Best Care at Lower Cost : The Path to Continuously Learning Health Care in America</i>. Washington, D.C.: National Academies Press; 2012.</p></li></f>
-            <f><li><p>The National Academies of Science, Engineering, and Medicine. What's possible for healthcare? Infographic. National Academies website. Revised March 13, 2013. Accessed February 15, 2017</p></li></f>
+          <f><li><p>Kliff S. We spend $750 billion on unnecessary health care. Two charts explain why. <i>The Washington Post</i>. September 7, 2012. <a class="dont-break-out" target="_blank" style="color:#f4821f;" href="https://www.washingtonpost.com/news/wonk/wp/2012/09/07/we-spend-750-billion-on-unnecessary-health-care-two-charts-explain-why/?utm_term=.e5adb91a0346">https://www.washingtonpost.com/news/wonk/wp/2012/09/07/we-spend-750-billion-on-unnecessary-health-care-two-charts-explain-why/?utm_term=.e5adb91a0346</a>. Accessed November 30, 2016.</p></li></f>
+          <f><li><p>Institute of Medicine. Committee on the Learning Health Care System in America. <i>Best Care at Lower Cost : The Path to Continuously Learning Health Care in America</i>. Washington, D.C.: National Academies Press; 2012.</p></li></f>
+          <f><li><p>The National Academies of Science, Engineering, and Medicine. What's possible for healthcare? Infographic. National Academies website. Revised March 13, 2013. Accessed February 15, 2017</p></li></f>
         </ol>
    </div> 
 
@@ -316,41 +322,108 @@ include("view/cjs.php");
 <footer class="container-fluid">
          
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m1/m1s3p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 3</span>
                 <span class="sp1"><strong>Providing Value for Patients</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m1/m1s5p1"><span class="ssp2">MODULE 1 | Section 5</span>
-                <span class="sp2"><strong>Unnecessary Waste</strong></span>
+                <span class="sp2"><strong>Unnecessary Care</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
+
       </footer> 
 
-<script>
+      <?php
 
+    function randomArray($array, $numRandoms) {
+        $final = array();
 
-function checkAnswer(obj, f) {
-        $(".ans").removeClass("selectedAns");
-        $(".white").removeClass("correct incorrect");
-        if (f === true) {
-            $(obj).addClass('selectedAns').parents('.white').addClass('correct');
-        } else {
-            $(obj).addClass('selectedAns').parents('.white').addClass('incorrect');
+        $count = count($array);
+
+        if ($count >= $numRandoms) {
+
+            while (count($final) < $numRandoms) {
+
+                $random = $array[rand(0, $count - 1)];
+
+                if (!in_array($random, $final)) {
+
+                    array_push($final, $random);
+                }
+            }
         }
+
+        return ($final);
+    }
+    ?>
+
+<script>
+var p =1
+   $('.carousel').on('slid.bs.carousel', function (e) {
+       $('.item .ans').removeClass('Dis');
+       var id = parseInt(e.relatedTarget.id);
+          if(id == 0){
+              $('.left').hide();
+              $('.right').show();
+          }else if(id == 2){
+            $('.left').show();
+            $('.right').hide();
+          }  else {
+            $('.left').show();
+            $('.right').show();
+          }        
+      });
+
+function TryA(){
+      $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
+      $('.item .ans').removeClass('Dis')
+
     }
 
+
+    function checkAnswer(obj, f) {
+            //console.log($(obj).parents(".row-eq-height"));
+            $('.item .ans').addClass('Dis');
+            $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
+            $(obj).parents(".eq-h").find(".ans")
+            $(obj).parents(".white").removeClass("correct incorrect");
+            if (f === 1) {
+                $(obj).addClass('selectedAns').parents('.white').addClass('correct');
+            } else if (f === 0) {
+                $(obj).addClass('selectedAns').parents('.white').addClass('incorrect');
+            } else {
+                $(obj).addClass('selectedAns').parents('.white').addClass('correct bothCorrect');
+                //alert(f);
+                $(".5401, .2497").addClass("hide");
+                $("." + f).removeClass("hide");
+            }
+        }
+        
+
+
+        
+
 $(document).ready(function(){
+  var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
+          if(flagvd == false){
             $('video').trigger('play');
+            flagvd=true;
+          }           
+
           },
           'onLeave': function($object) {
-            $('video').trigger('pause');
+            //$('video').trigger('pause');
           }
 
       });

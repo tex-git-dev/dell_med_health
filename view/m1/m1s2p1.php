@@ -9,26 +9,13 @@
    }
 include("db.php");
 include("view/cjs.php");
-$yq = "select * from records where email='".$_SESSION['username']."'";
-$retvalY=mysqli_query($dbcon,$yq);
-$AllWordResY='';
-while($row = mysqli_fetch_row($retvalY)) {
-    $s2data = json_decode($row[7],true); 
-    $AllWordResY .=$s2data['m1']['sections']['s2']['response1'];
-}
-
-$c4 = "select * from records";
-$retval=mysqli_query($dbcon,$c4);
-$AllWordRes1='';
-while($row = mysqli_fetch_row($retval)) {
-    $s2data = json_decode($row[7],true); 
-    $AllWordRes1 .=$s2data['m1']['sections']['s2']['response1'];
-}
 
 $c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
 while($row = mysqli_fetch_row($retval1)) {
     $s2data = json_decode($row[7],true);
+    $dataT1 = $s2data['m1']['sections']['s2']['response1'];
+    $dataN1 = $row[2]." ". $row[3];
     $dataT = $s2data['m1']['sections']['s2']['response2'];
     $dataN = $row[2]." ". $row[3];
     if ($dataT) {
@@ -37,9 +24,15 @@ while($row = mysqli_fetch_row($retval1)) {
     app.cArrayT.push("<?php echo $dataT;?>");
     app.cArrayN.push("<?php echo $dataN;?>");
 </script>
+<?php } 
+if ($dataT1) {
+?>
+<script type="text/javascript">
+    app.cArrayT1.push("<?php echo $dataT1;?>");
+    app.cArrayN1.push("<?php echo $dataN1;?>");
+</script>
  
-<?php }} ?>
-<script src="js/jqcloud-1.0.4.js"></script>
+<?php }}?>
 <script type="text/javascript">
 $(document).ready(function() {
       var section = 's'+app.qs["id"][6];
@@ -49,9 +42,9 @@ $(document).ready(function() {
         app.response1();
       }
 
-      if (loc0.response2) {
+      /*if (loc0.response2) {
         app.response2();
-      }
+      }*/
 
       $('.carousel').bind('slid.bs.carousel', function (e) {
         app.showRM();
@@ -61,30 +54,35 @@ $(document).ready(function() {
  var regex = /\s+/gi;
 window.onresize = function(){app.showRM();};
 
-   app.response1 = function(){/*
-       var loc = $("#response1Text").val();
-      var section = 's'+app.qs["id"][6];
+app.response1 = function(){
+        var loc = $("#response1Text").val();
+        var section = 's'+app.qs["id"][6];
       if (loc) {
-          app.MData[app.SelecteM].sections[section]['response1'] = loc;
-          var data = JSON.stringify(app.MData);
-          var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
-          app.DataSave(loc_1);
-          app.cArrayT.unshift(loc);
-          app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+        app.MData[app.SelecteM].sections[section]['response1'] = loc;
+        var data = JSON.stringify(app.MData);
+        var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
+        app.DataSave(loc_1);
+        app.cArrayT1.unshift(loc);
+        app.cArrayN1.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
       }else{
         loc =app.MData[app.SelecteM].sections[section]['response1'];
-        app.cArrayT.unshift(loc);
-        app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
+        app.cArrayT1.unshift(loc);
+        app.cArrayN1.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
       }
+
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel1',app.cArrayT.length);
-        $(".act2").hide();
-        $(".carouselC").css({"visibility":"visible","height":"auto"});
+         app.addOpt('myCarousel1',app.cArrayT1.length);
+        $(".act1").hide();
+        $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";
          var t =0;
-          var sizeC = Math.ceil(app.cArrayT.length/3); 
+          var sizeC = Math.ceil(app.cArrayT1.length/3); 
+          if(sizeC > 6)
+          {
+            sizeC=6;
+          }
         for (var i = 1; i < sizeC+1; i++) {
             var f = "";
             if(i == 1){
@@ -94,11 +92,11 @@ window.onresize = function(){app.showRM();};
             }
            items += '<div class="item '+f+'"><div class="row">';
              for (var j = 1; j < 4; j++) {
-                  var T0 = app.cArrayT[t];
-                  var N0 = app.cArrayN[t];
+                  var T0 = app.cArrayT1[t];
+                  var N0 = app.cArrayN1[t];
+                  console.log(T0)
                   t++;
                     if(T0 != undefined){
-                    //  console.log(t)
                       items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
                       items += T0;
                       items += '</span></div><a href="javascript:app.pup('+t+');">Read more<br></a><br><span>';
@@ -110,17 +108,10 @@ window.onresize = function(){app.showRM();};
              }
            items += '</div></div>';
         } 
-        $("#additem").append(items);
+        $(".carouselC1 .additem").append(items);
         app.showRM();
-        $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
-      }*/
+      }
    }
-app.doneResizing= function(e){
-  $('.jqcloud').html('');
- var lo1 = JSON.parse(JSON.stringify(app.WCList1));
- app.WordC(lo1,'my_favorite_latin_words');
- $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
-}
 app.pup= function(v){
   var loc =  $(".iHeight").eq(v-1).text();
    var name =  $(".iHeight").eq(v-1).next().next().next().text();
@@ -143,7 +134,7 @@ app.addOpt=function(id,len){
   }
 }
 
-app.response2 = function(){
+/*app.response2 = function(){
       var loc = $("#response2Text").val();
       var section = 's'+app.qs["id"][6];
       if (loc) {
@@ -192,23 +183,27 @@ app.response2 = function(){
              }
            items += '</div></div>';
         } 
-        $("#additem").append(items);
+        $(".carouselC .additem").append(items);
         app.showRM();
-        $(".jqcloud, #my_favorite_latin_words").css({"width":"100%"});
       }
-   }
+   }*/
    
-  $(document).ready(function(){
-         $('.video-js').inview({
-            'onEnter': function($object) {
-                $('video').trigger('play');
-              },
-              'onLeave': function($object) {
-                $('video').trigger('pause');
-              }
-            });
-       
-        });
+ $(document).ready(function(){
+  var flagvd = false;
+     $('.video-js').inview({
+        'onEnter': function($object) {
+          if(flagvd == false){
+            $('video').trigger('play');
+            flagvd=true;
+          }           
+
+          },
+          'onLeave': function($object) {
+            //$('video').trigger('pause');
+          }
+
+      });
+  });
    
 </script>
 <link rel="stylesheet" type="text/css" href="jqcloud/jqcloud.css" />
@@ -241,10 +236,10 @@ app.response2 = function(){
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="media/Module1Final.jpg" preload="auto" data-setup='{"fluid": true}'>
-                  <source src="media/Module 1 Final.mp4" type="video/mp4"></source>
-                  <source src="media/Module 1 Final.webm" type="video/webm"></source>
-                  <source src="media/Module 1 Final.ogv" type="video/ogg"></source>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod1_Sec2.jpg" preload="auto" data-setup='{"fluid": true}'>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec2.mp4" type="video/mp4"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec2.webm" type="video/webm"></source>
+                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec2.ogv" type="video/ogv"></source>
                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
                </video>
             </div>
@@ -256,29 +251,44 @@ app.response2 = function(){
       <div class="row">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
-            <div class="response1">
-               <div class="wordClouds">
-                  <br>
-                  <f><p>Your response: <strong><span class="f1"></span></strong></p></f>
-                  <div id="my_favorite_latin_words" style="width: 100%; background: #33a0cb; color: #fff; height: 350px; border: 1px solid #ccc;"></div>
+            <div class="response1">              
+                  <!--f><p>Your response: <strong><span class="f1"></span></strong></p></f>
+                  <div id="my_favorite_latin_words" style="width: 100%; background: #33a0cb; color: #fff; height: 350px; border: 1px solid #ccc;"></div-->
+                   <div class="carouselC1">
+                  <br>                                                      
+                  <f><p>As you watched the video, what problems did you see in the health care Ms. Jones received?</p></f>
+                  <f><p>Scroll through user responses.</p></f>
+                  <div class="well">
+                  <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                     </ol>
+                     <div class="additem carousel-inner" role="listbox">
+                     </div>
+                      <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                        <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
+                      </a>
+                  </div>
+                  </div>
                </div>
+               
                <div class="act1" >
                   <div class="row">
                      <div class="col-sm-12">
                         <div class="well">
-                           <f><h2>YOUR PERSPECTIVE</h2></f>
+                           <f><h2 class="boldT">Your Perspective</h2></f>
                            <div class="line4"></div>
-                           <f><p>As you watched the video, what problems did you see in the health care Ms. Jones received? </p></f>
+                           <f><p>As you watched the video, what problems did you see in the health care Ms. Jones received?</p></f>
                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
-                           <div class="line4"></div>
-
-                           
+                           <div class="line4"></div>                           
                         </div>
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-sm-12">
-                          
+                     <div class="col-sm-12">                          
                         
                      </div>
                   </div>
@@ -286,7 +296,7 @@ app.response2 = function(){
                      <div class="col-sm-12" >
                         <div  class="navbar-form navbar-center" style="">
                            <div class="input-group" style="width:100%;">
-                              <input id="response1Text" type="Search" placeholder="Please enter a brief response (less than 20 words) here." class=" limit-input form-control" />
+                              <input id="response1Text" type="Search" placeholder="Please enter a brief response here." class=" form-control" />
                               <div class="input-group-btn text-right" style="width:3%;">
                                  <button  onclick="app.response1();" class="btn btn-info">
                                  <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
@@ -301,21 +311,20 @@ app.response2 = function(){
          </div>
          <div class="col-sm-2"></div>
       </div>
-      <br>
-      <br>
-      <div class="row">
+     
+      <!-- <div class="row">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
                <div class="carouselC">
                   <br>
-                  <f><p>Scroll through answers provided by the class.</p></f>
+                  <f><p>As a health care provider, how would you handle some of the inefficiency and waste problems Ms. Jones faced?</p></f>
                   <div class="well">
                   <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
-                     <!-- Indicators -->
+                     
                      <ol class="carousel-indicators">
                      </ol>
-                     <div id="additem" class="carousel-inner" role="listbox">
+                     <div  class="additem carousel-inner" role="listbox">
                      </div>
                       <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
                         <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
@@ -364,9 +373,8 @@ app.response2 = function(){
          </div>
          </div>
          <div class="col-sm-2"></div>
-      </div>
-   </div>
-   <br>
+      </div> -->
+   </div>   
    <br>
    <div class="container text-center s1bgcol2">
       <div class="row">
@@ -376,14 +384,14 @@ app.response2 = function(){
                <div class="row">
                   <div class="col-sm-12">
                      <div class="well">
-                        <f><h2>Why Does This Matter?</h2></f>
+                        <f><h2 class="boldT text-uppercase">Why Does This Matter?</h2></f>
                         <div class="well text-left">
                            <f><p>As health care providers, we are here to help patients. Improving health for patients – quality of life and dignity of death—is the central purpose of health care. Thus, we want to take the best possible care of our patients. If we do not focus on the results we achieve with our patients, then we will often fail at this responsibility, no matter how hard each of us tries to do a good job with the patient sitting in front of us. </p></f>
                            <f><p>High-value care is a growing movement in the U.S. While there are many initiatives from clinical leaders, providers, professional societies, policy makers, and medical institutions, there is also a lot of momentum coming from trainees, young physicians, and nurses “on the ground.” Understanding value-based health care is becoming a key component of being a good doctor or nurse, and it can be a driving force in making you an amazing caregiver. Patients are increasingly hearing about and experiencing the harms of health care, including that it is not safe enough and that it is too expensive. The present system is scary – for valid reasons.</p></f>
                            <f><p>What is so exciting about the current climate is that the goal of providing high-value health care is something that patients, physicians, nurses, administrators, payers, employers and government actors all can agree on. Value for patients is a goal that aligns interests, rather than pitting participants against each other.</p></f>
                         </div>
                         <div class="line9"></div>
-                        <f><h4>Remember, the medical profession is built on four central pillars of ethics:</h4></f>
+                        <f><h4 class="text-uppercase" style="font-family: 'GothamHTF-Medium' !important;">Remember, the medical profession is built on four central pillars of ethics:</h4></f>
                      </div>
                   </div>
                </div>
@@ -397,7 +405,7 @@ app.response2 = function(){
                         </div>
                         <div class="row">
                            <div class="col-sm-12 ">
-                              <f><div class="well">Do no harm (maleficence)</div></f>
+                              <f><div class="well text-uppercase" style="font-family: 'GothamHTF-Medium' !important;">Do no harm <span style="font-family: 'GothamHTF-BookItalic' !important;">(maleficence)</span></div></f>
                            </div>
                         </div>
                      </div>
@@ -409,7 +417,7 @@ app.response2 = function(){
                         </div>
                         <div class="row">
                            <div class="col-sm-12 ">
-                              <f><div class="well">Do good for patients (beneficence)</div></f>
+                              <f><div class="well text-uppercase" style="font-family: 'GothamHTF-Medium' !important;">Do good for patients <span style="font-family: 'GothamHTF-BookItalic' !important;">(beneficence)</span></div></f>
                            </div>
                         </div>
                      </div>
@@ -421,7 +429,7 @@ app.response2 = function(){
                         </div>
                         <div class="row">
                            <div class="col-sm-12 ">
-                              <f><div class="well">Patient autonomy</div></f>
+                              <f><div class="well text-uppercase" style="font-family: 'GothamHTF-Medium' !important;">Patient autonomy</div></f>
                            </div>
                         </div>
                      </div>
@@ -433,7 +441,7 @@ app.response2 = function(){
                         </div>
                         <div class="row">
                            <div class="col-sm-12 ">
-                              <f><div class="well">Justice</div></f>
+                              <f><div class="well text-uppercase" style="font-family: 'GothamHTF-Medium' !important;">Justice</div></f>
                            </div>
                         </div>
                      </div>
@@ -453,12 +461,12 @@ app.response2 = function(){
    <div class="container text-center s1bgcol3">
       <div class="row vertical-align">
          <div class="col-sm-4">
-            <img src="img/module_1_section_2_8.png" class="img-responsive" style=" width: 100%;">
+            <img src="img/module_1_section_2_8.png" class="img-responsive center-block" >
          </div>
          <div class="col-sm-8 text-left">
             <div class="well">
                <div class="well">
-                  <f><p>“Our north star – where we are headed – is trying to deliver Value to our patients, as defined by optimizing the health of our patients in a way that reduces cost. No matter where we sit in the health care system, we can all agree that is why we, the health care system, exists.”</p></f>
+                  <f><p>“Our north star – where we are headed – is trying to deliver value to our patients, as defined by optimizing the health of our patients in a way that reduces cost. No matter where we sit in the health care system, we can all agree that is why we, the health care system, exists.”</p></f>
                    <br>
                   <f><h6>Kevin Bozic MD MBA,</h6></f>
                   <f><h6>Chair of Surgery and Perioperative Care,</h6></f>
@@ -515,18 +523,22 @@ app.response2 = function(){
 <footer class="container-fluid">
          
           <div class="row">
-            <div class="col-sm-3 text-left NextBtn">
+            <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m1/m1s1p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 1</span>
                 <span class="sp1"><strong>There's a Better Way</strong></span></a>
             </div>
-            <div class="col-sm-6">
-            </div>
-            <div class="col-sm-3  text-right NextBtn">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m1/m1s3p1"><span class="ssp2">MODULE 1 | Section 3</span>
                 <span class="sp2"><strong>Providing Value for Patients</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
+
+          <div class="row">            
+            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          </div>
+
       </footer> 
       
