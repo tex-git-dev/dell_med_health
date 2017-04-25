@@ -15,7 +15,7 @@ if ($_POST['call'] == 'PForget') {
         $email_encoded = rtrim(strtr(base64_encode($email), '+/', '-_'), '=');
         $urls = pathUrl().'/?eid='.$email_encoded;
         $msg ="Hi ".$Fname." ".$Lname.",<br><br>";
-        $msg .="Please click below link to reset your password:<br><br>";
+        $msg .="Please click the below link to reset your password:<br><br>";
         $msg .="<a href='".$urls."'>".$urls."</a><br><br>";
         $msg .="Thanks,<br>Dell Healthcare";
         SendMail($email, $Fname.' '.$Lname,'Reset your password',$msg);

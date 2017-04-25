@@ -7,8 +7,9 @@ and (max-device-width : 1199px) {
     word-wrap: break-word;
     overflow: hidden;
 }
-.allModule .btn{
+.allModule1 .btn,.allModule2 .btn,.allModule3 .btn{
     font-size: 49%;
+    min-width: 59px;
 }
 .container-fluid .ssp1{
     font-size: 10px;
@@ -37,7 +38,7 @@ and (max-device-width : 1199px) {
     top: 38px;
     width: auto;
 }
-      .MSection {
+.MSection {
     padding-left: 83px;
     padding-right:83px;
 }
@@ -148,8 +149,8 @@ font-family: "GothamHTF-Bold";
     overflow: visible; 
 }
 #myCarousel .carousel-control{
-    display: none;
-    visibility: hidden;
+    /*display: none;
+    visibility: hidden;*/
 }
 #myCarousel .modal-content{
     border: none;
@@ -159,6 +160,25 @@ font-family: "GothamHTF-Bold";
  padding-left: 33px !important;
 }
 
+.ccLogo {
+  padding-top: 28px !important;
+}
+
+.cc {
+    position: fixed;
+    top: 40%;
+    right: -2px;
+    z-index: 99;                
+    cursor: pointer;
+}
+
+.ccImg {
+    position: fixed;
+    top: 40%;
+    right: -302px;
+    z-index: 999; 
+    cursor: pointer;
+}
 
 
 }

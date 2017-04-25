@@ -47,7 +47,7 @@
       
       <div class="container-full t2 text-left">
 
-         <div class="row gray" onclick="app.CallM('m1s1p1')">
+         <div class="row gray" onclick="app.CallM('m1s1p1')" style="cursor:pointer;">
             <div class="col-sm-6">
                <img  src="img/img4.jpg"  style="width:100%;" class="wow fadeInLeft img-responsive">
             </div>
@@ -59,7 +59,7 @@
                </div>
             </div>
          </div>
-         <div class="row black" onclick="app.CallM('m2s1p1')">
+         <div class="row black" onclick="app.CallM('m2s1p1')" style="cursor:pointer;">
             <div class="col-sm-6">
               <img src="img/GettyImages-103235149.jpg" style="width:100%;"  class="wow fadeInLeft img-responsive">
             </div>
@@ -71,7 +71,7 @@
                </div>
             </div>
          </div>
-         <div class="row gray" onclick="app.CallM('m3s1p1')">
+         <div class="row gray" onclick="app.CallM('m3s1p1')" style="cursor:pointer;">
             <div class="col-sm-6">
                <img src="img/img2.jpg"  style="width:100%;" class="wow fadeInLeft img-responsive" width="100%">
             </div>
@@ -469,17 +469,13 @@
 .footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
 
 
-    .footer-social { border-left:solid 2px #fff !important; }
+    .footer-social { border-left: 2px solid #fff !important; }
 
-/*    col-md-4 footer-social animated fadeInDown*/
-
-
-    /*.footer-bs { border-left:none; }*/
 
 
 .footimg{
     position: relative;
-    background-color: #fff;  
+    /*background-color: #fff;  */
     margin-top: -4%;
  }
  .footer-bs ul  li{
@@ -506,33 +502,68 @@
      font-family: "GothamHTF-Bold";
      text-decoration: none;
 }
+
+
+
+
+@media screen
+and (min-device-width : 501px)
+and (max-device-width : 765px) {
+    .footer-social { border-left: 0px solid #fff !important; }
+}
+
+@media screen
+and (min-device-width : 501px)
+and (max-device-width : 765px) {
+    .footer-social { border-left: 0px solid #fff !important; }
+}
+
+@media  screen
+and (min-device-width : 300px)
+and (max-device-width : 500px) {
+    .footer-social { border-left: 0px solid #fff !important; }
+}
+
+@media  screen
+and (min-device-width : 100px)
+and (max-device-width : 299px) {
+    .footer-social { border-left: 0px solid #fff !important; }
+}
+
+
 </style>
 
       <footer class="footer-bs">
         <div class="row text-center">
            <div class="col-sm-3"></div>
-           <div class="col-sm-6"><img class="footimg img-responsive center-block" src="img/logo.svg" height="auto" width="100%"></div>
+           <div class="col-sm-6"><img class="footimg img-responsive center-block" src="img/logo2.png" height="auto" width="65%"></div>
            <div class="col-sm-3"></div>
         </div>
 
         <div class="row text-left">
-          <div class="col-md-2"></div>
-           <div class="col-md-4 footer-nav animated fadeInUp">
-                    <ul class="list">
-                        <li>Questions or comments regarding the Value Based Health Care modules?</li>
-                        <li><a style="text-decoration:none;" href="mailto:Victoria.valencia@austin.utexas.edu"><div class="full text-center">Email us &gt;</div></a></li>
-                    </ul>
-                    <!-- <input type="text" class="full text-center" placeholder="Email "> -->
-                </div>
-          <div class="col-md-4 footer-social animated fadeInDown">
+          <div class="col-sm-2"></div>
+           <div class="col-sm-4 footer-nav ">
+                  <ul class="list">
+                    <li>Questions or comments regarding the Value Based Health Care modules?</li>
+                    <li><a style="text-decoration:none;" href="mailto:Victoria.valencia@austin.utexas.edu"><div class="full text-center">Email us &gt;</div></a></li>
+                  </ul>
+            </div>
+          <div class="col-sm-4 footer-social">
               <h4>Helpful links</h4>
                  <ul>
-                  <li><a href="mailto:eanderson@utx.edu">Problems logging in or technical issues? </a></li>
+                  <li><a href="mailto:eanderson@utx.edu">Problems logging in or technical issues?</a></li>
                   <li><a target="_blank" href="http://dellmedschool.utexas.edu/">Dell Medical School </a></li>
                   <li><a target="_blank" href="http://www.utsystem.edu/">University of Texas System</a></li>
-
                 </ul>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-sm-2"></div>
         </div>
+
+
+         <div class="row text-center">
+           <div class="col-sm-3"></div>
+           <div class="col-sm-6"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a></div>
+           <div class="col-sm-3"></div>
+        </div>
+		
     </footer>

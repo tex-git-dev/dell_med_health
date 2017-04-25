@@ -102,7 +102,9 @@ $(window).scroll(function() {
 });
 $(document).ready(function() {
   var section = 's'+app.qs["id"][6];
-  app.SData = app.MData[app.SelecteM].sections[section];
+  var SelecteM ='m'+app.qs["id"][1];
+ 
+  app.SData = app.MData[SelecteM].sections[section];
   app.MIN = parseInt(app.SData['MIN']);
   app.HR = parseInt(app.SData['HR']);
   var sec = 0;
@@ -125,7 +127,8 @@ $(document).ready(function() {
      var mHR = 0;
      var mMIN = 0;
      var mComplete = 0;
-     $.each(app.MData[app.SelecteM].sections ,function(k,v){
+
+     $.each(app.MData[SelecteM].sections ,function(k,v){
         var h = parseInt(v['HR']);
         var m = parseInt(v['MIN']);
         var p = parseInt(v['complete']);
@@ -136,25 +139,38 @@ $(document).ready(function() {
     mHR = parseInt(mHR) + parseInt((mMIN/60).toFixed(0)); 
     mMIN = (parseInt(mMIN)%60);
    
-    app.MData[app.SelecteM]['HR'] = mHR;
-    app.MData[app.SelecteM]['MIN'] = mMIN;
-  
-     mComplete = (mComplete*100/900).toFixed(0);
-     if(mComplete == 100 ){
-      app.MData[app.SelecteM]['status'] = 'complete';
+    app.MData[SelecteM]['HR'] = mHR;
+    app.MData[SelecteM]['MIN'] = mMIN;
+  //  debugger;
+    if (SelecteM == 'm1') {
+       mComplete = (mComplete*100/900).toFixed(0);
+       if(mComplete == 100 ){
+        app.MData[SelecteM]['status'] = 'complete';
+       }
+     }else if (SelecteM == 'm2') {
+      mComplete = (mComplete*100/800).toFixed(0);
+       if(mComplete == 100 ){
+        app.MData[SelecteM]['status'] = 'complete';
+       }
+
+     }else if (SelecteM == 'm3') {
+      mComplete = (mComplete*100/700).toFixed(0);
+       if(mComplete == 100 ){
+        app.MData[SelecteM]['status'] = 'complete';
+       }
      }
     
     if(mComplete >=100){
       mComplete=100;
     }
-    app.MData[app.SelecteM]['complete'] = mComplete;
+    app.MData[SelecteM]['complete'] = mComplete;
+    app.MData[SelecteM].sections[section]['HR'] = app.HR;
 
-    app.MData[app.SelecteM].sections[section]['HR'] = app.HR;
-    app.MData[app.SelecteM].sections[section]['MIN'] = app.MIN;
+    app.MData[SelecteM].sections[section]['MIN'] = app.MIN;
     if(app.PageComplete >= 100){
       app.PageComplete = 100;
     }
-    app.MData[app.SelecteM].sections[section]['complete'] = app.PageComplete;
+    app.MData[SelecteM].sections[section]['complete'] = app.PageComplete;
     var data = JSON.stringify(app.MData);
     var loc = {email:"<?php echo $_SESSION['username'];?>",MData:data};
       app.DataSave(loc);

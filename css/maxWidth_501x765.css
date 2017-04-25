@@ -1,17 +1,27 @@
 @media screen
 and (min-device-width : 501px)
 and (max-device-width : 765px) {
-   .allModule .btn{
+.allModule1 .btn,.allModule2 .btn,.allModule3 .btn{
    width: 100px;
 margin-bottom: 10px;
 }
-.logoBG{
-    background: #000;
-      min-height: 60px;
+
+
+/*.container-fluid .spImg{    
+    position: relative;    
+    top: 70px;    
+    z-index: 9999;    
+}*/
+.NextBtn1 {
+    cursor: pointer;
+ /*   top:-30px;*/
 }
-    .line {
+
+.linea {
    display: none !important;
-}.section{
+}
+
+.section {
     width: auto;
 }
 .m2s7p1 .wordClouds .row .wCcL {
@@ -137,8 +147,8 @@ margin-bottom: 10px;
     overflow: show; 
 }
 #myCarousel .carousel-control{
-    display: none;
-    visibility: hidden;
+    display: block !important;
+    visibility: visible !important;
 }
    .boldT {
     font-family: "GothamHTF-Bold";
@@ -147,7 +157,7 @@ margin-bottom: 10px;
     display: none;
 }*/
     
-.footer-social { border-left:solid 0px #fff !important; }
+.footer-social { border-left: 0px none !important; }
 
 .headers .FAQ {
  padding-left: 33px !important;
@@ -163,6 +173,22 @@ margin-bottom: 10px;
 
   .dArowh {
     display: none;  
+}
+
+.cc {
+    position: fixed;
+    top: 40%;
+    right: -2px;
+    z-index: 99;                
+    cursor: pointer;
+}
+
+.ccImg {
+    position: fixed;
+    top: 40%;
+    right: -302px;
+    z-index: 999; 
+    cursor: pointer;
 }
 
  

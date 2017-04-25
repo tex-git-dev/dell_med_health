@@ -8,24 +8,29 @@ html
 overflow-x: hidden;
 }
 
-.logoBG{
-    background: #000;
-      min-height: 80px;
+.Dis {
+    pointer-events: none;
 }
-.logoBG:hover{
-    background: #000  !important;
+
+.DisB {
+    pointer-events: none;
 }
+
+
 .allModule1 .btn,.allModule2 .btn,.allModule3 .btn{
     border: 2px solid #2cb69d !important;
+    display: block !important;
+  
 }
 .allModule1 .btn:hover, .allModule2 .btn:hover, .allModule3 .btn:hover{
     border: 2px solid #0097a7 !important;
 }
-.allModule1 .act, .allModule2 .act, .allModule3 .act{
+.allModule1 .act1, .allModule2 .act1, .allModule3 .act1{
     border: 2px solid #0097a7 !important;
     background: #ccc !important;
+    display: block !important;
 }
-.line {
+.linea {
    font-size: 24px;
     line-height: 80px;
 }
@@ -257,6 +262,7 @@ word-wrap: break-word;
     padding-top: 0;
     height: 80px;
     position: relative;
+    text-decoration: none;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     background-color: #3b4254;
@@ -552,7 +558,7 @@ footer span:nth-child(2) {
     position: absolute;
     left: 50px;
     top: 10px;
-    width: 502px;
+    width: 702px;
 }
 .container-fluid .ssp2{
     color: #3a4354;
@@ -560,7 +566,7 @@ footer span:nth-child(2) {
     position: absolute;
     right: 50px;
     top: 10px;
-    width: 502px;
+    width: 702px;
 }
 .container-fluid .sp2{
     color: #3a4354;
@@ -579,9 +585,18 @@ footer span:nth-child(2) {
     width: 702px;
 }
 
+.container-fluid .spImg{    
+ /*   position: relative;    
+    top: 20px;    
+    z-index: 999999999;*/
+}
+
 
  /*footer end*/
 .NextBtn {
+    cursor: pointer;
+}
+.NextBtn1 {
     cursor: pointer;
 }
 .vcenter {
@@ -1233,3 +1248,24 @@ min-width: 69px;
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+
+}
+
+
+/*.cc {
+    position: fixed;
+    top: 46%;
+    right: -2px;
+    z-index: 99;                
+    cursor: pointer;
+}
+
+.ccImg {
+    position: fixed;
+    top: 46%;
+    right: -302px;
+    z-index: 999; 
+    cursor: pointer;
+}
+*/
+

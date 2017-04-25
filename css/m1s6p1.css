@@ -57,16 +57,7 @@
 }
 .orng {    color:#f68122;    }
 
-.m1s6p1 .m6b2{
-   /*  margin-bottom: 0px;
-    background-image:  url("../img/s6img2.png");
-    background-position: 0% 25%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    min-height: 350px;
-    position: relative; */  
-
+.m1s6p1 .m6b2 {
      margin-bottom: 0px;
     background: url('../img/s6img2.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -74,27 +65,24 @@
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
-    width: 100%;
-    /*background-color: #060;*/
-        color: white;
-    /*text-shadow: black 0.3em 0.3em 0.3em;*/
-    background-color: #fff;
-    min-height: 300px;
-
+    width: 100%;    
+    color: white;    
+    padding-top: 80px !important;        
+    padding-bottom: 80px !important;        
 }
-.m1s6p1 .m6b2 h4{
-    font-family: "GothamHTF-Medium"; 
+
+.m1s6p1 .m6b2 h4 {
+    font-family: "GothamHTF-Medium";
+    padding-top: 15px;
 }
 
 .m1s6p1 .m6b2 .container {
     color: #fff;
-    height: 200px;    
     max-width: 100%;
     min-height: 100%;
-    position: relative;    
-    top:37px;
-    
 }
+
+
 .m1s6p1 .container .m6col{
 background: #f68121 none repeat scroll 0 0;
 }
@@ -132,8 +120,8 @@ margin-bottom: 0px;
     font-family: "GothamHTF-Bold";     
 }
 
-.bordLeft {
-    border-left: 3px solid #ffab40;
+.bordRight {
+    border-right: 3px solid #ffab40;
 }
 .m1s6p1 .m6b3 .container {
     background: #fff none repeat scroll 0 0;
@@ -143,12 +131,13 @@ margin-bottom: 0px;
     position: relative;    
     /*top:20px;*/
 }
+
 .m1s6p1 .m6b3 p{    
     font-size: 14px;
 }
-.m1s6p1 .m6b3 p:nth-child(1){    
+/*.m1s6p1 .m6b3 p:nth-child(1){    
     font-family: "GothamHTF-Bold"; 
-}
+}*/
 .m1s6p1 .m6b4 {
     padding-bottom: 0;
     padding-top: 0;
@@ -222,8 +211,28 @@ top: 0px;
   display: inline;
 }
 
+.m1s6p1 .m6b4 .col-sm-4, .m1s6p1 .m6b4 .col-sm-8{    
+    width: 100%;
+}
+
+.m1s6p1 .m6b2{
+     margin-bottom: 0px;
+    background: url('../img/s6img2.png') no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;   
+    color: white;   
+    padding-top: 70px !important;        
+    padding-bottom: 70px !important;      
+}
+
+
 
 }
+
 
 
 
@@ -254,8 +263,8 @@ and (max-device-width : 765px) {
     width: 42%;
     font-family: "GothamHTF-Bold";
 }
-.bordLeft {
-    border-left: 0px none;
+.bordRight {
+    border-right: 0px none;
 }
 
  .m1s6p1 .dArowh {
@@ -265,6 +274,21 @@ and (max-device-width : 765px) {
 .m1s6p1  .vertical-align {
   display: inline;
 }
+
+.m1s6p1 .m6b2 {
+     margin-bottom: 0px;
+    background: url('../img/s6img2.png') no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;   
+     color: white;   
+    padding-top: 60px !important;        
+    padding-bottom: 60px !important;      
+}
+
 
 }
 
@@ -297,8 +321,8 @@ and (max-device-width : 500px) {
     font-size: 83%;
     width: 65%;
     }
-.bordLeft {
-    border-left: 0px none;
+.bordRight {
+    border-right: 0px none;
 }
 
  .m1s6p1 .dArowh {
@@ -307,6 +331,21 @@ and (max-device-width : 500px) {
 .m1s6p1  .vertical-align {
   display: inline;
 }
+
+.m1s6p1 .m6b2{
+     margin-bottom: 0px;
+    background: url('../img/s6img2.png') no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;   
+    color: white;   
+    padding-top: 60px !important;        
+    padding-bottom: 60px !important;      
+}
+
 
 }
 
@@ -339,8 +378,8 @@ and (max-device-width : 299px) {
     font-size: 42%;
     width: 60%;
     }
-.bordLeft {
-    border-left: 0px none;
+.bordRight {
+    border-right: 0px none;
 }
 
  .m1s6p1 .dArowh {
@@ -349,6 +388,21 @@ and (max-device-width : 299px) {
 
 .m1s6p1  .vertical-align {
   display: inline;
+}
+
+.m1s6p1 .m6b2{
+     margin-bottom: 0px;
+    background: url('../img/s6img2.png') no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;   
+       color: white;   
+    background-color: #fff;
+    min-height: 280px;
+
 }
 
 
