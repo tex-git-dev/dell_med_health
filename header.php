@@ -84,7 +84,7 @@ app.OpenMS=function(){
                 </li>
                   <li class='linea'><span>|</span></li>
                 <li>
-                    <a href="javascript:window.location='logout.php'" class="dropdown-toggle">Logout</a>
+                    <a href="javascript:window.location='Logout.php'" class="dropdown-toggle">Logout</a>
                 </li>
              <?php  }?>
 
