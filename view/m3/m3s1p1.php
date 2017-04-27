@@ -152,7 +152,22 @@ include("view/cjs.php");
             <!-- <div class="col-sm-2"></div>  -->
           </div>          
       </div>
-     </div>     
+      <div class="well">
+          <div class="row white vertical-align">  
+          <!-- <div class="col-sm-2"></div>  -->
+            <div class="col-sm-6 imgGallry">
+              <f><p>Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.</p></f>               
+            </div>
+            <div class="col-sm-6">             
+              <img  src="img/m3s1img9.png"  class="img-responsive">
+            </div>
+            <!-- <div class="col-sm-2"></div>  -->
+          </div>          
+      </div>
+
+
+     </div>    
+
   <br><br>
 
   <div class="container m3s1ms3">

@@ -10,13 +10,6 @@ if(!$_SESSION['username']){
 include("view/cjs.php");
 ?>
 
-p{
-z-index:20;
-}
-img{
-z-index:2;
-}
-
 <link rel="stylesheet" type="text/css" href="jqcloud/jqcloud.css" />
 <script type="text/javascript" src="jqcloud/jqcloud-1.0.4.js"></script>
 
@@ -92,7 +85,7 @@ z-index:2;
                           <div class="col-sm-6">
                                 <div class='well'>
                                <img src="img/tr.svg" class="arrwImag"/>								
-                                <f><p>Team-based care interactions organized around patient medical needs and conditions (e.g. “musculoskeletal pain”)</p></f>
+                                <f><p class="vbhcp">Team-based care interactions organized around patient medical needs and conditions (e.g. “musculoskeletal pain”)</p></f>
                             </div>
                           </div>
                        </div>
@@ -112,7 +105,7 @@ z-index:2;
                           <div class="col-sm-6">
                                 <div class='well'> 
                                <img src="img/tr.svg" class="arrwImag"/>								
-                                <f><p>Integrated care across units and facilities, such as in an integrated practice unit (IPU)</p></f>
+                                <f><p class="vbhcp">Integrated care across units and facilities, such as in an integrated practice unit (IPU)</p></f>
                             </div>
                           </div>
                        </div>
@@ -132,7 +125,7 @@ z-index:2;
                           <div class="col-sm-6">
                                 <div class='well'>  
                                 <img src="img/tr.svg" class="arrwImag"/>                                
-                                <f><p style="padding-top:25px;">Measurement focused on patient health outcomes</p></f>
+                                <f><p class="vbhcp" >Measurement focused on patient health outcomes</p></f>
                             </div>
                           </div>
                        </div>
@@ -152,7 +145,7 @@ z-index:2;
                           <div class="col-sm-6">
                                 <div class='well'>  
                                <img src="img/tr.svg" class="arrwImag"/>                                
-                                <f><p>The actual costs of providing patient care are measured and captured</p></f>
+                                <f><p class="vbhcp">The actual costs of providing patient care are measured and captured</p></f>
                             </div>
                           </div>
                        </div>
@@ -172,7 +165,7 @@ z-index:2;
                           <div class="col-sm-6">
                                 <div class='well'> 
                                    <img src="img/tr.svg" class="arrwImag"/>								
-                                <f><p>Providers are reimbursed based on value of care provided across a full care cycle for medical conditions</p></f>
+                                <f><p class="vbhcp">Providers are reimbursed based on value of care provided across a full care cycle for medical conditions</p></f>
                             </div>
                           </div>
                        </div>
@@ -192,7 +185,7 @@ z-index:2;
                           <div class="col-sm-6">
                                 <div class='well'> 
                                     <img src="img/tr.svg" class="arrwImag"/>								
-                                <f><p>Health information technology is leveraged to help restructure care delivery and accurately measure results</p></f>
+                                <f><p class="vbhcp">Health information technology is leveraged to help restructure care delivery and accurately measure results</p></f>
                             </div>
                           </div>
                        </div>
@@ -361,7 +354,7 @@ z-index:2;
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
                 <a href="?id=m3/m3s6p1"><span class="ssp2">MODULE 3 | Section 6</span>
-                <span class="sp2"><strong>Focusing on Outcomes</strong></span>
+                <span class="sp2"><strong>Care Redesign Case: MD Anderson (TDABC)</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>

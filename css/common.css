@@ -3,6 +3,18 @@ body {
     overflow-x: hidden;
     padding-right: 0px !important;
 }
+.ui-loader
+{
+display:none;
+}
+
+  @media only screen and (max-device-width: 991px)
+  {
+  .left .fa-angle-left, .right .fa-angle-right
+  {
+  display:none;
+  }
+  }
 html
 {
 overflow-x: hidden;

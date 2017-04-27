@@ -539,7 +539,7 @@ app.response2 = function(){
     <footer class="container-fluid">         
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m3/m3s3p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="?id=m3/m3s1p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 3 | Section 1</span>
                 <span class="sp1"><strong>Understanding Costs In Health Care</strong></span></a>
             </div>

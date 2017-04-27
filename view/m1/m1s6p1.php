@@ -94,7 +94,7 @@ include("view/cjs.php");
                 <div class="col-sm-2"></div>
                </div>
                <br>
-                <div class="row">
+               <!-- <div class="row"> 
                   <div class="col-sm-2"></div>
                <div class="col-sm-4 bordRight">
                   <f><h5>The Current System: Volume-Based Health Care</h5></f>
@@ -120,7 +120,154 @@ include("view/cjs.php");
                </div> 
                <div class="col-sm-2"></div>   
                 </div>
-                <br><br>
+               -->
+			   
+     <div class="container m1s6b2">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><h4 style="margin:0;">The Current System:<br>Volume-Based Health Care</h4></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'>  
+                                   <img src="img/tr.svg"  class="arrwImag"/>
+                                <f><h4>The Goal:<br>Value-Based Health Care</h4></f>
+                                </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Individual care interactions organized around the clinician’s medical expertise (e.g. an orthopedic surgeon)</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'>
+                               <img src="img/tr.svg" class="arrwImag"/>								
+                                <f><p class="vbhcp">Team-based care interactions organized around patient medical needs and conditions (e.g. “musculoskeletal pain”)</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Fragmented care that is organized at the level of individual units or facilities</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'> 
+                               <img src="img/tr.svg" class="arrwImag"/>								
+                                 <f><p class="vbhcp">Integrated care across units and facilities, such as in an integrated practice unit (IPU)</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Measurement largely based on process measures and “billable activities”</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'>  
+                                <img src="img/tr.svg" class="arrwImag"/>                                
+                                <f><p class="vbhcp" >Measurement focused on patient health outcomes</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Costs are poorly captured and often are estimated by using poor proxies such as charges and reimbursements</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'>  
+                               <img src="img/tr.svg" class="arrwImag"/>                                
+                                 <f><p class="vbhcp">The actual costs of providing patient care are measured and captured</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Providers – physicians and health systems – are reimbursed based on individual services provided</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'> 
+                                   <img src="img/tr.svg" class="arrwImag"/>								
+                                 <f><p class="vbhcp">Providers are reimbursed based on value of care provided across a full care cycle for medical conditions</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Health information technology maximized for capturing billing processes and reporting necessary metrics</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'> 
+                                    <img src="img/tr.svg" class="arrwImag"/>								
+                                 <f><p class="vbhcp">Health information technology is leveraged to help restructure care delivery and accurately measure results</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>            
+     </div>
+ 
+
+
+
+			   <br><br>
           <div class="row">
                <div class="col-sm-2"></div> 
                <div class="col-sm-8">

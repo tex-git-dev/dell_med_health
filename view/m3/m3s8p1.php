@@ -55,8 +55,7 @@ include("view/cjs.php");
        <div class="container-full m3s7t2 bg-4">
         <div class="row s9col m3s7c2">
          <div class="col-sm-6">
-              <div class="row m3s7c1">
-              <br>
+              <div class="row m3s7c1">              
                 <div class="col-sm-1 "></div>
                   <div class="col-sm-11 text-uppercase">                    
                       <f><p class="org">podcast</p></f>                    
@@ -82,9 +81,9 @@ include("view/cjs.php");
 
                         <div id="wrapper">
                               <audio preload="auto" controls>
-                                <source src="https://s3.amazonaws.com/dell-med/Sec8_Podcast.mp3">
-                                <source src="https://s3.amazonaws.com/dell-med/Sec8_Podcast.ogg">
-                                <source src="https://s3.amazonaws.com/dell-med/Sec8_Podcast.wav">
+                                <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec8.mp3">
+                                <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec8.ogg">
+                                <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec8.wav">
                               </audio>
                             </div>
                         </div>
@@ -184,7 +183,7 @@ include("view/cjs.php");
           </div>
 </div>
 
-<div class="well">
+    <div class="well">
           <div class="row  vertical-align">  
           <!-- <div class="col-sm-2"></div>            -->
             <div class="col-sm-6 imgGallry">             
@@ -195,7 +194,20 @@ include("view/cjs.php");
             </div>
             <!-- <div class="col-sm-6"></div>  -->
           </div>
-</div>
+    </div>
+
+    <div class="well">
+          <div class="row  vertical-align">  
+          <!-- <div class="col-sm-2"></div>            -->
+            <div class="col-sm-6 imgGallry">             
+              <f><p>Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.</p></f>
+            </div>
+            <div class="col-sm-6">
+               <img  src="img/m3s1img9.png"  class="img-responsive">
+            </div>
+            <!-- <div class="col-sm-6"></div>  -->
+          </div>
+    </div>
 
 
 </div>

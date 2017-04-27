@@ -262,21 +262,21 @@ left: 77%;
                 <p id="skp1">WHICH DATA POINT DO YOU THINK REPRESENTS<br> THE UNITED STATES?</p>
 
                 <p onclick="checkPlay2()" id="skid2"></p>
-                 <p onclick="checkPlay2()" id="skp3" class="video-point">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp4" class="video-point">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp5" class="video-point">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp6" class="video-point">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp7" class="video-point">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp8" class="video-point">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp9" class="video-point">&nbsp;</p>
-                 <p class="video-point" id="skp10" onclick="checkPlay()">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp3" class="video-point" data-toggle="tooltip" data-placement="top" title="JAPAN">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp4" class="video-point" data-toggle="tooltip" data-placement="bottom" title="SPAIN">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp5" class="video-point" data-toggle="tooltip" data-placement="right" title="SWITZERLAND">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp6" class="video-point" data-toggle="tooltip" data-placement="left" title="UNITED KINGDOM">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp7" class="video-point" data-toggle="tooltip" data-placement="top" title="CANADA">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp8" class="video-point" data-toggle="tooltip" data-placement="bottom" title="GERMANY">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp9" class="video-point" data-toggle="tooltip" data-placement="bottom" title="OECD AVERAGE">&nbsp;</p>
+                 <p class="video-point" id="skp10" onclick="checkPlay()" data-toggle="tooltip" data-placement="top" title="UNITED STATES">&nbsp;</p>
            </div>
          
                <video id="myVideo" class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264"  poster="https://s3.amazonaws.com/dell-med/Mod1_Sec3.jpg" controls data-setup='{"fluid": true}'>
                 <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.mp4" type="video/mp4"></source>
                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.webm" type="video/webm"></source>
                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.ogv" type="video/ogv"></source>  
-                 <track kind="subtitles" src="" srclang="en" label="English"  default/>
+                 <track label="English" kind="subtitles" srclang="en" src="captions.vtt" ></video>
                </video>
                
         <div class="row  myDiv0 vertical-align">
@@ -440,7 +440,25 @@ function checkPlay1()
 {
           playVid();
           $('#skdiv').css({'display':'none'});
+		  $(".video-point").css("background-color","transprant");
+		  $('#skid2').html('');
 }
+$(".video-point").click(function(){
+$(".video-point").css("background-color","transprant");
+if($(this).attr("id")=="skp10")
+{
+$(this).css("background-color","green");
+}
+else
+{
+$(this).css("background-color","red");
+}
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
 </script>
 
 

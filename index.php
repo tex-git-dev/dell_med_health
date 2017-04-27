@@ -22,12 +22,12 @@
       <script type="text/javascript" src="js/wow.js"></script>
       <script type="text/javascript" src="js/plotly-latest.min.js"></script>
       <script type="text/javascript" src="js/jquery.inview.js"></script>
+	<!--   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
       <link href="http://vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
       <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
        <script src="js/audioplayer.js"></script>
-      <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script> -->
-      <script src="js/script.js"></script>
+
+	<script src="js/script.js"></script>
        <?php
 
 include("mail.php");

@@ -9,5 +9,4 @@ $c1 = "select * from users,records where users.Email=BINARY '".$username."'  and
      }else{
      	echo 0;
      }
-
 ?>

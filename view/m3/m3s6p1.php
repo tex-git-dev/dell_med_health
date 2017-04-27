@@ -173,13 +173,13 @@ include("view/cjs.php");
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
               <a href="?id=m3/m3s5p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
-              <label class="ssp1">MODULE 3 | Section 5</label>
-                <label class="sp1"><strong>Toward More Transparency</strong></label></a>
+              <span class="ssp1">MODULE 3 | Section 5</span>
+                <span class="sp1"><strong>Toward More Transparency</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m3/m3s7p1"><label class="ssp2">MODULE 3 | Section 7</label>
-                <label class="sp2"><strong>Applying TDABC to Compare Cost Calculations</strong></label>
+                <a href="?id=m3/m3s7p1"><span class="ssp2">MODULE 3 | Section 7</span>
+                <span class="sp2"><strong>Applying TDABC to Compare Cost Calculations</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>

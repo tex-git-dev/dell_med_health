@@ -1,5 +1,6 @@
 <?php  
 @session_start();
+include("db.php");
 ?>
  <script src="js/bootstrap-session-timeout.js"></script>
  <style>
@@ -83,11 +84,11 @@ app.OpenMS=function(){
                 </li>
                   <li class='linea'><span>|</span></li>
                 <li>
-                    <a href="Logout.php" class="dropdown-toggle">Logout</a>
+                    <a href="javascript:window.location='logout.php'" class="dropdown-toggle">Logout</a>
                 </li>
              <?php  }?>
 
-          <?php if(@!isset($_GET['id'])){?>
+          <?php if(@!isset($_GET['id']) || $_GET['id'] == "survey" ){?>
            
 
                 <li  class="active mod">
@@ -234,7 +235,7 @@ app.OpenMS=function(){
     </div>
 </nav>
 
-<?php if(@isset($_GET['id'])){?>
+<?php if(@isset($_GET['id']) && $_GET['id']!="survey" ){?>
 <div id="MSection" class="container MSection op">
     <div class="row text-left m">
   
@@ -903,7 +904,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Applying TDABC to Compare Cost Calculations
+                             Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.
                           </div>
                         </div>
                     </div>
@@ -932,7 +933,7 @@ app.OpenMS=function(){
         </div>
     </div>
 </div>
- <?php }else{?>
+ <?php } else{?>
 
 
 
@@ -1310,24 +1311,42 @@ app.OpenMS=function(){
               </div>
             
             </div>
-            <div class="row">
+				 
+     <div class="row">
+                <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="Country">Country:</label>
+                      <select class="form-control text-center c" name="Country" id="Country" required="">
+                        <option value="">[select from list below]</option>
+						<?php   $c0 = "select * from countries";
+                                $Crun0=mysqli_query($dbcon,$c0);
+                               while($row = $Crun0->fetch_object())
+							   {
+							   ?>
+							   <option value="<?php echo $row->name; ?>"><?php echo $row->name;  ?></option>
+							   <?php
+						       }
+  ?>
+                      </select>
+                     </div>
+                </div>
+     </div>
+						 
+       <div class="row">
+                <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="State">State:</label>
+                      <select class="form-control text-center c" name="State" id="State" required="">
+                        <option value="">[select from list below]</option>
+                      </select>
+                </div>
+                </div>
+      </div>
+			 
+			<div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
                     <input type="text" name="City" id="City" class="form-control text-center c" placeholder="City" required="">
-                     </div>
-                </div>
-             </div>
-               <div class="row">
-                <div class="col-sm-12">
-                <div class="form-group">
-                    <input type="text" name="State" id="State" class="form-control text-center c" placeholder="State" required="" >
-                     </div>
-                </div>
-             </div>
-              <div class="row">
-                <div class="col-sm-12">
-                <div class="form-group">
-                    <input type="text" name="Country" id="Country" class="form-control text-center c" placeholder="Country" required="" >
                      </div>
                 </div>
              </div>
@@ -1362,7 +1381,8 @@ app.OpenMS=function(){
                      </div>
                 </div>
              </div>
-             <div class="row">
+             
+			 <div class="row">
              <div class="col-sm-12 text-center text-sm-center">  
               <div class="form-group">
                 <button class="btn btn-default" type="submit" name="registration">Sign up</button>
@@ -1825,6 +1845,7 @@ submitHandler: function(form){
             $(".NExists h4").text('Incorrect username or password.');
           }
         }, "json");
+		
 }
 });
 
@@ -1901,7 +1922,14 @@ $(".btnM3").click(function(){
 app.ClickOnModule="module3";
 });
 
- 
+$("#Country").on("change",function(){
+var cid = $(this).val();
+$.post( "getCity.php", { id:cid })
+.done(function( data ) {
+$("#State").html(data);
+});
+});
+
 </script>
 <div class="dis disS"></div>
 <div class="dis disM"></div>

@@ -90,7 +90,7 @@ include("view/cjs.php");
                             <f><p>Define 'health care waste'.</p></f>
                         </div>
                         <div class="col-sm-6">
-                            <img  src="img/m1s1img3.jpg"  class="   img-responsive">
+                            <img  src="img/m1s1img3.jpg"  class="img-responsive">
                         </div>
                         <!-- <div class="col-sm-2"></div> -->
                     </div>
