@@ -26,7 +26,7 @@ include("view/cjs.php");
             </div>
           <div class="row">
             <div class="col-sm-12">  
-                <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
+                <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
             </div>
          </div>
          </div>
@@ -287,7 +287,9 @@ include("view/cjs.php");
                   
                <div class="row vertical-align">
                <div class="col-sm-4"><img class="img-responsive center-block" src="img/s6img4.png"/></div>  
-                 <div class="col-sm-8"><div class="well"><div class="well"><f><p>“At Dell Med we are working on reorganizing the delivery system around patient needs while integrating other providers and resources, both human and technological, to create a single-center location for diagnosis and treatment. When possible we will locate care close to the patient’s home or workplace, or provide convenience for the patient to access these services through virtual methods that are being developed.”</p></f>
+                 <div class="col-sm-8">
+                  <div class="well">
+                    <div class="well"><f><p>“At Dell Med we are working on reorganizing the delivery system around patient needs while integrating other providers and resources, both human and technological, to create a single-center location for diagnosis and treatment. When possible we will locate care close to the patient’s home or workplace, or provide convenience for the patient to access these services through virtual methods that are being developed.”</p></f>
                   <br>
                   <f><h6>Amy Young MD</h6></f>
                   <f><h6>Chair of Women’s Health, Dell Medical School</h6></f>
@@ -329,7 +331,11 @@ include("view/cjs.php");
           </div>
 
           <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+            <div class="col-sm-5"></div>
+              <div class="col-sm-2">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-sm-5"></div>
           </div>
 
 

@@ -31,7 +31,7 @@ include("view/cjs.php");
             </div>
           <div class="row">
             <div class="col-sm-12">  
-                <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
+                <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
             </div>
          </div>
          </div>
@@ -57,7 +57,7 @@ include("view/cjs.php");
          <div class="col-sm-6">
               <div class="row m3s7c1">              
                 <div class="col-sm-1 "></div>
-                  <div class="col-sm-11 text-uppercase">                    
+                  <div class="col-sm-11 text-uppercase">                                        
                       <f><p class="org">podcast</p></f>                    
                   </div>
               </div> 
@@ -73,8 +73,7 @@ include("view/cjs.php");
                       <f><p>Listen to Morgan Congdon describe her experience negotiating the complex, often frustrating world of medical care costs and charges.</p></f>
                   </div>
               </div>
-               <div class="row m3s7c1"> 
-               <br>            
+               <div class="row m3s7c1">                
                 <div class="col-sm-1"></div>
                   <div class="col-sm-11">                    
                         <div class="vertical-align paddb">
@@ -411,7 +410,11 @@ include("view/cjs.php");
           </div>
 
           <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+            <div class="col-sm-5"></div>
+              <div class="col-sm-2">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-sm-5"></div>
           </div>
 
 </footer> 

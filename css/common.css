@@ -7,6 +7,10 @@ body {
 {
 display:none;
 }
+.btn-Survey
+{
+pointer-events:none;
+}
 
   @media only screen and (max-device-width: 991px)
   {

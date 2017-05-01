@@ -347,21 +347,24 @@ app.OpenMS=function(){
                 </div>
                 <br>
                  <div class="row allModule1">
-                    <div class="col-sm-2 "></div>                
-                    <div class="col-sm-7">
+                    <div class="col-sm-1"></div>                
+                    <div class="col-sm-9">
                       <div class="row text-center">
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                               <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module2button">Module 2</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
+                          </div>
+						<div class="col-sm-3">
+                            <button  type="button" class="btn btn-default center-block btn-Survey">Survey</button>
                           </div>
                       </div>                      
                     </div>
-                     <div class="col-sm-3"></div>
+                     <div class="col-sm-2"></div>
                 </div>
                  <br>
             
@@ -462,21 +465,24 @@ app.OpenMS=function(){
                 </div>
              <br>
                  <div class="row allModule2">
-                    <div class="col-sm-2 "></div>                
-                    <div class="col-sm-7">
+                    <div class="col-sm-1"></div>                
+                    <div class="col-sm-9">
                       <div class="row text-center">
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                               <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module2button">Module 2</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
+						 <div class="col-sm-3">
+                            <button  type="button" class="btn btn-default center-block btn-Survey">Survey</button>
+                         </div>
                       </div> 
                     </div>
-                     <div class="col-sm-3"></div>
+                     <div class="col-sm-2"></div>
                 </div>
                  <br>
            
@@ -581,21 +587,25 @@ app.OpenMS=function(){
                 <br>
 
                  <div class="row allModule3">
-                    <div class="col-sm-2 "></div>                
-                    <div class="col-sm-7">
+                    <div class="col-sm-1 "></div>                
+                    <div class="col-sm-9">
                       <div class="row text-center">
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                               <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module2button">Module 2</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
+						 <div class="col-sm-3">
+                            <button  type="button" class="btn btn-default center-block btn-Survey">Survey</button>
+                          </div>
+						  
                       </div> 
                     </div>
-                     <div class="col-sm-3"></div>
+                     <div class="col-sm-2"></div>
                 </div>
                  <br>
            
@@ -1105,6 +1115,7 @@ app.OpenMS=function(){
                       <li>Reflect on the impact of cost on patient care and the overall value of provided health care.</li>
                       <li>Describe basic principles of health care delivery, organization, and financing.</li>
                       <li>Define terms used in discussing health care costs.</li>                                          
+					  <li>Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.</li> 
                     </ul>
                     </div>
                     <div class="col-sm-6">

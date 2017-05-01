@@ -31,7 +31,7 @@ include("view/cjs.php");
          </div>
          <div class="row">
             <div class="col-sm-12">
-              <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
+              <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
             </div>
          </div>
       </div>
@@ -278,7 +278,6 @@ include("view/cjs.php");
       <div class="row">
         <div class="col-sm-12"><img src="img/m3s5img6.png" class="center-block img-responsive"  height="auto" width="70%"></div>
       </div>
-      <br>
      </div> 
 </div>
 <br>
@@ -360,7 +359,11 @@ include("view/cjs.php");
           </div>
 
           <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+            <div class="col-sm-5"></div>
+              <div class="col-sm-2">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-sm-5"></div>
           </div>
           
       </footer>

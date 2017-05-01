@@ -127,7 +127,8 @@
 }
 
 .m3s8p1 .m3s7c1 .paddb {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+    padding-top: 5px;
 }
 
 .m3s8p1 .m3s7c1 {
@@ -137,6 +138,7 @@
 .m3s8p1 .org {
     color:#f68121;
     font-family: "GothamHTF-Medium";
+    padding-top: 10px;
 } 
 .m3s8p1 .m3s7c1 h4 {
     font-family: "GothamHTF-Bold";

@@ -405,7 +405,7 @@ and (max-device-width : 1000px) {
 
 .m3s7p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s6img1.png') no-repeat center center; 
+    background: url('../img/m3s7img1head.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -458,7 +458,7 @@ and (max-device-width : 765px) {
 
 .m3s7p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s6img1.png') no-repeat left center; 
+    background: url('../img/m3s7img1head.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -519,7 +519,7 @@ and (max-device-width : 500px) {
 
     .m3s7p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s6img1.png') no-repeat left center; 
+    background: url('../img/m3s7img1head.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -581,7 +581,7 @@ and (max-device-width : 299px) {
 
 .m3s7p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m2s6img1.png') no-repeat left center; 
+    background: url('../img/m3s7img1head.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -21,7 +21,7 @@
          </div>
           <div class="row">
             <div class="col-sm-12"> 
-              <a class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
+              <a class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
             </div>
          </div>
          </div>
@@ -557,11 +557,13 @@ and (max-device-width : 299px) {
         </div>
 
 
-         <div class="row text-center">
-           <div class="col-sm-3"></div>
-           <div class="col-sm-6"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a></div>
-           <div class="col-sm-3"></div>
-        </div>
+         <div class="row">            
+            <div class="col-sm-5"></div>
+              <div class="col-sm-2">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-sm-5"></div>
+          </div>
 		
     </footer>
 <script>

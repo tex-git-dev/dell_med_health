@@ -179,14 +179,7 @@ $(document).ready(function() {
 
     if(app.MData['m1']['status']=="complete" && app.MData['m2']['status']=="complete" && app.MData['m3']['status']=="complete")
 			{
-			             var decodedCookie = decodeURIComponent(document.cookie);
-						  var ca = decodedCookie.split(';');
-							  if(ca.indexOf("notnow=<?php echo $_SESSION['username']; ?>")== -1)
-							   {					  
-			                    $('#ModuleCompleteModal').modal({show: 'false'}); 
-							   }
-							
-
+			$(".btn-Survey").css("pointer-events","visible");
 			}
      }, 1000);
 
@@ -194,7 +187,7 @@ $(document).ready(function() {
 
 </script>
 
-  <div class="modal fade" id="ModuleCompleteModal" role="dialog">
+  <div class="modal" id="ModuleCompleteModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" aria-labelledby="myModalLabel" aria-hidden="true" style="">
     <div class="modal-dialog">
       <div class="modal-content" style="background:url('img/bgLogin.png');color:white;">
         <div class="modal-header text-center">
@@ -209,11 +202,4 @@ $(document).ready(function() {
       </div> 
     </div>
   </div>
- <script>
-$(".mcmpnotnow").click(function(){
-   var date = new Date();
-    date.setDate(date.getDate() + 1)
-    var expires = "expires="+ date.toUTCString();
-    document.cookie = "notnow=<?php echo $_SESSION['username']; ?>;"+expires;
-});
-</script>
+

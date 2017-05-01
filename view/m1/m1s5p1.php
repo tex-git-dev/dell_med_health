@@ -641,7 +641,11 @@ $("#canvas6").click(function(){
           </div>
 
           <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+            <div class="col-sm-5"></div>
+              <div class="col-sm-2">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-sm-5"></div>
           </div>
 
 
