@@ -51,7 +51,7 @@ include("view/cjs.php");
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec6.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec6.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec6.ogv" type="video/ogg"></source>
-                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
+                  <track label="English" kind="subtitles" srclang="en" src="VTT/Mod2_Sec6.vtt" default>
                </video>
             </div>
          </div>
@@ -74,7 +74,7 @@ include("view/cjs.php");
             <li data-target="#myCarousel" data-slide-to="1" ></li>            
         </ol>
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner additem" role="listbox">
             <div class="item active" id="0">
                 <div class="container-full text-center white">
                     <div class="container">    
@@ -84,9 +84,9 @@ include("view/cjs.php");
                                 <f><p class="ques">How does the size of a ring in a radar chart correspond to the performance of a treatment in achieving patient outcomes?<!-- <br><img src="img/m2s6q1.png" class="img-responsive center-block"> --></p></f>
 
 
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12" >
+                                    <div class="row eq-h">-->
 
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
@@ -105,8 +105,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>
+                                  <!--  </div>
+                                </div>-->
                                
                             </div>
                             <div class="row">
@@ -150,9 +150,9 @@ include("view/cjs.php");
                         <div class="col-sm-1" ></div>
                             <div class="col-sm-10" >
                                 <f><p class="ques">Select the thumbnail to expand. According to this radar chart, if Ms. Jones stated that minimizing cost was her biggest priority, would you more likely recommend a PCI+OMT or OMT-only treatment plan?<br><img src="img/m2s6q1.png" class="img-responsive center-block" style="width:15%; cursor:pointer;" data-toggle="modal" data-target="#myModal"></p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12">
+                                    <div class="row eq-h">-->
 
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
@@ -171,8 +171,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>
+                                    <!--</div>
+                                </div>-->
                               
                             </div> 
                             <div class="row">
@@ -271,24 +271,24 @@ include("view/cjs.php");
 <footer class="container-fluid">         
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s5p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m2/m2s5p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 5</span>
                 <span class="sp1"><strong>Using Measures Frameworks to Improve Outcomes</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m2/m2s7p1"><span class="ssp2">MODULE 2 | Section 7</span>
+                <a href="#" onclick="window.location='?id=m2/m2s7p1'"><span class="ssp2">MODULE 2 | Section 7</span>
                 <span class="sp2"><strong>Care Redesign Case: UNOS</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-5"></div>
-              <div class="col-sm-2">
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-sm-5"></div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
           
 </footer> 
@@ -330,6 +330,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
             $('.left').show();
             $('.right').hide();
           } 
+                setMsgBoxHeight();
       });
 
 function TryA(){
@@ -373,6 +374,70 @@ $(document).ready(function(){
           }
 
       });
+  });
+
+</script>
+
+
+
+
+<script>
+
+//var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+        $(function () {
+                setMsgBoxHeight();
+        });
+        function setMsgBoxHeight() {
+		var f_height = 0;
+            var msgboxHeight = $(".carousel .active .row-eq-height").height();
+			 var l = $(".carousel .active .ans").length;
+			  for(var i=1;i<=l;i++)
+			  {
+			  var h =  $(".carousel .active .row-eq-height div:nth-child("+i+") .ans").css("height");
+			  var h1 = h.split('p');
+			 if(f_height < Number(h1[0]))
+			 {
+			    f_height = h1[0];
+			 }
+			}
+           $(".carousel .active .ans").css("height",f_height+"px");	   
+    }
+
+  $(".additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $(".carousel-indicators li:nth-child(1)").addClass("active");
+	    $(".additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+  });
+  $(".additem").on("swiperight",function(){
+			
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $(".carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $(".additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+      setMsgBoxHeight();
   });
 
 </script>

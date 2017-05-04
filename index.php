@@ -15,19 +15,19 @@
       <link rel="stylesheet" href="css/maxWidth_300x500.css">
       <link rel="stylesheet" href="css/maxWidth_501x765.css">
       <link rel="stylesheet" href="css/maxWidth_766x1000.css">
-
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.validate.js"></script>
       <script type="text/javascript" src="js/wow.js"></script>
       <script type="text/javascript" src="js/plotly-latest.min.js"></script>
       <script type="text/javascript" src="js/jquery.inview.js"></script>
-	<!--   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
-      <link href="http://vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
-      <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
-       <script src="js/audioplayer.js"></script>
+	    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-	<script src="js/script.js"></script>
+      <link href="http://vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
+       <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
+       <script src="js/audioplayer.js"></script>
+	   <script src="js/script.js"></script>
        <?php
 
 include("mail.php");
@@ -162,6 +162,7 @@ if(@$_SESSION['username']){
   $module_data= $row->module_data;
   $module_section_data= $row->module_section_data;
   $status= $row->status;
+  $survey_response= $row->survey_response;
   $data = json_encode($module_data);
   //echo $data;
 ?>
@@ -170,6 +171,16 @@ if(@$_SESSION['username']){
 $(document).ready(function() {
   //After that data convert  string to JSON object .
   app.MData = JSON.parse(<?php echo ($data);?>);
+  
+   if(app.MData['m1']['status']=="complete" && app.MData['m2']['status']=="complete" && app.MData['m3']['status']=="complete")
+	{
+	$(".btn-Survey").css("pointer-events","visible");
+	$("#SurveyButton").css("visibility","visible");
+	if("<?php echo $survey_response; ?>"!="NOT_NOW")
+	{
+     document.getElementById('id01').style.display='block'; 
+	}
+	}
   app.SelecteM = '<?php echo $module_Number;?>';
   app.init();
   // below function is used for all module data populate for all three modules.
@@ -247,6 +258,37 @@ try {
 
 
   ?>
-   
+  
+  
+ <div id="id01" class="w3-modal" style="z-index:99999;">
+    <div class="w3-modal-content" style="background:url('img/bgLogin.png');color:white;">
+      <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+	   <h3 class="text-center">Congratulations!</h3>
+	   <div class="col-md-12">
+           You have completed the Introduction to Value-Based Health Care modules. Please follow this link <a href="?id=survey" class="mcmpnotnow" target="_blank" style="color:skyblue;">Click here</a> to complete a survey about these modules. Once you have completed this survey, you will receive your certificate of completion for these modules.
+        </div>
+        <div class="col-md-12 text-right" style="padding:20px;">
+          <button type="button" class="btn btn-danger mcmpnotnow" >Not Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
    </body>
+   
+   <script>
+   $(".mcmpnotnow").click(function(){
+   document.getElementById('id01').style.display='none';
+          $('#ModuleCompleteModal').modal('hide');
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            }
+        };
+        xmlhttp.open("GET", "check1.php", true);
+        xmlhttp.send();
+});
+   </script>
 </html>
+

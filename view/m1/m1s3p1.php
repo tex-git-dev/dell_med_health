@@ -177,7 +177,7 @@ include("view/cjs.php");
 			  
               .video-point{
                 width: 20px;
-                height: :40px;
+                height: :30px;
                 background-color: transprant;
                 z-index: 2;
                 position: absolute;
@@ -262,21 +262,21 @@ left: 77%;
                 <p id="skp1">WHICH DATA POINT DO YOU THINK REPRESENTS<br> THE UNITED STATES?</p>
 
                 <p onclick="checkPlay2()" id="skid2"></p>
-                 <p onclick="checkPlay2()" id="skp3" class="video-point" data-toggle="tooltip" data-placement="top" title="JAPAN">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp4" class="video-point" data-toggle="tooltip" data-placement="bottom" title="SPAIN">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp5" class="video-point" data-toggle="tooltip" data-placement="right" title="SWITZERLAND">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp6" class="video-point" data-toggle="tooltip" data-placement="left" title="UNITED KINGDOM">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp7" class="video-point" data-toggle="tooltip" data-placement="top" title="CANADA">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp8" class="video-point" data-toggle="tooltip" data-placement="bottom" title="GERMANY">&nbsp;</p>
-                 <p onclick="checkPlay2()" id="skp9" class="video-point" data-toggle="tooltip" data-placement="bottom" title="OECD AVERAGE">&nbsp;</p>
-                 <p class="video-point" id="skp10" onclick="checkPlay()" data-toggle="tooltip" data-placement="top" title="UNITED STATES">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp3" class="video-point" data-toggle="popover" data-placement="top" title="JAPAN">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp4" class="video-point" data-toggle="popover" data-placement="bottom" title="SPAIN">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp5" class="video-point" data-toggle="popover" data-placement="right" title="SWITZERLAND">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp6" class="video-point" data-toggle="popover" data-placement="left" title="UNITED KINGDOM">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp7" class="video-point" data-toggle="popover" data-placement="top" title="CANADA">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp8" class="video-point" data-toggle="popover" data-placement="bottom" title="GERMANY">&nbsp;</p>
+                 <p onclick="checkPlay2()" id="skp9" class="video-point" data-toggle="popover" data-placement="bottom" title="OECD AVERAGE">&nbsp;</p>
+                 <p class="video-point" id="skp10" onclick="checkPlay()" data-toggle="popover" data-placement="top" title="UNITED STATES">&nbsp;</p>
            </div>
          
                <video id="myVideo" class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264"  poster="https://s3.amazonaws.com/dell-med/Mod1_Sec3.jpg" controls data-setup='{"fluid": true}'>
                 <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.mp4" type="video/mp4"></source>
                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.webm" type="video/webm"></source>
                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.ogv" type="video/ogv"></source>  
-                 <track label="English" kind="subtitles" srclang="en" src="captions.vtt" ></video>
+                 <track label="English" kind="subtitles" srclang="en" src="VTT/Mod1_Sec3.vtt" default>
                </video>
                
         <div class="row  myDiv0 vertical-align">
@@ -442,8 +442,10 @@ function checkPlay1()
           $('#skdiv').css({'display':'none'});
 		  $(".video-point").css("background-color","transprant");
 		  $('#skid2').html('');
+		  $('.video-point').popover('hide');
 }
 $(".video-point").click(function(){
+$('.video-point').popover('hide');
 $(".video-point").css("background-color","transprant");
 if($(this).attr("id")=="skp10")
 {
@@ -455,35 +457,35 @@ $(this).css("background-color","red");
 }
 });
 </script>
+
 <script>
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
+    $('[data-toggle="popover"]').popover();   
 });
 </script>
-
 
 
 <footer class="container-fluid">         
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m1/m1s2p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m1/m1s2p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 2</span>
                 <span class="sp1"><strong>Story from the Frontlines</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m1/m1s4p1"><span class="ssp2">MODULE 1 | Section 4</span>
+               <a href="#" onclick="window.location='?id=m1/m1s4p1'"><span class="ssp2">MODULE 1 | Section 4</span>
                 <span class="sp2"><strong>How Big of a Problem is Healthcare Waste?</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-5"></div>
-              <div class="col-sm-2">
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-sm-5"></div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
           
       </footer> 

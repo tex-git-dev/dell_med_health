@@ -79,7 +79,7 @@ include("view/cjs.php");
                <div class="row m2s8c1"> 
                <br>            
                 <div class="col-sm-1"></div>
-                  <div class="col-sm-11">                    
+                  <div class="col-sm-8">                    
                         <div class="vertical-align paddb">
 
                         <div id="wrapper">
@@ -96,7 +96,9 @@ include("view/cjs.php");
                         <!-- s9ad fa-play-circle-o -->
                         <!-- fa fa-pause-circle-o -->
                   </div>
-                                    
+                       <div class="col-md-1 text-center"><a href="VTT/Mod2_Sec8.pdf" class="btn btn-info" target="_blank">
+					   <i class="fa fa-download" aria-hidden="true"></i>
+					   TranScript</a></div>             
                  </div>
               <div class="row  m2s8c3">             
                 <div class="col-sm-1"></div>
@@ -317,24 +319,24 @@ include("view/cjs.php");
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s7p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m2/m2s7p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 7</span>
                 <span class="sp1"><strong>Care Redesign Case: UNOS</strong></span></a>
             </div>
            <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="<?php echo pathUrl();?>"><span class="ssp2">Home</span>
+                <a href="#" onclick="window.location='<?php echo pathUrl();?>'"><span class="ssp2">Home</span>
                 <span class="sp2"><strong>Dell Medical VBHC</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-5"></div>
-              <div class="col-sm-2">
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-sm-5"></div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
 </footer> 

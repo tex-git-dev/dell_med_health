@@ -17,15 +17,14 @@ var app = {
 		this.preLoader();
 		this.Anim();
     this.Events();
-	},
-  DataSave:function(dataSave){
+	},  
+DataSave:function(dataSave){
     // data save in recods table.
       $.post( "dataSave.php", dataSave, 
         function( data ) {  
         }, "json");
      //  console.log(dataSave)
-
-  },
+},
   MDataPopulate:function(){
     // this function used for data populate for home page menu.
     var loc1 = app.MData[app.SelecteM];
@@ -309,7 +308,9 @@ document.getElementsByTagName("body")[0].oncontextmenu = function(e){ e.preventD
               }
           });
     });
-/*var width = $(window).width(), height = $(window).height();
+
+/*
+var width = $(window).width(), height = $(window).height();
 $(window).resize(function()
 {
   if($(window).width() != width && $(window).height() != height){
@@ -318,11 +319,15 @@ $(window).resize(function()
     this.id = setTimeout(app.doneResizing, 500);
 }
     
-})*/
-/*window.addEventListener("orientationchange", function(e) {
+})
+*/
+/*
+window.addEventListener("orientationchange", function(e) {
   clearTimeout(this.id);
     this.id = setTimeout(app.doneResizing, 500);
-}, false);*/
+}, false);
+*/
+
 app.scroll= function(id,modal){
       $('html, body').animate({
           scrollTop: $('#'+id).offset().top

@@ -73,7 +73,7 @@ include("view/cjs.php");
 
 <!-- Mcq start -->
 
-<div class="container-full m3s3mcq m3s3b4">    
+<div class="container-full m3s3mcq m3s3b4" id="my-Carousel1">    
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -81,7 +81,7 @@ include("view/cjs.php");
             <li data-target="#myCarousel" data-slide-to="1" ></li>            
         </ol>
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner additem" role="listbox">
             <div class="item active" id="0">
                 <div class="container-full text-center white">
                     <div class="container">    
@@ -91,8 +91,8 @@ include("view/cjs.php");
                                 <f><p class="ques">What percentage of the gross domestic product (GDP) does health care represent? </p></f>
 
                                 <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                               <!-- <div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('20%', '10%', '1%');
@@ -110,8 +110,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                               
+                                   <!-- </div>
+                                </div>  -->                             
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -152,8 +152,8 @@ include("view/cjs.php");
                             <div class="col-sm-8" >
                                 <f><p class="ques">What percentage of health care spending is waste (i.e., does not improve health)? </p></f>
                                 <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <!--<div class="col-sm-12">
+                                    <div class="row eq-h"> -->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('30%', '10%', '50%');
@@ -171,8 +171,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                  <!--  </div>
+                                </div> -->                             
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -356,7 +356,7 @@ include("view/cjs.php");
 
 <!-- Mcq start -->
 
-<div class="container-full m3s3mcq m3s3b4">    
+<div class="container-full m3s3mcq m3s3b4" id="my-Carousel2">    
     <div id="myCarousel_a" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators"> 
@@ -372,7 +372,7 @@ include("view/cjs.php");
             <li data-target="#myCarousel_a" data-slide-to="9" ></li>                        
         </ol>
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner additem" role="listbox">
 
             <div class="item active" id="2">
                 <div class="container-full text-center white">
@@ -381,9 +381,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The amount a hospital pays directly for a unit of packed red blood cells (for a transfusion)</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('COST', 'CHARGE', 'PRICE', 'REIMBURSEMENT');
@@ -401,8 +401,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div>   -->                            
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -441,9 +441,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The amount an insurance company pays to a hospital for a patient’s hospitalization</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                  <!-- <div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('REIMBURSEMENT', 'CHARGE', 'PRICE', 'COST');
@@ -461,8 +461,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                    <!--</div>
+                                </div> -->                             
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -501,9 +501,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The amount a laboratory pays for pipettes to process patient specimens</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('COST', 'CHARGE', 'PRICE', 'REIMBURSEMENT');
@@ -521,8 +521,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                   <!-- </div>
+                                </div>-->                              
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -562,9 +562,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The amount shown on a bill an uninsured patient receives for a visit to an outpatient clinic</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                              <!--  <div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('CHARGE', 'COST', 'PRICE', 'REIMBURSEMENT');
@@ -582,8 +582,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                  <!--  </div>
+                                </div>-->                              
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -624,9 +624,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The portion a patient pays for a procedure at a local clinic</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('PRICE', 'CHARGE', 'COST', 'REIMBURSEMENT');
@@ -644,8 +644,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                  <!--  </div>
+                                </div> -->                             
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -685,9 +685,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The amount an insurance company pays to a hospital group for a diagnosis of Severe Sepsis (DRG 870)</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('REIMBURSEMENT', 'CHARGE', 'PRICE', 'COST');
@@ -705,8 +705,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                    <!-- </div>
+                                </div> -->                             
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -747,9 +747,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The amount a clinic asks for a flu vaccination at a local pharmacy</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('CHARGE', 'COST', 'PRICE', 'REIMBURSEMENT');
@@ -767,8 +767,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                   <!-- </div>
+                                </div>  -->                            
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -808,9 +808,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The amount a patient pays for their copay for a routine visit with their doctor</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row  row-eq-height">
+                              <!--  <div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('PRICE', 'CHARGE', 'COST', 'REIMBURSEMENT');
@@ -828,8 +828,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                   <!-- </div>
+                                </div> -->                             
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -868,9 +868,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The amount an infectious disease physician asks for after consulting on a complex case</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('CHARGE', 'COST', 'PRICE', 'REIMBURSEMENT');
@@ -888,8 +888,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                 <!--   </div>
+                                </div>  -->                            
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -928,9 +928,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The portion of a medical bill paid to a provider by a patient’s insurance</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('REIMBURSEMENT', 'CHARGE', 'PRICE', 'COST');
@@ -948,8 +948,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                   <!-- </div>
+                                </div>-->                              
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -1150,26 +1150,25 @@ include("view/cjs.php");
 <footer class="container-fluid">         
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m3/m3s2p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m3/m3s2p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 3 | Section 2</span>
                 <span class="sp1"><strong>Story From the Frontlines</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m3/m3s4p1"><span class="ssp2">MODULE 3 | Section 4</span>
+                <a href="#" onclick="window.location='?id=m3/m3s4p1'"><span class="ssp2">MODULE 3 | Section 4</span>
                 <span class="sp2"><strong>The Cost of Care: Different Approaches</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-5"></div>
-              <div class="col-sm-2">
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-sm-5"></div>
-          </div>
-          
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+          </div>          
           
 </footer> 
   
@@ -1200,6 +1199,25 @@ include("view/cjs.php");
 
 <script>
 
+        $(function () {
+                setMsgBoxHeight();
+        });
+        function setMsgBoxHeight() {
+		var f_height = 0;
+            var msgboxHeight = $(".carousel .active .row-eq-height").height();
+			 var l = $(".carousel .active .ans").length;
+			  for(var i=1;i<=l;i++)
+			  {
+			  var h =  $(".carousel .active .row-eq-height div:nth-child("+i+") .ans").css("height");
+			  var h1 = h.split('p');
+			 if(f_height < Number(h1[0]))
+			 {
+			    f_height = h1[0];
+			 }
+			}
+           $(".carousel .active .ans").css("height",f_height+"px");	   
+    }
+
 $('.carousel').on('slid.bs.carousel', function (e) {
        $('.item .ans').removeClass('Dis');
        $('.item .ans').removeClass('DisB');
@@ -1223,7 +1241,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
             $('.left_b').show();
             $('.right_b').show();
           }
-
+            setMsgBoxHeight();
       });
 
 
@@ -1276,3 +1294,88 @@ function TryA(){
         }
 
 </script>
+
+
+
+<script>
+
+  $("#my-Carousel1 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+  });
+  $("#my-Carousel1 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+
+  });
+
+</script>
+
+<script>
+
+  $("#my-Carousel2 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+  });
+  $("#my-Carousel2 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+
+  });
+
+</script>
+
+
+

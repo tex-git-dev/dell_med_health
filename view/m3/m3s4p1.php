@@ -315,7 +315,7 @@ app.response2 = function(){
                   <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec4.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec4.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec4.ogv"  type="video/ogv"></source>
-                  <track kind="subtitles" src="" srclang="en" label="English"  default/>
+                  <track label="English" kind="subtitles" srclang="en" src="VTT/Mod3_Sec4.vtt" default>
                </video>
             </div>
          </div>
@@ -406,7 +406,7 @@ app.response2 = function(){
 
 <!-- Mcq start -->
 
-<div class="container-full m3s4mcq m3s4b7">    
+<div class="container-full m3s4mcq m3s4b7" id="my-Carousel1">    
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -418,7 +418,7 @@ app.response2 = function(){
             <li data-target="#myCarousel" data-slide-to="5" ></li>
         </ol>
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner additem" role="listbox">
             <div class="item active" id="0">
                 <div class="container-full text-center white">
                     <div class="container">    
@@ -427,9 +427,9 @@ app.response2 = function(){
                             <div class="col-sm-8" >
                                 <f><p class="ques">Physicians tend to only accept patients that are healthier to minimize time spent and services rendered and to maximize the amount they receive per patient. (con)</p></f>
 
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">--->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('CAPITATION', 'FEE-FOR-SERVICE', 'GLOBAL&nbsp;PAYMENT');
@@ -447,8 +447,8 @@ app.response2 = function(){
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div>  -->                             
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -487,9 +487,9 @@ app.response2 = function(){
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">Appropriate and timely patient care improves along with provider communication because all provider groups receive one payment and are encouraged to work together. (pro)</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('GLOBAL&nbsp;PAYMENT', 'FEE-FOR-SERVICE', 'CAPITATION');
@@ -507,8 +507,8 @@ app.response2 = function(){
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                   <!-- </div>
+                                </div>-->                              
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -548,9 +548,9 @@ app.response2 = function(){
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">A provider group notices smaller payments after a provider known for poor documentation of procedures and diagnoses works for the clinic. (con)</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('FEE-FOR-SERVICE', 'CAPITATION', 'GLOBAL&nbsp;PAYMENT');
@@ -568,8 +568,8 @@ app.response2 = function(){
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                   <!-- </div>
+                                </div>-->                              
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -609,9 +609,9 @@ app.response2 = function(){
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">With an unchanging amount of payments, this mechanism makes costs more predictable for insurance companies and represents a more steady monthly cash flow for providers. (pro)</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('GLOBAL&nbsp;PAYMENT', 'CAPITATION', 'FEE-FOR-SERVICE');
@@ -629,8 +629,8 @@ app.response2 = function(){
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                   <!-- </div>
+                                </div> -->                             
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -670,9 +670,9 @@ app.response2 = function(){
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">Providers tend to order more CT scans even when they may not meet guideline-based clinical indications due to larger reimbursement payments. (con)</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('FEE-FOR-SERVICE', 'CAPITATION', 'GLOBAL&nbsp;PAYMENT');
@@ -690,8 +690,8 @@ app.response2 = function(){
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                    <!--</div>
+                                </div> -->                             
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -732,9 +732,9 @@ app.response2 = function(){
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">A provider network is encouraged to maximize the adherence to best practices and the amount of care providers can give from their once-yearly payment. (pro)</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12">
+                                    <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('GLOBAL&nbsp;PAYMENT', 'CAPITATION', 'FEE-FOR-SERVICE');
@@ -752,8 +752,8 @@ app.response2 = function(){
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                              
+                                   <!-- </div>
+                                </div> --->                             
                             </div> 
                             <div class="row">
                                   <div class="col-sm-12 sign">
@@ -801,7 +801,7 @@ app.response2 = function(){
     
 
    <div class="container text-center s1bgcol">
-      <div class="row">
+      <div class="row" id="my-Carousel2">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
@@ -864,7 +864,7 @@ app.response2 = function(){
          <div class="col-sm-2"></div>
       </div>
       <br>
-       <div class="row">
+       <div class="row" id="my-Carousel3">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
@@ -1030,6 +1030,25 @@ app.response2 = function(){
 
 <script>
 
+        $(function () {
+                setMsgBoxHeight();
+        });
+        function setMsgBoxHeight() {
+		var f_height = 0;
+            var msgboxHeight = $(".carousel .active .row-eq-height").height();
+			 var l = $(".carousel .active .ans").length;
+			  for(var i=1;i<=l;i++)
+			  {
+			  var h =  $(".carousel .active .row-eq-height div:nth-child("+i+") .ans").css("height");
+			  var h1 = h.split('p');
+			 if(f_height < Number(h1[0]))
+			 {
+			    f_height = h1[0];
+			 }
+			}
+           $(".carousel .active .ans").css("height",f_height+"px");	   
+    }
+	
 $('.carousel').on('slid.bs.carousel', function (e) {
        $('.item .ans').removeClass('Dis');
        var id = parseInt(e.relatedTarget.id);
@@ -1044,7 +1063,7 @@ $('.carousel').on('slid.bs.carousel', function (e) {
             $('.left').show();
             $('.right').show();
           }
-
+         setMsgBoxHeight();
 
       });
 
@@ -1081,26 +1100,148 @@ function TryA(){
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m3/m3s3p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m3/m3s3p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 3 | Section 3</span>
                 <span class="sp1"><strong>Speaking the Same Language: Health Care Cost Terms</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m3/m3s5p1"><span class="ssp2">MODULE 3 | Section 5</span>
+                <a href="#" onclick="window.location='?id=m3/m3s5p1'"><span class="ssp2">MODULE 3 | Section 5</span>
                 <span class="sp2"><strong>Toward More Transparency</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
 
-          <div class="row">            
-            <div class="col-sm-5"></div>
-              <div class="col-sm-2">
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-sm-5"></div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
           
-      </footer>      
+      </footer> 
+
+
+
+
+
+<script>
+
+  $("#my-Carousel1 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+  });
+  $("#my-Carousel1 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+  });
+
+</script>
+
+<script>
+
+  $("#my-Carousel2 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+  });
+  $("#my-Carousel2 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+
+  });
+
+</script>
+
+
+<script>
+
+  $("#my-Carousel3 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel3 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel3 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel3 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel3 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel3 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+  });
+  $("#my-Carousel3 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel3 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel3 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel3 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel3 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel3 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+
+  });
+
+</script>
+
+	  

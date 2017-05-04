@@ -187,19 +187,5 @@ $(document).ready(function() {
 
 </script>
 
-  <div class="modal" id="ModuleCompleteModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" aria-labelledby="myModalLabel" aria-hidden="true" style="">
-    <div class="modal-dialog">
-      <div class="modal-content" style="background:url('img/bgLogin.png');color:white;">
-        <div class="modal-header text-center">
-		  <h4>Congratulations!</h4>
-        </div>
-        <div class="modal-body">
-           You have completed the Introduction to Value-Based Health Care modules. Please follow this link <a href="?id=survey" target="_blank">Click here</a> to complete a survey about these modules. Once you have completed this survey, you will receive your certificate of completion for these modules.
-        </div>
-		  <div class="modal-footer">
-          <button type="button" class="btn btn-danger mcmpnotnow" data-dismiss="modal">Not Now</button>
-        </div>
-      </div> 
-    </div>
-  </div>
+
 

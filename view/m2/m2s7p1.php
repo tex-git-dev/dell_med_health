@@ -358,7 +358,7 @@ app.response2 = function(){
 
 
    <div class="container text-center s1bgcol">
-      <div class="row">
+      <div class="row" id="my-Carousel1">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
@@ -422,7 +422,7 @@ app.response2 = function(){
          <div class="col-sm-2"></div>
       </div>
       <br>
-      <div class="row">
+      <div class="row" id="my-Carousel2">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
@@ -533,24 +533,102 @@ app.response2 = function(){
 <footer class="container-fluid">
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s6p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m2/m2s6p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 6</span>
                 <span class="sp1"><strong>Comparing Outcomes of Different Treatment Strategies</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m2/m2s8p1"><span class="ssp2">MODULE 2 | Section 8</span>
+                <a href="#" onclick="window.location='?id=m2/m2s8p1'"><span class="ssp2">MODULE 2 | Section 8</span>
                 <span class="sp2"><strong>Conclusion: Measuring What Matters</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-5"></div>
-              <div class="col-sm-2">
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-sm-5"></div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
           
       </footer>
+	  
+	  
+	  
+<script>
+
+  $("#my-Carousel1 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+  });
+  $("#my-Carousel1 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+
+  });
+
+</script>
+
+<script>
+
+  $("#my-Carousel2 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+  });
+  $("#my-Carousel2 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+
+  });
+
+</script>

@@ -76,7 +76,7 @@ include("view/cjs.php");
                   <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.ogv" type="video/ogg"></source>
-                  <track kind="subtitles" src="" srclang="en" label="English"  default/>
+                  <track label="English" kind="subtitles" srclang="en" src="VTT/Mod1_Sec4.vtt" default>
                </video>
                </div>  
             </div>
@@ -96,7 +96,7 @@ include("view/cjs.php");
         </ol>
         <!-- Wrapper for slides -->
 
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner additem" role="listbox">
             <div class="item active" id="0">
                 <div class="container-full text-center white">
                     <div class="container">    
@@ -104,9 +104,9 @@ include("view/cjs.php");
                         <div class="col-sm-2"></div>
                             <div class="col-sm-8">
                                 <f><p class="ques">Approximately what percentage of total health care dollars spent are wasted every year?</p></f>
-                                <div class="row">
-                                <div class="col-sm-12">
-                                <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('30%', '15%', '5%');
@@ -121,9 +121,9 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
+                                   <!-- </div>
                                  
-                                </div>
+                                </div>-->
                                
                             </div>
                             <div class="row">
@@ -168,25 +168,30 @@ include("view/cjs.php");
                             <div class="col-sm-10" >
                                 <f><p class="ques">Health care costs directly affect...</p></f>
 
-                                <div class="row">
-                                <div class="col-sm-12">
-                                <div class="row eq-h ">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('all of the above', 'employers', 'individuals', 'national budgets');
-                                            $numRandoms = 4;
+                                            $array = array('employers', 'individuals', 'national budgets');
+                                            $numRandoms = 3;
                                             $random = randomArray($array, $numRandoms);
                                             $ans = array(true, false, false);
                                             //print_r($random);
                                             foreach ($random as $key => $value) {
-                                                $ans = $value == "all of the above" ? 1 : 0;
-                                                echo '<div class="col-sm-3">
-                                                    <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
-                                                  </div>';
+											?>
+                                      <div class="col-sm-3">
+                                      <div class="ans" onclick="checkAnswer(this,'0');"><?php echo $value; ?></div>
+                                       </div>
+									 <?php 
                                             }
-                                        ?>                                        
-                                    </div>
-                                </div>                              
+	
+                                        ?>   
+	                                         <div class="col-sm-3">
+                                               <div class="ans" onclick="checkAnswer(this, '1');">all of the above</div>
+                                             </div>										
+                                    <!--</div>
+                                </div>-->                              
                             </div> 
 
                             <div class="row">
@@ -231,9 +236,9 @@ include("view/cjs.php");
                         <div class="col-sm-1" ></div>
                             <div class="col-sm-10" >
                                 <f><p class="ques">The next section will discuss causes of health care waste. Based on your experience and what you have learned thus far, what do you think is the largest contributor to health care waste?</p></f>
-                                <div class="row ">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h ">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('unnecessary services', 'fraud', 'exorbitant prices', 'executive and physician salaries');
@@ -248,8 +253,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                            </div>
+                                   <!-- </div>
+                            </div>-->
                             </div>
 
                             <div class="row">
@@ -323,24 +328,24 @@ include("view/cjs.php");
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m1/m1s3p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m1/m1s3p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 3</span>
                 <span class="sp1"><strong>Providing Value for Patients</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m1/m1s5p1"><span class="ssp2">MODULE 1 | Section 5</span>
+                <a href="#" onclick="window.location='?id=m1/m1s5p1'"><span class="ssp2">MODULE 1 | Section 5</span>
                 <span class="sp2"><strong>Unnecessary Care</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-5"></div>
-              <div class="col-sm-2">
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-sm-5"></div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
 
@@ -384,7 +389,8 @@ var p =1
           }  else {
             $('.left').show();
             $('.right').show();
-          }        
+          }  
+                setMsgBoxHeight();       
       });
 
 function TryA(){
@@ -392,17 +398,15 @@ function TryA(){
       $('.item .ans').removeClass('Dis')
 
     }
-
-
     function checkAnswer(obj, f) {
             //console.log($(obj).parents(".row-eq-height"));
             $('.item .ans').addClass('Dis');
             $('.item.active div').removeClass("incorrect").removeClass("selectedAns");
             $(obj).parents(".eq-h").find(".ans")
             $(obj).parents(".white").removeClass("correct incorrect");
-            if (f === 1) {
+            if (Number(f) == 1) {
                 $(obj).addClass('selectedAns').parents('.white').addClass('correct');
-            } else if (f === 0) {
+            } else if (Number(f) == 0) {
                 $(obj).addClass('selectedAns').parents('.white').addClass('incorrect');
             } else {
                 $(obj).addClass('selectedAns').parents('.white').addClass('correct bothCorrect');
@@ -412,10 +416,6 @@ function TryA(){
             }
         }
         
-
-
-        
-
 $(document).ready(function(){
   var flagvd = false;
      $('.video-js').inview({
@@ -427,15 +427,71 @@ $(document).ready(function(){
 
           },
           'onLeave': function($object) {
-            //$('video').trigger('pause');
           }
 
       });
   });
+</script>
 
 
+<script>
 
+//var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+       
+        $(function () {
+                setMsgBoxHeight();
+        });
+        function setMsgBoxHeight() {
+		var f_height = 0;
+            var msgboxHeight = $(".carousel .active .row-eq-height").height();
+			 var l = $(".carousel .active .ans").length;
+			  for(var i=1;i<=l;i++)
+			  {
+			  var h =  $(".carousel .active .row-eq-height div:nth-child("+i+") .ans").css("height");
+			  var h1 = h.split('p');
+			 if(f_height < Number(h1[0]))
+			 {
+			    f_height = h1[0];
+			 }
+			}
+           $(".carousel .active .ans").css("height",f_height+"px");	   
+    }
 
-
+		
+  $(".additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $(".carousel-indicators li:nth-child(1)").addClass("active");
+	    $(".additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+  });
+  $(".additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $(".carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $(".additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	  setMsgBoxHeight();
+  });
 
 </script>
+

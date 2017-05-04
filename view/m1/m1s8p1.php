@@ -52,56 +52,6 @@ include("view/cjs.php");
     </div>
     <br><br>
     <br>
-    <!--    <div class="container s81">
-            <div class="row">
-                <div class="col-sm-4 " style="visibility: visible; animation-name: flipInX;">
-                    <div class="panel">
-                        <div>
-                            <img src="img/8-01.jpg" class="img-responsive" style="width:100%" alt="Image">
-                        </div>
-                        <div class="panel-footer">
-                            <h2>Coefficient of variance <span style="text-transform: none;">(CoV)</span></h2>
-                            <center><span class="separator"></span></center>
-                            <f><p>How variable are the costs?</p></f>
-                            <f><p>How dispersed is your data?</p></f> 
-                            <f><p>Mean is the average cost.</p></f>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4  " style="visibility: visible; animation-name: flipInX;">
-                    <div class="panel">
-                        <div>
-                            <img src="img/8-02.jpg" class="img-responsive" style="width:100%" alt="Image">
-                        </div>
-                        <div class="panel-footer">
-                            <h2>Opportunity index</h2>
-                            <center><span class="separator"></span></center>
-                            <f><p>How large is the opportunity to impact costs?</p></f>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 " style="visibility: visible; animation-name: flipInX;">
-                    <div class="panel">
-                        <div>
-                            <img src="img/8-03.jpg" class="img-responsive" style="width:100%" alt="Image">
-                        </div>
-                        <div class="panel-footer">
-                            <h2>Mean cost</h2>
-                            <center><span class="separator"></span></center>
-                            <f><p>What is the average cost?</p></f>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-    <!--    <div class=" container text-center" >
-            <div class="row">
-                <div class="col-sm-offset-2 col-sm-8">
-                    
-                </div>
-            </div>
-        </div>-->
-
     <div class="jumbotron m6b2 s81">        
         <div class="container"> 
             <div class="row m6col">
@@ -280,7 +230,7 @@ include("view/cjs.php");
         <div id="myCarousel" class="carousel slide carousel-sync" data-interval="false">
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner additem" role="listbox">
                 <div class="item active">
                     <div class="container text-center white">
                         <div class="container">
@@ -960,9 +910,8 @@ include("view/cjs.php");
             $(".popup").addClass("hide");
             $(".overlayBG").hide();
 
-            if (isSafari) {
                 setMsgBoxHeight();
-            }
+
         });
 
         drawChart();
@@ -1032,18 +981,24 @@ include("view/cjs.php");
             });
         }
 
-        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-        //alert(isSafari);
         $(function () {
-            if (isSafari) {
                 setMsgBoxHeight();
-            }
         });
         function setMsgBoxHeight() {
-            var msgboxHeight = $(".scatterplot .active .row-eq-height").height() - 13;
-            //alert(msgboxHeight);
-            $(".scatterplot .active .ans").height(msgboxHeight);
-        }
+		var f_height = 0;
+            var msgboxHeight = $(".carousel .active .row-eq-height").height();
+			 var l = $(".carousel .active .ans").length;
+			  for(var i=1;i<=l;i++)
+			  {
+			  var h =  $(".carousel .active .row-eq-height div:nth-child("+i+") .ans").css("height");
+			  var h1 = h.split('p');
+			 if(f_height < Number(h1[0]))
+			 {
+			    f_height = h1[0];
+			 }
+			}
+           $(".carousel .active .ans").css("height",f_height+"px");	   
+    }
 
 
         $(document).ready(function () {
@@ -1123,25 +1078,68 @@ include("view/cjs.php");
 
         <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-                <a href="?id=m1/m1s7p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+               <a href="#" onclick="window.location='?id=m1/m1s7p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
                     <span class="ssp1">MODULE 1 | Section 7</span>
                     <span class="sp1"><strong>Value-Driven Outcomes at University of Utah Health Care</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m1/m1s9p1"><span class="ssp2">MODULE 1 | Section 9</span>
+                <a href="#" onclick="window.location='?id=m1/m1s9p1'"><span class="ssp2">MODULE 1 | Section 9</span>
                     <span class="sp2"><strong>Conclusion: Value-Based Health Care</strong></span>
                     <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
         </div>
 
 
-          <div class="row">            
-            <div class="col-sm-5"></div>
-              <div class="col-sm-2">
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-sm-5"></div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
     </footer> 
+	
+<script>
+
+  $(".additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $(".carousel-indicators li:nth-child(1)").addClass("active");
+	    $(".additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	    updateChart();
+		setMsgBoxHeight();
+  });
+  $(".additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $(".carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $(".additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	   updateChart();
+	   setMsgBoxHeight();
+
+  });
+
+</script>
+

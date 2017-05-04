@@ -266,12 +266,12 @@ margin-left: 0;
     padding: 10px;
     background: #535B72;
     color: #FFFFFF !important;
-    font-size: 13px !important;
-    margin: 0;
+    font-size: 14px !important;
+    margin: 8px 0;
     cursor: pointer;
     border:2px solid #535B72;
     height: 100%;
-    font-family: "GothamHTF-Book" !important;
+
 }
 
 
@@ -384,6 +384,9 @@ margin-left: 0;
     font-family: "GothamHTF-Medium";
 }
 
+.m3s7p1 .chargeM {
+    width: 97.4%
+}
 
 
 
@@ -435,6 +438,10 @@ and (max-device-width : 1000px) {
 .m3s7p1 .m3s7b4 .m3s7b7 {
         display: none !important;
     }
+
+ .m3s7p1 .chargeM {
+    width: 98.4%
+}
 
 
 }

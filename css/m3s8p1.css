@@ -424,6 +424,7 @@ and (max-device-width : 765px) {
 .m3s8p1 .m3s7ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 .m3s8p1 .m3s7b6 {
     margin-bottom: 0px;
@@ -506,6 +507,7 @@ and (max-device-width : 500px) {
 .m3s8p1 .m3s7ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 .m3s8p1 .m3s7b6 {
     margin-bottom: 0px;
@@ -587,7 +589,9 @@ and (max-device-width : 299px) {
 .m3s8p1 .m3s7ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
+
 
 .m3s8p1 .m3s7b6 {
     margin-bottom: 0px;

@@ -9,4 +9,6 @@ $c1 = "select * from users,records where users.Email=BINARY '".$username."'  and
      }else{
      	echo 0;
      }
+$q1 = "UPDATE records SET survey_response = 'OPEN' WHERE email = '".$username."'";
+ mysqli_query($dbcon,$q1);
 ?>

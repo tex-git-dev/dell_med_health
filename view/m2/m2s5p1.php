@@ -45,7 +45,7 @@ include("view/cjs.php");
                 <f><p class="" >To improve health care value, there must be an overall measurement strategy in place. Just measuring outcomes is often not enough. </p></f> 
             </div>
             <div class="col-sm-12 ">
-               <f><p>Outcomes depend on many factors within and aside from health services. Even if a patient presenting to an emergency department with a heart attack received “atrocious care,” he still may have a good outcome—if one did nothing for this patient other than provide pain relief, he would still have a 60-70% chance of surviving and being able to resume his daily activities. The patient’s outcome would be considered great, but their care would have been so wasteful as to be appalling. </p></f>
+               <f><p>Outcomes depend on many factors within and aside from health services. Even if a patient presenting to an emergency department with a heart attack received “atrocious care,�? he still may have a good outcome—if one did nothing for this patient other than provide pain relief, he would still have a 60-70% chance of surviving and being able to resume his daily activities. The patient’s outcome would be considered great, but their care would have been so wasteful as to be appalling. </p></f>
             </div>
             <div class="col-sm-12 ">
                <f><p>Conversely, great process compliance ratings can be associated with appalling outcomes. </p></f>
@@ -128,7 +128,7 @@ include("view/cjs.php");
                 <div class="row">
                    <!-- <div class="col-sm-1"></div> -->
                     <div class="col-sm-12">
-                      <f><p >“Among the most important provider steps in moving to value-based competition is the measurement of results and the factors that influence them. It is difficult to improve value without measuring results. No physician or provider organization will be truly effective in attaining and sustaining excellence without knowing where it stands. A move by providers to measure results, make results transparent, and use results’ information to improve value would be the single most important step in transforming the health care system.”</p></f>
+                      <f><p >“Among the most important provider steps in moving to value-based competition is the measurement of results and the factors that influence them. It is difficult to improve value without measuring results. No physician or provider organization will be truly effective in attaining and sustaining excellence without knowing where it stands. A move by providers to measure results, make results transparent, and use results’ information to improve value would be the single most important step in transforming the health care system.�?</p></f>
                       <f><p style="color:#fff; font-size:12px; margin-bottom:0px !important; font-family: GothamHTF-Medium;">Porter & Teisberg, <u>Redefining Health Care</u>, 2006</p></f>
                     </div>
                     <!-- <div class="col-sm-1"></div> -->
@@ -145,7 +145,7 @@ include("view/cjs.php");
          <br>
          <div class="row">
             <div class="col-sm-8">
-               <f><p>Most of today’s required “quality” measure are process measures, discussed as if they were outcome measures.  Process measures measure what is actually <strong>done</strong> in giving and receiving care, not the <strong>effects</strong> of that care. To measure the <strong>effects</strong> of care, we need outcome measures.</p></f>
+               <f><p>Most of today’s required “quality�? measure are process measures, discussed as if they were outcome measures.  Process measures measure what is actually <strong>done</strong> in giving and receiving care, not the <strong>effects</strong> of that care. To measure the <strong>effects</strong> of care, we need outcome measures.</p></f>
                <f><p>Process measures are easier to track and to control, but have invited a burdensome level of micromanagement for physicians.  While every organization needs to track its processes and work to improve them, today’s required reporting of thousands of process measures reduces and, in the view of many physicians, undermines efficiency. Process measures also may fail to capture critical, unarticulated reasons why the care worked. </p></f>
                <f><p>The thing to remember is that absent measured outcomes, no one really knows which processes are better – which processes improve quality of life and dignity of death for patients. </p></f>
                <f><p>For this reason, processes and outcomes are part of a continuum that connects the inputs and outputs of health care delivery and thus are best used in combination. </p></f>
@@ -206,7 +206,7 @@ include("view/cjs.php");
             <li data-target="#myCarousel_1" data-slide-to="9" ></li>
         </ol>
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner additem" role="listbox">
 
         <!-- Question no 1 -->
             <div class="item active" id="0">
@@ -216,9 +216,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">Whether a patient with a heart attack is prescribed an ace-inhibitor medication prior to discharge</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+<!--                                <div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('PROCESS', 'STRUCTURAL', 'OUTCOME');
@@ -233,8 +233,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+<!--                                    </div>
+                                </div>                               -->
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -276,9 +276,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">Availability of x-ray facilities within a 10-mile radius</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('STRUCTURAL', 'PROCESS', 'OUTCOME');
@@ -293,8 +293,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div>-->                               
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -337,9 +337,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">Pain scores at 30, 60, and 90-days post spinal surgery</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('OUTCOME', 'PROCESS', 'STRUCTURAL');
@@ -354,8 +354,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div>-->                               
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -397,9 +397,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The number of influenza immunizations given at a hospital</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('PROCESS', 'STRUCTURAL', 'OUTCOME');
@@ -414,8 +414,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div> -->                              
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -457,9 +457,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">The average response time to patient emails</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('PROCESS', 'STRUCTURAL', 'OUTCOME');
@@ -474,8 +474,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div>  -->                             
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -518,9 +518,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">Complication rate for hip replacement surgery</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('OUTCOME', 'STRUCTURAL', 'PROCESS');
@@ -535,8 +535,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div> -->                              
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -578,9 +578,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">Number of after-hours clinic availability for flu shots</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('STRUCTURAL', 'PROCESS', 'OUTCOME');
@@ -595,8 +595,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div>      -->                         
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -638,9 +638,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                <f><p class="ques">Mortality rate post-liver transplant</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('OUTCOME', 'STRUCTURAL', 'PROCESS');
@@ -655,8 +655,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+                                   <!-- </div>
+                                </div>    -->                           
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -699,9 +699,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                <f><p class="ques">Percent of mothers counseled on taking a folic acid supplement during pregnancy</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('PROCESS', 'STRUCTURAL', 'OUTCOME');
@@ -716,8 +716,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+                                   <!-- </div>
+                                </div>    -->                           
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -760,9 +760,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                <f><p class="ques">The ratio of nurses to patients on a hospital ward</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                                <!--<div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('STRUCTURAL', 'OUTCOME', 'PROCESS');
@@ -777,8 +777,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>                                        
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div>  -->                             
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -834,25 +834,25 @@ include("view/cjs.php");
 <footer class="container-fluid">         
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s4p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m2/m2s4p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 4</span>
                 <span class="sp1"><strong>Patient Outcomes</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a  href="?id=m2/m2s6p1"><span class="ssp2">MODULE 2 | Section 6</span>
+                <a href="#" onclick="window.location='?id=m2/m2s6p1'"><span class="ssp2">MODULE 2 | Section 6</span>
                 <span class="sp2"><strong>Comparing Outcomes of Different Treatment Strategies</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
 
-          <div class="row">            
-            <div class="col-sm-5"></div>
-              <div class="col-sm-2">
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-sm-5"></div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
 </footer> 
@@ -900,7 +900,8 @@ var n = 0;
           }  else {
             $('.left').show();
             $('.right').show();
-          }        
+          }
+                setMsgBoxHeight();		  
       });
 
 function TryA(){
@@ -970,5 +971,70 @@ $(document).ready(function(){
 //     $('#s_'+arrayS[14]).hide();
 //     $('#s_'+arrayS[15]).hide();
 // }
+
+</script>
+
+
+
+
+
+
+<script>
+
+        $(function () {
+                setMsgBoxHeight();
+        });
+        function setMsgBoxHeight() {
+		var f_height = 0;
+            var msgboxHeight = $(".carousel .active .row-eq-height").height();
+			 var l = $(".carousel .active .ans").length;
+			  for(var i=1;i<=l;i++)
+			  {
+			  var h =  $(".carousel .active .row-eq-height div:nth-child("+i+") .ans").css("height");
+			  var h1 = h.split('p');
+			 if(f_height < Number(h1[0]))
+			 {
+			    f_height = h1[0];
+			 }
+			}
+           $(".carousel .active .ans").css("height",f_height+"px");	   
+    }
+	
+
+  $(".additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $(".carousel-indicators li:nth-child(1)").addClass("active");
+	    $(".additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+  });
+  $(".additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $(".carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $(".additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+	 setMsgBoxHeight();
+
+  });
 
 </script>

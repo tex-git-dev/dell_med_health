@@ -10,6 +10,8 @@ include("db.php");
  </style>
 <script type="text/javascript">
 
+
+
 //Below function used for forgot popup open.
 app.Forgot=function(){
   $('#forgot').modal({show: 'false'});
@@ -63,7 +65,7 @@ app.OpenMS=function(){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand logoBG" href="<?php echo pathUrl();?>"><img src="img/logo.svg" width="250" />
+            <a class="navbar-brand logoBG" href="#"><img src="img/logo.svg" width="250" onclick="window.location='<?php echo pathUrl();?>'"/>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar"> 
@@ -346,9 +348,9 @@ app.OpenMS=function(){
                       </div>
                 </div>
                 <br>
-                 <div class="row allModule1">
-                    <div class="col-sm-1"></div>                
-                    <div class="col-sm-9">
+                 <div class="row allModule1"> 
+           <div class="col-sm-1"></div>					 
+                    <div class="col-sm-10">
                       <div class="row text-center">
                           <div class="col-sm-3">
                               <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
@@ -360,11 +362,10 @@ app.OpenMS=function(){
                             <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
 						<div class="col-sm-3">
-                            <button  type="button" class="btn btn-default center-block btn-Survey">Survey</button>
+                            <a  href="#" onclick="window.location='?id=survey'"  class="btn btn-default center-block btn-Survey">Survey</a>
                           </div>
                       </div>                      
                     </div>
-                     <div class="col-sm-2"></div>
                 </div>
                  <br>
             
@@ -464,9 +465,9 @@ app.OpenMS=function(){
                       
                 </div>
              <br>
-                 <div class="row allModule2">
-                    <div class="col-sm-1"></div>                
-                    <div class="col-sm-9">
+                 <div class="row allModule2"> 
+                 <div class="col-sm-1"></div>					 
+                    <div class="col-sm-10">
                       <div class="row text-center">
                           <div class="col-sm-3">
                               <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
@@ -478,11 +479,10 @@ app.OpenMS=function(){
                             <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
 						 <div class="col-sm-3">
-                            <button  type="button" class="btn btn-default center-block btn-Survey">Survey</button>
+                            <a  href="#" onclick="window.location='?id=survey'"  class="btn btn-default center-block btn-Survey">Survey</a>
                          </div>
                       </div> 
                     </div>
-                     <div class="col-sm-2"></div>
                 </div>
                  <br>
            
@@ -527,7 +527,7 @@ app.OpenMS=function(){
                             <div class="alert1" role="alert">
                                Continue
                               </div>
-                      </div>
+                </div>
                         
                 </div>
                 <div class="row btnss  vertical-align bb btnS4">
@@ -586,9 +586,9 @@ app.OpenMS=function(){
 
                 <br>
 
-                 <div class="row allModule3">
-                    <div class="col-sm-1 "></div>                
-                    <div class="col-sm-9">
+                 <div class="row allModule3"> 
+                  <div class="col-sm-1"></div>			 
+                    <div class="col-sm-10">
                       <div class="row text-center">
                           <div class="col-sm-3">
                               <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
@@ -599,13 +599,12 @@ app.OpenMS=function(){
                           <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
-						 <div class="col-sm-3">
-                            <button  type="button" class="btn btn-default center-block btn-Survey">Survey</button>
+						       <div class="col-sm-3">
+                           <a  href="#" onclick="window.location='?id=survey'" class="btn btn-default center-block btn-Survey">Survey</a>
                           </div>
 						  
                       </div> 
                     </div>
-                     <div class="col-sm-2"></div>
                 </div>
                  <br>
            
@@ -647,8 +646,8 @@ app.OpenMS=function(){
                         </div>
                        <div class="row  text-center">
                             <div class="col-sm-12">
-                                <form action="" method='post' class=" mSearch navbar-form navbar-center" >
-                                    <div class="input-group" style="width:100%; margin-top: 18px;">
+                                <form action="" method='post' class=" mSearch" >
+                                    <div class="input-group" style=" margin-top: 18px;padding:0 39px 0 9px;">
                                         <input type="Search" id='inputs' placeholder="Search..." class="form-control" />
                                         <div class="input-group-btn">
                                             <button class="btn btn-info navbar-left" type='submit'>
@@ -994,6 +993,17 @@ app.OpenMS=function(){
                        
                    
                 </div>
+				
+			 <div class="row vertical-align bb complete btnM4" onclick="window.location='?id=survey'" id="SurveyButton" style="visibility: hidden; padding: 8px 0;cursor:pointer;"> 
+                        <div class="col-sm-2 text-center small">complete</div>
+                        <div class="col-sm-7"><strong>User Feedback Survey</strong></div>
+                        <div class="col-sm-3">
+                            <div class="alert1" role="alert">
+                               Start
+                              </div>
+                      </div>  
+                </div>
+				
            
         </div>
         <div class="col-sm-6 r2">
@@ -1029,8 +1039,8 @@ app.OpenMS=function(){
                         </div>
                        <div class="row  text-center">
                             <div class="col-sm-12">
-                                <form action="" method='post' id='' class="mSearch navbar-form navbar-center" >
-                                    <div class="input-group" style="width:100%; margin-top: 18px;">
+                                <form action="" method='post' id='' class="mSearch" >
+                                    <div class="input-group" style="width:100%; margin-top: 18px;padding:0 39px 0 9px;">
                                         <input type="Search" id='inputs' placeholder="Search..." class="form-control" />
                                         <div class="input-group-btn">
                                             <button class="btn btn-info navbar-left" type='submit'>
@@ -1941,8 +1951,21 @@ $("#State").html(data);
 });
 });
 
+$(".btnM4").hover(function(){
+$(".btnM1,.btnM2,.btnM3").removeClass("act");
+$(this).addClass("act");
+});
+
+$(".btnM4").mouseleave(function(){
+$(this).removeClass("act");
+});
+
+
 </script>
 <div class="dis disS"></div>
 <div class="dis disM"></div>
 <div class="dis disF"></div>
+
+
+
 
