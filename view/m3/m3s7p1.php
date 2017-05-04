@@ -4265,6 +4265,7 @@ $("#comparetocm").css("visibility","visible");
 		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
 	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
 	 }
+	 setMsgBoxHeight();
   });
   $("#my-Carousel1 .additem").on("swiperight",function(){
      var i = $(this).children("div.item.active").index()+1;
@@ -4281,7 +4282,7 @@ $("#comparetocm").css("visibility","visible");
 		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
 	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
 	 }
-
+     setMsgBoxHeight();
   });
 
 </script>
@@ -4321,7 +4322,6 @@ $("#comparetocm").css("visibility","visible");
 	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
 	 }
 	 setMsgBoxHeight();
-
   });
 
 </script>

@@ -539,6 +539,10 @@ margin-left: 0;
 @media screen
 and (min-device-width : 766px)
 and (max-device-width : 1000px) {
+.m3s4p1 .m3s4mcq .ans{
+    font-size: 11px !important;
+}
+
   .m3s4p1 .b1 {
     margin-bottom: 0px;
     background: url('../img/m3s4img1.png') no-repeat center center; 

@@ -1332,7 +1332,6 @@ function TryA(){
 	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
 	 }
 	 setMsgBoxHeight();
-
   });
 
 </script>
@@ -1372,7 +1371,6 @@ function TryA(){
 	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
 	 }
 	 setMsgBoxHeight();
-
   });
 
 </script>

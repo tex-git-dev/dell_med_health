@@ -120,7 +120,7 @@ include("view/cjs.php");
 
 
      <div class="container m2s8ms2 ">
-             <f><h3 class="text-uppercase text-center">Module Outcomes</h3></f>
+             <f><h3 class="text-uppercase text-center">Module 2 section summaries</h3></f>
           <br>
 
 <div class="well">

@@ -45,7 +45,7 @@ include("view/cjs.php");
                 <f><p class="" >To improve health care value, there must be an overall measurement strategy in place. Just measuring outcomes is often not enough. </p></f> 
             </div>
             <div class="col-sm-12 ">
-               <f><p>Outcomes depend on many factors within and aside from health services. Even if a patient presenting to an emergency department with a heart attack received “atrocious care,�? he still may have a good outcome—if one did nothing for this patient other than provide pain relief, he would still have a 60-70% chance of surviving and being able to resume his daily activities. The patient’s outcome would be considered great, but their care would have been so wasteful as to be appalling. </p></f>
+               <f><p>Outcomes depend on many factors within and aside from health services. Even if a patient presenting to an emergency department with a heart attack received “atrocious care,” he still may have a good outcome—if one did nothing for this patient other than provide pain relief, he would still have a 60-70% chance of surviving and being able to resume his daily activities. The patient’s outcome would be considered great, but their care would have been so wasteful as to be appalling. </p></f>
             </div>
             <div class="col-sm-12 ">
                <f><p>Conversely, great process compliance ratings can be associated with appalling outcomes. </p></f>
@@ -128,7 +128,7 @@ include("view/cjs.php");
                 <div class="row">
                    <!-- <div class="col-sm-1"></div> -->
                     <div class="col-sm-12">
-                      <f><p >“Among the most important provider steps in moving to value-based competition is the measurement of results and the factors that influence them. It is difficult to improve value without measuring results. No physician or provider organization will be truly effective in attaining and sustaining excellence without knowing where it stands. A move by providers to measure results, make results transparent, and use results’ information to improve value would be the single most important step in transforming the health care system.�?</p></f>
+                      <f><p >“Among the most important provider steps in moving to value-based competition is the measurement of results and the factors that influence them. It is difficult to improve value without measuring results. No physician or provider organization will be truly effective in attaining and sustaining excellence without knowing where it stands. A move by providers to measure results, make results transparent, and use results’ information to improve value would be the single most important step in transforming the health care system.” </p></f>
                       <f><p style="color:#fff; font-size:12px; margin-bottom:0px !important; font-family: GothamHTF-Medium;">Porter & Teisberg, <u>Redefining Health Care</u>, 2006</p></f>
                     </div>
                     <!-- <div class="col-sm-1"></div> -->
@@ -145,7 +145,7 @@ include("view/cjs.php");
          <br>
          <div class="row">
             <div class="col-sm-8">
-               <f><p>Most of today’s required “quality�? measure are process measures, discussed as if they were outcome measures.  Process measures measure what is actually <strong>done</strong> in giving and receiving care, not the <strong>effects</strong> of that care. To measure the <strong>effects</strong> of care, we need outcome measures.</p></f>
+               <f><p>Most of today’s required “quality” measure are process measures, discussed as if they were outcome measures.  Process measures measure what is actually <strong>done</strong> in giving and receiving care, not the <strong>effects</strong> of that care. To measure the <strong>effects</strong> of care, we need outcome measures.</p></f>
                <f><p>Process measures are easier to track and to control, but have invited a burdensome level of micromanagement for physicians.  While every organization needs to track its processes and work to improve them, today’s required reporting of thousands of process measures reduces and, in the view of many physicians, undermines efficiency. Process measures also may fail to capture critical, unarticulated reasons why the care worked. </p></f>
                <f><p>The thing to remember is that absent measured outcomes, no one really knows which processes are better – which processes improve quality of life and dignity of death for patients. </p></f>
                <f><p>For this reason, processes and outcomes are part of a continuum that connects the inputs and outputs of health care delivery and thus are best used in combination. </p></f>
