@@ -1,3 +1,5 @@
+
+
 <script type="text/javascript">
         app.CallM=function(v){
          var ss= "<?php  echo @$_SESSION['username'];?>";
@@ -548,9 +550,11 @@ and (max-device-width : 299px) {
           <div class="col-sm-4 footer-social">
               <h4>Helpful links</h4>
                  <ul>
-                  <li><a href="mailto:eanderson@utx.edu">Problems logging in or technical issues?</a></li>
-                  <li><a target="_blank" href="http://dellmedschool.utexas.edu/">Dell Medical School </a></li>
-                  <li><a target="_blank" href="http://www.utsystem.edu/">University of Texas System</a></li>
+                     <li><a href="mailto:eanderson@utx.edu">Problems logging in or technical issues?</a></li>
+                     <li><a target="_blank" href="http://dellmedschool.utexas.edu/">Dell Medical School </a></li>
+                     <li><a target="_blank" href="http://www.utsystem.edu/">University of Texas System</a></li>
+			         <li><a target="_blank" href="https://cio.utexas.edu/policies/web-privacy">Web Privacy Policy</a></li>
+		             <li><a target="_blank" href="https://cio.utexas.edu/policies/web-accessibility">Web Accessibility Policy</a></li>
                 </ul>
             </div>
             <div class="col-sm-2"></div>

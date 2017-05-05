@@ -145,7 +145,7 @@ app.pup2= function(v){
 }
 
 
-   $(document).ready(function(){
+  /* $(document).ready(function(){
   var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
@@ -160,7 +160,7 @@ app.pup2= function(v){
           }
 
       });
-  });
+  });*/
 </script>
 
 
@@ -3821,7 +3821,8 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 			    f_height = h1[0];
 			 }
 			}
-           $(".carousel .active .ans").css("height",f_height+"px");	   
+           $(".carousel .active .ans").css("height",f_height+"px");	
+		    $(".carousel .active .ans").css("line-height","block-height !important");		   
     }
 
 function TryA(){
@@ -4207,7 +4208,7 @@ $(".spanb").css("display","block");
 }
 else
 {
- $(".spana,.spanb").css("display","block");
+ $(".spana").css("display","block");
 }
 
 $(".m3s7p1 .vb1,.m3s7p1 .vb2,.m3s7p1 .vb3,.m3s7p1 .vb4,.m3s7p1 .vb5,.m3s7p1 .vb6,.m3s7p1 .vb7,.m3s7p1 .vb8,.m3s7p1 .vb9,.m3s7p1 .vb10,.m3s7p1 .vb11,.m3s7p1 .vb12,.m3s7p1 .vb13,.m3s7p1 .vb14,.m3s7p1 .vb15").css("visibility","visible");

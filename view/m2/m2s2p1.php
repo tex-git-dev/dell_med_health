@@ -196,7 +196,7 @@ app.response2 = function(){
         app.showRM();
       }
    }
-   $(document).ready(function(){
+ /*  $(document).ready(function(){
   var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
@@ -211,7 +211,7 @@ app.response2 = function(){
           }
 
       });
-  });
+  });*/
 </script>
 
 <link rel="stylesheet" type="text/css" href="jqcloud/jqcloud.css" />
@@ -249,7 +249,7 @@ app.response2 = function(){
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.ogv" type="video/ogv"></source>
-                  <track label="English" kind="subtitles" srclang="en" src="VTT/Ms. Jones M2.vtt" default>
+                  <track label="English" kind="subtitles" srclang="en" src="VTT/Ms. Jones M2.vtt" >
                </video>
             </div>
          </div>

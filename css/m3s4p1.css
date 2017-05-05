@@ -352,8 +352,8 @@ margin-left: 0;
     display: table;
 }
 .m3s4p1 .m3s4mcq .calcHeight .ans{
-    display: table-cell;
-    vertical-align: middle;
+    display: table-cell !important;
+    vertical-align: middle!important;
 }
 .m3s4p1 .m3s4mcq .text-muted{
     font-size: 15px;

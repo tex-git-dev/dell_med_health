@@ -90,19 +90,17 @@ function shuffleArray(array) {
      return array;
    }
 var pageScroll=null;
-$(window).scroll(function() {
+window.onscroll = function(){
   var loc = (($(window).scrollTop() / ($(document).height()-$(window).height())) * 100).toFixed(0);
-  //
   pageScroll = parseInt(loc);
-  
+  console.log(pageScroll);
   if(pageScroll>=app.PageComplete){
     app.PageComplete = pageScroll;
   }
+}
 
-
-});
 $(document).ready(function() {
-  var section = 's'+app.qs["id"][6];
+	 var section = 's'+app.qs["id"][6];
   var SelecteM ='m'+app.qs["id"][1];
  
   app.SData = app.MData[SelecteM].sections[section];
@@ -182,7 +180,6 @@ $(document).ready(function() {
 			$(".btn-Survey").css("pointer-events","visible");
 			}
      }, 1000);
-
 });
 
 </script>

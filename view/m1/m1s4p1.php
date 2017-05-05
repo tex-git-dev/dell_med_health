@@ -76,7 +76,7 @@ include("view/cjs.php");
                   <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec4.ogv" type="video/ogg"></source>
-                  <track label="English" kind="subtitles" srclang="en" src="VTT/Mod1_Sec4.vtt" default>
+                  <track label="English" kind="subtitles" srclang="en" src="VTT/Mod1_Sec4.vtt" >
                </video>
                </div>  
             </div>
@@ -416,7 +416,7 @@ function TryA(){
             }
         }
         
-$(document).ready(function(){
+/*$(document).ready(function(){
   var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
@@ -430,7 +430,7 @@ $(document).ready(function(){
           }
 
       });
-  });
+  });*/
 </script>
 
 
@@ -454,7 +454,8 @@ $(document).ready(function(){
 			    f_height = h1[0];
 			 }
 			}
-           $(".carousel .active .ans").css("height",f_height+"px");	   
+           $(".carousel .active .ans").css("height",f_height+"px");
+		   
     }
 
 		

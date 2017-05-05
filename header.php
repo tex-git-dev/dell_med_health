@@ -519,9 +519,20 @@ app.OpenMS=function(){
                         
                    
                 </div>
+			    <div class="row btnss vertical-align bb btnS9">
+                      <div class="col-sm-2 "><strong>03.</strong></div>
+                        <div class="col-sm-7"><strong>Dive Deeper: Basics of Health Care Financing in the US [Optional]</strong></div>
+                        <div class="col-sm-3">
+                            <div class="alert1" role="alert">
+                               Continue
+                              </div>
+                      </div>
+                        
+                   
+                </div>
 
                 <div class="row btnss  vertical-align bb btnS3">
-                        <div class="col-sm-2 "><strong>03.</strong></div>
+                        <div class="col-sm-2 "><strong>04.</strong></div>
                         <div class="col-sm-7"><strong>Speaking the Same Language: Health Care Cost Terms</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -531,7 +542,7 @@ app.OpenMS=function(){
                         
                 </div>
                 <div class="row btnss  vertical-align bb btnS4">
-                        <div class="col-sm-2 "><strong>04.</strong></div>                
+                        <div class="col-sm-2 "><strong>05.</strong></div>                
                         <div class="col-sm-7"><strong>The Cost of Care: Different Approaches</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -540,8 +551,8 @@ app.OpenMS=function(){
                       </div>
                       
                 </div>
-                <div class="row btnss  vertical-align bb btnS5">
-                        <div class="col-sm-2 "><strong>05.</strong></div>                
+                <div class="row btnss  vertical-align bb btnS4">
+                        <div class="col-sm-2 "><strong>06.</strong></div>                
                         <div class="col-sm-7"><strong>Toward More Transparency</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -551,7 +562,7 @@ app.OpenMS=function(){
                        
                 </div>
                 <div class="row btnss  vertical-align bb btnS6">
-                        <div class="col-sm-2 "><strong>06.</strong></div>                
+                        <div class="col-sm-2 "><strong>07.</strong></div>                
                         <div class="col-sm-7"><strong>Care Redesign Case: MD Anderson (TDABC)</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -562,7 +573,7 @@ app.OpenMS=function(){
                 </div>
                 
                 <div class="row btnss  vertical-align bb btnS7">
-                        <div class="col-sm-2 "><strong>07.</strong></div>                
+                        <div class="col-sm-2 "><strong>08.</strong></div>                
                         <div class="col-sm-7"><strong>Applying TDABC to Compare Cost Calculations</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -572,7 +583,7 @@ app.OpenMS=function(){
                 </div>
 
                 <div class="row btnss  vertical-align bb btnS8">
-                        <div class="col-sm-2 "><strong>08.</strong></div>                
+                        <div class="col-sm-2 "><strong>09.</strong></div>                
                         <div class="col-sm-7"><strong>Conclusion: Understanding Costs of Care</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -678,7 +689,7 @@ app.OpenMS=function(){
                     <div class="row">
                     <div class="wellC">
                         <div class="col-sm-12 text-center">
-                           <span><strong>SECTION <span class="mn">1</span> OUTCOMES</strong></span><br>
+                           <span><strong class="outcm3"> SECTION <span class="mn">1</span> OUTCOMES</strong></span><br>
                               <span><strong>____</strong></span>   
                         </div>
                         </div>
@@ -873,11 +884,11 @@ app.OpenMS=function(){
                         </div>
                     </div>
            </div>
-           <div class="row clickS3 clickS" >
-                     <div class="row">
+		    <div class="row clickS3 clickS" >
+                   <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Define terms used in discussing health care costs.
+                            Describe basic principles of health care delivery, organization, and financing
                           </div>
                         </div>
                     </div>
@@ -886,7 +897,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Reflect on the impact of cost on patient care and the overall value of provided health care; Evaluate various charging and payment methods used in health care.
+                             Define terms used in discussing health care costs.
                           </div>
                         </div>
                     </div>
@@ -895,7 +906,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Describe new methods for health care cost accounting and value-based payments.
+                             Reflect on the impact of cost on patient care and the overall value of provided health care; Evaluate various charging and payment methods used in health care.
                           </div>
                         </div>
                     </div>
@@ -904,7 +915,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                            Study methods to measure and evaluate the success of health care value programs.
+                             Describe new methods for health care cost accounting and value-based payments.
                           </div>
                         </div>
                     </div>
@@ -913,25 +924,24 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.
+                            Study methods to measure and evaluate the success of health care value programs.
                           </div>
                         </div>
                     </div>
            </div>
            <div class="row clickS8 clickS" >
                      <div class="row">
-                       
-                          <div class="col-sm-12 text-center"> <div class="well">
-                             8
+                        <div class="well">
+                          <div class="col-sm-12 text-center">
+                             Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.
                           </div>
                         </div>
                     </div>
            </div>
-            <div class="row clickS9 clickS" >
-                     <div class="row">
-                        <div class="well">
-                          <div class="col-sm-12 text-center">
-                           
+           <div class="row clickS9 clickS" >
+                     <div class="row">            
+                          <div class="col-sm-12 text-center"> <div class="well">
+
                           </div>
                         </div>
                     </div>
@@ -994,15 +1004,15 @@ app.OpenMS=function(){
                    
                 </div>
 				
-			 <div class="row vertical-align bb complete btnM4" onclick="window.location='?id=survey'" id="SurveyButton" style="visibility: hidden; padding: 8px 0;cursor:pointer;"> 
-                        <div class="col-sm-2 text-center small">complete</div>
+			 <div class="row btns vertical-align bb btnM4"> 
+                        <div class="col-sm-2 text-center small">active</div>
                         <div class="col-sm-7"><strong>User Feedback Survey</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Start
                               </div>
                       </div>  
-                </div>
+            </div>
 				
            
         </div>
@@ -1138,6 +1148,20 @@ app.OpenMS=function(){
                           </ul> 
                     </div>
                 </div>
+				
+				<div class="row clickM4 clickM hide" >
+				  <div class="col-md-12" id="Survey-notcomplete">
+				    You will be able to access the Introduction to Value-Based
+                    Health Care module collection survey once you have reached
+                    100% completion of all three modules.
+				   </div>
+				   	<div class="col-md-12" id="Survey-notcomplete">
+				    Congratulations on completing the Introduction to Value-Based
+					Health Care module collection. Please complete the survey
+					and give us your feedback in order to receive your certificate of
+					completion.
+				   </div>
+				</div>
         </div>
     </div>
 </div>

@@ -3,11 +3,8 @@ body {
     overflow-x: hidden;
     padding-right: 0px !important;
 }
-img {
-    margin-bottom: 0!important;
-}
 
-.input-group .form-control
+.nput-group .form-control
 {
 width:100%!important;
 }

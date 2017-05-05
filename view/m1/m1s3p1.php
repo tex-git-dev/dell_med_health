@@ -276,7 +276,7 @@ left: 77%;
                 <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.mp4" type="video/mp4"></source>
                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.webm" type="video/webm"></source>
                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.ogv" type="video/ogv"></source>  
-                 <track label="English" kind="subtitles" srclang="en" src="VTT/Mod1_Sec3.vtt" default>
+                 <track label="English" kind="subtitles" srclang="en" src="VTT/Mod1_Sec3.vtt" >
                </video>
                
         <div class="row  myDiv0 vertical-align">

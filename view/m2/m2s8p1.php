@@ -373,7 +373,7 @@ function funaud() {
 
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
   var flagvd = false;
  $( 'audio' ).audioPlayer();
      $('.paddb').inview({
@@ -394,5 +394,5 @@ $(document).ready(function(){
           }
       });
 
-  });
+  });*/
 </script>

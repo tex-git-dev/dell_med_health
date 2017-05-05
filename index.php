@@ -21,8 +21,8 @@
       <script type="text/javascript" src="js/wow.js"></script>
       <script type="text/javascript" src="js/plotly-latest.min.js"></script>
       <script type="text/javascript" src="js/jquery.inview.js"></script>
-	    <script src="js/jquery.mobile-1.4.5.min.js"></script>
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+	   <link rel="stylesheet" href="css/w3.css">
 
       <link href="http://vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
        <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
@@ -174,13 +174,26 @@ $(document).ready(function() {
   
    if(app.MData['m1']['status']=="complete" && app.MData['m2']['status']=="complete" && app.MData['m3']['status']=="complete")
 	{
+	$(".btnM4 .small").text("complete");
+	$("#Survey-notcomplete").css("display","none");
+	$("#Survey-complete").css("display","block");
+	$(".btnM4").addClass('complete');
 	$(".btn-Survey").css("pointer-events","visible");
-	$("#SurveyButton").css("visibility","visible");
+	$("#SurveyButton").css("pointer-events","visible");
 	if("<?php echo $survey_response; ?>"!="NOT_NOW")
 	{
      document.getElementById('id01').style.display='block'; 
 	}
 	}
+	else
+	{
+    $("#Survey-notcomplete").css("display","block");
+	$("#Survey-complete").css("display","none");
+	$(".btnM4 .small").text("active");
+	$(".btnM4").removeClass('complete');
+    $(".btn-Survey").css("pointer-events","none");
+	$("#SurveyButton").css("pointer-events","none");
+    }
   app.SelecteM = '<?php echo $module_Number;?>';
   app.init();
   // below function is used for all module data populate for all three modules.

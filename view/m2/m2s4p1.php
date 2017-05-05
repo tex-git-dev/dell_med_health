@@ -53,7 +53,7 @@ include("view/cjs.php");
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec4.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec4.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec4.ogv" type="video/ogg"></source>
-                  <track label="English" kind="subtitles" srclang="en" src="VTT/Mod2_Sec4.vtt" default>
+                  <track label="English" kind="subtitles" srclang="en" src="VTT/Mod2_Sec4.vtt">
                </video>
             </div>
          </div>
@@ -225,7 +225,7 @@ include("view/cjs.php");
     </div>
 
 <script type="text/javascript">
-  $(document).ready(function(){
+ /* $(document).ready(function(){
   var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
@@ -240,7 +240,7 @@ include("view/cjs.php");
           }
 
       });
-  });
+  });*/
       </script>
       
 
