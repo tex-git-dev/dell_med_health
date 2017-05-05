@@ -22,13 +22,18 @@
     background-image: none;
     line-height: 434px;
 }
+
 .m1s4p1 .eq-h {
-  display: -webkit-box;
+    display: flex;
+}
+
+
+
+  /*display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap;*/
 
 
  
@@ -146,11 +151,13 @@
     background: #535B72;
     color: #FFFFFF !important;
     font-size: 14px !important;
-    margin: 0;
+    margin: 8px 0;
     cursor: pointer;
     border:2px solid #535B72;
     height: 100%;
 }
+
+
 
 
 

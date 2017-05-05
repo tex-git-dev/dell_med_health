@@ -28,7 +28,7 @@ include("view/cjs.php");
             </div>
           <div class="row">
             <div class="col-sm-12">  
-               <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
+               <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
             </div>
          </div>
          </div>
@@ -188,9 +188,9 @@ include("view/cjs.php");
                             <div class="col-sm-8" >
                                 <f><p class="ques">Ms. Church later receives a bill from the hospital showing that the negotiated cost with her insurance is $27,000. What is the out-of-pocket cost Ms. Church will pay for her stay in the hospital?</p></f>
 
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('$3,000', '$5,400', '$5,700', '$2,400');
@@ -208,8 +208,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                               
+                                    <!--</div>
+                                </div>  -->                             
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -288,9 +288,9 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">Ms. Church’s x-ray shows improvement and her doctor advises her to continue to rest and take it easy. Later, Ms. Church receives a bill for her PCP visit for $400, which includes charges for the visit and the x-ray at $200. What amount will she pay for this follow-up visit?</p></f>
-                                <div class="row">
-                                <div class="col-sm-12" >
-                                    <div class="row eq-h">
+                                <div class="row row-eq-height">
+                               <!-- <div class="col-sm-12" >
+                                    <div class="row eq-h">-->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('$400', '$20', '$40', '$200');
@@ -308,8 +308,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                    </div>
-                                </div>                               
+                                 <!--   </div>
+                                </div>-->                               
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -577,11 +577,16 @@ include("view/cjs.php");
                 <span class="sp2"><strong>Close Window</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
+          </div>
 
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
-          <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
-          </div>
+          
 </footer> 
   
 
@@ -610,6 +615,25 @@ include("view/cjs.php");
     ?>
 
 <script>
+
+	          $(function () {
+                setMsgBoxHeight();
+        });
+        function setMsgBoxHeight() {
+		var f_height = 0;
+            var msgboxHeight = $(".carousel .active .row-eq-height").height();
+			 var l = $(".carousel .active .ans").length;
+			  for(var i=1;i<=l;i++)
+			  {
+			  var h =  $(".carousel .active .row-eq-height div:nth-child("+i+") .ans").css("height");
+			  var h1 = h.split('p');
+			 if(f_height < Number(h1[0]))
+			 {
+			    f_height = h1[0];
+			 }
+			}
+           $(".carousel .active .ans").css("height",f_height+"px");	   
+    }
 
 $('.carousel').on('slid.bs.carousel', function (e) {
        $('.item .ans').removeClass('Dis');

@@ -127,7 +127,8 @@
 }
 
 .m3s8p1 .m3s7c1 .paddb {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+    padding-top: 5px;
 }
 
 .m3s8p1 .m3s7c1 {
@@ -137,6 +138,7 @@
 .m3s8p1 .org {
     color:#f68121;
     font-family: "GothamHTF-Medium";
+    padding-top: 10px;
 } 
 .m3s8p1 .m3s7c1 h4 {
     font-family: "GothamHTF-Bold";
@@ -167,7 +169,7 @@
 .m3s8p1 .m3s7b50 ol {
     margin-left: -22px;        
     font-family: "GothamHTF-Medium"; 
-    list-style-type: number;
+    list-style-type: decimal;
 }
 
 
@@ -422,6 +424,7 @@ and (max-device-width : 765px) {
 .m3s8p1 .m3s7ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 .m3s8p1 .m3s7b6 {
     margin-bottom: 0px;
@@ -504,6 +507,7 @@ and (max-device-width : 500px) {
 .m3s8p1 .m3s7ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
 .m3s8p1 .m3s7b6 {
     margin-bottom: 0px;
@@ -585,7 +589,9 @@ and (max-device-width : 299px) {
 .m3s8p1 .m3s7ms2 .well .col-sm-6 p{
     padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-top: 10px !important;
 }
+
 
 .m3s8p1 .m3s7b6 {
     margin-bottom: 0px;

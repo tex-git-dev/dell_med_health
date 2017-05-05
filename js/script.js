@@ -17,27 +17,30 @@ var app = {
 		this.preLoader();
 		this.Anim();
     this.Events();
-	},
-  DataSave:function(dataSave){
+	},  
+DataSave:function(dataSave){
     // data save in recods table.
       $.post( "dataSave.php", dataSave, 
         function( data ) {  
         }, "json");
      //  console.log(dataSave)
-
-  },
+},
   MDataPopulate:function(){
     // this function used for data populate for home page menu.
     var loc1 = app.MData[app.SelecteM];
-    var loc01 = {'m1':[0,45],'m2':[0,45],'m3':[1,55]}
+    var loc01 = {'m1':[0,45],'m2':[0,45],'m3':[1, 10],'survey':[0, 10]}
     $(".menus .HR").html(loc01[app.SelecteM][0]);
     $(".menus .MIN").html(loc01[app.SelecteM][1]);
+	if(app.SelecteM !="survey")
+	{
     $(".menus .lG2 .progress-bar").css({"width":loc1['complete']+"%"});
     $(".menus .lG2 .mP").text(loc1['complete']);
+	}
     var i=0;
+	if(app.SelecteM !="survey")
+	{
     $.each(app.MData,function(v1,k1){ 
       i++;
-      // console.log(k1.complete)
             if(k1.complete == '100') {
                $(".btnM"+i).addClass('complete');
               $(".btnM"+i+" .alert1").text('Revisit');
@@ -54,15 +57,48 @@ var app = {
           }
        })
     })
+	}
   },
+  
+  
+  
   SDataPopulate:function(j){
     var loc1 = app.MData[app.SelecteM].sections;
+	if(app.ClickOnModule == 'module1' || app.ClickOnModule == 'module2') {
     $(".MSection .lG2 .progress-bar").css({"width":loc1['s'+j]['complete']+"%"});
     $(".MSection .lG2 .mP").html(loc1['s'+j]['complete']+"%");
     $(".btnss").removeClass('act');
     $(".btnS"+j).addClass('act');
     $(".MSection .mn").html(j);
     $(".MSection .clickS").hide();
+    }
+	else
+	{
+	if(j<=2)
+	{
+    $(".MSection .lG2 .progress-bar").css({"width":loc1['s'+j]['complete']+"%"});
+    $(".MSection .lG2 .mP").html(loc1['s'+j]['complete']+"%");
+    $(".btnS"+j).addClass('act');
+    $(".MSection strong.outcm3").html("SECTION <span class='mn'>"+j+"</span> OUTCOMES");
+	}
+	else if(j==3)
+	{
+    $(".MSection .lG2 .progress-bar").css({"width":loc1['s9']['complete']+"%"});
+    $(".MSection .lG2 .mP").html(loc1['s9']['complete']+"%");
+    $(".btnS"+j).addClass('act');
+    $(".MSection strong.outcm3").html("DIVE DEEPER: OUTCOMES");
+	}
+	else
+	{
+		jic = j - 1;
+	$(".MSection .lG2 .progress-bar").css({"width":loc1['s'+jic]['complete']+"%"});
+    $(".MSection .lG2 .mP").html(loc1['s'+jic]['complete']+"%");
+    $(".btnS"+j).addClass('act');
+    $(".MSection strong.outcm3").html("SECTION <span class='mn'>"+jic+"</span> OUTCOMES");
+	}
+	    $(".btnss").removeClass('act');
+	    $(".MSection .clickS").hide();
+	}
 	if(app.ClickOnModule == 'module1') {
 	 $("._outm3").css("display","none");
      $("._outm2").css("display","none");
@@ -76,12 +112,12 @@ var app = {
 	$("._outm2 .clickS"+j).show();
 	}
 	if(app.ClickOnModule == 'module3') {
-		console.log(app.ClickOnModule);
 	 $("._outm1").css("display","none");
     $("._outm2").css("display","none");
     $("._outm3,#outcome3").css("display","block");
 	$("._outm3 .clickS"+j).show();
 	}
+	if(app.ClickOnModule == 'module1' || app.ClickOnModule == 'module2') {
     var i=0;
     $.each(loc1,function(v,k){
       i++;
@@ -97,6 +133,24 @@ var app = {
         }
      
     })
+	}
+	else
+	{
+    var i=0;
+    $.each(loc1,function(v,k){
+      i++;
+        if(k.complete == '100') {
+          $(".btnS"+i).addClass('complete');
+          $(".btnS"+i+" .alert1").text('Revisit');
+        }else if (k.complete == '0') {
+           $(".btnS"+i).removeClass('complete');
+          $(".btnS"+i+" .alert1").text('Begin');
+        }else{
+           $(".btnS"+i).removeClass('complete');
+          $(".btnS"+i+" .alert1").text('Continue');
+        }
+    })
+	}
     if(app.SelecteM == 'm1') {
       var timeFixed =[[00,01],[00,05],[00,05],[00,05],[00,05],[00,05],[00,05],[00,10],[00,04]];
     
@@ -121,13 +175,13 @@ var app = {
         }
     }
     else if (app.SelecteM == 'm3') {
-      var timeFixed = [[00,03],[00,10],[00,10],[00,10],[00,12],[00,07],[00,15],[00,15],[00,05]];
+      var timeFixed = [[00,02],[00,10],[00,10],[00,05],[00,12],[00,06],[00,07],[00,15],[00,03]];
     
     $(".MSection .HR").html(timeFixed[j-1][0]);
     $(".MSection .MIN").html(timeFixed[j-1][1]);
 	     if (j==1) {
            $(".outc").hide();
-        }else if (j==8) {
+        }else if (j==9) {
            $(".outc").hide();
         }else{
           $(".outc").show();
@@ -135,6 +189,11 @@ var app = {
 
       } 
   },
+  
+  
+  
+  
+  
 
   Events:function(){ 
     $(".dis").click(function(e){
@@ -142,9 +201,19 @@ var app = {
     })
     $(".btns").click(function(e){
       var index = $(this).index();
+	  if(index<=3)
+	  {
       $("#module, .menus").hide();
       $("#section, .MSection").show();
       window.location="?id=m"+index+"/m"+index+"s1p1";
+	  }
+	  else
+	  {
+	if(app.MData['m1']['status']=="complete" && app.MData['m2']['status']=="complete" && app.MData['m3']['status']=="complete")
+	{
+	  window.location="?id=survey";
+    }
+   }
     });
 
     $(".allModule1 .btn, .allModule2 .btn, .allModule3 .btn").click(function(e){
@@ -172,22 +241,29 @@ var app = {
         $(".allModule1 .btn").eq(2).addClass('act1');
         $(".allModule2 .btn").eq(2).addClass('act1');
         $(".allModule3 .btn").eq(2).addClass('act1');
-
       }
       
       app.SDataPopulate(1);
       var hh = $(".op").height();
       $(".r2").css({'min-height':hh+'px'});
-
     });
     $(".btns").hover(function(e){
        var index = $(this).index();
+	    if(index<=3)
+		{
         $(".menus .mn").html(index);
+		 app.SelecteM='m'+index;
+		 $(".menus .wellC strong").css("visibility","visible");
+		}
+		else
+		{
+		$(".menus .wellC strong").css("visibility","hidden");
+		app.SelecteM='survey';
+		}
         $(".menus .clickM").hide();
         $(".menus .clickM"+index).show().removeClass('hide');
         $(".menus .btns").removeClass('act');
         $(".menus .btnM"+index).addClass('act');
-        app.SelecteM='m'+index;
         app.MDataPopulate();
     });
     $("body").click(function(e){
@@ -223,7 +299,25 @@ var app = {
 
 	$(".btnss").click(function(e){
       var index = $(this).index();
+	if(app.ClickOnModule == 'module1' || app.ClickOnModule == 'module2') {
       window.location="?id="+app.SelecteM+"/"+app.SelecteM+"s"+index+"p1";
+	  }
+	  else
+	  {
+	   if(index<=2)
+	   {
+	    window.location="?id="+app.SelecteM+"/"+app.SelecteM+"s"+index+"p1";
+	   }
+	   else if(index == 3)
+	   {
+	    window.location="?id="+app.SelecteM+"/"+app.SelecteM+"s2"+"p2";
+	   }
+	   else
+	   {
+	    iindex= index -1;
+	   window.location="?id="+app.SelecteM+"/"+app.SelecteM+"s"+iindex+"p1";
+	   }
+	  }
     });
 
    
@@ -309,20 +403,8 @@ document.getElementsByTagName("body")[0].oncontextmenu = function(e){ e.preventD
               }
           });
     });
-/*var width = $(window).width(), height = $(window).height();
-$(window).resize(function()
-{
-  if($(window).width() != width && $(window).height() != height){
-      alert(1)
-     clearTimeout(this.id);
-    this.id = setTimeout(app.doneResizing, 500);
-}
-    
-})*/
-/*window.addEventListener("orientationchange", function(e) {
-  clearTimeout(this.id);
-    this.id = setTimeout(app.doneResizing, 500);
-}, false);*/
+
+
 app.scroll= function(id,modal){
       $('html, body').animate({
           scrollTop: $('#'+id).offset().top

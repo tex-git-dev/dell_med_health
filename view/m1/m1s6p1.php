@@ -26,7 +26,7 @@ include("view/cjs.php");
             </div>
           <div class="row">
             <div class="col-sm-12">  
-                <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
+                <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
             </div>
          </div>
          </div>
@@ -94,7 +94,7 @@ include("view/cjs.php");
                 <div class="col-sm-2"></div>
                </div>
                <br>
-                <div class="row">
+               <!-- <div class="row"> 
                   <div class="col-sm-2"></div>
                <div class="col-sm-4 bordRight">
                   <f><h5>The Current System: Volume-Based Health Care</h5></f>
@@ -120,7 +120,154 @@ include("view/cjs.php");
                </div> 
                <div class="col-sm-2"></div>   
                 </div>
-                <br><br>
+               -->
+			   
+     <div class="container m1s6b2">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><h4 style="margin:0;">The Current System:<br>Volume-Based Health Care</h4></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'>  
+                                   <img src="img/tr.svg"  class="arrwImag"/>
+                                <f><h4>The Goal:<br>Value-Based Health Care</h4></f>
+                                </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Individual care interactions organized around the clinician’s medical expertise (e.g. an orthopedic surgeon)</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'>
+                               <img src="img/tr.svg" class="arrwImag"/>								
+                                <f><p class="vbhcp">Team-based care interactions organized around patient medical needs and conditions (e.g. “musculoskeletal pain”)</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Fragmented care that is organized at the level of individual units or facilities</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'> 
+                               <img src="img/tr.svg" class="arrwImag"/>								
+                                 <f><p class="vbhcp">Integrated care across units and facilities, such as in an integrated practice unit (IPU)</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Measurement largely based on process measures and “billable activities”</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'>  
+                                <img src="img/tr.svg" class="arrwImag"/>                                
+                                <f><p class="vbhcp" >Measurement focused on patient health outcomes</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Costs are poorly captured and often are estimated by using poor proxies such as charges and reimbursements</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'>  
+                               <img src="img/tr.svg" class="arrwImag"/>                                
+                                 <f><p class="vbhcp">The actual costs of providing patient care are measured and captured</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Providers – physicians and health systems – are reimbursed based on individual services provided</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'> 
+                                   <img src="img/tr.svg" class="arrwImag"/>								
+                                 <f><p class="vbhcp">Providers are reimbursed based on value of care provided across a full care cycle for medical conditions</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class='well1'>
+                       <div class='row vertical-align'>
+                          <div class="col-sm-6">
+                            <div class="padding-well">
+                              <f><p>Health information technology maximized for capturing billing processes and reporting necessary metrics</p></f>
+                            </div>  
+                          </div>
+                          <div class="col-sm-6">
+                                <div class='well'> 
+                                    <img src="img/tr.svg" class="arrwImag"/>								
+                                 <f><p class="vbhcp">Health information technology is leveraged to help restructure care delivery and accurately measure results</p></f>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+                </div>
+            </div>            
+     </div>
+ 
+
+
+
+			   <br><br>
           <div class="row">
                <div class="col-sm-2"></div> 
                <div class="col-sm-8">
@@ -140,7 +287,9 @@ include("view/cjs.php");
                   
                <div class="row vertical-align">
                <div class="col-sm-4"><img class="img-responsive center-block" src="img/s6img4.png"/></div>  
-                 <div class="col-sm-8"><div class="well"><div class="well"><f><p>“At Dell Med we are working on reorganizing the delivery system around patient needs while integrating other providers and resources, both human and technological, to create a single-center location for diagnosis and treatment. When possible we will locate care close to the patient’s home or workplace, or provide convenience for the patient to access these services through virtual methods that are being developed.”</p></f>
+                 <div class="col-sm-8">
+                  <div class="well">
+                    <div class="well"><f><p>“At Dell Med we are working on reorganizing the delivery system around patient needs while integrating other providers and resources, both human and technological, to create a single-center location for diagnosis and treatment. When possible we will locate care close to the patient’s home or workplace, or provide convenience for the patient to access these services through virtual methods that are being developed.”</p></f>
                   <br>
                   <f><h6>Amy Young MD</h6></f>
                   <f><h6>Chair of Women’s Health, Dell Medical School</h6></f>
@@ -169,20 +318,24 @@ include("view/cjs.php");
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m1/m1s5p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m1/m1s5p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 5</span>
                 <span class="sp1"><strong>Unnecessary Care</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m1/m1s7p1"><span class="ssp2">MODULE 1 | Section 7</span>
+                <a href="#" onclick="window.location='?id=m1/m1s7p1'"><span class="ssp2">MODULE 1 | Section 7</span>
                 <span class="sp2"><strong>Value-Driven Outcomes at University of Utah Health Care</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
 

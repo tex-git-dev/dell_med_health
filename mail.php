@@ -1,30 +1,5 @@
-<?php
- //require 'PHPMailer/PHPMailerAutoload.php';
-
-     
+<?php  
 function SendMail($to,$ton,$sub,$msg){
-/*	$f ='dell.password@utx.edu';
-	$fn = 'Dell Health';
-	$mail = new PHPMailer;
-	$mail->isSMTP();                                      
-	$mail->Host = 'smtp.gmail.com';  
-	$mail->SMTPAuth = true;                               
-	$mail->Username = $f;                 
-	$mail->Password = 'a6j7&Zq2';                          
-	$mail->SMTPSecure = 'tls';                           
-	$mail->Port = 465; 
-	$mail->setFrom($f, $fn);
-	$mail->addAddress($to, $ton); 
-	$mail->isHTML(true); 
-	$mail->Subject = $sub;
-	$mail->Body    = $msg;
-	if(!$mail->send()) {
-	    echo 'Message could not be sent.';
-	    echo 'Mailer Error: ' . $mail->ErrorInfo;
-	} else {
-	   echo 1;
-	}*/
-	
 	    require_once './mail/class.phpmailer.php';
         $mail = new PHPMailer;
         $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -46,9 +21,6 @@ function SendMail($to,$ton,$sub,$msg){
 	} else {
 	   echo 1;
 	}
-	
-	
-	
 }                                  
 
 

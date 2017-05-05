@@ -225,7 +225,7 @@
 
 .m3s8p1 .m3s8mcq {
     padding-bottom: 0;
-    min-height: 490px;
+    min-height: 443px;
 }
 .m3s8p1 .m3s8mcq p {
     font-size: 14px;
@@ -247,12 +247,11 @@
     padding: 10px;
     background: #535B72;
     color: #FFFFFF !important;
-    font-size: 15px !important;
-    margin: 0;
+    font-size: 14px !important;
+    margin: 8px 0;
     cursor: pointer;
     border:2px solid #535B72;
     height: 100%;
-    font-family: "GothamHTF-Book" !important;
 }
 
 

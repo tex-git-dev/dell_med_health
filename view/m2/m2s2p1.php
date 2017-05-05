@@ -196,7 +196,7 @@ app.response2 = function(){
         app.showRM();
       }
    }
-   $(document).ready(function(){
+ /*  $(document).ready(function(){
   var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
@@ -211,7 +211,7 @@ app.response2 = function(){
           }
 
       });
-  });
+  });*/
 </script>
 
 <link rel="stylesheet" type="text/css" href="jqcloud/jqcloud.css" />
@@ -234,12 +234,11 @@ app.response2 = function(){
          </div>
          <div class="row">
             <div class="col-sm-12">
-                <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
+                <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
             </div>
          </div>
       </div>
-   </div>
-   <br><br>   
+   </div>   
 
   <div id="b1" class="Step1 container text-center s1bgcol">
       <div class="row text-left">
@@ -250,7 +249,7 @@ app.response2 = function(){
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec2.ogv" type="video/ogv"></source>
-                  <track kind="subtitles" src="" srclang="en" label="English"  default/>
+                  <track label="English" kind="subtitles" srclang="en" src="VTT/Ms. Jones M2.vtt" >
                </video>
             </div>
          </div>
@@ -261,7 +260,7 @@ app.response2 = function(){
     
 
    <div class="container text-center s1bgcol">
-      <div class="row">
+      <div class="row" id="my-Carousel1">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
@@ -324,7 +323,7 @@ app.response2 = function(){
          <div class="col-sm-2"></div>
       </div>
       <br>
-       <div class="row">
+       <div class="row" id="my-Carousel2">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
@@ -417,22 +416,103 @@ app.response2 = function(){
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s1p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m2/m2s1p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 1</span>
                 <span class="sp1"><strong>Measuring What Matters</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m2/m2s3p1"><span class="ssp2">MODULE 2 | Section 3</span>
+                <a href="#" onclick="window.location='?id=m2/m2s3p1'"><span class="ssp2">MODULE 2 | Section 3</span>
                 <span class="sp2"><strong>Measuring Outcomes</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
 
-          <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
-          </div>
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+          </div>    
+      </footer> 
 
-          
-      </footer>      
+
+
+
+<script>
+
+  $("#my-Carousel1 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+  });
+  $("#my-Carousel1 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+
+  });
+
+</script>
+
+<script>
+
+  $("#my-Carousel2 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+  });
+  $("#my-Carousel2 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+
+  });
+
+</script>	  

@@ -92,12 +92,11 @@
     padding: 15px;
     background: #535B72;
     color: #FFFFFF !important;
-    font-size: 15px !important;
-    margin: 0;
+    font-size: 14px !important;
+    margin: 8px 0;
     cursor: pointer;
     border:2px solid #535B72;
     height: 100%;
-    font-family: "GothamHTF-Book" !important;
 }
 
 

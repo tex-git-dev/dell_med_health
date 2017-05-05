@@ -41,11 +41,6 @@ $(document).ready(function() {
       if (loc0.response1){
         app.response1();
       }
-
-      /*if (loc0.response2) {
-        app.response2();
-      }*/
-
       $('.carousel').bind('slid.bs.carousel', function (e) {
         app.showRM();
       });
@@ -134,61 +129,8 @@ app.addOpt=function(id,len){
   }
 }
 
-/*app.response2 = function(){
-      var loc = $("#response2Text").val();
-      var section = 's'+app.qs["id"][6];
-      if (loc) {
-          app.MData[app.SelecteM].sections[section]['response2'] = loc;
-          var data = JSON.stringify(app.MData);
-          var loc_1 = {email:"<?php echo $_SESSION['username'];?>",MData:data};
-          app.DataSave(loc_1);
-          app.cArrayT.unshift(loc);
-          app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
-      }else{
-        loc =app.MData[app.SelecteM].sections[section]['response2'];
-        app.cArrayT.unshift(loc);
-        app.cArrayN.unshift('<?php echo $_SESSION["Fname"]." ".$_SESSION["Lname"];?>');
-      }
-      if (loc == "") {
-        alert("Please write the response.")
-       }else{
-         app.addOpt('myCarousel2',app.cArrayT.length);
-        $(".act2").hide();
-        $(".carouselC").css({"visibility":"visible","height":"auto"});
-         var items="";
-         var t =0;
-          var sizeC = Math.ceil(app.cArrayT.length/3); 
-        for (var i = 1; i < sizeC+1; i++) {
-            var f = "";
-            if(i == 1){
-              f = "active";
-            }else{
-              f = "";
-            }
-           items += '<div class="item '+f+'"><div class="row">';
-             for (var j = 1; j < 4; j++) {
-                  var T0 = app.cArrayT[t];
-                  var N0 = app.cArrayN[t];
-                  t++;
-                    if(T0 != undefined){
-                      console.log(t)
-                      items += '<div class="col-sm-4"><div class="well text-left small"><div class="iHeight"><span>';
-                      items += T0;
-                      items += '</span></div><a href="javascript:app.pup('+t+');">Read more<br></a><br><span>';
-                      items += '<i class="fa fa-user-circle fa-3x" aria-hidden="true"></i> ';
-                      items += '<span class="text-uppercase" style="color:#000;"> '+N0+'</span>';
-                      items += '</span>';
-                      items += '</div></div>';
-                    }
-             }
-           items += '</div></div>';
-        } 
-        $(".carouselC .additem").append(items);
-        app.showRM();
-      }
-   }*/
    
- $(document).ready(function(){
+/* $(document).ready(function(){
   var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
@@ -199,11 +141,10 @@ app.addOpt=function(id,len){
 
           },
           'onLeave': function($object) {
-            //$('video').trigger('pause');
           }
 
       });
-  });
+  });*/
    
 </script>
 <link rel="stylesheet" type="text/css" href="jqcloud/jqcloud.css" />
@@ -226,7 +167,7 @@ app.addOpt=function(id,len){
          </div>
          <div class="row">
             <div class="col-sm-12">
-               <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
+               <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
             </div>
          </div>
       </div>
@@ -240,7 +181,7 @@ app.addOpt=function(id,len){
                   <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec2.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec2.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec2.ogv" type="video/ogv"></source>
-                  <track kind="subtitles" src="" srclang="en" label="English"  default/>
+                <track label="English" kind="subtitles" srclang="en" src="VTT/Ms. Jones M1.vtt" >
                </video>
             </div>
          </div>
@@ -252,8 +193,7 @@ app.addOpt=function(id,len){
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">              
-                  <!--f><p>Your response: <strong><span class="f1"></span></strong></p></f>
-                  <div id="my_favorite_latin_words" style="width: 100%; background: #33a0cb; color: #fff; height: 350px; border: 1px solid #ccc;"></div-->
+      
                    <div class="carouselC1">
                   <br>                                                      
                   <f><p>As you watched the video, what problems did you see in the health care Ms. Jones received?</p></f>
@@ -264,6 +204,7 @@ app.addOpt=function(id,len){
                      <ol class="carousel-indicators">
                      </ol>
                      <div class="additem carousel-inner" role="listbox">
+					 
                      </div>
                       <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
                         <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
@@ -311,70 +252,7 @@ app.addOpt=function(id,len){
          </div>
          <div class="col-sm-2"></div>
       </div>
-     
-      <!-- <div class="row">
-         <div class="col-sm-2"></div>
-         <div class="col-sm-8 ">
-            <div class="response1">
-               <div class="carouselC">
-                  <br>
-                  <f><p>As a health care provider, how would you handle some of the inefficiency and waste problems Ms. Jones faced?</p></f>
-                  <div class="well">
-                  <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
-                     
-                     <ol class="carousel-indicators">
-                     </ol>
-                     <div  class="additem carousel-inner" role="listbox">
-                     </div>
-                      <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
-                        <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
-                      </a>
-                      <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
-                        <span class="fa fa-angle-right fa-2x" aria-hidden="true"></span>
-                      </a>
-                  </div>
-                  </div>
-               </div>
-               <div class="act2">
-                  <div class="row">
-                     <div class="col-sm-12">
-                        <div class="well">
-                           <f><h2>OTHERS LIKE YOU...</h2></f>
-                           <div class="line4"></div>
-                           <f><p>As a health care provider, how would you handle some of the inefficiency and waste problems Ms. Jones faced?</p></f>
-                             <f><p class="small"><i>Enter your response below to see the response of others like you.</i></p></f>
-                           <div class="line4"></div>
-                           
-                        </div>
-                     </div>
-                  </div>
-               <div class="row">
-                     <div class="col-sm-12">
-                         
-                        
-                     </div>
-                  </div>
-               <div class="row">
-                  <div class="col-sm-12" >
-                     <div  class="navbar-form navbar-center" style="">
-                        <div class="input-group" style="width:100%;">
-                           <input type="Search" id="response2Text" placeholder="Your response to the question..." class="form-control" />
-                           <div class="input-group-btn text-right" style="width:3%;">
-                              <button class="btn btn-info" onclick="app.response2();">
-                              <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i> SUBMIT
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-         </div>
-         </div>
-         <div class="col-sm-2"></div>
-      </div> -->
-   </div>   
+  </div>   
    <br>
    <div class="container text-center s1bgcol2">
       <div class="row">
@@ -524,21 +402,63 @@ app.addOpt=function(id,len){
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m1/m1s1p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m1/m1s1p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 1</span>
                 <span class="sp1"><strong>There's a Better Way</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m1/m1s3p1"><span class="ssp2">MODULE 1 | Section 3</span>
+                <a href="#" onclick="window.location='?id=m1/m1s3p1'"><span class="ssp2">MODULE 1 | Section 3</span>
                 <span class="sp2"><strong>Providing Value for Patients</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+           <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
       </footer> 
+	  
+<script>
+
+  $(".additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $(".carousel-indicators li:nth-child(1)").addClass("active");
+	    $(".additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+  });
+  $(".additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $(".carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $(".carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $(".additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $(".carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $(".additem div.item:nth-child("+i+")").addClass("active");
+	 }
+
+  });
+
+</script>
       

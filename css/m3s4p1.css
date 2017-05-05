@@ -342,19 +342,18 @@ margin-left: 0;
     padding: 10px;
     background: #535B72;
     color: #FFFFFF !important;
-    font-size: 15px !important;
-    margin: 0;
+    font-size: 14px !important;
+    margin: 8px 0;
     cursor: pointer;
     border:2px solid #535B72;
     height: 100%;
-    font-family: "GothamHTF-Book" !important;
 }
 .m3s4p1 .m3s4mcq .calcHeight{
     display: table;
 }
 .m3s4p1 .m3s4mcq .calcHeight .ans{
-    display: table-cell;
-    vertical-align: middle;
+    display: table-cell !important;
+    vertical-align: middle!important;
 }
 .m3s4p1 .m3s4mcq .text-muted{
     font-size: 15px;
@@ -437,7 +436,7 @@ margin-left: 0;
     cursor: pointer;
 }
 .m3s4p1 .carousel-indicators {
-    bottom: 20px !important;
+    bottom: -20px !important;
 }
  .m3s4p1 .m3s4b7 .m3s4b8 {
     line-height: 464px !important;
@@ -540,6 +539,10 @@ margin-left: 0;
 @media screen
 and (min-device-width : 766px)
 and (max-device-width : 1000px) {
+.m3s4p1 .m3s4mcq .ans{
+    font-size: 11px !important;
+}
+
   .m3s4p1 .b1 {
     margin-bottom: 0px;
     background: url('../img/m3s4img1.png') no-repeat center center; 

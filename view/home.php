@@ -1,3 +1,5 @@
+
+
 <script type="text/javascript">
         app.CallM=function(v){
          var ss= "<?php  echo @$_SESSION['username'];?>";
@@ -7,9 +9,7 @@
             $('#login').modal({show: 'false'});
         }
       }
-      </script>
-
-    
+  </script>  
 <div class="home">
       <div class="jumbotron b1">
          <div class="container text-center">
@@ -98,15 +98,15 @@
      
    
        <br><br>
-      <div id="dd" class="conmyCarousel container bg-4 text-center" >        
+  <div id="dd" class="conmyCarousel container bg-4 text-center" >        
          <div class="row text-left">
             <div id="myCarousel" class="carousel slide " data-ride="carousel" data-interval="false">
               
 
                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="0" class="active" id="1point"></li>
+                  <li data-target="#myCarousel" data-slide-to="1" id="2point"></li>
+                  <li data-target="#myCarousel" data-slide-to="2" id="3point"></li>
                </ol>
                <!-- Wrapper for slides -->
                <div class="carousel-inner" role="listbox">
@@ -115,8 +115,7 @@
     
 
 
- <div class="item active">
-
+ <div class="item active" id="item1forswap">
         <f><h3 class="boldT text-center">MEET THE TEAM</h3></f>
          <div class="row text-center">
           <div class="col-sm-2"></div>
@@ -138,7 +137,7 @@
                                        <f><div class="text-center">Lead Author</div></f>
                                        <f><div class="text-center"><a href="javascript:app.scroll('dd','myModal')">View Bio</a></div></f>
                                   
-                                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                   <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                       <!-- <div class="modal-header">
@@ -166,7 +165,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                    </div> 
+                               </div> 
                                     <div class="col-sm-4">
                                        <img src="img/l2.png" class="img-responsive" style="width:100%;">
                                         <f><P class="text-center">VICTORIA VALENCIA, MPH</P></f>
@@ -211,7 +210,7 @@
                   </div>
 
 
-                  <div class="item">
+           <div class="item" id="item2forswap">
 
 
       <f><h3 class="boldT  text-center text-uppercase">Executive Review Committee</h3></f>
@@ -339,7 +338,7 @@
                              <div class="col-sm-2"></div>
                         </div>
                   </div>
-                  <div class="item container">
+     <div class="item container"  id="item3forswap">
 
        <f><h3 class="boldT  text-center text-uppercase">Content Review Committee</h3></f>
          <div class="row text-center">
@@ -384,7 +383,7 @@
                                     
                                     <div class="col-sm-4">
                                        
-                                        <f><P class="text-center"><a  target="_blank" href="http://dellmedschool.utexas.edu/team-profile/michael-pignone">Michael Pignone, MD, MPH </a></P></f>
+                                        <f><P class="text-center"><a  target="_blank" href="https://dellmedschool.utexas.edu/team-profile/michael-pignone">Michael Pignone, MD, MPH </a></P></f>
                                         <f><div class="text-center">Chair of Internal Medicine Professor Internal Medicine</div></f>
                                     </div>
                         
@@ -551,19 +550,65 @@ and (max-device-width : 299px) {
           <div class="col-sm-4 footer-social">
               <h4>Helpful links</h4>
                  <ul>
-                  <li><a href="mailto:eanderson@utx.edu">Problems logging in or technical issues?</a></li>
-                  <li><a target="_blank" href="http://dellmedschool.utexas.edu/">Dell Medical School </a></li>
-                  <li><a target="_blank" href="http://www.utsystem.edu/">University of Texas System</a></li>
+                     <li><a href="mailto:eanderson@utx.edu">Problems logging in or technical issues?</a></li>
+                     <li><a target="_blank" href="http://dellmedschool.utexas.edu/">Dell Medical School </a></li>
+                     <li><a target="_blank" href="http://www.utsystem.edu/">University of Texas System</a></li>
+			         <li><a target="_blank" href="https://cio.utexas.edu/policies/web-privacy">Web Privacy Policy</a></li>
+		             <li><a target="_blank" href="https://cio.utexas.edu/policies/web-accessibility">Web Accessibility Policy</a></li>
                 </ul>
             </div>
             <div class="col-sm-2"></div>
         </div>
 
 
-         <div class="row text-center">
-           <div class="col-sm-3"></div>
-           <div class="col-sm-6"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a></div>
-           <div class="col-sm-3"></div>
-        </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+          </div>
 		
     </footer>
+<script>
+
+  $("#item1forswap").on("swipeleft",function(){
+	$("#item1forswap").removeClass("active");
+	$("#item2forswap").addClass("active");
+	$("#1point").removeClass("active");
+	$("#2point").addClass("active");
+  });
+  $("#item1forswap").on("swiperight",function(){
+	$("#item1forswap").removeClass("active");
+	$("#item3forswap").addClass("active");
+    $("#1point").removeClass("active");
+	$("#3point").addClass("active");
+  });
+
+  $("#item2forswap").on("swipeleft",function(){
+	$("#item2forswap").removeClass("active");
+	$("#item3forswap").addClass("active");
+  });
+  $("#item2forswap").on("swiperight",function(){
+	$("#item2forswap").removeClass("active");
+	$("#item1forswap").addClass("active");
+	$("#2point").removeClass("active");
+	$("#1point").addClass("active");
+  }); 
+
+  $("#item3forswap").on("swipeleft",function(){
+	$("#item3forswap").removeClass("active");
+	$("#item1forswap").addClass("active");
+     $("#3point").removeClass("active");
+	$("#1point").addClass("active");
+  });
+  $("#item3forswap").on("swiperight",function(){
+	$("#item3forswap").removeClass("active");
+	$("#item2forswap").addClass("active");
+	$("#3point").removeClass("active");
+	$("#2point").addClass("active");
+  });   
+
+
+</script>
+	

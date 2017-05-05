@@ -195,12 +195,11 @@
     padding: 10px;
     background: #535B72;
     color: #FFFFFF !important;
-    font-size: 15px !important;
-    margin: 0;
+    font-size: 14px !important;
+    margin: 8px 0;
     cursor: pointer;
     border:2px solid #535B72;
     height: 100%;
-    font-family: "GothamHTF-Book" !important;
 }
 
 
@@ -318,6 +317,11 @@
 @media screen
 and (min-device-width : 766px)
 and (max-device-width : 1000px) {
+
+.m3s3p1 .m3s3mcq .ans{
+    font-size: 8px !important;
+}
+
 .m3s3p1 .m3s3b4 .eq-h {
         display: grid;
     }
