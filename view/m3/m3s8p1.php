@@ -452,14 +452,14 @@ function funaud() {
 
 
 
-/*$(document).ready(function(){
+$(document).ready(function(){
   var flagvd = false;
  $( 'audio' ).audioPlayer();
      $('.paddb').inview({
         'onEnter': function($object) {
           if(flagvd == false){
           $('.audioplayer').addClass('audioplayer-playing');
-            $('audio').trigger('play');
+            //$('audio').trigger('play');
             flagvd=true;
           }
             //$("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
@@ -473,5 +473,5 @@ function funaud() {
           }
       });
 
-  });*/
+  });
 </script>

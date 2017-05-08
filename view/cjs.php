@@ -100,7 +100,15 @@ window.onscroll = function(){
 }
 
 $(document).ready(function() {
-	 var section = 's'+app.qs["id"][6];
+	 var section = "";
+	 if(app.qs["id"]=="m3/m3s2p2")
+	 {
+	 section =  "s9";
+	 }
+	 else
+	 {
+	 section = 's'+app.qs["id"][6];
+	 }
   var SelecteM ='m'+app.qs["id"][1];
  
   app.SData = app.MData[SelecteM].sections[section];
