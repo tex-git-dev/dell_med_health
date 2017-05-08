@@ -310,7 +310,9 @@ DataSave:function(dataSave){
 	   }
 	   else if(index == 3)
 	   {
-	    window.location="?id="+app.SelecteM+"/"+app.SelecteM+"s2"+"p2";
+	  var url ="?id="+app.SelecteM+"/"+app.SelecteM+"s2"+"p2";
+		  var win = window.open(url, '_blank');
+           win.focus();
 	   }
 	   else
 	   {

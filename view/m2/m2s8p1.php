@@ -376,23 +376,5 @@ function funaud() {
 $(document).ready(function(){
   var flagvd = false;
  $( 'audio' ).audioPlayer();
-     $('.paddb').inview({
-        'onEnter': function($object) {
-          if(flagvd == false){
-          $('.audioplayer').addClass('audioplayer-playing');
-          //  $('audio').trigger('play');
-            flagvd=true;
-          }
-            //$("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
-            // $(".pText").text('PAUSE NOW')
-          },
-          'onLeave': function($object) {
-           // $('audio').trigger('pause');
-            
-             // $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
-             // $(".pText").text('PLAY NOW')  
-          }
-      });
-
   });
 </script>

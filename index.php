@@ -180,7 +180,7 @@ $(document).ready(function() {
 	$(".btnM4").addClass('complete');
 	$(".btn-Survey").css("pointer-events","visible");
 	$("#SurveyButton").css("pointer-events","visible");
-	if("<?php echo $survey_response; ?>"!="NOT_NOW")
+	if(("<?php echo $survey_response; ?>"=="OPEN") || ("<?php echo $survey_response; ?>"==""))
 	{
      document.getElementById('id01').style.display='block'; 
 	}

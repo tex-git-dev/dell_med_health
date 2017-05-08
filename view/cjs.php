@@ -93,13 +93,14 @@ var pageScroll=null;
 window.onscroll = function(){
   var loc = (($(window).scrollTop() / ($(document).height()-$(window).height())) * 100).toFixed(0);
   pageScroll = parseInt(loc);
-  console.log(pageScroll);
   if(pageScroll>=app.PageComplete){
     app.PageComplete = pageScroll;
   }
 }
 
 $(document).ready(function() {
+console.log(app.SData);
+//console.log(app.MData);
 	 var section = "";
 	 if(app.qs["id"]=="m3/m3s2p2")
 	 {
@@ -109,7 +110,7 @@ $(document).ready(function() {
 	 {
 	 section = 's'+app.qs["id"][6];
 	 }
-  var SelecteM ='m'+app.qs["id"][1];
+    var SelecteM ='m'+app.qs["id"][1];
  
   app.SData = app.MData[SelecteM].sections[section];
   app.MIN = parseInt(app.SData['MIN']);
@@ -134,14 +135,24 @@ $(document).ready(function() {
      var mHR = 0;
      var mMIN = 0;
      var mComplete = 0;
-
+     var i = 0;
      $.each(app.MData[SelecteM].sections ,function(k,v){
         var h = parseInt(v['HR']);
         var m = parseInt(v['MIN']);
         var p = parseInt(v['complete']);
         mMIN = mMIN + m;
         mHR = mHR + h;
-        mComplete = mComplete + p;
+		if(app.SelecteM!="m3")
+		{
+         mComplete = mComplete + p;
+		}
+		else
+		{
+		if(k!="s9")
+		{
+		    mComplete = mComplete + p;
+		}
+	   }
     })
     mHR = parseInt(mHR) + parseInt((mMIN/60).toFixed(0)); 
     mMIN = (parseInt(mMIN)%60);
