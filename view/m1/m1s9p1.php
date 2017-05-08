@@ -302,59 +302,12 @@ include("view/cjs.php");
 
 
 <script type="text/javascript">
-/*var aud = document.getElementById('s9dio');
 
 
-$(document).ready(function() {
- 
-});
-
-function funaud() {
-  if(aud.paused){ 
-     aud.play();      
-     $("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
-      $(".pText").text('PAUSE NOW')
-  } else {
-    aud.pause();
-    $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
-    $(".pText").text('PLAY NOW')
-  }
-}
-
- function onUpdate(v){
-     if(aud.currentTime == aud.duration){
-         aud.pause();
-         aud.currentTime = 0;
-         $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');  
-         $(".pText").text('PLAY NOW')  
-     }
- }
-*/
-
-
-
-/*$(document).ready(function(){
+$(document).ready(function(){
   var flagvd = false;
  $( 'audio' ).audioPlayer();
-     $('.paddb').inview({
-        'onEnter': function($object) {
-          if(flagvd == false){
-          $('.audioplayer').addClass('audioplayer-playing');
-            $('audio').trigger('play');
-            flagvd=true;
-          }
-            //$("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
-            // $(".pText").text('PAUSE NOW')
-          },
-          'onLeave': function($object) {
-           // $('audio').trigger('pause');
-            
-             // $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
-             // $(".pText").text('PLAY NOW')  
-          }
-
-      });
-  });*/
+  });
 
     (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
 </script>

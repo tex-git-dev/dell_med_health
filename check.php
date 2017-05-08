@@ -9,6 +9,11 @@ $c1 = "select * from users,records where users.Email=BINARY '".$username."'  and
      }else{
      	echo 0;
      }
+$row = $Crun->fetch_object();
+$survey_response = $row->survey_response;
+if($survey_response!="complete")
+{
 $q1 = "UPDATE records SET survey_response = 'OPEN' WHERE email = '".$username."'";
  mysqli_query($dbcon,$q1);
+ }
 ?>
