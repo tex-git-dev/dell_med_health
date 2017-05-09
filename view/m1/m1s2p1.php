@@ -116,10 +116,10 @@ app.pup= function(v){
 }
 
 app.addOpt=function(id,len){
-  var sizeC = Math.ceil(len/3); 
+  var sizeC = Math.floor(len/3); 
   if (sizeC>1) {
     var circleList='<li data-target="#'+id+'" data-slide-to="0" class="active"></li>';
-    for (var i = 1; i <sizeC; i++) {
+    for (var i = 1; i <sizeC-1; i++) {
       circleList+='<li data-target="#'+id+'" data-slide-to="'+i+'"></li>';
     }
     $('#'+id+' .carousel-indicators').append(circleList);

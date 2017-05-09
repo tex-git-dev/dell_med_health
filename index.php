@@ -243,13 +243,25 @@ if(mnumber==3)
 app.ClickOnModule="module3";
 }
   // this is used for modules button active and deactive stage in menu module section.
-    var s = app.qs["id"][6];
+    var s ="";
     app.SelecteM = app.qs["id"][0]+app.qs["id"][1];
     var c = parseInt(app.qs["id"][1])-1;
      $(".allModule1 .btn").eq(c).addClass('act1');
      $(".allModule2 .btn").eq(c).addClass('act1');
      $(".allModule3 .btn").eq(c).addClass('act1');
   // below function is used for all sections data populate for all three modules.
+  	 if(app.qs["id"]=="m3/m3s2p2")
+	 {
+	  s =  3;
+	 }
+	 else
+	 {
+	  s = app.qs["id"][6];
+	 }
+	 if(s>3 && app.qs["id"][1] =="3")
+	 {
+	   s++;
+	 }
     app.SDataPopulate(s);
 });
 </script>

@@ -526,9 +526,7 @@ app.OpenMS=function(){
                             <div class="alert1" role="alert">
                                Continue
                               </div>
-                      </div>
-                        
-                   
+                      </div>  
                 </div>
 
                 <div class="row btnss  vertical-align bb btnS3">
@@ -541,6 +539,7 @@ app.OpenMS=function(){
                 </div>
                         
                 </div>
+				
                 <div class="row btnss  vertical-align bb btnS4">
                         <div class="col-sm-2 "><strong>05.</strong></div>                
                         <div class="col-sm-7"><strong>The Cost of Care: Different Approaches</strong></div>
@@ -548,10 +547,10 @@ app.OpenMS=function(){
                             <div class="alert1" role="alert">
                                Continue
                               </div>
-                      </div>
-                      
+                      </div>     
                 </div>
-                <div class="row btnss  vertical-align bb btnS4">
+				
+                <div class="row btnss  vertical-align bb btnS5">
                         <div class="col-sm-2 "><strong>06.</strong></div>                
                         <div class="col-sm-7"><strong>Toward More Transparency</strong></div>
                         <div class="col-sm-3">
@@ -561,6 +560,7 @@ app.OpenMS=function(){
                       </div>
                        
                 </div>
+				
                 <div class="row btnss  vertical-align bb btnS6">
                         <div class="col-sm-2 "><strong>07.</strong></div>                
                         <div class="col-sm-7"><strong>Care Redesign Case: MD Anderson (TDABC)</strong></div>
@@ -591,10 +591,6 @@ app.OpenMS=function(){
                               </div>
                       </div>                                             
                 </div>
-
-              
-
-
                 <br>
 
                  <div class="row allModule3"> 

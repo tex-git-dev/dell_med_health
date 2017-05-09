@@ -89,6 +89,9 @@ function shuffleArray(array) {
      }
      return array;
    }
+   
+ /*---------------------------------------------------------------------------------------------------*/
+ 
 var pageScroll=null;
 window.onscroll = function(){
   var loc = (($(window).scrollTop() / ($(document).height()-$(window).height())) * 100).toFixed(0);
@@ -99,8 +102,7 @@ window.onscroll = function(){
 }
 
 $(document).ready(function() {
-console.log(app.SData);
-//console.log(app.MData);
+
 	 var section = "";
 	 if(app.qs["id"]=="m3/m3s2p2")
 	 {
@@ -113,6 +115,7 @@ console.log(app.SData);
     var SelecteM ='m'+app.qs["id"][1];
  
   app.SData = app.MData[SelecteM].sections[section];
+  console.log(app.SData);
   app.MIN = parseInt(app.SData['MIN']);
   app.HR = parseInt(app.SData['HR']);
   var sec = 0;
@@ -140,6 +143,7 @@ console.log(app.SData);
         var h = parseInt(v['HR']);
         var m = parseInt(v['MIN']);
         var p = parseInt(v['complete']);
+		console.log("Section number "+k+" have been completed "+p+"%");
         mMIN = mMIN + m;
         mHR = mHR + h;
 		if(app.SelecteM!="m3")
@@ -200,7 +204,6 @@ console.log(app.SData);
 			}
      }, 1000);
 });
-
 </script>
 
 

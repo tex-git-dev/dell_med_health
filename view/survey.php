@@ -1,3 +1,7 @@
+
+<script>
+document.getElementById('id01').style.display='none';
+</script>
 <?php
 if(!$_SESSION['username']){
   ?>

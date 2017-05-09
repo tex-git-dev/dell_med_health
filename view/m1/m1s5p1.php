@@ -54,7 +54,7 @@ $(document).ready(function() {
 });
 window.onresize = function(){app.showRM();};
 app.addOpt=function(id,len){
-  var sizeC = Math.ceil(len/3); 
+  var sizeC = Math.floor(len/3); 
   if (sizeC>1) {
     var circleList='<li data-target="#'+id+'" data-slide-to="0" class="active"></li>';
     for (var i = 1; i <sizeC; i++) {
@@ -66,7 +66,6 @@ app.addOpt=function(id,len){
     $('#'+id+' .right').hide();
   }
 }
-
    app.response1 = function(){
        var loc = $("#response1Text").val();
         var section = 's'+app.qs["id"][6];

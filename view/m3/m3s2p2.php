@@ -564,30 +564,30 @@ include("view/cjs.php");
 
 </div>
 
-<footer class="container-fluid">         
+    <footer class="container-fluid">         
           <div class="row">
-            
             <div class="col-sm-4 text-left NextBtn">
-
+              <a href="#" onclick="window.location='?id=m3/m3s2p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <span class="ssp1">MODULE 3 | Section 2</span>
+                <span class="sp1"><strong>Understanding Costs In Health Care</strong></span></a>
             </div>
-
             <div class="col-sm-4"></div>
-            <div class="col-sm-4 text-right NextBtn1">
-                <a href="javascript:window.close();"><span class="ssp2">MODULE 3 | Dive Deeper</span>
-                <span class="sp2"><strong>Close Window</strong></span>
+            <div class="col-sm-4  text-right NextBtn1">
+                <a href="#" onclick="window.location='?id=m3/m3s3p1'"><span class="ssp2">MODULE 3 | Section 3</span>
+                <span class="sp2"><strong>Speaking the Same Language: Health Care Cost Terms</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
- <div class="col-md-12 col-sm-12 col-xs-12">            
+         <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
-          
-</footer> 
+
+      </footer>   
   
 
 <?php

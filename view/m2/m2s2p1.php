@@ -48,8 +48,8 @@ $(document).ready(function() {
       });
 });
 window.onresize = function(){app.showRM();};
-  app.addOpt=function(id,len){
-  var sizeC = Math.ceil(len/3); 
+app.addOpt=function(id,len){
+  var sizeC = Math.floor(len/3); 
   if (sizeC>1) {
     var circleList='<li data-target="#'+id+'" data-slide-to="0" class="active"></li>';
     for (var i = 1; i <sizeC; i++) {

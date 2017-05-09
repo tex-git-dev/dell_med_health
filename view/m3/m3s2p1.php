@@ -456,7 +456,7 @@ app.response2 = function(){
         <br>
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><f><a target="_blank" href="?id=m3/m3s2p2" style="color:#fff;"><div class="driveS2">Dive Deeper</div></a></f></div>
+            <div class="col-sm-4"><f><a onclick="window.location='?id=m3/m3s2p2'" style="color:#fff;"><div class="driveS2">Dive Deeper</div></a></f></div>
             <div class="col-sm-4"></div>
         </div>
       </div>
@@ -551,7 +551,7 @@ app.response2 = function(){
             </div>
           </div>
 
- <div class="col-md-12 col-sm-12 col-xs-12">            
+         <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
