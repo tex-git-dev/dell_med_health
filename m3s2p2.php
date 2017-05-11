@@ -109,7 +109,7 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
                 <h4 class="text-center" style="color:#ee5f4e">A <span class="bText">copayment:</span></h4>
-                <f><p>A flat fee that a patient must pay each time they receive medical care. For example, a patient might pay a $10 copayment (“copay”) for every doctor visit, while the insurance plan covers the rest of the cost.</p></f>
+                <f><p>A flat fee that a patient must pay each time they receive medical care. For example, a patient might pay a $10 copayment ("copay") for every doctor visit, while the insurance plan covers the rest of the cost.</p></f>
             </div>
             <div class="col-sm-1"></div>
          </div>        
@@ -136,7 +136,7 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
                 <h4 class="text-center bText" style="color:#27b096">Co-insurance:</h4>
-                <f><p>A share of the costs of a health care service—usually a percentage of the full allowed amount of charged services. Co-insurance is usually paid after a patient has covered their full deductible.</p></f>
+                <f><p>A share of the costs of a health care service-usually a percentage of the full allowed amount of charged services. Co-insurance is usually paid after a patient has covered their full deductible.</p></f>
             </div>
             <div class="col-sm-1"></div>
          </div>        
@@ -149,7 +149,7 @@
          <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">                
-                <f><p>It’s important to note that most individuals have a combination of the above in their insurance plans. Generally, patients will pay a copay for normal visits to their PCP and will be charged a deductible for hospital visits and procedures.</p></f>
+                <f><p>It's important to note that most individuals have a combination of the above in their insurance plans. Generally, patients will pay a copay for normal visits to their PCP and will be charged a deductible for hospital visits and procedures.</p></f>
             </div>
             <div class="col-sm-1"></div>
          </div>                 
@@ -160,9 +160,9 @@
     <div class="container m3s8b8">
         <div class="row">            
               <div class="col-sm-12">
-                 <f><h3 class="text-uppercase text-center">Let’s Check Our Understanding</h3></f>
+                 <f><h3 class="text-uppercase text-center">Let's Check Our Understanding</h3></f>
                  <br>
-                 <f><p>Read the patient’s vignettes and then answer questions related to the patient’s medical costs.</p></f>
+                 <f><p>Read the patient's vignettes and then answer questions related to the patient's medical costs.</p></f>
               </div>
          </div>
     </div>
@@ -273,7 +273,7 @@
               <img src="img/m3s8img5.png" class="img-responsive">
           </div>  
           <div class="col-sm-7">
-              <f><p>A week after being discharged, Ms. Church visits with her primary care provider for a follow-up visit. She explains to her doctor that she continues to experience shortness of breath. Her PCP decides to order a chest x-ray to ensure Ms. Church’s lungs are clearing as expected. </p></f>
+              <f><p>A week after being discharged, Ms. Church visits with her primary care provider for a follow-up visit. She explains to her doctor that she continues to experience shortness of breath. Her PCP decides to order a chest x-ray to ensure Ms. Church's lungs are clearing as expected. </p></f>
               <!-- <f><p>Ms. Church’s x-ray shows improvement and her doctor advises her to continue to rest and take it easy. Later, Ms. Church receives a bill for her PCP visit for $400, which includes charges for the visit and the x-ray at $200. What amount will she pay for this follow-up visit?</p></f> -->
           </div>
           <div class="col-sm-1"></div>
@@ -372,7 +372,7 @@
             <br>
             <div class="row">
                 <div class="col-sm-12">
-                    <f><p>In a system where the majority of insurance is employment-based, as Americans age and retire they lose coverage. This leaves those who generally need health care the most—the elderly—without any insurance. In fact, in the late 1950s, less than 15% of the elderly had health insurance. In addition, those who are unemployed, and therefore often poor, are also left out of an employment-based market. In response to these significant gaps, President Lyndon B. Johnson enacted tax-financed government health insurance in 1965, aiming to provide affordable care for the elderly (Medicare) and the poor (Medicaid).</p></f>
+                    <f><p>In a system where the majority of insurance is employment-based, as Americans age and retire they lose coverage. This leaves those who generally need health care the most-the elderly-without any insurance. In fact, in the late 1950s, less than 15% of the elderly had health insurance. In addition, those who are unemployed, and therefore often poor, are also left out of an employment-based market. In response to these significant gaps, President Lyndon B. Johnson enacted tax-financed government health insurance in 1965, aiming to provide affordable care for the elderly (Medicare) and the poor (Medicaid).</p></f>
                     <f><p>This diagram illustrates the typical flow of funds between taxpayers, government health insurance plans, and health care providers.</p></f>
                 </div>
             </div>
@@ -403,7 +403,7 @@
                <f><h3 class="text-uppercase text-center">Medicaid</h3></f>
                <br><br>
                <f><p>Medicaid is a federal program administered by individual states to provide health care for certain poor and low-income individuals and families. Medicaid is the largest public health insurance program in the United States, covering roughly 1 in 5 Americans, and 1 in 3 children. The federal Medicaid program is administered by individual states, with the federal government paying at least 50% of total state Medicaid costs, based on the financial status of the state.</p></f>
-               <f><p>To qualify for Medicaid, a person must meet the financial criteria for low-income and also belong to one of Medicaid’s eligible groups:</p></f>
+               <f><p>To qualify for Medicaid, a person must meet the financial criteria for low-income and also belong to one of Medicaid's eligible groups:</p></f>
              </div>
          </div>
     </div>
@@ -431,7 +431,7 @@
             </div>
             <div class="col-sm-2">
                 <p><img src="img/m3s8img12.png" class="img-responsive center-block" width="75%"></p>
-                <f><p class="text-center bText">Seniors age 65 and over, sometimes referred to as “dual-eligibles”</p></f>
+                <f><p class="text-center bText">Seniors age 65 and over, sometimes referred to as "dual-eligibles"</p></f>
             </div>
         <div class="col-sm-1"></div>
       </div>
@@ -477,7 +477,7 @@
                <br>
                 <f><h3 class="text-center text-uppercase">US Veterans Health Administration and TRICARE</h3></f>
                 <br>
-               <f><p>The Veterans Health Administration (VHA) provides health care for over 8.76 million veterans each year and is America’s largest health care system, with over 1,700 sites of care including medical centers, outpatient clinics, community clinics, and nursing homes.<sup>2</sup></p></f>
+               <f><p>The Veterans Health Administration (VHA) provides health care for over 8.76 million veterans each year and is America's largest health care system, with over 1,700 sites of care including medical centers, outpatient clinics, community clinics, and nursing homes.<sup>2</sup></p></f>
                <f><p>Veterans are eligible for VHA coverage once they have completed 24 continuous months of active duty service or completed the full period for which they were called for active duty. Enrollment is based on priority groups as assigned by the VHA with veterans with severe disabilities given higher priority.</p></f>
                <f><p>TRICARE is a health care program from the United States Department of Defense Military Health System that provides health benefits for US Armed Forces military personnel, military retirees, and some members of the Reserve Component. The TRICARE program includes coverage of the dependents of enrollees. TRICARE provides health care coverage to over 9 million military personnel and their dependents.<sup>3</sup></p></f>              
              </div>
