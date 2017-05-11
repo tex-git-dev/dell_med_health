@@ -3,6 +3,7 @@
 document.getElementById('id01').style.display='none';
 </script>
 <?php
+require_once 'db.php';
 if(!$_SESSION['username']){
   ?>
   <script>
@@ -12,8 +13,8 @@ if(!$_SESSION['username']){
 }
 ?>
  <?php 
- include("db.php");
 @session_start();
+$dbcon =  Connect_Open();
 $user = $_SESSION['username'];
  $chk = "";
 if(isset($_GET["survey"]))
@@ -75,6 +76,7 @@ Your response has been recorded.";
          </div>
 		 <?php
 		 }
+	Connect_Close($dbcon);
 		 ?>
       </div>
    </div>

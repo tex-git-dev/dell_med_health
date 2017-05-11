@@ -6,28 +6,29 @@
 </script>
 <?php
    }
-include("db.php");
+require_once 'db.php';
 include("view/cjs.php");
-$c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
+$dbcon =  Connect_Open();
+$c5 = "select * from records WHERE email IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
-while($row = mysqli_fetch_row($retval1)) {
-    $s2data = json_decode($row[7],true);
+while($row = $retval1->fetch_object()) {
+    $s2data = json_decode($row->module_data,true);
     $dataT1 = $s2data['m2']['sections']['s2']['response1'];
-    $dataN1 = $row[2]." ". $row[3];
+    $dataN1 = $row->fname." ". $row->lname;
     $dataT = $s2data['m2']['sections']['s2']['response2'];
-    $dataN = $row[2]." ". $row[3];
+    $dataN = $row->fname." ". $row->lname;
     if ($dataT) {
 ?>
 <script type="text/javascript">
-    app.cArrayT.push("<?php echo $dataT;?>");
-    app.cArrayN.push("<?php echo $dataN;?>");
+    app.cArrayT.push("<?php echo $dataT1;?>");
+    app.cArrayN.push("<?php echo $dataN1;?>");
 </script>
 <?php } 
 if ($dataT1) {
 ?>
 <script type="text/javascript">
-    app.cArrayT1.push("<?php echo $dataT1;?>");
-    app.cArrayN1.push("<?php echo $dataN1;?>");
+    app.cArrayT1.push("<?php echo $dataT;?>");
+    app.cArrayN1.push("<?php echo $dataN;?>");
 </script>
  
 <?php }}?>

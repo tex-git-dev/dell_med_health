@@ -1,12 +1,14 @@
 <?php
+require_once 'db.php';
+$dbcon =  Connect_Open();
 $c1 = "select * from records where email='".$_SESSION['username']."' and status='complete'";
 $Crun0=mysqli_query($dbcon,$c1);
 $row = $Crun0->fetch_object();
 //echo count($row);
 if (count($row) != 0) {
-  /* $q6="INSERT INTO records (Fname,Lname,email,module_Number,module_data,status) VALUES ('$Fname','$Lname','$Email','m1','$startData','active');";
-            $Qrun2=mysqli_query($dbcon,$q6);*/
+
 }
+  Connect_Close($dbcon);
 ?>
 <script type="text/javascript">
 window.moduleCompleteCheck = true;

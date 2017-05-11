@@ -98,7 +98,7 @@ include("view/cjs.php");
                   </div>
                        <div class="col-md-1 text-center"><a href="VTT/Mod2_Sec8.pdf" class="btn btn-info" target="_blank">
 					   <i class="fa fa-download" aria-hidden="true"></i>
-					   TranScript</a></div>             
+					   Transcript</a></div>             
                  </div>
               <div class="row  m2s8c3">             
                 <div class="col-sm-1"></div>

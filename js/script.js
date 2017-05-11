@@ -80,16 +80,18 @@ DataSave:function(dataSave){
     $(".MSection .lG2 .mP").html(loc1['s'+j]['complete']+"%");
     $(".btnS"+j).addClass('act');
     $(".MSection strong.outcm3").html("SECTION <span class='mn'>"+j+"</span> OUTCOMES");
+    $("#sectionProgress").css("visibility","visible");
+
 	}
 	else if(j==3)
 	{
-    $(".MSection .lG2 .progress-bar").css({"width":loc1['s9']['complete']+"%"});
-    $(".MSection .lG2 .mP").html(loc1['s9']['complete']+"%");
+    $("#sectionProgress").css("visibility","hidden");
     $(".btnS"+j).addClass('act');
     $(".MSection strong.outcm3").html("DIVE DEEPER: OUTCOMES");
 	}
 	else
 	{
+	  $("#sectionProgress").css("visibility","visible");
     jic = j - 1;
 	$(".MSection .lG2 .progress-bar").css({"width":loc1['s'+jic]['complete']+"%"});
     $(".MSection .lG2 .mP").html(loc1['s'+jic]['complete']+"%");
@@ -286,7 +288,9 @@ DataSave:function(dataSave){
 	   }
 	   else if(index == 3)
 	   {
-	   window.location="?id="+app.SelecteM+"/"+app.SelecteM+"s2"+"p2";
+	   url ="m3s2p2.php";
+	  newwindow=window.open(url,'DellHealth','height=400,width:1000,scrollbars=yes');
+      newwindow.focus();
 	   }
 	   else
 	   {

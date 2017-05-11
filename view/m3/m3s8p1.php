@@ -92,7 +92,7 @@ include("view/cjs.php");
                         <!-- s9ad fa-play-circle-o -->
                         <!-- fa fa-pause-circle-o -->
                   </div>
-                       <div class="col-md-1 text-center"><a href="VTT/Mod3_Sec8.pdf" class="btn btn-info" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> TranScript</a></div>  
+                       <div class="col-md-1 text-center"><a href="VTT/Mod3_Sec8.pdf" class="btn btn-info" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Transcript</a></div>  
                                     
                  </div>
               <div class="row  m3s7c3">             
