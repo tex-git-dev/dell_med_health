@@ -1,5 +1,6 @@
 <?php
-include("db.php");
+require_once 'db.php';
+ $dbcon =  Connect_Open();
 include("mail.php");
 if ($_POST['call'] == 'PForget') {
    
@@ -47,5 +48,5 @@ function pathUrl($dir = __DIR__){
     $root .= '/';
     return $root;
 }
-    // echo isLoginSessionExpired();
+    Connect_Close($dbcon);
 ?>

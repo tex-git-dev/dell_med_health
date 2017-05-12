@@ -1,14 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dell Medical School | The University of Texas at Austin</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="fonts/fonts.css"/>
+       <link rel="stylesheet" href="css/animate.css"> 
+      <link rel="stylesheet" href="css/common.css">
+      
+      <link rel="stylesheet" href="css/maxWidth_100x299.css">
+      <link rel="stylesheet" href="css/maxWidth_300x500.css">
+      <link rel="stylesheet" href="css/maxWidth_501x765.css">
+      <link rel="stylesheet" href="css/maxWidth_766x1000.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.validate.js"></script>
+      <script type="text/javascript" src="js/wow.js"></script>
+      <script type="text/javascript" src="js/plotly-latest.min.js"></script>
+      <script type="text/javascript" src="js/jquery.inview.js"></script>
+	   <script src="js/script.js"></script>
+	</head>
+<body>	
 <?php
+@session_start();
       if(!$_SESSION['username']){
 
    ?>
   <script>
-  window.location.href="<?php echo pathUrl();?>";
+  window.location="index.php";
   </script>
 
 <?php
 }
-include("view/cjs.php");
 ?>
 <link rel="stylesheet" href="css/m3s2p2.css">
 
@@ -95,7 +121,7 @@ include("view/cjs.php");
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
                 <h4 class="text-center" style="color:#ee5f4e">A <span class="bText">copayment:</span></h4>
-                <f><p>A flat fee that a patient must pay each time they receive medical care. For example, a patient might pay a $10 copayment (“copay”) for every doctor visit, while the insurance plan covers the rest of the cost.</p></f>
+                <f><p>A flat fee that a patient must pay each time they receive medical care. For example, a patient might pay a $10 copayment ("copay") for every doctor visit, while the insurance plan covers the rest of the cost.</p></f>
             </div>
             <div class="col-sm-1"></div>
          </div>        
@@ -122,7 +148,7 @@ include("view/cjs.php");
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
                 <h4 class="text-center bText" style="color:#27b096">Co-insurance:</h4>
-                <f><p>A share of the costs of a health care service—usually a percentage of the full allowed amount of charged services. Co-insurance is usually paid after a patient has covered their full deductible.</p></f>
+                <f><p>A share of the costs of a health care service-usually a percentage of the full allowed amount of charged services. Co-insurance is usually paid after a patient has covered their full deductible.</p></f>
             </div>
             <div class="col-sm-1"></div>
          </div>        
@@ -135,7 +161,7 @@ include("view/cjs.php");
          <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">                
-                <f><p>It’s important to note that most individuals have a combination of the above in their insurance plans. Generally, patients will pay a copay for normal visits to their PCP and will be charged a deductible for hospital visits and procedures.</p></f>
+                <f><p>It's important to note that most individuals have a combination of the above in their insurance plans. Generally, patients will pay a copay for normal visits to their PCP and will be charged a deductible for hospital visits and procedures.</p></f>
             </div>
             <div class="col-sm-1"></div>
          </div>                 
@@ -146,9 +172,9 @@ include("view/cjs.php");
     <div class="container m3s8b8">
         <div class="row">            
               <div class="col-sm-12">
-                 <f><h3 class="text-uppercase text-center">Let’s Check Our Understanding</h3></f>
+                 <f><h3 class="text-uppercase text-center">Let's Check Our Understanding</h3></f>
                  <br>
-                 <f><p>Read the patient’s vignettes and then answer questions related to the patient’s medical costs.</p></f>
+                 <f><p>Read the patient's vignettes and then answer questions related to the patient's medical costs.</p></f>
               </div>
          </div>
     </div>
@@ -259,7 +285,7 @@ include("view/cjs.php");
               <img src="img/m3s8img5.png" class="img-responsive">
           </div>  
           <div class="col-sm-7">
-              <f><p>A week after being discharged, Ms. Church visits with her primary care provider for a follow-up visit. She explains to her doctor that she continues to experience shortness of breath. Her PCP decides to order a chest x-ray to ensure Ms. Church’s lungs are clearing as expected. </p></f>
+              <f><p>A week after being discharged, Ms. Church visits with her primary care provider for a follow-up visit. She explains to her doctor that she continues to experience shortness of breath. Her PCP decides to order a chest x-ray to ensure Ms. Church's lungs are clearing as expected. </p></f>
               <!-- <f><p>Ms. Church’s x-ray shows improvement and her doctor advises her to continue to rest and take it easy. Later, Ms. Church receives a bill for her PCP visit for $400, which includes charges for the visit and the x-ray at $200. What amount will she pay for this follow-up visit?</p></f> -->
           </div>
           <div class="col-sm-1"></div>
@@ -269,8 +295,7 @@ include("view/cjs.php");
 
 
 
-<!-- Mcq start -->
-
+<!-- Mcq start -->   
 <div class="container-full m3s8mcq m3s8b4">    
     <div id="myCarousel_a" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
@@ -287,19 +312,17 @@ include("view/cjs.php");
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">Ms. Church’s x-ray shows improvement and her doctor advises her to continue to rest and take it easy. Later, Ms. Church receives a bill for her PCP visit for $400, which includes charges for the visit and the x-ray at $200. What amount will she pay for this follow-up visit?</p></f>
-                                <div class="row row-eq-height">
-                               <!-- <div class="col-sm-12" >
-                                    <div class="row eq-h">-->
+                                <f><p class="ques">Ms. Church's x-ray shows improvement and her doctor advises her to continue to rest and take it easy. Later, Ms. Church receives a bill for her PCP visit for $400, which includes charges for the visit and the x-ray at $200. What amount will she pay for this follow-up visit?</p></f>
+                                <div class="row">
+                              <div class="col-sm-12" >
+                                    <div class="row eq-h">
                                       <?php
-                                            //$arr = array(1, 2, 3, 4, 5);
                                             $array = array('$400', '$20', '$40', '$200');
 
                                             $numRandoms = 4;
 
                                             $random = randomArray($array, $numRandoms);
                                             $ans = array(false, false, true, false);
-                                            //print_r($random);
 
                                             foreach ($random as $key => $value) {
                                                 $ans = $value == "$40" ? 1 : 0;
@@ -308,8 +331,8 @@ include("view/cjs.php");
                                                   </div>';
                                             }
                                         ?>
-                                 <!--   </div>
-                                </div>-->                               
+                                 </div>
+                                </div>                              
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 sign">
@@ -361,7 +384,7 @@ include("view/cjs.php");
             <br>
             <div class="row">
                 <div class="col-sm-12">
-                    <f><p>In a system where the majority of insurance is employment-based, as Americans age and retire they lose coverage. This leaves those who generally need health care the most—the elderly—without any insurance. In fact, in the late 1950s, less than 15% of the elderly had health insurance. In addition, those who are unemployed, and therefore often poor, are also left out of an employment-based market. In response to these significant gaps, President Lyndon B. Johnson enacted tax-financed government health insurance in 1965, aiming to provide affordable care for the elderly (Medicare) and the poor (Medicaid).</p></f>
+                    <f><p>In a system where the majority of insurance is employment-based, as Americans age and retire they lose coverage. This leaves those who generally need health care the most-the elderly-without any insurance. In fact, in the late 1950s, less than 15% of the elderly had health insurance. In addition, those who are unemployed, and therefore often poor, are also left out of an employment-based market. In response to these significant gaps, President Lyndon B. Johnson enacted tax-financed government health insurance in 1965, aiming to provide affordable care for the elderly (Medicare) and the poor (Medicaid).</p></f>
                     <f><p>This diagram illustrates the typical flow of funds between taxpayers, government health insurance plans, and health care providers.</p></f>
                 </div>
             </div>
@@ -392,7 +415,7 @@ include("view/cjs.php");
                <f><h3 class="text-uppercase text-center">Medicaid</h3></f>
                <br><br>
                <f><p>Medicaid is a federal program administered by individual states to provide health care for certain poor and low-income individuals and families. Medicaid is the largest public health insurance program in the United States, covering roughly 1 in 5 Americans, and 1 in 3 children. The federal Medicaid program is administered by individual states, with the federal government paying at least 50% of total state Medicaid costs, based on the financial status of the state.</p></f>
-               <f><p>To qualify for Medicaid, a person must meet the financial criteria for low-income and also belong to one of Medicaid’s eligible groups:</p></f>
+               <f><p>To qualify for Medicaid, a person must meet the financial criteria for low-income and also belong to one of Medicaid's eligible groups:</p></f>
              </div>
          </div>
     </div>
@@ -420,7 +443,7 @@ include("view/cjs.php");
             </div>
             <div class="col-sm-2">
                 <p><img src="img/m3s8img12.png" class="img-responsive center-block" width="75%"></p>
-                <f><p class="text-center bText">Seniors age 65 and over, sometimes referred to as “dual-eligibles”</p></f>
+                <f><p class="text-center bText">Seniors age 65 and over, sometimes referred to as "dual-eligibles"</p></f>
             </div>
         <div class="col-sm-1"></div>
       </div>
@@ -466,7 +489,7 @@ include("view/cjs.php");
                <br>
                 <f><h3 class="text-center text-uppercase">US Veterans Health Administration and TRICARE</h3></f>
                 <br>
-               <f><p>The Veterans Health Administration (VHA) provides health care for over 8.76 million veterans each year and is America’s largest health care system, with over 1,700 sites of care including medical centers, outpatient clinics, community clinics, and nursing homes.<sup>2</sup></p></f>
+               <f><p>The Veterans Health Administration (VHA) provides health care for over 8.76 million veterans each year and is America's largest health care system, with over 1,700 sites of care including medical centers, outpatient clinics, community clinics, and nursing homes.<sup>2</sup></p></f>
                <f><p>Veterans are eligible for VHA coverage once they have completed 24 continuous months of active duty service or completed the full period for which they were called for active duty. Enrollment is based on priority groups as assigned by the VHA with veterans with severe disabilities given higher priority.</p></f>
                <f><p>TRICARE is a health care program from the United States Department of Defense Military Health System that provides health benefits for US Armed Forces military personnel, military retirees, and some members of the Reserve Component. The TRICARE program includes coverage of the dependents of enrollees. TRICARE provides health care coverage to over 9 million military personnel and their dependents.<sup>3</sup></p></f>              
              </div>
@@ -564,30 +587,33 @@ include("view/cjs.php");
 
 </div>
 
-    <footer class="container-fluid">         
+
+<footer class="container-fluid">         
           <div class="row">
+            
             <div class="col-sm-4 text-left NextBtn">
-              <a href="#" onclick="window.location='?id=m3/m3s2p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
-              <span class="ssp1">MODULE 3 | Section 2</span>
-                <span class="sp1"><strong>Understanding Costs In Health Care</strong></span></a>
+
             </div>
+
             <div class="col-sm-4"></div>
-            <div class="col-sm-4  text-right NextBtn1">
-                <a href="#" onclick="window.location='?id=m3/m3s3p1'"><span class="ssp2">MODULE 3 | Section 3</span>
-                <span class="sp2"><strong>Speaking the Same Language: Health Care Cost Terms</strong></span>
+            <div class="col-sm-4 text-right NextBtn1">
+                <a href="javascript:window.close();"><span class="ssp2">MODULE 3 | Dive Deeper</span>
+                <span class="sp2"><strong>Close Window</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-         <div class="col-md-12 col-sm-12 col-xs-12">            
-            <div class="col-md-5 col-sm-4 col-xs-4"></div>
-              <div class="col-md-2 col-sm-4 col-xs-4">
+          <div class="row">            
+            <div class="col-sm-5"></div>
+              <div class="col-sm-2">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
               </div>
-            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+            <div class="col-sm-5"></div>
           </div>
-
-      </footer>   
+          
+</footer> 
+  
+  
   
 
 <?php
@@ -616,24 +642,6 @@ include("view/cjs.php");
 
 <script>
 
-	          $(function () {
-                setMsgBoxHeight();
-        });
-        function setMsgBoxHeight() {
-		var f_height = 0;
-            var msgboxHeight = $(".carousel .active .row-eq-height").height();
-			 var l = $(".carousel .active .ans").length;
-			  for(var i=1;i<=l;i++)
-			  {
-			  var h =  $(".carousel .active .row-eq-height div:nth-child("+i+") .ans").css("height");
-			  var h1 = h.split('p');
-			 if(f_height < Number(h1[0]))
-			 {
-			    f_height = h1[0];
-			 }
-			}
-           $(".carousel .active .ans").css("height",f_height+"px");	   
-    }
 
 $('.carousel').on('slid.bs.carousel', function (e) {
        $('.item .ans').removeClass('Dis');
@@ -644,16 +652,16 @@ $('.carousel').on('slid.bs.carousel', function (e) {
 
 function TryA(){
       $('#myCarousel_a .item.active div').removeClass("incorrect").removeClass("selectedAns");
-      $('#myCarousel_a .item .ans').removeClass('Dis');      
+      $('#myCarousel_a .item .ans').removeClass('DisB');      
     }
 
 
-    function checkAnswer(obj, f) {
+        function checkAnswer(obj, f) {
             //console.log($(obj).parents(".row-eq-height"));
-            $('#myCarousel_a .item .ans').addClass('Dis');
+            $('#myCarousel_a .item .ans').addClass('DisB');
             $('#myCarousel_a .item.active div').removeClass("incorrect").removeClass("selectedAns");
             $(obj).parents(".eq-h").find(".ans")
-            $(obj).parents(".white").removeClass("correct incorrect");
+            $(obj).parents("#myCarousel_a .white").removeClass("correct incorrect");
             if (f === 1) {
                 $(obj).addClass('selectedAns').parents('#myCarousel_a .white').addClass('correct');
             } else if (f === 0) {
@@ -664,7 +672,7 @@ function TryA(){
                 $(".5401, .2497").addClass("hide");
                 $("." + f).removeClass("hide");
             }
-        }
+        } 
 
     
     function TryAB() {
@@ -691,3 +699,5 @@ function TryA(){
         }      
 
 </script>
+</body>
+</html>

@@ -5,7 +5,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
     background-color: #060;    color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
     background-color: #fff;
@@ -62,8 +61,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;  
-    height: auto;    
+    background-size: cover;     
     width: auto;      
          padding-top: 80px;
     padding-bottom: 80px;   
@@ -96,8 +94,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;  
-    height: auto;    
+    background-size: cover;   
     width: auto;      
     padding-top: 80px;
     padding-bottom: 80px;   
@@ -133,8 +130,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;  
-    height: auto;    
+    background-size: cover;     
     width: auto;    
     padding-bottom: 80px;
 }
@@ -152,7 +148,6 @@
 .m3s8p1 .m3s8b16 .col-sm-12 .well1{
    background: #f5f5f5;
     border-radius: 0;
-    height: 100%;
     margin-bottom: 15px;
     padding-bottom: 0;
     padding-top: 0;
@@ -160,18 +155,15 @@
 }
 
 .m3s8p1 .m3s8b16 .col-sm-9 {  
-    height: 100%;
     padding-left: 0;
 }
 .m3s8p1 .m3s8b16 .col-sm-9 .well{   
      background:#fff;
-     height: 100%;
      margin-bottom: 0px;
      border-radius: 0;       
      
 }
 .m3s8p1 .m3s8b16 .well1 .row{   
-     height: 100%;
      margin-bottom: 0px;
       border-radius: 0;
 }
@@ -233,8 +225,6 @@
 .m3s8p1 .m3s8mcq .white{
     background: white;
     padding: 70px 0;
-    height: 100%;
-    /*min-height: 500px;    */
 }
 
 .m3s8p1 .m3s8mcq .ques{
@@ -251,7 +241,6 @@
     margin: 8px 0;
     cursor: pointer;
     border:2px solid #535B72;
-    height: 100%;
 }
 
 

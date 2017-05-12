@@ -7,17 +7,17 @@
 </script>
 <?php
    }
-include("db.php");
+require_once 'db.php';
 include("view/cjs.php");
-
-$c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
+$dbcon =  Connect_Open();
+$c5 = "select * from records WHERE email IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
-while($row = mysqli_fetch_row($retval1)) {
-    $s2data = json_decode($row[7],true);
+while($row = $retval1->fetch_object()) {
+    $s2data = json_decode($row->module_data,true);
     $dataT1 = $s2data['m1']['sections']['s2']['response1'];
-    $dataN1 = $row[2]." ". $row[3];
+    $dataN1 = $row->fname." ". $row->lname;
     $dataT = $s2data['m1']['sections']['s2']['response2'];
-    $dataN = $row[2]." ". $row[3];
+    $dataN = $row->fname." ". $row->lname;
     if ($dataT) {
 ?>
 <script type="text/javascript">
@@ -116,10 +116,10 @@ app.pup= function(v){
 }
 
 app.addOpt=function(id,len){
-  var sizeC = Math.ceil(len/3); 
+  var sizeC = Math.floor(len/3); 
   if (sizeC>1) {
     var circleList='<li data-target="#'+id+'" data-slide-to="0" class="active"></li>';
-    for (var i = 1; i <sizeC; i++) {
+    for (var i = 1; i <sizeC-1; i++) {
       circleList+='<li data-target="#'+id+'" data-slide-to="'+i+'"></li>';
     }
     $('#'+id+' .carousel-indicators').append(circleList);

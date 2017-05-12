@@ -72,7 +72,7 @@ DataSave:function(dataSave){
     $(".MSection .mn").html(j);
     $(".MSection .clickS").hide();
     }
-	else
+	if(app.ClickOnModule == 'module3')
 	{
 	if(j<=2)
 	{
@@ -80,17 +80,19 @@ DataSave:function(dataSave){
     $(".MSection .lG2 .mP").html(loc1['s'+j]['complete']+"%");
     $(".btnS"+j).addClass('act');
     $(".MSection strong.outcm3").html("SECTION <span class='mn'>"+j+"</span> OUTCOMES");
+    $("#sectionProgress").css("visibility","visible");
+
 	}
 	else if(j==3)
 	{
-    $(".MSection .lG2 .progress-bar").css({"width":loc1['s9']['complete']+"%"});
-    $(".MSection .lG2 .mP").html(loc1['s9']['complete']+"%");
+    $("#sectionProgress").css("visibility","hidden");
     $(".btnS"+j).addClass('act');
     $(".MSection strong.outcm3").html("DIVE DEEPER: OUTCOMES");
 	}
 	else
 	{
-		jic = j - 1;
+	  $("#sectionProgress").css("visibility","visible");
+    jic = j - 1;
 	$(".MSection .lG2 .progress-bar").css({"width":loc1['s'+jic]['complete']+"%"});
     $(".MSection .lG2 .mP").html(loc1['s'+jic]['complete']+"%");
     $(".btnS"+j).addClass('act');
@@ -117,25 +119,6 @@ DataSave:function(dataSave){
     $("._outm3,#outcome3").css("display","block");
 	$("._outm3 .clickS"+j).show();
 	}
-	if(app.ClickOnModule == 'module1' || app.ClickOnModule == 'module2') {
-    var i=0;
-    $.each(loc1,function(v,k){
-      i++;
-        if(k.complete == '100') {
-          $(".btnS"+i).addClass('complete');
-          $(".btnS"+i+" .alert1").text('Revisit');
-        }else if (k.complete == '0') {
-           $(".btnS"+i).removeClass('complete');
-          $(".btnS"+i+" .alert1").text('Begin');
-        }else{
-           $(".btnS"+i).removeClass('complete');
-          $(".btnS"+i+" .alert1").text('Continue');
-        }
-     
-    })
-	}
-	else
-	{
     var i=0;
     $.each(loc1,function(v,k){
       i++;
@@ -150,7 +133,7 @@ DataSave:function(dataSave){
           $(".btnS"+i+" .alert1").text('Continue');
         }
     })
-	}
+
     if(app.SelecteM == 'm1') {
       var timeFixed =[[00,01],[00,05],[00,05],[00,05],[00,05],[00,05],[00,05],[00,10],[00,04]];
     
@@ -190,11 +173,6 @@ DataSave:function(dataSave){
       } 
   },
   
-  
-  
-  
-  
-
   Events:function(){ 
     $(".dis").click(function(e){
       $(this).hide();
@@ -214,7 +192,7 @@ DataSave:function(dataSave){
 	  window.location="?id=survey";
     }
    }
-    });
+  });
 
     $(".allModule1 .btn, .allModule2 .btn, .allModule3 .btn").click(function(e){
       $(".allModule1 .btn, .allModule2 .btn, .allModule3 .btn").removeClass('act1');
@@ -243,7 +221,7 @@ DataSave:function(dataSave){
         $(".allModule3 .btn").eq(2).addClass('act1');
       }
       
-      app.SDataPopulate(1);
+      //app.SDataPopulate(1);
       var hh = $(".op").height();
       $(".r2").css({'min-height':hh+'px'});
     });
@@ -310,7 +288,11 @@ DataSave:function(dataSave){
 	   }
 	   else if(index == 3)
 	   {
-	    window.location="?id="+app.SelecteM+"/"+app.SelecteM+"s2"+"p2";
+	   url ="m3s2p2.php";
+       var width = $(window).width()-25 ; 
+	    var height = $(window).height()-25; 
+	  newwindow=window.open(url,'DellHealth','height='+height+',width='+width+',scrollbars=yes');
+      newwindow.focus();
 	   }
 	   else
 	   {

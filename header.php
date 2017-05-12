@@ -1,6 +1,11 @@
 <?php  
 @session_start();
-include("db.php");
+require_once "db.php";	
+if(isset($_SESSION['username']))
+{
+require_once 'check2.php';
+}
+			
 ?>
  <script src="js/bootstrap-session-timeout.js"></script>
  <style>
@@ -519,20 +524,18 @@ app.OpenMS=function(){
                         
                    
                 </div>
-			    <div class="row btnss vertical-align bb btnS9">
-                      <div class="col-sm-2 "><strong>03.</strong></div>
+			    <div class="row btnss vertical-align bb btnS">
+                      <div class="col-sm-2 "><strong>DD.</strong></div>
                         <div class="col-sm-7"><strong>Dive Deeper: Basics of Health Care Financing in the US [Optional]</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
-                               Continue
+                               Visit
                               </div>
-                      </div>
-                        
-                   
+                      </div>  
                 </div>
 
                 <div class="row btnss  vertical-align bb btnS3">
-                        <div class="col-sm-2 "><strong>04.</strong></div>
+                        <div class="col-sm-2 "><strong>03.</strong></div>
                         <div class="col-sm-7"><strong>Speaking the Same Language: Health Care Cost Terms</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -541,18 +544,19 @@ app.OpenMS=function(){
                 </div>
                         
                 </div>
+				
                 <div class="row btnss  vertical-align bb btnS4">
-                        <div class="col-sm-2 "><strong>05.</strong></div>                
+                        <div class="col-sm-2 "><strong>04.</strong></div>                
                         <div class="col-sm-7"><strong>The Cost of Care: Different Approaches</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
                                Continue
                               </div>
-                      </div>
-                      
+                      </div>     
                 </div>
-                <div class="row btnss  vertical-align bb btnS4">
-                        <div class="col-sm-2 "><strong>06.</strong></div>                
+				
+                <div class="row btnss  vertical-align bb btnS5">
+                        <div class="col-sm-2 "><strong>05.</strong></div>                
                         <div class="col-sm-7"><strong>Toward More Transparency</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -561,8 +565,9 @@ app.OpenMS=function(){
                       </div>
                        
                 </div>
+				
                 <div class="row btnss  vertical-align bb btnS6">
-                        <div class="col-sm-2 "><strong>07.</strong></div>                
+                        <div class="col-sm-2 "><strong>06.</strong></div>                
                         <div class="col-sm-7"><strong>Care Redesign Case: MD Anderson (TDABC)</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -573,7 +578,7 @@ app.OpenMS=function(){
                 </div>
                 
                 <div class="row btnss  vertical-align bb btnS7">
-                        <div class="col-sm-2 "><strong>08.</strong></div>                
+                        <div class="col-sm-2 "><strong>07.</strong></div>                
                         <div class="col-sm-7"><strong>Applying TDABC to Compare Cost Calculations</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -583,7 +588,7 @@ app.OpenMS=function(){
                 </div>
 
                 <div class="row btnss  vertical-align bb btnS8">
-                        <div class="col-sm-2 "><strong>09.</strong></div>                
+                        <div class="col-sm-2 "><strong>08.</strong></div>                
                         <div class="col-sm-7"><strong>Conclusion: Understanding Costs of Care</strong></div>
                         <div class="col-sm-3">
                             <div class="alert1" role="alert">
@@ -591,10 +596,6 @@ app.OpenMS=function(){
                               </div>
                       </div>                                             
                 </div>
-
-              
-
-
                 <br>
 
                  <div class="row allModule3"> 
@@ -645,7 +646,7 @@ app.OpenMS=function(){
                         <div class="row"></div>
                     </div>
                      <div class="col-sm-8 lG2 ">
-                     <div class="row  text-center vertical-align1">
+                     <div class="row  text-center vertical-align1" id="sectionProgress">
                             <div class="col-sm-12 text-left">
                                        <span style="margin-left:16px;">Section Progress</span><br>
                                  <div class="progress">
@@ -1363,7 +1364,9 @@ app.OpenMS=function(){
                     <label for="Country">Country:</label>
                       <select class="form-control text-center c" name="Country" id="Country" required="">
                         <option value="">[select from list below]</option>
-						<?php   $c0 = "select * from countries";
+						<?php 
+                            $dbcon =  Connect_Open();
+						       $c0 = "select * from countries";
                                 $Crun0=mysqli_query($dbcon,$c0);
                                while($row = $Crun0->fetch_object())
 							   {
@@ -1371,6 +1374,7 @@ app.OpenMS=function(){
 							   <option value="<?php echo $row->name; ?>"><?php echo $row->name;  ?></option>
 							   <?php
 						       }
+							  Connect_Close($dbcon);
   ?>
                       </select>
                      </div>
@@ -1969,7 +1973,7 @@ app.ClickOnModule="module3";
 
 $("#Country").on("change",function(){
 var cid = $(this).val();
-$.post( "getCity.php", { id:cid })
+$.post( "getState.php", { id:cid })
 .done(function( data ) {
 $("#State").html(data);
 });

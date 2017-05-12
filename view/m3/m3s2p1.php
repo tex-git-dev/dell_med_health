@@ -6,16 +6,17 @@
 </script>
 <?php
    }
-include("db.php");
+require_once 'db.php';
 include("view/cjs.php");
-$c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
+$dbcon =  Connect_Open();
+$c5 = "select * from records WHERE email IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
-while($row = mysqli_fetch_row($retval1)) {
-    $s2data = json_decode($row[7],true);
+while($row = $retval1->fetch_object()) {
+    $s2data = json_decode($row->module_data,true);
     $dataT1 = $s2data['m2']['sections']['s2']['response1'];
-    $dataN1 = $row[2]." ". $row[3];
+    $dataN1 = $row->fname." ". $row->lname;
     $dataT = $s2data['m2']['sections']['s2']['response2'];
-    $dataN = $row[2]." ". $row[3];
+    $dataN = $row->fname." ". $row->lname;
     if ($dataT) {
 ?>
 <script type="text/javascript">
@@ -257,7 +258,7 @@ app.response2 = function(){
          <div class="col-sm-2"></div>
          <div class="col-sm-8">
             <div class="videocontent">
-               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod2_Sec2.jpg" preload="auto" data-setup='{"fluid": true}'>
+               <video class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264" controls poster="https://s3.amazonaws.com/dell-med/Mod3_Sec2.png" preload="auto" data-setup='{"fluid": true}'>
                   <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec2.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec2.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec2.ogv" type="video/ogv"></source>
@@ -456,7 +457,7 @@ app.response2 = function(){
         <br>
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><f><a target="_blank" href="?id=m3/m3s2p2" style="color:#fff;"><div class="driveS2">Dive Deeper</div></a></f></div>
+            <div class="col-sm-4"><f><a href="#" class="divedeeper" style="color:#fff;"><div class="driveS2">Dive Deeper</div></a></f></div>
             <div class="col-sm-4"></div>
         </div>
       </div>
@@ -551,7 +552,7 @@ app.response2 = function(){
             </div>
           </div>
 
- <div class="col-md-12 col-sm-12 col-xs-12">            
+         <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
                 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
@@ -598,5 +599,15 @@ app.response2 = function(){
 	 }
 
   });
+  $(".divedeeper").click(function(){
+  	   url ="m3s2p2.php";
+	  newwindow=window.open(url,'DellHealth','height=400,width:1000,scrollbars=yes');
+      newwindow.focus();
+  });
 
 </script>
+
+
+<?php 
+Connect_Close($dbcon);
+?>

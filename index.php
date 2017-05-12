@@ -29,11 +29,8 @@
        <script src="js/audioplayer.js"></script>
 	   <script src="js/script.js"></script>
        <?php
-
+require_once 'db.php';
 include("mail.php");
-
-
-include("db.php");
 $LoadPage = 'home';
 $firstTimeWel=false;
 //below is predefiend json for all user inputs. 
@@ -93,6 +90,7 @@ if($_POST){
     //If user comes to login then enter this condition.
     $username = $_POST['username'];
     $password = $_POST['password'];
+	 $dbcon =  Connect_Open();
     $c1 = "select * from users where Email='".$username."' and Pass='".$password."'";
     $Crun=mysqli_query($dbcon,$c1);
      if ($Crun->num_rows != 0) {
@@ -105,6 +103,7 @@ if($_POST){
         $_SESSION['Fname']= $row0->Fname;
         $_SESSION['Lname']= $row0->Lname;
      }
+	 Connect_Close($dbcon);
   }
   if(isset($_POST['registration']))  
   {
@@ -119,16 +118,15 @@ if($_POST){
     $City=$_POST['City']; 
     $State=$_POST['State']; 
     $Country=$_POST['Country']; 
-    $PPRole=$_POST['PPRole']; 
+    $PPRole=$_POST['PPRole'];	
+	 $dbcon =  Connect_Open();
     $c1 = "select * from users where Email='".$Email."'";
     $Crun=mysqli_query($dbcon,$c1);
      if ($Crun->num_rows == 0) {
 
        $q1="INSERT INTO users (Fname,Lname,Email,Pass,Org,Age,Gender,City,State,Country,PPRole) VALUES ('$Fname','$Lname','$Email','$Pass','$Org','$Age','$Gender','$City','$State','$Country','PPRole');";  
      $Qrun1=mysqli_query($dbcon,$q1);
-        if($Qrun1 == 1){
-        //If user registration data insert perfectly then it will create record row in records table. 
-            $q2="INSERT INTO records (Fname,Lname,email,module_Number,module_data,status) VALUES ('$Fname','$Lname','$Email','m1','$startData','active');";
+      $q2="INSERT INTO records (Fname,Lname,email,module_Number,module_data,status) VALUES ('$Fname','$Lname','$Email','m1','$startData','active');";
             $Qrun2=mysqli_query($dbcon,$q2);
              session_start();
               $_SESSION['username'] = $Email;
@@ -136,7 +134,7 @@ if($_POST){
               $LoadPage = 'home';
               $_SESSION['Fname']= $Fname;
               $_SESSION['Lname']= $Lname;
-        }
+
          $firstTimeWel=true;
      
     }else{
@@ -148,13 +146,15 @@ if($_POST){
       </script>
       <?php
     }
-
+	Connect_Close($dbcon);
   }
 
 }
+
+   $dbcon =  Connect_Open();
  @session_start();
 if(@$_SESSION['username']){
-  //If session is active then find data in records table for this user. 
+  //If session is active then find data in records table for this user.
   $c0 = "select * from records where email='".$_SESSION['username']."' and status='active'";
   $Crun0=mysqli_query($dbcon,$c0);
   $row = $Crun0->fetch_object();
@@ -164,7 +164,7 @@ if(@$_SESSION['username']){
   $status= $row->status;
   $survey_response= $row->survey_response;
   $data = json_encode($module_data);
-  //echo $data;
+
 ?>
 <script type="text/javascript">
 
@@ -180,7 +180,7 @@ $(document).ready(function() {
 	$(".btnM4").addClass('complete');
 	$(".btn-Survey").css("pointer-events","visible");
 	$("#SurveyButton").css("pointer-events","visible");
-	if("<?php echo $survey_response; ?>"!="NOT_NOW")
+	if(("<?php echo $survey_response; ?>"=="OPEN") || ("<?php echo $survey_response; ?>"==""))
 	{
      document.getElementById('id01').style.display='block'; 
 	}
@@ -206,7 +206,9 @@ $(document).ready(function() {
     });*/
 });
 </script>
-<?php }else{?>
+<?php 
+Connect_Close($dbcon);
+}else{?>
 <script type="text/javascript">
 //If session is inactive then call simple init function. 
 $(document).ready(function() {
@@ -243,13 +245,25 @@ if(mnumber==3)
 app.ClickOnModule="module3";
 }
   // this is used for modules button active and deactive stage in menu module section.
-    var s = app.qs["id"][6];
+    var s ="";
     app.SelecteM = app.qs["id"][0]+app.qs["id"][1];
     var c = parseInt(app.qs["id"][1])-1;
      $(".allModule1 .btn").eq(c).addClass('act1');
      $(".allModule2 .btn").eq(c).addClass('act1');
      $(".allModule3 .btn").eq(c).addClass('act1');
   // below function is used for all sections data populate for all three modules.
+  	 if(app.qs["id"]=="m3/m3s2p2")
+	 {
+	  s =  3;
+	 }
+	 else
+	 {
+	  s = app.qs["id"][6];
+	 }
+	 if(s>3 && app.qs["id"][1] =="3")
+	 {
+	   s++;
+	 }
     app.SDataPopulate(s);
 });
 </script>
@@ -266,10 +280,8 @@ try {
   //if session is inactive then user also redirect to homepage.
   include 'view/'.$LoadPage.'.php';
 }
+
 //include 'footer.php';
-
-
-
   ?>
   
   

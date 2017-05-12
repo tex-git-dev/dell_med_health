@@ -98,7 +98,7 @@ include("view/cjs.php");
                   </div>
                        <div class="col-md-1 text-center"><a href="VTT/Mod2_Sec8.pdf" class="btn btn-info" target="_blank">
 					   <i class="fa fa-download" aria-hidden="true"></i>
-					   TranScript</a></div>             
+					   Transcript</a></div>             
                  </div>
               <div class="row  m2s8c3">             
                 <div class="col-sm-1"></div>
@@ -373,26 +373,8 @@ function funaud() {
 
 
 
-/*$(document).ready(function(){
+$(document).ready(function(){
   var flagvd = false;
  $( 'audio' ).audioPlayer();
-     $('.paddb').inview({
-        'onEnter': function($object) {
-          if(flagvd == false){
-          $('.audioplayer').addClass('audioplayer-playing');
-            $('audio').trigger('play');
-            flagvd=true;
-          }
-            //$("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
-            // $(".pText").text('PAUSE NOW')
-          },
-          'onLeave': function($object) {
-           // $('audio').trigger('pause');
-            
-             // $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
-             // $(".pText").text('PLAY NOW')  
-          }
-      });
-
-  });*/
+  });
 </script>

@@ -1,12 +1,14 @@
 <?php
+require_once 'db.php';
+$dbcon =  Connect_Open();
 $c1 = "select * from records where email='".$_SESSION['username']."' and status='complete'";
 $Crun0=mysqli_query($dbcon,$c1);
 $row = $Crun0->fetch_object();
 //echo count($row);
 if (count($row) != 0) {
-  /* $q6="INSERT INTO records (Fname,Lname,email,module_Number,module_data,status) VALUES ('$Fname','$Lname','$Email','m1','$startData','active');";
-            $Qrun2=mysqli_query($dbcon,$q6);*/
+
 }
+  Connect_Close($dbcon);
 ?>
 <script type="text/javascript">
 window.moduleCompleteCheck = true;
@@ -33,7 +35,6 @@ app.sortWord = function(loc){
         $.each(CCWord, function(key, value) {
           if (key !='') {
             temp.push({v:value, k: key});
-            //console.log(key)
           }
         });
         temp.sort(function(a,b){
@@ -77,7 +78,6 @@ function cc(arr){
             }else{
               $(".iHeight").eq(i).next().css({"visibility":"hidden"});  
             }
-           // console.log(lineCount)
           }
    }
 function shuffleArray(array) {
@@ -89,19 +89,30 @@ function shuffleArray(array) {
      }
      return array;
    }
+   
+ /*---------------------------------------------------------------------------------------------------*/
+ 
 var pageScroll=null;
 window.onscroll = function(){
   var loc = (($(window).scrollTop() / ($(document).height()-$(window).height())) * 100).toFixed(0);
   pageScroll = parseInt(loc);
-  console.log(pageScroll);
   if(pageScroll>=app.PageComplete){
     app.PageComplete = pageScroll;
   }
 }
 
 $(document).ready(function() {
-	 var section = 's'+app.qs["id"][6];
-  var SelecteM ='m'+app.qs["id"][1];
+
+	 var section = "";
+	 if(app.qs["id"]=="m3/m3s2p2")
+	 {
+	 section =  "s9";
+	 }
+	 else
+	 {
+	 section = 's'+app.qs["id"][6];
+	 }
+    var SelecteM ='m'+app.qs["id"][1];
  
   app.SData = app.MData[SelecteM].sections[section];
   app.MIN = parseInt(app.SData['MIN']);
@@ -126,14 +137,24 @@ $(document).ready(function() {
      var mHR = 0;
      var mMIN = 0;
      var mComplete = 0;
-
+     var i = 0;
      $.each(app.MData[SelecteM].sections ,function(k,v){
         var h = parseInt(v['HR']);
         var m = parseInt(v['MIN']);
         var p = parseInt(v['complete']);
         mMIN = mMIN + m;
         mHR = mHR + h;
-        mComplete = mComplete + p;
+		if(app.SelecteM!="m3")
+		{
+         mComplete = mComplete + p;
+		}
+		else
+		{
+		if(k!="s9")
+		{
+		    mComplete = mComplete + p;
+		}
+	   }
     })
     mHR = parseInt(mHR) + parseInt((mMIN/60).toFixed(0)); 
     mMIN = (parseInt(mMIN)%60);
@@ -181,7 +202,6 @@ $(document).ready(function() {
 			}
      }, 1000);
 });
-
 </script>
 
 

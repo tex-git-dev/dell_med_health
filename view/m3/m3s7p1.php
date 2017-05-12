@@ -7,16 +7,17 @@
 
 <?php
    }
-include("db.php");
+require_once 'db.php';
 include("view/cjs.php");
-$c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
+$dbcon =  Connect_Open();
+$c5 = "select * from records WHERE email IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
-while($row = mysqli_fetch_row($retval1)) {
-    $s2data = json_decode($row[7],true);
-    $dataT1 = $s2data['m2']['sections']['s2']['response1'];
-    $dataN1 = $row[2]." ". $row[3];
-    $dataT = $s2data['m2']['sections']['s2']['response2'];
-    $dataN = $row[2]." ". $row[3];
+while($row = $retval1->fetch_object()) {
+    $s2data = json_decode($row->module_data,true);
+    $dataT1 = $s2data['m3']['sections']['s7']['response1'];
+    $dataN1 = $row->fname." ". $row->lname;
+    $dataT = $s2data['m3']['sections']['s7']['response2'];
+    $dataN = $row->fname." ". $row->lname;
     if ($dataT) {
 ?>
 <script type="text/javascript">
@@ -4326,3 +4327,6 @@ $("#comparetocm").css("visibility","visible");
   });
 
 </script>
+<?php 
+Connect_Close($dbcon);
+?>

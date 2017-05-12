@@ -165,6 +165,9 @@ include("view/cjs.php");
      <div class="container bg-3 text-center">
          <f><h3 class="boldT">A LOT OF BUCKS, NOT A LOT OF BANG:<br> THE HEALTH CARE COST AND QUALITY CRISIS</h3></f>
       </div>
+	     <div class="container bg-3">
+         <f><p>Watch the interactive video below. When the video pauses, you will have the opportunity to answer on-screen questions about the material. The video will resume once you have answered the question correctly.</p></f>
+      </div>
       <br>
       <br>
 
@@ -259,7 +262,7 @@ left: 77%;
 
                <div class="videocontent">
           <div class="col-md-12 col-sm-12 col-xs-12" id="skdiv" style="background-color:transprant;height:100%;position:absolute;margin-top:0px;margin-left:0px;z-index:1;display:none;">
-                <p id="skp1">WHICH DATA POINT DO YOU THINK REPRESENTS<br> THE UNITED STATES?</p>
+                <p id="skp1" class="text-uppercase">Select the data point you think represents<br> THE UNITED STATES?</p>
 
                 <p onclick="checkPlay2()" id="skid2"></p>
                  <p onclick="checkPlay2()" id="skp3" class="video-point" data-toggle="popover" data-placement="top" title="JAPAN">&nbsp;</p>
