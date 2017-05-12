@@ -1,4 +1,6 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<body>
 <script>
 document.getElementById('id01').style.display='none';
 </script>
@@ -81,7 +83,7 @@ Your response has been recorded.";
       </div>
    </div>
  </div>
- 
+ <div class="col-md-12 Step1">
  <div class="col-md-12" style="display:<?php if($chk=="complete"){ echo "none";}else{ echo "block"; } ?>;">
  <h3 class="text-center" style="font-weight:bold;">CONGRATULATIONS!</h3> 
  <p class="text-center" style="font-size:14px;padding:0px 150px;">
@@ -96,7 +98,7 @@ experience, information, and presentation valuable.</p>
 <p class="text-center"  style="font-size:14px;">Your certificate will be emailed to you within a week of survey completion.</p>
 <p class="text-center" style="font-size:14px;">Thank you!</p>
  </div>
- 
+ </div>
  <script>
  function clickFuncrion()
  {
@@ -106,5 +108,7 @@ experience, information, and presentation valuable.</p>
       win.focus();
 }
  </script>
+ </body>
+ </html>
 
 

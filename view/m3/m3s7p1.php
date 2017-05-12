@@ -10,7 +10,7 @@
 require_once 'db.php';
 include("view/cjs.php");
 $dbcon =  Connect_Open();
-$c5 = "select * from records WHERE email IN ('".$_SESSION['username']."')";
+$c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
 while($row = $retval1->fetch_object()) {
     $s2data = json_decode($row->module_data,true);

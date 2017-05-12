@@ -9,7 +9,7 @@
 require_once 'db.php';
 include("view/cjs.php");
 $dbcon =  Connect_Open();
-$c5 = "select * from records WHERE email IN ('".$_SESSION['username']."')";
+$c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
 while($row = $retval1->fetch_object()) {
     $s2data = json_decode($row->module_data,true);
@@ -82,6 +82,7 @@ window.onresize = function(){app.showRM();};
       if (loc == "") {
         alert("Please write the response.")
        }else{
+	             var l = app.cArrayT1.length;
          app.addOpt('myCarousel1',app.cArrayT1.length);
         $(".act1").hide();
         $(".carouselC1").css({"visibility":"visible","height":"auto"});

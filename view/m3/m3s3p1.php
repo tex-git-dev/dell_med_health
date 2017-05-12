@@ -1,3 +1,4 @@
+
 <?php
       if(!$_SESSION['username']){
 
@@ -19,7 +20,7 @@ include("view/cjs.php");
          <br>         
          <div class="row">
             <div class="col-sm-12"> 
-             <f><p data--duration="1.5s">MODULE 3 | <span style="color:#f68121">Section 3</span></p></f>
+             <f><p data-duration="1.5s">MODULE 3 | <span style="color:#f68121">Section 3</span></p></f>
             </div>
          </div>
           <div class="row">
@@ -151,7 +152,7 @@ include("view/cjs.php");
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
                                 <f><p class="ques">What percentage of health care spending is waste (i.e., does not improve health)? </p></f>
-                                <div class="row">
+                                <div class="row row-eq-height">
                                 <!--<div class="col-sm-12">
                                     <div class="row eq-h"> -->
                                        <?php
@@ -204,7 +205,8 @@ include("view/cjs.php");
                     </div>
                 </div>
               </div>
-                  <a class="left left_a carousel-control m3s3b7" href="#myCarousel" role="button" data-slide="prev" style="display:none;">
+            
+			<a class="left left_a carousel-control m3s3b7" href="#myCarousel" role="button" data-slide="prev" style="display:none;">
                     <span class="fa fa-angle-left fa-2x" aria-hidden="true"></span>
                   </a>
                   <a class="right right_a carousel-control m3s3b7" href="#myCarousel" role="button" data-slide="next">
@@ -374,7 +376,7 @@ include("view/cjs.php");
         <!-- Wrapper for slides -->
         <div class="carousel-inner additem" role="listbox">
 
-            <div class="item active" id="2">
+              <div class="item active" id="2">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -434,7 +436,7 @@ include("view/cjs.php");
                 </div>
             </div>
 
-            <div class="item" id="3">
+              <div class="item" id="3">
                 <div class="container-full text-center white">
                     <div class="container">    
                         <div class="row">
@@ -554,7 +556,6 @@ include("view/cjs.php");
                 </div>
               </div>
 
-
                <div class="item" id="5">
                 <div class="container-full text-center white">
                     <div class="container">    
@@ -614,8 +615,6 @@ include("view/cjs.php");
                     </div>
                 </div>
               </div>
-
-
 
                <div class="item" id="6">
                 <div class="container-full text-center white">
@@ -677,7 +676,6 @@ include("view/cjs.php");
                 </div>
               </div>
 
-
                <div class="item" id="7">
                 <div class="container-full text-center white">
                     <div class="container">    
@@ -738,8 +736,6 @@ include("view/cjs.php");
                 </div>
               </div>
 
-
-
                <div class="item" id="8">
                 <div class="container-full text-center white">
                     <div class="container">    
@@ -799,7 +795,6 @@ include("view/cjs.php");
                     </div>
                 </div>
               </div>
-
 
                <div class="item" id="9">
                 <div class="container-full text-center white">
@@ -1041,6 +1036,7 @@ include("view/cjs.php");
                   </div>
                 </div>
             </div>
+			
             <div class="row">
                 <div class="col-sm-12">
                   <div class='well1'>
@@ -1338,7 +1334,7 @@ function TryA(){
 
 <script>
 
-  $("#my-Carousel2 .additem").on("swipeleft",function(){
+  $("#my-Carousel2 .additem").on("swipeleft",function(e){
      var i = $(this).children("div.item.active").index()+1;
 	 var l = $(this).children("div.item").length;
 	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
@@ -1355,7 +1351,8 @@ function TryA(){
 	 }
 	 setMsgBoxHeight();
   });
-  $("#my-Carousel2 .additem").on("swiperight",function(){
+  
+  $("#my-Carousel2 .additem").on("swiperight",function(e){
      var i = $(this).children("div.item.active").index()+1;
 	 var l = $(this).children("div.item").length;
 	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
