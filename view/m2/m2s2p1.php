@@ -9,7 +9,7 @@
 require_once 'db.php';
 include("view/cjs.php");
 $dbcon =  Connect_Open();
-$c5 = "select * from records WHERE email IN ('".$_SESSION['username']."')";
+$c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
 while($row = $retval1->fetch_object()) {
     $s2data = json_decode($row->module_data,true);
@@ -18,17 +18,19 @@ while($row = $retval1->fetch_object()) {
     $dataT = $s2data['m2']['sections']['s2']['response2'];
     $dataN = $row->fname." ". $row->lname;
     if ($dataT) {
+
 ?>
 <script type="text/javascript">
-    app.cArrayT.push("<?php echo $dataT1;?>");
-    app.cArrayN.push("<?php echo $dataN1;?>");
+
+    app.cArrayT.push("<?php echo $dataT;?>");
+    app.cArrayN.push("<?php echo $dataN;?>");
 </script>
 <?php } 
 if ($dataT1) {
 ?>
 <script type="text/javascript">
-    app.cArrayT1.push("<?php echo $dataT;?>");
-    app.cArrayN1.push("<?php echo $dataN;?>");
+    app.cArrayT1.push("<?php echo $dataT1;?>");
+    app.cArrayN1.push("<?php echo $dataN1;?>");
 </script>
  
 <?php }}?>
@@ -50,7 +52,7 @@ $(document).ready(function() {
 });
 window.onresize = function(){app.showRM();};
 app.addOpt=function(id,len){
-  var sizeC = Math.floor(len/3); 
+  var sizeC = Math.ceil(len/3); 
   if (sizeC>1) {
     var circleList='<li data-target="#'+id+'" data-slide-to="0" class="active"></li>';
     for (var i = 1; i <sizeC; i++) {
