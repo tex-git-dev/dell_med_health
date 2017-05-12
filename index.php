@@ -126,9 +126,7 @@ if($_POST){
 
        $q1="INSERT INTO users (Fname,Lname,Email,Pass,Org,Age,Gender,City,State,Country,PPRole) VALUES ('$Fname','$Lname','$Email','$Pass','$Org','$Age','$Gender','$City','$State','$Country','PPRole');";  
      $Qrun1=mysqli_query($dbcon,$q1);
-	 echo $Qrun1;
-        if($Qrun1 == 1){ 
-            $q2="INSERT INTO records (Fname,Lname,email,module_Number,module_data,status) VALUES ('$Fname','$Lname','$Email','m1','$startData','active');";
+      $q2="INSERT INTO records (Fname,Lname,email,module_Number,module_data,status) VALUES ('$Fname','$Lname','$Email','m1','$startData','active');";
             $Qrun2=mysqli_query($dbcon,$q2);
              session_start();
               $_SESSION['username'] = $Email;
@@ -136,7 +134,7 @@ if($_POST){
               $LoadPage = 'home';
               $_SESSION['Fname']= $Fname;
               $_SESSION['Lname']= $Lname;
-        }
+
          $firstTimeWel=true;
      
     }else{

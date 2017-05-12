@@ -35,7 +35,6 @@ app.sortWord = function(loc){
         $.each(CCWord, function(key, value) {
           if (key !='') {
             temp.push({v:value, k: key});
-            //console.log(key)
           }
         });
         temp.sort(function(a,b){
@@ -79,7 +78,6 @@ function cc(arr){
             }else{
               $(".iHeight").eq(i).next().css({"visibility":"hidden"});  
             }
-           // console.log(lineCount)
           }
    }
 function shuffleArray(array) {
@@ -117,7 +115,6 @@ $(document).ready(function() {
     var SelecteM ='m'+app.qs["id"][1];
  
   app.SData = app.MData[SelecteM].sections[section];
-  console.log(app.SData);
   app.MIN = parseInt(app.SData['MIN']);
   app.HR = parseInt(app.SData['HR']);
   var sec = 0;
@@ -145,7 +142,6 @@ $(document).ready(function() {
         var h = parseInt(v['HR']);
         var m = parseInt(v['MIN']);
         var p = parseInt(v['complete']);
-		console.log("Section number "+k+" have been completed "+p+"%");
         mMIN = mMIN + m;
         mHR = mHR + h;
 		if(app.SelecteM!="m3")

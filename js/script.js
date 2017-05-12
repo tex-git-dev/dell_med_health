@@ -289,7 +289,9 @@ DataSave:function(dataSave){
 	   else if(index == 3)
 	   {
 	   url ="m3s2p2.php";
-	  newwindow=window.open(url,'DellHealth','height=400,width:1000,scrollbars=yes');
+       var width = $(window).width()-25 ; 
+	    var height = $(window).height()-25; 
+	  newwindow=window.open(url,'DellHealth','height='+height+',width='+width+',scrollbars=yes');
       newwindow.focus();
 	   }
 	   else

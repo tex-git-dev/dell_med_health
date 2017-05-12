@@ -1,17 +1,29 @@
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dell Medical School | The University of Texas at Austin</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <link rel="stylesheet" href="fonts/fonts.css"/>
-    <link rel="stylesheet" href="css/animate.css"> 
+       <link rel="stylesheet" href="css/animate.css"> 
       <link rel="stylesheet" href="css/common.css">
+      
       <link rel="stylesheet" href="css/maxWidth_100x299.css">
       <link rel="stylesheet" href="css/maxWidth_300x500.css">
       <link rel="stylesheet" href="css/maxWidth_501x765.css">
       <link rel="stylesheet" href="css/maxWidth_766x1000.css">
       <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.validate.js"></script>
       <script type="text/javascript" src="js/wow.js"></script>
+      <script type="text/javascript" src="js/plotly-latest.min.js"></script>
+      <script type="text/javascript" src="js/jquery.inview.js"></script>
 	   <script src="js/script.js"></script>
-	  
+	</head>
+<body>	
 <?php
 @session_start();
       if(!$_SESSION['username']){
@@ -687,3 +699,5 @@ function TryA(){
         }      
 
 </script>
+</body>
+</html>
