@@ -43,8 +43,8 @@ $chk= $row->survey_response;
  if($chk!="complete"){
 ?> 
          <div class="row">
-            <div class="col-sm-12">
-               <f><p data--duration="1.5s">Collection Complete</p></f>
+            <div class="col-sm-12 col-xs-12">
+               <f><p data--duration="1.5s" style="display:flex;">Collection Complete</p></f>
             </div>
          </div>
 		 <?php 
@@ -86,15 +86,15 @@ Your response has been recorded.";
  <div class="col-md-12 Step1">
  <div class="col-md-12" style="display:<?php if($chk=="complete"){ echo "none";}else{ echo "block"; } ?>;">
  <h3 class="text-center" style="font-weight:bold;">CONGRATULATIONS!</h3> 
- <p class="text-center" style="font-size:14px;padding:0px 150px;">
+ <p class="text-center" style="font-size:14px;">
  You have completed the first collection of modules in Dell Medical School’s series on Value-Based
 Health Care, <b>Introduction to Value-Based Health Care</b>.</p>
 
- <p class="text-center" style="font-size:14px;padding:0px 150px;">
+ <p class="text-center" style="font-size:14px;">
 We would like to thank you for taking the time to complete this collection and hope you found the
 experience, information, and presentation valuable.</p>
  <h3 class="text-center" style="font-weight:bold;">Please take a moment to</h3>
- <p class="text-center"><button style="padding:20px 100px;background:#43BEA7;color:white;font-size:14px;" onclick="clickFuncrion()">Complete our Survey</button></p>
+ <p class="text-center"><button class="btn btn-info" style="padding:20px 20px;background:#43BEA7;color:white;font-size:14px;" onclick="clickFuncrion()">Complete our Survey</button></p>
 <p class="text-center"  style="font-size:14px;">Your certificate will be emailed to you within a week of survey completion.</p>
 <p class="text-center" style="font-size:14px;">Thank you!</p>
  </div>
