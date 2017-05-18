@@ -82,8 +82,13 @@ window.onresize = function(){app.showRM();};
       if (loc == "") {
         alert("Please write the response.")
        }else{
-	             var l = app.cArrayT1.length;
-         app.addOpt('myCarousel1',app.cArrayT1.length);
+	            	        var len = app.cArrayT1.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel1',len);
         $(".act1").hide();
         $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";

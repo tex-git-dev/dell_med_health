@@ -82,7 +82,13 @@ window.onresize = function(){app.showRM();};
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel1',app.cArrayT1.length);
+	   	        var len = app.cArrayT1.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel1',len);
         $(".act1").hide();
         $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";
@@ -162,7 +168,13 @@ app.response2 = function(){
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel2',app.cArrayT.length);
+	   	        var len = app.cArrayT1.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel2',len);
         $(".act2").hide();
         $(".carouselC").css({"visibility":"visible","height":"auto"});
          var items="";
