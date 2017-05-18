@@ -262,7 +262,7 @@ left: 77%;
 
                <div class="videocontent">
           <div class="col-md-12 col-sm-12 col-xs-12" id="skdiv" style="background-color:transprant;height:100%;position:absolute;margin-top:0px;margin-left:0px;z-index:1;display:none;">
-                <p id="skp1" class="text-uppercase">Select the data point you think represents<br> THE UNITED STATES?</p>
+                <p id="skp1" class="text-uppercase">Select the data point you think represents<br> THE UNITED STATES.</p>
 
                 <p onclick="checkPlay2()" id="skid2"></p>
                  <p onclick="checkPlay2()" id="skp3" class="video-point" data-toggle="popover" data-placement="top" title="JAPAN">&nbsp;</p>
@@ -275,7 +275,7 @@ left: 77%;
                  <p class="video-point" id="skp10" onclick="checkPlay()" data-toggle="popover" data-placement="top" title="UNITED STATES">&nbsp;</p>
            </div>
          
-               <video id="myVideo" class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264"  poster="https://s3.amazonaws.com/dell-med/Mod1_Sec3.jpg" controls data-setup='{"fluid": true}'>
+               <video id="myVideo" class="video-js vjs-default-skin  vjs-big-play-centered" width="640" height="264"  poster="https://s3.amazonaws.com/dell-med/Mod1_Sec3.jpg" controls data-setup='{"fluid": true}' playsinline>
                 <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.mp4" type="video/mp4"></source>
                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.webm" type="video/webm"></source>
                  <source src="https://s3.amazonaws.com/dell-med/Mod1_Sec3.ogv" type="video/ogv"></source>  
@@ -463,9 +463,19 @@ $(this).css("background-color","red");
 
 <script>
 $(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
+    $('[data-toggle="popover"]').popover();  
+   $(".vjs-fullscreen-control").css("display","none");
+     eventList();
 });
+
+function eventList()
+{
+             var vid = document.getElementsByTagName('video');
+            vid.addEventListener('webkitbeginfullscreen', function(evt) { evt.preventDefault();}, false); 
+}
 </script>
+
+
 
 
 <footer class="container-fluid">         

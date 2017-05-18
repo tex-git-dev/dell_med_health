@@ -263,7 +263,7 @@ app.response2 = function(){
                   <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec2.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec2.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec2.ogv" type="video/ogv"></source>
-                  <track label="English" kind="subtitles" srclang="en" src="VTT/Ms. Jones M3.vtt" >
+                  <track label="English" kind="subtitles" srclang="en" src="VTT/MsJonesM3.vtt" >
                </video>
             </div>
          </div>

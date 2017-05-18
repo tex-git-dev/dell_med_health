@@ -293,7 +293,7 @@ try {
       <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
 	   <h3 class="text-center">Congratulations!</h3>
 	   <div class="col-md-12">
-           You have completed the Introduction to Value-Based Health Care modules. Please follow this link <a href="?id=survey" class="mcmpnotnow" target="_blank" style="color:skyblue;">Click here</a> to complete a survey about these modules. Once you have completed this survey, you will receive your certificate of completion for these modules.
+           You have completed the Introduction to Value-Based Health Care modules. Please follow this link <a onclick="window.location='?id=survey'" class="mcmpnotnow" style="color:skyblue;cursor:pointer;">Click here</a> to complete a survey about these modules. Once you have completed this survey, you will receive your certificate of completion for these modules.
         </div>
         <div class="col-md-12 text-right" style="padding:20px;">
           <button type="button" class="btn btn-danger mcmpnotnow" >Not Now</button>

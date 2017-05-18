@@ -1437,11 +1437,9 @@ app.OpenMS=function(){
                 <button class="btn btn-default" type="submit" name="registration">Sign up</button>
                 </div>
              </div>
-             <!--  <div class="col-sm-6  text-right text-sm-center"> 
-               <div class="form-group">
-                <button class="btn btn-default " onclick="app.OpenMS();" type="button" >LOG IN</button>
-                </div>
-            </div> -->
+         <div class="col-sm-12 text-center " style="color:red;"> 
+                *All fields are required.
+            </div>
             
         </div>
              
@@ -1937,8 +1935,8 @@ PPRole: {
  
 //specify validation error messages
 messages: {
-    Fname: "First Name field cannot be blank!",
-    Lname: "Last Name field cannot be blank!",
+    Fname: "This field is required.",
+    Lname: "This field is required.",
 password: {
     required: "Password field cannot be blank!",
     minlength: "Your password must be at least 6 characters long"
