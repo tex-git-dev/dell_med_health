@@ -15,25 +15,22 @@
       <link rel="stylesheet" href="css/maxWidth_300x500.css">
       <link rel="stylesheet" href="css/maxWidth_501x765.css">
       <link rel="stylesheet" href="css/maxWidth_766x1000.css">
-
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.validate.js"></script>
       <script type="text/javascript" src="js/wow.js"></script>
       <script type="text/javascript" src="js/plotly-latest.min.js"></script>
       <script type="text/javascript" src="js/jquery.inview.js"></script>
+	  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+	   <link rel="stylesheet" href="css/w3.css">
+
       <link href="http://vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
-      <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
+       <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
        <script src="js/audioplayer.js"></script>
-      <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script> -->
-      <script src="js/script.js"></script>
+	   <script src="js/script.js"></script>
        <?php
-
+require_once 'db.php';
 include("mail.php");
-
-
-include("db.php");
 $LoadPage = 'home';
 $firstTimeWel=false;
 //below is predefiend json for all user inputs. 
@@ -93,6 +90,7 @@ if($_POST){
     //If user comes to login then enter this condition.
     $username = $_POST['username'];
     $password = $_POST['password'];
+	 $dbcon =  Connect_Open();
     $c1 = "select * from users where Email='".$username."' and Pass='".$password."'";
     $Crun=mysqli_query($dbcon,$c1);
      if ($Crun->num_rows != 0) {
@@ -105,6 +103,7 @@ if($_POST){
         $_SESSION['Fname']= $row0->Fname;
         $_SESSION['Lname']= $row0->Lname;
      }
+	 Connect_Close($dbcon);
   }
   if(isset($_POST['registration']))  
   {
@@ -119,7 +118,8 @@ if($_POST){
     $City=$_POST['City']; 
     $State=$_POST['State']; 
     $Country=$_POST['Country']; 
-    $PPRole=$_POST['PPRole']; 
+    $PPRole=$_POST['PPRole'];	
+	 $dbcon =  Connect_Open();
     $c1 = "select * from users where Email='".$Email."'";
     $Crun=mysqli_query($dbcon,$c1);
      if ($Crun->num_rows == 0) {
@@ -128,7 +128,7 @@ if($_POST){
      $Qrun1=mysqli_query($dbcon,$q1);
         if($Qrun1 == 1){
         //If user registration data insert perfectly then it will create record row in records table. 
-            $q2="INSERT INTO records (Fname,Lname,email,module_Number,module_data,status) VALUES ('$Fname','$Lname','$Email','m1','$startData','active');";
+            $q2="INSERT INTO records (Fname,Lname,email,module_Number,module_data,status,survey_response) VALUES ('$Fname','$Lname','$Email','m1','$startData','active','');";
             $Qrun2=mysqli_query($dbcon,$q2);
              session_start();
               $_SESSION['username'] = $Email;
@@ -148,13 +148,15 @@ if($_POST){
       </script>
       <?php
     }
-
+	Connect_Close($dbcon);
   }
 
 }
+
+   $dbcon =  Connect_Open();
  @session_start();
 if(@$_SESSION['username']){
-  //If session is active then find data in records table for this user. 
+  //If session is active then find data in records table for this user.
   $c0 = "select * from records where email='".$_SESSION['username']."' and status='active'";
   $Crun0=mysqli_query($dbcon,$c0);
   $row = $Crun0->fetch_object();
@@ -162,14 +164,38 @@ if(@$_SESSION['username']){
   $module_data= $row->module_data;
   $module_section_data= $row->module_section_data;
   $status= $row->status;
+  $survey_response= $row->survey_response;
   $data = json_encode($module_data);
-  //echo $data;
+
 ?>
 <script type="text/javascript">
 
 $(document).ready(function() {
   //After that data convert  string to JSON object .
   app.MData = JSON.parse(<?php echo ($data);?>);
+  
+   if(app.MData['m1']['status']=="complete" && app.MData['m2']['status']=="complete" && app.MData['m3']['status']=="complete")
+	{
+	$(".btnM4 .small").text("complete");
+	$("#Survey-notcomplete").css("display","none");
+	$("#Survey-complete").css("display","block");
+	$(".btnM4").addClass('complete');
+	$(".btn-Survey").css("pointer-events","visible");
+	$("#SurveyButton").css("pointer-events","visible");
+	if(("<?php echo $survey_response; ?>"=="OPEN") || ("<?php echo $survey_response; ?>"==""))
+	{
+     document.getElementById('id01').style.display='block'; 
+	}
+	}
+	else
+	{
+    $("#Survey-notcomplete").css("display","block");
+	$("#Survey-complete").css("display","none");
+	$(".btnM4 .small").text("active");
+	$(".btnM4").removeClass('complete');
+    $(".btn-Survey").css("pointer-events","none");
+	$("#SurveyButton").css("pointer-events","none");
+    }
   app.SelecteM = '<?php echo $module_Number;?>';
   app.init();
   // below function is used for all module data populate for all three modules.
@@ -182,7 +208,9 @@ $(document).ready(function() {
     });*/
 });
 </script>
-<?php }else{?>
+<?php 
+Connect_Close($dbcon);
+}else{?>
 <script type="text/javascript">
 //If session is inactive then call simple init function. 
 $(document).ready(function() {
@@ -219,13 +247,25 @@ if(mnumber==3)
 app.ClickOnModule="module3";
 }
   // this is used for modules button active and deactive stage in menu module section.
-    var s = app.qs["id"][6];
+    var s ="";
     app.SelecteM = app.qs["id"][0]+app.qs["id"][1];
     var c = parseInt(app.qs["id"][1])-1;
      $(".allModule1 .btn").eq(c).addClass('act1');
      $(".allModule2 .btn").eq(c).addClass('act1');
      $(".allModule3 .btn").eq(c).addClass('act1');
   // below function is used for all sections data populate for all three modules.
+  	 if(app.qs["id"]=="m3/m3s2p2")
+	 {
+	  s =  3;
+	 }
+	 else
+	 {
+	  s = app.qs["id"][6];
+	 }
+	 if(s>3 && app.qs["id"][1] =="3")
+	 {
+	   s++;
+	 }
     app.SDataPopulate(s);
 });
 </script>
@@ -242,11 +282,40 @@ try {
   //if session is inactive then user also redirect to homepage.
   include 'view/'.$LoadPage.'.php';
 }
+
 //include 'footer.php';
-
-
-
   ?>
-   
+  
+  
+ <div id="id01" class="w3-modal" style="z-index:99999;">
+    <div class="w3-modal-content" style="background:url('img/bgLogin.png');color:white;">
+      <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+	   <h3 class="text-center">Congratulations!</h3>
+	   <div class="col-md-12">
+           You have completed the Introduction to Value-Based Health Care modules. Please follow this link <a onclick="window.location='?id=survey'" class="mcmpnotnow" style="color:skyblue;cursor:pointer;">Click here</a> to complete a survey about these modules. Once you have completed this survey, you will receive your certificate of completion for these modules.
+        </div>
+        <div class="col-md-12 text-right" style="padding:20px;">
+          <button type="button" class="btn btn-danger mcmpnotnow" >Not Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
    </body>
+   
+   <script>
+   $(".mcmpnotnow").click(function(){
+   document.getElementById('id01').style.display='none';
+          $('#ModuleCompleteModal').modal('hide');
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            }
+        };
+        xmlhttp.open("GET", "check1.php", true);
+        xmlhttp.send();
+});
+   </script>
 </html>
+

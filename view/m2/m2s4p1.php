@@ -27,7 +27,7 @@ include("view/cjs.php");
             </div>
           <div class="row">
             <div class="col-sm-12">  
-                <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
+                <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a> 
             </div>
          </div>
          </div>
@@ -53,7 +53,7 @@ include("view/cjs.php");
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec4.mp4" type="video/mp4"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec4.webm" type="video/webm"></source>
                   <source src="https://s3.amazonaws.com/dell-med/Mod2_Sec4.ogv" type="video/ogg"></source>
-                   <track kind="subtitles" src="" srclang="en" label="English"  default/>
+                  <track label="English" kind="subtitles" srclang="en" src="VTT/Mod2_Sec4.vtt">
                </video>
             </div>
          </div>
@@ -225,7 +225,7 @@ include("view/cjs.php");
     </div>
 
 <script type="text/javascript">
-  $(document).ready(function(){
+ /* $(document).ready(function(){
   var flagvd = false;
      $('.video-js').inview({
         'onEnter': function($object) {
@@ -240,7 +240,7 @@ include("view/cjs.php");
           }
 
       });
-  });
+  });*/
       </script>
       
 
@@ -378,21 +378,25 @@ function vidiv(){
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m2/m2s3p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m2/m2s3p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 2 | Section 3</span>
                 <span class="sp1"><strong>Measuring Outcomes</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m2/m2s5p1"><span class="ssp2">MODULE 2 | Section 5</span>
+                <a href="#" onclick="window.location='?id=m2/m2s5p1'"><span class="ssp2">MODULE 2 | Section 5</span>
                 <span class="sp2"><strong>Using Measures Frameworks to Improve Outcomes</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
 
-          <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
           

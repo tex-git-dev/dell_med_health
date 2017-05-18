@@ -9,6 +9,7 @@ line-height: 22px;
   font-size: 450%;
   color: #0cf;
 }
+
 .m3s7p1 div#my_favorite_latin_words span.w9 {
   font-size:  400%;
   color: #0cf;
@@ -173,7 +174,7 @@ margin-left: 0;
 
 .m3s7p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s6img1.png') no-repeat center center fixed; 
+    background: url('../img/m3s7img1head.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -266,12 +267,13 @@ margin-left: 0;
     padding: 10px;
     background: #535B72;
     color: #FFFFFF !important;
-    font-size: 13px !important;
-    margin: 0;
+    font-size: 14px !important;
+    margin: 8px 0;
     cursor: pointer;
     border:2px solid #535B72;
     height: 100%;
-    font-family: "GothamHTF-Book" !important;
+	
+
 }
 
 
@@ -384,6 +386,9 @@ margin-left: 0;
     font-family: "GothamHTF-Medium";
 }
 
+.m3s7p1 .chargeM {
+    width: 97.4%
+}
 
 
 
@@ -405,7 +410,7 @@ and (max-device-width : 1000px) {
 
 .m3s7p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s6img1.png') no-repeat center center; 
+    background: url('../img/m3s7img1head.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -436,6 +441,10 @@ and (max-device-width : 1000px) {
         display: none !important;
     }
 
+ .m3s7p1 .chargeM {
+    width: 98.4%
+}
+
 
 }
 
@@ -458,7 +467,7 @@ and (max-device-width : 765px) {
 
 .m3s7p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s6img1.png') no-repeat left center; 
+    background: url('../img/m3s7img1head.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -519,7 +528,7 @@ and (max-device-width : 500px) {
 
     .m3s7p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s6img1.png') no-repeat left center; 
+    background: url('../img/m3s7img1head.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -581,7 +590,7 @@ and (max-device-width : 299px) {
 
 .m3s7p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m2s6img1.png') no-repeat left center; 
+    background: url('../img/m3s7img1head.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

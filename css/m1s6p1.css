@@ -1,3 +1,175 @@
+.m1s6p1 .arrwImag {
+    height:100%;
+    position:absolute;
+    top:0;
+    left:-20px;
+}
+.m1s6p1  .m1s6b2 .bgGRAY {
+    background-color: #eaeaea;
+    padding: 15px;
+}
+
+.m1s6p1  .m1s6b2 .bgYELLOW {
+    background-color: #e4c72b;
+    padding: 15px;    
+}
+
+/*  Box  */
+
+.m1s6p1 .m1s6b2 .vertical-align {
+    align-items: center;
+    display: flex;
+}
+
+
+.m1s6p1 .m1s6b2 .col-sm-12 .well1{
+   background: #eaeaea;
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+
+}
+
+.m1s6p1 .m1s6b2 .col-sm-6 {  
+    height: 100%;
+    padding-left: 0px;
+}
+
+.m1s6p1 .m1s6b2 .col-sm-6 .well{   
+     background:#e4c72b;
+     height: 100%;
+     margin-bottom: 0px;
+     border-radius: 0;
+     padding: 15px !important;
+}
+
+.m1s6p1 .m1s6b2 .well1 .row{   
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;
+}
+.m1s6p1 .m1s6b2 .col-sm-6 .well{
+	min-height:140px;
+}
+.m1s6p1 .m1s6b2 .col-sm-6 h4 {
+    margin-left:50px;
+    font-family: "GothamHTF-Bold";
+	text-align:center;
+}
+
+.m1s6p1 .m1s6b2 .col-sm-6 p {
+     padding-left:125px;
+    margin-bottom: 0px !important;
+    font-family: "GothamHTF-Medium";
+}
+.m1s6p1 .m1s6b2 .col-sm-6 .vbhcp{
+	 padding-top:33px;
+}
+
+.m1s6p1 .m1s6b2 .padding-well {
+    padding-left: 0px !important;
+}
+
+/*  Box  */
+
+.m1s6p1 .m1s6b2 p {
+    font-size: 14px;    
+}
+.m1s6p1 .m1s6b2 p:nth-child(2) {
+    font-family: "GothamHTF-Bold"; 
+}
+.m1s6p1 .m1s6b2 p:nth-child(4){
+    font-family: "GothamHTF-BookItalic"; 
+}
+@media screen
+and (min-device-width : 766px)
+and (max-device-width : 991px) {
+.m1s6p1 .m1s6b2 .col-sm-6 .well{
+	min-height:170px;
+}
+.m1s6p1 .m1s6b2 .col-sm-6 h4 {
+     margin-left:100px;
+}
+
+.m1s6p1 .arrwImag {
+    left:-23px;
+}
+
+}
+@media screen
+and (min-device-width : 501px)
+and (max-device-width : 765px) {
+.m1s6p1 .arrwImag {
+   display:none;
+}
+.m1s6p1 .m1s6b2 .col-sm-6 p {
+     padding-left:0;
+	 text-align:center;
+}
+
+.m1s6p1 .m1s6b2 .vertical-align {
+    display: inline;
+}
+
+.m1s6p1 .m1s6b2 .padding-well {
+    padding-bottom: 20px !important;    
+}
+
+.m1s6p1 .m1s6b2 .col-sm-6 .well {
+     margin-bottom: -20px;
+    margin-right: -15px;
+    padding: 20px 20px 20px 30px !important;
+}
+}
+@media  screen
+and (min-device-width : 300px)
+and (max-device-width : 500px) {
+.m1s6p1 .arrwImag {
+   display:none;
+}
+
+.m1s6p1 .m1s6b2 .col-sm-6 p {
+     padding-left:0;
+	 text-align:center;
+}
+
+.m1s6p1 .m1s6b2 .vertical-align {
+    display: inline;
+}
+
+.m1s6p1 .m1s6b2 .padding-well {
+    padding-bottom: 20px !important;    
+}
+
+.m1s6p1 .m1s6b2 .col-sm-6 .well {
+     margin-bottom: -20px;
+    margin-right: -15px;
+    padding: 20px 20px 20px 30px !important;
+}
+}
+@media  screen
+and (min-device-width : 100px)
+and (max-device-width : 299px) {
+.m1s6p1 .arrwImag {
+   display:none;
+}
+.m1s6p1 .m1s6b2 .vertical-align {
+    display: inline;
+}
+
+.m1s6p1 .m1s6b2 .padding-well {
+    padding-bottom: 20px !important;    
+}
+
+.m1s6p1 .m1s6b2 .col-sm-6 .well {
+     margin-bottom: -20px;
+    margin-right: -15px;
+    padding: 20px 20px 20px 30px !important;
+}
+}
+
 .m1s6p1 .s6b1 {
     margin-bottom: 0px;
     background: url('../img/s6img1.jpg') no-repeat center center fixed; 
@@ -114,7 +286,7 @@ margin-bottom: 0px;
 .m1s6p1 .m6b3 h4{
     font-family: "GothamHTF-Bold"; 
     font-size: 22px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .m1s6p1 .m6b3 h5{
     font-family: "GothamHTF-Bold";     
@@ -215,6 +387,10 @@ top: 0px;
     width: 100%;
 }
 
+.m1s6p1 .m6b4 .well {
+    padding-bottom: 0px !important;
+}
+
 .m1s6p1 .m6b2{
      margin-bottom: 0px;
     background: url('../img/s6img2.png') no-repeat left center; 
@@ -289,6 +465,11 @@ and (max-device-width : 765px) {
     padding-bottom: 60px !important;      
 }
 
+.m1s6p1 .m6b4 .well {
+    padding-bottom: 0px !important;
+}
+
+
 
 }
 
@@ -344,6 +525,9 @@ and (max-device-width : 500px) {
     color: white;   
     padding-top: 60px !important;        
     padding-bottom: 60px !important;      
+}
+.m1s6p1 .m6b4 .well {
+    padding-bottom: 0px !important;
 }
 
 
@@ -403,6 +587,9 @@ and (max-device-width : 299px) {
     background-color: #fff;
     min-height: 280px;
 
+}
+.m1s6p1 .m6b4 .well {
+    padding-bottom: 0px !important;
 }
 
 

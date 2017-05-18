@@ -8,16 +8,17 @@
 
 <?php
    }
-include("db.php");
+require_once 'db.php';
 include("view/cjs.php");
+$dbcon =  Connect_Open();
 $c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
-while($row = mysqli_fetch_row($retval1)) {
-    $s2data = json_decode($row[7],true);
+while($row = $retval1->fetch_object()) {
+    $s2data = json_decode($row->module_data,true);
     $dataT1 = $s2data['m1']['sections']['s5']['response1'];
-    $dataN1 = $row[2]." ". $row[3];
+    $dataN1 = $row->fname." ". $row->lname;
     $dataT = $s2data['m1']['sections']['s5']['response2'];
-    $dataN = $row[2]." ". $row[3];
+    $dataN = $row->fname." ". $row->lname;
     if ($dataT) {
 ?>
 <script type="text/javascript">
@@ -66,7 +67,6 @@ app.addOpt=function(id,len){
     $('#'+id+' .right').hide();
   }
 }
-
    app.response1 = function(){
        var loc = $("#response1Text").val();
         var section = 's'+app.qs["id"][6];
@@ -482,7 +482,7 @@ $("#canvas6").click(function(){
 	  
 <div class="container-full s1bgcol2">   
    <div class="container text-center s1bgcol">
-      <div class="row">
+      <div class="row" id="my-Carousel1">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
@@ -546,7 +546,7 @@ $("#canvas6").click(function(){
       </div>
       <br>  
 
-     <div class="row">
+     <div class="row" id="my-Carousel2">
          <div class="col-sm-2"></div>
          <div class="col-sm-8 ">
             <div class="response1">
@@ -628,21 +628,106 @@ $("#canvas6").click(function(){
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m1/m1s4p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m1/m1s4p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 1 | Section 4</span>
                 <span class="sp1"><strong>How Big of a Problem is Healthcare Waste?</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="?id=m1/m1s6p1"><span class="ssp2">MODULE 1 | Section 6</span>
+                <a href="#" onclick="window.location='?id=m1/m1s6p1'"><span class="ssp2">MODULE 1 | Section 6</span>
                 <span class="sp2"><strong>Focusing on Outcomes</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
 
       </footer> 
+	  
+<script>
+
+  $("#my-Carousel1 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+  });
+  $("#my-Carousel1 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel1 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel1 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel1 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel1 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+
+  });
+
+</script>
+
+<script>
+
+  $("#my-Carousel2 .additem").on("swipeleft",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==l)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child(1)").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child(1)").addClass("active");
+	 }
+	 else{
+	     i++;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+  });
+  $("#my-Carousel2 .additem").on("swiperight",function(){
+     var i = $(this).children("div.item.active").index()+1;
+	 var l = $(this).children("div.item").length;
+	 $("#my-Carousel2 .carousel-indicators li").removeClass("active");
+	  $(this).children("div.item").removeClass("active");
+     if(i==1)
+	 {
+	    $("#my-Carousel2 .carousel-indicators li:nth-child("+l+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+l+")").addClass("active");
+	 }
+	 else{
+	     i--;
+		 $("#my-Carousel2 .carousel-indicators li:nth-child("+i+")").addClass("active");
+	    $("#my-Carousel2 .additem div.item:nth-child("+i+")").addClass("active");
+	 }
+
+  });
+
+</script>
+
+
+
+
+

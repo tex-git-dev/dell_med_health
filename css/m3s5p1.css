@@ -186,7 +186,7 @@
     height: 100%;
     background: rgba(118,131,148,0.85);
     position: absolute;
-    z-index: 999999999;
+    z-index: 9;
     top:0; 
 }
 .m3s5p1 .b3_s1 .tint{
@@ -194,7 +194,7 @@
     height: 100%;
     background: rgba(84,164,155,0.85);
     position: absolute;
-    z-index: 99999999;
+    z-index: 9;
     top:0; 
 }
 .m3s5p1 .b3_s1 .container-full{
@@ -293,7 +293,20 @@
 @media screen
 and (min-device-width : 766px)
 and (max-device-width : 1000px) {
+.m3s5p1 .m3s5b2 .col-sm-6 .well{
+	min-height:170px;
+}
+.m3s5p1 .m3s5b2 .col-sm-6 .well h4 {
+     margin-left:120px;
+	 margin-top:50px;
+}
+.m3s5p1 .m3s5b2 .col-sm-6 .vbhcp{
+	 padding-top:33px;
+}
 
+.m3s5p1 .arrwImag {
+    left:-23px;
+}
 
  .m3s5p1 .b1 {
     margin-bottom: 0px;
@@ -337,6 +350,9 @@ and (max-device-width : 1000px) {
 @media screen
 and (min-device-width : 501px)
 and (max-device-width : 765px) {
+.m1s6p1 .arrwImag {
+   display:none;
+}
 
     .m3s5p1 .b1 {
     margin-bottom: 0px;
@@ -393,6 +409,13 @@ and (max-device-width : 765px) {
 @media  screen
 and (min-device-width : 300px)
 and (max-device-width : 500px) {
+.m3s5p1 .arrwImag {
+   display:none;
+}
+.m3s5p1 .m3s5b2 .col-sm-6 p {
+     padding-left:0;
+	 text-align:center;
+}
 
 .m3s5p1 .b1 {
     margin-bottom: 0px;
@@ -451,6 +474,13 @@ and (max-device-width : 500px) {
 @media  screen
 and (min-device-width : 100px)
 and (max-device-width : 299px) {
+.m3s5p1 .arrwImag {
+   display:none;
+}
+.m3s5p1 .m3s5b2 .col-sm-6 p {
+     padding-left:0;
+	 text-align:center;
+}
 
     .m3s5p1 .b1 {
     margin-bottom: 0px;

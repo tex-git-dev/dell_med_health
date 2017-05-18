@@ -28,7 +28,7 @@ include("view/cjs.php");
             </div>
           <div class="row">
             <div class="col-sm-12">  
-                <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
+                <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
             </div>
          </div>
 
@@ -73,7 +73,7 @@ include("view/cjs.php");
                     <div class="row  vertical-align">  
                         <!-- <div class="col-sm-2"></div>           -->
                         <div class="col-sm-6 imgGallry">
-                            <f><p>Define 'value' for patients.</p></f>
+                            <f><p>Define 'value' for patients. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></f>
                         </div>
                         <div class="col-sm-6">
                             <img  src="img/m1s1img2.jpg"  class="img-responsive">
@@ -87,10 +87,10 @@ include("view/cjs.php");
                     <div class="row  vertical-align ">  
                         <!-- <div class="col-sm-2"></div> -->
                         <div class="col-sm-6 imgGallry">
-                            <f><p>Define 'health care waste'.</p></f>
+                            <f><p>Define 'health care waste'. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></f>
                         </div>
                         <div class="col-sm-6">
-                            <img  src="img/m1s1img3.jpg"  class="   img-responsive">
+                            <img  src="img/m1s1img3.jpg"  class="img-responsive">
                         </div>
                         <!-- <div class="col-sm-2"></div> -->
                     </div>
@@ -169,14 +169,14 @@ include("view/cjs.php");
     <footer class="container-fluid">
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="<?php echo pathUrl();?>"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='<?php echo pathUrl();?>'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">Home</span>
                 <span class="sp1"><strong>Dell Medical VBHC</strong></span></a>
             </div>
             <div class="col-sm-4"></div>
 
             <div class="col-sm-4 text-right NextBtn1">
-               <a href="?id=m1/m1s2p1"> <span class="ssp2">MODULE 1 | Section 2</span>
+               <a href="#" onclick="window.location='?id=m1/m1s2p1'"> <span class="ssp2">MODULE 1 | Section 2</span>
                 <span class="sp2"><strong>Story from the Frontlines</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
@@ -184,8 +184,12 @@ include("view/cjs.php");
 
 
 
-          <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+          <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
       </footer> 

@@ -31,7 +31,7 @@ include("view/cjs.php");
             </div>
           <div class="row">
             <div class="col-sm-12">  
-                <a  class="wow fadeInDownBig" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
+                <a  class="" href="javascript:app.topScroll('Step1');" style="color:#fff;"><i class="fa fa-angle-down fa-4x dArowh" aria-hidden="true"></i></a>
             </div>
          </div>
          </div>
@@ -55,10 +55,9 @@ include("view/cjs.php");
        <div class="container-full m3s7t2 bg-4">
         <div class="row s9col m3s7c2">
          <div class="col-sm-6">
-              <div class="row m3s7c1">
-              <br>
+              <div class="row m3s7c1">              
                 <div class="col-sm-1 "></div>
-                  <div class="col-sm-11 text-uppercase">                    
+                  <div class="col-sm-11 text-uppercase">                                        
                       <f><p class="org">podcast</p></f>                    
                   </div>
               </div> 
@@ -74,17 +73,16 @@ include("view/cjs.php");
                       <f><p>Listen to Morgan Congdon describe her experience negotiating the complex, often frustrating world of medical care costs and charges.</p></f>
                   </div>
               </div>
-               <div class="row m3s7c1"> 
-               <br>            
+               <div class="row m3s7c1">                
                 <div class="col-sm-1"></div>
-                  <div class="col-sm-11">                    
+                  <div class="col-sm-8">                    
                         <div class="vertical-align paddb">
 
                         <div id="wrapper">
                               <audio preload="auto" controls>
-                                <source src="https://s3.amazonaws.com/dell-med/Sec8_Podcast.mp3">
-                                <source src="https://s3.amazonaws.com/dell-med/Sec8_Podcast.ogg">
-                                <source src="https://s3.amazonaws.com/dell-med/Sec8_Podcast.wav">
+                                <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec8.mp3">
+                                <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec8.ogg">
+                                <source src="https://s3.amazonaws.com/dell-med/Mod3_Sec8.wav">
                               </audio>
                             </div>
                         </div>
@@ -94,6 +92,7 @@ include("view/cjs.php");
                         <!-- s9ad fa-play-circle-o -->
                         <!-- fa fa-pause-circle-o -->
                   </div>
+                       <div class="col-md-1 text-center"><a href="VTT/Mod3_Sec8.pdf" class="btn btn-info" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Transcript</a></div>  
                                     
                  </div>
               <div class="row  m3s7c3">             
@@ -184,7 +183,7 @@ include("view/cjs.php");
           </div>
 </div>
 
-<div class="well">
+    <div class="well">
           <div class="row  vertical-align">  
           <!-- <div class="col-sm-2"></div>            -->
             <div class="col-sm-6 imgGallry">             
@@ -195,7 +194,20 @@ include("view/cjs.php");
             </div>
             <!-- <div class="col-sm-6"></div>  -->
           </div>
-</div>
+    </div>
+
+    <div class="well">
+          <div class="row  vertical-align">  
+          <!-- <div class="col-sm-2"></div>            -->
+            <div class="col-sm-6 imgGallry">             
+              <f><p>Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.</p></f>
+            </div>
+            <div class="col-sm-6">
+               <img  src="img/m3s1img9.png"  class="img-responsive">
+            </div>
+            <!-- <div class="col-sm-6"></div>  -->
+          </div>
+    </div>
 
 
 </div>
@@ -386,76 +398,32 @@ include("view/cjs.php");
          
           <div class="row">
             <div class="col-sm-4 text-left NextBtn">
-              <a href="?id=m3/m3s7p1"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+              <a href="#" onclick="window.location='?id=m3/m3s7p1'"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
               <span class="ssp1">MODULE 3 | Section 7</span>
                 <span class="sp1"><strong>Applying TDABC to Compare Cost Calculations</strong></span></a>
             </div>
            <div class="col-sm-4"></div>
             <div class="col-sm-4  text-right NextBtn1">
-                <a href="<?php echo pathUrl();?>"><span class="ssp2">Home</span>
+                <a href="#" onclick="window.location='<?php echo pathUrl();?>'"><span class="ssp2">Home</span>
                 <span class="sp2"><strong>Dell Medical VBHC</strong></span>
                 <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
             </div>
           </div>
 
-          <div class="row">            
-            <div class="col-sm-12"><a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png"  width="auto" height="auto"></a></div>            
+ <div class="col-md-12 col-sm-12 col-xs-12">            
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
+              <div class="col-md-2 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+              </div>
+            <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
 
 </footer> 
 
 
 <script type="text/javascript">
-/*var aud = document.getElementById('s9dio');
-
-
-$(document).ready(function() {
- 
-});
-
-function funaud() {
-  if(aud.paused){ 
-     aud.play();      
-     $("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
-     $(".pText").text('PAUSE NOW')
-  } else {
-    aud.pause();
-    $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
-    $(".pText").text('PLAY NOW')
-  }
-}
-
- function onUpdate(v){
-     if(aud.currentTime == aud.duration){
-         aud.pause();
-         aud.currentTime = 0;
-         $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');    
-     }
- }*/
-
-
-
-
 $(document).ready(function(){
   var flagvd = false;
  $( 'audio' ).audioPlayer();
-     $('.paddb').inview({
-        'onEnter': function($object) {
-          if(flagvd == false){
-          $('.audioplayer').addClass('audioplayer-playing');
-            $('audio').trigger('play');
-            flagvd=true;
-          }
-            //$("#s9ad").removeClass('fa-play-circle-o').addClass('fa-pause-circle-o');
-            // $(".pText").text('PAUSE NOW')
-          },
-          'onLeave': function($object) {
-           // $('audio').trigger('pause');
-            
-             // $("#s9ad").removeClass('fa-pause-circle-o').addClass('fa-play-circle-o');
-             // $(".pText").text('PLAY NOW')  
-          }
-      });
-
   });
 </script>

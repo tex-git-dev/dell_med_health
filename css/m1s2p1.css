@@ -262,7 +262,8 @@ background-size: cover;
     background-color:#EAEAEA;
     width: 100%;
     padding: 0;
-}.m1s2p1 .s1bgcol3 .well p{
+}
+.m1s2p1 .s1bgcol3 .well p{
  color: #22292F;
    font-size: 22px;
 }
@@ -410,6 +411,10 @@ padding-right: : 10px;
     padding-bottom: 60px;
 }
 
+.m1s2p1 .s1bgcol3 .well {
+    padding-bottom: 0px !important;
+}
+
 }
 
 
@@ -468,6 +473,9 @@ padding-right: : 10px;
     padding-bottom: 60px;
 }
 
+.m1s2p1 .s1bgcol3 .well {
+    padding-bottom: 0px !important;
+}
 
 
 }
@@ -535,6 +543,10 @@ padding-right: : 10px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.m1s2p1 .s1bgcol3 .well {
+    padding-bottom: 0px !important;
+}
+
 
 }
 
@@ -596,6 +608,10 @@ padding-right: : 10px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.m1s2p1 .s1bgcol3 .well {
+    padding-bottom: 0px !important;
+}
+
 
 }
 

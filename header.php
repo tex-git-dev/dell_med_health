@@ -1,5 +1,11 @@
 <?php  
 @session_start();
+require_once "db.php";	
+if(isset($_SESSION['username']))
+{
+require_once 'check2.php';
+}
+			
 ?>
  <script src="js/bootstrap-session-timeout.js"></script>
  <style>
@@ -8,6 +14,8 @@
  }
  </style>
 <script type="text/javascript">
+
+
 
 //Below function used for forgot popup open.
 app.Forgot=function(){
@@ -62,7 +70,7 @@ app.OpenMS=function(){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand logoBG" href="<?php echo pathUrl();?>"><img src="img/logo.svg" width="250" />
+            <a class="navbar-brand logoBG" href="#"><img src="img/logo.svg" width="250" onclick="window.location='<?php echo pathUrl();?>'"/>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar"> 
@@ -83,11 +91,11 @@ app.OpenMS=function(){
                 </li>
                   <li class='linea'><span>|</span></li>
                 <li>
-                    <a href="Logout.php" class="dropdown-toggle">Logout</a>
+                    <a href="javascript:window.location='Logout.php'" class="dropdown-toggle">Logout</a>
                 </li>
              <?php  }?>
 
-          <?php if(@!isset($_GET['id'])){?>
+          <?php if(@!isset($_GET['id']) || $_GET['id'] == "survey" ){?>
            
 
                 <li  class="active mod">
@@ -234,7 +242,7 @@ app.OpenMS=function(){
     </div>
 </nav>
 
-<?php if(@isset($_GET['id'])){?>
+<?php if(@isset($_GET['id']) && $_GET['id']!="survey" ){?>
 <div id="MSection" class="container MSection op">
     <div class="row text-left m">
   
@@ -345,22 +353,24 @@ app.OpenMS=function(){
                       </div>
                 </div>
                 <br>
-                 <div class="row allModule1">
-                    <div class="col-sm-2 "></div>                
-                    <div class="col-sm-7">
+                 <div class="row allModule1"> 
+           <div class="col-sm-1"></div>					 
+                    <div class="col-sm-10">
                       <div class="row text-center">
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                               <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module2button">Module 2</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
+                          </div>
+						<div class="col-sm-3">
+                            <a  href="#" onclick="window.location='?id=survey'"  class="btn btn-default center-block btn-Survey">Survey</a>
                           </div>
                       </div>                      
                     </div>
-                     <div class="col-sm-3"></div>
                 </div>
                  <br>
             
@@ -460,22 +470,24 @@ app.OpenMS=function(){
                       
                 </div>
              <br>
-                 <div class="row allModule2">
-                    <div class="col-sm-2 "></div>                
-                    <div class="col-sm-7">
+                 <div class="row allModule2"> 
+                 <div class="col-sm-1"></div>					 
+                    <div class="col-sm-10">
                       <div class="row text-center">
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                               <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module2button">Module 2</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
+						 <div class="col-sm-3">
+                            <a  href="#" onclick="window.location='?id=survey'"  class="btn btn-default center-block btn-Survey">Survey</a>
+                         </div>
                       </div> 
                     </div>
-                     <div class="col-sm-3"></div>
                 </div>
                  <br>
            
@@ -512,6 +524,15 @@ app.OpenMS=function(){
                         
                    
                 </div>
+			    <div class="row btnss vertical-align bb btnS">
+                      <div class="col-sm-2 "><strong>DD.</strong></div>
+                        <div class="col-sm-7"><strong>Dive Deeper: Basics of Health Care Financing in the US [Optional]</strong></div>
+                        <div class="col-sm-3">
+                            <div class="alert1" role="alert">
+                               Visit
+                              </div>
+                      </div>  
+                </div>
 
                 <div class="row btnss  vertical-align bb btnS3">
                         <div class="col-sm-2 "><strong>03.</strong></div>
@@ -520,9 +541,10 @@ app.OpenMS=function(){
                             <div class="alert1" role="alert">
                                Continue
                               </div>
-                      </div>
+                </div>
                         
                 </div>
+				
                 <div class="row btnss  vertical-align bb btnS4">
                         <div class="col-sm-2 "><strong>04.</strong></div>                
                         <div class="col-sm-7"><strong>The Cost of Care: Different Approaches</strong></div>
@@ -530,9 +552,9 @@ app.OpenMS=function(){
                             <div class="alert1" role="alert">
                                Continue
                               </div>
-                      </div>
-                      
+                      </div>     
                 </div>
+				
                 <div class="row btnss  vertical-align bb btnS5">
                         <div class="col-sm-2 "><strong>05.</strong></div>                
                         <div class="col-sm-7"><strong>Toward More Transparency</strong></div>
@@ -543,6 +565,7 @@ app.OpenMS=function(){
                       </div>
                        
                 </div>
+				
                 <div class="row btnss  vertical-align bb btnS6">
                         <div class="col-sm-2 "><strong>06.</strong></div>                
                         <div class="col-sm-7"><strong>Care Redesign Case: MD Anderson (TDABC)</strong></div>
@@ -573,28 +596,27 @@ app.OpenMS=function(){
                               </div>
                       </div>                                             
                 </div>
-
-              
-
-
                 <br>
 
-                 <div class="row allModule3">
-                    <div class="col-sm-2 "></div>                
-                    <div class="col-sm-7">
+                 <div class="row allModule3"> 
+                  <div class="col-sm-1"></div>			 
+                    <div class="col-sm-10">
                       <div class="row text-center">
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                               <button  type="button" class="btn btn-default center-block module1button">Module 1</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module2button">Module 2</button>
                           </div>
-                          <div class="col-sm-4">
+                          <div class="col-sm-3">
                             <button  type="button" class="btn btn-default center-block module3button">Module 3</button>
                           </div>
+						       <div class="col-sm-3">
+                           <a  href="#" onclick="window.location='?id=survey'" class="btn btn-default center-block btn-Survey">Survey</a>
+                          </div>
+						  
                       </div> 
                     </div>
-                     <div class="col-sm-3"></div>
                 </div>
                  <br>
            
@@ -624,7 +646,7 @@ app.OpenMS=function(){
                         <div class="row"></div>
                     </div>
                      <div class="col-sm-8 lG2 ">
-                     <div class="row  text-center vertical-align1">
+                     <div class="row  text-center vertical-align1" id="sectionProgress">
                             <div class="col-sm-12 text-left">
                                        <span style="margin-left:16px;">Section Progress</span><br>
                                  <div class="progress">
@@ -636,8 +658,8 @@ app.OpenMS=function(){
                         </div>
                        <div class="row  text-center">
                             <div class="col-sm-12">
-                                <form action="" method='post' class=" mSearch navbar-form navbar-center" >
-                                    <div class="input-group" style="width:100%; margin-top: 18px;">
+                                <form action="" method='post' class=" mSearch" >
+                                    <div class="input-group" style=" margin-top: 18px;padding:0 39px 0 9px;">
                                         <input type="Search" id='inputs' placeholder="Search..." class="form-control" />
                                         <div class="input-group-btn">
                                             <button class="btn btn-info navbar-left" type='submit'>
@@ -668,7 +690,7 @@ app.OpenMS=function(){
                     <div class="row">
                     <div class="wellC">
                         <div class="col-sm-12 text-center">
-                           <span><strong>SECTION <span class="mn">1</span> OUTCOMES</strong></span><br>
+                           <span><strong class="outcm3"> SECTION <span class="mn">1</span> OUTCOMES</strong></span><br>
                               <span><strong>____</strong></span>   
                         </div>
                         </div>
@@ -863,11 +885,11 @@ app.OpenMS=function(){
                         </div>
                     </div>
            </div>
-           <div class="row clickS3 clickS" >
-                     <div class="row">
+		    <div class="row clickS3 clickS" >
+                   <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Define terms used in discussing health care costs.
+                            Describe basic principles of health care delivery, organization, and financing
                           </div>
                         </div>
                     </div>
@@ -876,7 +898,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Reflect on the impact of cost on patient care and the overall value of provided health care; Evaluate various charging and payment methods used in health care.
+                             Define terms used in discussing health care costs.
                           </div>
                         </div>
                     </div>
@@ -885,7 +907,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Describe new methods for health care cost accounting and value-based payments.
+                             Reflect on the impact of cost on patient care and the overall value of provided health care; Evaluate various charging and payment methods used in health care.
                           </div>
                         </div>
                     </div>
@@ -894,7 +916,7 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                            Study methods to measure and evaluate the success of health care value programs.
+                             Describe new methods for health care cost accounting and value-based payments.
                           </div>
                         </div>
                     </div>
@@ -903,25 +925,24 @@ app.OpenMS=function(){
                      <div class="row">
                         <div class="well">
                           <div class="col-sm-12 text-center">
-                             Applying TDABC to Compare Cost Calculations
+                            Study methods to measure and evaluate the success of health care value programs.
                           </div>
                         </div>
                     </div>
            </div>
            <div class="row clickS8 clickS" >
                      <div class="row">
-                       
-                          <div class="col-sm-12 text-center"> <div class="well">
-                             8
+                        <div class="well">
+                          <div class="col-sm-12 text-center">
+                             Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.
                           </div>
                         </div>
                     </div>
            </div>
-            <div class="row clickS9 clickS" >
-                     <div class="row">
-                        <div class="well">
-                          <div class="col-sm-12 text-center">
-                           
+           <div class="row clickS9 clickS" >
+                     <div class="row">            
+                          <div class="col-sm-12 text-center"> <div class="well">
+
                           </div>
                         </div>
                     </div>
@@ -932,7 +953,7 @@ app.OpenMS=function(){
         </div>
     </div>
 </div>
- <?php }else{?>
+ <?php } else{?>
 
 
 
@@ -983,6 +1004,17 @@ app.OpenMS=function(){
                        
                    
                 </div>
+				
+			 <div class="row btns vertical-align bb btnM4"> 
+                        <div class="col-sm-2 text-center small">active</div>
+                        <div class="col-sm-7"><strong>User Feedback Survey</strong></div>
+                        <div class="col-sm-3">
+                            <div class="alert1" role="alert">
+                               Start
+                              </div>
+                      </div>  
+            </div>
+				
            
         </div>
         <div class="col-sm-6 r2">
@@ -1018,8 +1050,8 @@ app.OpenMS=function(){
                         </div>
                        <div class="row  text-center">
                             <div class="col-sm-12">
-                                <form action="" method='post' id='' class="mSearch navbar-form navbar-center" >
-                                    <div class="input-group" style="width:100%; margin-top: 18px;">
+                                <form action="" method='post' id='' class="mSearch" >
+                                    <div class="input-group" style="width:100%; margin-top: 18px;padding:0 39px 0 9px;">
                                         <input type="Search" id='inputs' placeholder="Search..." class="form-control" />
                                         <div class="input-group-btn">
                                             <button class="btn btn-info navbar-left" type='submit'>
@@ -1104,6 +1136,7 @@ app.OpenMS=function(){
                       <li>Reflect on the impact of cost on patient care and the overall value of provided health care.</li>
                       <li>Describe basic principles of health care delivery, organization, and financing.</li>
                       <li>Define terms used in discussing health care costs.</li>                                          
+					  <li>Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.</li> 
                     </ul>
                     </div>
                     <div class="col-sm-6">
@@ -1116,6 +1149,20 @@ app.OpenMS=function(){
                           </ul> 
                     </div>
                 </div>
+				
+				<div class="row clickM4 clickM hide" >
+				  <div class="col-md-12" id="Survey-notcomplete">
+				    You will be able to access the Introduction to Value-Based
+                    Health Care module collection survey once you have reached
+                    100% completion of all three modules.
+				   </div>
+				   	<div class="col-md-12" id="Survey-notcomplete">
+				    Congratulations on completing the Introduction to Value-Based
+					Health Care module collection. Please complete the survey
+					and give us your feedback in order to receive your certificate of
+					completion.
+				   </div>
+				</div>
         </div>
     </div>
 </div>
@@ -1310,24 +1357,45 @@ app.OpenMS=function(){
               </div>
             
             </div>
-            <div class="row">
+				 
+     <div class="row">
+                <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="Country">Country:</label>
+                      <select class="form-control text-center c" name="Country" id="Country" required="">
+                        <option value="">[select from list below]</option>
+						<?php 
+                            $dbcon =  Connect_Open();
+						       $c0 = "select * from countries";
+                                $Crun0=mysqli_query($dbcon,$c0);
+                               while($row = $Crun0->fetch_object())
+							   {
+							   ?>
+							   <option value="<?php echo $row->name; ?>"><?php echo $row->name;  ?></option>
+							   <?php
+						       }
+							  Connect_Close($dbcon);
+  ?>
+                      </select>
+                     </div>
+                </div>
+     </div>
+						 
+       <div class="row">
+                <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="State">State:</label>
+                      <select class="form-control text-center c" name="State" id="State" required="">
+                        <option value="">[select from list below]</option>
+                      </select>
+                </div>
+                </div>
+      </div>
+			 
+			<div class="row">
                 <div class="col-sm-12">
                 <div class="form-group">
                     <input type="text" name="City" id="City" class="form-control text-center c" placeholder="City" required="">
-                     </div>
-                </div>
-             </div>
-               <div class="row">
-                <div class="col-sm-12">
-                <div class="form-group">
-                    <input type="text" name="State" id="State" class="form-control text-center c" placeholder="State" required="" >
-                     </div>
-                </div>
-             </div>
-              <div class="row">
-                <div class="col-sm-12">
-                <div class="form-group">
-                    <input type="text" name="Country" id="Country" class="form-control text-center c" placeholder="Country" required="" >
                      </div>
                 </div>
              </div>
@@ -1362,17 +1430,16 @@ app.OpenMS=function(){
                      </div>
                 </div>
              </div>
-             <div class="row">
+             
+			 <div class="row">
              <div class="col-sm-12 text-center text-sm-center">  
               <div class="form-group">
                 <button class="btn btn-default" type="submit" name="registration">Sign up</button>
                 </div>
              </div>
-             <!--  <div class="col-sm-6  text-right text-sm-center"> 
-               <div class="form-group">
-                <button class="btn btn-default " onclick="app.OpenMS();" type="button" >LOG IN</button>
-                </div>
-            </div> -->
+         <div class="col-sm-12 text-center " style="color:red;"> 
+                *All fields are required.
+            </div>
             
         </div>
              
@@ -1825,6 +1892,7 @@ submitHandler: function(form){
             $(".NExists h4").text('Incorrect username or password.');
           }
         }, "json");
+		
 }
 });
 
@@ -1867,8 +1935,8 @@ PPRole: {
  
 //specify validation error messages
 messages: {
-    Fname: "First Name field cannot be blank!",
-    Lname: "Last Name field cannot be blank!",
+    Fname: "This field is required.",
+    Lname: "This field is required.",
 password: {
     required: "Password field cannot be blank!",
     minlength: "Your password must be at least 6 characters long"
@@ -1901,9 +1969,29 @@ $(".btnM3").click(function(){
 app.ClickOnModule="module3";
 });
 
- 
+$("#Country").on("change",function(){
+var cid = $(this).val();
+$.post( "getState.php", { id:cid })
+.done(function( data ) {
+$("#State").html(data);
+});
+});
+
+$(".btnM4").hover(function(){
+$(".btnM1,.btnM2,.btnM3").removeClass("act");
+$(this).addClass("act");
+});
+
+$(".btnM4").mouseleave(function(){
+$(this).removeClass("act");
+});
+
+
 </script>
 <div class="dis disS"></div>
 <div class="dis disM"></div>
 <div class="dis disF"></div>
+
+
+
 
