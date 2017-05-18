@@ -86,19 +86,23 @@ app.addOpt=function(id,len){
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel1',app.cArrayT1.length);
+	        var len = app.cArrayT1.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel1',len);
         $(".act1").hide();
         $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";
          var t =0;
           var sizeC = Math.ceil(app.cArrayT1.length/3); 
-
           if(sizeC > 6)
           {
             sizeC=6;
-          }
-          
-        for (var i = 1; i < sizeC+1; i++) {
+          } 
+        for (var i = 1; i <=sizeC; i++) {
             var f = "";
             if(i == 1){
               f = "active";
