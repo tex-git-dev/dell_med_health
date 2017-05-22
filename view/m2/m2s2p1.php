@@ -84,6 +84,12 @@ app.addOpt=function(id,len){
       if (loc == "") {
         alert("Please write the response.")
        }else{
+	   	        var len = app.cArrayT1.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
          app.addOpt('myCarousel1',app.cArrayT1.length);
         $(".act1").hide();
         $(".carouselC1").css({"visibility":"visible","height":"auto"});
@@ -164,7 +170,13 @@ app.response2 = function(){
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel2',app.cArrayT.length);
+	   	        var len = app.cArrayT.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel2',len);
         $(".act2").hide();
         $(".carouselC").css({"visibility":"visible","height":"auto"});
          var items="";
@@ -435,7 +447,7 @@ app.response2 = function(){
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>    

@@ -134,7 +134,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'>  
-                                   <img src="img/tr.svg"  class="arrwImag"/>
+                                   <img src="https://s3.amazonaws.com/dell-med/img/tr.svg"  class="arrwImag"/>
                                 <f><h4>The Goal:<br>Value-Based Health Care</h4></f>
                                 </div>
                           </div>
@@ -154,7 +154,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'>
-                               <img src="img/tr.svg" class="arrwImag"/>								
+                               <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>								
                                 <f><p class="vbhcp">Team-based care interactions organized around patient medical needs and conditions (e.g. “musculoskeletal pain”)</p></f>
                             </div>
                           </div>
@@ -174,7 +174,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'> 
-                               <img src="img/tr.svg" class="arrwImag"/>								
+                               <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>								
                                  <f><p class="vbhcp">Integrated care across units and facilities, such as in an integrated practice unit (IPU)</p></f>
                             </div>
                           </div>
@@ -194,7 +194,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'>  
-                                <img src="img/tr.svg" class="arrwImag"/>                                
+                                <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>                                
                                 <f><p class="vbhcp" >Measurement focused on patient health outcomes</p></f>
                             </div>
                           </div>
@@ -214,7 +214,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'>  
-                               <img src="img/tr.svg" class="arrwImag"/>                                
+                               <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>                                
                                  <f><p class="vbhcp">The actual costs of providing patient care are measured and captured</p></f>
                             </div>
                           </div>
@@ -234,7 +234,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'> 
-                                   <img src="img/tr.svg" class="arrwImag"/>								
+                                   <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>								
                                  <f><p class="vbhcp">Providers are reimbursed based on value of care provided across a full care cycle for medical conditions</p></f>
                             </div>
                           </div>
@@ -254,7 +254,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'> 
-                                    <img src="img/tr.svg" class="arrwImag"/>								
+                                    <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>								
                                  <f><p class="vbhcp">Health information technology is leveraged to help restructure care delivery and accurately measure results</p></f>
                             </div>
                           </div>
@@ -286,7 +286,7 @@ include("view/cjs.php");
     <div class="jumbotron m6b4">
                   
                <div class="row vertical-align">
-               <div class="col-sm-4"><img class="img-responsive center-block" src="img/s6img4.png"/></div>  
+               <div class="col-sm-4"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/s6img4.png"/></div>  
                  <div class="col-sm-8">
                   <div class="well">
                     <div class="well"><f><p>“At Dell Med we are working on reorganizing the delivery system around patient needs while integrating other providers and resources, both human and technological, to create a single-center location for diagnosis and treatment. When possible we will locate care close to the patient’s home or workplace, or provide convenience for the patient to access these services through virtual methods that are being developed.”</p></f>
@@ -333,7 +333,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

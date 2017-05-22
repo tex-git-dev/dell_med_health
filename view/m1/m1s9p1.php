@@ -109,7 +109,7 @@ include("view/cjs.php");
               </div>
 
           </div>
-          <div class="col-sm-6"><img src="img/s9img2.png"  style='width: 100%;' class="img-responsive"></div>          
+          <div class="col-sm-6"><img src="https://s3.amazonaws.com/dell-med/img/s9img2.png"  style='width: 100%;' class="img-responsive"></div>          
         </div>
     </div>
  <br>
@@ -127,7 +127,7 @@ include("view/cjs.php");
                         <f><p>Health care in the U.S. is currently fraught with fragmentation, inefficiency, unexplained variation, and waste that adversely affect patients.</p></f>
                     </div>
                     <div class="col-sm-6 ">
-                        <img  src="img/m1s1img1.jpg"  class="img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img1.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div>  -->
                 </div>
@@ -140,7 +140,7 @@ include("view/cjs.php");
                         <f><p>Value-based Health care means maximizing outcomes for patients while balancing costs. We must provide value to patients by focusing on patient outcomes.</p></f>
                     </div>
                     <div class="col-sm-6 ">
-                        <img  src="img/m1s1img2.jpg"  class="img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img2.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div>  -->
                 </div>
@@ -153,7 +153,7 @@ include("view/cjs.php");
                         <f><p>Up to one-third of health care delivered today is considered “waste,” as it does not improve health for patients. To improve, we must first understand shortfalls, recognize waste, and learn new methods of care delivery. </p></f>
                     </div>
                     <div class="col-sm-6 ">
-                        <img  src="img/m1s1img3.jpg"  class="img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img3.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div>  -->
                 </div>
@@ -166,7 +166,7 @@ include("view/cjs.php");
                         <f><p>There are multiple contributors to health care waste. The biggest contributor, overuse of health care, causes harm for individual patients and populations.</p></f>
                       </div>
                       <div class="col-sm-6">
-                        <img  src="img/m1s1img4.jpg"  class="img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img4.jpg"  class="img-responsive">
                       </div>
                       <!-- <div class="col-sm-2"></div>  -->
                   </div>
@@ -179,7 +179,7 @@ include("view/cjs.php");
                         <f><p>To improve health care value, we must focus primarily on outcomes that matter to patients. Key components of value-based health care delivery are teams organized around a patient panel, condition, or circumstance, who are committed to measuring and improving outcomes.</p></f>
                     </div>
                     <div class="col-sm-6">
-                        <img  src="img/m1s1img5.jpg"  class="img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img5.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div>  -->
                 </div>
@@ -192,7 +192,7 @@ include("view/cjs.php");
                         <f><p>The University of Utah Health Care system provides an inspiring example of a health system committed to measuring and improving value for patients.</p></f>
                     </div>
                     <div class="col-sm-6">
-                        <img  src="img/m1s1img6.jpg"  class="img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img6.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div>  -->
                 </div>
@@ -205,7 +205,7 @@ include("view/cjs.php");
                         <f><p>Understanding data that shows cost, variance, and outcomes from various perspectives can help identify areas for improvement.</p></f>
                     </div>
                     <div class="col-sm-6 ">
-                        <img  src="img/m1s1img7.jpg"  class="img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img7.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div>  -->
                 </div>
@@ -228,7 +228,7 @@ include("view/cjs.php");
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3" >
-                              <img src="img/s7img7.png" class="img-responsive center-block mwidth">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block mwidth">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -250,7 +250,7 @@ include("view/cjs.php");
                    <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block mwidth">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block mwidth">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -270,7 +270,7 @@ include("view/cjs.php");
                     <div class='well1'>
                         <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img8.png" class="img-responsive center-block mwidth">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img8.png" class="img-responsive center-block mwidth">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -333,7 +333,7 @@ $(document).ready(function(){
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

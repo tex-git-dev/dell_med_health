@@ -81,7 +81,7 @@ include("view/cjs.php");
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">How does the size of a ring in a radar chart correspond to the performance of a treatment in achieving patient outcomes?<!-- <br><img src="img/m2s6q1.png" class="img-responsive center-block"> --></p></f>
+                                <f><p class="ques">How does the size of a ring in a radar chart correspond to the performance of a treatment in achieving patient outcomes?<!-- <br><img src="https://s3.amazonaws.com/dell-med/img/m2s6q1.png" class="img-responsive center-block"> --></p></f>
 
 
                                 <div class="row row-eq-height">
@@ -149,7 +149,7 @@ include("view/cjs.php");
                         <div class="row">
                         <div class="col-sm-1" ></div>
                             <div class="col-sm-10" >
-                                <f><p class="ques">Select the thumbnail to expand. According to this radar chart, if Ms. Jones stated that minimizing cost was her biggest priority, would you more likely recommend a PCI+OMT or OMT-only treatment plan?<br><img src="img/m2s6q1.png" class="img-responsive center-block" style="width:15%; cursor:pointer;" data-toggle="modal" data-target="#myModal"></p></f>
+                                <f><p class="ques">Select the thumbnail to expand. According to this radar chart, if Ms. Jones stated that minimizing cost was her biggest priority, would you more likely recommend a PCI+OMT or OMT-only treatment plan?<br><img src="https://s3.amazonaws.com/dell-med/img/m2s6q1.png" class="img-responsive center-block" style="width:15%; cursor:pointer;" data-toggle="modal" data-target="#myModal"></p></f>
                                 <div class="row row-eq-height">
                                <!-- <div class="col-sm-12">
                                     <div class="row eq-h">-->
@@ -228,7 +228,7 @@ include("view/cjs.php");
           <h4 class="modal-title">Select the thumbnail to expand. According to this radar chart, if Ms. Jones stated that minimizing cost was her<br> biggest priority, would you more likely recommend a PCI+OMT or OMT-only treatment plan?</h4>
         </div>
         <div class="modal-body">
-          <img src="img/m2s6q1.png" class="img-responsive center-block">
+          <img src="https://s3.amazonaws.com/dell-med/img/m2s6q1.png" class="img-responsive center-block">
         </div>       
       </div>
       
@@ -286,7 +286,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

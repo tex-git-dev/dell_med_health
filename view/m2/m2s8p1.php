@@ -112,7 +112,7 @@ include("view/cjs.php");
                   <div class="col-sm-1"></div>
               </div>
           </div>
-          <div class="col-sm-6"><img src="img/GettyImages-492688421.png" class="img-responsive center-block"></div>          
+          <div class="col-sm-6"><img src="https://s3.amazonaws.com/dell-med/img/GettyImages-492688421.png" class="img-responsive center-block"></div>          
         </div>
     </div>
 <br><br>
@@ -130,7 +130,7 @@ include("view/cjs.php");
                   <f><p>Value-based health care = patient outcomes / total costs of care.</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m2s1img4.jpg"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img4.jpg"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div> --> 
           </div>
@@ -143,7 +143,7 @@ include("view/cjs.php");
                   <f><p>Outcomes measurement should focus on what matters to patients (and thus supports professionalism).</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m2s1img5.jpg"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img5.jpg"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -156,7 +156,7 @@ include("view/cjs.php");
               <f><p>Patient outcomes are health outcomes ranging from standard clinical outcomes to those measuring health-related quality of life, integrating the perspective of patients and their families, access, and decision-making.</p></f>              
             </div>
             <div class="col-sm-6 ">
-               <img  src="img/m2s1img6.jpg"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img6.jpg"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -169,7 +169,7 @@ include("view/cjs.php");
                   <f><p>An important subset of patient outcomes is Patient-Reported Outcome Measures (PROMs). PROMs attempt to capture a patient’s sense of their own health and well-being. Resources for patient outcomes include the International Consortium of Health Outcomes Measurement (ICHOM).</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m2s1img7.jpg"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img7.jpg"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -182,7 +182,7 @@ include("view/cjs.php");
               <f><p>Different types of measures include structure, process, and outcomes. All of these measures need to be used in conjunction to ensure we are improving care for patients.</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m1s1img5.jpg"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img5.jpg"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -195,7 +195,7 @@ include("view/cjs.php");
               <f><p>A radar chart is an example of a tool that can be used to illustrate and compare the outcomes associated with different treatment strategies.</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m2s1img9.jpg"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img9.jpg"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-6"></div>  -->
           </div>
@@ -208,7 +208,7 @@ include("view/cjs.php");
               <f><p>The UNOS case study describing changes to the national liver transplant allocation criteria illustrates the power and importance of outcomes define the goals of public policy.</p></f>
             </div>
             <div class="col-sm-6 ">
-               <img  src="img/m2s1img10.jpg"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img10.jpg"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -227,7 +227,7 @@ include("view/cjs.php");
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3" >
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img9.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -248,7 +248,7 @@ include("view/cjs.php");
                    <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img9.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -268,7 +268,7 @@ include("view/cjs.php");
                     <div class='well1'>
                         <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -289,7 +289,7 @@ include("view/cjs.php");
                     <div class='well1'>
                         <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img9.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -334,7 +334,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

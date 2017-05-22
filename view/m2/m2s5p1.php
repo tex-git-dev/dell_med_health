@@ -65,7 +65,7 @@ include("view/cjs.php");
          <div class="col-sm-4">
           <f><h3 class="text-center">Outcome Measures</h3></f>
             <hr class="lin0">
-           <img  src="img/m2s5icon1.png"  class="center-block img-responsive">
+           <img  src="https://s3.amazonaws.com/dell-med/img/m2s5icon1.png"  class="center-block img-responsive">
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -79,7 +79,7 @@ include("view/cjs.php");
          <div class="col-sm-4">            
             <hr class="lin1">
             <f><h3 class="text-center">Process Measures</h3></f>
-            <img  src="img/m2s5icon2.png"  class="center-block img-responsive">
+            <img  src="https://s3.amazonaws.com/dell-med/img/m2s5icon2.png"  class="center-block img-responsive">
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -93,7 +93,7 @@ include("view/cjs.php");
          <div class="col-sm-4">           
             <hr class="lin1">
             <f><h3 class="text-center">Structure Measures</h3></f>
-             <img  src="img/m2s5icon3.png"  class="center-block img-responsive">
+             <img  src="https://s3.amazonaws.com/dell-med/img/m2s5icon3.png"  class="center-block img-responsive">
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -107,7 +107,7 @@ include("view/cjs.php");
          <div class="col-sm-4">           
             <hr class="lin1">
             <f><h3 class="text-center">Balancing Measures</h3></f>
-             <img  id="botmSpace" src="img/m2s5icon4.png"  class="center-block img-responsive">             
+             <img  id="botmSpace" src="https://s3.amazonaws.com/dell-med/img/m2s5icon4.png"  class="center-block img-responsive">             
          </div>
          <div class="col-sm-8">
            <div class="well">
@@ -165,7 +165,7 @@ include("view/cjs.php");
             </div>
 
             <div class="col-sm-4 ">
-                 <a target="_blank" style="color:#000;" href="https://www.nytimes.com/2016/01/17/opinion/sunday/how-measurement-fails-doctors-and-teachers.html"><img src="img/m2s5img05.jpg"  class="img-responsive"  style=" width: 100%;"></a>
+                 <a target="_blank" style="color:#000;" href="https://www.nytimes.com/2016/01/17/opinion/sunday/how-measurement-fails-doctors-and-teachers.html"><img src="https://s3.amazonaws.com/dell-med/img/m2s5img05.jpg"  class="img-responsive"  style=" width: 100%;"></a>
                  <center class="small">Viktor Hachmang</center>
             </div>
 
@@ -850,7 +850,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

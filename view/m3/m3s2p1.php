@@ -82,8 +82,13 @@ window.onresize = function(){app.showRM();};
       if (loc == "") {
         alert("Please write the response.")
        }else{
-	             var l = app.cArrayT1.length;
-         app.addOpt('myCarousel1',app.cArrayT1.length);
+	            	        var len = app.cArrayT1.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel1',len);
         $(".act1").hide();
         $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";
@@ -249,7 +254,7 @@ app.response2 = function(){
    </div>
 <br><br>
 <div class="container m3s2s1">
-    <h3 class="text-uppercase text-center">...And Then the Bill Comes</h3>
+    <f><h3 class="text-uppercase text-center">...And Then the Bill Comes</h3></f>
 </div>
    
 
@@ -556,7 +561,7 @@ app.response2 = function(){
          <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

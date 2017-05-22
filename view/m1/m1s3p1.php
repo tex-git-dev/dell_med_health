@@ -110,14 +110,14 @@ include("view/cjs.php");
       <div class="jumbotron b2">
                <!-- <div class="tint"></div> -->
                <div class="container">                 
-                    <img src="img/s3img3.png" class="img-responsive center-block img1">
+                    <img src="https://s3.amazonaws.com/dell-med/img/s3img3.png" class="img-responsive center-block img1">
                 <hr>
                 <f><h4 class="text-center">WE CAN IMPROVE VALUE BY:</h4></f>
                 <div class="row">
                   
                   <div class="col-sm-3 text-center">
                     <div class="panel-footer text-center" data-toggle="modal" data-target="#myModal1" style="cursor:pointer;">
-				        	<img class="imagBot" src="img/Mod1Sec3_1.png" style="width: 50%;"/>
+				        	<img class="imagBot" src="https://s3.amazonaws.com/dell-med/img/Mod1Sec3_1.png" style="width: 50%;"/>
                       <!-- <f><div class="numberCircle s3n1 center-block" data-toggle="modal" data-target="#myModal1"><span>1</span></div></f> -->
                         <f><p>Improving outcomes for patients without raising costs</p></f>
                     </div>
@@ -125,21 +125,21 @@ include("view/cjs.php");
 
                   <div class="col-sm-3 text-center">
                     <div class="panel-footer" data-toggle="modal" data-target="#myModal2" style="cursor:pointer;">
-					<img  class="imagBot" src="img/Mod1Sec3_2.png" style="width: 50%;"/>
+					<img  class="imagBot" src="https://s3.amazonaws.com/dell-med/img/Mod1Sec3_2.png" style="width: 50%;"/>
                        <!-- <f><div class="numberCircle s3n2  center-block"  data-toggle="modal" data-target="#myModal2"><span>2</span></div></f> -->
                         <f><p>Maintaining good outcomes while decreasing costs</p></f>
                     </div>                         
                   </div>
                   <div class="col-sm-3 text-center">   
                     <div class="panel-footer" data-toggle="modal" data-target="#myModal3" style="cursor:pointer;">   
-                     <img  class="imagBot" src="img/Mod1Sec3_3.png" style="width: 50%;"/>					
+                     <img  class="imagBot" src="https://s3.amazonaws.com/dell-med/img/Mod1Sec3_3.png" style="width: 50%;"/>					
                      <!-- <f><div class="numberCircle s3n3  center-block"  data-toggle="modal" data-target="#myModal3"><span>3</span></div></f>  -->
                       <f><p>Improving outcomes dramatically for a smaller increase in costs</p></f> 
                     </div>                       
                   </div>
                    <div class="col-sm-3 text-center">
                       <div class="panel-footer" data-toggle="modal" data-target="#myModal4" style="cursor:pointer;">   
-                      <img class="imagBot" src="img/Mod1Sec3_4.png" style="width: 50%;" />					  
+                      <img class="imagBot" src="https://s3.amazonaws.com/dell-med/img/Mod1Sec3_4.png" style="width: 50%;" />					  
                        <!-- <f><div class="numberCircle s3n4  center-block"  data-toggle="modal" data-target="#myModal4"><span>4</span></div></f>  -->
                         <f><p>Improving outcomes for patients AND decreasing costs simultaneously</p></f>                      
                       </div>  
@@ -496,7 +496,7 @@ function eventList()
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
