@@ -38,7 +38,7 @@ include("view/cjs.php");
       <div class="Step1 container m3s1ms1 text-center">         
          <f><h3 class="text-uppercase">Introduction to Understanding Costs</h3></f>
            <br><br>
-            <img src="img/m3s1img2.png" class="img-responsive" style="width: 80%">
+            <img src="https://s3.amazonaws.com/dell-med/img/m3s1img2.png" class="img-responsive" style="width: 80%">
            <br><br>
 
           <div class="row text-left">
@@ -86,7 +86,7 @@ include("view/cjs.php");
                  <f><p>Reflect on the impact of cost on patient care and the overall value of provided health care.</p></f>              
             </div>          
             <div class="col-sm-6">                           
-                <img src="img/m3s1img3.jpg"  class="img-responsive">                
+                <img src="https://s3.amazonaws.com/dell-med/img/m3s1img3.jpg"  class="img-responsive">                
             </div>            
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -99,7 +99,7 @@ include("view/cjs.php");
                <f><p>Define terms used in discussing health care costs. </p></f>              
             </div>
             <div class="col-sm-6">
-                <img  src="img/m3s1img4.png"  class="img-responsive">
+                <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img4.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -111,7 +111,7 @@ include("view/cjs.php");
                 <f><p>Describe basic principles of health care delivery, organization, and financing.</p></f>
             </div>
             <div class="col-sm-6">              
-              <img  src="img/m3s1img5.png"  class="img-responsive">
+              <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img5.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -123,7 +123,7 @@ include("view/cjs.php");
                 <f><p>Evaluate various financial methods used in health care.</p></f>
             </div>
              <div class="col-sm-6">            
-                <img src="img/m3s1img6.png"  class="img-responsive">
+                <img src="https://s3.amazonaws.com/dell-med/img/m3s1img6.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -135,7 +135,7 @@ include("view/cjs.php");
                <f><p>Describe new methods for health care cost accounting and value-based payments.</p></f>
             </div>
              <div class="col-sm-6">                            
-              <img  src="img/m3s1img7.png"  class="img-responsive">
+              <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img7.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -147,7 +147,7 @@ include("view/cjs.php");
               <f><p>Study methods to measure and evaluate the success of health care value programs.</p></f>               
             </div>
             <div class="col-sm-6">             
-              <img  src="img/m3s1img8.png"  class="img-responsive">
+              <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img8.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>          
@@ -159,7 +159,7 @@ include("view/cjs.php");
               <f><p>Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.</p></f>               
             </div>
             <div class="col-sm-6">             
-              <img  src="img/m3s1img9.png"  class="img-responsive">
+              <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img9.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>          
@@ -206,7 +206,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

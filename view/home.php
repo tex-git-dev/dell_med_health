@@ -49,7 +49,7 @@
 
          <div class="row gray" onclick="app.CallM('m1s1p1')" style="cursor:pointer;">
             <div class="col-sm-6">
-               <img  src="img/img4.jpg"  style="width:100%;" class="wow fadeInLeft img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/img4.jpg"  style="width:100%;" class="wow fadeInLeft img-responsive">
             </div>
             <div class="col-sm-6 ">
                <div class="well wow fadeInRight" >
@@ -61,7 +61,7 @@
          </div>
          <div class="row black" onclick="app.CallM('m2s1p1')" style="cursor:pointer;">
             <div class="col-sm-6">
-              <img src="img/GettyImages-103235149.jpg" style="width:100%;"  class="wow fadeInLeft img-responsive">
+              <img src="https://s3.amazonaws.com/dell-med/img/GettyImages-103235149.jpg" style="width:100%;"  class="wow fadeInLeft img-responsive">
             </div>
             <div class="col-sm-6 ">               
                 <div  class="   well wow fadeInRight" >
@@ -73,7 +73,7 @@
          </div>
          <div class="row gray" onclick="app.CallM('m3s1p1')" style="cursor:pointer;">
             <div class="col-sm-6">
-               <img src="img/img2.jpg"  style="width:100%;" class="wow fadeInLeft img-responsive" width="100%">
+               <img src="https://s3.amazonaws.com/dell-med/img/img2.jpg"  style="width:100%;" class="wow fadeInLeft img-responsive" width="100%">
             </div>
             <div class="col-sm-6 ">
                <div  class="   well wow fadeInRight" >
@@ -132,7 +132,7 @@
                                 <div class="row">
                                     <div class="col-sm-2"></div>
                                     <div class="col-sm-4">
-                                       <img src="img/l1.png" class="img-responsive" style="width:100%;"/>
+                                       <img src="https://s3.amazonaws.com/dell-med/img/l1.png" class="img-responsive" style="width:100%;"/>
                                        <f><P class="text-center">CHRISTOPHER MORIATES, MD</P></f>
                                        <f><div class="text-center">Lead Author</div></f>
                                        <f><div class="text-center"><a href="javascript:app.scroll('dd','myModal')">View Bio</a></div></f>
@@ -147,7 +147,7 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         <div class="row">
                                           <div class="col-sm-4">
-                                            <img src="img/l1.png" class="img-responsive" style="width:100%;"/>
+                                            <img src="https://s3.amazonaws.com/dell-med/img/l1.png" class="img-responsive" style="width:100%;"/>
                                             <f><p class="model_name">Christopher Moriates, MD</p></f>
                                                   <a target="_blank" href=
                                                     "https://twitter.com/ChrisMoriates?lang=en"><span class="fa-stack fa-lg"> 
@@ -167,7 +167,7 @@
                                 </div>
                                </div> 
                                     <div class="col-sm-4">
-                                       <img src="img/l2.png" class="img-responsive" style="width:100%;">
+                                       <img src="https://s3.amazonaws.com/dell-med/img/l2.png" class="img-responsive" style="width:100%;">
                                         <f><P class="text-center">VICTORIA VALENCIA, MPH</P></f>
                                         <f><div class="text-center">Co-Author</div></f>
                                         <f><div class="text-center"><a href="javascript:app.scroll('dd','myModal_1')">View Bio</a></div></f>
@@ -182,7 +182,7 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         <div class="row">
                                           <div class="col-sm-4">
-                                            <img src="img/l2.png" class="img-responsive" style="width:100%;"/>
+                                            <img src="https://s3.amazonaws.com/dell-med/img/l2.png" class="img-responsive" style="width:100%;"/>
                                             <f><p class="model_name">Victoria Valencia, MPH</p></f>
                                                   <a target="_blank" href=
                                                     "https://twitter.com/valuevictoria"><span class="fa-stack fa-lg">
@@ -229,7 +229,7 @@
                                 <div class="row">
                                     
                                     <div class="col-sm-4">
-                                       <img src="img/l3.png" class="img-responsive" style="width:100%;"/>
+                                       <img src="https://s3.amazonaws.com/dell-med/img/l3.png" class="img-responsive" style="width:100%;"/>
                                        <f><P class="text-center">Susan Cox, MD</P></f>
                                        <f><div class="text-center">Executive Vice Dean of Academics and Chair of Medical Education </div></f>
                                        <f><div class="text-center"><a href="javascript:app.scroll('dd','myModal_2')">View Bio</a></div></f>
@@ -244,7 +244,7 @@
                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         <div class="row">
                                           <div class="col-sm-4">
-                                            <img src="img/l3.png" class="img-responsive" style="width:100%;"/>
+                                            <img src="https://s3.amazonaws.com/dell-med/img/l3.png" class="img-responsive" style="width:100%;"/>
                                             <f><p class="model_name">Susan Cox, MD</p></f>
                                                   <!-- <span class="fa-stack fa-lg">
                                                     <i class="fa fa-square-o fa-stack-2x"></i>
@@ -265,7 +265,7 @@
                                     </div>
                         
                                     <div class="col-sm-4">
-                                       <img src="img/l4.png" class="img-responsive" style="width:100%;">
+                                       <img src="https://s3.amazonaws.com/dell-med/img/l4.png" class="img-responsive" style="width:100%;">
                                         <f><P class="text-center">Keven Bozic, MD, MBA</P></f>
                                         <f><div class="text-center">Chair of the Department of Surgery and Perioperative Care</div></f>
                                         <f><div class="text-center"><a href="javascript:app.scroll('dd','myModal_3')">View Bio</a></div></f>
@@ -280,7 +280,7 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         <div class="row">
                                           <div class="col-sm-4">
-                                            <img src="img/l4.png" class="img-responsive" style="width:100%;"/>
+                                            <img src="https://s3.amazonaws.com/dell-med/img/l4.png" class="img-responsive" style="width:100%;"/>
                                             <f><p class="model_name">Keven Bozic, MD, MBA</p></f>
                                                   <!-- <span class="fa-stack fa-lg">
                                                     <i class="fa fa-square-o fa-stack-2x"></i>
@@ -299,7 +299,7 @@
                                 </div>
                                     </div>
                                     <div class="col-sm-4">
-                                       <img src="img/l5.png" class="img-responsive" style="width:100%;">
+                                       <img src="https://s3.amazonaws.com/dell-med/img/l5.png" class="img-responsive" style="width:100%;">
                                         <f><P class="text-center">Elizabeth Teisberg, PhD</P></f>
                                         <f><div class="text-center">Executive Director and Professor in the Department of Medical Education </div></f>
                                         <f><div class="text-center"><a href="javascript:app.scroll('dd','myModal_4')">View Bio</a></div></f>
@@ -314,7 +314,7 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         <div class="row">
                                           <div class="col-sm-4">
-                                            <img src="img/l5.png" class="img-responsive" style="width:100%;"/>
+                                            <img src="https://s3.amazonaws.com/dell-med/img/l5.png" class="img-responsive" style="width:100%;"/>
                                              <f><p class="model_name">Elizabeth Teisberg, PhD</p></f>
                                                   <!-- <span class="fa-stack fa-lg">
                                                     <i class="fa fa-square-o fa-stack-2x"></i>
@@ -535,7 +535,7 @@ and (max-device-width : 299px) {
       <footer class="footer-bs">
         <div class="row text-center">
            <div class="col-sm-3"></div>
-           <div class="col-sm-6"><img class="footimg img-responsive center-block" src="img/logo2.png" height="auto" width="65%"></div>
+           <div class="col-sm-6"><img class="footimg img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/logo2.png" height="auto" width="65%"></div>
            <div class="col-sm-3"></div>
         </div>
 
@@ -564,7 +564,7 @@ and (max-device-width : 299px) {
           <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

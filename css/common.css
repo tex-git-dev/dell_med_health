@@ -141,7 +141,7 @@ word-wrap: break-word;
 }
 #login .modal-content{
     border-radius: 0px;
-    background-image: url('../img/bgLogin.png');
+    background-image: url('https://s3.amazonaws.com/dell-med/img/bgLogin.png');
     background-repeat: no-repeat;
     background-size: 1000px auto;
     box-shadow:none;
@@ -164,7 +164,7 @@ word-wrap: break-word;
 }
 #forgot .modal-content{
     border-radius: 0px;
-    background-image: url('../img/bgLogin.png');
+    background-image: url('https://s3.amazonaws.com/dell-med/img/bgLogin.png');
     background-repeat: no-repeat;
     background-size: 1000px auto;
     box-shadow:none;
@@ -186,7 +186,7 @@ word-wrap: break-word;
 }
 #wel .modal-content{
     border-radius: 0px;
-    background-image: url('../img/bgLogin.png');
+    background-image: url('https://s3.amazonaws.com/dell-med/img/bgLogin.png');
     background-repeat: no-repeat;
     background-size: 1000px auto;
     box-shadow:none;
@@ -208,7 +208,7 @@ word-wrap: break-word;
 }
 #passReset .modal-content{
     border-radius: 0px;
-    background-image: url('../img/bgLogin.png');
+    background-image: url('https://s3.amazonaws.com/dell-med/img/bgLogin.png');
     background-repeat: no-repeat;
     background-size: 1000px auto;
     box-shadow:none;
@@ -229,7 +229,7 @@ word-wrap: break-word;
     border:0px solid #000;
 }
 #registration .modal-content{
-   background-image: url("../img/bgLogin.png");
+   background-image: url("https://s3.amazonaws.com/dell-med/img/bgLogin.png");
     background-repeat: no-repeat;
     background-size: 101% 101%;
     border-radius: 0;
@@ -298,7 +298,7 @@ word-wrap: break-word;
 }
 .b1 {
         margin-bottom: 0px;
-    background: url('../img/img1.jpg') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/img1.jpg') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -340,7 +340,7 @@ word-wrap: break-word;
 }
 
 .b2 {
-  /*  background-image: url("../img/img5.png");
+  /*  background-image: url("https://s3.amazonaws.com/dell-med/img/img5.png");
     background-position: 0 25%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -350,7 +350,7 @@ word-wrap: break-word;
     position: relative;*/
 
     margin-bottom: 0px;
-    background: url('../img/img5.png') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/img5.png') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -363,7 +363,7 @@ word-wrap: break-word;
     min-height: 300px;
 }
 .b3 {
-    background-image: url("../img/img5.jpg");
+    background-image: url("https://s3.amazonaws.com/dell-med/img/img5.jpg");
     background-position: 0 25%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -964,7 +964,7 @@ footer span:nth-child(2) {
 }
 .alerts .modal-content{
     border-radius: 0px;
-    background-image: url('../img/bgLogin.png');
+    background-image: url('https://s3.amazonaws.com/dell-med/img/bgLogin.png');
     background-repeat: no-repeat;
     background-size: 1000px auto;
     box-shadow:none;

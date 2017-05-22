@@ -288,12 +288,12 @@ try {
   
   
  <div id="id01" class="w3-modal" style="z-index:99999;">
-    <div class="w3-modal-content" style="background:url('img/bgLogin.png');color:white;">
+    <div class="w3-modal-content" style="background:url('https://s3.amazonaws.com/dell-med/img/bgLogin.png');color:white;">
       <div class="w3-container">
       <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-	   <h3 class="text-center">Congratulations!</h3>
+	   <h3 class="text-center"><f>Congratulations!</f></h3>
 	   <div class="col-md-12">
-           You have completed the Introduction to Value-Based Health Care modules. Please follow this link <a onclick="window.location='?id=survey'" class="mcmpnotnow" style="color:skyblue;cursor:pointer;">Click here</a> to complete a survey about these modules. Once you have completed this survey, you will receive your certificate of completion for these modules.
+           <f>You have completed the Introduction to Value-Based Health Care modules. Please follow this link <a onclick="window.location='?id=survey'" class="mcmpnotnow" style="color:skyblue;cursor:pointer;">Click here</a> to complete a survey about these modules. Once you have completed this survey, you will receive your certificate of completion for these modules.</f>
         </div>
         <div class="col-md-12 text-right" style="padding:20px;">
           <button type="button" class="btn btn-danger mcmpnotnow" >Not Now</button>

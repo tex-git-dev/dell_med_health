@@ -70,7 +70,7 @@ app.OpenMS=function(){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand logoBG" href="#"><img src="img/logo.svg" width="250" onclick="window.location='<?php echo pathUrl();?>'"/>
+            <a class="navbar-brand logoBG" href="#"><img src="https://s3.amazonaws.com/dell-med/img/logo.svg" width="250" onclick="window.location='<?php echo pathUrl();?>'"/>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar"> 

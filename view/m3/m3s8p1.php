@@ -107,7 +107,7 @@ include("view/cjs.php");
                   <div class="col-sm-1"></div>                  
               </div>              
           </div>
-          <div class="col-sm-6"><img src="img/m3s7img2.png" class="img-responsive center-block"></div>          
+          <div class="col-sm-6"><img src="https://s3.amazonaws.com/dell-med/img/m3s7img2.png" class="img-responsive center-block"></div>          
         </div>
     </div>
 <br><br>
@@ -125,7 +125,7 @@ include("view/cjs.php");
                   <f><p>Costs for health care to patients can be high and harmful. It is important to remember the patient and their ability to pay when providing health care.</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m3s1img3.jpg"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img3.jpg"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div> --> 
           </div>
@@ -138,7 +138,7 @@ include("view/cjs.php");
                   <f><p>Health care financing in the US is complicated and involves many players, including the government, private insurers, and the uninsured.</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m3s1img4.png"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img4.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -151,7 +151,7 @@ include("view/cjs.php");
               <f><p>Understanding the language of health care costs including charges, cost, price, and reimbursement is vital to comprehending our health care system and helping patients navigate it. </p></f>              
             </div>
             <div class="col-sm-6 ">
-               <img  src="img/m3s1img5.png"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img5.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -164,7 +164,7 @@ include("view/cjs.php");
                   <f><p>There are many potential reimbursement mechanisms in US health care, but fee-for-service (FFS) currently dominates the market.</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m3s1img6.png"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img6.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -177,7 +177,7 @@ include("view/cjs.php");
               <f><p>Time-driven activity-based costing (TDABC) and value-based bundled payments represent new and alternative cost accounting and reimbursement models that aim to improve the value of care provided to patients.</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m3s1img7.png"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img7.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-2"></div>  -->
           </div>
@@ -190,7 +190,7 @@ include("view/cjs.php");
               <f><p>MD Anderson Cancer Center in Houston, Texas is an example of a health care institution that has implemented new accounting mechanisms, such as TDABC, and has demonstrated reduced costs of providing care to patients. </p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m3s1img8.png"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img8.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-6"></div>  -->
           </div>
@@ -203,7 +203,7 @@ include("view/cjs.php");
               <f><p>Compare the application of traditional and value-based costing methods in the course of a patient’s treatment.</p></f>
             </div>
             <div class="col-sm-6">
-               <img  src="img/m3s1img9.png"  class="img-responsive">
+               <img  src="https://s3.amazonaws.com/dell-med/img/m3s1img9.png"  class="img-responsive">
             </div>
             <!-- <div class="col-sm-6"></div>  -->
           </div>
@@ -224,7 +224,7 @@ include("view/cjs.php");
                   <div class='well1'>
                        <div class='row vertical-alignA'>
                           <div class="col-sm-3" >
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -244,7 +244,7 @@ include("view/cjs.php");
                    <div class='well1'>
                        <div class='row vertical-alignA'>
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -264,7 +264,7 @@ include("view/cjs.php");
                     <div class='well1'>
                         <div class='row vertical-alignA'>
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -284,7 +284,7 @@ include("view/cjs.php");
                     <div class='well1'>                        
                         <div class='row vertical-alignA'>                          
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -305,7 +305,7 @@ include("view/cjs.php");
                     <div class='well1'>                        
                         <div class='row vertical-alignA'>                          
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -325,7 +325,7 @@ include("view/cjs.php");
                     <div class='well1'>                        
                         <div class='row vertical-alignA'>                          
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -345,7 +345,7 @@ include("view/cjs.php");
                     <div class='well1'>                        
                         <div class='row vertical-alignA'>                          
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img9.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -413,7 +413,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

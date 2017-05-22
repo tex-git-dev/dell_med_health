@@ -364,13 +364,13 @@ app.response2 = function(){
                       <f><p>Care is fragmented instead of coordinated. each provider is payed separately for work completed in isolation of other providers. No one is responsible for coordinating care. This results in little accountability to overall quality and cost.</p></f>
                   </div>
                   <div class="col-sm-6">                    
-                      <img src="img/m3s4img2.png" class="img-responsive" width="50%">
+                      <img src="https://s3.amazonaws.com/dell-med/img/m3s4img2.png" class="img-responsive" width="50%">
                   </div>
               </div>
               <br><br>
               <div class="row">
                   <div class="col-sm-6">
-                      <img src="img/m3s4img3.png" class="img-responsive" width="60%">
+                      <img src="https://s3.amazonaws.com/dell-med/img/m3s4img3.png" class="img-responsive" width="60%">
                   </div>
                   <div class="col-sm-6">
                     <f><p class="bText">Patient-Centered Global Payment System</p></f>                
@@ -397,7 +397,7 @@ app.response2 = function(){
               <div class="col-sm-12">
                 <f><h4 class="text-center">Moving from Fee-for-Service to Global Payments</h4></f>
                 <br><br><br>
-                <img src="img/m3s4img4.png" class="img-responsive">
+                <img src="https://s3.amazonaws.com/dell-med/img/m3s4img4.png" class="img-responsive">
                 <br>
               </div>  
             </div>
@@ -974,7 +974,7 @@ app.response2 = function(){
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -1129,7 +1129,7 @@ function TryA(){
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

@@ -484,7 +484,7 @@ $("#canvas6").click(function(){
 					<div class="col-sm-12"><f><p>To learn more about the data in the chart, click <a target="_blank" style="color:#f68122" href="http://jamanetwork.com/journals/jama/fullarticle/1872806">here</a>.</p></f></div>
 				</div>
 			</div>
-			<div class="col-sm-8"><img src="img/s5img3.png" class="img-responsive"></div>
+			<div class="col-sm-8"><img src="https://s3.amazonaws.com/dell-med/img/s5img3.png" class="img-responsive"></div>
 		</div>
 	</div>
 
@@ -653,7 +653,7 @@ $("#canvas6").click(function(){
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

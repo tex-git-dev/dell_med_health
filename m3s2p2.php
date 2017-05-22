@@ -85,7 +85,7 @@
                  <br>
                  <f><p>This diagram represents the typical flow of funds between individuals, insurance providers, and health care providers.</p></f>
                  <br>
-                 <img src="img/m3s8img2.png" class="img-responsive center-block" width="80%" >
+                 <img src="https://s3.amazonaws.com/dell-med/img/m3s8img2.png" class="img-responsive center-block" width="80%" >
               </div>
             <!-- <div class="col-sm-2"></div> -->
          </div>
@@ -183,7 +183,7 @@
 <div class="container-full m3s8b9">
       <div class="row" style="background:#eaeaea;">
           <div class="col-sm-4">
-              <img src="img/m3s8img4.png" class="img-responsive">
+              <img src="https://s3.amazonaws.com/dell-med/img/m3s8img4.png" class="img-responsive">
           </div>  
           <div class="col-sm-7">
               <f><p>Ms. Church has been feeling ill with a wheezing cough for three days. She decides to visit a local emergency room a couple of blocks away from her house because she is worried that she has not improved.</p></f>
@@ -282,7 +282,7 @@
 <div class="container-full m3s8b9">
       <div class="row" style="background:#eaeaea;">
           <div class="col-sm-4">
-              <img src="img/m3s8img5.png" class="img-responsive">
+              <img src="https://s3.amazonaws.com/dell-med/img/m3s8img5.png" class="img-responsive">
           </div>  
           <div class="col-sm-7">
               <f><p>A week after being discharged, Ms. Church visits with her primary care provider for a follow-up visit. She explains to her doctor that she continues to experience shortness of breath. Her PCP decides to order a chest x-ray to ensure Ms. Church's lungs are clearing as expected. </p></f>
@@ -389,7 +389,7 @@
                 </div>
             </div>
             <br>
-            <img src="img/m3s8img6.png" class="img-responsive center-block" width="70%">
+            <img src="https://s3.amazonaws.com/dell-med/img/m3s8img6.png" class="img-responsive center-block" width="70%">
         </div>    
 </div>    
 
@@ -401,7 +401,7 @@
          </div>
          <br>
          <div class="row">            
-             <div class="col-sm-6"><a target="_blank" href="https://www.medicareinteractive.org/get-answers/introduction-to-medicare/explaining-medicare/what-does-medicare-cover-parts-a-b-c-and-d"><img src="img/m3s8img7.png" class="img-responsive center-block" width="40%"></a></div>
+             <div class="col-sm-6"><a target="_blank" href="https://www.medicareinteractive.org/get-answers/introduction-to-medicare/explaining-medicare/what-does-medicare-cover-parts-a-b-c-and-d"><img src="https://s3.amazonaws.com/dell-med/img/m3s8img7.png" class="img-responsive center-block" width="40%"></a></div>
              <div class="col-sm-6">
                <f><p>Medicare is a federal health insurance program for all people aged 65 and older, regardless of income or medical history. It also provides coverage for those under 65 years if they have end-stage renal disease or are blind. Medicare covers approximately 50 million Americans, representing one-sixth of the total population.</p></f>
                <f><p>If you want to learn more about what Medicare covers, and to understand Medicare Parts A, B, C, and D, click the icon.</p></f>
@@ -426,23 +426,23 @@
       <div class="row">            
         <div class="col-sm-1"></div>
             <div class="col-sm-2">
-                <p><img src="img/m3s8img8.png" class="img-responsive center-block" width="75%"></p>
+                <p><img src="https://s3.amazonaws.com/dell-med/img/m3s8img8.png" class="img-responsive center-block" width="75%"></p>
                 <f><p class="text-center bText">Children</p></f>
             </div>
             <div class="col-sm-2">
-                <p><img src="img/m3s8img9.png" class="img-responsive center-block" width="75%"></p>
+                <p><img src="https://s3.amazonaws.com/dell-med/img/m3s8img9.png" class="img-responsive center-block" width="75%"></p>
                 <f><p class="text-center bText">Pregnant women</p></f>
             </div>
             <div class="col-sm-2">
-                <p><img src="img/m3s8img10.png" class="img-responsive center-block" width="75%"></p>
+                <p><img src="https://s3.amazonaws.com/dell-med/img/m3s8img10.png" class="img-responsive center-block" width="75%"></p>
                 <f><p class="text-center bText">Adults with dependent children</p></f>
             </div>
             <div class="col-sm-2">
-                <p><img src="img/m3s8img11.png" class="img-responsive center-block" width="75%"></p>
+                <p><img src="https://s3.amazonaws.com/dell-med/img/m3s8img11.png" class="img-responsive center-block" width="75%"></p>
                 <f><p class="text-center bText">People with severe disabilities<br> <span class="small">(such as being wheelchair-bound)</span></p></f>
             </div>
             <div class="col-sm-2">
-                <p><img src="img/m3s8img12.png" class="img-responsive center-block" width="75%"></p>
+                <p><img src="https://s3.amazonaws.com/dell-med/img/m3s8img12.png" class="img-responsive center-block" width="75%"></p>
                 <f><p class="text-center bText">Seniors age 65 and over, sometimes referred to as "dual-eligibles"</p></f>
             </div>
         <div class="col-sm-1"></div>
@@ -523,7 +523,7 @@
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img9.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -543,7 +543,7 @@
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -606,7 +606,7 @@
           <div class="row">            
             <div class="col-sm-5"></div>
               <div class="col-sm-2">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-sm-5"></div>
           </div>
