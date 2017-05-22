@@ -83,7 +83,13 @@ window.onresize = function(){app.showRM();};
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel1',app.cArrayT1.length);
+	   	        var len = app.cArrayT1.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel1',len);
         $(".act1").hide();
         $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";
@@ -347,27 +353,7 @@ padding:0px !important;
 
 <div class="row">
 <div class="col-md-4" id="mytextop">
-<p style="color:black;">
-Ms. Grace Chen knows to avoid the perfume section in the department store. At
-53-years-old, she has lived with asthma her entire life. Scented perfumes and other
-“triggers” can suddenly cause her airways to spasm, sending her into a fit of
-wheezing. Today, she is not entirely sure what set off her symptoms, but she could
-feel her chest tightening up as it became more and more difficult to catch her
-breath, a sensation that she has experienced many times before. She reached into
-her purse to take out her inhaler and took a few puffs. She still felt like she was
-trying to breathe through a snorkel to get the air down to her lungs. Realizing that
-she may need help, she asked her son to drive her to a nearby urgent care clinic.<br><br>
-At the urgent care clinic, Ms. Chen is <a href="" class="span1show">evaluated by a physician</a>, <a href="" class="span2show">given a breathing treatment</a>, and <a href="" class="span3show">undergoes an electrocardiogram (EKG)</a>. Following the breathing treatment, she continues to have significant wheezing and shortness of breath, so
-the <a href="" class="span4show">urgent care clinic physician coordinates</a> for an <a href="" class="span5show">ambulance to take her to an emergency room across town</a>. Ms. Chen has had to visit the ER for her asthma
-before, but it has been a number of years since the last episode that was this bad.<br><br>
-In the ER, <a href="" class="span6show">she is promptly placed in a room</a> and <a href="" class="span7show">evaluated by an emergency medicine physician</a>. Ms. Chen <a href="" class="span8show">undergoes further breathing treatments</a>. A <a href="" class="span9show">chest x-ray is taken</a>, <a href="" class="span10show">blood is drawn for labs</a>, and <a href="" class="span11show">another EKG done</a>. Her labs are ok, her chest x-ray is clear, and her EKG remains normal. The <a href="" class="span12show">physician then decides to
-obtain a chest CT (computed tomography) scan</a> “just to be sure nothing was
-missed.” The CT scan does not reveal any significant abnormalities. <a href="" class="span13show">Following
-more breathing treatments</a> and an <a href="" class="span14show">intravenous administration of solumedrol (a
-steroid)</a>, she improves. She ultimately is <a href="" class="span15show">discharged home with self-care
-instructions</a>, including directions for using her home inhalers and a prescription for
-oral steroids.
-</p>
+    <f><p style="color:black;">Ms. Grace Chen knows to avoid the perfume section in the department store. At 53-years-old, she has lived with asthma her entire life. Scented perfumes and other “triggers” can suddenly cause her airways to spasm, sending her into a fit of wheezing. Today, she is not entirely sure what set off her symptoms, but she could feel her chest tightening up as it became more and more difficult to catch her breath, a sensation that she has experienced many times before. She reached into her purse to take out her inhaler and took a few puffs. She still felt like she was trying to breathe through a snorkel to get the air down to her lungs. Realizing that she may need help, she asked her son to drive her to a nearby urgent care clinic.<br><br> At the urgent care clinic, Ms. Chen is <a href="" class="span1show">evaluated by a physician</a>, <a href="" class="span2show">given a breathing treatment</a>, and <a href="" class="span3show">undergoes an electrocardiogram (EKG)</a>. Following the breathing treatment, she continues to have significant wheezing and shortness of breath, so the <a href="" class="span4show">urgent care clinic physician coordinates</a> for an <a href="" class="span5show">ambulance to take her to an emergency room across town</a>. Ms. Chen has had to visit the ER for her asthma before, but it has been a number of years since the last episode that was this bad.<br><br> In the ER, <a href="" class="span6show">she is promptly placed in a room</a> and <a href="" class="span7show">evaluated by an emergency medicine physician</a>. Ms. Chen <a href="" class="span8show">undergoes further breathing treatments</a>. A <a href="" class="span9show">chest x-ray is taken</a>, <a href="" class="span10show">blood is drawn for labs</a>, and <a href="" class="span11show">another EKG done</a>. Her labs are ok, her chest x-ray is clear, and her EKG remains normal. The <a href="" class="span12show">physician then decides to obtain a chest CT (computed tomography) scan</a> “just to be sure nothing was missed.” The CT scan does not reveal any significant abnormalities. <a href="" class="span13show">Following more breathing treatments</a> and an <a href="" class="span14show">intravenous administration of solumedrol (a steroid)</a>, she improves. She ultimately is <a href="" class="span15show">discharged home with self-care instructions</a>, including directions for using her home inhalers and a prescription for oral steroids.</p></f>
 </div>
 
 <div class="col-md-4 col-sm-12 col-xs-12" id="calcfirst">
@@ -376,196 +362,192 @@ oral steroids.
 <!--Evaluation md start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb1">Evaluation (MD)</p>
+<f><p class="vb1">Evaluation (MD)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn1">350</span></b>
+<f><b style="display:flex;">$<span class="spn1">350</span></b></f>
 </div>
 </div>
 <!--Evaluation md end-->
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb2">Breathing Tx (Nurse)</p>
+<f><p class="vb2">Breathing Tx (Nurse)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn2">340.00</span></b>
+<f><b style="display:flex;">$<span class="spn2">340.00</span></b></f>
 </div>
 </div>
 <!--<p class="vb8">Breathing Tx (Technician) </p> end-->
 <!--<p class="vb11">EKG (Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb3">EKG (Technician)</p>
+<f><p class="vb3">EKG (Technician)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn3">550.00</span></b>
+<f><b style="display:flex;">$<span class="spn3">550.00</span></b></f>
 </div>
 </div>
 <!--B<p class="vb11">EKG (Technician)</p> end-->
 <!--<p class="vb3">UCC Coordinates (MD)</p>.$ start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb4">UCC Coordinates (MD)</p>
+<f><p class="vb4">UCC Coordinates (MD)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn4">376.00</span></b>
+<f><b style="display:flex;">$<span class="spn4">376.00</span></b></f>
 </div>
 </div>
 <!--<p class="vb3">UCC Coordinates (MD)</p>.$ end-->
 <!--<p class="vb5">Ambulance drives to ER</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb5">Ambulance drives to ER</p>
+<f><p class="vb5">Ambulance drives to ER</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn5">995</span></b>
+<f><b style="display:flex;">$<span class="spn5">995</span></b></f>
 </div>
 </div>
 <!--<p class="vb5">Ambulance drives to ER</p> end-->
 <!--<p class="vb6">Assigned room (Nurse)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb6">Assigned room (Nurse)</p>
+<f><p class="vb6">Assigned room (Nurse)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn6">799</span></b>
+<f><b style="display:flex;">$<span class="spn6">799</span></b></f>
 </div>
 </div>
 <!--<p class="vb6">Assigned room (Nurse)</p> end-->
 <!--<p class="vb7">Evaluation (ER MD) </p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb7">Evaluation (ER MD) </p>
+<f><p class="vb7">Evaluation (ER MD) </p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn7">536.24</span></b>
+<f><b style="display:flex;">$<span class="spn7">536.24</span></b></f>
 </div>
 </div>
 <!--<p class="vb7">Evaluation (ER MD) </p> end-->
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb8">Breathing Tx (Technician) </p>
+<f><p class="vb8">Breathing Tx (Technician) </p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn8">340.00</span></b>
+<f><b style="display:flex;">$<span class="spn8">340.00</span></b></f>
 </div>
 </div>
 <!--<p class="vb8">Breathing Tx (Technician) </p> end-->
 <!--<p class="vb8">X-ray (Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb9">X-ray (Technician)</p>
+<f><p class="vb9">X-ray (Technician)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn9">435</span></b>
+<f><b style="display:flex;">$<span class="spn9">435</span></b></f>
 </div>
 </div>
 <!--<p class="vb8">X-ray (Technician)</p> end-->
 <!--<p class="vb10">Blood for labs (Nurse and Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb10">Blood for labs (Nurse and Technician)</b>
+<f><p class="vb10">Blood for labs (Nurse and Technician)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn10">410.00</span></b>
+<f><b style="display:flex;">$<span class="spn10">410.00</span></b></f>
 </div>
 </div>
 <!--<p class="vb10">Blood for labs (Nurse and Technician)</p> end-->
 <!--<p class="vb11">EKG (Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb11">EKG (Technician)</p>
+<f><p class="vb11">EKG (Technician)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn11">550</span></b>
+<f><b style="display:flex;">$<span class="spn11">550</span></b></f>
 </div>
 </div>
 <!--<p class="vb11">EKG (Technician)</p> end-->
 <!--<p class="vb12">Chest CT (Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb12">Chest CT (Technician)</p>
+<f><p class="vb12">Chest CT (Technician)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn12">3070</span></b>
+<f><b style="display:flex;">$<span class="spn12">3070</span></b></f>
 </div>
 </div>
 <!--<p class="vb12">Chest CT (Technician)</p> end-->
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb13">Breathing Tx (Technician)</p>
+<f><p class="vb13">Breathing Tx (Technician)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="span13 spn13">340</span></b>
+<f><b style="display:flex;">$<span class="span13 spn13">340</span></b></f>
 </div>
 </div>
 <!--<p class="vb8">Breathing Tx (Technician) </p> end-->
 <!--<p class="vb14">IV steroid (Nurse)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb14">IV steroid (Nurse)</p>
+<f><p class="vb14">IV steroid (Nurse)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn14">427</span></b>
+<f><b style="display:flex;">$<span class="spn14">427</span></b></f>
 </div>
 </div>
 <!--<p class="vb14">IV steroid (Nurse)</p> end-->
 <!--Discharge and education (Nurse) start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb15">Discharge and education(Nurse)</p>
+<f><p class="vb15">Discharge and education(Nurse)</p></f>
 </div>
 <div class="col-md-3">
-<b style="display:flex;">$<span class="spn15" >358</span></b>
+<f><b style="display:flex;">$<span class="spn15" >358</span></b></f>
 </div>
 </div>
 <!--Discharge and education (Nurse) end-->
 </div>
 
 <div class="col-md-12 bbc chargeM" style="padding:25px 0px; margin:18px 5px;">
-<div class="col-md-12">All charges from chargemaster</div>
+<f><div class="col-md-12">All charges from chargemaster</div></f>
 
 
 <div class="col-md-12" style="margin-top:20px; display: flex;">
 <div class="col-md-8 col-sm-8 col-xs-8 text-uppercase" style="padding-left:0px;">Total</div>
-<div class="col-md-3"><span class="total1">$9900</span></div>
+<f><div class="col-md-3"><span class="total1">$9900</span></div></f>
 </div>
 </div>
 
-<div class=" col-md-12 bbc showainc chargeM" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px 5px 18px 5px;display:none;">Show Insurance Rates (A)</div>
-<div class="bbc showbinc col-md-12 chargeM" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px 5px 18px 5px;display:none;">Show Insurance Rates (B)</div>
+<f><div class=" col-md-12 bbc showainc chargeM" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px 5px 18px 5px;display:none;">Show Insurance Rates (A)</div></f>
+<f><div class="bbc showbinc col-md-12 chargeM" style="padding:25px 0;text-align:center;cursor:pointer;margin:5px 5px 18px 5px;display:none;">Show Insurance Rates (B)</div></f>
 
 <div class="col-sm-12 text-center">
- <p class="btn text-uppercase calc1" style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; margin-bottom:10px;background-color:white;">
-Calculate
- </p>
+ <f><p class="btn text-uppercase calc1" style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; margin-bottom:10px;background-color:white;">Calculate</p></f>
  <br/> <br/>
-  <p class="showallspan btn" style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; margin-bottom: 40px;background-color:white;min-width:220px;">
- Quick add all costs
- </p>
+  <f><p class="showallspan btn" style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; margin-bottom: 40px;background-color:white;min-width:220px;">Quick add all costs</p></f>
  </div>
 </div>
 <div class="col-md-4 col-sm-12 col-xs-12" id="insurance">
 <div style="position:absolute;top:92%;left: -7px;font-size:20px;cursor:pointer;" id="clcarrow">
 	&lt;
 </div>
-<p class="bbc spantmp ComminsAB" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance __ (30% Negotiated Rate)</p>
-<p class="bbc spana ComminsAB" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance A (30% Negotiated Rate)</p>
-<p class="bbc spanb ComminsAB" style="padding: 36px 2px 36px 2px;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance B (30% Negotiated Rate)</p>
+<f><p class="bbc spantmp ComminsAB" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance __ (30% Negotiated Rate)</p></f>
+<f><p class="bbc spana ComminsAB" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance A (30% Negotiated Rate)</p></f>
+<f><p class="bbc spanb ComminsAB" style="padding: 36px 2px 36px 2px;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance B (30% Negotiated Rate)</p></f>
 <div class="bbc marginpading mympd1">
 <!--Evaluation md start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb1">Evaluation (MD)</p>
+<f><p class="vb1">Evaluation (MD)</p></f>
 </div>
 <div class="col-md-3" style="display:flex;">
-$
+<f>$</f>
 <p class="vb1">
-<span class="spana spana1">105</span>
-<span class="spanb spanb1">175</span>
+<f><span class="spana spana1">105</span></f>
+<f><span class="spanb spanb1">175</span></f>
 </p>
 </div>
 </div>
@@ -574,13 +556,13 @@ $
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb2">Breathing Tx (Nurse)</p>
+<f><p class="vb2">Breathing Tx (Nurse)</p></f>
 </div>
 <div class="col-md-3" style="display:flex;">
-$
+<f>$</f>
 <p class="vb2">
-<span class="spana spana2">102</span>
-<span class="spanb spanb2">170</span>
+<f><span class="spana spana2">102</span></f>
+<f><span class="spanb spanb2">170</span></f>
 </p>
 </div>
 </div>
@@ -590,13 +572,13 @@ $
 <!--<p class="vb11">EKG (Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb3">EKG (Technician)</p>
+<f><p class="vb3">EKG (Technician)</p></f>
 </div>
 <div class="col-md-3" style="display:flex;">
-$
+<f>$</f>
 <p class="vb3">
-<span class="spana spana3">165</span>
-<span class="spanb spanb3">275</span>
+<f><span class="spana spana3">165</span></f>
+<f><span class="spanb spanb3">275</span></f>
 </p>
 </div>
 </div>
@@ -605,13 +587,13 @@ $
 <!--<p class="vb3">UCC Coordinates (MD)</p>.$ start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb4">UCC Coordinates (MD)</p>
+<f><p class="vb4">UCC Coordinates (MD)</p></f>
 </div>
 <div class="col-md-3" style="display:flex;">
-$
+<f>$</f>
 <p class="vb4">
-<span class="spana spana4">112.8</span>
-<span class="spanb spanb4">188</span>
+<f><span class="spana spana4">112.8</span></f>
+<f><span class="spanb spanb4">188</span></f>
 </p>
 </div>
 </div>
@@ -620,13 +602,13 @@ $
 <!--<p class="vb5">Ambulance drives to ER</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb5">Ambulance drives to ER</p>
+<f><p class="vb5">Ambulance drives to ER</p></f>
 </div>
 <div class="col-md-3" style="display:flex;">
-$
+<f>$</f>
 <p class="vb5">
-<span class="spana spana5">298.5</span>
-<span class="spanb spanb5">497.5</span>
+<f><span class="spana spana5">298.5</span></f>
+<f><span class="spanb spanb5">497.5</span></f>
 </p>
 </div>
 </div>
@@ -635,13 +617,13 @@ $
 <!--<p class="vb6">Assigned room (Nurse)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb6">Assigned room (Nurse)</p>
+<f><p class="vb6">Assigned room (Nurse)</p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
-$
+<f>$</f>
 <p class="vb6">
-<span class="spana spana6">239.7</span>
-<span class="spanb spanb6">399.5</span>
+<f><span class="spana spana6">239.7</span></f>
+<f><span class="spanb spanb6">399.5</span></f>
 </p>
 </div>
 </div>
@@ -650,13 +632,13 @@ $
 <!--<p class="vb7">Evaluation (ER MD) </p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb7">Evaluation (ER MD) </p>
+<f><p class="vb7">Evaluation (ER MD) </p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
-$
+<f>$</f>
 <p class="vb7">
-<span class="spana spana7">168.97</span>
-<span class="spanb spanb7">281.62</span>
+<f><span class="spana spana7">168.97</span></f>
+<f><span class="spanb spanb7">281.62</span></f>
 </p>
 </div>
 </div>
@@ -665,13 +647,13 @@ $
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb8">Breathing Tx (Technician) </p>
+<f><p class="vb8">Breathing Tx (Technician) </p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
-$
+<f>$</f>
 <p class="vb8">
-<span class="spana spana8">102</span>
-<span class="spanb spanb8">170</span>
+<f><span class="spana spana8">102</span></f>
+<f><span class="spanb spanb8">170</span></f>
 </p>
 </div>
 </div>
@@ -681,13 +663,13 @@ $
 <!--<p class="vb8">X-ray (Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb9">X-ray (Technician)</p>
+<f><p class="vb9">X-ray (Technician)</p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
-$
+<f>$</f>
 <p class="vb9">
-<span class="spana spana9">130.5</span>
-<span class="spanb spanb9">217.5</span>
+<f><span class="spana spana9">130.5</span></f>
+<f><span class="spanb spanb9">217.5</span></f>
 </p>
 </div>
 </div>
@@ -697,13 +679,13 @@ $
 <!--<p class="vb10">Blood for labs (Nurse and Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb10">Blood for labs (Nurse and Technician)</p>
+<f><p class="vb10">Blood for labs (Nurse and Technician)</p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
-$
+<f>$</f>
 <p class="vb10">
-<span class="spana spana10">123</span>
-<span class="spanb spanb10">205</span>
+<f><span class="spana spana10">123</span></f>
+<f><span class="spanb spanb10">205</span></f>
 </p>
 </div>
 </div>
@@ -713,13 +695,13 @@ $
 <!--<p class="vb11">EKG (Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb11">EKG (Technician)</p>
+<f><p class="vb11">EKG (Technician)</p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
-$
+<f>$</f>
 <p class="vb11">
-<span class="spana spana11">165</span>
-<span class="spanb spanb11">275</span>
+<f><span class="spana spana11">165</span></f>
+<f><span class="spanb spanb11">275</span></f>
 </p>
 </div>
 </div>
@@ -730,13 +712,13 @@ $
 <!--<p class="vb12">Chest CT (Technician)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb12">Chest CT (Technician)</p>
+<f><p class="vb12">Chest CT (Technician)</p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
-$
+<f>$</f>
 <p class="vb12">
-<span class="spana spana12">921</span>
-<span class="spanb spanb12">1535</span>
+<f><span class="spana spana12">921</span></f>
+<f><span class="spanb spanb12">1535</span></f>
 </p>
 </div>
 </div>
@@ -746,13 +728,13 @@ $
 <!--<p class="vb8">Breathing Tx (Technician) </p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb13">Breathing Tx (Technician) </p>
+<f><p class="vb13">Breathing Tx (Technician) </p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
-$
+<f>$</f>
 <p class="vb13">
-<span class="spana spana13">102</span>
-<span class="spanb spanb13">170</span>
+<f><span class="spana spana13">102</span></f>
+<f><span class="spanb spanb13">170</span></f>
 </p>
 </div>
 </div>
@@ -762,13 +744,13 @@ $
 <!--<p class="vb14">IV steroid (Nurse)</p> start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb14">IV steroid (Nurse)</p>
+<f><p class="vb14">IV steroid (Nurse)</p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
 $
 <p class="vb14">
-<span class="spana spana14">128.1</span>
-<span class="spanb spanb14">213.5</span>
+<f><span class="spana spana14">128.1</span></f>
+<f><span class="spanb spanb14">213.5</span></f>
 </p>
 </div>
 </div>
@@ -779,13 +761,13 @@ $
 (Nurse) start-->
 <div class="row">
 <div class="col-md-8 col-sm-8 col-xs-8">
-<p class="vb15">Discharge and education(Nurse)</p>
+<f><p class="vb15">Discharge and education(Nurse)</p></f>
 </div>
 <div class="col-md-3"  style="display:flex;">
 $
 <p class="vb15">
-<span class="spana spana15">107.4</span>
-<span class="spanb spanb15">179</span>
+<f><span class="spana spana15">107.4</span></f>
+<f><span class="spanb spanb15">179</span></f>
 </p>
 </div>
 </div>
@@ -795,10 +777,10 @@ $
 </div>
 
 <div class="col-md-12 bbc chargeM" style="padding:25px 0px;margin:18px 5px;">
-<div class="col-md-12">All charges from chargemaster</div>
+<f><div class="col-md-12">All charges from chargemaster</div></f>
 <div class="col-md-12" style="margin-top:20px;">
-<div class="col-md-8 col-sm-8 col-xs-8 text-uppercase" style="padding-left:0px;">Total</div>
- <div class="col-md-3"><span class="totala spana">$2971</span><span class="totalb spanb"></span></div>
+<f><div class="col-md-8 col-sm-8 col-xs-8 text-uppercase" style="padding-left:0px;">Total</div></f>
+<f> <div class="col-md-3"><span class="totala spana">$2971</span><span class="totalb spanb"></span></div></f>
 </div>
 </div>
 </div>
@@ -810,8 +792,7 @@ $
 
 
 <div class="col-md-12" style="background-color:whitesmoke;padding:30px;text-align:center; margin-bottom: 40px">
-<p style="margin-bottom:0px;">Now take a look at using TDABC to calculate the likely <b>actual cost</b> to the hospital for providing these services.
-Select the eye icons under ‘See Cost Breakdown’ to see how costs have been calculated.</p>
+<f><p style="margin-bottom:0px;">Now take a look at using TDABC to calculate the likely <b>actual cost</b> to the hospital for providing these services. Select the eye icons under ‘See Cost Breakdown’ to see how costs have been calculated.</p></f>
 </div>
 <div class="col-md-12" style="background-color:#F5F5F5;">
  <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3" id="clcthird">   
@@ -819,11 +800,9 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
  <table class="table" id="clcthird1" style="margin-left:17px;">
 
       <tr>
-        <th class="text-center rbc bordernone" colspan="3" style="padding:36px 0px;">TDABC<br/>
-		(Estimated actual cost to the hospital)
-		</th>
+        <f><th class="text-center rbc bordernone" colspan="3" style="padding:36px 0px;">TDABC<br/>(Estimated actual cost to the hospital)</th></f>
 		<th class="bordernone" style="border-top: 0px none;"></th>
-     <th class="rbc text-center bordernone customeye1" style="padding:36px 0;border: 0px none; text-align:center; vertical-align: middle;">See Cost Breakdown</th>
+     <f><th class="rbc text-center bordernone customeye1" style="padding:36px 0;border: 0px none; text-align:center; vertical-align: middle;">See Cost Breakdown</th></f>
 
 		  <th class="customeye bordernone"  style="border-top: 0px none; "></th>
      </tr>
@@ -833,8 +812,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	<td class="bordernone" colspan="5" style="border-top: 0px none; "></td>
 	</tr>
       <tr>
-        <td class="rbc bordershow" colspan="2">Evaluation (MD)</td>
-        <td class="rbc bordershow">$45.40</td>
+        <f><td class="rbc bordershow" colspan="2">Evaluation (MD)</td></f>
+        <f><td class="rbc bordershow">$45.40</td></f>
 		<td class="bordernone"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal1"></i></th>
@@ -845,8 +824,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </td>
 	  </tr>
       <tr>
-        <td class="rbc bordershow" colspan="2">Breathing Tx (Nurse)</td>
-        <td class="rbc bordershow">$28.04</td>
+        <f><td class="rbc bordershow" colspan="2">Breathing Tx (Nurse)</td></f>
+        <f><td class="rbc bordershow">$28.04</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal2"></i></th>
@@ -857,8 +836,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </td>
 	  </tr>
       <tr>
-        <td class="rbc bordershow" colspan="2">EKG (Technician)</td>
-        <td class="rbc bordershow" >$65.75</td>
+        <f><td class="rbc bordershow" colspan="2">EKG (Technician)</td></f>
+        <f><td class="rbc bordershow" >$65.75</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i></th>
@@ -870,8 +849,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>	  
 
       <tr>
-        <td class="rbc bordershow" colspan="2">UCC Coordinates (MD) </td>
-        <td class="rbc bordershow">$24.80</td>
+        <f><td class="rbc bordershow" colspan="2">UCC Coordinates (MD) </td></f>
+        <f><td class="rbc bordershow">$24.80</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal4"></i></th>
@@ -883,8 +862,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>
 
       <tr>
-        <td class="rbc bordershow" colspan="2">Ambulance drives to ER</td>
-        <td class="rbc bordershow">$34.69</td>
+        <f><td class="rbc bordershow" colspan="2">Ambulance drives to ER</td></f>
+        <f><td class="rbc bordershow">$34.69</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal5"></i></th>
@@ -896,8 +875,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>
 
       <tr>
-        <td class="rbc bordershow" colspan="2">Assigned room (Nurse)</td>
-        <td class="rbc bordershow">$13.68</td>
+        <f><td class="rbc bordershow" colspan="2">Assigned room (Nurse)</td></f>
+        <f><td class="rbc bordershow">$13.68</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal6" ></i></th>
@@ -909,8 +888,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>
 
       <tr>
-        <td class="rbc bordershow" colspan="2">Evaluation (ER MD)</td>
-        <td class="rbc bordershow">$65.87</td>
+        <f><td class="rbc bordershow" colspan="2">Evaluation (ER MD)</td></f>
+        <f><td class="rbc bordershow">$65.87</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal7"></i></th>
@@ -922,8 +901,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>
 
       <tr>
-        <td class="rbc bordershow" colspan="2">Breathing Tx (Nurse)</td>
-        <td class="rbc bordershow">$29.47</td>
+        <f><td class="rbc bordershow" colspan="2">Breathing Tx (Nurse)</td></f>
+        <f><td class="rbc bordershow">$29.47</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal8" ></i></th>
@@ -935,8 +914,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>
 
       <tr>
-        <td class="rbc bordershow" colspan="2">X-ray (Technician)</td>
-        <td class="rbc bordershow">$17.84</td>
+        <f><td class="rbc bordershow" colspan="2">X-ray (Technician)</td></f>
+        <f><td class="rbc bordershow">$17.84</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal9"></i></th>
@@ -949,8 +928,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 
 
       <tr>
-        <td class="rbc bordershow" colspan="2">Blood for labs (Nurse and Technician)</td>
-        <td class="rbc bordershow">$136.27</td>
+        <f><td class="rbc bordershow" colspan="2">Blood for labs (Nurse and Technician)</td></f>
+        <f><td class="rbc bordershow">$136.27</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal10"></i></th>
@@ -962,8 +941,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>
   
        <tr>
-        <td class="rbc bordershow" colspan="2">EKG (Technician)</td>
-        <td class="rbc bordershow">$65.75</td>
+        <f><td class="rbc bordershow" colspan="2">EKG (Technician)</td></f>
+        <f><td class="rbc bordershow">$65.75</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal3"></i></th>
@@ -975,8 +954,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>	  
 
       <tr>
-        <td class="rbc bordershow" colspan="2">Chest CT (Technician)</td>
-        <td class="rbc bordershow">$301.12</td>
+        <f><td class="rbc bordershow" colspan="2">Chest CT (Technician)</td></f>
+        <f><td class="rbc bordershow">$301.12</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal12"></i></th>
@@ -988,8 +967,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>
       
 	  <tr>
-        <td class="rbc bordershow" colspan="2">Breathing Tx (Nurse)</td>
-        <td class="rbc bordershow">$27.82</td>
+        <f><td class="rbc bordershow" colspan="2">Breathing Tx (Nurse)</td></f>
+        <f><td class="rbc bordershow">$27.82</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal13"></i></th>
@@ -1001,8 +980,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>
 
 	  <tr>
-        <td class="rbc bordershow" colspan="2">IV steroid (Nurse)</td>
-        <td class="rbc bordershow">$53.41</td>
+        <f><td class="rbc bordershow" colspan="2">IV steroid (Nurse)</td></f>
+        <f><td class="rbc bordershow">$53.41</td></f>
 		<td class="bordernone" style="border-top:0px none;"></td>
 		<th class="bordernone text-center customeye1">
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal14"></i></th>
@@ -1014,8 +993,8 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	  </tr>
 
 	  <tr>
-        <td class="rbc bordershow" colspan="2">Discharge and education(Nurse)</td>
-        <td class="rbc bordershow" >$21.45</td>
+        <f><td class="rbc bordershow" colspan="2">Discharge and education(Nurse)</td></f>
+        <f><td class="rbc bordershow" >$21.45</td></f>
 		  <td class="bordernone" style="border-top: 0px none;"></td>
 		<th class="bordernone text-center customeye1" >
 		<i class="fa fa-eye-slash" data-toggle="modal" data-target="#myModal15"></i></th>
@@ -1029,12 +1008,12 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 	<td class="bordernone" style="border-top: 0px none;"></td>
 	</tr>
       <tr>
-        <td class="rbc bordershow" colspan="3" style="padding:20px 10px;">All charges from chargemaster</td>
+        <f><td class="rbc bordershow" colspan="3" style="padding:20px 10px;">All charges from chargemaster</td></f>
 		<td class="bordernone" style="border-top: 0px none;"></td>
       </tr>
 	  <tr>
-        <td class="rbc bordershow" colspan="2" style="padding:0 9px 20px">TOTAL</td>
-		 <td class="rbc bordershow" style="padding:0px 5px 20px 5px;">$930</td>
+        <f><td class="rbc bordershow" colspan="2" style="padding:0 9px 20px">TOTAL</td></f>
+		 <f><td class="rbc bordershow" style="padding:0px 5px 20px 5px;">$930</td></f>
 		<td class="bordernone"></td>
       </tr>
 	    <tr>
@@ -1043,9 +1022,7 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
        </tr>
        <tr>
 	   <th colspan="3" class=" text-center" id="comparetocm">
-	    <button class="btn " style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; background-color:white;">
-	   Compare to Chargemaster
- </button>
+	    <f><button class="btn " style="padding:10px 40px;border:2px solid black;color:#0097B0;font-weight:bold; background-color:white;">Compare to Chargemaster</button></f>
 	   </th>
        </tr>	   
 
@@ -1058,94 +1035,94 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
  <table class="table">
 
       <tr>
-        <th class="text-center bbc chmaster" colspan="3" style="padding:46px 0px;">Chargemaster</th>
+        <f><th class="text-center bbc chmaster" colspan="3" style="padding:46px 0px;">Chargemaster</th></f>
      </tr>
 	<tr>
 	<td colspan="5" class="bordernone" style="border-top: 0px none;"></td>
 	</tr>
       <tr>
-        <td class="bbc bordershow1" colspan="2">Evaluation (MD)</td>
-        <td class="bbc bordershow1">$350</td>
+        <f><td class="bbc bordershow1" colspan="2">Evaluation (MD)</td></f>
+        <f><td class="bbc bordershow1">$350</td></f>
       </tr>
       <tr>
-        <td class="bbc bordershow1" colspan="2">Breathing Tx (Nurse)</td>
-        <td class="bbc bordershow1">$340.00</td>
+        <f><td class="bbc bordershow1" colspan="2">Breathing Tx (Nurse)</td></f>
+        <f><td class="bbc bordershow1">$340.00</td></f>
       </tr> 
       <tr>
-        <td class="bbc bordershow1" colspan="2">EKG (Technician)</td>
-       <td class="bbc bordershow1">$550.00</td>
+        <f><td class="bbc bordershow1" colspan="2">EKG (Technician)</td></f>
+       <f><td class="bbc bordershow1">$550.00</td></f>
       </tr>  
 
       <tr>
-        <td class="bbc bordershow1" colspan="2">UCC Coordinates (MD) </td>
-        <td class="bbc bordershow1">$376.00</td>
+        <f><td class="bbc bordershow1" colspan="2">UCC Coordinates (MD) </td></f>
+        <f><td class="bbc bordershow1">$376.00</td></f>
       </tr> 
 
       <tr>
-        <td class="bbc bordershow1" colspan="2">Ambulance drives to ER</td>
-        <td class="bbc bordershow1">$995</td>
+        <f><td class="bbc bordershow1" colspan="2">Ambulance drives to ER</td></f>
+        <f><td class="bbc bordershow1">$995</td></f>
       </tr> 
 
       <tr>
-        <td class="bbc bordershow1" colspan="2">Assigned room (Nurse)</td>
-        <td class="bbc bordershow1">$799</td>
+        <f><td class="bbc bordershow1" colspan="2">Assigned room (Nurse)</td></f>
+        <f><td class="bbc bordershow1">$799</td></f>
       </tr>
 
       <tr>
-        <td class="bbc bordershow1" colspan="2">Evaluation (ER MD)</td>
-        <td class="bbc bordershow1">$536.24</td>
+        <f><td class="bbc bordershow1" colspan="2">Evaluation (ER MD)</td></f>
+        <f><td class="bbc bordershow1">$536.24</td></f>
       </tr> 
 
       <tr>
-        <td class="bbc bordershow1" colspan="2">Breathing Tx (Nurse)</td>
-        <td class="bbc bordershow1">$340.00</td>
+        <f><td class="bbc bordershow1" colspan="2">Breathing Tx (Nurse)</td></f>
+        <f><td class="bbc bordershow1">$340.00</td></f>
       </tr> 
 
       <tr>
-        <td class="bbc bordershow1" colspan="2">X-ray (Technician)</td>
-        <td class="bbc bordershow1">$435</td>
+        <f><td class="bbc bordershow1" colspan="2">X-ray (Technician)</td></f>
+        <f><td class="bbc bordershow1">$435</td></f>
       </tr> 
 
 
       <tr>
-        <td class="bbc bordershow1" colspan="2">Blood for labs (Nurse and Technician)</td>
-        <td class="bbc bordershow1">$410.00</td>
+        <f><td class="bbc bordershow1" colspan="2">Blood for labs (Nurse and Technician)</td></f>
+        <f><td class="bbc bordershow1">$410.00</td></f>
       </tr> 
   
        <tr>
-        <td class="bbc bordershow1" colspan="2">EKG (Technician)</td>
-        <td class="bbc bordershow1">$550</td>
+        <f><td class="bbc bordershow1" colspan="2">EKG (Technician)</td></f>
+        <f><td class="bbc bordershow1">$550</td></f>
       </tr> 
 
       <tr>
-        <td class="bbc bordershow1" colspan="2">Chest CT (Technician)</td>
-        <td class="bbc bordershow1">$3070</td>
+        <f><td class="bbc bordershow1" colspan="2">Chest CT (Technician)</td></f>
+        <f><td class="bbc bordershow1">$3070</td></f>
       </tr>  
       
 	  <tr>
-        <td class="bbc bordershow1" colspan="2">Breathing Tx (Nurse)</td>
-        <td class="bbc bordershow1">$340</td>
+        <f><td class="bbc bordershow1" colspan="2">Breathing Tx (Nurse)</td></f>
+        <f><td class="bbc bordershow1">$340</td></f>
       </tr>
 
 	  <tr>
-        <td class="bbc bordershow1" colspan="2">IV steroid (Nurse)</td>
-        <td class="bbc bordershow1">$427</td>
+        <f><td class="bbc bordershow1" colspan="2">IV steroid (Nurse)</td></f>
+        <f><td class="bbc bordershow1">$427</td></f>
       </tr> 
 
 	  <tr>
-        <td class="bbc bordershow1" colspan="2">Discharge and education(Nurse)</td>
-        <td class="bbc bordershow1">$358</td>
+        <f><td class="bbc bordershow1" colspan="2">Discharge and education(Nurse)</td></f>
+        <f><td class="bbc bordershow1">$358</td></f>
       </tr>
 	 <tr>
 	<td class="bordernone" colspan="3"></td>
 	</tr>
       <tr>
-        <td class="bbc bordershow1" colspan="3" style="padding:20px 9px;">All charges from chargemaster</td>
+        <f><td class="bbc bordershow1" colspan="3" style="padding:20px 9px;">All charges from chargemaster</td></f>
 		<td class="bordernone" style="border-top: 0px none;"></td>
       </tr>
 	  <tr>
-        <td class="bbc bordershow1" colspan="2" style="padding:0px 5px 20px 9px;">TOTAL</td>
-		 <td class="bbc bordershow1" style="padding:0px 5px 20px 5px;">$9876.24</td>
+        <f><td class="bbc bordershow1" colspan="2" style="padding:0px 5px 20px 9px;">TOTAL</td></f>
+		 <f><td class="bbc bordershow1" style="padding:0px 5px 20px 5px;">$9876.24</td></f>
 		<td class="bordernone"></td>
       </tr>  
 
@@ -1154,37 +1131,28 @@ Select the eye icons under ‘See Cost Breakdown’ to see how costs have been c
 </div>
 
   <div class="col-md-12" style="background-color:whitesmoke;padding:30px;">
- <p>
-  In our current system, insurance companies attempt to negotiate the hospital’s charges lower. In response, hospital
-administrators raise chargemaster prices to keep profit margins high. As a result, chargemaster prices are hugely inflated,
-seemingly arbitrary numbers that have very little to do with the true costs of care. In a system that bases hospital
-reimbursement and patient costing mechanisms on TDABC-derived calculations or similar, it is likely insurance companies
-would negotiate for percentages above the costing total, as hospitals and providers need a margin in order to run.
-However, these negotiations would be derived from a realistic and non-arbitrary starting point.
-  </p>
-  <p>
-  The below table shows the difference between these costing mechanisms for Ms. Chen’s asthma exacerbation episode.
-  </p>
+ <f><p>In our current system, insurance companies attempt to negotiate the hospital’s charges lower. In response, hospital administrators raise chargemaster prices to keep profit margins high. As a result, chargemaster prices are hugely inflated, seemingly arbitrary numbers that have very little to do with the true costs of care. In a system that bases hospital reimbursement and patient costing mechanisms on TDABC-derived calculations or similar, it is likely insurance companies would negotiate for percentages above the costing total, as hospitals and providers need a margin in order to run. However, these negotiations would be derived from a realistic and non-arbitrary starting point. </p></f>
+  <f><p>The below table shows the difference between these costing mechanisms for Ms. Chen’s asthma exacerbation episode.  </p></f>
   
  <div class="col-md-12" style="margin-top:30px;"> 
   <div class="col-md-6  col-md-offset-3" id="incsurenceab1"> 
 
 <table class="table table-bordered" id="incsurenceab">
       <tr>
-        <th style="padding:30px;" class="text-center" colspan="4">Insurance Company A</th>
-        <th style="padding:30px;" class="text-center" colspan="4">Insurance Company B</th>
+        <f><th style="padding:30px;" class="text-center" colspan="4">Insurance Company A</th></f>
+        <f><th style="padding:30px;" class="text-center" colspan="4">Insurance Company B</th></f>
       </tr>
       <tr>
-        <td colspan="3">Chargemaster - 30%</td>
-        <td>$2970</td>
-		 <td colspan="3">Chargemaster - 50%</td>
-        <td>$4950</td>
+        <f><td colspan="3">Chargemaster - 30%</td></f>
+        <f><td>$2970</td></f>
+		 <f><td colspan="3">Chargemaster - 50%</td></f>
+        <f><td>$4950</td></f>
       </tr>
       <tr>
-        <td colspan="3">TDABC + 30%</td>
-        <td>$1211</td>
-		 <td colspan="3">TDABC + 50%</td>
-        <td>$1397</td>
+        <f><td colspan="3">TDABC + 30%</td></f>
+        <f><td>$1211</td></f>
+		 <f><td colspan="3">TDABC + 50%</td></f>
+        <f><td>$1397</td></f>
       </tr>
   </table>
  </div>
@@ -1229,9 +1197,9 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
                             <div class="col-sm-8" >
                                 <f><p class="ques" style="padding-bottom: 0px;">This year Grace is covered by Insurance plan A. This includes:</p></f>
                                 <ul class="text-left">
-                                  <li>Co-pay: $150 for Emergency Department; $35 for urgent care visits</li>
-                                  <li>Deductible: $1000</li>
-                                  <li>Co-insurance: 10% (after deductible)</li>
+                                  <li><f>Co-pay: $150 for Emergency Department; $35 for urgent care visits</f></li>
+                                  <li><f>Deductible: $1000</f></li>
+                                  <li><f>Co-insurance: 10% (after deductible)</f></li>
                                 </ul> 
                                 <f><p class="ques text-center">How much would Grace have to pay for this asthma exacerbation episode if she has not spent anything in health care costs toward her deductible yet this year?</p></f>
                                 <div class="row row-eq-height">
@@ -1294,9 +1262,9 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
                             <div class="col-sm-8" >
                                 <f><p class="ques" style="padding-bottom: 0px;">In the year following this episode, Grace’s employer changes their insurance package to include coverage from Insurer B only. This plan includes:</p></f>
                                   <ul  class="text-left">
-                                      <li>Co-pays: $150 for Emergency Department; $35 for urgent care visits </li>
-                                      <li>Deductible= $5000</li>
-                                      <li>Co-insurance: 20% (after deductible) </li>                                      
+                                      <li><f>Co-pays: $150 for Emergency Department; $35 for urgent care visits</f> </li>
+                                      <li><f>Deductible= $5000</f></li>
+                                      <li><f>Co-insurance: 20% (after deductible)</f> </li>                                      
                                   </ul>
                                 <f><p class="ques">How much would Grace have to pay for this asthma exacerbation episode if she has not spent anything in health care costs toward her deductible yet this year?</p></f>                                  
                                 <div class="row row-eq-height">
@@ -1423,9 +1391,9 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
                                 <f><p class="ques" style="padding-bottom: 0px;">Consider in the future Grace visits an emergency department at a different hospital where her insurance has negotiated a hospital-based bundled payment for asthma care. In this scenario, the insurance pays a set bundled payment of $1500 for all care related to the acute episode.</p></f>
                                 <f><p class="ques" style="padding-bottom: 5px;">Grace’s current insurance plan includes:</p></f>
                                   <ul class="text-left">
-                                      <li>Co-pay: $150 for Emergency Department</li>
-                                      <li>Deductible: $1000</li>
-                                      <li>Co-insurance: 10% (after deductible)</li>
+                                      <li><f>Co-pay: $150 for Emergency Department</f></li>
+                                      <li><f>Deductible: $1000</f></li>
+                                      <li><f>Co-insurance: 10% (after deductible)</f></li>
                                   </ul>
                                  <f><p class="ques">How much would Grace have to pay for this asthma exacerbation episode if she has not spent anything in health care costs toward her deductible yet this year?</p></f>   
                                 <div class="row">
@@ -1506,9 +1474,7 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
             <div class="response1">
                <div class="carouselC1" id="my-Carousel2">
                   <br>                 
-                  <f><p>
-				  There is a ten-fold difference between the likely TDABC amount and the chargemaster for Ms. Chen's asthma exacerbation episode. Reflect on the reasons for this difference as well as the proposed charging models. Does TDABC solve the problem? Where does it not?
-				  </p></f> 
+                  <f><p>There is a ten-fold difference between the likely TDABC amount and the chargemaster for Ms. Chen's asthma exacerbation episode. Reflect on the reasons for this difference as well as the proposed charging models. Does TDABC solve the problem? Where does it not?</p></f> 
                   <f><p>Scroll through user responses.</p></f>
                   <div class="well">
                   <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -1592,7 +1558,7 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
@@ -1605,114 +1571,112 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-         <h3 class="modal-title">Evaluation: 15 minutes</h3>
+         <f><h3 class="modal-title">Evaluation: 15 minutes</h3></f>
         </div>
     <div class="modal-body">
     <div class="col-md-12">
-	<div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
-      </div>
+	<div class="col-md-12"><f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f></div>
 	  </div>
 	  
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Urgent Care Physician:
+    <f>Urgent Care Physician:</f>
     </div>
    <div class="col-md-2">
-   $185,000+
+   <f>$185,000+</f>
    </div>
    <div class="col-md-2">
-   15,000+
+   <f>15,000+</f>
    </div>
     
     <div class="col-md-2">
-   $8,000=
+   <f>$8,000=</f>
    </div>
    <div class="col-md-2">
-    $208,000
+    <f>$208,000</f>
    </div>
    <div class="col-md-1">
-    $17,333
+    <f>$17,333</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
-        <div class="col-md-12">$17,333 (Monthly cost of resource)/112 hours (Monthly available hours) = $155/hour</div>
+        <f><div class="col-md-12">$17,333 (Monthly cost of resource)/112 hours (Monthly available hours) = $155/hour</div></f>
   </div>
   
   
     <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-  $500,000
+  <f>$500,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $1000+
+      <f>$1000+</f>
    </div>
   <div class="col-md-1">
-      $5000=
+      <f>$5000=</f>
    </div>
    <div class="col-md-2">
-    $56,000
+    <f>$56,000</f>
    </div>
    <div class="col-md-1">
-    $4667
+    <f>$4667</f>
    </div>
       </div>
   
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-            $4667 (Monthly cost of resource)/730 (Monthly hours available) = $6.40/hour
+            <f>$4667 (Monthly cost of resource)/730 (Monthly hours available) = $6.40/hour</f>
   </div>
   </div>  
-       <div class="myalignclass">Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40 </div> 
+       <f><div class="myalignclass">Total ($155 * 0.25) + ($6.40 * 0.25) = $45.40 </div> </f>
   </div>
       </div>
     </div>
@@ -1725,63 +1689,62 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Breathing Treatment: 20 minutes</h3>
+      <f><h3 class="modal-title">Breathing Treatment: 20 minutes</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
-	    <div class="col-md-12">Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
-        </div>
+	    <div class="col-md-12"><f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f></div>
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-1">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-1">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-3">
-    Nurse:
+    <f>Nurse:</f>
     </div>
    <div class="col-md-1">
-   $65,000+
+   <f>$65,000+</f>
    </div>
    <div class="col-md-2">
-   $9,000+
+   <f>$9,000+</f>
    </div>
     <div class="col-md-2">
-   $10,800+
+   <f>$10,800+</f>
    </div>
     <div class="col-md-1">
-    $2,560=
+    <f>$2,560=</f>
    </div> 
   
    <div class="col-md-2">
-   $87,360 
+   <f>$87,360</f> 
    </div>
    <div class="col-md-1">
-    $7,280
+    <f>$7,280</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-          $7280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour
+          <f>$7280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour</f>
   </div>
   </div>
   
@@ -1789,104 +1752,104 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-    $500,000
+    <f>$500,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $1000+ 
+      <f>$1000+</f> 
    </div>
   <div class="col-md-1">
-      $5000= 
+      <f>$5000= </f>
    </div>
    <div class="col-md-2">
-    $56,000
+    <f>$56,000</f>
    </div>
    <div class="col-md-1">
-    $4667
+    <f>$4667</f>
    </div>
       </div>
 
     
       <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
 	  <div class="col-md-12">
-            $4667 (Monthly cost of resource)/730 (Monthly hours available) = $6.40/hour
+            <f>$4667 (Monthly cost of resource)/730 (Monthly hours available) = $6.40/hour</f> 
        </div> 
        </div> 
   
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-2">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-2">
-    Nebulizer:
+    <f>Nebulizer:</f>
     </div>
    <div class="col-md-2">
-    $200
+    <f>$200</f>
    </div>
    <div class="col-md-2" style="display:flex;">
-   1yr+
+   <f>1yr+</f>
   </div>  
   <div class="col-md-2">
-      $40=
+      <f>$40=</f>
    </div>
    <div class="col-md-2">
-    $240
+    <f>$240</f>
    </div>
    <div class="col-md-2">
-    $20
+    <f>$20</f>
    </div>
       </div>
     
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-            $20 (Monthly cost of resource)/730 (Monthly minutes available) = $0.03/hour
+            <f>$20 (Monthly cost of resource)/730 (Monthly minutes available) = $0.03/hour</f>
   </div> 
   </div> 
   
-  <div class="myalignclass">Albuterol: 5mg/ml: $4.47</div>
-     <div class="myalignclass">Total  ($65 * 0.33) + ($6.40 * 0.33) + ($0.03 * 0.33) + $4.47 = $28.04</div>
+  <f><div class="myalignclass">Albuterol: 5mg/ml: $4.47</div></f>
+     <f><div class="myalignclass">Total  ($65 * 0.33) + ($6.40 * 0.33) + ($0.03 * 0.33) + $4.47 = $28.04</div></f>
      </div>
       </div>
     </div>
@@ -1900,57 +1863,57 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">EKG: 20 minutes</h3>
+      <f><h3 class="modal-title">EKG: 20 minutes</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
 	<div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+    <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
      </div>
      </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-2">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    Technician:
+    <f>Technician:</f>
     </div>
    <div class="col-md-2">
-   $50,000+
+   <f>$50,000+</f>
    </div>
    <div class="col-md-2">
-   $7,000+
+   <f>$7,000+</f>
    </div>
     <div class="col-md-2">
-   $2,500=
+   <f>$2,500=</f>
    </div>
    <div class="col-md-2">
-   $59,500
+   <f>$59,500</f>
    </div>
    <div class="col-md-2">
-   $4,958
+   <f>$4,958</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-             $4958 (Monthly cost of resource)/112 hours (Monthly available hours) = $44/hour
+             <f>$4958 (Monthly cost of resource)/112 hours (Monthly available hours) = $44/hour</f>
   </div>
   </div>
   
@@ -1958,102 +1921,102 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-    $500,000
+    <f>$500,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $1000+ 
+      <f>$1000+</f> 
    </div>
   <div class="col-md-1">
-      $5000= 
+      <f>$5000=</f> 
    </div>
    <div class="col-md-2">
-    $56,000
+    <f>$56,000</f>
    </div>
    <div class="col-md-1">
-    $4667
+    <f>$4667</f>
    </div>
       </div>
     
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-            $4667 (Monthly cost of resource)/730 (Monthly hours available) = $6.40/hour
+            <f>$4667 (Monthly cost of resource)/730 (Monthly hours available) = $6.40/hour</f>
   </div> 
   </div> 
 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Electrocardiogram Machine:
+    <f>Electrocardiogram Machine:</f>
     </div>
    <div class="col-md-2">
-    $50,000
+    <f>$50,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+ 
+   <f>10yr+</f> 
   </div>  
   <div class="col-md-2">
-      $200=
+      <f>$200=</f>
    </div>
    <div class="col-md-2">
-    $5200
+    <f>$5200</f>
    </div>
    <div class="col-md-2">
-    $433
+    <f>$433</f>
    </div>
       </div>
     
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-            $433 (Monthly cost of resource)/730 (Monthly minutes available) = $0.60/hour
+            <f>$433 (Monthly cost of resource)/730 (Monthly minutes available) = $0.60/hour</f>
   </div> 
   </div> 
-  <div class="myalignclass">Electrodes (10): $5.30 each</div>
-   <div class="myalignclass">Total ($44 * 0.25) + ($6.40 * 0.25) + ($0.60 * 0.25) + ($5.30 * 10) = $65.75</div>
+  <f><div class="myalignclass">Electrodes (10): $5.30 each</div></f>
+   <f><div class="myalignclass">Total ($44 * 0.25) + ($6.40 * 0.25) + ($0.60 * 0.25) + ($5.30 * 10) = $65.75</div></f>
      </div>
       </div>
     </div>
@@ -2067,60 +2030,60 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Ambulance Coordination: 10 minutes</h3>
+      <f><h3 class="modal-title">Ambulance Coordination: 10 minutes</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
 	<div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+	<f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
       </div>
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-2">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    Technician:
+    <f>Technician:</f>
     </div>
    <div class="col-md-2">
-   $185,000+
+   <f>$185,000+</f>
    </div>
    <div class="col-md-2">
-   $15,000+
+   <f>$15,000+</f>
    </div>
     <div class="col-md-2">
-   $8,000=
+   <f>$8,000=</f>
    </div>
    <div class="col-md-2">
-   $339,705
+   <f>$339,705</f>
    </div>
    <div class="col-md-2">
-   $28309
+   <f>$28309</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-             $28309 (Monthly cost of resource)/112 hours (Monthly available hours) = $155/hour
+             <f>$28309 (Monthly cost of resource)/112 hours (Monthly available hours) = $155/hour</f>
   </div>
   </div>
-<div class="myalignclass"> Total ($155 * 0.16) = $25 </div>
+<div class="myalignclass"> <f>Total ($155 * 0.16) = $25</f> </div>
      </div>
       </div>
     </div>
@@ -2135,57 +2098,57 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Ambulance Drives to ER: 15 minutes/10 miles</h3>
+	  <f><h3 class="modal-title">Ambulance Drives to ER: 15 minutes/10 miles</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
     <div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+    <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
   </div>
   </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-2">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    Driver:
+    <f>Driver:</f>
     </div>
    <div class="col-md-2">
-   $25000+
+   <f>$25000+</f>
    </div>
    <div class="col-md-2">
-   $2,500+
+   <f>$2,500+</f>
    </div>
     <div class="col-md-2">
-   $3,000=
+   <f>$3,000=</f>
    </div>
    <div class="col-md-2">
-   $30,500
+   <f>$30,500</f>
    </div>
    <div class="col-md-2">
-   $2,542
+   <f>$2,542</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-             $2,542 (Monthly cost of resource)/112 hours (Monthly available hours) = $22.70/hour
+             <f>$2,542 (Monthly cost of resource)/112 hours (Monthly available hours) = $22.70/hour</f>
   </div>
   </div>
 
@@ -2193,46 +2156,46 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
        <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-2">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    EMT (X2):
+    <f>EMT (X2):</f>
     </div>
    <div class="col-md-2">
-   $32,000+
+   <f>$32,000+</f>
    </div>
    <div class="col-md-2">
-   $3,000+
+   <f>$3,000+</f>
    </div>
     <div class="col-md-2">
-   $3,000=
+   <f>$3,000=</f>
    </div>
    <div class="col-md-2">
-   $38,000
+   <f>$38,000</f>
    </div>
    <div class="col-md-2">
-   $3,167
+   <f>$3,167</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-             $3,167 (Monthly cost of resource)/112 hours (Monthly available hours) = $28.27/hour
+             <f>$3,167 (Monthly cost of resource)/112 hours (Monthly available hours) = $28.27/hour</f>
   </div>
   </div>
   
@@ -2241,52 +2204,52 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Ambulance:
+    <f>Ambulance:</f>
     </div>
    <div class="col-md-2">
-   $125,000
+   <f>$125,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   4yr+ 
+   <f>4yr+</f> 
   </div>  
   <div class="col-md-2">
-      $24,000=
+      <f>$24,000=</f>
    </div>
    <div class="col-md-2">
-    $55,250
+    <f>$55,250</f>
    </div>
    <div class="col-md-1">
-    $4,604
+    <f>$4,604</f>
    </div>
     </div>
     
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-            $4,604 (Monthly cost of resource)/730 (Monthly hours available) = $6.30/hour
+            <f>$4,604 (Monthly cost of resource)/730 (Monthly hours available) = $6.30/hour</f>
   </div> 
   </div> 
 
     
-  <div class="myalignclass">Cost per mile = $1.33</div>
-<div class="myalignclass">Total ($22.70 * 0.25) + ($28.27 * 0.25)(2) + ($6.30 * 0.25) + ($1.33 * 10) = $34.69 </div>
+  <div class="myalignclass"><f>Cost per mile = $1.33</f></div>
+<div class="myalignclass"><f>Total ($22.70 * 0.25) + ($28.27 * 0.25)(2) + ($6.30 * 0.25) + ($1.33 * 10) = $34.69 </f></div>
      </div>
       </div>
     </div>
@@ -2300,63 +2263,63 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Assigned Room: 15 minutes</h3>
+      <f><h3 class="modal-title">Assigned Room: 15 minutes</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
 	<div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+    <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
       </div>
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-1">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    Nurse:
+    <f>Nurse:</f>
     </div>
    <div class="col-md-2">
-   $65,000+
+   <f>$65,000+</f>
    </div>
    <div class="col-md-2">
-   $9,000+
+   <f>$9,000+</f>
    </div>
     <div class="col-md-2">
-   $10,800+
+   <f>$10,800+</f>
    </div>
     <div class="col-md-2">
-   $2,560=
+   <f>$2,560=</f>
    </div>   
    <div class="col-md-1">
-   $87,360
+   <f>$87,360</f>
    </div>
    <div class="col-md-1">
-   $7,280
+   <f>$7,280</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-        $4958 (Monthly cost of resource)/112 hours (Monthly available hours) = $44/hour
+        <f>$4958 (Monthly cost of resource)/112 hours (Monthly available hours) = $44/hour</f>
   </div>
   </div>
   
@@ -2365,56 +2328,56 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
        <div class="col-md-12">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-  $850,000
+  <f>$850,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $2000+ 
+      <f>$2000+</f> 
    </div>
   <div class="col-md-1">
-      $7000= 
+      <f>$7000=</f> 
    </div>
    <div class="col-md-2">
-    $94,000
+    <f>$94,000</f>
    </div>
    <div class="col-md-1">
-    $7,833
+    <f>$7,833</f>
    </div>
       </div>
   
   <div class="col-md-12" style="margin-top:20px;">
   <div class="col-md-12">
-            $7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour
+            <f>$7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour</f>
   </div> 
   </div> 
         
-       <div class="myalignclass">Total ($44 * 0.25) + ($10.73 * 0.25) = $13.68</div>
+       <div class="myalignclass"><f>Total ($44 * 0.25) + ($10.73 * 0.25) = $13.68</f></div>
      </div>
       </div>
     </div>
@@ -2427,59 +2390,59 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Evaluation: 15 minutes</h3>
+      <f><h3 class="modal-title">Evaluation: 15 minutes</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
     <div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+    <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
       </div>
       </div>
      <div class="col-md-12">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Urgent Care Physician:
+    <f>Urgent Care Physician:</f>
     </div>
    <div class="col-md-2">
-   $315,000+
+   <f>$315,000+</f>
    </div>
    <div class="col-md-2">
-   $15,000+
+   <f>$15,000+</f>
    </div>
     
     <div class="col-md-2">
-   $12,000=
+   <f>$12,000=</f>
    </div>
    <div class="col-md-2">
-   $339,705
+   <f>$339,705</f>
    </div>
    <div class="col-md-1">
-    $28309
+    <f>$28309</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-        $28,309 (Monthly cost of resource)/112 hours (Monthly available hours) = $252.76/hour
+        <f>$28,309 (Monthly cost of resource)/112 hours (Monthly available hours) = $252.76/hour</f>
   </div>
   </div>
   
@@ -2487,54 +2450,54 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
        <div class="col-md-12">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-  $850,000 
+  <f>$850,000 </f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $2000+ 
+      <f>$2000+</f> 
    </div>
   <div class="col-md-1">
-      $7000= 
+      <f>$7000=</f> 
    </div>
-    <div class="col-md-2">$94,000</div>
+    <div class="col-md-2"><f>$94,000</f></div>
    <div class="col-md-1">
-    $7,833
+    <f>$7,833</f>
    </div>
       </div>
   
   <div class="col-md-12" style="margin-top:20px;">
   <div class="col-md-12">
-        $7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour
+        <f>$7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour</f>
   </div> 
   </div> 
  
-<div class="myalignclass">Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87</div>
+<div class="myalignclass"><f>Total ($252.76 * 0.25) + ($10.73 * 0.25) = $65.87</f></div>
      </div>
       </div>
     </div>
@@ -2547,64 +2510,64 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Breathing Treatment: 20 minutes</h3>
+      <h3 class="modal-title"><f>Breathing Treatment: 20 minutes</f></h3>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
     <div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+    <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
     </div>
     </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-1">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-1">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-3">
-    Nurse:
+    <f>Nurse:</f>
     </div>
    <div class="col-md-1">
-   $65,000+
+   <f>$65,000+</f>
    </div>
    <div class="col-md-2">
-   $9,000+
+   <f>$9,000+</f>
    </div>
     <div class="col-md-2">
-   $10,800+
+   <f>$10,800+</f>
    </div>
     <div class="col-md-1">
-    $2,560=
+    <f>$2,560=</f>
    </div> 
   
    <div class="col-md-2">
-   $87,360 
+   <f>$87,360 </f>
    </div>
    <div class="col-md-1">
-    $7,280
+    <f>$7,280</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-          $7280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour
+          <f>$7280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour</f>
   </div>
   </div>
   
@@ -2612,52 +2575,52 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
        <div class="col-md-12">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+  <f> Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-  $850,000 
+  <f>$850,000 </f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $2000+ 
+      <f>$2000+</f> 
    </div>
   <div class="col-md-1">
-      $7000= 
+      <f>$7000=</f> 
    </div>
    <div class="col-md-2">
-    $94,000
+    <f>$94,000</f>
    </div>
    <div class="col-md-1">
-    $7,833
+    <f>$7,833</f>
    </div>
       </div>
   
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-            $7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour
+            <f>$7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour</f>
   </div>   
   </div>   
 
@@ -2665,50 +2628,50 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-2">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-2">
-    Nebulizer:
+    <f>Nebulizer:</f>
     </div>
    <div class="col-md-2">
-    $200
+    <f>$200</f>
    </div>
    <div class="col-md-2" style="display:flex;">
-   1yr+  
+   <f>1yr+</f>  
   </div>  
   <div class="col-md-2">
-      $40= 
+      <f>$40=</f> 
    </div>
    <div class="col-md-2">
-    $240
+    <f>$240</f>
    </div>
    <div class="col-md-2">
-    $20
+    <f>$20</f>
    </div>
       </div>
     
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-            $20 (Monthly cost of resource)/730 (Monthly minutes available) = $0.03/hour
+            <f>$20 (Monthly cost of resource)/730 (Monthly minutes available) = $0.03/hour</f>
   </div> 
   </div> 
-  <div class="myalignclass">Albuterol: 5mg/ml: $4.47</div>
-    <div class="myalignclass">Total ($65 * 0.33) + ($10.73 *00.33) + ($0.03 * 0.33) + $4.47 = $29.47</div>
+  <div class="myalignclass"><f>Albuterol: 5mg/ml: $4.47</f></div>
+    <div class="myalignclass"><f>Total ($65 * 0.33) + ($10.73 *00.33) + ($0.03 * 0.33) + $4.47 = $29.47</f></div>
      </div>
       </div>
     </div>
@@ -2721,57 +2684,57 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Chest X-Ray: 20 minutes</h3>
+      <f><h3 class="modal-title">Chest X-Ray: 20 minutes</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
     <div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+    <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
       </div>
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-2">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    Technician:
+    <f>Technician:</f>
     </div>
    <div class="col-md-2">
-   $50,000+
+   <f>$50,000+</f>
    </div>
    <div class="col-md-2">
-   $7,000+
+   <f>$7,000+</f>
    </div>
     <div class="col-md-2">
-   $2,500=
+   <f>$2,500=</f>
    </div>
    <div class="col-md-2">
-   $59,500
+   <f>$59,500</f>
    </div>
    <div class="col-md-2">
-   $4,958
+   <f>$4,958</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-          $4958 (Monthly cost of resource)/112 hours (Monthly available hours) = $44/hour
+          <f>$4958 (Monthly cost of resource)/112 hours (Monthly available hours) = $44/hour</f>
      </div>
      </div>
 
@@ -2781,52 +2744,52 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-2">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-2">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-   $1,00,000
+   <f>$1,00,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-  20yr+ 
+  <f>20yr+ </f>
   </div>  
   <div class="col-md-2">
-     $7,000+
+     <f>$7,000+</f>
    </div>
   <div class="col-md-2">
-   $15,000=
+   <f>$15,000=</f>
    </div>
    <div class="col-md-2">
-    $72,000
+    <f>$72,000</f>
    </div>
    <div class="col-md-1">
-    $6,000
+    <f>$6,000</f>
    </div>
     </div>
     
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-       $6,000 (Monthly cost of resource)/730 (Monthly hours available) = $8.22/hour
+       <f>$6,000 (Monthly cost of resource)/730 (Monthly hours available) = $8.22/hour</f>
   </div> 
   </div> 
 
@@ -2834,50 +2797,50 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-2">
-    X-ray Machine:
+    <f>X-ray Machine:</f>
     </div>
    <div class="col-md-2">
-   $130,000
+   <f>$130,000</f>
    </div>
    <div class="col-md-1">
-  10yr+
+  <f>10yr+</f>
   </div>  
   <div class="col-md-2">
-     $3,000=
+     <f>$3,000=</f>
    </div>
    <div class="col-md-2">
-  $16,00
+  <f>$16,00</f>
    </div>
    <div class="col-md-1">
-    $1,333
+    <f>$1,333</f>
    </div>
     </div>
     
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
     <div class="col-md-12">
-            $1,333 (Monthly cost of resource)/730 (Monthly minutes available) = $1.83/hour
+            <f>$1,333 (Monthly cost of resource)/730 (Monthly minutes available) = $1.83/hour</f>
   </div> 
   </div> 
 
-<div class="myalignclass">Total ($44 * 0.33) + ($8.22 * 0.33) + ($1.83 * 0.33) = $17.84</div>
+<div class="myalignclass"><f>Total ($44 * 0.33) + ($8.22 * 0.33) + ($1.83 * 0.33) = $17.84</f></div>
      </div>
       </div>
     </div>
@@ -2890,115 +2853,115 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Blood Draw and Analysis: Variable Time</h3>
+      <f><h3 class="modal-title">Blood Draw and Analysis: Variable Time</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
     <div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+    <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
     </div>
     </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-1">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    Nurse:
+    <f>Nurse:</f>
     </div>
    <div class="col-md-2">
-   $65,000+
+   <f>$65,000+</f>
    </div>
    <div class="col-md-2">
-   $9,000+
+   <f>$9,000+</f>
    </div>
     <div class="col-md-2">
-   $10,800+
+   <f>$10,800+</f>
    </div>
     <div class="col-md-2">
-   $2,560=
+   <f>$2,560=</f>
    </div> 
    <div class="col-md-1">
-   $87,360
+   <f>$87,360</f>
    </div>
    <div class="col-md-1">
-   $7,280
+   <f>$7,280</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-          $7280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour
+          <f>$7280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour</f>
      </div>
      </div>
 
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-1">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
    </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    Technician (Annualysis)
+    <f>Technician (Annualysis)</f>
     </div>
    <div class="col-md-2">
-   $45,000+
+   <f>$45,000+</f>
    </div>
    <div class="col-md-2">
-   $2,700+
+   <f>$2,700+</f>
    </div>
     <div class="col-md-2">
-   $4,000+
+   <f>$4,000+</f>
    </div>
     <div class="col-md-2">
-   $5,000=
+   <f>$5,000=</f>
    </div> 
    <div class="col-md-1">
-   $56,700
+   <f>$56,700</f>
    </div>
    <div class="col-md-1">
-   $4,725
+   <f>$4,725</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-             $4,725 (Monthly cost of resource)/112 hours (Monthly available hours) = $42/hour
+             <f>$4,725 (Monthly cost of resource)/112 hours (Monthly available hours) = $42/hour</f>
   </div>
   </div>
 
@@ -3006,98 +2969,98 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-1">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
    </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    Pathologist (Annualysis)
+    <f>Pathologist (Annualysis)</f>
     </div>
    <div class="col-md-2">
-   $250,000+
+   <f>$250,000+</f>
    </div>
     <div class="col-md-2">
-   $10,000+
+   <f>$10,000+</f>
    </div>
     <div class="col-md-2">
-   $7,000=
+   <f>$7,000=</f>
    </div> 
    <div class="col-md-1">
-   $267,000
+   <f>$267,000</f>
    </div>
    <div class="col-md-1">
-   $22,250
+   <f>$22,250</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-             $22,250 (Monthly cost of resource)/112 hours (Monthly available hours) = $199/hour
+             <f>$22,250 (Monthly cost of resource)/112 hours (Monthly available hours) = $199/hour</f>
   </div>
   </div>
 
 <div class="col-md-12">
   <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-  $850,000
+  <f>$850,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $2000+ 
+      <f>$2000+</f> 
    </div>
   <div class="col-md-1">
-      $7000= 
+      <f>$7000=</f> 
    </div>
    <div class="col-md-2">
-    $94,000
+    <f>$94,000</f>
    </div>
    <div class="col-md-1">
-    $7,833
+    <f>$7,833</f>
    </div>
   </div>
   
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-            $7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour
+            <f>$7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour</f>
   </div>  
   </div>  
 
@@ -3105,57 +3068,57 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-2">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
      <div class="col-md-2">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-1">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-2">
-   Annualysis Lab:
+   <f>Annualysis Lab:</f>
     </div>
    <div class="col-md-2">
-   $1,000,000
+   <f>$1,000,000</f>
    </div>
    <div class="col-md-2">
-  10yr+
+  <f>10yr+</f>
   </div>  
   <div class="col-md-2">
-     $3,000+
+     <f>$3,000+</f>
    </div>
    <div class="col-md-2">
-  $15,00=
+  <f>$15,00=</f>
    </div>
    <div class="col-md-1">
-    $118,000
+    <f>$118,000</f>
    </div>
      <div class="col-md-1">
-    $9,833
+    <f>$9,833</f>
    </div>
     </div>
     
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-            $9,833 (Monthly cost of resource)/730 (Monthly hours available) = $13.48/hour
+            <f>$9,833 (Monthly cost of resource)/730 (Monthly hours available) = $13.48/hour</f>
      </div>
      </div>
-<div class="myalignclass">Vials: $0.35 each</div>
-<div class="myalignclass">Vacutainer Blood Collection set: $0.93 each </div>
-<div class="myalignclass">Total   ($65 * 0.33) + ($42 * 1) + ($199 * 0.25) + ($10.73 * 0.33) + ($13.48* 1.25) + ($0.35 * 5) + $0.93 = $136.27</div>
+<f><div class="myalignclass">Vials: $0.35 each</div></f>
+<f><div class="myalignclass">Vacutainer Blood Collection set: $0.93 each </div></f>
+<f><div class="myalignclass">Total   ($65 * 0.33) + ($42 * 1) + ($199 * 0.25) + ($10.73 * 0.33) + ($13.48* 1.25) + ($0.35 * 5) + $0.93 = $136.27</div></f>
      </div>
       </div>
     </div>
@@ -3168,64 +3131,64 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>          
-      <h3 class="modal-title">CT Scan: Variable Time</h3>
+      <f><h3 class="modal-title">CT Scan: Variable Time</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
 	<div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+    <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
     </div>
     </div>
 	
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-1">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-2">
-    Technician:
+    <f>Technician:</f>
     </div>
    <div class="col-md-2">
-  $45,000+
+  <f>$45,000+</f>
    </div>
    <div class="col-md-2">
-   $3,670+
+   <f>$3,670+</f>
    </div>
     <div class="col-md-2">
-   $4,000+
+   <f>$4,000+</f>
    </div>
    <div class="col-md-2">
-   $5,000=
+   <f>$5,000=</f>
    </div>
    <div class="col-md-1">
-  $56,760
+  <f>$56,760</f>
    </div>
    <div class="col-md-1">
-  $4,805
+  <f>$4,805</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-             $4,805 (Monthly cost of resource)/112 hours (Monthly available hours) = $43/hour
+             <f>$4,805 (Monthly cost of resource)/112 hours (Monthly available hours) = $43/hour</f>
   </div>
   </div>
   
@@ -3234,45 +3197,45 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
        <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-2">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-1">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
    <div class="col-md-12" >
     <div class="col-md-2">
-    Radiologist:
+    <f>Radiologist:</f>
     </div>
    <div class="col-md-2">
-  $350,000+
+  <f>$350,000+</f>
    </div>
     <div class="col-md-2">
-   $10,000+
+  <f> $10,000+</f>
    </div>
    <div class="col-md-2">
-   $7,000=
+   <f>$7,000=</f>
    </div>
    <div class="col-md-1">
-  $367,000
+  <f>$367,000</f>
    </div>
    <div class="col-md-1">
-  $30,583
+  <f>$30,583</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-           $30,583 (Monthly cost of resource)/112 hours (Monthly available hours) = $273/hour
+           <f>$30,583 (Monthly cost of resource)/112 hours (Monthly available hours) = $273/hour</f>
   </div>
   </div>
   
@@ -3283,101 +3246,101 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-    $900,000
+    <f>$900,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $2000+ 
+      <f>$2000+</f> 
    </div>
   <div class="col-md-1">
-      $1000= 
+      <f>$1000= </f>
    </div>
    <div class="col-md-2">
-   $102,000
+   <f>$102,000</f>
    </div>
    <div class="col-md-1">
-    $8500
+    <f>$8500</f>
    </div>
       </div>
     
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-            $8,500 (Monthly cost of resource)/730 (Monthly hours available) = $11.64/hour
+            <f>$8,500 (Monthly cost of resource)/730 (Monthly hours available) = $11.64/hour</f>
   </div> 
   </div> 
 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    CT Scanner:
+    <f>CT Scanner:</f>
     </div>
    <div class="col-md-2">
-    $100,000
+    <f>$100,000</f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $4000= 
+      <f>$4000= </f>
    </div>
    <div class="col-md-2">
-    $14000
+   <f> $14000</f>
    </div>
    <div class="col-md-2">
-   $1,167
+   <f>$1,167</f>
    </div>
       </div>
     
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-            $1,167 (Monthly cost of resource)/730 (Monthly hours available) = $1.60/hour
+            <f>$1,167 (Monthly cost of resource)/730 (Monthly hours available) = $1.60/hour</f>
   </div> 
   </div> 
-<div class="myalignclass">Total ($43 * 0.5) + ($273 * 1) + ($11.64 * 0.5) + ($1.60 * 0.5) = $301.12</div>
+<f><div class="myalignclass">Total ($43 * 0.5) + ($273 * 1) + ($11.64 * 0.5) + ($1.60 * 0.5) = $301.12</div></f>
      </div>
       </div>
     </div>
@@ -3390,63 +3353,63 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Breathing Treatment: 20 minutes</h3>
+     <f> <h3 class="modal-title">Breathing Treatment: 20 minutes</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
     <div class="col-md-12">
-   Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+   <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
     </div>
     </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-1">
-   Salary
+  <f> Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-1">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-3">
-    Nurse:
+    <f>Nurse:</f>
     </div>
    <div class="col-md-1">
-   $57,900+
+   <f>$57,900+</f>
    </div>
    <div class="col-md-2">
-   $9,000+
+   <f>$9,000+</f>
    </div>
     <div class="col-md-2">
-   $10,800+
+   <f>$10,800+</f>
    </div>
     <div class="col-md-1">
-    $$3,000=
+    <f>$3,000=</f>
    </div> 
    <div class="col-md-2">
-   $80,700
+   <f>$80,700</f>
    </div>
    <div class="col-md-1">
-     $6,725
+     <f>$6,725</f>
    </div>
     </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-            $6,725 (Monthly cost of resource)/112 hours (Monthly available hours) = $60/hour
+            <f>$6,725 (Monthly cost of resource)/112 hours (Monthly available hours) = $60/hour</f>
   </div>
   </div>
   
@@ -3454,52 +3417,52 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
        <div class="col-md-12">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-  $850,000 
+  <f>$850,000 </f>
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $2000 
+      <f>$2000</f> 
    </div>
   <div class="col-md-1">
-      $7000= 
+      <f>$7000=</f> 
    </div>
    <div class="col-md-2">
-    $94,000
+    <f>$94,000</f>
    </div>
    <div class="col-md-1">
-    $7,833
+    <f>$7,833</f>
    </div>
       </div>
   
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-          $7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour
+          <f>$7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour</f>
   </div>   
   </div>   
 
@@ -3507,50 +3470,50 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
   <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-2"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-2">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-2">
-    Nebulizer:
+    <f>Nebulizer:</f>
     </div>
    <div class="col-md-2">
-    $200
+    <f>$200</f>
    </div>
    <div class="col-md-2" style="display:flex;">
-   1yr+  
+   <f>1yr+</f>  
   </div>  
   <div class="col-md-2">
-      $40= 
+      <f>$40=</f> 
    </div>
    <div class="col-md-2">
-    $240
+    <f>$240</f>
    </div>
    <div class="col-md-2">
-    $20
+    <f>$20</f>
    </div>
       </div>
     
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-          $240 (Monthly cost of resource)/730 (Monthly minutes available) = $0.03/hour
+          <f>$240 (Monthly cost of resource)/730 (Monthly minutes available) = $0.03/hour</f>
   </div> 
   </div> 
- <div class="myalignclass">Albuterol: 5mg/ml: $4.47</div>
-<div class="myalignclass">Total ($60 * 0.33) + ($10.73 * 0.33) + ($0.03 * 0.33) + $4.47 = $27.82</div>
+<div class="myalignclass"><f>Albuterol: 5mg/ml: $4.47</f></div>
+<div class="myalignclass"><f>Total ($60 * 0.33) + ($10.73 * 0.33) + ($0.03 * 0.33) + $4.47 = $27.82</f></div>
      </div>
       </div>
     </div>
@@ -3563,64 +3526,64 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">IV Steroid: 20 minutes</h3>
+      <f><h3 class="modal-title">IV Steroid: 20 minutes</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
     <div class="col-md-12">
-    Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+    <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
       </div>
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-1">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-1">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-3">
-    Nurse:
+    <f>Nurse:</f>
     </div>
    <div class="col-md-1">
-   $65,000+
+   <f>$65,000+</f>
    </div>
    <div class="col-md-2">
-   $9,000+
+   <f>$9,000+</f>
    </div>
     <div class="col-md-2">
-   $10,800+
+   <f>$10,800+</f>
    </div>
     <div class="col-md-1">
-    $2,560=
+    <f>$2,560=</f>
    </div> 
   
    <div class="col-md-2">
-   $87,360 
+   <f>$87,360</f> 
    </div>
    <div class="col-md-1">
-    $7,280
+    <f>$7,280</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-            $7,280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour
+            <f>$7,280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour</f>
   </div>
   </div>
   
@@ -3628,59 +3591,59 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
        <div class="col-md-12">
     <div class="col-md-3"></div>
    <div class="col-md-2">
-   Purchase Price
+   <f>Purchase Price</f>
    </div>
    <div class="col-md-1">
-   Useful Life
+   <f>Useful Life</f>
    </div>
       <div class="col-md-2">
-   Yearly Maintenance
+   <f>Yearly Maintenance</f>
    </div>
     <div class="col-md-1">
-   Yearly Utilities
+   <f>Yearly Utilities</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
     </div>
     
    <div class="col-md-12">
     <div class="col-md-3">
-    Examination Room:
+    <f>Examination Room:</f>
     </div>
    <div class="col-md-2">
-  $850,000 
+  <f>$850,000</f> 
    </div>
    <div class="col-md-1" style="display:flex;">
-   10yr+  
+   <f>10yr+</f>  
   </div>  
   <div class="col-md-2">
-      $2000+ 
+      <f>$2000+ </f>
    </div>
   <div class="col-md-1">
-      $7000= 
+      <f>$7000=</f> 
    </div>
    <div class="col-md-2">
-    $94,000
+    <f>$94,000</f>
    </div>
    <div class="col-md-1">
-    $7,833
+    <f>$7,833</f>
    </div>
       </div>
   
   <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
   <div class="col-md-12">
-         $7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour
+         <f>$7,833 (Monthly cost of resource)/730 (Monthly hours available) = $10.73/hour</f>
   </div>   
   </div>   
 
-  <div class="myalignclass">Soldumedrol: 1 dose @ 125mg = $17.95</div>
-  <div class="myalignclass">IV Administration Set: $5.47</div>
-  <div class="myalignclass">IV Bag and needle: $5.00</div>
-<div class="myalignclass">Total ($65 * 0.33) + ($10.73 * 0.33) + $17.95 + $5.47 + $5.00 = $53.41</div>
+  <f><div class="myalignclass">Soldumedrol: 1 dose @ 125mg = $17.95</div></f>
+  <f><div class="myalignclass">IV Administration Set: $5.47</div></f>
+  <f><div class="myalignclass">IV Bag and needle: $5.00</div></f>
+<f><div class="myalignclass">Total ($65 * 0.33) + ($10.73 * 0.33) + $17.95 + $5.47 + $5.00 = $53.41</div></f>
      </div>
       </div>
     </div>
@@ -3694,68 +3657,68 @@ However, these negotiations would be derived from a realistic and non-arbitrary 
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h3 class="modal-title">Discharge, Education, Px: 20 minutes</h3>
+      <f><h3 class="modal-title">Discharge, Education, Px: 20 minutes</h3></f>
         </div>
         <div class="modal-body">
     <div class="col-md-12">
     <div class="col-md-12">
-        Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource
+        <f>Capacity Cost Rate for Resource = Expenses Attributable to Resource/Available Capacity of Resource</f>
       </div>
       </div>
      <div class="col-md-12" style="margin-top:20px;">
     <div class="col-md-3"></div>
    <div class="col-md-1">
-   Salary
+   <f>Salary</f>
    </div>
    <div class="col-md-2">
-   Supervision
+   <f>Supervision</f>
    </div>
    <div class="col-md-2">
-   Occupancy
+   <f>Occupancy</f>
    </div>
     <div class="col-md-1">
-   Tech Support
+   <f>Tech Support</f>
    </div>
    <div class="col-md-2">
-    Annual Cost
+    <f>Annual Cost</f>
    </div>
    <div class="col-md-1">
-    Monthly Cost
+    <f>Monthly Cost</f>
    </div>
       </div>
     
    <div class="col-md-12" >
     <div class="col-md-3">
-    Nurse:
+    <f>Nurse:</f>
     </div>
    <div class="col-md-1">
-   $65,000+
+   <f>$65,000+</f>
    </div>
    <div class="col-md-2">
-   $9,000+
+   <f>$9,000+</f>
    </div>
     <div class="col-md-2">
-   $10,800+
+   <f>$10,800+</f>
    </div>
     <div class="col-md-1">
-    $2,560=
+    <f>$2,560=</f>
    </div> 
   
    <div class="col-md-2">
-   $87,360 
+   <f>$87,360 </f>
    </div>
    <div class="col-md-1">
-    $7,280
+    <f>$7,280</f>
    </div>
       </div>
 
    <div class="col-md-12" style="margin-top:20px;border-bottom:1px solid white;padding-bottom:10px;">
    <div class="col-md-12">
-       $7,280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour
+       <f>$7,280 (Monthly cost of resource)/112 hours (Monthly available hours) = $65/hour</f>
   </div>
   </div>
   
-<div class="myalignclass"> Total ($65 * 0.33) = $21.45 </div>
+<div class="myalignclass"> <f>Total ($65 * 0.33) = $21.45</f> </div>
      </div>
       </div>
     </div>

@@ -111,7 +111,7 @@ include("view/cjs.php");
 <br>
 <br>
 <div class="jumbotron">
-      <img src="img/m2s4img2.png" class="img-responsive center-block">
+      <img src="https://s3.amazonaws.com/dell-med/img/m2s4img2.png" class="img-responsive center-block">
       <br>
       <br>
   <div class="container m2s4b3">
@@ -165,7 +165,7 @@ include("view/cjs.php");
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3" >
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -185,7 +185,7 @@ include("view/cjs.php");
                    <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -205,7 +205,7 @@ include("view/cjs.php");
                     <div class='well1'>
                         <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img9.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -394,7 +394,7 @@ function vidiv(){
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

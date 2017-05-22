@@ -63,7 +63,7 @@ include("view/cjs.php");
                           <f><p>Reflect on the causes of waste and inefficiencies in health care.</p></f>
                       </div>
                       <div class="col-sm-6 ">
-                          <img src="img/m1s1img1.jpg" class="img-responsive">
+                          <img src="https://s3.amazonaws.com/dell-med/img/m1s1img1.jpg" class="img-responsive">
                       </div>
                       <!-- <div class="col-sm-2"></div> -->
                   </div>
@@ -76,7 +76,7 @@ include("view/cjs.php");
                             <f><p>Define 'value' for patients. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></f>
                         </div>
                         <div class="col-sm-6">
-                            <img  src="img/m1s1img2.jpg"  class="img-responsive">
+                            <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img2.jpg"  class="img-responsive">
                         </div>
                         <!-- <div class="col-sm-2"></div> -->
                     </div>
@@ -90,7 +90,7 @@ include("view/cjs.php");
                             <f><p>Define 'health care waste'. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></f>
                         </div>
                         <div class="col-sm-6">
-                            <img  src="img/m1s1img3.jpg"  class="img-responsive">
+                            <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img3.jpg"  class="img-responsive">
                         </div>
                         <!-- <div class="col-sm-2"></div> -->
                     </div>
@@ -103,7 +103,7 @@ include("view/cjs.php");
                           <f><p>Identify the major contributing components of healthcare waste.</p></f>
                       </div>
                       <div class="col-sm-6">
-                          <img  src="img/m1s1img4.jpg"  class="   img-responsive">
+                          <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img4.jpg"  class="   img-responsive">
                       </div>
                       <!-- <div class="col-sm-2"></div> -->
                 </div>
@@ -116,7 +116,7 @@ include("view/cjs.php");
                         <f><p>Connect how the pursuit of high-value care for patients supports the professionalism of clinicians.</p></f>
                     </div>
                     <div class="col-sm-6">
-                        <img  src="img/m1s1img5.jpg"  class="   img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img5.jpg"  class="   img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div> -->
                 </div>
@@ -129,7 +129,7 @@ include("view/cjs.php");
                       <f><p>Introduce the concept of health care outcomes.</p></f>
                     </div>
                     <div class="col-sm-6">
-                      <img  src="img/m1s1img7.jpg"  class="   img-responsive">
+                      <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img7.jpg"  class="   img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div> -->
                 </div>
@@ -142,7 +142,7 @@ include("view/cjs.php");
                        <f><p>Examine a case that presents strategies and tools for increasing value in health care.</p></f>
                     </div>
                     <div class="col-sm-6">
-                        <img  src="img/m1s1img6.jpg"  class="   img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img6.jpg"  class="   img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div> -->
                 </div>
@@ -155,7 +155,7 @@ include("view/cjs.php");
                       <f><p>Explore data to gain understanding and appreciate the perspective of patients, individual clinicians, and health systems as it pertains to value-based health care.</p></f>
                     </div>
                     <div class="col-sm-6">
-                      <img  src="img/m1s1img8.jpg"  class="img-responsive">
+                      <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img8.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div> -->
                 </div>
@@ -187,7 +187,7 @@ include("view/cjs.php");
           <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

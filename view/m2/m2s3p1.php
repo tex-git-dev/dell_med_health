@@ -75,7 +75,7 @@ include("view/cjs.php");
       <div  class="container m2s3bgcol">
       <div class="row eq-h">         
          <div class="col-sm-8">
-          <a target="_blank" href="https://www.youtube.com/watch?v=sEIBJsHrU4c"><img src="img/Mod2_Sec3.jpg" class="img-responsive block-center"></a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=sEIBJsHrU4c"><img src="https://s3.amazonaws.com/dell-med/img/Mod2_Sec3.jpg" class="img-responsive block-center"></a>
          </div>
          <div class="col-sm-4 text-center" style="background: #f1f1f1;">
             <f><h3 class="text-uppercase">Learn More</h3></f>            
@@ -187,7 +187,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

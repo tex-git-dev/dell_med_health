@@ -59,7 +59,7 @@ include("view/cjs.php");
                        <f><h4>Webinar of Dr. Vivian Lee</h4></f>
                       <f><p style="font-size:13px;">“Teaching Value in health care” webinar from November 2015 featuring Dr. Vivian Lee, MD, PhD, MBA discussing University of Utah Health Care’s efforts around provider level data transparency and physician engagement aimed at improving value.</p></f>                 
                     </div>
-                    <div class="col-sm-5"><img src="img/s7img2.png" class="img-responsive " width="154"></div>
+                    <div class="col-sm-5"><img src="https://s3.amazonaws.com/dell-med/img/s7img2.png" class="img-responsive " width="154"></div>
                 </div></a>
                 <a target="_blank" style="color:#f68122" href="https://www.youtube.com/watch?v=vP_YbqDXp9o">
                 <div class="row">                  
@@ -75,7 +75,7 @@ include("view/cjs.php");
                       <f><h4>Full Study of Utah's VDO Program</h4></f>
                       <f><p style="font-size:13px;">Lee VS, Kawamoto K, Hess R, Park C, Young J, Hunter C, Johnson S, Gulbransen S, Pelt CE, Horton DJ, Graves KK, Greene TH, Anzai Y, Pendleton RC. Implementation of a value-driven outcomes program to identify high variability in clinical costs and outcomes and association with reduced cost and improved quality.<br><!-- <a target="_blank" style="color:#fff" href="http://jamanetwork.com/journals/jama/fullarticle/2552208"> --><span style="font-size:11px;"><em>JAMA</em>. 2016;316(10):1061-1072. doi: 10.1001/jama.2016.12226<!-- </a> -->.</span></p></f>
                     </div>
-                    <div class="col-sm-5 text-right"><img src="img/s7img3.png" class="img-responsive"  width="154"></div>
+                    <div class="col-sm-5 text-right"><img src="https://s3.amazonaws.com/dell-med/img/s7img3.png" class="img-responsive"  width="154"></div>
                 </div>
                 </a>
                 <a target="_blank" style="color:#f68122" href="http://jamanetwork.com/journals/jama/fullarticle/2552208" >
@@ -123,7 +123,7 @@ include("view/cjs.php");
                                 <div class="row">
                                     <div class="col-sm-1"></div>
                                     <div class="col-sm-10" >
-                                         <img  src="img/s7img4_1.png" class="img-responsive center-block"/>                                    
+                                         <img  src="https://s3.amazonaws.com/dell-med/img/s7img4_1.png" class="img-responsive center-block"/>                                    
                                     </div>
                                     <div class="col-sm-1"></div>
                                  </div>
@@ -137,7 +137,7 @@ include("view/cjs.php");
                                 <div class="row">
                                     <div class="col-sm-1"></div>
                                     <div class="col-sm-10 img-wrapper">
-                                        <img  src="img/s7img4_2.png" class="img-responsive center-block"/>
+                                        <img  src="https://s3.amazonaws.com/dell-med/img/s7img4_2.png" class="img-responsive center-block"/>
                                     </div>
                                     <div class="col-sm-1"></div>
                                  </div>
@@ -150,7 +150,7 @@ include("view/cjs.php");
                                 <div class="row">
                                     <div class="col-sm-1"></div>
                                     <div class="col-sm-10 img-wrapper">
-                                        <img  src="img/s7img4_3.png" class="img-responsive center-block"/>
+                                        <img  src="https://s3.amazonaws.com/dell-med/img/s7img4_3.png" class="img-responsive center-block"/>
                                     </div>
                                     <div class="col-sm-1"></div>
                                  </div>
@@ -163,7 +163,7 @@ include("view/cjs.php");
                                 <div class="row">
                                     <div class="col-sm-1"></div>
                                     <div class="col-sm-10 img-wrapper">
-                                        <img  src="img/s7img4_5.png" class="img-responsive center-block"/>
+                                        <img  src="https://s3.amazonaws.com/dell-med/img/s7img4_5.png" class="img-responsive center-block"/>
                                     </div>
                                     <div class="col-sm-1"></div>
                                  </div>
@@ -176,7 +176,7 @@ include("view/cjs.php");
                                 <div class="row">
                                     <div class="col-sm-1"></div>
                                     <div class="col-sm-10 img-wrapper">
-                                        <img  src="img/s7img4_6.png" class="img-responsive center-block"/>
+                                        <img  src="https://s3.amazonaws.com/dell-med/img/s7img4_6.png" class="img-responsive center-block"/>
                                     </div>
                                     <div class="col-sm-1"></div>
                                  </div>
@@ -189,7 +189,7 @@ include("view/cjs.php");
                                 <div class="row">
                                     <div class="col-sm-1"></div>
                                     <div class="col-sm-10 img-wrapper">
-                                        <img  src="img/s7img4_7.png" class="img-responsive center-block"/>
+                                        <img  src="https://s3.amazonaws.com/dell-med/img/s7img4_7.png" class="img-responsive center-block"/>
                                     </div>
                                     <div class="col-sm-1"></div>
                                  </div>
@@ -220,7 +220,7 @@ include("view/cjs.php");
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
         <div class="modal-body">
-            <img src="img/s7img4_2.png"  class="img-responsive">
+            <img src="https://s3.amazonaws.com/dell-med/img/s7img4_2.png"  class="img-responsive">
         </div>
     </div>
   </div>
@@ -232,7 +232,7 @@ include("view/cjs.php");
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
         <div class="modal-body">
-            <img src="img/s7img4_3.png"  class="img-responsive">
+            <img src="https://s3.amazonaws.com/dell-med/img/s7img4_3.png"  class="img-responsive">
         </div>
     </div>
   </div>
@@ -245,7 +245,7 @@ include("view/cjs.php");
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
         <div class="modal-body">
-            <img src="img/s7img4_5.png"  class="img-responsive">
+            <img src="https://s3.amazonaws.com/dell-med/img/s7img4_5.png"  class="img-responsive">
         </div>
     </div>
   </div>
@@ -257,7 +257,7 @@ include("view/cjs.php");
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
         <div class="modal-body">
-            <img src="img/s7img4_6.png"  class="img-responsive">
+            <img src="https://s3.amazonaws.com/dell-med/img/s7img4_6.png"  class="img-responsive">
         </div>
     </div>
   </div>
@@ -269,7 +269,7 @@ include("view/cjs.php");
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
         <div class="modal-body">
-            <img src="img/s7img4_7.png"  class="img-responsive">
+            <img src="https://s3.amazonaws.com/dell-med/img/s7img4_7.png"  class="img-responsive">
         </div>
     </div>
   </div>
@@ -278,7 +278,7 @@ include("view/cjs.php");
   <div class="row">
       <div class="col-sm-2"></div>
         <div class="col-sm-8" >
-        <img data-toggle="modal" data-target="#s7img4_1" src="img/s7img4_1.png" class="img-responsive center-block" style="width:50%; cursor:pointer;"/>
+        <img data-toggle="modal" data-target="#s7img4_1" src="https://s3.amazonaws.com/dell-med/img/s7img4_1.png" class="img-responsive center-block" style="width:50%; cursor:pointer;"/>
         </div>
       <div class="col-sm-2"></div>
   </div>
@@ -300,7 +300,7 @@ include("view/cjs.php");
                   <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3" >
-                              <img src="img/s7img7.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img7.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -320,7 +320,7 @@ include("view/cjs.php");
                    <div class='well1'>
                        <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img8.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img8.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
@@ -340,7 +340,7 @@ include("view/cjs.php");
                     <div class='well1'>
                         <div class='row vertical-align'>
                           <div class="col-sm-3">
-                              <img src="img/s7img9.png" class="img-responsive center-block">
+                              <img src="https://s3.amazonaws.com/dell-med/img/s7img9.png" class="img-responsive center-block">
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
@@ -381,7 +381,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

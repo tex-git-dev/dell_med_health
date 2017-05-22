@@ -42,7 +42,7 @@ include("view/cjs.php");
                <f><p>Value in health care is created by helping patients and families in ways that improve quality of life and dignity of death. Patient-focused care means different things in different organizations, but in every health care delivery setting, the goal is to help patients and families with health.</p></f>
             </div>
             <div class="col-sm-12">
-               <img src="img/m2s1img2.png" class="img-responsive">
+               <img src="https://s3.amazonaws.com/dell-med/img/m2s1img2.png" class="img-responsive">
             </div>
             <div class="col-sm-12">
                <f><p>This module will help you gain understanding of how to identify patient outcomes that matter, and how to participate in measuring, evaluating, and improving results for patients. We will also provide insights on process measures, which are critical to achieving and monitoring improvement.</p></f>
@@ -82,7 +82,7 @@ include("view/cjs.php");
                       <f><p>Appreciate and reflect on outcomes that are meaningful to the patient.</p></f>              
                     </div>
                     <div class="col-sm-6">
-                      <img  src="img/m2s1img4.jpg"  class="img-responsive">
+                      <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img4.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div> --> 
                 </div>
@@ -95,7 +95,7 @@ include("view/cjs.php");
                        <f><p >Define the measurement of ‘patient outcomes’ as they relate to value-based health care.</p></f>              
                     </div>
                     <div class="col-sm-6">
-                        <img  src="img/m2s1img5.jpg"  class="img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img5.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div> --> 
                 </div>
@@ -108,7 +108,7 @@ include("view/cjs.php");
                        <f><p >Examine resources for choosing and measuring validated patient outcomes.</p></f>              
                     </div>
                     <div class="col-sm-6">
-                        <img  src="img/m2s1img6.jpg"  class="img-responsive">
+                        <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img6.jpg"  class="img-responsive">
                     </div>
                     <!-- <div class="col-sm-2"></div>  -->
                 </div>
@@ -121,7 +121,7 @@ include("view/cjs.php");
                       <f><p >Apply a measures framework to evaluate the success of health care value programs from the  perspective of patient outcomes.</p></f>              
                   </div>
                   <div class="col-sm-6 ">
-                      <img  src="img/m2s1img7.jpg"  class="img-responsive">
+                      <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img7.jpg"  class="img-responsive">
                   </div>
                   <!-- <div class="col-sm-2"></div> --> 
               </div>
@@ -134,7 +134,7 @@ include("view/cjs.php");
                       <f><p >Describe different types of measures and when they would be used.</p></f>               
                   </div>
                   <div class="col-sm-6 ">
-                      <img  src="img/m1s1img5.jpg"  class="img-responsive">
+                      <img  src="https://s3.amazonaws.com/dell-med/img/m1s1img5.jpg"  class="img-responsive">
                   </div>
                   <!-- <div class="col-sm-2"></div> --> 
               </div>
@@ -147,7 +147,7 @@ include("view/cjs.php");
                     <f><p >Identify the reasons for collecting ‘patient-reported outcomes.’</p></f>
                 </div>
                 <div class="col-sm-6 ">
-                    <img  src="img/m2s1img9.jpg"  class="img-responsive">
+                    <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img9.jpg"  class="img-responsive">
                 </div>
                 <!-- <div class="col-sm-2"></div>  -->
             </div>
@@ -160,7 +160,7 @@ include("view/cjs.php");
                      <f><p>Appreciate and reflect on how patient outcomes define physicians’ success.</p></f>
                   </div>
                   <div class="col-sm-6">
-                     <img  src="img/m2s1img10.jpg"  class="img-responsive">
+                     <img  src="https://s3.amazonaws.com/dell-med/img/m2s1img10.jpg"  class="img-responsive">
                   </div>
                   <!-- <div class="col-sm-2"></div> --> 
               </div>
@@ -192,7 +192,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

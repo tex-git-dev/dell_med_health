@@ -1,6 +1,6 @@
 .survey .b1 {
         margin-bottom: 0px;
-    background: url('../img/survey.jpg') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/survey.jpg') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

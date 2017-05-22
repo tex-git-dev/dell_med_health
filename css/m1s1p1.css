@@ -4,7 +4,7 @@
 
 .m1s1p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m1img1.png') no-repeat center center fixed; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m1img1.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,7 +44,7 @@
 
 .m1s1p1 .b2_s1{
     margin-bottom: 0px;
-    background-image: url(../img/img5.jpg);
+    background-image: url(https://s3.amazonaws.com/dell-med/img/img5.jpg);
     background-position: 0% 25%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@
 }
 .m1s1p1 .b3_s1{
     margin-bottom: 0px;
-    background-image: url(../img/img5.jpg);
+    background-image: url(https://s3.amazonaws.com/dell-med/img/img5.jpg);
     background-position: 0% 25%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -203,7 +203,7 @@ and (max-device-width : 1000px) {
 }
 .m1s1p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m1img1.png') no-repeat center center;
+    background: url('https://s3.amazonaws.com/dell-med/img/m1img1.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -247,7 +247,7 @@ and (max-device-width : 765px) {
 }
 .m1s1p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m1img1.png') no-repeat center center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m1img1.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -296,7 +296,7 @@ and (max-device-width : 500px) {
 
 .m1s1p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m1img1.png') no-repeat center center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m1img1.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -343,7 +343,7 @@ and (max-device-width : 299px) {
 
 .m1s1p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m1img1.png') no-repeat center center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m1img1.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

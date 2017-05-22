@@ -73,7 +73,12 @@ app.response1 = function(){
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel1',app.cArrayT1.length);
+	   	    var len = app.cArrayT1.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+         app.addOpt('myCarousel1',len);
         $(".act1").hide();
         $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";
@@ -161,7 +166,13 @@ app.response2 = function(){
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel2',app.cArrayT.length);
+	   	        var len = app.cArrayT.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel2',len);
         $(".act2").hide();
         $(".carouselC").css({"visibility":"visible","height":"auto"});
          var items="";
@@ -228,7 +239,7 @@ app.response2 = function(){
   <div class="Step1 container m2s7b1">
       <f><h3 class="text-uppercase text-center">Case Study: United Network for Organ Sharing (UNOS)</h3></f> 
       <br> 
-      <f><p ><img style="margin: auto;"src="img/m2s7img2.png" class="img-responsive"></p></f>
+      <f><p ><img style="margin: auto;"src="https://s3.amazonaws.com/dell-med/img/m2s7img2.png" class="img-responsive"></p></f>
       <br> 
       <f><p>Outcome measurement is usually used to drive clinical improvement by medical teams. This case considers a different use &#x2013; national policy for allocating a scarce supply of organs across patients.  Who  should be included in the liver transplant population? How can we take a more global view that considers both those who receive a transplant as well as those who continue to wait for one?  The following is a story from the frontlines of health policy illustrating the power and importance of measuring and reporting outcomes that matter most to patients. Dr. Richard Freeman, a world-renowned transplant surgeon and expert in transplant medicine and allocation research, is the Vice Dean for Clinical Affairs at Dell Medical School at The University of Texas at Austin. To aid in your understanding, the story you are about to explore is supplemented with the frontline perspective of Dr. Freeman.</p></f>
       <f><p>The United Network for Organ Sharing (UNOS) is a national nonprofit organization under contract with the Federal government that oversees the Organ Procurement and Transplant Network (OPTN).  Prior to 2002, the OPTN’s  system of determining transplant was based largely on subjective clinical criteria and time waiting on the national transplant list. In conversation with Dr. Richard Freeman (October 2016), the feeling at the time was that too many people were dying while on the wait list while others were getting priority who had stable liver disease for a long time. Since time on the wait list was the primary measure, the incentive was  to get patients registered on the wait list as soon as they were diagnosed with end-stage liver disease–often before they actually needed a transplant. This allowed the patient to “bank” time while they were still reasonably healthy.</p></f>
@@ -259,7 +270,7 @@ app.response2 = function(){
 <div class="container-full m2s7b2">
     <div class="container">
       <div class="row">        
-        <div class="col-sm-12"><img src="img/m2s7img3.png" class="center-block img-responsive"  height="auto" width="55%"></div>
+        <div class="col-sm-12"><img src="https://s3.amazonaws.com/dell-med/img/m2s7img3.png" class="center-block img-responsive"  height="auto" width="55%"></div>
       </div>  
       <br>
       <div class="row">        
@@ -278,7 +289,7 @@ app.response2 = function(){
 <div class="container-full m2s7b3">
     <div class="container">
       <div class="row">        
-        <div class="col-sm-12"><img src="img/m2s7img4.png" class="center-block img-responsive" height="auto" width="55%"></div>
+        <div class="col-sm-12"><img src="https://s3.amazonaws.com/dell-med/img/m2s7img4.png" class="center-block img-responsive" height="auto" width="55%"></div>
       </div>
       <br>
       <div class="row">
@@ -314,7 +325,7 @@ app.response2 = function(){
       <div class="container-full m2s7b5">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12"><img src="img/m2s7img5.png" class="center-block img-responsive"  height="auto" width="55%"></div>
+        <div class="col-sm-12"><img src="https://s3.amazonaws.com/dell-med/img/m2s7img5.png" class="center-block img-responsive"  height="auto" width="55%"></div>
       </div>
       <br>
       <div class="row">
@@ -549,7 +560,7 @@ app.response2 = function(){
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

@@ -78,7 +78,7 @@ include("view/cjs.php");
                         <div class="col-sm-4 ">
                             <div class="panel">
                                 <div>
-                                    <img src="img/8-01.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                    <img src="https://s3.amazonaws.com/dell-med/img/8-01.jpg" class="img-responsive" style="width:100%" alt="Image">
                                 </div>
                                 <div class="panel-footer">
                                     <f><h2>Coefficient of variance <span style="text-transform: none;">(CoV)</span></h2></f>
@@ -90,10 +90,10 @@ include("view/cjs.php");
                         <div class="col-sm-4  ">
                             <div class="panel">
                                 <div>
-                                    <img src="img/8-02.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                    <img src="https://s3.amazonaws.com/dell-med/img/8-02.jpg" class="img-responsive" style="width:100%" alt="Image">
                                 </div>
                                 <div class="panel-footer">
-                                    <h2>Opportunity index</h2>
+                                    <f><h2>Opportunity index</h2></f>
                                     <center><span class="separator"></span></center>
                                     <f><p>How large is the opportunity to impact costs?</p></f>
                                 </div>
@@ -102,10 +102,10 @@ include("view/cjs.php");
                         <div class="col-sm-4 ">
                             <div class="panel">
                                 <div>
-                                    <img src="img/8-03.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                    <img src="https://s3.amazonaws.com/dell-med/img/8-03.jpg" class="img-responsive" style="width:100%" alt="Image">
                                 </div>
                                 <div class="panel-footer">
-                                    <h2>Mean cost</h2>
+                                    <f><h2>Mean cost</h2></f>
                                     <center><span class="separator"></span></center>
                                     <f><p>What is the average cost?</p></f>
                                 </div>
@@ -147,8 +147,7 @@ include("view/cjs.php");
         <div class="container text-center scatter fixedPos">
             <f><h3 class="boldT text-uppercase">Patient Stories Bar Graph</h3></f>
             <f><p>Detailing health care costs and reviewing data on cost variance at various levels is a method to identify areas to start tackling high costs. </p></f>
-            <f><p>Select each bar to read more about the patient's story. Where do you think there might be room for improvement?
-            </p></f>
+            <f><p>Select each bar to read more about the patient's story. Where do you think there might be room for improvement?</p></f>
             <div class="container">    
                 <div class="row">
                     <div class="col-sm-12 ploatArea" >
@@ -163,7 +162,7 @@ include("view/cjs.php");
                         $('.overlayBG').hide();">X</div>
                 <div class="row">
                     <div class="col-sm-3">
-                        <img src="img/8-05.jpg" class="img-responsive" style="width:99%" alt="Image">
+                        <img src="https://s3.amazonaws.com/dell-med/img/8-05.jpg" class="img-responsive" style="width:99%" alt="Image">
                     </div>
                     <div class="col-sm-9">
                         <f><p class="header">Middle cost</p></f>
@@ -180,7 +179,7 @@ include("view/cjs.php");
                         $('.overlayBG').hide();">X</div>
                 <div class="row">
                     <div class="col-sm-3">
-                        <img src="img/8-04.jpg" class="img-responsive" style="width:98%" alt="Image">
+                        <img src="https://s3.amazonaws.com/dell-med/img/8-04.jpg" class="img-responsive" style="width:98%" alt="Image">
                     </div>
                     <div class="col-sm-9">
                         <f><p class="header">Highest cost</p></f>
@@ -198,7 +197,7 @@ include("view/cjs.php");
                         $('.overlayBG').hide();">X</div>
                 <div class="row">
                     <div class="col-sm-3">
-                        <img src="img/8-06.jpg" class="img-responsive" style="width:98%" alt="Image">
+                        <img src="https://s3.amazonaws.com/dell-med/img/8-06.jpg" class="img-responsive" style="width:98%" alt="Image">
                     </div>
                     <div class="col-sm-9">
                         <f><p class="header">Lowest cost</p></f>
@@ -1094,7 +1093,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

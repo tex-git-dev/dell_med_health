@@ -1,6 +1,6 @@
 .m3s8p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s8img1.png') no-repeat center center fixed; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img1.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -57,7 +57,7 @@
 
 .m3s8p1 .m3s8b5 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img3.png') no-repeat center center fixed; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img3.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -90,7 +90,7 @@
 
 .m3s8p1 .m3s8b12 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img13.png') no-repeat center center fixed; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img13.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -126,7 +126,7 @@
 
 .m3s8p1 .m3s8b15 {
     margin-bottom: 0px;
-    background: url('../img/m3s3img3.png') no-repeat center center fixed; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s3img3.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -375,7 +375,7 @@ and (max-device-width : 1000px) {
 
 .m3s8p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s8img1.png') no-repeat center center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img1.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -408,7 +408,7 @@ and (max-device-width : 1000px) {
 
 .m3s8p1 .m3s8b5 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img3.png') no-repeat center center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img3.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -422,7 +422,7 @@ and (max-device-width : 1000px) {
 
 .m3s8p1 .m3s8b12 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img13.png') no-repeat center center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img13.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -434,7 +434,7 @@ and (max-device-width : 1000px) {
 }
 .m3s8p1 .m3s8b15 {
     margin-bottom: 0px;
-    background: url('../img/m3s3img3.png') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s3img3.png') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -466,7 +466,7 @@ and (max-device-width : 765px) {
 
 .m3s8p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s8img1.png') no-repeat left center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img1.png') no-repeat left center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -506,7 +506,7 @@ and (max-device-width : 765px) {
 
     .m3s8p1 .m3s8b5 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img3.png') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img3.png') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -519,7 +519,7 @@ and (max-device-width : 765px) {
     
 .m3s8p1 .m3s8b12 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img13.png') no-repeat center center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img13.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -532,7 +532,7 @@ and (max-device-width : 765px) {
 
 .m3s8p1 .m3s8b15 {
     margin-bottom: 0px;
-    background: url('../img/m3s3img3.png') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s3img3.png') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -565,7 +565,7 @@ and (max-device-width : 500px) {
 
     .m3s8p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s8img1.png') no-repeat left center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img1.png') no-repeat left center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -606,7 +606,7 @@ and (max-device-width : 500px) {
 
 .m3s8p1 .m3s8b5 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img3.png') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img3.png') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -618,7 +618,7 @@ and (max-device-width : 500px) {
 }
 .m3s8p1 .m3s8b12 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img13.png') no-repeat center center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img13.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -630,7 +630,7 @@ and (max-device-width : 500px) {
 }
 .m3s8p1 .m3s8b15 {
     margin-bottom: 0px;
-    background: url('../img/m3s3img3.png') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s3img3.png') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -661,7 +661,7 @@ and (max-device-width : 299px) {
 
 .m3s8p1 .b1 {
     margin-bottom: 0px;
-    background: url('../img/m3s8img1.png') no-repeat left center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img1.png') no-repeat left center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -702,7 +702,7 @@ and (max-device-width : 299px) {
 
     .m3s8p1 .m3s8b5 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img3.png') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img3.png') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -714,7 +714,7 @@ and (max-device-width : 299px) {
 }
 .m3s8p1 .m3s8b12 {
      margin-bottom: 0px;
-    background: url('../img/m3s8img13.png') no-repeat center center; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s8img13.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -726,7 +726,7 @@ and (max-device-width : 299px) {
 }
 .m3s8p1 .m3s8b15 {
     margin-bottom: 0px;
-    background: url('../img/m3s3img3.png') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/m3s3img3.png') no-repeat center center ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

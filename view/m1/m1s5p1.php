@@ -86,19 +86,23 @@ app.addOpt=function(id,len){
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel1',app.cArrayT1.length);
+	        var len = app.cArrayT1.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel1',len);
         $(".act1").hide();
         $(".carouselC1").css({"visibility":"visible","height":"auto"});
          var items="";
          var t =0;
           var sizeC = Math.ceil(app.cArrayT1.length/3); 
-
           if(sizeC > 6)
           {
             sizeC=6;
-          }
-          
-        for (var i = 1; i < sizeC+1; i++) {
+          } 
+        for (var i = 1; i <=sizeC; i++) {
             var f = "";
             if(i == 1){
               f = "active";
@@ -166,7 +170,13 @@ app.response2 = function(){
       if (loc == "") {
         alert("Please write the response.")
        }else{
-         app.addOpt('myCarousel2',app.cArrayT.length);
+	   	     var len = app.cArrayT.length;
+			if(len>18)
+			{
+			 len = 18;
+			}
+			
+         app.addOpt('myCarousel2',len);
         $(".act2").hide();
         $(".carouselC").css({"visibility":"visible","height":"auto"});
          var items="";
@@ -474,7 +484,7 @@ $("#canvas6").click(function(){
 					<div class="col-sm-12"><f><p>To learn more about the data in the chart, click <a target="_blank" style="color:#f68122" href="http://jamanetwork.com/journals/jama/fullarticle/1872806">here</a>.</p></f></div>
 				</div>
 			</div>
-			<div class="col-sm-8"><img src="img/s5img3.png" class="img-responsive"></div>
+			<div class="col-sm-8"><img src="https://s3.amazonaws.com/dell-med/img/s5img3.png" class="img-responsive"></div>
 		</div>
 	</div>
 
@@ -643,7 +653,7 @@ $("#canvas6").click(function(){
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>

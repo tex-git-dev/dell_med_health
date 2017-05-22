@@ -21,12 +21,12 @@ include("view/cjs.php");
          <br>         
          <div class="row">
             <div class="col-sm-12">
-               <f><p data--duration="1.5s">MODULE 3 | <span style="color:#f68121">Section 5</a></p></f>
+              <f><p data--duration="1.5s">MODULE 3 | <span style="color:#f68121">Section 5</a></p></f>
             </div>
          </div>
          <div class="row">
             <div class="col-sm-12">
-               <f><h2>Toward More Transparency</h2></f>
+              <f><h2>Toward More Transparency</h2></f>
             </div>
          </div>
          <div class="row">
@@ -64,7 +64,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'>  
-                                   <img src="img/tr.svg"  class="arrwImag"/>
+                                   <img src="https://s3.amazonaws.com/dell-med/img/tr.svg"  class="arrwImag"/>
                                 <f><h4>The Goal:<br>Value-Based Health Care</h4></f>
                                 </div>
                           </div>
@@ -84,7 +84,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'>
-                               <img src="img/tr.svg" class="arrwImag"/>								
+                               <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>								
                                 <f><p class="vbhcp">Team-based care interactions organized around patient medical needs and conditions (e.g. “musculoskeletal pain”)</p></f>
                             </div>
                           </div>
@@ -104,7 +104,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'> 
-                               <img src="img/tr.svg" class="arrwImag"/>								
+                               <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>								
                                 <f><p class="vbhcp">Integrated care across units and facilities, such as in an integrated practice unit (IPU)</p></f>
                             </div>
                           </div>
@@ -124,7 +124,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'>  
-                                <img src="img/tr.svg" class="arrwImag"/>                                
+                                <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>                                
                                 <f><p class="vbhcp" >Measurement focused on patient health outcomes</p></f>
                             </div>
                           </div>
@@ -144,7 +144,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'>  
-                               <img src="img/tr.svg" class="arrwImag"/>                                
+                               <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>                                
                                 <f><p class="vbhcp">The actual costs of providing patient care are measured and captured</p></f>
                             </div>
                           </div>
@@ -164,7 +164,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'> 
-                                   <img src="img/tr.svg" class="arrwImag"/>								
+                                   <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>								
                                 <f><p class="vbhcp">Providers are reimbursed based on value of care provided across a full care cycle for medical conditions</p></f>
                             </div>
                           </div>
@@ -184,7 +184,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-6">
                                 <div class='well'> 
-                                    <img src="img/tr.svg" class="arrwImag"/>								
+                                    <img src="https://s3.amazonaws.com/dell-med/img/tr.svg" class="arrwImag"/>								
                                 <f><p class="vbhcp">Health information technology is leveraged to help restructure care delivery and accurately measure results</p></f>
                             </div>
                           </div>
@@ -222,7 +222,7 @@ include("view/cjs.php");
       </div>
       <div class="container bgT">
       <div class="row">        
-        <div class="col-sm-12"><img src="img/m3s5img4.png" class="center-block img-responsive" height="auto" width="70%"></div>
+        <div class="col-sm-12"><img src="https://s3.amazonaws.com/dell-med/img/m3s5img4.png" class="center-block img-responsive" height="auto" width="70%"></div>
       </div>
       </div>
       <br>
@@ -241,7 +241,7 @@ include("view/cjs.php");
       <br>
       <div class="container bgT">
         <div class="row">        
-        <div class="col-sm-12"><img src="img/m3s5img7.png" class="center-block img-responsive"></div>
+        <div class="col-sm-12"><img src="https://s3.amazonaws.com/dell-med/img/m3s5img7.png" class="center-block img-responsive"></div>
         </div>
       </div>
       <br>
@@ -276,7 +276,7 @@ include("view/cjs.php");
  <div class="jumbotron">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12"><img src="img/m3s5img6.png" class="center-block img-responsive"  height="auto" width="70%"></div>
+        <div class="col-sm-12"><img src="https://s3.amazonaws.com/dell-med/img/m3s5img6.png" class="center-block img-responsive"  height="auto" width="70%"></div>
       </div>
      </div> 
 </div>
@@ -361,7 +361,7 @@ include("view/cjs.php");
  <div class="col-md-12 col-sm-12 col-xs-12">            
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
               <div class="col-md-2 col-sm-4 col-xs-4">
-                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="img/CC.png" width="auto" height="auto"></a>
+                <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.5/"><img class="img-responsive center-block" src="https://s3.amazonaws.com/dell-med/img/CC.png" width="auto" height="auto"></a>
               </div>
             <div class="col-md-5 col-sm-4 col-xs-4"></div>
           </div>
