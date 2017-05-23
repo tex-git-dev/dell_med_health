@@ -1328,7 +1328,7 @@ $
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">What if Grace were uninsured&mdash;what price would she have to pay for this episode?</p></f>
+                                <f><p class="ques">What if Grace were uninsured&mdash;what price would she be billed for this episode?</p></f>
                                 <div class="row row-eq-height">
                                <!-- <div class="col-sm-12">
                                     <div class="row eq-h">-->
