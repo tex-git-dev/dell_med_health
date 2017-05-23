@@ -18,7 +18,7 @@
          <br>
           <div class="row">
             <div class="col-sm-12"> 
-             <f><h2 class="">Value-Based Health Care Modules <br><span style="font-family: GothamHTF-Book; font-style: italic; font-weight: light; clear: both; font-size: 18px;">Interactive Learning Modules from Dell Medical School</span></h2></f>
+             <f><h2 class="">Discovering Value-Based Health Care<br><span style="font-family: GothamHTF-Book; font-style: italic; font-weight: light; clear: both; font-size: 18px;">Interactive Learning Modules from Dell Medical School</span></h2></f>
             </div>
          </div>
           <div class="row">
