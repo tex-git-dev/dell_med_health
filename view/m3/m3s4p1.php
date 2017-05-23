@@ -273,7 +273,7 @@ app.response2 = function(){
                   <div class="col-sm-10 text-center">
                   <f><h4 class="">Common Reimbursement Mechanisms</h4></f>
                     <br>
-                  <f><h4 class="text-uppercase" style="color:#ee5d4a;">Capitation</h4></f>
+                  <f><h4 class="text-uppercase" style="color:#ee5d4a;">Per Diem</h4></f>
                   <f><p>The payment of a fee to a health care provider providing services to a number of people, such that the amount paid is determined by the number of total patients. A specific fee is paid “per head” for the provision of a defined package of service for a specified time period.</p></f>
                     <hr style="border-color: #cacaca currentcolor currentcolor;">
                   <f><h4 class="text-uppercase" style="color:#00aeef;">Fee-for-Service (FFS)</h4></f>
