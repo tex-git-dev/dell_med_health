@@ -257,7 +257,7 @@
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>
-                                    <f><p>Because Ms. Church is required to pay a $3,000 annual deductible and is responsible for 10% of the $27,000</p></f>
+                                    <f><p>Because Ms. Church is required to pay a $3,000 annual deductible and is responsible for a 10% co-insurance of the remaining $24,000.</p></f>
                                     <!-- <center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question</div></center> -->
                                 </div>
                             </div>
