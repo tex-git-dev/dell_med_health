@@ -233,25 +233,19 @@ include("view/cjs.php");
         <div class="col-sm-10">
           <!-- <hr style="border-color:#dddddd"> -->
           <f><p>With TDABC, the costs of space, non-consumable equipment, and administrative overhead are all assigned minute-to-minute cost rates that are relevant to specific processes of care. The care that is delivered over an entire episode is broken down into discrete activities or process steps, such as check-in, vitals and intake, physician evaluation, nursing care, and so on. A cost is assigned to each step by tracking who is doing the activity, what resources they use, which space they are in, and how long it takes them. Each item (personnel, resources, and space) is assigned a per-minute cost rate by bundling together all costs (fixed and variable) and then dividing by the total amount available for patient care.</p></f>
+          <f><p>TDABC requires providers to estimate only two parameters at each process step: the cost of each resource used in the process and the quantity of time the patient spends with each resource.</p></f>
         </div>
         <div class="col-sm-1"></div>
-        </div>
-      </div>
-      <br>
-      <br>
-      <div class="container bgT">
-        <div class="row">        
-        <div class="col-sm-12"><img src="https://s3.amazonaws.com/dell-med/img/m3s5img7.png" class="center-block img-responsive"></div>
         </div>
       </div>
       <br>
       <br>
       <div class="container">
       <div class="row">
+      <!-- a bunch of lines left without content because style rules are weird and next section should be white??? -->
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
           <!-- <hr style="border-color:#dddddd"> -->
-          <f><p>TDABC requires providers to estimate only two parameters at each process step: the cost of each resource used in the process and the quantity of time the patient spends with each resource.</p></f>
         </div>
         <div class="col-sm-1"></div>
         </div>
