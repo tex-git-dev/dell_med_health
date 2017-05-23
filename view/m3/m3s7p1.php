@@ -792,7 +792,7 @@ $
 
 
 <div class="col-md-12" style="background-color:whitesmoke;padding:30px;text-align:center; margin-bottom: 40px">
-<f><p style="margin-bottom:0px;">Now take a look at using TDABC to calculate the likely <b>actual cost</b> to the hospital for providing these services. Select the eye icons under ‘See Cost Breakdown’ to see how costs have been calculated.</p></f>
+<f><p style="margin-bottom:0px;">Now take a look at using TDABC to calculate the likely <b>actual cost</b> to the hospital for providing these services. If you are interested in the detailed cost breakdown of each item, select the eye icons under 'See Cost Breakdown' to check out examples of how these costs are calculated.</p></f>
 </div>
 <div class="col-md-12" style="background-color:#F5F5F5;">
  <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-3" id="clcthird">   
