@@ -354,7 +354,7 @@
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12" >
                                     <f><h3>Correct!</h3></f>                                    
-                                    <!-- <f><p>ANSWER EXPLANATION HERE</p></f> -->
+                                    <f><p>Ms. Church already met her annual deductible so she will pay a 10% co-insurance for this visit.</p></f>
                                     <!-- <center><div class="msgBtn" href="#myCarousel_a" data-slide="next">Next Question</div></center> -->
                                 </div>
                             </div>
