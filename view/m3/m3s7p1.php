@@ -536,7 +536,7 @@ padding:0px !important;
 </div>
 <f><p class="bbc spantmp ComminsAB" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance __ (30% Negotiated Rate)</p></f>
 <f><p class="bbc spana ComminsAB" style="padding:36px 0;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance A (30% Negotiated Rate)</p></f>
-<f><p class="bbc spanb ComminsAB" style="padding: 36px 2px 36px 2px;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance B (30% Negotiated Rate)</p></f>
+<f><p class="bbc spanb ComminsAB" style="padding: 36px 2px 36px 2px;text-align:center;margin:5px 5px 18px 5px;">Commercial Insurance B (50% Negotiated Rate)</p></f>
 <div class="bbc marginpading mympd1">
 <!--Evaluation md start-->
 <div class="row">
