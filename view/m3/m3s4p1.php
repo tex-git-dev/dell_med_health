@@ -361,20 +361,20 @@ app.response2 = function(){
              <div class="row">
                   <div class="col-sm-6">                      
                       <f><p class="bText">Current Fee-for-Service Payment System</p></f>
-                      <f><p>Care is fragmented instead of coordinated. each provider is payed separately for work completed in isolation of other providers. No one is responsible for coordinating care. This results in little accountability to overall quality and cost.</p></f>
+                      <f><p>Care is fragmented instead of coordinated. Each provider is paid separately for work completed in isolation of other providers. No one is responsible for coordinating care. This results in little accountability to overall quality and cost.</p></f>
                   </div>
                   <div class="col-sm-6">                    
-                      <img src="https://s3.amazonaws.com/dell-med/img/m3s4img2.png" class="img-responsive" width="50%">
+                      <img src="https://s3.amazonaws.com/dell-med/img/m3s4img3.png" class="img-responsive" width="60%">
                   </div>
               </div>
               <br><br>
               <div class="row">
-                  <div class="col-sm-6">
-                      <img src="https://s3.amazonaws.com/dell-med/img/m3s4img3.png" class="img-responsive" width="60%">
+                  <div class="col-sm-8 col-sm-push-2">
+                    <f><p class="bText" style="margin-top: 3em;">Patient-Centered Global Payment System</p></f>                
+                      <f><p style="margin-bottom: 3em;">Global payments made to a group of different types of providers for all types of care. This rewards providers for providing appropriate care instead of more care to meet the patients needs.</p></f>                      
                   </div>
-                  <div class="col-sm-6">
-                    <f><p class="bText">Patient-Centered Global Payment System</p></f>                
-                      <f><p>Global payments made to a group of different types of providers for all types of care. This rewards providers for providing appropriate care instead of more care to meet the patients needs.</p></f>                      
+                  <div class="col-sm-2 col-sm-pull-8">
+                      <img src="https://s3.amazonaws.com/dell-med/img/m3s4img2.png" class="img-responsive">
                   </div>
               </div>
           </div>
