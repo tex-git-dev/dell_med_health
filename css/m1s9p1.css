@@ -1,0 +1,639 @@
+.m1s9p1 .s9b1 {
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img1.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s9p1 .s9b1 h2{
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    color: #232a30;
+    font-family: "GothamHTF-Bold";
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    position: relative;
+    text-shadow: none;
+    width: 60%;
+    margin-bottom: 12%;
+}
+.m1s9p1 .s9b1 .container p{
+    background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    color: #232a30;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    text-shadow: none;
+    width: 28%;
+    font-family: "GothamHTF-Bold";
+}
+.m1s9p1 .bg-3  h3 {
+    font-family: "GothamHTF-Bold";
+}
+
+
+
+
+
+
+.m1s9p1 .m1s9imgT{
+    font-size: 14px;
+    font-family: "GothamHTF-Book";
+}
+
+
+.m1s9p1 .s9t2 .row {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;    
+}
+.m1s9p1 .s9t2 .row .col-sm-6 {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.m1s9p1 .s9c1 .paddb {
+    padding-bottom: 30px;
+}
+
+.m1s9p1 .s9c1 {
+    background:#eee;
+}
+.m1s9p1 .org {
+    color:#f68121;
+    font-family: "GothamHTF-Medium";
+} 
+.m1s9p1 .s9c1 h4 {
+    font-family: "GothamHTF-Bold";
+    margin-top: 2px !important;
+}
+.m1s9p1 .bl {    
+    font-family: "GothamHTF-Medium";
+} 
+.m1s9p1 .s9c2 {
+    background: #3b4254;
+    color: #fff;
+}
+.m1s9p1 .s9c2 h4 {    
+    margin-top: 90px !important;
+    font-size: 25px;
+}
+
+
+/*.m1s9p1 .s9b2{
+     margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 550px;   
+   
+}
+*/
+
+.m1s9p1 .s9b2 {     
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img10.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;      
+    padding-bottom: 80px;
+    text-shadow:none;
+    color: #000;   
+}
+
+.m1s9p1 .s9b3 {
+    height: 100%;
+}
+
+.m1s9p1 .s9b2 h2{   
+    text-shadow:none;
+    color:#fff;
+    font-family: "GothamHTF-Bold";    
+    
+}
+
+
+
+.m1s9p1 .dont-break-out {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
+
+.m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(1){
+    color: #f68121;
+    font-family: "GothamHTF-Medium";  
+     overflow-wrap: break-word;
+}
+.m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(2){
+    font-family: "GothamHTF-Medium" !important; 
+     overflow-wrap: break-word;
+     font-size: 18px !important;
+}
+
+.m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(3){
+    font-family: "GothamHTF-Medium";    
+     overflow-wrap: break-word;
+}
+.m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(4), .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(5), .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(6), .m1s9p1 .s9b3 .col-sm-9 .well p:nth-child(7){
+    font-family: "GothamHTF-BookItalic";    
+    font-size: 12px !important;
+    overflow-wrap: break-word;
+}
+
+.m1s9p1 .jumbotron .s9b3 p {
+    font-size: 14px !important;
+}
+
+.m1s9p1 .m2s4b6 h2 {
+    color:#fff;
+    font-family: "GothamHTF-Bold";
+ }
+
+.m1s9p1  .s9b3 .col-sm-12 .well1{
+   background: #f5f5f5 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 15px;    
+}
+.m1s9p1  .s9b3 .col-sm-9 {  
+    height: 100%;
+    padding-left: 0;
+}
+.m1s9p1  .s9b3 .col-sm-9 .well{   
+     background:#fff;
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;                
+}
+.m1s9p1  .s9b3 .well1 .row{   
+     height: 100%;
+     margin-bottom: 0px;
+      border-radius: 0;
+}
+
+/*.m1s9p1 .eq-h {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.m1s9p1 .eq-h > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}*/
+
+
+/*  */
+
+
+
+
+.m1s9p1 .panel p {
+    font-size: 14px;
+}
+.m1s9p1 .panel .sm {
+    font-size: 12px !important;
+}
+/*.m1s9p1 .bgp {
+    background-color: #f68121;    
+}*/
+.m1s9p1 .panel p {
+    font-family: "GothamHTF-Medium";
+ }
+/*.m1s9p1 .panel .pd2 {
+    margin-top: 40px;
+}*/
+
+
+.m1s9p1 .black {
+    background: #3b4254 none repeat scroll 0 0;
+    color: #fff;
+}
+
+   /*by dk*/
+
+.m1s9p1 .s1bgcol{
+    background-color: #f4f4f4;
+    width: 100%;
+    padding-top: 40px;
+}
+.m1s9p1 .m1s9imgT{
+    font-size: 14px;
+    font-family: "GothamHTF-Book";
+}
+.m1s9p1 .middleTxt{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.m1s9p1 .spanm1s1 {
+    position: absolute;
+    left: 50px !important;
+    top: 10px !important;
+    color: #3a4354;
+    font-size: 13px !important;
+}
+.m1s9p1 .spanm1s1T {
+    color: #3a4354;
+    font-size: 15px !important;
+    position: absolute;
+    left: 50px !important;
+    top: 28px !important;
+}
+
+.m1s9p1 .well{
+    background:none;
+    border: 0px solid #e3e3e3;
+    box-shadow:none;
+    vertical-align :center;
+}
+.m1s9p1 .s9col {
+    background-color: #3b4254; 
+}
+
+.m1s9p1 .s9ms2 h3{
+    font-family: "GothamHTF-Bold";    
+}
+
+
+
+.m1s9p1 .s9ms2 .row{
+    /*margin:30px;*/
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.m1s9p1 .s9ms2 .imgGallry {
+   background: #f5f5f5;   
+ }
+
+.m1s9p1 .s9ms2 .well .col-sm-6{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.m1s9p1 .s9ms2 .well .col-sm-6 p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.m1s9p1 .s9ms2 .well {
+    margin-bottom: 0px !important;
+    padding: 15px !important;
+}
+
+
+.m1s9p1 .s9ms2 .vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.m1s9p1 .s9ms2 .vertical-align > [class^="col-"],
+.m1s9p1 .s9ms2 .vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: left; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+
+.m1s9p1 .s9b3  .vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.m1s9p1 .s9b3 .vertical-align > [class^="col-"],
+.m1s9p1 .s9b3 .vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+
+
+
+@media screen
+and (min-device-width : 766px)
+and (max-device-width : 1000px) {
+    .m1s9p1 .s9b1 {
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img1.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s9p1 .s9ms2 .vertical-align {
+    display: inline-flex;
+}
+.m1s9p1 .s9b1 .container h2{
+    font-family: "GothamHTF-Bold";
+    font-size: 124%;
+    width: 70%;
+ }
+.m1s9p1 .s9b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 107%;
+    width: 42%;
+    }
+
+.m1s9p1 .s9t2 .row .col-sm-6 {
+    width: 100% !important;
+}
+
+.m1s9p1 .s9c2 h4 {    
+    margin-top: 40px !important;    
+}
+.m1s9p1 .s9c2 p {    
+    padding-bottom: 30px !important;    
+}
+
+.m1s9p1 .s9b2 {     
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img10.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;      
+    padding-bottom: 80px;
+    text-shadow:none;
+    color: #000;   
+}
+
+
+.m1s9p1 .s9ms2 .well {
+   margin-bottom: 0px !important;
+    padding: 5px !important;
+}
+.m1s9p1 .s9ms2 .well .col-sm-6 p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+
+}
+
+
+
+
+@media screen
+and (min-device-width : 501px)
+and (max-device-width : 765px) {  
+.m1s9p1 .s9b1 {
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img1.png') no-repeat right center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}  
+.m1s9p1 .s9ms2 .vertical-align {
+  display: inline;
+}
+.m1s9p1 .s9b1 .container h2{
+     font-family: "GothamHTF-Bold";
+    font-size: 124%;
+    width: 70%;
+}
+.m1s9p1 .s9b1 .container p{
+    font-size: 107%;
+    width: 42%;
+    font-family: "GothamHTF-Bold";
+}
+
+
+
+
+
+.m1s9p1 .dArowh {
+    display: none;  
+}
+
+.m1s9p1 .s9c2 h4 {    
+    margin-top: 40px !important;    
+}
+.m1s9p1 .s9c2 p {    
+    padding-bottom: 30px !important;    
+}
+.m1s9p1 .s9b2 {     
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img10.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;      
+    padding-bottom: 80px;
+    text-shadow:none;
+    color: #000;   
+}
+
+.m1s9p1 .s9ms2 .well {
+ margin-bottom: -15px !important;
+    padding: 5px !important;
+}
+.m1s9p1 .s9ms2 .well .col-sm-6 p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
+}
+
+}
+
+
+
+@media  screen
+and (min-device-width : 300px)
+and (max-device-width : 500px) {
+    .m1s9p1 .s9b1 {
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img1.png') no-repeat right center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+    .m1s9p1 .s9ms2 .vertical-align {
+  display: inline;
+}
+.m1s9p1 .s9b1 .container h2{  
+    font-family: "GothamHTF-Bold";
+    font-size: 103%;
+    width: 100%;
+    }
+
+.m1s9p1 .s9b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 83%;
+    width: 65%;
+    }
+
+.mwidth {
+    min-width: 70px;
+}
+
+
+
+.m1s9p1 .dArowh {
+    display: none;  
+}
+
+.m1s9p1 .s9c2 h4 {    
+    margin-top: 40px !important;    
+}
+
+.m1s9p1 .s9c2 p {    
+    padding-bottom: 30px !important;    
+}
+.m1s9p1 .s9b2 {     
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img10.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;      
+    padding-bottom: 80px;
+    text-shadow:none;
+    color: #000;   
+}
+
+.m1s9p1 .s9ms2 .well {
+ margin-bottom: -15px !important;
+    padding: 5px !important;
+}
+.m1s9p1 .s9ms2 .well .col-sm-6 p{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
+}
+
+}
+
+
+
+
+@media  screen
+and (min-device-width : 100px)
+and (max-device-width : 299px) {
+    .m1s9p1 .s9b1 {
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img1.png') no-repeat right center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s9p1 .s9ms2 .vertical-align {
+  display: inline;
+}
+.m1s9p1 .s9b1 .container h2 {  
+    font-family: "GothamHTF-Bold";
+    font-size: 48%;
+    width: 86%;
+    }
+.m1s9p1 .s9b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 42%;
+    width: 60%;
+    }
+
+.mwidth {
+    min-width: 50px;
+}
+
+
+
+ .m1s9p1 .dArowh {
+    display: none;  
+}
+
+.m1s9p1 .s9c2 h4 {    
+    margin-top: 40px !important;    
+}
+.m1s9p1 .s9c2 p {    
+    padding-bottom: 30px !important;    
+}
+
+.m1s9p1 .s9b2 {     
+    margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s9img10.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    height: auto;    
+    width: auto;      
+    padding-bottom: 80px;
+    text-shadow:none;
+    color: #000;   
+}
+
+.m1s9p1 .s9ms2 .well {
+    margin-bottom: -15px !important;
+    padding: 2px !important;
+}
+.m1s9p1 .s9ms2 .well .col-sm-6 p {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
+}
+
+}

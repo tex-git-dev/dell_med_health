@@ -1,0 +1,768 @@
+.m1s3p1 .videocontent {
+    position: relative;
+}
+.m1s3p1 .b1 {
+        margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s3img1.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+.m1s3p1  .vertical-align {
+    align-items: center;
+    display: flex;
+}
+.m1s3p1 #b1 {
+     width: 100%;
+}
+.m1s3p1 .b1 h2 {
+     background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    color: #232a30;
+    font-family: "GothamHTF-Bold";
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    position: relative;
+    text-shadow: none;
+    width: 60%;
+    margin-bottom: 12%;
+}
+.m1s3p1 .b1 .container p {
+     background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    color: #232a30;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    text-shadow: none;
+    width: 28%;
+    font-family: "GothamHTF-Bold";
+}
+
+.m1s3p1 .b2{
+    background: url('https://s3.amazonaws.com/dell-med/img/s3img2.png')  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.m1s3p1 .b2 .container h4{   
+    text-shadow:none;
+    color:#000;
+    font-family: "GothamHTF-Medium";
+    margin-top:40px;    
+}
+.m1s3p1 .b2 .tint {
+    width: 100%;
+    height: 100%;
+    background: rgba(70,179,160,0.85);
+    position: absolute;
+    z-index: 9;
+    top:0;
+}
+.m1s3p1 .b2 .container {
+    background: #fff none repeat scroll 0 0;
+    /*height: 610px;*/
+    margin-bottom: 65px;
+    position: relative;
+    top: 40px;
+    z-index: 999;   
+     padding-left: 85px;
+    padding-right: 85px;
+    max-width: 100%;    
+}
+.m1s3p1 .bg-3  {
+    padding-left: 135px;
+    padding-right: 135px;
+} 
+.m1s3p1 .bg-4  {
+    padding-left: 50px;
+    padding-right: 50px;
+} 
+.m1s3p1 .b2 .container .img1 {
+   margin-top: 50px;
+   padding-bottom: 20px;
+}
+
+.m1s3p1 .b2 .row {   margin-top: 35px;}
+
+.m1s3p1 .b2 .container p{   
+    text-shadow:none;
+    color:#333;  
+    font-size: 14px;  
+    font-family: "GothamHTF-Book" !important;
+    padding: 0px !important;
+    margin-top: 0 !important;
+}
+.m1s3p1 .b2 .panel-footer {
+  border-top: none !important;
+min-height: 165px;
+padding-top: 24px;
+}
+
+.m1s3p1 .b2 .panel-footer  p{
+    font-size: 12px !important;         
+    font-family: "GothamHTF-Medium" !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    width: 100%;
+    padding: 0px !important;
+    background-color: #f5f5f5 !important;
+}
+
+.m1s3p1 .numberCircle {
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;    
+    position: relative;    
+    color:#000;
+    margin-bottom: 10px;    
+    cursor: pointer;
+}
+
+.m1s3p1 .numberCircle span {
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    font-family: "GothamHTF-Medium";
+}
+
+.m1s3p1 .s3n1 {border: 2px solid #f48222;}
+.m1s3p1 .s3n2 {border: 2px solid #d7c036;}
+.m1s3p1 .s3n3 {border: 2px solid #2bb59c;}
+.m1s3p1 .s3n4 {border: 2px solid #00aeed;}
+
+.m1s3p1 .container h5 {   
+    font-family: "GothamHTF-Medium";        
+}
+.m1s3p1 .container ol {
+    margin-left: -22px;    
+    font-family: "GothamHTF-Medium";        
+}
+.m1s3p1 .orange {    color:#f4821f;    }
+
+.m1s3p1 #b1 .myDiv0 {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    display: none;
+    height: 100%;
+    margin-left: 0;
+    margin-top: -56.2%;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+.m1s3p1 #b1 #myDiv1  {
+   font-size:12px;
+    color: #fff;
+    font-family: "GothamHTF-Medium";
+    position: relative;
+    top: 1%; 
+     
+}
+.m1s3p1 #b1 #myDiv2  {
+    position: relative;     
+}
+
+.m1s3p1 #b1 .btSize  {
+    font-size: 15px;
+}
+
+.m1s3p1 #b1 #myDiv3 {
+    font-family: "GothamHTF-Medium";
+    position: relative;
+    color: #fff;
+     font-size:24px;   
+ }
+.m1s3p1 #b1 .btn {
+      background: #28ae95 none repeat scroll 0 0 !important;
+    border: medium none;
+    border-radius: 0;
+    margin: 5px;
+    width: 70% !important; 
+    
+}
+
+
+
+
+.m1s3p1 .modal-title {
+    font-family: "GothamHTF-BoldItalic";
+}
+
+.m1s3p1 .modal-body p:nth-child(2) {
+    font-family: "GothamHTF-BookItalic";
+
+}
+
+/*.m1s3p1 .modal-content {
+    border: 2px solid #ff7b22;
+}*/
+
+.m1s3p1 .b2 .container h3{   
+    text-shadow:none;
+    color:#000;
+    font-family: "GothamHTF-BoldItalic";    
+}
+
+.m1s3p1 .b2 .container .popover-content {
+    text-shadow:none;
+    color:#000;
+}
+
+.m1s3p1 .imagBot {
+    margin-bottom: 10%;     
+}
+
+.m1s3p1 .dont-break-out {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
+
+
+@media screen
+and (min-device-width : 766px)
+and (max-device-width : 1000px) {
+
+.m1s3p1 .b1 {
+        margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s3img1.png') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+
+
+.m1s3p1 .jumbotron .container h2{
+   font-family: "GothamHTF-Bold";
+    font-size: 124%;
+    width: 70%;
+ }
+
+.m1s3p1 .b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 107%;
+    width: 42%;
+    }
+.m1s3p1 .s3hide {
+    display: none;
+}
+
+.m1s3p1 .bg-3  {
+    padding-left: 95px;
+    padding-right: 95px;
+}
+.m1s3p1 .bg-4  {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.m1s3p1 .b2 .container {
+    background: #fff none repeat scroll 0 0;
+    /*height: 720px;*/
+    margin-bottom: 65px;
+    position: relative;
+    top: 40px;
+    z-index: 999;
+    padding-left: 55px;
+    padding-right: 55px;
+    max-width: 93%;
+}
+
+.m1s3p1 .numberCircle {
+    border-radius: 100%;
+    font-size: 22px;
+    height: 40px;    
+    position: relative;
+    width: 40px;
+    margin-bottom: 10px;    
+    color:#000;
+
+}
+.m1s3p1 .numberCircle span {
+    text-align: center;
+    line-height: 35px;
+    display: block;
+    font-family: "GothamHTF-Medium";
+
+}
+
+
+.m1s3p1 .b2 .panel-footer {
+    border-top: none !important;
+    min-height: 175px;    
+    padding-top: 17px;
+}
+
+
+.m1s3p1 .b2 .panel-footer p {
+    font-size: 12px !important;      
+    font-family: "GothamHTF-Medium" !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    width: auto !important;
+ }
+
+ .m1s3p1 .bg-4 p {
+    font-size: 14px !important;       
+    font-family: "GothamHTF-Book" !important;
+    margin-left: 0% !important;
+    margin-top: 0% !important;
+    width: auto !important;
+ }
+
+ .m1s3p1 .b2{
+    background: url('https://s3.amazonaws.com/dell-med/img/s3img2.png')  no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#skp1 {
+   top: 35% !important;
+   font-size: 9px !important;
+}
+
+.m1s3p1 .imagBot {
+    margin-bottom: 8%;     
+}
+
+}
+
+
+
+@media screen
+and (min-device-width : 501px)
+and (max-device-width : 765px) {   
+
+.m1s3p1 .b1 {
+        margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s3img1.png') no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+} 
+
+.m1s3p1 .jumbotron .container h2{
+     font-family: "GothamHTF-Bold";
+    font-size: 124%;
+    width: 70%;
+}
+.m1s3p1 .b1 .container p{
+    font-size: 107%;
+    width: 42%;
+    font-family: "GothamHTF-Bold";
+}
+.m1s3p1 .s3hide {
+    display: none;
+}
+.m1s3p1 .bg-3  {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.m1s3p1 .bg-4  {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.m1s3p1 .b2 .container {
+    background: #fff none repeat scroll 0 0;
+    /*height: 1035px;*/
+    margin-bottom: 60px;
+    position: relative;
+    top: 40px;
+    z-index: 999;
+    padding-left: 35px;
+    padding-right: 35px;
+    max-width: 93%;
+}
+
+.m1s3p1 .numberCircle {
+    border-radius: 100%;
+    font-size: 22px;
+    height: 40px;    
+    margin-bottom: 10px;
+    position: relative;
+    width: 40px;
+    color:#000;
+}
+.m1s3p1 .numberCircle span {
+    text-align: center;
+    line-height: 35px;
+    display: block;
+    font-family: "GothamHTF-Medium";
+}
+
+.m1s3p1 .panel-footer{
+    color: #000;    
+    text-shadow: none;
+    font-family: "GothamHTF-Medium";     
+    border-bottom: 20px solid #fff;
+    border-top: medium none !important;
+    min-height: 130px;
+    padding-top: 20px !important;
+}
+
+.m1s3p1 .panel-footer p {
+    font-size: 12px !important;     
+    font-family: "GothamHTF-Medium" !important;
+    margin-left: 0% !important;
+    margin-top: 0% !important;
+    width: auto !important;
+ }
+
+ .m1s3p1 .bg-4 p {
+    font-size: 14px !important;       
+    font-family: "GothamHTF-Book" !important;
+    margin-left: 0% !important;
+    margin-top: 0% !important;
+    width: auto !important;
+} 
+
+.m1s3p1 .dArowh {
+    display: none;  
+}
+
+#skp1 {
+   top: 35% !important;
+   font-size: 9px !important;
+}
+
+.m1s3p1 .imagBot {
+    margin-bottom: 8%;     
+}
+
+.m1s3p1 #b1 .btSize {
+    font-size: 11px;
+}
+.m1s3p1 #b1 .btn {
+    margin: 2px;
+}
+#myDiv3 {
+    margin-top: 2px !important;
+}
+
+
+
+}
+
+
+
+
+
+@media  screen
+and (min-device-width : 300px)
+and (max-device-width : 500px) {
+
+    .m1s3p1 .b1 {
+        margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s3img1.png') no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+    
+.m1s3p1 .jumbotron .container h2{  
+    font-family: "GothamHTF-Bold";
+    font-size: 103%;
+     width: 90%;
+    }
+
+.m1s3p1 .b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 83%;
+    width: 65%;
+    }
+
+    .m1s3p1 .s3hide {
+    display: none;
+}
+.m1s3p1 .bg-3  {
+    padding-left: 45px;
+    padding-right: 40px;
+}
+.m1s3p1 .bg-4  {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.m1s3p1 .b2 .container {
+    background: #fff none repeat scroll 0 0;
+    /*height: 1160px;*/
+    margin-bottom: 60px;
+    position: relative;
+    top: 40px;
+    z-index: 999;   
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 90%;
+}
+
+.m1s3p1 .numberCircle {
+    border-radius: 100%;
+    font-size: 18px;
+    height: 35px;    
+    margin-bottom: 10px;
+    position: relative;
+    width: 35px;
+    color:#000;
+}
+.m1s3p1 .numberCircle span {
+    text-align: center;
+    line-height: 31px;
+    display: block;
+    font-family: "GothamHTF-Medium";
+}
+
+.m1s3p1 .panel-footer{
+    color: #000;
+    text-shadow: none;
+     font-family: "GothamHTF-Medium";
+
+    border-bottom: 20px solid #fff;
+    border-top: medium none !important;
+    min-height: 130px;
+    padding-top: 20px !important;
+}
+
+
+
+
+.m1s3p1 .panel-footer p {
+    font-size: 12px !important;     
+    font-family: "GothamHTF-Medium" !important;
+    margin-left: 0% !important;
+    margin-top: 0% !important;
+    width: auto !important;
+ }
+ .m1s3p1 .bg-4 p {
+    font-size: 14px !important;       
+    font-family: "GothamHTF-Book" !important;
+    margin-left: 0% !important;
+    margin-top: 0% !important;
+    width: auto !important;
+ }
+
+ .m1s3p1 .dArowh {
+    display: none;  
+}
+
+#skp1 {
+   top: 35.5% !important;
+   font-size: 6px !important;
+}
+
+#skid2{
+    top: 37% !important;
+font-size: 15px !important;
+  }
+
+  .m1s3p1 .imagBot {
+    margin-bottom: 4% !important;     
+}
+.m1s3p1 #b1 #myDiv1  {
+   font-size:6px;
+}
+
+.m1s3p1 #b1 .btSize {
+    font-size: 11px;
+}
+.m1s3p1 #b1 .btn {
+    margin: 2px;
+}
+#myDiv3 {
+    margin-top: 2px !important;
+}
+
+
+
+}
+
+
+
+
+@media  screen
+and (min-device-width : 100px)
+and (max-device-width : 299px) {
+
+
+    .m1s3p1 .b1 {
+        margin-bottom: 0px;
+    background: url('https://s3.amazonaws.com/dell-med/img/s3img1.png') no-repeat left center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-color: #060;    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-color: #fff;
+    min-height: 500px;
+}
+
+.m1s3p1 .jumbotron .container h2 {  
+    font-family: "GothamHTF-Bold";
+    font-size: 48%;
+    width: 86%;
+    }
+
+.m1s3p1 .b1 .container p{
+    font-family: "GothamHTF-Bold";
+    font-size: 42%;
+    width: 60%;
+    }
+
+.m1s3p1 .s3hide {
+    display: none;
+}
+
+.m1s3p1 .bg-3  {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.m1s3p1 .bg-4  {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.m1s3p1 .b2 .container {
+    background: #fff none repeat scroll 0 0;
+    /*height: 1280px;*/
+    margin-bottom: 60px;
+    position: relative;
+    top: 40px;
+    z-index: 999;   
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 85%;
+}
+
+.m1s3p1 .numberCircle {
+    border-radius: 100%;
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 25px;    
+    position: relative;
+    width: 25px;
+    color:#000;
+}
+.m1s3p1 .numberCircle span {
+    text-align: center;
+    line-height: 21px;
+    display: block;
+    font-family: "GothamHTF-Medium";
+}
+.m1s3p1 .panel-footer{
+    color: #333;
+    font-size: 14px;
+    text-shadow: none;
+     font-family: "GothamHTF-Medium";
+     text-align: center;
+}
+
+.m1s3p1 .panel-footer {
+    border-bottom: 20px solid #fff;
+    border-top: medium none !important;
+    min-height: 130px;
+    padding-top: 20px !important;
+}
+.m1s3p1 .panel-footer p {
+    font-size: 12px !important;     
+    font-family: "GothamHTF-Medium" !important;
+    margin-left: 0% !important;
+    margin-top: 0% !important;
+    width: auto !important;
+ }
+ .m1s3p1 .bg-4 p {
+    font-size: 14px !important;       
+    font-family: "GothamHTF-Book" !important;
+    margin-left: 0% !important;
+    margin-top: 0% !important;
+    width: auto !important;
+ }
+
+.m1s3p1 .dArowh {
+    display: none;  
+}
+
+#skp1 {
+   top: 35.5% !important;
+   font-size: 6px !important;
+}
+
+#skid2{
+    top: 37% !important;
+    font-size: 15px !important;
+  }
+  .m1s3p1 .imagBot {
+    margin-bottom: 4% !important;     
+}
+.m1s3p1 #b1 #myDiv1  {
+   font-size:6px;
+}
+
+.m1s3p1 #b1 .btSize {
+    font-size: 11px;
+}
+.m1s3p1 #b1 .btn {
+    margin: 2px;
+}
+#myDiv3 {
+    margin-top: 2px !important;
+}
+
+
+}
