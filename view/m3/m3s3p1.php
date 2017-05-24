@@ -1005,7 +1005,7 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>webpage</f></p>
-                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/">The Chargemaster.</a></f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://blogs.hospitalmedicine.org/Blog/meet-the-villain-of-hospital-costs-the-chargemaster/">Meet The Villain of Hospital Costs: The Chargemaster</a></f></p>
                                  <p><f>Read more about the infamous Chargemaster in this article from the author of <em>Understanding Value-Based Health Care</em>.</f></p>
                                  <p><f>Moriates C. Society of Hospital Medicine. July 30, 2015.<br>Accessed March 24,<br>2017.</f></p>
                             </div>
@@ -1026,8 +1026,8 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                                 <div class='well'>
-                                <p class="text-uppercase"><f>article</f></p>
-                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://www.uta.edu/faculty/story/2311/Misc/2013,2,26,MedicalCostsDemandAndGreed.pdf">Why Medical Bills are Killing Us.</a></f></p>                                
+                                <p class="text-uppercase"><f>pdf</f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://www.uta.edu/faculty/story/2311/Misc/2013,2,26,MedicalCostsDemandAndGreed.pdf">Why Medical Bills are Killing Us</a></f></p>                                
                                  <p><f>Explore the story of real patients and their experiences with the complexity and absurdity of health care costs.</f></p>
                                  <p><f>Brill S. Bitter pill: TIME. April 4, 2013.<br>Accessed March 24,<br> 2014.</f></p>
                             </div>
@@ -1047,7 +1047,7 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>article</f></p>
-                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1377/hlthaff.2016.0093">US Hospitals are Still using Chargemaster Markups to Maximize Revenues.</a></f></p>
+                                 <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="http://dx.doi.org/10.1377/hlthaff.2016.0093">US Hospitals are Still using Chargemaster Markups to Maximize Revenues</a></f></p>
                                  <p><f>Using Medicare data from 2013, this article discusses the chargemaster and an analysis of cost-to-charge ratios that indicates the prices on chargemasters are used to enhance hospital revenue. </f></p>
                                  <p><f>Bai G, Anderson GF. Health Aff. 2016: 35(9): 1658-1664.</f></p>
                             </div>
@@ -1068,7 +1068,7 @@ include("view/cjs.php");
                           <div class="col-sm-9">
                                 <div class='well'>
                                 <p class="text-uppercase"><f>webpage</f></p>
-                                <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="https://www.hcup-us.ahrq.gov/db/state/costtocharge.jsp">Cost-to-Charge Ratio Files.</a></f></p>
+                                <p><f><a target="_blank" style="overflow-wrap: break-word; color:#000;" href="https://www.hcup-us.ahrq.gov/db/state/costtocharge.jsp">Cost-to-Charge Ratio Files</a></f></p>
                                 <p><f>Explore what data are available for ratio of costs to charges from the Healthcare Cost and Utilization Project (HCUP),  sponsored by the Agency for Healthcare Research and Quality (AHRQ).</f></p>
                                 <p><f>Healthcare Cost and Utilization Project (HCUP) website. Published November 2016.<br>Accessed March 24,<br> 2017.</f></p>
                             </div>
