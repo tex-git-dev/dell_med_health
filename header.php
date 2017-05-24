@@ -1561,7 +1561,7 @@ app.OpenMS=function(){
         </div>
         <div id="collapseNine1" class="panel-collapse collapse">
             <div class="panel-body">
-            a.  You should <a href="mailto:eanderson@utx.edu">contact Technical Support</a>  for any problem associated with:
+            a.  You should <a href="mailto:rkane@utx.edu">contact Technical Support</a>  for any problem associated with:
             <ul>
               <li>Issues logging in or registering </li>
               <li>Forgotten passwords </li>
