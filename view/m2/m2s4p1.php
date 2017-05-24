@@ -209,7 +209,7 @@ include("view/cjs.php");
                           </div>
                           <div class="col-sm-9">
                             <div class='well'>
-                                <p class="text-uppercase"><f>website</f></p>
+                                <p class="text-uppercase"><f>pdf</f></p>
                                  <p><f><a target="_blank" style="color:#000;" href="http://www.ichom.org/files/ICHOM_Erasmus_MC_Case_Study.pdf">Implementing ICHOM’s Standard Sets of Outcomes: Cleft Lip and Palate at Erasmus University Medical Centre in the Netherlands</a></f></p>
                                  <p><f>Read about implementation of ICHOM’s Standard Sets of Outcomes through a case study conducted on cleft lip and palate in the Netherlands. They compile their study, data, and key lessons learned in their research.</f></p>
                                  <p><f>Arora J, Haj M.<br>London, UK International Consortium for Health Outcomes Measurement (ICHOM)<br>December 2016.</f></p> 
