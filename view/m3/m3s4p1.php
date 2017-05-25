@@ -409,7 +409,7 @@ app.response2 = function(){
           <div class="col-sm-12">
           <f><h3 class="text-uppercase">Let’s Check Our Understanding</h3></f>
           <br>
-          <f><p>Below are scenarios that demonstrate potential effects of various payment mechanisms. Select the mechanism that likely resulted in each scenario. Then, reflect on how the scenario demonstrates a “pro” or a “con” of that mechanism.</p></f>
+          <f><p>Below are scenarios that demonstrate potential effects of various payment mechanisms. Select the mechanism that likely resulted in each scenario.</p></f>
           <br>
           <hr>
         </div>
@@ -438,14 +438,14 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">Physicians tend to only accept patients that are healthier to minimize time spent and services rendered and to maximize the amount they receive per patient. (con)</p></f>
+                                <f><p class="ques">Physicians tend to only accept patients that are healthier to minimize time spent and services rendered and to maximize the amount they receive per patient.<p></f>
 
                                 <div class="row row-eq-height">
                                 <!--<div class="col-sm-12" >
                                     <div class="row eq-h">--->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('CAPITATION', 'FEE-FOR-SERVICE', 'GLOBAL&nbsp;PAYMENT');
+                                            $array = array('PER DIEM', 'FEE-FOR-SERVICE', 'GLOBAL&nbsp;PAYMENT');
 
                                             $numRandoms = 3;
 
@@ -454,7 +454,7 @@ app.response2 = function(){
                                             //print_r($random);
 
                                             foreach ($random as $key => $value) {
-                                                $ans = $value == "CAPITATION" ? 1 : 0;
+                                                $ans = $value == "PER DIEM" ? 1 : 0;
                                                 echo '<div class="col-sm-4">
                                                     <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
@@ -499,13 +499,13 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">Appropriate and timely patient care improves along with provider communication because all provider groups receive one payment and are encouraged to work together. (pro)</p></f>
+                                <f><p class="ques">Appropriate and timely patient care improves along with provider communication because all provider groups receive one payment and are encouraged to work together.</p></f>
                                 <div class="row row-eq-height">
                                 <!--<div class="col-sm-12">
                                     <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('GLOBAL&nbsp;PAYMENT', 'FEE-FOR-SERVICE', 'CAPITATION');
+                                            $array = array('GLOBAL&nbsp;PAYMENT', 'FEE-FOR-SERVICE', 'PER DIEM');
 
                                             $numRandoms = 3;
 
@@ -560,13 +560,13 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">A provider group notices smaller payments after a provider known for poor documentation of procedures and diagnoses works for the clinic. (con)</p></f>
+                                <f><p class="ques">A provider group notices smaller payments after a provider known for poor documentation of procedures and diagnoses works for the clinic.</p></f>
                                 <div class="row row-eq-height">
                                 <!--<div class="col-sm-12">
                                     <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('FEE-FOR-SERVICE', 'CAPITATION', 'GLOBAL&nbsp;PAYMENT');
+                                            $array = array('FEE-FOR-SERVICE', 'PER DIEM', 'GLOBAL&nbsp;PAYMENT');
 
                                             $numRandoms = 3;
 
@@ -621,13 +621,13 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">With an unchanging amount of payments, this mechanism makes costs more predictable for insurance companies and represents a more steady monthly cash flow for providers. (pro)</p></f>
+                                <f><p class="ques">With an unchanging amount of payments, this mechanism makes costs more predictable for insurance companies and represents a more steady monthly cash flow for providers.</p></f>
                                 <div class="row row-eq-height">
                                <!-- <div class="col-sm-12">
                                     <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('GLOBAL&nbsp;PAYMENT', 'CAPITATION', 'FEE-FOR-SERVICE');
+                                            $array = array('GLOBAL&nbsp;PAYMENT', 'PER DIEM', 'FEE-FOR-SERVICE');
 
                                             $numRandoms = 3;
 
@@ -682,13 +682,13 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">Providers tend to order more CT scans even when they may not meet guideline-based clinical indications due to larger reimbursement payments. (con)</p></f>
+                                <f><p class="ques">Providers tend to order more CT scans even when they may not meet guideline-based clinical indications due to larger reimbursement payments.</p></f>
                                 <div class="row row-eq-height">
                                 <!--<div class="col-sm-12">
                                     <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('FEE-FOR-SERVICE', 'CAPITATION', 'GLOBAL&nbsp;PAYMENT');
+                                            $array = array('FEE-FOR-SERVICE', 'PER DIEM', 'GLOBAL&nbsp;PAYMENT');
 
                                             $numRandoms = 3;
 
@@ -744,13 +744,13 @@ app.response2 = function(){
                         <div class="row">
                         <div class="col-sm-2" ></div>
                             <div class="col-sm-8" >
-                                <f><p class="ques">A provider network is encouraged to maximize the adherence to best practices and the amount of care providers can give from their once-yearly payment. (pro)</p></f>
+                                <f><p class="ques">A provider network is encouraged to maximize the adherence to best practices and the amount of care providers can give from their once-yearly payment.</p></f>
                                 <div class="row row-eq-height">
                                <!-- <div class="col-sm-12">
                                     <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('GLOBAL&nbsp;PAYMENT', 'CAPITATION', 'FEE-FOR-SERVICE');
+                                            $array = array('GLOBAL&nbsp;PAYMENT', 'PER DIEM', 'FEE-FOR-SERVICE');
 
                                             $numRandoms = 3;
 
