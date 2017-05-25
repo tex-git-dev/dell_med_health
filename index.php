@@ -4,8 +4,8 @@
       <title>Dell Medical School | The University of Texas at Austin</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
 
       <link rel="stylesheet" href="fonts/fonts.css"/>
     <link rel="stylesheet" href="css/animate.css"> 
@@ -24,8 +24,8 @@
 	  <script src="js/jquery.mobile-1.4.5.min.js"></script>
 	   <link rel="stylesheet" href="css/w3.css">
 
-      <link href="http://vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet">
-       <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
+      <link href="css/video-js.min.css" rel="stylesheet">
+       <script src="js/video.min.js"></script>
        <script src="js/audioplayer.js"></script>
 	   <script src="js/script.js"></script>
        <?php
