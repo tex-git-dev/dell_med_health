@@ -1165,8 +1165,8 @@ $
               <div class="col-sm-12">
                 <f><h3 class="text-uppercase text-center">Let's check our understanding</h3></f>
                                <br>
-                 <p>Below are questions that will check your understanding of reimbursement mechanisms. If you need a refresher on the terms relating to these mechanisms, refer to <a href="?id=m3/m3s4p1" style=" font-weight:bold;" target="_blank">Section 4, The Costs of Care: Different Approaches</a>,  and <a href="/m3s2p2.php" style="font-weight:bold;" target="_blank">Dive Deeper: Basics of Health Care Financing in the US</a>.<f><p>Below are questions that will check your understanding of reimbursement mechanisms. These questions will help you apply and synthesize the information presented here and over the course of this module. </p>
-                 <p>For these questions, assume the total charges are rounded to $3,000 for Insurance plan A and $5,000 for Insurance plan B.</p></f>
+                 <p>Below are questions that will check your understanding of reimbursement mechanisms. If you need a refresher on the terms relating to these mechanisms, refer to <a href="?id=m3/m3s4p1" style=" font-weight:bold;" target="_blank">Section 4, The Costs of Care: Different Approaches</a>,  and <a href="/m3s2p2.php" style="font-weight:bold;" target="_blank">Dive Deeper: Basics of Health Care Financing in the US</a>.<f> </p>
+                 <p>For these questions, assume the total charges are rounded to $9900 for the chargemaster total, $3000 for Insurance plan A, and $5,000 for Insurance Plan B.</p></f>
                </div>
          </div>
 </div> 

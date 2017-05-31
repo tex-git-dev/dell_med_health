@@ -38,7 +38,9 @@ include("view/cjs.php");
       <div class="Step1 container m3s1ms1 text-center">         
          <f><h3 class="text-uppercase">Introduction to Understanding Costs</h3></f>
            <br><br>
+            <center>
             <img src="https://s3.amazonaws.com/dell-med/img/m3s1img2.png" class="img-responsive" style="width: 80%">
+            </center>
            <br><br>
 
           <div class="row text-left">

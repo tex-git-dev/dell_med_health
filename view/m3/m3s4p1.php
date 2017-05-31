@@ -273,7 +273,7 @@ app.response2 = function(){
                   <div class="col-sm-10 text-center">
                   <f><h4 class="">Common Reimbursement Mechanisms</h4></f>
                     <br>
-                  <f><h4 class="text-uppercase" style="color:#ee5d4a;">Per Diem</h4></f>
+                  <f><h4 class="text-uppercase" style="color:#ee5d4a;">Capitation</h4></f>
                   <f><p>The payment of a fee to a health care provider providing services to a number of people, such that the amount paid is determined by the number of total patients. A specific fee is paid “per head” for the provision of a defined package of service for a specified time period.</p></f>
                     <hr style="border-color: #cacaca currentcolor currentcolor;">
                   <f><h4 class="text-uppercase" style="color:#00aeef;">Fee-for-Service (FFS)</h4></f>
@@ -445,7 +445,7 @@ app.response2 = function(){
                                     <div class="row eq-h">--->
                                       <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('PER DIEM', 'FEE-FOR-SERVICE', 'GLOBAL&nbsp;PAYMENT');
+                                            $array = array('CAPITATION', 'FEE-FOR-SERVICE', 'GLOBAL&nbsp;PAYMENT');
 
                                             $numRandoms = 3;
 
@@ -454,7 +454,7 @@ app.response2 = function(){
                                             //print_r($random);
 
                                             foreach ($random as $key => $value) {
-                                                $ans = $value == "PER DIEM" ? 1 : 0;
+                                                $ans = $value == "CAPITATION" ? 1 : 0;
                                                 echo '<div class="col-sm-4">
                                                     <div class="ans" onclick="checkAnswer(this, ' . $ans . ');">' . $value . ' </div>
                                                   </div>';
@@ -566,7 +566,7 @@ app.response2 = function(){
                                     <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('FEE-FOR-SERVICE', 'PER DIEM', 'GLOBAL&nbsp;PAYMENT');
+                                            $array = array('FEE-FOR-SERVICE', 'CAPITATION', 'GLOBAL&nbsp;PAYMENT');
 
                                             $numRandoms = 3;
 
@@ -688,7 +688,7 @@ app.response2 = function(){
                                     <div class="row eq-h">-->
                                        <?php
                                             //$arr = array(1, 2, 3, 4, 5);
-                                            $array = array('FEE-FOR-SERVICE', 'PER DIEM', 'GLOBAL&nbsp;PAYMENT');
+                                            $array = array('FEE-FOR-SERVICE', 'CAPITATION', 'GLOBAL&nbsp;PAYMENT');
 
                                             $numRandoms = 3;
 
