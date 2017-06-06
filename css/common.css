@@ -298,7 +298,7 @@ word-wrap: break-word;
 }
 .b1 {
         margin-bottom: 0px;
-    background: url('https://s3.amazonaws.com/dell-med/img/img1.jpg') no-repeat center center ; 
+    background: url('https://s3.amazonaws.com/dell-med/img/img1.jpg') no-repeat center 45%; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
