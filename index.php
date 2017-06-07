@@ -4,6 +4,12 @@
       <title>Dell Medical School | The University of Texas at Austin</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:site_name" content="Dell Medical School | The University of Texas at Austin"/>
+      <meta property="og:title" content="Dell Medical School | The University of Texas at Austin"/>
+      <meta property="og:url" content="https://vbhc.dellmed.utexas.edu/"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:image" content="https://s3.amazonaws.com/dell-med/img/img1.jpg">
+      <meta property="og:description" content="We find ourselves in a turbulent but exciting time in health care. As a society, our capabilities to diagnose and treat disease are accelerating at a remarkable pace, yet unless we understand how to deliver health care in ways that meaningfully and consistently improve patient outcomes, we will fail...">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/font-awesome.min.css">
 
