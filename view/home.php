@@ -550,7 +550,7 @@ and (max-device-width : 299px) {
           <div class="col-sm-4 footer-social">
               <h4>Helpful links</h4>
                  <ul>
-                     <li><a href="mailto:rkane@utx.edu">Problems logging in or technical issues?</a></li>
+                     <li><a href="mailto:solutions@utx.edu?subject=VBHC Technical Request">Problems logging in or technical issues?</a></li>
                      <li><a target="_blank" href="http://dellmedschool.utexas.edu/">Dell Medical School </a></li>
                      <li><a target="_blank" href="http://www.utsystem.edu/">University of Texas System</a></li>
 			         <li><a target="_blank" href="https://cio.utexas.edu/policies/web-privacy">Web Privacy Policy</a></li>
