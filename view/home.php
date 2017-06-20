@@ -544,7 +544,7 @@ and (max-device-width : 299px) {
            <div class="col-sm-4 footer-nav ">
                   <ul class="list">
                     <li>Questions or comments regarding the Value Based Health Care modules?</li>
-                    <li><a style="text-decoration:none;" href="mailto:Victoria.valencia@austin.utexas.edu"><div class="full text-center">Email us &gt;</div></a></li>
+                    <li><a style="text-decoration:none;" href="mailto:discoveringvbhc@dellmed.utexas.edu"><div class="full text-center">Email us &gt;</div></a></li>
                   </ul>
             </div>
           <div class="col-sm-4 footer-social">
