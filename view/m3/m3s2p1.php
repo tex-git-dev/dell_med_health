@@ -13,9 +13,9 @@ $c5 = "select * from records WHERE email NOT IN ('".$_SESSION['username']."')";
 $retval1=mysqli_query($dbcon,$c5);
 while($row = $retval1->fetch_object()) {
     $s2data = json_decode($row->module_data,true);
-    $dataT1 = $s2data['m2']['sections']['s2']['response1'];
+    $dataT1 = $s2data['m3']['sections']['s2']['response1'];
     $dataN1 = $row->fname." ". $row->lname;
-    $dataT = $s2data['m2']['sections']['s2']['response2'];
+    $dataT = $s2data['m3']['sections']['s2']['response2'];
     $dataN = $row->fname." ". $row->lname;
     if ($dataT) {
 ?>
