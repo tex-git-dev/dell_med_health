@@ -1896,8 +1896,13 @@ submitHandler: function(form){
 }
 });
 
+// adds alphanumeric validation method
+jQuery.validator.addMethod("alphanumeric", function(value, element) {
+        return this.optional(element) || /^\w+$/i.test(value);
+}, "Letters, numbers, and underscores only please");
 
 
+// Sign up form
  $("#registrationF").validate({
 rules: {
     Fname: "required",
@@ -1922,6 +1927,10 @@ Passc: {
 Gender: {
     required: true,
 },
+Org: {
+    required: false,
+    alphanumeric: true,    
+},
 PPRole: {
     required: true,
 },
@@ -1937,11 +1946,12 @@ PPRole: {
 messages: {
     Fname: "This field is required.",
     Lname: "This field is required.",
-password: {
-    required: "Password field cannot be blank!",
-    minlength: "Your password must be at least 6 characters long"
-},
-email: "Please enter a valid email address"
+    password: {
+        required: "Password field cannot be blank!",
+        minlength: "Your password must be at least 8 characters long"
+    },
+    //Org: "Please use only alphanumeric characters",
+    email: "Please enter a valid email address"
 },
  
 submitHandler: function(form){
