@@ -393,7 +393,7 @@
                         
                                     <div class="col-sm-4">
                                        
-                                        <f><P class="text-center"  style="color:#f0ad4e;">Joseph Joo, MS2</P></f>
+                                        <f><P class="text-center"  style="color:#f0ad4e;"><a target="_blank" href="http://in-training.org/author/joseph-joo">Joseph Joo, MS2</a></P></f>
                                         <f><div class="text-center">Second year medical student at Texas  A&M University </div></f>
  
                                     </div>
