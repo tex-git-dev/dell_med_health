@@ -69,8 +69,8 @@ include("view/cjs.php");
          </div>
          <div class="col-sm-8">
            <div class="well">
-            <f><p class="bba">What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
-            <f><p>For example, whether or not a patient is given an influenza vaccine during a hospitalization could be considered a process measure.</p></f>
+            <f><p class="bba">The effects of care on the health status of patients and populations.</p></f>
+            <f><p>For example, if fewer people die after receiving influenza vaccines, then this mortality benefit would be an outcome measure.</p></f>
           </div>
          </div>
         </div>
@@ -83,8 +83,8 @@ include("view/cjs.php");
          </div>
          <div class="col-sm-8">
            <div class="well">
-           <f><p class="bb">The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
-           <f><p>For example, the number of MRI machines, hospital beds, and available staff may be important structural aspects to consider and measure. If a project seeks to deliver influenza vaccines to all eligible patients, then the number of nursing full-time equivalents (FTE) required to deliver influenza vaccines could be a structural measure.</p></f>
+           <f><p class="bb">What is actually done in giving and receiving care. For a process measure to be valid, it must previously have been demonstrated to produce a better outcome.</p></f>
+           <f><p>For example, whether or not a patient is given an influenza vaccine during a hospitalization could be considered a process measure.</p></f>
             </div>
          </div>
         </div>
@@ -97,8 +97,8 @@ include("view/cjs.php");
          </div>
          <div class="col-sm-8">
            <div class="well">
-           <f><p class="bb">Efforts to ensure changes do not result in other unintended problems.</p></f>
-           <f><p>For example, if efforts to discharge patients before noon actually resulted in increased length of stay because some patients were being kept until the next day to be discharged in the morning, this would be an important balancing measure that may not be captured if one is only measuring the percentage of patients discharged prior to noon.</p></f>
+           <f><p class="bb">The material, human, and organizational resources available in the settings in which care is delivered.</p></f>
+           <f><p>For example, the number of MRI machines, hospital beds, and available staff may be important structural aspects to consider and measure. If a project seeks to deliver influenza vaccines to all eligible patients, then the number of nursing full-time equivalents (FTE) required to deliver influenza vaccines could be a structural measure.</p></f>
             </div>
          </div>
         </div>
@@ -111,8 +111,8 @@ include("view/cjs.php");
          </div>
          <div class="col-sm-8">
            <div class="well">
-           <f><p class="bb">The effects of care on the health status of patients and populations.</p></f>
-           <f><p>For example, if fewer people die after receiving influenza vaccines, then this mortality benefit would be an outcome measure.</p></f>
+           <f><p class="bb">Efforts to ensure changes do not result in other unintended problems.</p></f>
+           <f><p>For example, if efforts to discharge patients before noon actually resulted in increased length of stay because some patients were being kept until the next day to be discharged in the morning, this would be an important balancing measure that may not be captured if one is only measuring the percentage of patients discharged prior to noon.</p></f>
             </div>
          </div>
          
