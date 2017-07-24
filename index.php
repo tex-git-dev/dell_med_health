@@ -130,7 +130,7 @@ if($_POST){
     $Crun=mysqli_query($dbcon,$c1);
      if ($Crun->num_rows == 0) {
 
-       $q1="INSERT INTO users (Fname,Lname,Email,Pass,Org,Age,Gender,City,State,Country,PPRole) VALUES ('$Fname','$Lname','$Email','$Pass','$Org','$Age','$Gender','$City','$State','$Country','PPRole');";  
+       $q1="INSERT INTO users (Fname,Lname,Email,Pass,Org,Age,Gender,City,State,Country,PPRole) VALUES ('$Fname','$Lname','$Email','$Pass','$Org','$Age','$Gender','$City','$State','$Country','$PPRole');";  
      $Qrun1=mysqli_query($dbcon,$q1);
         if($Qrun1 == 1){
         //If user registration data insert perfectly then it will create record row in records table. 
