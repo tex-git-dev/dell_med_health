@@ -15,6 +15,15 @@ require_once 'check2.php';
  </style>
 <script type="text/javascript">
 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102687749-1', 'auto');
+  ga('send', 'pageview');
+
+
 
 
 //Below function used for forgot popup open.
@@ -1405,27 +1414,27 @@ app.OpenMS=function(){
                     <label for="sel1">Primary Professional Role:</label>
                       <select class="form-control text-center c" id="PPRole" name="PPRole">
                         <option value="">[select from list below]</option>
-                        <option value="1">Practicing Clinical Physician</option>
-                        <option value="2">Resident Physician</option>
-                        <option value="3">Medical Student</option>
-                        <option value="4">Undergraduate Student</option>
-                        <option value="5">Nursing Student</option>
-                        <option value="6">Pharmacy Student</option>
-                        <option value="7">Graduate Student</option>
-                        <option value="8">Social Worker</option>
-                        <option value="9">Hospital Administrator</option>
-                        <option value="10">Researcher</option>
-                        <option value="11">Fellow</option>
-                        <option value="12">Analyst</option>
-                        <option value="13">Administrative Assistant</option>
-                        <option value="14">Allied Health Professional</option>
-                        <option value="15">Nurse</option>
-                        <option value="16">Nurse Practioner</option>
-                        <option value="17">Manager/Director</option>
-                        <option value="18">Teacher/Professor</option>
-                        <option value="19">Office Manager</option>
-                        <option value="10">Other</option>
-                        <option value="20">Program Director</option>
+                        <option value="Practicing Clinical Physician">Practicing Clinical Physician</option>
+                        <option value="Resident Physician">Resident Physician</option>
+                        <option value="Medical Student">Medical Student</option>
+                        <option value="Undergraduate Student">Undergraduate Student</option>
+                        <option value="Nursing Student">Nursing Student</option>
+                        <option value="Pharmacy Student">Pharmacy Student</option>
+                        <option value="Graduate Student">Graduate Student</option>
+                        <option value="Social Worker">Social Worker</option>
+                        <option value="Hospital Administrator">Hospital Administrator</option>
+                        <option value="Researcher">Researcher</option>
+                        <option value="Fellow">Fellow</option>
+                        <option value="Analyst">Analyst</option>
+                        <option value="Administrative Assistant">Administrative Assistant</option>
+                        <option value="Allied Health Professional">Allied Health Professional</option>
+                        <option value="Nurse">Nurse</option>
+                        <option value="Nurse Practioner">Nurse Practioner</option>
+                        <option value="Manager/Director">Manager/Director</option>
+                        <option value="Teacher/Professor">Teacher/Professor</option>
+                        <option value="Office Manager">Office Manager</option>
+                        <option value="Program Director">Program Director</option>
+                        <option value="Other">Other</option>
                       </select>
                      </div>
                 </div>
