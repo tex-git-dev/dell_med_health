@@ -1441,7 +1441,7 @@ $
                             <div class="row msg correctMsg text-center">
                                 <div class="col-sm-12 " >
                                     <f><h3>Correct!</h3></f>
-                                    <f><p>Grace will pay her $150 ED copay and her $100 deductible and then 10% of the remaining $500 ($50) as co-insurance for a total of $1200.</p></f>
+                                    <f><p>Grace will pay her $150 ED copay and her $1000 deductible and then 10% of the remaining $500 ($50) as co-insurance for a total of $1200.</p></f>
                                     <!---<center><div class="msgBtn" href="#myCarousel" data-slide="next">Next Question <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> </div></center>-->
                                 </div>
                             </div>
