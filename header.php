@@ -1907,8 +1907,8 @@ submitHandler: function(form){
 
 // adds alphanumeric validation method
 jQuery.validator.addMethod("alphanumeric", function(value, element) {
-        return this.optional(element) || /^\w+$/i.test(value);
-}, "Letters, numbers, and underscores only please");
+        return this.optional(element) || /^[\w\s]+$/i.test(value);
+}, "Letters, numbers, spaces, and underscores only please");
 
 
 // Sign up form
