@@ -1169,7 +1169,7 @@ app.OpenMS=function(){
 				    Congratulations on completing the Introduction to Value-Based
 					Health Care module collection. Please complete the survey
 					and give us your feedback in order to receive your certificate of
-					completion.
+					completion. You must also complete this survey if you wish to receive CME credit as described <a href="./cme.html" target="_blank">here</a>.
 				   </div>
 				</div>
         </div>
@@ -1201,7 +1201,7 @@ app.OpenMS=function(){
 
 
         <h1 class="form-signin-heading text-center" ><span  style="color:#e2873b ;">WELCOME <?php echo $_SESSION['Fname'].' '.$_SESSION['Lname'];?>! <br> :-)</span></h1>
-        
+        <p>If you are interested in obtaining continuing medical education (CME) credits from completion of these modules, please click <a href="./cme.html" target="_blank">here</a> for more information.</p>
        
         </div>
 
@@ -1561,7 +1561,7 @@ app.OpenMS=function(){
              <h4 class="panel-title">7. Will I receive a certificate or continuing education credits for completing these modules? </h4>
         </div>
         <div id="collapseEight1" class="panel-collapse collapse">
-            <div class="panel-body">a.  Continuing education credits are not provided at this time (we will likely offer Continuing Medical Education (CME) credits in the near future). You will receive a certificate of completion once you have worked through modules 1-3. The certificate will be provided via email. </div>
+            <div class="panel-body">a.   Continuing Medical Education (CME) credits as well as a certificate of completion will be available upon completion of modules 1-3. Both are contingent upon submission of a survey following the completion of these modules. For more information on the CMEs obtainable, please see <a href="./cme.html" target="_blank">this link</a>.</div>
         </div>
     </div>
     <div class="panel panel-default">

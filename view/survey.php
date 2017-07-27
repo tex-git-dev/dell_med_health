@@ -96,6 +96,7 @@ experience, information, and presentation valuable.</p>
  <h3 class="text-center" style="font-weight:bold;">Please complete our evaluation survey to receive your certificate of completion for modules 1-3</h3>
  <p class="text-center"><button class="btn btn-info" style="padding:20px 20px;background:#43BEA7;color:white;font-size:14px;" onclick="clickFuncrion()">Complete our Survey</button></p>
 <p class="text-center"  style="font-size:14px;">Your certificate will be emailed to you within a week of survey completion.</p>
+<p class="text-center" style="font-size:14px;">You must also complete this survey if you wish to receive CME credit as described <a href="./cme.html" target="_blank">here</a>. A CME certificate will be emailed to you upon completion of the survey.</p>
 <p class="text-center" style="font-size:14px;">Thank you!</p>
  </div>
  </div>
