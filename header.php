@@ -1200,7 +1200,7 @@ app.OpenMS=function(){
         <br> <br> <br>
 
 
-        <h1 class="form-signin-heading text-center" ><span  style="color:#e2873b ;">WELCOME <?php echo $_SESSION['Fname'].' '.$_SESSION['Lname'];?>! <br> :-)</span></h1>
+        <h1 class="form-signin-heading text-center" ><span  style="color:#e2873b ;">WELCOME <?php echo $_SESSION['Fname'].' '.$_SESSION['Lname'];?>! <br></span></h1>
         <p>If you are interested in obtaining continuing medical education (CME) credits from completion of these modules, please click <a href="./cme.html" target="_blank">here</a> for more information.</p>
        
         </div>

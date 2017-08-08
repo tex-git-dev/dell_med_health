@@ -548,9 +548,9 @@ and (max-device-width : 299px) {
            <div class="col-sm-4 footer-nav ">
                   <ul class="list">
                     <li>Questions or comments regarding the Value Based Health Care modules?</li>
-                    <li><a style="text-decoration:none;" href="mailto:discoveringvbhc@dellmed.utexas.edu"><div class="full text-center">Email us &gt;</div></a></li>
+                    <li><a style="text-decoration:none;" href="mailto:discoveringvbhc@dellmed.utexas.edu"><div class="full text-center">Email us</div></a></li>
                     <li>Questions regarding continuing medical education (CME) credits?</li>
-                    <li><a style="text-decoration:none;" target="_blank" href="./cme.html"><div class="full text-center">Click here&gt;</div></a></li>
+                    <li><a style="text-decoration:none;" target="_blank" href="./cme.html"><div class="full text-center">Click here</div></a></li>
                   </ul>
             </div>
           <div class="col-sm-4 footer-social">
